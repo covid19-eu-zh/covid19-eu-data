@@ -1,0 +1,41 @@
+name: "SARS-COV-2/COVID-19 Cases in Europe"
+description: SARS-COV-2/COVID-19 Cases in Europe by Country, State, and Date
+contributors:
+- name: 'covid19-eu-zh'
+  github: 'covid19-eu-zh'
+data:
+- name: SARS-COV-2/COVID-19 Cases in Germany in csv format
+  description: Records of SARS-COV-2 Cases in Germany
+  path: dataset/covid-19-de.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: state
+    description: 'State of Germany in German'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record'
+- name: SARS-COV-2/COVID-19 Cases in AT in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Austria
+  path: dataset/covid-19-at.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: state
+    description: 'State of Austria'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record'
+references:
+- name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
+  link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
+- name: 'Neuartiges Coronavirus (COVID-19)'
+  link: 'https://www.sozialministerium.at/Themen/Gesundheit/Uebertragbare-Krankheiten/Infektionskrankheiten-A-Z/Neuartiges-Coronavirus.html'
