@@ -6,7 +6,7 @@ import re
 import dateutil
 import pandas as pd
 import requests
-from lxml import etree, html
+from lxml import etree
 
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
@@ -44,18 +44,24 @@ class SARSCOV2AT(COVIDScrapper):
         re_cases = re.compile(r'\s(\w*?)\s\((\d+)\)')
 
         text = html.unescape(self.req.text)
-        cases = re_cases.findall(text)
+
+        cases = [i for i in re_cases.findall(text) if i[0] in AT_STATES]
 
         if not cases:
             raise Exception("Could not find data table in webpage")
 
-        cases = {key:val for key,val in cases if key in AT_STATES}
         self.df = pd.DataFrame(
             cases, columns=["state", "cases"]
         )
 
-        self.df = pd.DataFrame(
-            [["sum", self.df.cases.sum()]], columns=["state", "cases"]
+        self.df["cases"] = self.df.cases.astype(int)
+
+        total = self.df.cases.sum()
+
+        self.df = self.df.append(
+            pd.DataFrame(
+                [["sum", total]], columns=["state", "cases"]
+            )
         )
 
         logger.info("de cases:\n", self.df)
@@ -64,7 +70,7 @@ class SARSCOV2AT(COVIDScrapper):
         """Get datetime of dataset
         Aktuelle Situation Österreich 04.03.2020 / 17:45 Uhr
         """
-        re_dt = re.compile(r'\(Aktuelle Situation Österreich (\d{1,2}.\d{1,2}.\d{4} / \d{2}:\d{2}) Uhr\)')
+        re_dt = re.compile(r'Aktuelle Situation Österreich (\d{1,2}.\d{1,2}.\d{4} / \d{2}:\d{2}) Uhr')
         text = html.unescape(self.req.text)
         dt_from_re = re_dt.findall(text)
 

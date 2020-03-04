@@ -59,6 +59,7 @@ class COVIDScrapper():
         self.timestamp = self.dt.timestamp()
         self.date = self.dt.date().isoformat()
         self.hour = self.dt.hour
+        self.minute = self.dt.minute
 
         logger.info(f"datetime: {self.datetime}")
 
@@ -80,7 +81,7 @@ class COVIDScrapper():
     def cache(self):
         self.df = self.df[_COLUMNS_ORDER]
         self.df.to_csv(
-            f"{self.daily_folder}/{self.country.lower()}_covid19_{self.date}_{self.hour:0.0f}.csv",
+            f"{self.daily_folder}/{self.country.lower()}_covid19_{self.date}_{self.hour:0.0f}_{self.minute:02.0f}.csv",
             index=False
         )
 
