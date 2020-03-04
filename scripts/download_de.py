@@ -6,8 +6,8 @@ import dateutil
 import pandas as pd
 import requests
 from lxml import etree, html
-from utils import COVIDScrapper, DailyAggregator
-from utils import _COLUMNS_ORDER
+
+from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.de")
