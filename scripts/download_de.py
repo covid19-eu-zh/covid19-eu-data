@@ -39,7 +39,7 @@ class SARSCOV2DE(COVIDScrapper):
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r'\(Datenstand: (\d{1,2}.\d{1,2}.\d{4}, \d{2}:\d{2}) Uhr\)')
+        re_dt = re.compile(r'\(Datenstand: (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{2}) Uhr\)')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
