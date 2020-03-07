@@ -33,13 +33,13 @@ class SARSCOV2DE(COVIDScrapper):
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0]
+        self.df = req_dfs[0][["Bundesland","Fälle"]]
         logger.info("de cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r'\(Datenstand: (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{2}) Uhr\)')
+        re_dt = re.compile(r'\(.tand: (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{2}) Uhr\)')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
