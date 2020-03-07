@@ -32,15 +32,15 @@ def parse_cases(cases):
         re_cases = re.compile(r"(\d) to (\d)")
         res = re_cases.findall(cases)
         if res:
-            res_lower = res[0][0]
-            res_upper = res[0][1]
+            res_lower = int(float(res[0][0]))
+            res_upper = int(float(res[0][1]))
         else:
             logger.error(f"Could extract lower and upper bounds from {cases}")
 
     return (res_lower, res_upper)
 
 
-class SARSCOV2DE(COVIDScrapper):
+class SARSCOV2UK(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
             url = REPORT_URL
@@ -79,6 +79,7 @@ class SARSCOV2DE(COVIDScrapper):
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
+        logger.debug(dt_from_re)
 
         dt_from_re = dt_from_re[0]
         dt_from_re = dateutil.parser.parse(dt_from_re)
@@ -86,15 +87,16 @@ class SARSCOV2DE(COVIDScrapper):
 
     def post_processing(self):
 
-        self.df.sort_values(by="cases", inplace=True)
-        self.df.replace("Gesamt", "sum", inplace=True)
+        self.df.sort_values(by="cases_lower", inplace=True)
 
 
 if __name__ == "__main__":
-    cov_uk = SARSCOV2DE()
+    cov_uk = SARSCOV2UK()
     cov_uk.workflow()
 
     print(cov_uk.df)
+    print(cov_uk.dt)
+    print(cov_uk.datetime)
 
     da = DailyAggregator(
         base_folder="dataset",

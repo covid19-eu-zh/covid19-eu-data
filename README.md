@@ -10,3 +10,8 @@ Data source: https://www.volksgezondheidenzorg.info/onderwerp/infectieziekten/re
 Caveats:
 
 1. NL doesn't publish the time of the data release. We use 00:00 of the day to denote the release time though it doesn't indicate the actual update time.
+
+
+### UK
+
+England data is not always a number. To solve this problem, we added two columns, `cases_lower` and `cases_upper`, to reflect the range of the number of cases.
