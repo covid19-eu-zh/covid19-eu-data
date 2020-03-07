@@ -1,3 +1,4 @@
+import datetime
 import logging
 import os
 import re
@@ -11,7 +12,7 @@ from lxml import etree, html
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.util")
 
-_COLUMNS_ORDER = ["country", "state", "cases", "datetime"]
+_COLUMNS_ORDER = ["country", "state", "city", "cases", "datetime"]
 
 
 class COVIDScrapper():
@@ -56,6 +57,12 @@ class COVIDScrapper():
     def calculate_datetime(self):
 
         self.datetime = self.dt.isoformat()
+        if isinstance(self.dt, datetime.date):
+            self.dt = datetime.datetime.combine(
+                self.dt,
+                datetime.datetime.min.time()
+            )
+
         self.timestamp = self.dt.timestamp()
         self.date = self.dt.date().isoformat()
         self.hour = self.dt.hour
@@ -79,7 +86,9 @@ class COVIDScrapper():
         """
 
     def cache(self):
-        self.df = self.df[_COLUMNS_ORDER]
+        self.df = self.df[
+            [i for i in _COLUMNS_ORDER if i in self.df.columns]
+        ]
         self.df.to_csv(
             f"{self.daily_folder}/{self.country.lower()}_covid19_{self.date}_{self.hour:0.0f}_{self.minute:02.0f}.csv",
             index=False

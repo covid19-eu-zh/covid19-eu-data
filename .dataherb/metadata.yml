@@ -34,8 +34,25 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'datetime of the record'
+- name: SARS-COV-2/COVID-19 Cases in NL in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Netherland
+  path: dataset/covid-19-nl.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: city
+    description: 'city in Netherland'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'date of the record update on the volksgezondheidenzorg website, only the date matters'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
   link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
 - name: 'Neuartiges Coronavirus (COVID-19)'
   link: 'https://www.sozialministerium.at/Themen/Gesundheit/Uebertragbare-Krankheiten/Infektionskrankheiten-A-Z/Neuartiges-Coronavirus.html'
+- name: 'volksgezondheidenzorg.info in NL'
+  link: 'https://www.volksgezondheidenzorg.info/onderwerp/infectieziekten/regionaal-internationaal/coronavirus-covid-19#node-coronavirus-covid-19-meldingen'
