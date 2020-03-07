@@ -12,7 +12,7 @@ from lxml import etree, html
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.util")
 
-_COLUMNS_ORDER = ["country", "state", "city", "cases", "datetime"]
+_COLUMNS_ORDER = ["country", "authority", "state", "city", "cases", "datetime"]
 
 
 class COVIDScrapper():
