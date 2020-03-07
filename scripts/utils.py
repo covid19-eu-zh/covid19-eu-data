@@ -57,12 +57,6 @@ class COVIDScrapper():
     def calculate_datetime(self):
 
         self.datetime = self.dt.isoformat()
-        if isinstance(self.dt, datetime.date):
-            self.dt = datetime.datetime.combine(
-                self.dt,
-                datetime.datetime.min.time()
-            )
-
         self.timestamp = self.dt.timestamp()
         self.date = self.dt.date().isoformat()
         self.hour = self.dt.hour

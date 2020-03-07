@@ -87,7 +87,7 @@ class SARSCOV2DE(COVIDScrapper):
                 dt_from_re = dt_from_re.replace(key, DUTCH_MONTHS_TO_EN[key])
                 break
         dt_from_re = dateutil.parser.parse(dt_from_re)
-        self.dt = dt_from_re.date()
+        self.dt = dt_from_re
 
     def post_processing(self):
 
