@@ -58,10 +58,10 @@ class SARSCOV2UK(COVIDScrapper):
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0][["Local authority","Number of confirmed cases"]]
+        self.df = req_dfs[0][["Upper Tier Local Authority","Number of confirmed cases"]]
         self.df.rename(
             columns = {
-                "Local authority": "authority",
+                "Upper Tier Local Authority": "authority",
                 "Number of confirmed cases": "cases"
             },
             inplace=True
