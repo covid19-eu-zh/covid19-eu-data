@@ -1,6 +1,6 @@
 country,state,cases,datetime
 DE,Rheinland-Pfalz,1,2020-02-29T10:00:00
-DE,Schleswig Holstein,1,2020-02-29T10:00:00
+DE,Schleswig-Holstein,1,2020-02-29T10:00:00
 DE,Repatriierte,2,2020-02-29T10:00:00
 DE,Hessen,3,2020-02-29T10:00:00
 DE,Baden-Württemberg,14,2020-02-29T10:00:00
@@ -11,7 +11,7 @@ DE,Bremen,1,2020-03-01T10:00:00
 DE,Hamburg,1,2020-03-01T10:00:00
 DE,Niedersachsen,1,2020-03-01T10:00:00
 DE,Rheinland-Pfalz,2,2020-03-01T10:00:00
-DE,Schleswig Holstein,2,2020-03-01T10:00:00
+DE,Schleswig-Holstein,2,2020-03-01T10:00:00
 DE,Repatriierte,2,2020-03-01T10:00:00
 DE,Hessen,8,2020-03-01T10:00:00
 DE,Baden-Württemberg,15,2020-03-01T10:00:00
@@ -22,7 +22,7 @@ DE,Bremen,1,2020-03-01T15:00:00
 DE,Hamburg,1,2020-03-01T15:00:00
 DE,Niedersachsen,1,2020-03-01T15:00:00
 DE,Rheinland-Pfalz,2,2020-03-01T15:00:00
-DE,Schleswig Holstein,2,2020-03-01T15:00:00
+DE,Schleswig-Holstein,2,2020-03-01T15:00:00
 DE,Repatriierte,2,2020-03-01T15:00:00
 DE,Hessen,8,2020-03-01T15:00:00
 DE,Baden-Württemberg,15,2020-03-01T15:00:00
@@ -34,7 +34,7 @@ DE,Bremen,1,2020-03-02T10:00:00
 DE,Hamburg,1,2020-03-02T10:00:00
 DE,Niedersachsen,1,2020-03-02T10:00:00
 DE,Rheinland-Pfalz,2,2020-03-02T10:00:00
-DE,Schleswig Holstein,2,2020-03-02T10:00:00
+DE,Schleswig-Holstein,2,2020-03-02T10:00:00
 DE,Repatriierte,2,2020-03-02T10:00:00
 DE,Hessen,10,2020-03-02T10:00:00
 DE,Baden-Württemberg,19,2020-03-02T10:00:00
@@ -46,7 +46,7 @@ DE,Bremen,1,2020-03-02T15:00:00
 DE,Niedersachsen,1,2020-03-02T15:00:00
 DE,Hamburg,2,2020-03-02T15:00:00
 DE,Rheinland-Pfalz,2,2020-03-02T15:00:00
-DE,Schleswig Holstein,2,2020-03-02T15:00:00
+DE,Schleswig-Holstein,2,2020-03-02T15:00:00
 DE,Repatriierte,2,2020-03-02T15:00:00
 DE,Hessen,10,2020-03-02T15:00:00
 DE,Baden-Württemberg,20,2020-03-02T15:00:00
@@ -60,7 +60,7 @@ DE,Sachsen,1,2020-03-03T10:00:00
 DE,Thüringen,1,2020-03-03T10:00:00
 DE,Hamburg,2,2020-03-03T10:00:00
 DE,Rheinland-Pfalz,2,2020-03-03T10:00:00
-DE,Schleswig Holstein,2,2020-03-03T10:00:00
+DE,Schleswig-Holstein,2,2020-03-03T10:00:00
 DE,Repatriierte,2,2020-03-03T10:00:00
 DE,Berlin,3,2020-03-03T10:00:00
 DE,Hessen,10,2020-03-03T10:00:00
@@ -75,7 +75,7 @@ DE,Bremen,2,2020-03-03T15:00:00
 DE,Hamburg,2,2020-03-03T15:00:00
 DE,Niedersachsen,2,2020-03-03T15:00:00
 DE,Rheinland-Pfalz,2,2020-03-03T15:00:00
-DE,Schleswig Holstein,2,2020-03-03T15:00:00
+DE,Schleswig-Holstein,2,2020-03-03T15:00:00
 DE,Berlin,3,2020-03-03T15:00:00
 DE,Hessen,12,2020-03-03T15:00:00
 DE,Baden-Württemberg,28,2020-03-03T15:00:00
@@ -89,7 +89,7 @@ DE,Thüringen,1,2020-03-04T10:00:00
 DE,Bremen,2,2020-03-04T10:00:00
 DE,Hamburg,2,2020-03-04T10:00:00
 DE,Rheinland-Pfalz,2,2020-03-04T10:00:00
-DE,Schleswig Holstein,2,2020-03-04T10:00:00
+DE,Schleswig-Holstein,2,2020-03-04T10:00:00
 DE,Mecklenburg-Vorpommern,3,2020-03-04T10:00:00
 DE,Niedersachsen,4,2020-03-04T10:00:00
 DE,Berlin,6,2020-03-04T10:00:00
@@ -102,7 +102,7 @@ DE,Brandenburg,1,2020-03-04T15:00:00
 DE,Saarland,1,2020-03-04T15:00:00
 DE,Sachsen,1,2020-03-04T15:00:00
 DE,Thüringen,1,2020-03-04T15:00:00
-DE,Schleswig Holstein,2,2020-03-04T15:00:00
+DE,Schleswig-Holstein,2,2020-03-04T15:00:00
 DE,Bremen,3,2020-03-04T15:00:00
 DE,Hamburg,3,2020-03-04T15:00:00
 DE,Mecklenburg-Vorpommern,4,2020-03-04T15:00:00
@@ -120,7 +120,7 @@ DE,Sachsen,1,2020-03-05T08:00:00
 DE,Thüringen,1,2020-03-05T08:00:00
 DE,Bremen,3,2020-03-05T08:00:00
 DE,Hamburg,3,2020-03-05T08:00:00
-DE,Schleswig Holstein,3,2020-03-05T08:00:00
+DE,Schleswig-Holstein,3,2020-03-05T08:00:00
 DE,Mecklenburg-Vorpommern,4,2020-03-05T08:00:00
 DE,Rheinland-Pfalz,7,2020-03-05T08:00:00
 DE,Berlin,9,2020-03-05T08:00:00
@@ -137,7 +137,7 @@ DE,Thüringen,1,2020-03-05T15:00:00
 DE,Bremen,3,2020-03-05T15:00:00
 DE,Mecklenburg-Vorpommern,4,2020-03-05T15:00:00
 DE,Hamburg,5,2020-03-05T15:00:00
-DE,Schleswig Holstein,7,2020-03-05T15:00:00
+DE,Schleswig-Holstein,7,2020-03-05T15:00:00
 DE,Rheinland-Pfalz,8,2020-03-05T15:00:00
 DE,Berlin,13,2020-03-05T15:00:00
 DE,Hessen,14,2020-03-05T15:00:00
@@ -152,7 +152,7 @@ DE,Sachsen,1,2020-03-06T07:00:00
 DE,Thüringen,1,2020-03-06T07:00:00
 DE,Bremen,3,2020-03-06T07:00:00
 DE,Mecklenburg-Vorpommern,5,2020-03-06T07:00:00
-DE,Schleswig Holstein,7,2020-03-06T07:00:00
+DE,Schleswig-Holstein,7,2020-03-06T07:00:00
 DE,Hamburg,8,2020-03-06T07:00:00
 DE,Rheinland-Pfalz,8,2020-03-06T07:00:00
 DE,Berlin,15,2020-03-06T07:00:00
@@ -168,7 +168,7 @@ DE,Saarland,2,2020-03-06T15:00:00
 DE,Sachsen,2,2020-03-06T15:00:00
 DE,Bremen,4,2020-03-06T15:00:00
 DE,Mecklenburg-Vorpommern,5,2020-03-06T15:00:00
-DE,Schleswig Holstein,7,2020-03-06T15:00:00
+DE,Schleswig-Holstein,7,2020-03-06T15:00:00
 DE,Rheinland-Pfalz,10,2020-03-06T15:00:00
 DE,Hamburg,11,2020-03-06T15:00:00
 DE,Hessen,16,2020-03-06T15:00:00
@@ -184,7 +184,7 @@ DE,Saarland,2,2020-03-07T08:00:00
 DE,Sachsen,2,2020-03-07T08:00:00
 DE,Bremen,4,2020-03-07T08:00:00
 DE,Mecklenburg-Vorpommern,5,2020-03-07T08:00:00
-DE,Schleswig Holstein,8,2020-03-07T08:00:00
+DE,Schleswig-Holstein,8,2020-03-07T08:00:00
 DE,Rheinland-Pfalz,10,2020-03-07T08:00:00
 DE,Hamburg,12,2020-03-07T08:00:00
 DE,Hessen,16,2020-03-07T08:00:00
@@ -200,7 +200,7 @@ DE,Saarland,3,2020-03-07T15:00:00
 DE,Bremen,4,2020-03-07T15:00:00
 DE,Sachsen,4,2020-03-07T15:00:00
 DE,Mecklenburg-Vorpommern,5,2020-03-07T15:00:00
-DE,Schleswig Holstein,8,2020-03-07T15:00:00
+DE,Schleswig-Holstein,8,2020-03-07T15:00:00
 DE,Hamburg,13,2020-03-07T15:00:00
 DE,Rheinland-Pfalz,13,2020-03-07T15:00:00
 DE,Hessen,17,2020-03-07T15:00:00
@@ -216,7 +216,7 @@ DE,Bremen,4,2020-03-08T08:00:00
 DE,Saarland,4,2020-03-08T08:00:00
 DE,Sachsen,4,2020-03-08T08:00:00
 DE,Mecklenburg-Vorpommern,7,2020-03-08T08:00:00
-DE,Schleswig Holstein,8,2020-03-08T08:00:00
+DE,Schleswig-Holstein,8,2020-03-08T08:00:00
 DE,Hamburg,13,2020-03-08T08:00:00
 DE,Rheinland-Pfalz,15,2020-03-08T08:00:00
 DE,Hessen,17,2020-03-08T08:00:00
@@ -232,7 +232,7 @@ DE,Bremen,4,2020-03-08T15:00:00
 DE,Saarland,4,2020-03-08T15:00:00
 DE,Sachsen,7,2020-03-08T15:00:00
 DE,Mecklenburg-Vorpommern,8,2020-03-08T15:00:00
-DE,Schleswig Holstein,9,2020-03-08T15:00:00
+DE,Schleswig-Holstein,9,2020-03-08T15:00:00
 DE,Hamburg,13,2020-03-08T15:00:00
 DE,Hessen,19,2020-03-08T15:00:00
 DE,Rheinland-Pfalz,19,2020-03-08T15:00:00
