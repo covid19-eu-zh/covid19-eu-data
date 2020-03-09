@@ -112,6 +112,8 @@ if __name__ == "__main__":
     cov_nl.workflow()
 
     print(cov_nl.df)
+    if cov_nl.df.empty:
+        raise Exception("Empty dataframe for NL data")
 
     da = DailyAggregator(
         base_folder="dataset",
