@@ -54,10 +54,13 @@ class SARSCOV2DE(COVIDScrapper):
             raise Exception("Did not find csv file on page!")
 
         self.df = pd.read_csv(csv_data_url, sep=";")
-
         # Only take the numbers
         self.df = self.df.loc[
-            self.df.Indicator == "Aantal"
+            (
+                self.df.Indicator == "Aantal"
+            ) | (
+                self.df.Indicator == "Aantal gevallen"
+            )
         ]
         self.df = self.df[["Gemeente", "Aantal"]]
         self.df.fillna(0, inplace=True)
