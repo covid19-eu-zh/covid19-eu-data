@@ -59,6 +59,11 @@ class SARSCOV2DE(COVIDScrapper):
             inplace=True
         )
 
+        self.df.replace(
+            "Schleswig Holstein", "Schleswig-Holstein",
+            inplace=True
+        )
+
         self.df.sort_values(by="cases", inplace=True)
         self.df.replace("Gesamt", "sum", inplace=True)
 
