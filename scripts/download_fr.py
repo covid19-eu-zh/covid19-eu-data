@@ -64,6 +64,7 @@ class SARSCOV2DE(COVIDScrapper):
 
         self.df.sort_values(by="cases", inplace=True)
         self.df.replace("Total Outre Mer", "sum", inplace=True)
+        self.df.replace("Total Métropole", "sum", inplace=True)
 
 
 if __name__ == "__main__":
