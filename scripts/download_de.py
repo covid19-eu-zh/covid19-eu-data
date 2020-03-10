@@ -28,18 +28,23 @@ class SARSCOV2DE(COVIDScrapper):
     def extract_table(self):
         """Load data table from web page
         """
-        req_dfs = pd.read_html(self.req.content, flavor='lxml')
+        req_dfs = pd.read_html(
+            self.req.content, flavor='lxml',
+            converters={
+                'Fälle': lambda x: int(float(x.replace('.','').replace(',','.')))
+            }
+        )
 
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0][["Bundesland","Fälle"]]
+        self.df = req_dfs[0][["Bundesland","Fälle","Todesfälle"]]
         logger.info("de cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r'\(.tand: (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{2}) Uhr\)')
+        re_dt = re.compile(r'.tand: (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{2}) Uhr')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
@@ -54,10 +59,15 @@ class SARSCOV2DE(COVIDScrapper):
         self.df.rename(
             columns={
                 "Fälle": "cases",
-                "Bundesland": "state"
+                "Bundesland": "state",
+                "Todesfälle": "deaths"
             },
             inplace=True
         )
+
+        self.df.fillna(0, inplace=True)
+
+        self.df["deaths"] = self.df.deaths.astype(int)
 
         self.df.replace(
             "Schleswig Holstein", "Schleswig-Holstein",

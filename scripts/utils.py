@@ -14,7 +14,7 @@ logger = logging.getLogger("covid-eu-data.util")
 
 _COLUMNS_ORDER = [
     "country", "authority", "state", "city",
-    "cases", "cases_lower", "cases_upper", "cases_raw",
+    "cases", "cases_lower", "cases_upper", "cases_raw", "deaths",
     "datetime"
 ]
 
@@ -152,6 +152,8 @@ class DailyAggregator():
         self.df = pd.concat(dfs)
         self.df.sort_values(by=["datetime", "cases"], inplace=True)
         self.df.drop_duplicates(inplace=True)
+        if "deaths" in self.df.columns:
+            self.df["deaths"] = self.df.deaths.fillna(0).astype(int)
 
     def cache(self):
         self.df.to_csv(
