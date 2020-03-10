@@ -11,8 +11,8 @@ from utils import _COLUMNS_ORDER, COVIDScrapper
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.es")
 
-ES_REPORT_URL = "https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm"
-PDF_BASE_URL = "https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/"
+ES_REPORT_URL = "http://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm"
+PDF_BASE_URL = "http://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/"
 DAILY_FOLDER = os.path.join("documents", "daily", "es")
 
 
