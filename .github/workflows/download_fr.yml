@@ -30,7 +30,7 @@ jobs:
       - name: Download Records
         run: |
           python scripts/download_fr.py
-          ls documents/daily/fr
+          ls dataset/daily/fr
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
