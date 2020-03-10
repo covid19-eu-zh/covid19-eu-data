@@ -2,7 +2,7 @@
 
 ## Status
 
-| First Header  | Second Header |
+| Country | Status |
 | ------------- | ------------- |
 | AT | ![CI Download AT Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20AT%20Data/badge.svg) |
 | DE | ![CI Download DE SARS-COV-2 Cases from RKI](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20DE%20SARS-COV-2%20Cases%20from%20RKI/badge.svg) |
