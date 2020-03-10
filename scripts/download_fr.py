@@ -75,7 +75,7 @@ if __name__ == "__main__":
     da = DailyAggregator(
         base_folder="dataset",
         daily_folder=DAILY_FOLDER,
-        country="DE"
+        country="fr"
     )
     da.workflow()
 
