@@ -7,6 +7,7 @@ import dateutil
 import pandas as pd
 import requests
 from lxml import etree
+import lxml
 
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
@@ -71,8 +72,15 @@ class SARSCOV2AT(COVIDScrapper):
         Aktuelle Situation Österreich 04.03.2020 / 17:45 Uhr
         Stand, 10.03.2020, 08:00 Uhr
         """
-        re_dt = re.compile(r'Stand, (\d{1,2}.\d{1,2}.\d{4}, \d{2}:\d{2}) Uhr')
-        text = html.unescape(self.req.text)
+        doc = lxml.html.document_fromstring(self.req.text)
+        el = doc.xpath('.//div[@class="infobox"]')
+        if el:
+            text = "".join(
+                el[0].xpath('.//text()')
+            )
+
+        re_dt = re.compile(r'Bestätigte Fälle, Stand (\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{1,2}) Uhr:')
+        text = html.unescape(text)
         dt_from_re = re_dt.findall(text)
 
         if not dt_from_re:
