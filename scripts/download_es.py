@@ -19,7 +19,7 @@ DAILY_FOLDER = os.path.join("documents", "daily", "es")
 if __name__ == "__main__":
 
     try:
-        req_page = requests.get(ES_REPORT_URL)
+        req_page = requests.get(ES_REPORT_URL,  timeout=20, verify=False)
     except Exception as e:
         raise Exception(f"Could not get web page content: {e}")
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     for pdf_path in pdf_paths:
         pdf_name = pdf_path.split("/")[-1]
-        pdf_path_get = requests.get(pdf_path)
+        pdf_path_get = requests.get(pdf_path, timeout=30, verify=False)
         with open(
             os.path.join(DAILY_FOLDER, pdf_name),
             'wb'
