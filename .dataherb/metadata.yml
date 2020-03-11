@@ -49,9 +49,9 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'date of the record update on the volksgezondheidenzorg website, only the date matters'
-- name: SARS-COV-2/COVID-19 Cases in NL in csv format
-  description: Records of SARS-COV-2/COVID-19 Cases in Netherland
-  path: dataset/covid-19-nl.csv
+- name: SARS-COV-2/COVID-19 Cases in UK in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in UK
+  path: dataset/covid-19-uk.csv
   format: csv
   size:
   updated_at: ''
