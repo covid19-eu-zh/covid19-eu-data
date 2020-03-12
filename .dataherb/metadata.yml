@@ -65,7 +65,23 @@ data:
   - name: cases_lower
     description: 'Lower bound of the number of cases'
   - name: cases_upper
-  - name: 'Upper bound of the number of cases'
+    description: 'Upper bound of the number of cases'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in UK in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in FR
+  path: dataset/covid-19-fr.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: authority
+    description: 'local provinces or oversea authorities in France, Oversea and Metropolis are also added as conditional sum'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
     description: 'datetime of the record update on the website'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'

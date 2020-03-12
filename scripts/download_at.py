@@ -65,7 +65,7 @@ class SARSCOV2AT(COVIDScrapper):
             )
         )
 
-        logger.info("de cases:\n", self.df)
+        logger.info("cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset

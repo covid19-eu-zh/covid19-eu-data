@@ -15,7 +15,7 @@ logger = logging.getLogger("covid-eu-data.download.fr")
 REPORT_URL = "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde"
 DAILY_FOLDER = os.path.join("dataset", "daily", "fr")
 
-class SARSCOV2DE(COVIDScrapper):
+class SARSCOV2FR(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
             url = REPORT_URL
@@ -34,6 +34,23 @@ class SARSCOV2DE(COVIDScrapper):
             raise Exception("Could not find data table in webpage")
 
         self.df = req_dfs[0][["Région de notification","Cas confirmés"]]
+
+        total = self.df.loc[
+            (
+                self.df["Région de notification"] == "Total Outre Mer"
+            ) | (
+                self.df["Région de notification"] == "Total Métropole"
+            )
+        ]["Cas confirmés"].sum()
+
+        self.df = self.df.append(
+            pd.DataFrame(
+                [["sum", total]], columns=[
+                    "Région de notification", "Cas confirmés"
+                ]
+            )
+        )
+
         logger.info("records cases:\n", self.df)
 
     def extract_datetime(self):
@@ -63,15 +80,17 @@ class SARSCOV2DE(COVIDScrapper):
         )
 
         self.df.sort_values(by="cases", inplace=True)
-        #self.df.replace("Total Outre Mer", "sum", inplace=True)
-        #self.df.replace("Total Métropole", "sum", inplace=True)
+        self.df.replace("Total Outre Mer", "Oversea", inplace=True)
+        self.df.replace("Total Métropole", "Metropolis", inplace=True)
+
+
 
 
 if __name__ == "__main__":
-    cov_de = SARSCOV2DE()
-    cov_de.workflow()
+    cov_fr = SARSCOV2FR()
+    cov_fr.workflow()
 
-    print(cov_de.df)
+    print(cov_fr.df)
 
     da = DailyAggregator(
         base_folder="dataset",
