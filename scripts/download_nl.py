@@ -1,11 +1,13 @@
 import logging
 import os
+import io
 import re
 
 import dateutil
 import pandas as pd
 import requests
 from lxml import etree, html
+import lxml
 
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
@@ -30,7 +32,7 @@ DUTCH_MONTHS_TO_EN = {
     'december': 'december'
 }
 
-class SARSCOV2DE(COVIDScrapper):
+class SARSCOV2NL(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
             url = REPORT_URL
@@ -43,25 +45,23 @@ class SARSCOV2DE(COVIDScrapper):
     def extract_table(self):
         """Load data table from web page
         """
-        re_csv_url = re.compile(r'/sites/.+.csv')
 
-        csv_urls = re_csv_url.findall(self.req.text)
-
-        if csv_urls:
-            csv_data_url = REPORT_CSV_BASE_URL + csv_urls[0]
-            logger.info(f"csv file url: {csv_data_url}")
-        else:
-            raise Exception("Did not find csv file on page!")
-
-        self.df = pd.read_csv(csv_data_url, sep=";")
-        # Only take the numbers
-        self.df = self.df.loc[
-            (
-                self.df.Indicator == "Aantal"
-            ) | (
-                self.df.Indicator == "Aantal gevallen"
+        doc = lxml.html.document_fromstring(self.req.text)
+        el = doc.xpath('.//div[@id="csvData"]')
+        if el:
+            text = "".join(
+                el[0].xpath('.//text()')
             )
+
+        self.df = pd.read_csv(io.StringIO(text), sep=";")
+        df_other = self.df.loc[self.df.Gemnr == -1]
+        df_other.Gemeente = "Other"
+
+        self.df = self.df.loc[
+            self.df.Gemnr >= 0
         ]
+        self.df = pd.concat([self.df, df_other])
+
         self.df = self.df[["Gemeente", "Aantal"]]
         self.df.fillna(0, inplace=True)
         self.df["Aantal"] = self.df.Aantal.astype(int)
@@ -78,8 +78,16 @@ class SARSCOV2DE(COVIDScrapper):
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r"Per gemeente \(waar de patiënt woont\), peildatum (\d{1,2} \w+ \d{4})")
-        dt_from_re = re_dt.findall(self.req.text)
+
+        doc = lxml.html.document_fromstring(self.req.text)
+        el = doc.xpath('.//div[@id="csvData"]')
+        if el:
+            text = "".join(
+                el[0].xpath('.//text()')
+            )
+
+        re_dt = re.compile(r"peildatum (\d{1,2} \w+ \d{1,2}:\d{1,2})")
+        dt_from_re = re_dt.findall(text)
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
@@ -108,7 +116,7 @@ class SARSCOV2DE(COVIDScrapper):
 
 
 if __name__ == "__main__":
-    cov_nl = SARSCOV2DE()
+    cov_nl = SARSCOV2NL()
     cov_nl.workflow()
 
     print(cov_nl.df)
