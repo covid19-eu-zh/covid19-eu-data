@@ -38,7 +38,25 @@ class SARSCOV2DE(COVIDScrapper):
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0][["Bundesland","Fälle","Todesfälle"]]
+        self.df = req_dfs[0][["Bundesland","Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"]]
+        self.df["cases"] = self.df["Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"].apply(
+            lambda x: int(float(
+                    x.split("(")[0].strip().replace('.','').replace(',','.')
+                )
+            ) if x else None
+        )
+        re_death = re.compile(r"\((\d+)\)")
+        def cal_death(x):
+            deaths = re_death.findall(x)
+            if deaths:
+                deaths = int(float(deaths[0]))
+            else:
+                deaths = 0
+            return deaths
+
+        self.df["deaths"] = self.df["Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"].apply(
+            cal_death
+        )
         logger.info("de cases:\n", self.df)
 
     def extract_datetime(self):
@@ -58,7 +76,6 @@ class SARSCOV2DE(COVIDScrapper):
 
         self.df.rename(
             columns={
-                "Fälle": "cases",
                 "Bundesland": "state",
                 "Todesfälle": "deaths"
             },

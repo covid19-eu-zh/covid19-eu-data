@@ -154,6 +154,9 @@ class DailyAggregator():
         self.df.drop_duplicates(inplace=True)
         if "deaths" in self.df.columns:
             self.df["deaths"] = self.df.deaths.fillna(0).astype(int)
+        self.df = self.df[
+            [i for i in _COLUMNS_ORDER if i in self.df.columns]
+        ]
 
     def cache(self):
         self.df.to_csv(
