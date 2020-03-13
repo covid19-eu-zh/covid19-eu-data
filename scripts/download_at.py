@@ -8,6 +8,7 @@ import pandas as pd
 import requests
 from lxml import etree
 import lxml
+from functools import reduce
 
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
@@ -42,27 +43,70 @@ class SARSCOV2AT(COVIDScrapper):
         """Load data table from web page
         """
 
+        doc = lxml.html.document_fromstring(self.req.text)
+        el = doc.xpath('.//div[@class="infobox"]')
+        if el:
+            paragraphs = [
+                "".join(i.xpath('.//text()')) for i in el[0].xpath('.//p')
+            ]
+            cases_text = ""
+            recovered_text = ""
+            deaths_text = ""
+            for par in paragraphs:
+                if par.startswith("Bestätigte Fälle, "):
+                    cases_text = par
+                    cases_text = html.unescape(cases_text)
+                elif par.startswith("Genesene Personen, "):
+                    recovered_text = par
+                    recovered_text = html.unescape(recovered_text)
+                elif par.startswith("Todesfälle, "):
+                    deaths_text = par
+                    deaths_text = html.unescape(deaths_text)
+        else:
+            raise Exception("Could not find infobox")
+
         re_cases = re.compile(r'\s(\w*?)\s\((\d+)\)')
+        re_deaths = re.compile(r'\s(\d+)\s\((\w+)\)')
 
-        text = html.unescape(self.req.text)
-
-        cases = [i for i in re_cases.findall(text) if i[0] in AT_STATES]
+        cases = [i for i in re_cases.findall(cases_text) if i[0] in AT_STATES]
+        cases = [(s, v.replace('.','').replace(',','.')) for s,v in cases]
+        recovered = [
+            i for i in re_cases.findall(recovered_text) if i[0] in AT_STATES
+        ]
+        recovered = [(s, v.replace('.','').replace(',','.')) for s,v in recovered]
+        deaths = [i for i in re_deaths.findall(deaths_text) if i[-1] in AT_STATES]
+        deaths = [(v.replace('.','').replace(',','.'), s) for v, s in deaths]
 
         if not cases:
-            raise Exception("Could not find data table in webpage")
+            raise Exception("Could not find cases_text in webpage")
 
-        self.df = pd.DataFrame(
+        df_cases = pd.DataFrame(
             cases, columns=["state", "cases"]
         )
 
+        df_recovered = pd.DataFrame(
+            recovered, columns=["state", "recovered"]
+        )
+        df_deaths = pd.DataFrame(
+            deaths, columns=["deaths", "state"]
+        )
+        self.df = reduce(
+            lambda  left,right: pd.merge(
+                left,right,on=['state'], how='outer'
+            ), [df_cases, df_recovered, df_deaths]
+        )
+        self.df.fillna(0, inplace=True)
         self.df["cases"] = self.df.cases.astype(int)
+        self.df["recovered"] = self.df.recovered.astype(int)
+        self.df["deaths"] = self.df.deaths.astype(int)
 
-        total = self.df.cases.sum()
+        total = self.df[["cases", "recovered", "deaths"]].sum()
+        total["state"] = "sum"
 
         self.df = self.df.append(
             pd.DataFrame(
-                [["sum", total]], columns=["state", "cases"]
-            )
+                total
+            ).T
         )
 
         logger.info("cases:\n", self.df)
@@ -104,7 +148,8 @@ if __name__ == "__main__":
     da = DailyAggregator(
         base_folder="dataset",
         daily_folder=DAILY_FOLDER,
-        country="AT"
+        country="AT",
+        fill=False
     )
     da.workflow()
 

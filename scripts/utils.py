@@ -14,7 +14,7 @@ logger = logging.getLogger("covid-eu-data.util")
 
 _COLUMNS_ORDER = [
     "country", "authority", "state", "city",
-    "cases", "cases_lower", "cases_upper", "cases_raw", "deaths",
+    "cases", "cases_lower", "cases_upper", "cases_raw", "recovered", "deaths",
     "datetime"
 ]
 
@@ -111,11 +111,14 @@ class COVIDScrapper():
 
 
 class DailyAggregator():
-    def __init__(self, base_folder, daily_folder, country, file_path=None):
+    def __init__(self, base_folder, daily_folder, country, file_path=None, fill=None):
         if base_folder is None:
             base_folder = "dataset"
         if daily_folder is None:
             raise Exception("Please specify daily folder")
+        if fill is None:
+            fill = True
+        self.fill = fill
         if not country:
             raise Exception("Please specify country")
         self.country = country
@@ -152,8 +155,9 @@ class DailyAggregator():
         self.df = pd.concat(dfs)
         self.df.sort_values(by=["datetime", "cases"], inplace=True)
         self.df.drop_duplicates(inplace=True)
-        if "deaths" in self.df.columns:
-            self.df["deaths"] = self.df.deaths.fillna(0).astype(int)
+        if self.fill:
+            if "deaths" in self.df.columns:
+                self.df["deaths"] = self.df.deaths.fillna(0).astype(int)
         self.df = self.df[
             [i for i in _COLUMNS_ORDER if i in self.df.columns]
         ]
