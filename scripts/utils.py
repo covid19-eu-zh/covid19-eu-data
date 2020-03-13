@@ -158,6 +158,14 @@ class DailyAggregator():
         if self.fill:
             if "deaths" in self.df.columns:
                 self.df["deaths"] = self.df.deaths.fillna(0).astype(int)
+        if "deaths" in self.df.columns:
+            self.df["deaths"] = self.df.deaths.apply(
+                lambda x: int(x) if not pd.isna(x) else ''
+            )
+        if "recovered" in self.df.columns:
+            self.df["recovered"] = self.df.recovered.apply(
+                lambda x: int(x) if not pd.isna(x) else ''
+            )
         self.df = self.df[
             [i for i in _COLUMNS_ORDER if i in self.df.columns]
         ]
