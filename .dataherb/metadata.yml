@@ -32,6 +32,10 @@ data:
     description: 'State of Austria'
   - name: cases
     description: 'number of cases by the specified datetime'
+  - name: recovered
+    description: 'recovered patients. started tracking on 2020-03-13'
+  - name: deaths
+    description: 'number of deaths. started tracking on 2020-03-13'
   - name: datetime
     description: 'datetime of the record'
 - name: SARS-COV-2/COVID-19 Cases in NL in csv format
