@@ -53,7 +53,12 @@ class SARSCOV2NL(COVIDScrapper):
                 el[0].xpath('.//text()')
             )
 
-        self.df = pd.read_csv(io.StringIO(text), sep=";")
+        self.df = pd.read_csv(
+            io.StringIO(text), sep=";", skiprows=[1,2,3], header=None
+        )
+        self.df = self.df[[0, 1, 2]]
+        cols = text.split("\n")[1].split(";")
+        self.df.columns = cols
         df_other = self.df.loc[self.df.Gemnr == -1]
         df_other.Gemeente = "Other"
 
