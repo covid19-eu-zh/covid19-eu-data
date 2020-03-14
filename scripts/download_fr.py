@@ -35,6 +35,12 @@ class SARSCOV2FR(COVIDScrapper):
 
         self.df = req_dfs[0][["Région de notification","Cas confirmés"]]
 
+        self.df['Cas confirmés'] = self.df['Cas confirmés'].apply(
+            lambda x: int(float(
+                x.replace('.','').replace(',','.').replace(' ','').strip()
+            ))
+        ).astype(int)
+
         total = self.df.loc[
             (
                 self.df["Région de notification"] == "Total Outre Mer"

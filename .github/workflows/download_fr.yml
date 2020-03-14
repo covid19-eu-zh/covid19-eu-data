@@ -36,7 +36,7 @@ jobs:
           git pull
           git status
           git add .
-          git commit -m "Downloaded FR PDFs" || echo "Nothing to update"
+          git commit -m "Downloaded FR Data" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master
