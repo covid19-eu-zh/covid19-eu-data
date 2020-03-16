@@ -1,3 +1,4 @@
+import datetime
 import logging
 import os
 import re
@@ -12,86 +13,77 @@ from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.uk")
 
-REPORT_URL = "https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england"
-DAILY_FOLDER = os.path.join("dataset", "daily", "uk")
-
-def parse_cases(cases):
-    """
-    parse_cases parse the uk record and returns the lower and upper limits of the cases.
-
-    UK use ranges in their reports. For example, they use 1 to 4 as a range indicator.
-    """
-    res_lower = None
-    res_upper = None
-
-    try:
-        res = int(float(cases))
-        res_lower = res
-        res_upper = res
-    except ValueError as ve:
-        re_cases = re.compile(r"(\d) to (\d)")
-        res = re_cases.findall(cases)
-        if res:
-            res_lower = int(float(res[0][0]))
-            res_upper = int(float(res[0][1]))
-        else:
-            logger.error(f"Could extract lower and upper bounds from {cases}")
-
-    return (res_lower, res_upper)
+# https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6
+# REPORT_URL = "https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england"
+ENGLAND_REPORT_URL = "https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
+ENGLAND_DAILY_FOLDER = os.path.join("dataset", "daily", "england")
 
 
-class SARSCOV2UK(COVIDScrapper):
+class SARSCOV2England(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
-            url = REPORT_URL
+            url = ENGLAND_REPORT_URL
 
         if daily_folder is None:
-            daily_folder = DAILY_FOLDER
+            daily_folder = ENGLAND_DAILY_FOLDER
 
-        COVIDScrapper.__init__(self, url, country="UK", daily_folder=daily_folder)
+        COVIDScrapper.__init__(self, url, country="England", daily_folder=daily_folder)
 
     def extract_table(self):
         """Load data table from web page
         """
-        req_dfs = pd.read_html(self.req.content, flavor='lxml')
+        req_dfs = pd.read_csv(ENGLAND_REPORT_URL)
 
-        if not req_dfs:
+        if req_dfs.empty:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0][["Upper Tier Local Authority","Number of confirmed cases"]]
+        self.df = req_dfs
         self.df.rename(
             columns = {
-                "Upper Tier Local Authority": "authority",
-                "Number of confirmed cases": "cases"
+                "GSS_NM": "authority",
+                "TotalCases": "cases"
             },
             inplace=True
         )
-        self.df["cases_lower"] = self.df["cases"].apply(lambda x: parse_cases(x)[0])
-        self.df["cases_upper"] = self.df["cases"].apply(lambda x: parse_cases(x)[1])
 
         logger.info("records of cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r"These data are as of (.+?)\.")
-        dt_from_re = re_dt.findall(self.req.text)
-
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
-        logger.debug(dt_from_re)
-
-        dt_from_re = dt_from_re[0]
-        dt_from_re = dateutil.parser.parse(dt_from_re)
-        self.dt = dt_from_re
+        current_date = datetime.datetime.now()
+        self.dt = datetime.datetime(
+            current_date.year, current_date.month, current_date.day
+        )
 
     def post_processing(self):
 
-        self.df.sort_values(by="cases_lower", inplace=True)
+        self.df.sort_values(by="cases", inplace=True)
+
+    def cache(self):
+
+        self.df = self.df[
+            [i for i in _COLUMNS_ORDER if i in self.df.columns]
+        ]
+        exists = False
+        for d in os.listdir(f"{self.daily_folder}"):
+            df_existing = pd.read_csv(
+                os.path.join(self.daily_folder, d)
+            )
+            if self.df.equals(df_existing):
+                exists = True
+                logger.info("Current data frame already exists")
+                break
+
+        if not exists:
+            self.df.to_csv(
+                f"{self.daily_folder}/{self.country.lower()}_covid19_{self.date}_{self.hour:0.0f}_{self.minute:02.0f}.csv",
+                index=False
+            )
 
 
 if __name__ == "__main__":
-    cov_uk = SARSCOV2UK()
+    cov_uk = SARSCOV2England()
     cov_uk.workflow()
 
     print(cov_uk.df)
@@ -100,8 +92,8 @@ if __name__ == "__main__":
 
     da = DailyAggregator(
         base_folder="dataset",
-        daily_folder=DAILY_FOLDER,
-        country="UK"
+        daily_folder=ENGLAND_DAILY_FOLDER,
+        country="England"
     )
     da.workflow()
 
