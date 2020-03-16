@@ -32,4 +32,20 @@ Caveats:
 
 ### UK
 
-England data is not always a number. To solve this problem, we added two columns, `cases_lower` and `cases_upper`, to reflect the range of the number of cases.
+#### England
+
+
+1. In the first few days of reporting, data of England is not always a number. To solve this problem, we added two columns, `cases_lower` and `cases_upper`, to reflect the range of the number of cases.
+2. England switched to ArcGIS later. We are downloading the CSV file directly.
+
+#### Scotland
+
+[Source: Scottish Gov](https://www.gov.scot/coronavirus-covid-19/)
+
+#### Wales
+
+[Source: Public Health Wales](https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/)
+
+#### Northern Ireland
+
+[Source: Public Health Agency - HSCNI](https://www.publichealth.hscni.net/news/covid-19-coronavirus#situation-in-northern-ireland)
