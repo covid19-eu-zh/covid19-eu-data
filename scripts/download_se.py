@@ -15,6 +15,9 @@ logger = logging.getLogger("covid-eu-data.download.se")
 SE_REPORT_URL = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "se")
 
+_COLUMNS_ORDER.insert(-1, 'cases/100k pop.')
+_COLUMNS_ORDER.insert(-1, 'percent')
+
 class SARSCOV2SE(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
@@ -37,7 +40,9 @@ class SARSCOV2SE(COVIDScrapper):
         
         self.df["authority"] = self.df["Region"].apply(lambda x:x.replace('*',''))
         self.df["cases"] = self.df["Fall"].apply(lambda x:int(x.replace(' ','')))
-        
+        self.df["cases/100k pop."] = self.df["Incidens"].astype(float)
+        self.df["percent"] = self.df["Procent"].astype(float)
+
         logger.info("se cases:\n", self.df)
 
     def extract_datetime(self):
@@ -56,15 +61,6 @@ class SARSCOV2SE(COVIDScrapper):
         self.dt = dt_from_re
 
     def post_processing(self):
-
-        self.df.rename(
-            columns={
-                "Incidens": "case/100k pop.",
-                "Procent": "procent"
-            },
-            inplace=True
-        ) # may be useful, need to convert the type and added the columns name into the _COLUMNS_ORDER if want to use.
-
         self.df.fillna(0, inplace=True)
 
         self.df.sort_values(by="cases", inplace=True)
