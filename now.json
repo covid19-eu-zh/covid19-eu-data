@@ -24,5 +24,8 @@
             "src": "/raw/(?<ct>[^/]*)",
             "dest": "https://raw.githubusercontent.com/covid19-eu-zh/covid19-eu-data/master/dataset/covid-19-$ct.csv"
         }
-      ]
+      ],
+      "github": {
+        "silent": true
+      }
 }
