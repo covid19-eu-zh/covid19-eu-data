@@ -15,8 +15,6 @@ logger = logging.getLogger("covid-eu-data.download.se")
 SE_REPORT_URL = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "se")
 
-_COLUMNS_ORDER.insert(-1, 'cases/100k pop.')
-_COLUMNS_ORDER.insert(-1, 'percent')
 
 class SARSCOV2SE(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
@@ -27,7 +25,7 @@ class SARSCOV2SE(COVIDScrapper):
             daily_folder = DAILY_FOLDER
 
         COVIDScrapper.__init__(self, url, country="SE", daily_folder=daily_folder)
-        
+
     def extract_table(self):
         """Load data table from web page
         """
@@ -37,7 +35,7 @@ class SARSCOV2SE(COVIDScrapper):
             raise Exception("Could not find data table in webpage")
 
         self.df = req_dfs[0].rename(lambda x:x.replace('*', ''), axis='columns') # there is another list, req_dfs[1], contains source of cases
-        
+
         self.df["authority"] = self.df["Region"].apply(lambda x:x.replace('*',''))
         self.df["cases"] = self.df["Fall"].apply(lambda x:int(x.replace(' ','')))
         self.df["cases/100k pop."] = self.df["Incidens"].astype(float)
@@ -50,7 +48,7 @@ class SARSCOV2SE(COVIDScrapper):
         """
         re_dt = re.compile(r'Sverige \d{1,2} \w{0,5} \d{4} \(kl. \d{1,2}.\d{2}\)')
         dt_from_re = re_dt.findall(self.req.text)
-        
+
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
