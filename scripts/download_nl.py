@@ -11,6 +11,7 @@ import lxml
 
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
+
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.nl")
 
@@ -54,9 +55,9 @@ class SARSCOV2NL(COVIDScrapper):
             )
 
         self.df = pd.read_csv(
-            io.StringIO(text), sep=";", skiprows=[1,2,3], header=None
+            io.StringIO(text), sep=";", skiprows=[1,2], header=None
         )
-        self.df = self.df[[0, 1, 2]]
+        self.df = self.df[[0, 1, 2, 3, 4]]
         cols = text.split("\n")[1].split(";")
         self.df.columns = cols
         df_other = self.df.loc[self.df.Gemnr == -1]
@@ -67,14 +68,16 @@ class SARSCOV2NL(COVIDScrapper):
         ]
         self.df = pd.concat([self.df, df_other])
 
-        self.df = self.df[["Gemeente", "Aantal"]]
+        original_cols = ["Gemeente", "Aantal", "BevAant", "Aantal per 100.000 inwoners"]
+        self.df = self.df[original_cols]
         self.df.fillna(0, inplace=True)
         self.df["Aantal"] = self.df.Aantal.astype(int)
         # add sum
         total = self.df.Aantal.sum()
+        total_pop = self.df["BevAant"].sum()
         self.df = self.df.append(
             pd.DataFrame(
-                [["sum", total]], columns=["Gemeente", "Aantal"]
+                [["sum", total, total_pop, f"{total/total_pop:0.2f}"]], columns=original_cols
             )
         )
 
@@ -90,19 +93,19 @@ class SARSCOV2NL(COVIDScrapper):
             text = "".join(
                 el[0].xpath('.//text()')
             )
-
-        re_dt = re.compile(r"peildatum (\d{1,2} \w+ \d{1,2}:\d{1,2})")
-        dt_from_re = re_dt.findall(text)
+        # <p>aantal per 17 maart 2020 14.00 uur</p>
+        re_dt = re.compile(r"<p>aantal per (.*)uur</p>")
+        dt_from_re = re_dt.findall(self.req.content.decode("utf-8"))
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
-        dt_from_re = dt_from_re[0]
+        dt_from_re = dt_from_re[0].replace("\xa0", " ")
         for key in DUTCH_MONTHS_TO_EN:
             if key in dt_from_re:
                 dt_from_re = dt_from_re.replace(key, DUTCH_MONTHS_TO_EN[key])
                 break
-        dt_from_re = dateutil.parser.parse(dt_from_re)
+        dt_from_re = dateutil.parser.parse(dt_from_re.replace(".", ":"))
         self.dt = dt_from_re
 
     def post_processing(self):
@@ -110,12 +113,14 @@ class SARSCOV2NL(COVIDScrapper):
         self.df.rename(
             columns={
                 "Gemeente": "city",
-                "Aantal": "cases"
+                "Aantal": "cases",
+                "BevAant": "population",
+                "Aantal per 100.000 inwoners": "cases/100k pop."
             },
             inplace=True
         )
 
-        self.df = self.df[["country", "city", "cases", "datetime"]]
+        self.df = self.df[["country", "city", "cases", "population", "cases/100k pop.", "datetime"]]
 
         self.df.sort_values(by="cases", inplace=True)
 
