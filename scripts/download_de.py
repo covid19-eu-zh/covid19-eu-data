@@ -30,33 +30,15 @@ class SARSCOV2DE(COVIDScrapper):
         """
         req_dfs = pd.read_html(
             self.req.content, flavor='lxml',
-            converters={
-                'Fälle': lambda x: int(float(x.replace('.','').replace(',','.')))
-            }
+            decimal=","
         )
 
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[0][["Bundesland","Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"]]
-        self.df["cases"] = self.df["Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"].apply(
-            lambda x: int(float(
-                    x.split("(")[0].strip().replace('.','').replace(',','.')
-                )
-            ) if x else None
-        )
-        re_death = re.compile(r"\((\d+)\)")
-        def cal_death(x):
-            deaths = re_death.findall(x)
-            if deaths:
-                deaths = int(float(deaths[0]))
-            else:
-                deaths = 0
-            return deaths
+        self.df = req_dfs[0]#[["Bundesland","Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"]]
+        self.df.columns = self.df.columns.droplevel(0)
 
-        self.df["deaths"] = self.df["Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"].apply(
-            cal_death
-        )
         logger.info("de cases:\n", self.df)
 
     def extract_datetime(self):
@@ -73,11 +55,17 @@ class SARSCOV2DE(COVIDScrapper):
         self.dt = dt_from_re
 
     def post_processing(self):
-
+        self.df.drop(
+            ["Unnamed: 5_level_1", "Dif­fe­renz zum Vor­tag"], axis=1,
+            inplace=True
+        )
         self.df.rename(
             columns={
-                "Bundesland": "state",
-                "Todesfälle": "deaths"
+                "Unnamed: 0_level_1": "state",
+                "An­zahl": "cases",
+                "Erkr./ 100.000 Einw.": "cases/100k pop.",
+                "Todes­fälle": "deaths",
+                "Todes\xadfälle": "deaths"
             },
             inplace=True
         )
