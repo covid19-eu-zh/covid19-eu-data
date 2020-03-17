@@ -30,7 +30,10 @@ class SARSCOV2DE(COVIDScrapper):
         """
         req_dfs = pd.read_html(
             self.req.content, flavor='lxml',
-            decimal=","
+            decimal=",",
+             converters={
+                ('Elektronisch übermittelte Fälle', 'An\xadzahl'): lambda x: int(float(x.replace('.','').replace(',','.')))
+            }
         )
 
         if not req_dfs:
