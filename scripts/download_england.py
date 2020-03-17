@@ -11,7 +11,7 @@ from lxml import etree, html
 from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
 logging.basicConfig()
-logger = logging.getLogger("covid-eu-data.download.uk")
+logger = logging.getLogger("covid-eu-data.download.england")
 
 # https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6
 # REPORT_URL = "https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england"
@@ -182,15 +182,6 @@ class SARSCOV2Wales(COVIDScrapper):
 
 if __name__ == "__main__":
 
-    cov_wales = SARSCOV2Wales()
-    cov_wales.workflow()
-
-    da_wales = DailyAggregator(
-        base_folder="dataset",
-        daily_folder=WALES_DAILY_FOLDER,
-        country="Wales"
-    )
-    da_wales.workflow()
 
 
     cov_england = SARSCOV2England()
@@ -203,15 +194,6 @@ if __name__ == "__main__":
     )
     da_england.workflow()
 
-    cov_scotland = SARSCOV2Scotland()
-    cov_scotland.workflow()
-
-    da_scotland = DailyAggregator(
-        base_folder="dataset",
-        daily_folder=SCOTLAND_DAILY_FOLDER,
-        country="Scotland"
-    )
-    da_scotland.workflow()
 
 
 

@@ -1,4 +1,4 @@
-name: CI Download UK Data
+name: CI Download England Data
 
 on:
   push:
@@ -29,13 +29,13 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
-          python scripts/download_uk.py
+          python scripts/download_england.py
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
           git status
           git add .
-          git commit -m "Update UK Dataset" || echo "Nothing to update"
+          git commit -m "Update England Dataset" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master
