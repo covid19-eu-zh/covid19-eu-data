@@ -15,7 +15,6 @@ logger = logging.getLogger("covid-eu-data.download.se")
 SE_REPORT_URL = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "se")
 
-
 class SARSCOV2SE(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
         if url is None:
