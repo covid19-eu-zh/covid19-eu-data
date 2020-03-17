@@ -55,7 +55,7 @@ class SARSCOV2Wales(COVIDScrapper):
         """Get datetime of dataset
         """
         # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'Updated: (.*)&nbsp;(.*)&nbsp;(.*)</em></p>')
+        re_dt = re.compile(r'Updated: (.* \d{4})</em></p>')
         dt_from_re = re_dt.findall(self.req.text)
         re_hour = re.compile(r"This statement will be updated daily at (\d{1,2}\w+)")
         update_hour = re_hour.findall(self.req.text)
@@ -63,11 +63,7 @@ class SARSCOV2Wales(COVIDScrapper):
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
-        dt_from_re = dt_from_re[0]
-        dt_from_re = " ".join(dt_from_re)
-        if update_hour:
-            update_hour.append(dt_from_re)
-            dt_from_re = " ".join(update_hour)
+        dt_from_re = dt_from_re[0].replace('&nbsp;', ' ')
         dt_from_re = dateutil.parser.parse(dt_from_re)
 
         self.dt = dt_from_re
@@ -82,6 +78,8 @@ if __name__ == "__main__":
 
     cov_wales = SARSCOV2Wales()
     cov_wales.workflow()
+
+    print(cov_wales.df)
 
     da_wales = DailyAggregator(
         base_folder="dataset",
