@@ -51,6 +51,10 @@ data:
     description: 'city in Netherland'
   - name: cases
     description: 'number of cases by the specified datetime'
+  - name: population
+    description: 'population of the city'
+  - name: cases/100k pop.
+    description: 'number of cases per 100k population by the specified datetime'
   - name: datetime
     description: 'date of the record update on the volksgezondheidenzorg website, only the date matters'
 - name: SARS-COV-2/COVID-19 Cases in England in csv format
