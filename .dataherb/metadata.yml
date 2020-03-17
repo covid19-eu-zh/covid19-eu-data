@@ -53,9 +53,9 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'date of the record update on the volksgezondheidenzorg website, only the date matters'
-- name: SARS-COV-2/COVID-19 Cases in UK in csv format
-  description: Records of SARS-COV-2/COVID-19 Cases in UK
-  path: dataset/covid-19-uk.csv
+- name: SARS-COV-2/COVID-19 Cases in England in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in England
+  path: dataset/covid-19-england.csv
   format: csv
   size:
   updated_at: ''
@@ -65,14 +65,44 @@ data:
   - name: authority
     description: 'local authorities in England, city, town, borough, etc.'
   - name: cases
-    description: 'number of cases by the specified datetime, it can be a range'
-  - name: cases_lower
-    description: 'Lower bound of the number of cases'
-  - name: cases_upper
-    description: 'Upper bound of the number of cases'
+    description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'datetime of the record update on the website'
-- name: SARS-COV-2/COVID-19 Cases in UK in csv format
+- name: SARS-COV-2/COVID-19 Cases in Scotland in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Scotland
+  path: dataset/covid-19-scotland.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: authority
+    description: 'local authorities in England, city, town, borough, etc.'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in SE in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Sweden
+  path: dataset/covid-19-england.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: authority
+    description: 'local authorities in England, city, town, borough, etc.'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: cases/100k pop.
+    description: 'number of cases per 100k population by the specified datetime'
+  - name: percent
+    description: 'percent of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in FR in csv format
   description: Records of SARS-COV-2/COVID-19 Cases in FR
   path: dataset/covid-19-fr.csv
   format: csv
