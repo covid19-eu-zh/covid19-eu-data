@@ -10,7 +10,8 @@
 | FR  | ![CI Download FR Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20FR%20Data/badge.svg) |
 | NL | ![CI Download NL SARS-COV-2 Cases from volksgezondheidenzorg](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20NL%20SARS-COV-2%20Cases%20from%20volksgezondheidenzorg/badge.svg) |
 | SE | ![CI Download SE](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20SE/badge.svg) |
-| UK | ![CI Download England Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20England%20Data/badge.svg) ![CI Download Wales Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Wales%20Data/badge.svg)  ![CI Download Scotland Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Scotland%20Data/badge.svg)  |
+| UK | ![CI Download England Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20England%20Data/badge.svg)  ![CI Download Scotland Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Scotland%20Data/badge.svg)  |
+| PL | ![CI Download PL Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20PL%20Data/badge.svg) |
 
 ## Countries
 
