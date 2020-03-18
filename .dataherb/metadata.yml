@@ -121,6 +121,23 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in PL in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in PL
+  path: dataset/covid-19-pl.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: province
+    description: 'provinces in PL or sum as the total'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: deaths
+    description: 'number of deaths by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
   link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
@@ -130,3 +147,5 @@ references:
   link: 'https://www.volksgezondheidenzorg.info/onderwerp/infectieziekten/regionaal-internationaal/coronavirus-covid-19#node-coronavirus-covid-19-meldingen'
 - name: 'Public Health England'
   link: 'https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england'
+- name: 'Serwis Rzeczypospolitej Polskiej'
+  link: 'https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2'
