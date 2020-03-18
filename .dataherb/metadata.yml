@@ -89,7 +89,7 @@ data:
     description: 'datetime of the record update on the website'
 - name: SARS-COV-2/COVID-19 Cases in SE in csv format
   description: Records of SARS-COV-2/COVID-19 Cases in Sweden
-  path: dataset/covid-19-england.csv
+  path: dataset/covid-19-se.csv
   format: csv
   size:
   updated_at: ''
