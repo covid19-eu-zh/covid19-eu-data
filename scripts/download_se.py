@@ -37,7 +37,7 @@ class SARSCOV2SE(COVIDScrapper):
 
         self.df["authority"] = self.df["Region"].apply(lambda x:x.replace('*',''))
         self.df["cases"] = self.df["Fall"].apply(lambda x:int(x.replace(' ','')))
-        self.df["cases/100k pop."] = self.df["Incidens"].astype(float)
+        self.df["cases/100k pop."] = self.df["Kumulativ Incidens"].astype(float)
         self.df["percent"] = self.df["Procent"].astype(float)
 
         logger.info("se cases:\n", self.df)
