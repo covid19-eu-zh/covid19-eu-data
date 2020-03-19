@@ -14,10 +14,11 @@ from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
 
 
 logging.basicConfig()
-logger = logging.getLogger("covid-eu-data.download.nl")
+logger = logging.getLogger("covid-eu-data.download.cz")
 
 REPORT_URL = "https://onemocneni-aktualne.mzcr.cz/covid-19"
 DAILY_FOLDER = os.path.join("dataset", "daily", "cz")
+WEBPAGE_CACHE_FOLDER = os.path.join("documents", "daily", "cz")
 
 
 class SARSCOV2CZ(COVIDScrapper):
@@ -74,6 +75,17 @@ class SARSCOV2CZ(COVIDScrapper):
     def post_processing(self):
 
         self.df.sort_values(by="cases", inplace=True)
+
+        try:
+            os.makedirs(WEBPAGE_CACHE_FOLDER)
+        except FileExistsError as e:
+            logger.info(f"{WEBPAGE_CACHE_FOLDER} already exists, no need to create folder")
+            pass
+        with open(
+        os.path.join(WEBPAGE_CACHE_FOLDER, f"{self.dt.date().isoformat()}.html"),
+            'wb'
+        ) as f:
+            f.write(self.req.content)
 
 
 if __name__ == "__main__":
