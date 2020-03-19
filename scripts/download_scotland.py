@@ -117,7 +117,7 @@ class SARSCOV2Scotland(COVIDScrapper):
         """Get datetime of dataset
         """
         # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'ast updated: (\d{1,2}pm on \d{1,2} \w+ \d{4})\.')
+        re_dt = re.compile(r'Scottish test numbers: (.*)</h3>')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
