@@ -153,6 +153,21 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases From ECDC
+  description: Records of SARS-COV-2/COVID-19 Cases in EU from ECDC
+  path: dataset/covid-19-ecdc.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: deaths
+    description: 'number of deaths by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
   link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
@@ -166,3 +181,5 @@ references:
   link: 'https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2'
 - name: 'Přehled situace v ČR: COVID-19 - CZ'
   link: 'https://onemocneni-aktualne.mzcr.cz/covid-19'
+- name: 'Situation update for the EU/EEA and the UK, as of 19 March 2020'
+  link: 'https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea'
