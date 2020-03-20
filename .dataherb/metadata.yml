@@ -168,6 +168,29 @@ data:
     description: 'number of deaths by the specified datetime'
   - name: datetime
     description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in IT
+  description: Records of SARS-COV-2/COVID-19 Cases in IT
+  path: dataset/covid-19-it.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country (IT)
+  - name: region
+    description: 'regions in IT, corresponds to NUTS 2'
+    missing:
+      - value: "unassigned"
+        description: "unassigned indicates the cases are not allocated to the provinces"
+  - name: province
+    description: 'provinces in IT, corresponds to NUTS 3'
+    missing:
+      - value: ""
+        description: "Missing value means the cases are for higher levels, most like to be sum of all cases in the country"
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
   link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
@@ -183,3 +206,5 @@ references:
   link: 'https://onemocneni-aktualne.mzcr.cz/covid-19'
 - name: 'Situation update for the EU/EEA and the UK, as of 19 March 2020'
   link: 'https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea'
+- name: 'pcm-dpc/COVID-19 on GitHub'
+  link: 'https://github.com/pcm-dpc/COVID-19'
