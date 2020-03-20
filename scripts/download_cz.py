@@ -36,24 +36,16 @@ class SARSCOV2CZ(COVIDScrapper):
         """
 
         doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
-        el = doc.xpath('.//div[@id="js-region-quarantine-data"]')
+        el = doc.xpath('.//div[@id="js-total-regions-data"]')
         if el:
             text = "".join(
                 el[0].get('data-barchart')
             )
 
         data = json.loads(text)
-        data = {
-            dateutil.parser.parse(
-                i.get("key").replace("Hlášení k ", ""), dayfirst=True
-            ): i.get("values")
-            for i in data
-        }
 
-        dates = list(data.keys())
-        dates.sort()
-        self.dt = dates[-1]
-        self.df = pd.DataFrame(data.get(self.dt))
+        self.df = pd.DataFrame(data.get('values'))
+        self.df.drop('color', axis=1, inplace=True)
         self.df.rename(
             columns = {
                 "x": "authority",
@@ -71,6 +63,36 @@ class SARSCOV2CZ(COVIDScrapper):
         )
 
         logger.info("list of cases:\n", self.df)
+
+    def extract_datetime(self):
+        """Get datetime of dataset
+        """
+
+        doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
+        el = doc.xpath(
+            './/div[@class="column small-12 medium-12 large-12 mb-15"]/div[@class="legend legend--inverse mt-15"]'
+        )
+        if el:
+            text = "\n".join(
+                el[0].xpath('.//text()')
+            )
+        # Poslední aktualizace pozitivních nálezů byla provedena ke dni: 20.\xa03.\xa02020\xa0v\xa017.55h\n
+        re_dt = re.compile(r': (.*)\xa0v\xa0(.*)h\n')
+        dt_from_re = re_dt.findall(text)
+
+        if not dt_from_re:
+            raise Exception("Did not find datetime from webpage")
+
+        def parse_dt(inp):
+            dt_from_re_date = inp[0].replace('\xa0', ' ')
+            dt_from_re_time = inp[1].replace('\xa0', ' ').replace('.', ':')
+            res = " ".join([dt_from_re_date, dt_from_re_time])
+            return res
+
+        dt_from_re = parse_dt(dt_from_re[0])
+
+        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
+        self.dt = dt_from_re
 
     def post_processing(self):
 
