@@ -1,11 +1,11 @@
-name: CI Download CZ Data
+name: CI Download IT Data
 
 on:
   push:
     branches:
       - master
   schedule:
-    - cron:  '46 7/2 * * *'
+    - cron:  '38 7/1 * * *'
 
 jobs:
   build:
@@ -29,13 +29,14 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
-          python scripts/download_cz.py
+          python scripts/download_it.py
+          ls dataset/daily/it
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
           git status
           git add .
-          git commit -m "Update CZ Dataset" || echo "Nothing to update"
+          git commit -m "Update IT Dataset" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master

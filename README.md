@@ -15,6 +15,7 @@
 | SE | ![CI Download SE](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20SE/badge.svg) |
 | UK | ![CI Download England Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20England%20Data/badge.svg)  ![CI Download Scotland Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Scotland%20Data/badge.svg)  |
 | EU(ECDC) | ![CI Download All EU from ECDC](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20All%20EU%20from%20ECDC/badge.svg) |
+| IT | ![CI Download IT Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20IT%20Data/badge.svg) |
 
 
 ## Countries
@@ -55,3 +56,10 @@ Caveats:
 #### Northern Ireland
 
 [Source: Public Health Agency - HSCNI](https://www.publichealth.hscni.net/news/covid-19-coronavirus#situation-in-northern-ireland)
+
+
+### IT
+
+[Source: PCM-DPC GitHub](https://github.com/pcm-dpc/COVID-19/blob/master/dati-json/dpc-covid19-ita-province-latest.json)
+
+Set the `-f` flag to `true` for `scripts/download_it.py` to redownload all dates.
