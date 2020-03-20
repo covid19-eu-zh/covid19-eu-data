@@ -30,9 +30,10 @@ class SARSCOV2DE(COVIDScrapper):
         """
         req_dfs = pd.read_html(
             self.req.content, flavor='lxml',
-            decimal=",",
-             converters={
-                ('Elektronisch übermittelte Fälle', 'An\xadzahl'): lambda x: int(float(x.replace('.','').replace(',','.')))
+            converters={
+                ('Elektronisch übermittelte Fälle', 'An\xadzahl'): lambda x: int(float(x.replace('.','').replace(',','.'))),
+                ('Elektronisch übermittelte Fälle', 'Fälle/ 100.000 Einw.'): lambda x: int(float(x.replace('.','').replace(',','.'))),
+                ('Elektronisch übermittelte Fälle', 'Todes­fälle'): lambda x: int(float(x.replace('.','').replace(',','.')))
             }
         )
 
@@ -67,6 +68,7 @@ class SARSCOV2DE(COVIDScrapper):
                 "Unnamed: 0_level_1": "state",
                 "An­zahl": "cases",
                 "Erkr./ 100.000 Einw.": "cases/100k pop.",
+                "Fälle/ 100.000 Einw.": "cases/100k pop.",
                 "Todes­fälle": "deaths",
                 "Todes\xadfälle": "deaths"
             },
