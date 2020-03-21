@@ -1,6 +1,6 @@
 # covid19-eu-data
 
-`covid19-eu-data` is a dataset repository for COVID-19/SARS-CoV-2 cases in Europe. We pull data from official government websites regularly using the open source scripts inside the repository.
+`covid19-eu-data` is a dataset repository for COVID-19/SARS-CoV-2 cases in Europe. We pull data from official government websites regularly using the open-source scripts inside the repository.
 
 ## Update Status
 
@@ -80,11 +80,11 @@ documents
 
 ### Scrapers
 
-The scripts that are being used to update the data is located in `scripts` folder. Most of the scripts requires the `utils.py` module to run. Create a new environment and run `pip install -r requirements.txt` to install the requirements.
+The scripts that are being used to update the data are located in `scripts` folder. Most of the scripts require the `utils.py` module to run. Create a new environment and run `pip install -r requirements.txt` to install the requirements.
 
 ### Workflows
 
-The workflows that updates the dataset are defined in `.github/workflows`.
+The workflows that update the dataset are defined in `.github/workflows`.
 
 
 ## Data Sources and Comments
@@ -132,14 +132,14 @@ Caveats:
 
 [![](https://img.shields.io/badge/Data%20Source-phw.nhs.wales-informational)](https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/)
 
-1. The Wales stopped publishing detailed data on 2020-03-17.
+1. Wales stopped publishing detailed data on 2020-03-17.
 
 
 #### Northern Ireland
 
 [![](https://img.shields.io/badge/Data%20Source-publichealth.hscni.net-informational)](https://www.publichealth.hscni.net/news/covid-19-coronavirus#situation-in-northern-ireland)
 
-Northern Ireland do not publish detailed data.
+Northern Ireland does not publish detailed data.
 
 
 ### IT
@@ -147,7 +147,7 @@ Northern Ireland do not publish detailed data.
 [![](https://img.shields.io/badge/Data%20Source-pcm--dpc/COVID--19-informational)](https://github.com/pcm-dpc/COVID-19/blob/master/dati-json/dpc-covid19-ita-province-latest.json)
 
 
-1. The data source also provides all time series data. Set the `-f` flag to `true` for `scripts/download_it.py` to redownload all dates.
+1. The data source also provides the whole time-series data. Set the `-f` flag to `true` for `scripts/download_it.py` to redownload all dates.
 
 
 ## Community
