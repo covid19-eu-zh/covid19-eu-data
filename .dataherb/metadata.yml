@@ -191,6 +191,21 @@ data:
     description: 'number of cases by the specified datetime'
   - name: datetime
     description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in NO
+  description: Records of SARS-COV-2/COVID-19 Cases in Norway
+  path: dataset/covid-19-no.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country (NO)
+  - name: county
+    description: 'ounty in Norway, corresponds to NUTS 3'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
 references:
 - name: 'SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
   link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
