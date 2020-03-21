@@ -18,7 +18,7 @@ logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.util")
 
 _COLUMNS_ORDER = [
-    "country", "region", "authority", "state", "city", "province",
+    "country", "region", "authority", "state", "county", "city", "province",
     "cases", "cases_lower", "cases_upper", "cases_raw",
     "population", "cases/100k pop.", "percent",
     "recovered", "deaths",
