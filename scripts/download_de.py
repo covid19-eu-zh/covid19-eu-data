@@ -33,7 +33,10 @@ class SARSCOV2DE(COVIDScrapper):
             converters={
                 ('Elektronisch übermittelte Fälle', 'An\xadzahl'): lambda x: int(float(x.replace('.','').replace(',','.'))),
                 ('Elektronisch übermittelte Fälle', 'Fälle/ 100.000 Einw.'): lambda x: int(float(x.replace('.','').replace(',','.'))),
-                ('Elektronisch übermittelte Fälle', 'Todes­fälle'): lambda x: int(float(x.replace('.','').replace(',','.')))
+                ('Elektronisch übermittelte Fälle', 'Todes­fälle'): lambda x: int(float(x.replace('.','').replace(',','.'))),
+                ('Elektro\xadnisch über\xadmittelte Fälle', 'An\xadzahl'): lambda x: int(float(x.replace('.','').replace(',','.'))),
+                ('Elektro\xadnisch über\xadmittelte Fälle', 'Fälle/ 100.000 Einw.'): lambda x: int(float(x.replace('.','').replace(',','.'))),
+                ('Elektro\xadnisch über\xadmittelte Fälle', 'Todes\xadfälle'): lambda x: int(float(x.replace('.','').replace(',','.')))
             }
         )
 
