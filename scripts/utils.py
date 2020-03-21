@@ -28,6 +28,16 @@ _COLUMNS_ORDER = [
 
 class COVIDScrapper():
     def __init__(self, url, country, daily_folder=None):
+        """
+        COVIDScrapper is the base class to scrape data from remote resources.
+
+        :param url: url to the remote resource
+        :type url: str
+        :param country: Alpha 2 code of the country
+        :type country: str
+        :param daily_folder: folder where the daily updates are being stored
+        :type daily_folder: str, optional
+        """
         if not url:
             raise Exception("Please specify url!")
         if not country:
@@ -48,6 +58,11 @@ class COVIDScrapper():
             pass
 
     def _get_req(self):
+        """
+        _get_req get the responses from the remote web page.
+
+        :return: requests object
+        """
         try:
             req = get_response(self.url)
         except Exception as e:
@@ -66,7 +81,9 @@ class COVIDScrapper():
         """
 
     def calculate_datetime(self):
-
+        """
+        calculate_datetime formats and decomposes the datetime
+        """
         self.datetime = self.dt.isoformat()
         self.timestamp = self.dt.timestamp()
         self.date = self.dt.date().isoformat()
@@ -82,7 +99,9 @@ class COVIDScrapper():
         self.df["datetime"] = self.datetime
 
     def add_country_to_df(self):
-
+        """
+        add_country_to_df adds a column country to the dataframe
+        """
         self.df["country"] = self.country
 
     @abstractmethod
@@ -91,6 +110,9 @@ class COVIDScrapper():
         """
 
     def cache(self):
+        """
+        cache sorts the dataframes and saves the dataframe as csv.
+        """
         self.df = self.df[
             [i for i in _COLUMNS_ORDER if i in self.df.columns]
         ]
@@ -100,7 +122,7 @@ class COVIDScrapper():
         )
 
     def workflow(self):
-        """workflow connect the pipes
+        """workflow connects the pipes
         """
 
         # extract data table from the webpage
@@ -119,6 +141,20 @@ class COVIDScrapper():
 
 class DailyAggregator():
     def __init__(self, base_folder, daily_folder, country, file_path=None, fill=None):
+        """
+        DailyAggregator aggregates the daily updates and save them as one file.
+
+        :param base_folder: where the whole tabular dataset is being stored
+        :type base_folder: str
+        :param daily_folder: where the daily data is being stored
+        :type daily_folder: str
+        :param country: alpha 2 code of the country.
+        :type country: str
+        :param file_path: destination of the aggregated file
+        :type file_path: str, optional
+        :param fill: whether to fill the missing data
+        :type fill: bool, optional
+        """
         if base_folder is None:
             base_folder = "dataset"
         if daily_folder is None:
@@ -153,7 +189,9 @@ class DailyAggregator():
         return files
 
     def aggregate_daily(self):
-
+        """
+        aggregate_daily aggretates the daily updates into one dataframe
+        """
         dfs = []
         for file in self.daily_files:
             file_path = os.path.join(self.daily_folder, file)
@@ -178,13 +216,18 @@ class DailyAggregator():
         ]
 
     def cache(self):
+        """
+        cache saves the dataframe as a csv file
+        """
         self.df.to_csv(
             self.file_path,
             index=False
         )
 
     def workflow(self):
-
+        """
+        workflow connects the pipes
+        """
         self.aggregate_daily()
         self.cache()
 
@@ -227,7 +270,23 @@ def get_response(
         link, retry_params=None, headers=None, timeout=None,
         proxies=None, session=None
     ):
-    """Download page and save content
+    """
+    get_response gets the responses of the a URL.
+
+    :param link: link to the content to be recieved
+    :type link: str
+    :param retry_params: rules to retry
+    :type retry_params: dict, optional
+    :param headers: headers for the request
+    :type headers: dict, optional
+    :param timeout: timeout parameters for the request
+    :type timeout: tuple, optional
+    :param proxies: proxies
+    :type proxies: dict, optional
+    :param session: a session object to be used
+    :type session: requests.Session, optional
+    :return: response from the url
+    :rtype: requests.models.Response
     """
 
     if retry_params is None:
