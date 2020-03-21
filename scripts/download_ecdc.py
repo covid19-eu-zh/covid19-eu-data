@@ -21,6 +21,7 @@ EU_ALPHA2 = {'Italy': 'IT',
  'France': 'FR',
  'Germany': 'DE',
  'United Kingdom': 'GB',
+ 'United_Kingdom': 'GB',
  'Netherlands': 'NL',
  'Austria': 'AT',
  'Belgium': 'BE',
@@ -29,6 +30,7 @@ EU_ALPHA2 = {'Italy': 'IT',
  'Denmark': 'DK',
  'Portugal': 'PT',
  'Czech Republic': 'CZ',
+ 'Czech_Republic': 'CZ',
  'Greece': 'GR',
  'Finland': 'FI',
  'Ireland': 'IE',
@@ -72,7 +74,9 @@ class SARSCOV2ECDC(COVIDScrapper):
             columns = {
                 "EU/EEA and the UK": "country",
                 "Cases": "cases",
-                "Deaths": "deaths"
+                "Sum of Cases": "cases",
+                "Deaths": "deaths",
+                "Sum of Deaths": "deaths"
             },
             inplace=True
         )
