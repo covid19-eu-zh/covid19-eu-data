@@ -37,7 +37,7 @@ class SARSCOV2FR(COVIDScrapper):
 
         self.df['Cas confirmés'] = self.df['Cas confirmés'].apply(
             lambda x: int(float(
-                x.replace('.','').replace(',','.').replace(' ','').strip()
+                x.replace("*","").replace('.','').replace(',','.').replace(' ','').strip()
             ))
         ).astype(int)
 
