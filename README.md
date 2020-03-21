@@ -92,7 +92,9 @@ Northern Ireland does not publish detailed data.
 ## Community
 
 **Bugs and requests**: PRs are welcome.
+
 [![Issues](http://img.shields.io/github/issues/covid19-eu-zh/covid19-eu-data.svg)]( https://github.com/covid19-eu-zh/covid19-eu-data/issues )
 
-**Telegram Channel (in Chinese)**: news on COVID-10 in Europe.
+**Telegram Channel (in Chinese)**: [新冠肺炎欧洲中文臺](https://t.me/s/covid19_eu_zh_c)
+
 [![Chat](http://img.shields.io/badge/telegram-covid19__eu__zh__c-blue.svg)](https://t.me/s/covid19_eu_zh_c)
