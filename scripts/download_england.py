@@ -8,7 +8,8 @@ import pandas as pd
 import requests
 from lxml import etree, html
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.england")
@@ -43,7 +44,7 @@ class SARSCOV2England(COVIDScrapper):
         self.df = req_dfs
         self.df.rename(
             columns = {
-                "GSS_NM": "authority",
+                "GSS_NM": "nuts_3",
                 "TotalCases": "cases"
             },
             inplace=True
@@ -85,104 +86,23 @@ class SARSCOV2England(COVIDScrapper):
             )
 
 
-class SARSCOV2Scotland(COVIDScrapper):
-    def __init__(self, url=None, daily_folder=None):
-        if url is None:
-            url = SCOTLAND_REPORT_URL
-
-        if daily_folder is None:
-            daily_folder = SCOTLAND_DAILY_FOLDER
-
-        COVIDScrapper.__init__(self, url, country="Scotland", daily_folder=daily_folder)
-
-    def extract_table(self):
-        """Load data table from web page
-        """
-        req_dfs = pd.read_html(
-            self.req.content, flavor='lxml'
-        )
-
-        if not req_dfs:
-            raise Exception("Could not find data table in webpage")
-
-        self.df = req_dfs[0]
-
-        self.df.rename(columns={
-            "Health board": "authority",
-            "Positive cases": "cases"
-        }, inplace=True)
-        logger.info("cases:\n", self.df)
-
-    def extract_datetime(self):
-        """Get datetime of dataset
-        """
-        # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'ast updated: (\d{1,2}pm on \d{1,2} \w+ \d{4})\.')
-        dt_from_re = re_dt.findall(self.req.text)
-
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
-
-        dt_from_re = dt_from_re[0]
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
-        self.dt = dt_from_re
-
-    def post_processing(self):
-
-        self.df.sort_values(by="cases", inplace=True)
-
-
-
-class SARSCOV2Wales(COVIDScrapper):
-    def __init__(self, url=None, daily_folder=None):
-        if url is None:
-            url = WALES_REPORT_URL
-
-        if daily_folder is None:
-            daily_folder = WALES_DAILY_FOLDER
-
-        COVIDScrapper.__init__(self, url, country="Wales", daily_folder=daily_folder)
-
-    def extract_table(self):
-        """Load data table from web page
-        """
-        req_dfs = pd.read_html(
-            self.req.content, flavor='lxml'
-        )
-
-        if not req_dfs:
-            raise Exception("Could not find data table in webpage")
-
-        self.df = req_dfs[0]
-
-        self.df.columns = ["authority", "previous_day_cases", "new_cases", "cases"]
-        self.df = self.df[1:]
-        logger.info("cases:\n", self.df)
-
-    def extract_datetime(self):
-        """Get datetime of dataset
-        """
-        # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'Updated: (.*)&nbsp;(.*)&nbsp;(.*)</em></p>')
-        dt_from_re = re_dt.findall(self.req.text)
-
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
-
-        dt_from_re = dt_from_re[0]
-        dt_from_re = " ".join(dt_from_re)
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
-        self.dt = dt_from_re
-
-    def post_processing(self):
-
-        self.df.sort_values(by="cases", inplace=True)
-
-
 
 if __name__ == "__main__":
 
+    column_converter = {
+        "authority": "nuts_3"
+    }
 
+    daily_files = retrieve_files(ENGLAND_DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(ENGLAND_DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter
+        )
+        file_transformation.workflow()
 
     cov_england = SARSCOV2England()
     cov_england.workflow()
