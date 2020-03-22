@@ -7,7 +7,8 @@ import pandas as pd
 import requests
 from lxml import etree, html
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.fr")
@@ -41,21 +42,21 @@ class SARSCOV2FR(COVIDScrapper):
             ))
         ).astype(int)
 
-        total = self.df.loc[
-            (
-                self.df["Région de notification"] == "Total Outre Mer"
-            ) | (
-                self.df["Région de notification"] == "Total Métropole"
-            )
-        ]["Cas confirmés"].sum()
+        # total = self.df.loc[
+        #     (
+        #         self.df["Région de notification"] == "Total Outre Mer"
+        #     ) | (
+        #         self.df["Région de notification"] == "Total Métropole"
+        #     )
+        # ]["Cas confirmés"].sum()
 
-        self.df = self.df.append(
-            pd.DataFrame(
-                [["sum", total]], columns=[
-                    "Région de notification", "Cas confirmés"
-                ]
-            )
-        )
+        # self.df = self.df.append(
+        #     pd.DataFrame(
+        #         [["sum", total]], columns=[
+        #             "Région de notification", "Cas confirmés"
+        #         ]
+        #     )
+        # )
 
         logger.info("records cases:\n", self.df)
 
@@ -79,7 +80,7 @@ class SARSCOV2FR(COVIDScrapper):
 
         self.df.rename(
             columns={
-                "Région de notification": "authority",
+                "Région de notification": "nuts_2",
                 "Cas confirmés": "cases"
             },
             inplace=True
@@ -90,9 +91,27 @@ class SARSCOV2FR(COVIDScrapper):
         self.df.replace("Total Métropole", "Metropolis", inplace=True)
 
 
-
-
 if __name__ == "__main__":
+
+    column_converter = {
+        "authority": "nuts_2"
+    }
+    drop_rows = {
+        "authority": "sum"
+    }
+
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_fr = SARSCOV2FR()
     cov_fr.workflow()
 
