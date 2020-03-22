@@ -1,17 +1,17 @@
-import argparse
+import click
+import io
 import logging
 import os
-import io
 import re
 
 import dateutil
+import lxml
 import pandas as pd
 import requests
 from lxml import etree, html
-import lxml
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
-
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.it")
@@ -40,8 +40,8 @@ class SARSCOV2IT(COVIDScrapper):
         self.dt = dateutil.parser.parse(self.df.data.unique()[0])
 
         select_cols = {
-            "denominazione_regione": "region",
-            "denominazione_provincia": "province",
+            "denominazione_regione": "nuts_2",
+            "denominazione_provincia": "nuts_3",
             "totale_casi": "cases"
         }
         self.df = self.df[list(select_cols.keys())]
@@ -57,7 +57,7 @@ class SARSCOV2IT(COVIDScrapper):
         self.df = self.df.append(
             pd.DataFrame(
                 [[self.country, "sum", "", total, self.datetime]],
-                columns=["country", "region", "province", "cases", "datetime"]
+                columns=["country", "nuts_2", "nuts_3", "cases", "datetime"]
             )
         )
 
@@ -84,8 +84,8 @@ class SARSCOV2ITFULL(COVIDScrapper):
 
         select_cols = {
             "data": "datetime",
-            "denominazione_regione": "region",
-            "denominazione_provincia": "province",
+            "denominazione_regione": "nuts_2",
+            "denominazione_provincia": "nuts_3",
             "totale_casi": "cases"
         }
         self.df = self.df[list(select_cols.keys())]
@@ -103,7 +103,7 @@ class SARSCOV2ITFULL(COVIDScrapper):
         df_copy = df_copy.append(
             pd.DataFrame(
                 [[self.country, "sum", "", total, dt]],
-                columns=["country", "region", "province", "cases", "datetime"]
+                columns=["country", "nuts_2", "nuts_3", "cases", "datetime"]
             )
         )
         return df_copy
@@ -137,27 +137,10 @@ class SARSCOV2ITFULL(COVIDScrapper):
         self.save_daily()
 
 
-if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser(description='Workflow Control for IT')
-    parser.add_argument(
-        "-f", "--full",
-        help="Download cases in IT for all dates",
-        dest="full"
-    )
-
-    args = parser.parse_args()
-    download_full = args.full
-    if not download_full:
-        download_full = False
-    elif download_full.lower() == "true":
-        download_full = True
-    elif download_full.lower() == "false":
-        download_full = False
-    else:
-        raise Exception("-f flag should be either true or false!")
-
-    if download_full:
+@click.command()
+@click.option('-f', '--full', flag_value='full', default=False, help='Use to download and process cases for all dataes.')
+def download(full):
+    if full:
         logger.info("Download full data")
         cov_it_full = SARSCOV2ITFULL()
         cov_it_full.workflow()
@@ -165,7 +148,7 @@ if __name__ == "__main__":
     cov_it = SARSCOV2IT()
     cov_it.workflow()
 
-    print(cov_it.df)
+    logger.info(cov_it.df)
     if cov_it.df.empty:
         raise Exception("Empty data for IT data")
 
@@ -175,5 +158,10 @@ if __name__ == "__main__":
         country="IT"
     )
     da.workflow()
+
+
+if __name__ == "__main__":
+
+    download()
 
     print("End of Game")
