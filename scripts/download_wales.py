@@ -9,7 +9,7 @@ import requests
 from lxml import etree, html
 from utils import get_response as _get_response
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator, DailyTransformation, retrieve_files
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.wales")
@@ -47,7 +47,7 @@ class SARSCOV2Wales(COVIDScrapper):
 
         self.df = req_dfs[0]
 
-        self.df.columns = ["authority", "previous_day_cases", "new_cases", "cases"]
+        self.df.columns = ["nuts_3", "new_cases", "cases"]
         self.df = self.df[1:]
         logger.info("cases:\n", self.df)
 
@@ -55,7 +55,7 @@ class SARSCOV2Wales(COVIDScrapper):
         """Get datetime of dataset
         """
         # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'Updated: (.* \d{4})</em></p>')
+        re_dt = re.compile(r'Updated: (.* \d{4})</em>')
         dt_from_re = re_dt.findall(self.req.text)
         re_hour = re.compile(r"This statement will be updated daily at (\d{1,2}\w+)")
         update_hour = re_hour.findall(self.req.text)
@@ -72,14 +72,36 @@ class SARSCOV2Wales(COVIDScrapper):
 
         self.df.sort_values(by="cases", inplace=True)
 
+        self.df.drop(
+            self.df.loc[
+                self.df['nuts_3'] == 'TOTAL'
+            ].index,
+            inplace=True
+        )
+
 
 
 if __name__ == "__main__":
 
+    column_converter = {
+        "authority": "nuts_3"
+    }
+
+    daily_files = retrieve_files(WALES_DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(WALES_DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter
+        )
+        file_transformation.workflow()
+
     cov_wales = SARSCOV2Wales()
     cov_wales.workflow()
 
-    print(cov_wales.df)
+    logger.info(cov_wales.df)
 
     da_wales = DailyAggregator(
         base_folder="dataset",
@@ -87,8 +109,5 @@ if __name__ == "__main__":
         country="Wales"
     )
     da_wales.workflow()
-
-
-
 
     print("End of Game")
