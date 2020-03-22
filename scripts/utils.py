@@ -19,6 +19,7 @@ logger = logging.getLogger("covid-eu-data.util")
 
 _COLUMNS_ORDER = [
     "country", "region", "authority", "state", "county", "city", "province",
+    "nuts_1", "nuts_2", "nuts_3",
     "cases", "cases_lower", "cases_upper", "cases_raw",
     "population", "cases/100k pop.", "percent",
     "recovered", "deaths",
@@ -230,6 +231,82 @@ class DailyAggregator():
         """
         self.aggregate_daily()
         self.cache()
+
+
+class DailyTransformation():
+    def __init__(self, file_path, column_converter=None, drop_rows=None):
+        """
+        DailyTransformation is a legacy data transformation tool.
+
+        :param file_path: destination of the aggregated file
+        :type file_path: str, optional
+        :param column_converter: dict used to rename columns
+        :type column_converter: dict
+        :param drop_row: dict used to rename columns
+        :type drop_row: dict
+        """
+        if column_converter is None:
+            column_converter = {}
+        if drop_rows is None:
+            drop_rows = {}
+
+        self.drop_rows = drop_rows
+        self.column_converter = column_converter
+        self.file_path = file_path
+
+    def transform_daily(self):
+        """
+        aggregate_daily aggretates the daily updates into one dataframe
+        """
+
+        self.df = pd.read_csv(self.file_path)
+
+        for idx, val in self.drop_rows.items():
+            if idx in self.df.columns:
+                self.df.drop(
+                    self.df.loc[
+                        self.df[idx] == val
+                    ].index,
+                    inplace=True
+                )
+
+        self.df.rename(
+            columns=self.column_converter,
+            inplace=True
+        )
+
+
+    def cache(self):
+        """
+        cache saves the dataframe as a csv file
+        """
+        self.df.to_csv(
+            self.file_path,
+            index=False
+        )
+
+    def workflow(self):
+        """
+        workflow connects the pipes
+        """
+        self.transform_daily()
+        self.cache()
+
+
+def retrieve_files(daily_folder, filetype=None):
+        """retrieve a list of files
+        """
+        if filetype is None:
+            filetype = 'csv'
+
+        files = os.listdir(daily_folder)
+        if files:
+            files = [
+                i for i in files
+                if (not i.startswith(".")) and (i.endswith(filetype))
+            ]
+
+        return files
 
 
 def random_user_agent():
