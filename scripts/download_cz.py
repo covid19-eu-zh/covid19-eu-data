@@ -70,11 +70,11 @@ class SARSCOV2CZ(COVIDScrapper):
 
         doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
         el = doc.xpath(
-            './/div[@class="column small-12 medium-12 large-12 mb-15"]/div[@class="legend legend--inverse mt-15"]'
+            './/div[@class="legend legend--inverse mt-15"]/text()'
         )
         if el:
             text = "\n".join(
-                el[0].xpath('.//text()')
+                el
             )
         # Poslední aktualizace pozitivních nálezů byla provedena ke dni: 20.\xa03.\xa02020\xa0v\xa017.55h\n
         re_dt = re.compile(r': (.*)\xa0v\xa0(.*)h\n')
