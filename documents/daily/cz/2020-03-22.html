@@ -9,7 +9,7 @@
   únavou."/>
   <meta name="robots" content="index,follow"/>
   <title>COVID-19 | Onemocnění aktuálně od MZČR</title>
-        <link rel="stylesheet" href="/build/app.9a3042e2.css">
+        <link rel="stylesheet" href="/build/app.01e9f408.css">
   
   
 
@@ -127,14 +127,14 @@
     </header>
   
     <div class="row row--large grid__box">
-    <div class="column small-12 medium-12 large-12">
-      <div class="row row--large" data-equalizer data-equalize-on="medium">
-        <div class="large-8 medium-6 small-12">
+    <div class="columns small-12 medium-12 large-12">
+      <div class="row row--large pl-0 pr-0" data-equalizer data-equalize-on="medium">
+        <div class="large-8 medium-6 small-12 columns">
           <h2>COVID-19: Aktuální počty onemocnění koronavirem v&nbsp;ČR</h2>
         </div>
-        <div class="large-4 medium-6 small-12 text--right">
+        <div class="large-4 medium-6 small-12 columns text-right-medium-up">
           <p id="last-modified-datetime">
-            Poslední aktualizace: 22.&nbsp;3.&nbsp;2020&nbsp;v&nbsp;17.45h
+            Poslední aktualizace: 22.&nbsp;3.&nbsp;2020&nbsp;v&nbsp;20.40h
           </p>
         </div>
         <div class="large-12 medium-12 small-12 columns mt-20">
@@ -152,31 +152,38 @@
       </div>
     </div>
 
-    <div class="column small-12 medium-12 large-12">
-      <div class="row row--large" data-equalizer data-equalize-on="medium">
-        <div class="large-4 medium-6 small-12 columns mt-20">
-          <div class="background--light-gray pa-20 border--radius-rounded" data-equalizer-watch>
-            <p class="mb-5 text--center">Celkový počet provedených testů</p>
+    <div class="columns small-12 medium-12 large-12">
+      <div class="row row--large pl-0 pr-0" data-equalizer data-equalize-on="medium">
+        <div class="large-3 medium-6 small-12 columns mt-20">
+          <div class="background--blue pa-20 border--radius-rounded" data-equalizer-watch>
+            <p class="mb-5 text--center text--white">Celkový počet provedených testů</p>
             <p id="count-test"
-               class="h1 text--center mt-5 mb-0 text--body-text-color">15 584</p>
+               class="h1 text--center text--white mt-5 mb-0">15 584</p>
           </div>
         </div>
-        <div class="large-4 medium-6 small-12 columns mt-20">
+        <div class="large-3 medium-6 small-12 columns mt-20">
           <div class="background--primary text--white pa-20 border--radius-rounded" data-equalizer-watch>
-            <p class="mb-5 text--center">Celkový počet osob s&nbsp;prokázanou nákazou COVID-19 <strong>k&nbsp;22.&nbsp;3.&nbsp;2020&nbsp;v&nbsp;17.45h</strong></p>
+            <p class="mb-5 text--center">Celkový počet osob s&nbsp;prokázanou nákazou COVID-19 <strong>k&nbsp;22.&nbsp;3.&nbsp;2020&nbsp;v&nbsp;20.40h</strong></p>
             <p id="count-sick"
                class="h1 text--center text--white mt-5 mb-0">1 120</p>
           </div>
         </div>
-        <div class="large-4 medium-6 small-12 columns mt-20">
+        <div class="large-3 medium-6 small-12 columns mt-20">
           <div class="background--green pa-20 border--radius-rounded" data-equalizer-watch>
-            <p class="mb-5 text--center">Celkový počet vyléčených</p>
+            <p class="mb-5 text--body-text-color text--center">Celkový počet vyléčených</p>
             <p id="count-recover"
-               class="h1 text--center mt-5 mb-0 text--body-text-color">6</p>
+               class="h1 text--center text--body-text-color mt-5 mb-0">6</p>
           </div>
         </div>
-              </div>
-      <div class="row row--large" data-equalizer data-equalize-on="medium">
+        <div class="large-3 medium-6 small-12 columns mt-20">
+          <div class="background--light-gray pa-20 border--radius-rounded" data-equalizer-watch>
+            <p class="mb-5 text--body-text-color text--center">Celkový počet úmrtí</p>
+            <p id="count-dead"
+               class="h1 text--center text--body-text-color mt-5 mb-0">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="row row--large pl-0 pr-0" data-equalizer data-equalize-on="medium">
         <div class="large-6 medium-12 small-12 columns mt-20">
           <div class="background--light-gray pa-20 border--radius-rounded" data-equalizer-watch>
             <p class="h3 mt-5 mb-5 text--center">
@@ -198,21 +205,20 @@
       </div>
     </div>
 
-    <div class="column small-12 medium-12 large-12 mt-40">
-
+    <div class="columns small-12 medium-12 large-12 mt-40">
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <p class="mb-0 h3">Sekce 1</p>
           <h2 class="h1 mt-0">Základní přehled</h2>
           <h3 class="h2">Celkový (kumulativní) počet osob s prokázanou nákazou COVID-19 dle krajských hygienických stanic včetně laboratoří</h3>
         </div>
-        <div class="column small-12 medium-12 large-9 mb-15">
+        <div class="columns small-12 medium-12 large-9 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-cummulative-total-persons">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-3 mb-15">
+        <div class="columns small-12 medium-12 large-3 mb-15">
           <div class="legend">
             Legenda: Celkový počet osob s pozitivním nálezem COVID-19 dle hlášení KHS a dle pozitivních nálezů laboratoří,
             které jsou určeny pro další šetření.
@@ -228,16 +234,16 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h3 class="h2">Denní přehled počtu osob s prokázanou nákazou COVID-19 dle krajských hygienických stanic včetně laboratoří</h3>
         </div>
-        <div class="column small-12 medium-12 large-9 mb-15">
+        <div class="columns small-12 medium-12 large-9 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-total-persons">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-3 mb-15">
+        <div class="columns small-12 medium-12 large-3 mb-15">
           <div class="legend">
             Legenda: Denní přehled počtu osob s pozitivním nálezem COVID-19 dle hlášení KHS a dle pozitivních nálezů
             laboratoří, které jsou určeny pro další šetření.
@@ -253,16 +259,16 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h3 class="h2">Celkový (kumulativní) počet provedených testů</h3>
         </div>
-        <div class="column small-12 medium-12 large-10 mb-15">
+        <div class="columns small-12 medium-12 large-10 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-cummulative-total-tests">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-2 mb-15">
+        <div class="columns small-12 medium-12 large-2 mb-15">
           <div class="legend">
             Legenda: Celkový počet provedených testů na COVID-19 podle hlášení laboratoří.
           </div>
@@ -275,7 +281,7 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h3 class="h2">Počet eNeschopenek vystavených z důvodu karantény</h3>
           <div class="background--light-gray pa-20 border--radius-rounded" data-equalizer-watch>
             <p class="h3 mt-5 mb-5 text--center">
@@ -290,11 +296,11 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h3 class="h2">Přehledové tabulky po dnech
             (počet nakažených osob, počet provedených testů)</h3>
         </div>
-        <div class="column small-12 medium-6 large-6 mb-15">
+        <div class="columns small-12 medium-6 large-6 mb-15">
           <div class="table table--header-blue static-table--values-right">
             <table id="js-cummulative-total-tests-table" width="100%"></table>
           </div>
@@ -302,14 +308,12 @@
             Poslední aktualizace počtu provedených testů v&nbsp;této tabulce byla provedena k&nbsp;půlnoci předchozího dne.
           </div>
         </div>
-        <div class="column small-12 medium-6 large-6 mb-15">
+        <div class="columns small-12 medium-6 large-6 mb-15">
           <div class="table table--header-primary static-table--values-right">
             <table id="js-cummulative-total-positive-table" width="100%"></table>
           </div>
           <div class="legend legend--inverse mt-15">
             Poslední aktualizace počtu pozitivních nálezů v&nbsp;této tabulce byla provedena k&nbsp;půlnoci předchozího dne.
-            <br><br>
-            Celkový počet osob s&nbsp;prokázanou nákazou COVID-19 k&nbsp;aktuálnímu dni a&nbsp;hodině je dostupný v&nbsp;souhrnném panelu výše.
           </div>
         </div>
         <div id="js-cummulative-total-positive-table-data" class="visually-hidden"
@@ -319,14 +323,14 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <hr class="large mt-40 mb-40">
           <p class="mb-0 h3">Sekce 2</p>
           <h2 class="h1 mt-0">Přehled osob s prokázanou nákazou COVID-19 dle hlášení krajských hygienických stanic</h2>
         </div>
 
-        <div class="column small-12 medium-12 large-12 mb-30">
-          <div class="row row--large" data-equalizer data-equalize-on="medium">
+        <div class="columns small-12 medium-12 large-12 mb-30">
+          <div class="row row--large pl-0 pr-0" data-equalizer data-equalize-on="medium">
             <div class="large-6 medium-12 small-12 columns mt-20">
               <div class="background--primary text--white pa-20 border--radius-rounded" data-equalizer-watch>
                 <p class="mb-5 text--center">Celkový počet osob s prokázanou nákazou COVID-19 dle KHS</p>
@@ -346,17 +350,17 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h3 class="h2">Celkový (kumulativní) počet osob s prokázanou nákazou COVID-19 dle KHS</h3>
           <p><strong>Přehled zobrazuje souhrnné počty osob s pozitivní nákazou COVID-19 podle verifikovaných záznamů KHS, nikoli všech pozitivních nálezů včetně laboratoří.</strong></p>
         </div>
-        <div class="column small-12 medium-12 large-9 mb-15">
+        <div class="columns small-12 medium-12 large-9 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-cummulative-total-positive">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-3 mb-15">
+        <div class="columns small-12 medium-12 large-3 mb-15">
           <div class="legend">
             Legenda: Celkový počet osob s pozitivním nálezem COVID-19 dle hlášení krajských hygienických stanic (KHS).
             Hlášení KHS uvádí nálezy po provedené verifikaci, která vyžaduje jistý čas.
@@ -373,11 +377,11 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h2>Místo a země nákazy osob s COVID-19</h2>
           <p><strong>Přehled zobrazuje souhrnné počty osob s pozitivní nákazou COVID-19 podle verifikovaných záznamů KHS, nikoli všech pozitivních nálezů včetně laboratoří.</strong></p>
         </div>
-        <div class="column small-12 medium-12 large-6 mb-15">
+        <div class="columns small-12 medium-12 large-6 mb-15">
           <div class="nvd3__overflow nvd3__overflow--small-overflow nvd3__inactive-legend"
                id="js-total-countries-overview">
             <svg></svg>
@@ -385,7 +389,7 @@
         </div>
         <div id="js-total-countries-overview-data" class="visually-hidden"
              data-piechart="[{&quot;label&quot;:&quot;nezji\u0161t\u011bno&quot;,&quot;value&quot;:1,&quot;color&quot;:&quot;#A9A9A9&quot;},{&quot;label&quot;:&quot;zahrani\u010d\u00ed&quot;,&quot;value&quot;:251,&quot;color&quot;:&quot;#d31145&quot;},{&quot;label&quot;:&quot;\u010cR&quot;,&quot;value&quot;:512,&quot;color&quot;:&quot;#141d59&quot;}]"></div>
-        <div class="column small-12 medium-12 large-6 mb-15">
+        <div class="columns small-12 medium-12 large-6 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-total-foreign-countries">
             <svg></svg>
@@ -402,20 +406,20 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h2>Přehled prokázané nákazy COVID-19 podle regionu</h2>
           <p><strong>Přehled zobrazuje souhrnné počty osob s pozitivní nákazou COVID-19 v regionech podle verifikovaných záznamů KHS, nikoli všech pozitivních nálezů včetně laboratoří.</strong></p>
         </div>
-        <div class="column small-12 medium-12 large-5 mb-15">
+        <div class="columns small-12 medium-12 large-5 mb-15">
           <div id="js-region-map" class="czech-map czech-map--full-width"></div>
         </div>
-        <div class="column small-12 medium-12 large-7 mb-15">
+        <div class="columns small-12 medium-12 large-7 mb-15">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow" id="js-total-regions">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <div class="legend">
             Legenda: Celkové počty osob s prokázanou diagnózou COVID-19 v jednotlivých krajích ČR dle hlášení KHS.
           </div>
@@ -430,13 +434,13 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <h2>Počet osob s COVID-19 dle pohlaví a věkové skupiny za celou dobu trvání epidemie</h2>
           <p><strong>Přehled zobrazuje souhrnné počty osob s pozitivní nákazou COVID-19 podle verifikovaných záznamů KHS, nikoli všech pozitivních nálezů včetně laboratoří.</strong></p>
         </div>
       </div>
 
-      <div class="row row--large" data-equalizer data-equalize-on="medium">
+      <div class="row row--large pl-0 pr-0" data-equalizer data-equalize-on="medium">
         <div class="large-6 medium-12 small-12 columns mt-20">
           <div class="background--primary pa-20 border--radius-rounded" data-equalizer-watch>
             <p class="mb-5 text--center text--white">Ženy</p>
@@ -452,13 +456,13 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-8 mb-15 mt-30">
+        <div class="columns small-12 medium-12 large-8 mb-15 mt-30">
           <p class="hide-element-medium-up mb-0">Graf posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div class="nvd3__overflow nvd3__inactive-legend" id="js-total-sex-age">
             <svg></svg>
           </div>
         </div>
-        <div class="column small-12 medium-12 large-4 mb-15">
+        <div class="columns small-12 medium-12 large-4 mb-15">
           <div class="legend mt-30">
             Legenda: Celkové počty osob s prokázanou diagnózou COVID-19 v jednotlivých krajích ČR dle hlášení KHS.
           </div>
@@ -471,14 +475,14 @@
       </div>
 
       <div class="row row--large pl-0 pr-0">
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <hr class="large mt-40 mb-40">
           <p class="mb-0 h3">Sekce 3</p>
           <h2 class="h1 mt-0">Přehled nákupů a distribuce ochranného materiálu</h2>
           <h3 class="h2">Přehled materiálu podle krajů</h3>
           <p class="h3">Počet kusů ochranného materiálu, který byl distribuován do jednotlivých krajů v ČR. Aktualizace 1x denně.</p>
         </div>
-        <div class="column small-12 medium-12 large-12 mb-15">
+        <div class="columns small-12 medium-12 large-12 mb-15">
           <p class="hide-element-medium-up mb-0">Tabulku posuňte pohybem do stran <i class="fa fa-arrows-alt-h"></i></p>
           <div
               class="static-table static-table--highlighted-corner static-table--highlighted-header static-table--reset-zebra static-table--show-borders static-table--values-right">
@@ -730,7 +734,7 @@
 
         <script src="/build/runtime.1ba6bf05.js"></script><script src="/build/0.c90fd7d1.js"></script><script src="/build/1.086acf73.js"></script><script src="/build/app.0dff5e6c.js"></script>
   
-  <script src="/build/covid-19/index.b5a60fcb.js"></script>
+  <script src="/build/covid-19/index.ba5a492b.js"></script>
 </main>
 
 <footer class="footer">
