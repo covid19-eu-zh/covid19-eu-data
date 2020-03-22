@@ -1,4 +1,4 @@
-country,state,cases,deaths,datetime
+country,nuts_1,cases,deaths,datetime
 DE,Thüringen,10,0,2020-03-11T15:00:00
 DE,Saarland,14,0,2020-03-11T15:00:00
 DE,Sachsen-Anhalt,15,0,2020-03-11T15:00:00
@@ -15,4 +15,3 @@ DE,Berlin,90,0,2020-03-11T15:00:00
 DE,Baden-Württemberg,277,0,2020-03-11T15:00:00
 DE,Bayern,366,0,2020-03-11T15:00:00
 DE,Nordrhein-Westfalen,484,3,2020-03-11T15:00:00
-DE,sum,1567,3,2020-03-11T15:00:00

@@ -1,4 +1,4 @@
-country,state,cases,deaths,datetime
+country,nuts_1,cases,deaths,datetime
 DE,Thüringen,29,0,2020-03-13T15:00:00
 DE,Mecklenburg-Vorpommern,33,0,2020-03-13T15:00:00
 DE,Saarland,40,0,2020-03-13T15:00:00
@@ -15,4 +15,3 @@ DE,Niedersachsen,230,0,2020-03-13T15:00:00
 DE,Baden-Württemberg,454,1,2020-03-13T15:00:00
 DE,Bayern,558,1,2020-03-13T15:00:00
 DE,Nordrhein-Westfalen,936,3,2020-03-13T15:00:00
-DE,sum,3062,5,2020-03-13T15:00:00

@@ -1,4 +1,4 @@
-country,state,cases,datetime
+country,nuts_1,cases,datetime
 DE,Thüringen,2,2020-03-09T08:00:00
 DE,Bremen,4,2020-03-09T08:00:00
 DE,Saarland,5,2020-03-09T08:00:00
@@ -14,4 +14,3 @@ DE,Berlin,40,2020-03-09T08:00:00
 DE,Baden-Württemberg,199,2020-03-09T08:00:00
 DE,Bayern,256,2020-03-09T08:00:00
 DE,Nordrhein-Westfalen,484,2020-03-09T08:00:00
-DE,sum,1112,2020-03-09T08:00:00

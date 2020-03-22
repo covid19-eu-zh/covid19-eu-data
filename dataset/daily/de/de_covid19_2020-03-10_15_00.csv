@@ -1,4 +1,4 @@
-country,state,cases,deaths,datetime
+country,nuts_1,cases,deaths,datetime
 DE,Bremen,4,0,2020-03-10T15:00:00
 DE,Thüringen,4,0,2020-03-10T15:00:00
 DE,Sachsen-Anhalt,7,0,2020-03-10T15:00:00
@@ -15,4 +15,3 @@ DE,Niedersachsen,49,0,2020-03-10T15:00:00
 DE,Baden-Württemberg,237,0,2020-03-10T15:00:00
 DE,Bayern,314,0,2020-03-10T15:00:00
 DE,Nordrhein-Westfalen,484,2,2020-03-10T15:00:00
-DE,sum,1296,2,2020-03-10T15:00:00

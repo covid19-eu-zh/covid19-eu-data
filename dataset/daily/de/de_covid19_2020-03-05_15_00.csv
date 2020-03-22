@@ -1,4 +1,4 @@
-country,state,cases,datetime
+country,nuts_1,cases,datetime
 DE,Brandenburg,1,2020-03-05T15:00:00
 DE,Saarland,1,2020-03-05T15:00:00
 DE,Sachsen,1,2020-03-05T15:00:00
@@ -14,4 +14,3 @@ DE,Niedersachsen,18,2020-03-05T15:00:00
 DE,Bayern,70,2020-03-05T15:00:00
 DE,Baden-Württemberg,73,2020-03-05T15:00:00
 DE,Nordrhein-Westfalen,181,2020-03-05T15:00:00
-DE,sum,400,2020-03-05T15:00:00

@@ -1,4 +1,4 @@
-country,state,cases,datetime
+country,nuts_1,cases,datetime
 DE,Baden-Württemberg,26,2020-03-03T10:00:00
 DE,Bayern,35,2020-03-03T10:00:00
 DE,Berlin,3,2020-03-03T10:00:00
@@ -13,4 +13,3 @@ DE,Sachsen,1,2020-03-03T10:00:00
 DE,Schleswig-Holstein,2,2020-03-03T10:00:00
 DE,Thüringen,1,2020-03-03T10:00:00
 DE,Repatriierte,2,2020-03-03T10:00:00
-DE,sum,188,2020-03-03T10:00:00
