@@ -1,4 +1,4 @@
-country,authority,cases,datetime
+country,nuts_2,cases,datetime
 FR,Guadeloupe,0,2020-03-12T15:00:00
 FR,Mayotte,0,2020-03-12T15:00:00
 FR,Saint-Barthélémy,1,2020-03-12T15:00:00
@@ -21,4 +21,3 @@ FR,Hauts-de-France,349,2020-03-12T15:00:00
 FR,Ile-de-France,577,2020-03-12T15:00:00
 FR,Grand Est,699,2020-03-12T15:00:00
 FR,Metropolis,2860,2020-03-12T15:00:00
-FR,sum,2876,2020-03-12T15:00:00

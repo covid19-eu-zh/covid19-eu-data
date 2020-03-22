@@ -1,4 +1,4 @@
-country,authority,cases,datetime
+country,nuts_2,cases,datetime
 FR,Saint-Barthélémy,3,2020-03-19T15:00:00
 FR,Saint-Martin,4,2020-03-19T15:00:00
 FR,Mayotte,6,2020-03-19T15:00:00
@@ -21,4 +21,3 @@ FR,Auvergne-Rhône-Alpes,1014,2020-03-19T15:00:00
 FR,Grand Est,2643,2020-03-19T15:00:00
 FR,Ile-de-France,3384,2020-03-19T15:00:00
 FR,Metropolis,10871,2020-03-19T15:00:00
-FR,sum,10995,2020-03-19T15:00:00
