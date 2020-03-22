@@ -49,7 +49,7 @@ EU_ALPHA2 = {'Italy': 'IT',
  'Malta': 'MT',
  'Lithuania': 'LT',
  'Liechtenstein': 'LI',
- 'Total': 'sum'}
+ 'Total': 'Total'}
 
 class SARSCOV2ECDC(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
