@@ -1,4 +1,4 @@
-country,authority,cases,cases/100k pop.,percent,datetime
+country,nuts_3,cases,cases/100k pop.,percent,datetime
 SE,Gotland,2,3.0,0.0,2020-03-17T14:00:00
 SE,Dalarna,4,1.0,0.0,2020-03-17T14:00:00
 SE,Kalmar,7,3.0,1.0,2020-03-17T14:00:00
@@ -20,4 +20,3 @@ SE,Uppsala,43,11.0,4.0,2020-03-17T14:00:00
 SE,Västra Götaland,179,10.0,15.0,2020-03-17T14:00:00
 SE,Skåne,207,15.0,18.0,2020-03-17T14:00:00
 SE,Stockholm,410,17.0,35.0,2020-03-17T14:00:00
-SE,sum,1167,11.0,100.0,2020-03-17T14:00:00
