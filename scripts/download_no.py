@@ -45,7 +45,7 @@ class SARSCOV2NO(COVIDScrapper):
 
         self.df.rename(
             columns={
-                "County": "county",
+                "County": "nuts_3",
                 "Number of positive cases": "cases"
             },
             inplace=True
