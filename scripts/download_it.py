@@ -138,7 +138,10 @@ class SARSCOV2ITFULL(COVIDScrapper):
 
 
 @click.command()
-@click.option('-f', '--full', flag_value='full', default=False, help='Use to download and process cases for all dataes.')
+@click.option(
+    '-f', '--full', flag_value='full',
+    default=False, help='Use to download and process cases for all dataes.'
+)
 def download(full):
     if full:
         logger.info("Download full data")
