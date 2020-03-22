@@ -1,17 +1,17 @@
+import io
 import json
 import logging
 import os
-import io
 import re
 
 import dateutil
+import lxml
 import pandas as pd
 import requests
 from lxml import etree, html
-import lxml
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
-
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.cz")
@@ -48,19 +48,19 @@ class SARSCOV2CZ(COVIDScrapper):
         self.df.drop('color', axis=1, inplace=True)
         self.df.rename(
             columns = {
-                "x": "authority",
+                "x": "nuts_3",
                 "y": "cases"
             },
             inplace=True
         )
 
         # add sum
-        total = self.df.cases.sum()
-        self.df = self.df.append(
-            pd.DataFrame(
-                [["sum", total]], columns=["authority", "cases"]
-            )
-        )
+        # total = self.df.cases.sum()
+        # self.df = self.df.append(
+        #     pd.DataFrame(
+        #         [["sum", total]], columns=["nuts_3", "cases"]
+        #     )
+        # )
 
         logger.info("list of cases:\n", self.df)
 
@@ -111,6 +111,23 @@ class SARSCOV2CZ(COVIDScrapper):
 
 
 if __name__ == "__main__":
+    column_converter = {
+        "authority": "nuts_3"
+    }
+    drop_rows = {
+        "authority": "sum"
+    }
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_cz = SARSCOV2CZ()
     cov_cz.workflow()
 
