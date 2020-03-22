@@ -7,7 +7,8 @@ import pandas as pd
 import requests
 from lxml import etree, html
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.se")
@@ -35,7 +36,7 @@ class SARSCOV2SE(COVIDScrapper):
 
         self.df = req_dfs[0].rename(lambda x:x.replace('*', ''), axis='columns') # there is another list, req_dfs[1], contains source of cases
 
-        self.df["authority"] = self.df["Region"].apply(lambda x:x.replace('*',''))
+        self.df["nuts_3"] = self.df["Region"].apply(lambda x:x.replace('*',''))
         self.df["cases"] = self.df["Fall"].apply(lambda x:int(x.replace(' ','')))
         self.df["cases/100k pop."] = self.df["Kumulativ Incidens"].astype(float)
         self.df["percent"] = self.df["Procent"].astype(float)
@@ -63,7 +64,34 @@ class SARSCOV2SE(COVIDScrapper):
         self.df.sort_values(by="cases", inplace=True)
         self.df.replace("Totalt", "sum", inplace=True)
 
+        self.df.drop(
+            self.df.loc[
+                self.df['nuts_3'] == 'sum'
+            ].index,
+            inplace=True
+        )
+
 if __name__ == "__main__":
+
+    column_converter = {
+        "authority": "nuts_3"
+    }
+    drop_rows = {
+        "authority": "sum"
+    }
+
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_se = SARSCOV2SE()
     cov_se.workflow()
 

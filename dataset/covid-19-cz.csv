@@ -1,4 +1,4 @@
-country,authority,cases,datetime
+country,nuts_3,cases,datetime
 CZ,Liberecký kraj,4,2020-03-13T00:00:00
 CZ,Karlovarský kraj,11,2020-03-13T00:00:00
 CZ,Zlínský kraj,18,2020-03-13T00:00:00
@@ -13,7 +13,6 @@ CZ,Středočeský kraj,112,2020-03-13T00:00:00
 CZ,Ústecký kraj,152,2020-03-13T00:00:00
 CZ,Jihočeský kraj,298,2020-03-13T00:00:00
 CZ,Hlavní město Praha,614,2020-03-13T00:00:00
-CZ,sum,1646,2020-03-13T00:00:00
 CZ,Liberecký kraj,8,2020-03-20T17:55:00
 CZ,Kraj Vysočina,9,2020-03-20T17:55:00
 CZ,Královéhradecký kraj,14,2020-03-20T17:55:00
@@ -28,7 +27,6 @@ CZ,Olomoucký kraj,60,2020-03-20T17:55:00
 CZ,Moravskoslezský kraj,74,2020-03-20T17:55:00
 CZ,Středočeský kraj,108,2020-03-20T17:55:00
 CZ,Hlavní město Praha,124,2020-03-20T17:55:00
-CZ,sum,624,2020-03-20T17:55:00
 CZ,Liberecký kraj,9,2020-03-21T08:59:00
 CZ,Kraj Vysočina,9,2020-03-21T08:59:00
 CZ,Královéhradecký kraj,15,2020-03-21T08:59:00
@@ -43,7 +41,6 @@ CZ,Olomoucký kraj,64,2020-03-21T08:59:00
 CZ,Moravskoslezský kraj,76,2020-03-21T08:59:00
 CZ,Středočeský kraj,108,2020-03-21T08:59:00
 CZ,Hlavní město Praha,124,2020-03-21T08:59:00
-CZ,sum,641,2020-03-21T08:59:00
 CZ,Liberecký kraj,9,2020-03-21T12:11:00
 CZ,Kraj Vysočina,9,2020-03-21T12:11:00
 CZ,Královéhradecký kraj,15,2020-03-21T12:11:00
@@ -58,7 +55,6 @@ CZ,Olomoucký kraj,66,2020-03-21T12:11:00
 CZ,Moravskoslezský kraj,77,2020-03-21T12:11:00
 CZ,Středočeský kraj,109,2020-03-21T12:11:00
 CZ,Hlavní město Praha,125,2020-03-21T12:11:00
-CZ,sum,646,2020-03-21T12:11:00
 CZ,Liberecký kraj,9,2020-03-21T17:55:00
 CZ,Kraj Vysočina,9,2020-03-21T17:55:00
 CZ,Královéhradecký kraj,15,2020-03-21T17:55:00
@@ -73,7 +69,6 @@ CZ,Olomoucký kraj,68,2020-03-21T17:55:00
 CZ,Moravskoslezský kraj,79,2020-03-21T17:55:00
 CZ,Středočeský kraj,118,2020-03-21T17:55:00
 CZ,Hlavní město Praha,135,2020-03-21T17:55:00
-CZ,sum,687,2020-03-21T17:55:00
 CZ,Liberecký kraj,9,2020-03-22T09:01:00
 CZ,Kraj Vysočina,9,2020-03-22T09:01:00
 CZ,Královéhradecký kraj,15,2020-03-22T09:01:00
@@ -88,4 +83,3 @@ CZ,Olomoucký kraj,72,2020-03-22T09:01:00
 CZ,Moravskoslezský kraj,79,2020-03-22T09:01:00
 CZ,Středočeský kraj,118,2020-03-22T09:01:00
 CZ,Hlavní město Praha,143,2020-03-22T09:01:00
-CZ,sum,716,2020-03-22T09:01:00

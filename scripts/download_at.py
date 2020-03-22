@@ -2,15 +2,16 @@ import html
 import logging
 import os
 import re
+from functools import reduce
 
 import dateutil
+import lxml
 import pandas as pd
 import requests
 from lxml import etree
-import lxml
-from functools import reduce
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.at")
@@ -42,6 +43,8 @@ class SARSCOV2AT(COVIDScrapper):
     def extract_table(self):
         """Load data table from web page
         """
+
+        geo_loc_key = 'nuts_2'
 
         doc = lxml.html.document_fromstring(self.req.text)
         el = doc.xpath('.//div[@class="infobox"]')
@@ -81,18 +84,18 @@ class SARSCOV2AT(COVIDScrapper):
             raise Exception("Could not find cases_text in webpage")
 
         df_cases = pd.DataFrame(
-            cases, columns=["state", "cases"]
+            cases, columns=[geo_loc_key, "cases"]
         )
 
         df_recovered = pd.DataFrame(
-            recovered, columns=["state", "recovered"]
+            recovered, columns=[geo_loc_key, "recovered"]
         )
         df_deaths = pd.DataFrame(
-            deaths, columns=["deaths", "state"]
+            deaths, columns=["deaths", geo_loc_key]
         )
         self.df = reduce(
             lambda  left,right: pd.merge(
-                left,right,on=['state'], how='outer'
+                left,right,on=[geo_loc_key], how='outer'
             ), [df_cases, df_recovered, df_deaths]
         )
         self.df.fillna(0, inplace=True)
@@ -100,14 +103,14 @@ class SARSCOV2AT(COVIDScrapper):
         self.df["recovered"] = self.df.recovered.astype(int)
         self.df["deaths"] = self.df.deaths.astype(int)
 
-        total = self.df[["cases", "recovered", "deaths"]].sum()
-        total["state"] = "sum"
+        # total = self.df[["cases", "recovered", "deaths"]].sum()
+        # total["state"] = "sum"
 
-        self.df = self.df.append(
-            pd.DataFrame(
-                total
-            ).T
-        )
+        # self.df = self.df.append(
+        #     pd.DataFrame(
+        #         total
+        #     ).T
+        # )
 
         logger.info("cases:\n", self.df)
 
@@ -140,6 +143,26 @@ class SARSCOV2AT(COVIDScrapper):
 
 
 if __name__ == "__main__":
+
+    column_converter = {
+        "state": "nuts_2"
+    }
+    drop_rows = {
+        "state": "sum"
+    }
+
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_at = SARSCOV2AT()
     cov_at.workflow()
 

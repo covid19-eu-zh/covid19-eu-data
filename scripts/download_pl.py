@@ -9,7 +9,8 @@ import pandas as pd
 import requests
 from lxml import etree, html
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.pl")
@@ -47,13 +48,20 @@ class SARSCOV2PL(COVIDScrapper):
         self.df = df # Województwo; Liczba; Liczba zgonów; Id
         self.df.rename(
             columns = {
-                "Województwo": "province",
+                "Województwo": "nuts_2",
                 "Liczba": "cases",
                 "Liczba zgonów": "deaths"
             },
             inplace=True
         )
         self.df.replace("Cała Polska", "sum", inplace=True)
+
+        self.df.drop(
+            self.df.loc[
+                self.df['nuts_2'] == 'sum'
+            ].index,
+            inplace=True
+        )
 
         logger.info("cases:\n", self.df)
 
@@ -92,6 +100,27 @@ class SARSCOV2PL(COVIDScrapper):
 
 
 if __name__ == "__main__":
+
+
+    column_converter = {
+        "province": "nuts_2"
+    }
+    drop_rows = {
+        "province": "sum"
+    }
+
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_pl = SARSCOV2PL()
     cov_pl.workflow()
 

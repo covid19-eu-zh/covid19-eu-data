@@ -1,4 +1,4 @@
-country,state,cases,recovered,deaths,datetime
+country,nuts_2,cases,recovered,deaths,datetime
 AT,Burgenland,11,0,0,2020-03-17T15:00:00
 AT,Kärnten,27,0,0,2020-03-17T15:00:00
 AT,Salzburg,66,0,0,2020-03-17T15:00:00
@@ -8,4 +8,3 @@ AT,Steiermark,171,0,0,2020-03-17T15:00:00
 AT,Niederösterreich,216,2,0,2020-03-17T15:00:00
 AT,Oberösterreich,248,0,0,2020-03-17T15:00:00
 AT,Tirol,328,2,0,2020-03-17T15:00:00
-AT,sum,1332,9,0,2020-03-17T15:00:00

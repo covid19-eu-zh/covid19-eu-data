@@ -7,7 +7,8 @@ import pandas as pd
 import requests
 from lxml import etree, html
 
-from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator
+from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
+                   DailyTransformation, retrieve_files)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.no")
@@ -52,15 +53,15 @@ class SARSCOV2NO(COVIDScrapper):
 
         self.df["cases"] = self.df.cases.astype(int)
 
-        total = self.df["cases"].sum()
+        # total = self.df["cases"].sum()
 
-        self.df = self.df.append(
-            pd.DataFrame(
-                [["sum", total]], columns=[
-                    "county", "cases"
-                ]
-            )
-        )
+        # self.df = self.df.append(
+        #     pd.DataFrame(
+        #         [["sum", total]], columns=[
+        #             "county", "cases"
+        #         ]
+        #     )
+        # )
 
         logger.info("records cases:\n", self.df)
 
@@ -96,6 +97,25 @@ class SARSCOV2NO(COVIDScrapper):
 
 
 if __name__ == "__main__":
+    column_converter = {
+        "county": "nuts_3"
+    }
+    drop_rows = {
+        "county": "sum"
+    }
+
+    daily_files = retrieve_files(DAILY_FOLDER)
+    daily_files.sort()
+
+    for file in daily_files:
+        file_path = os.path.join(DAILY_FOLDER, file)
+        file_transformation = DailyTransformation(
+            file_path=file_path,
+            column_converter=column_converter,
+            drop_rows=drop_rows
+        )
+        file_transformation.workflow()
+
     cov_no = SARSCOV2NO()
     cov_no.workflow()
 
