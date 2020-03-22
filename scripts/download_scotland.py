@@ -47,7 +47,7 @@ class SARSCOV2Scotland(COVIDScrapper):
         self.df = req_dfs[0]
 
         self.df.rename(columns={
-            "Health board": "nuts_2",
+            "Health board": "nuts_3",
             "Positive cases": "cases"
         }, inplace=True)
         logger.info("cases:\n", self.df)
@@ -74,7 +74,7 @@ class SARSCOV2Scotland(COVIDScrapper):
 if __name__ == "__main__":
 
     column_converter = {
-        "authority": "nuts_2"
+        "nuts_2": "nuts_3"
     }
 
     daily_files = retrieve_files(SCOTLAND_DAILY_FOLDER)
