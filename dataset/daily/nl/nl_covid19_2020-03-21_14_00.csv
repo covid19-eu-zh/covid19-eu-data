@@ -1,4 +1,4 @@
-country,city,cases,population,cases/100k pop.,datetime
+country,lau,cases,population,cases/100k pop.,datetime
 NL,Lisse,0,22800,0.0,2020-03-21T14:00:00
 NL,Veendam,0,27491,0.0,2020-03-21T14:00:00
 NL,Vaals,0,10092,0.0,2020-03-21T14:00:00
@@ -354,4 +354,3 @@ NL,Utrecht,121,352866,34.3,2020-03-21T14:00:00
 NL,Breda,133,183873,72.3,2020-03-21T14:00:00
 NL,Tilburg,154,217259,70.9,2020-03-21T14:00:00
 NL,Amsterdam,161,862965,18.7,2020-03-21T14:00:00
-NL,sum,3494,17282163,0.00,2020-03-21T14:00:00

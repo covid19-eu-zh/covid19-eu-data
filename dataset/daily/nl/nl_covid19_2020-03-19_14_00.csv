@@ -1,4 +1,4 @@
-country,city,cases,population,cases/100k pop.,datetime
+country,lau,cases,population,cases/100k pop.,datetime
 NL,Lisse,0,22800,0.0,2020-03-19T14:00:00
 NL,Hattem,0,12173,0.0,2020-03-19T14:00:00
 NL,Hardenberg,0,60574,0.0,2020-03-19T14:00:00
@@ -354,4 +354,3 @@ NL,Utrecht,83,352866,23.5,2020-03-19T14:00:00
 NL,Amsterdam,85,862965,9.8,2020-03-19T14:00:00
 NL,Breda,113,183873,61.5,2020-03-19T14:00:00
 NL,Tilburg,119,217259,54.8,2020-03-19T14:00:00
-NL,sum,2371,17282163,0.00,2020-03-19T14:00:00
