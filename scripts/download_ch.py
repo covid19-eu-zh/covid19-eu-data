@@ -45,7 +45,16 @@ class SARSCOV2CH(COVIDScrapper):
 
         self.df = self.df[[self.date_index]]
         self.df.rename(columns={self.df.columns[0]: 'cases'}, inplace=True)
-        self.df['region'] = self.df.index
+        self.df['nuts_2'] = self.df.index
+
+        self.df['cases'] = self.df.cases.apply(lambda x: int(x) if not pd.isnull(x) else 0)
+        self.df.sort_values(by='cases', inplace=True)
+        self.df.drop(
+            self.df.loc[
+                self.df['nuts_2'] == 'CH'
+            ].index,
+            inplace=True
+        )
 
 
 @click.command()
