@@ -1,4 +1,4 @@
-country,province,cases,deaths,datetime
+country,nuts_2,cases,deaths,datetime
 PL,podlaskie,2,0,2020-03-18T00:00:00
 PL,lubuskie,3,0,2020-03-18T00:00:00
 PL,świętokrzyskie,4,0,2020-03-18T00:00:00
@@ -15,7 +15,6 @@ PL,śląskie,30,0,2020-03-18T00:00:00
 PL,dolnośląskie,40,2,2020-03-18T00:00:00
 PL,łódzkie,42,0,2020-03-18T00:00:00
 PL,mazowieckie,66,0,2020-03-18T00:00:00
-PL,sum,287,5,2020-03-18T00:00:00
 PL,podlaskie,1,0,2020-03-19T00:00:00
 PL,świętokrzyskie,5,0,2020-03-19T00:00:00
 PL,małopolskie,7,0,2020-03-19T00:00:00
@@ -32,7 +31,6 @@ PL,śląskie,42,0,2020-03-19T00:00:00
 PL,łódzkie,48,0,2020-03-19T00:00:00
 PL,dolnośląskie,53,2,2020-03-19T00:00:00
 PL,mazowieckie,82,0,2020-03-19T00:00:00
-PL,sum,355,5,2020-03-19T00:00:00
 PL,podlaskie,3,0,2020-03-20T00:00:00
 PL,świętokrzyskie,6,0,2020-03-20T00:00:00
 PL,zachodniopomorskie,9,0,2020-03-20T00:00:00
@@ -49,7 +47,6 @@ PL,śląskie,46,0,2020-03-20T00:00:00
 PL,łódzkie,57,0,2020-03-20T00:00:00
 PL,dolnośląskie,58,2,2020-03-20T00:00:00
 PL,mazowieckie,107,0,2020-03-20T00:00:00
-PL,sum,425,5,2020-03-20T00:00:00
 PL,podlaskie,5,0,2020-03-21T00:00:00
 PL,świętokrzyskie,7,0,2020-03-21T00:00:00
 PL,lubuskie,9,0,2020-03-21T00:00:00
@@ -66,21 +63,19 @@ PL,śląskie,56,0,2020-03-21T00:00:00
 PL,dolnośląskie,66,2,2020-03-21T00:00:00
 PL,łódzkie,91,0,2020-03-21T00:00:00
 PL,mazowieckie,127,0,2020-03-21T00:00:00
-PL,sum,536,5,2020-03-21T00:00:00
 PL,podlaskie,5,0,2020-03-22T00:00:00
 PL,świętokrzyskie,7,0,2020-03-22T00:00:00
-PL,opolskie,11,0,2020-03-22T00:00:00
 PL,lubuskie,11,0,2020-03-22T00:00:00
+PL,opolskie,11,0,2020-03-22T00:00:00
 PL,zachodniopomorskie,12,0,2020-03-22T00:00:00
 PL,pomorskie,17,0,2020-03-22T00:00:00
 PL,kujawsko-pomorskie,18,0,2020-03-22T00:00:00
 PL,warmińsko-mazurskie,22,0,2020-03-22T00:00:00
 PL,małopolskie,24,0,2020-03-22T00:00:00
 PL,podkarpackie,28,1,2020-03-22T00:00:00
-PL,wielkopolskie,37,2,2020-03-22T00:00:00
 PL,lubelskie,37,1,2020-03-22T00:00:00
+PL,wielkopolskie,37,2,2020-03-22T00:00:00
 PL,śląskie,66,0,2020-03-22T00:00:00
 PL,dolnośląskie,79,2,2020-03-22T00:00:00
 PL,łódzkie,106,0,2020-03-22T00:00:00
 PL,mazowieckie,147,1,2020-03-22T00:00:00
-PL,sum,627,7,2020-03-22T00:00:00
