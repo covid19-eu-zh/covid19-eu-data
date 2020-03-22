@@ -1,4 +1,4 @@
-country,state,cases,datetime
+country,nuts_2,cases,datetime
 AT,Vorarlberg,1,2020-03-06T15:00:00
 AT,Oberösterreich,1,2020-03-06T15:00:00
 AT,Kärnten,1,2020-03-06T15:00:00
@@ -7,4 +7,3 @@ AT,Steiermark,5,2020-03-06T15:00:00
 AT,Salzburg,5,2020-03-06T15:00:00
 AT,Niederösterreich,15,2020-03-06T15:00:00
 AT,Wien,23,2020-03-06T15:00:00
-AT,sum,55,2020-03-06T15:00:00

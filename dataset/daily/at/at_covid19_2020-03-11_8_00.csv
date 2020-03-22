@@ -1,4 +1,4 @@
-country,state,cases,datetime
+country,nuts_2,cases,datetime
 AT,Kärnten,1,2020-03-11T08:00:00
 AT,Burgenland,4,2020-03-11T08:00:00
 AT,Salzburg,11,2020-03-11T08:00:00
@@ -8,4 +8,3 @@ AT,Oberösterreich,28,2020-03-11T08:00:00
 AT,Tirol,37,2020-03-11T08:00:00
 AT,Niederösterreich,45,2020-03-11T08:00:00
 AT,Wien,50,2020-03-11T08:00:00
-AT,sum,210,2020-03-11T08:00:00
