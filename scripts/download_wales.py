@@ -14,7 +14,7 @@ from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator, DailyTransform
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.wales")
 
-WALES_REPORT_URL_ALT = "https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/"
+WALES_REPORT_URL_ALT = "https://covid19-phwstatement.nhs.wales/"
 WALES_REPORT_URL = "https://phw.nhs.wales"
 WALES_DAILY_FOLDER = os.path.join("dataset", "daily", "wales")
 
@@ -47,15 +47,18 @@ class SARSCOV2Wales(COVIDScrapper):
 
         self.df = req_dfs[0]
 
-        self.df.columns = ["nuts_3", "new_cases", "cases"]
+        self.df.columns = ["nuts_3", "cases"]
         self.df = self.df[1:]
+        self.df["nuts_3"] = self.df.nuts_3.apply(
+            lambda x: x.replace("  ", " ") if isinstance(x, str) else x
+        )
         logger.info("cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
         # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'Updated: (.* \d{4})</em>')
+        re_dt = re.compile(r'Updated: (.*?)</i>')
         dt_from_re = re_dt.findall(self.req.text)
         re_hour = re.compile(r"This statement will be updated daily at (\d{1,2}\w+)")
         update_hour = re_hour.findall(self.req.text)
