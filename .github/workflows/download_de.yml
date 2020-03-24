@@ -2,8 +2,8 @@ name: CI Download DE SARS-COV-2 Cases from RKI
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_de.py'
   schedule:
     - cron:  '0 7/1 * * *'
 

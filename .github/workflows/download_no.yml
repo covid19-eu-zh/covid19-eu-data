@@ -2,8 +2,8 @@ name: CI Download NO Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_no.py'
   schedule:
     - cron:  '51 6/2 * * *'
 

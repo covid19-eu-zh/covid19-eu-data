@@ -2,8 +2,8 @@ name: CI Download ES PDF Files
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_es.py'
   schedule:
     - cron:  '15 7/5 * * *'
 

@@ -2,8 +2,8 @@ name: CI Download Wales Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_wales.py'
   schedule:
     - cron:  '52 7/1 * * *'
 

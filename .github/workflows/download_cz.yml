@@ -2,8 +2,8 @@ name: CI Download CZ Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_cz.py'
   schedule:
     - cron:  '46 7/2 * * *'
 

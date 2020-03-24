@@ -2,8 +2,8 @@ name: CI Download DK PDF
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_dk_pdf.py'
   schedule:
     - cron:  '43 8/5 * * *'
 

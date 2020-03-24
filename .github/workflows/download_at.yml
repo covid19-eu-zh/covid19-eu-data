@@ -2,8 +2,8 @@ name: CI Download AT Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_at.py'
   schedule:
     - cron:  '10 7/1 * * *'
 

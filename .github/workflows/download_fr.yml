@@ -2,8 +2,8 @@ name: CI Download FR Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_fr.py'
   schedule:
     - cron:  '20 7/2 * * *'
 

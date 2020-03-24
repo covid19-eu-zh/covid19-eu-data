@@ -2,8 +2,8 @@ name: CI Download SE
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_se.py'
   schedule:
     - cron:  '0 7/2 * * *'
 

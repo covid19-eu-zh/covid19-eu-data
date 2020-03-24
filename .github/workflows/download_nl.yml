@@ -2,8 +2,8 @@ name: CI Download NL SARS-COV-2 Cases from volksgezondheidenzorg
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_nl.py'
   schedule:
     - cron:  '0 8/2 * * *'
 

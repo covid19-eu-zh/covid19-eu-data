@@ -2,8 +2,8 @@ name: CI Download BE PDF
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_be_pdf.py'
   schedule:
     - cron:  '25 7/4 * * *'
 

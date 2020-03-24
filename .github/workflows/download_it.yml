@@ -2,8 +2,8 @@ name: CI Download IT Data
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_it.py'
   schedule:
     - cron:  '38 7/1 * * *'
 

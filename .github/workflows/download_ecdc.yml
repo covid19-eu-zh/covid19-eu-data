@@ -2,8 +2,8 @@ name: CI Download All EU from ECDC
 
 on:
   push:
-    branches:
-      - master
+    paths:
+    - 'scripts/download_ecdc.py'
   schedule:
     - cron:  '35 7/1 * * *'
 
