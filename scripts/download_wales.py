@@ -47,7 +47,7 @@ class SARSCOV2Wales(COVIDScrapper):
 
         self.df = req_dfs[0]
 
-        self.df.columns = ["nuts_3", "cases"]
+        self.df.columns = ["nuts_3", "new_cases", "cases"]
         self.df = self.df[1:]
         self.df["nuts_3"] = self.df.nuts_3.apply(
             lambda x: x.replace("  ", " ") if isinstance(x, str) else x
