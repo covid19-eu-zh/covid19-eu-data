@@ -64,9 +64,8 @@ class SARSCOV2FR(COVIDScrapper):
         """Get datetime of dataset
         Nombre de cas rapportés par région au 10/03/2020 à 15h (données Santé publique France)
         """
-        re_dt = re.compile(r'au (\d{1,2}/\d{1,2}/\d{4}) &agrave; (\d{1,2}h) \(')
-        dt_from_re = re_dt.findall(self.req.text)
-        print(dt_from_re)
+        re_dt = re.compile(r'au (\d{1,2}/\d{1,2}/\d{4}).*(\d{1,2}h) \(')
+        dt_from_re = re_dt.findall(self.req.content.decode(self.req.apparent_encoding))
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
