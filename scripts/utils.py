@@ -23,6 +23,7 @@ _COLUMNS_ORDER = [
     "cases", "cases_lower", "cases_upper", "cases_raw",
     "population", "cases/100k pop.", "percent",
     "recovered", "deaths",
+    "tests", "tests_positive", "hospitalized", "intensive_care",
     "datetime"
 ]
 
