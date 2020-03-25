@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://statistiek.rijksoverheid.nl/piwik/" : "https://statistiek.rijksoverheid.nl/piwik/");_paq.push(["setSiteId", "1241"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(['setLinkTrackingTimer',750]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();</script>
+<meta name="title" content="Coronavirus kaart van Nederland per gemeente | RIVM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@RIVM" />
+<meta name="twitter:title" content="Coronavirus kaart van Nederland per gemeente" />
+<meta name="twitter:url" content="https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="shortcut icon" href="/themes/custom/sdv_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="nl" href="https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente" />
+<link rel="canonical" href="https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente" />
+<link rel="shortlink" href="https://www.rivm.nl/node/153691" />
+<link rel="revision" href="https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente" />
+
+    <title>Coronavirus kaart van Nederland per gemeente | RIVM</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_77Ppsdx79WPLRI5loHiPTvEVSiQVM-XKDo5zdY_8I6I.css?q7fc3g" />
+<link rel="stylesheet" media="all" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_unuMyEHhF1Ok-bz6ulIeawDXqqX1qd293tg8jsLYuXI.css?q7fc3g" />
+<link rel="stylesheet" media="all" href="https://www.rivm.nl/media/corona/dist/css/appMap.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_caYpiuoBKOtrAiJTdbrDwHQWg9vLtP85IAUf1Q0294o.css?q7fc3g" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Lif41nOp6HsSiEthU5r5cmm2YzYuvsMWRr8qJmYlKRc.css?q7fc3g" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_Y80VcNHcWUfqHDeDQCOn4RNEHapz1BG2i5AeyF63MKw.css?q7fc3g" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_3B4qJ4JCwtWHpzFrljTP9JLsVN2cRfvpWe5XAF4xIRA.css?q7fc3g" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+  <a id="back-to-top-focus" tabindex="-1"></a>
+  <nav id="skipnav" class="skipnav list-group">
+    <a href="#main-title" class="sr-only sr-only-focusable list-group-item-info">Overslaan en naar de inhoud gaan</a>
+    <a href="#navbar-main" class="sr-only sr-only-focusable list-group-item-info">Direct naar de hoofdnavigatie</a>
+  </nav>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<div class="layout-container">
+
+  
+          
+
+<header id="header" class="header   ">
+  <div class="logo">
+          <a href="/">        <img src="/themes/custom/sdv_theme/logo.svg" width="44" height="77" alt="Rijksoverheid logo | naar de homepagina" class="logo-image" />
+      </a>        <span class="wordmark">
+      <span class="sender ">Rijksinstituut voor Volksgezondheid<br>en Milieu</span>
+      <span class="secondary-sender ">Ministerie van Volksgezondheid,<br>Welzijn en Sport</span>
+    </span>
+  </div>
+  </header>
+    
+  <div class="navbar-topnav">
+    <div class="container">
+      <div class="topnavwrapper">
+        
+              <ul class="menu top-navigation navbar-nav">
+                    <li class="nav-item">
+                <a href="https://www.rivm.nl" class="nav-link">Nederlands</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.rivm.nl/en" class="nav-link">English</a>
+              </li>
+        </ul>
+  
+
+
+        <div id="block-dropdownlanguageselector">
+  
+    
+      
+  </div>
+
+      </div>
+    </div>
+  </div>
+  
+                    <div class="navbar-titlebar">
+          <div class="container">
+            <strong>RIVM</strong>&nbsp;<em>De zorg voor morgen</em>&nbsp;begint vandaag 
+          </div>
+        </div>
+      
+      <div class="parentnav">
+        <div class="navspan">
+          <nav class="navbar-nav navbar-expand-lg navbar-full navbar-branded navbar-border" id="navbar-main">
+            <div class="container">
+
+              <div class="buttons">
+                <button class="navbar-toggler icon-menu" id="menuButton" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Navigatie wisselen">Menu<span class="sr-only">Menu ingeklapt</span>
+                </button>
+
+                                <div class="collapse d-lg-flex clearfix" id="navbarResponsive">
+                                
+
+                          <ul class="navbar-nav use-dropdown">
+        
+                            <li class="nav-item">
+                
+        <a href="/home" class="nav-link icon-home" hide_label="1" data-drupal-link-system-path="node/11">Home</a>
+            </li>
+                        <li class="nav-item">
+                
+        <a href="/publicaties" class="nav-link" data-drupal-link-system-path="publicaties">Publicaties</a>
+            </li>
+                        <li class="nav-item collapsed">
+                
+        <a href="/onderwerpen" class="nav-link" data-drupal-link-system-path="onderwerpen">Onderwerpen</a>
+            </li>
+                        <li class="nav-item">
+                
+        <a href="/over-het-rivm" class="nav-link" data-drupal-link-system-path="node/134251">Over RIVM</a>
+            </li>
+                        <li class="nav-item">
+                
+        <a href="/en/international" class="nav-link">Internationaal</a>
+            </li>
+        </ul>
+  
+
+
+
+
+  
+
+  
+
+                  
+              <ul class="menu top-navigation navbar-nav">
+                    <li class="nav-item">
+                <a href="https://www.rivm.nl" class="nav-link">Nederlands</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.rivm.nl/en" class="nav-link">English</a>
+              </li>
+        </ul>
+  
+
+
+                </div>
+                      
+                                <button class="navbar-toggler navbar-toggler-right auto-sm icon-zoek" id="searchButton" type="button" data-toggle="collapse" data-target="#searchformResponsive" aria-controls="searchformResponsive" aria-expanded="false" aria-label="Toggle search"><span class="sr-only">Zoekformulier uitgeklapt</span>
+                </button>
+                
+                <div class="collapse d-lg-flex clearfix" id="searchformResponsive">
+                                      <div class="nav-search">
+            <form action="/zoeken" method="get" id="views-exposed-form-zoekresultaten-page-search-dummy" accept-charset="UTF-8">
+  <div class="form-inline">
+  
+  <fieldset class="js-form-item js-form-type-search form-type-search js-form-item-search form-item-search fieldset-wrapper form-group">
+          <label for="edit-search">Zoeken</label>
+                <div class="search-wrapper">
+  <input data-drupal-selector="edit-search" type="search" id="edit-search" name="search" value="" size="30" maxlength="128" class="form-search form-control">
+</div>
+
+                  </fieldset>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-group" id="edit-actions"><button data-drupal-selector="edit-submit-zoekresultaten" type="submit" id="edit-submit-zoekresultaten" class="button js-form-submit form-submit btn btn-primary">Zoeken</button>
+</div>
+
+</div>
+
+</form>
+
+  
+  </div>
+
+                                  </div>
+
+              </div>
+
+            </div>
+          </nav>
+        </div>
+
+    
+                <nav  class="navbar-nav navbar-branded-light">
+        <div class="container">
+                                  <ul class="breadcrumb ">
+      <li class="breadcrumb-item">
+              <a href="/">Home</a>
+          </li>
+      <li class="breadcrumb-item">
+              Coronavirus kaart van Nederland per gemeente
+          </li>
+  </ul>
+
+  
+  
+         
+        <a id="main-title" tabindex="-1"></a>                  <h1>Coronavirus kaart van Nederland per gemeente</h1>
+        
+        
+        </div>
+      </nav>
+      
+        
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+  
+
+  
+
+  <main role="main">
+
+  <div class="layout-local">
+          
+  
+  </div>
+
+  <div class="layout-content" id="top">
+          <div class="views-element-container" id="block-views-block-back-to-top-block-link">
+  
+    
+      <div><div class="view view-back-to-top view-id-back_to_top view-display-id-block_link js-view-dom-id-e5ee08768573d0ea22bff13b3b36c3c8e97cca27f913d4e2ab2bae498fc2bbf6">
+  
+    
+      
+  
+    
+  <div class="view-more">
+    </div>
+
+    </div>
+</div>
+
+  </div>
+      
+
+
+
+<article role="article" class="sdv-landingspagina full">
+
+      
+  
+  
+  
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-8 ">
+
+          
+                    <a id="main-content" tabindex="-1"></a>
+
+                      
+                      
+
+
+  
+  
+
+
+
+
+  <div class="par content-block-wrapper bg-brand-secondary-light">
+
+
+<div class="container container-spacer-sm content with-background clearfix" data-color="bg-brand-secondary-light">
+
+   
+  
+                  
+        <h2>Totaal aantal testen positief in Nederland: 6412</h2>
+
+<p>aantal per 25 maart 2020 14.00 uur</p>
+
+
+        
+      </div>
+</div>
+
+
+
+
+  
+  
+
+
+
+
+  <div class="par content-block-wrapper">
+
+
+<div class="container container-spacer-sm content nobg clearfix" data-color="">
+
+   
+  
+                  
+        <div id="mapContainer" class="mapContainer" ></div>
+        
+      </div>
+</div>
+
+
+
+
+
+<div class="code-wrapper text-center ">
+  <div class="container ">
+              <!-- tags laten staan inclusief id=csvData -->
+<div id="csvData">
+Gemnr;Gemeente;Aantal;BevAant;Aantal per 100.000 inwoners
+-1;* Bij 213 personen is de woonplaats niet van bekend;99;;
+518;'s-Gravenhage;81;537833;15.1
+796;'s-Hertogenbosch;75;154205;48.6
+1680;Aa en Hunze;1;25386;3.9
+358;Aalsmeer;10;31728;31.5
+197;Aalten;2;27011;7.4
+59;Achtkarspelen;1;27852;3.6
+482;Alblasserdam;5;20069;24.9
+613;Albrandswaard;18;25271;71.2
+361;Alkmaar;24;108558;22.1
+141;Almelo;10;72849;13.7
+34;Almere;28;207904;13.5
+484;Alphen aan den Rijn;22;110986;19.8
+1723;Alphen-Chaam;16;10149;157.7
+1959;Altena;35;55386;63.2
+60;Ameland;0;3673;0
+307;Amersfoort;47;156286;30.1
+362;Amstelveen;35;90838;38.5
+363;Amsterdam;297;862965;34.4
+200;Apeldoorn;34;162445;20.9
+3;Appingedam;0;11721;0
+202;Arnhem;25;159265;15.7
+106;Assen;5;67963;7.4
+743;Asten;6;16710;35.9
+744;Baarle-Nassau;2;6847;29.2
+308;Baarn;4;24767;16.2
+489;Barendrecht;16;48673;32.9
+203;Barneveld;13;57971;22.4
+888;Beek;13;15929;81.6
+1954;Beekdaelen;30;35727;84
+370;Beemster;2;9748;20.5
+889;Beesel;7;13519;51.8
+1945;Berg en Dal;37;34798;106.3
+1724;Bergeijk;10;18491;54.1
+893;Bergen (L);1;13140;7.6
+373;Bergen (NH);12;29974;40
+748;Bergen op Zoom;12;66811;18
+1859;Berkelland;2;43904;4.6
+1721;Bernheze;69;30806;224
+753;Best;19;29821;63.7
+209;Beuningen;15;25882;58
+375;Beverwijk;11;41176;26.7
+1728;Bladel;15;20175;74.3
+376;Blaricum;5;11202;44.6
+377;Bloemendaal;13;23410;55.5
+1901;Bodegraven-Reeuwijk;5;34462;14.5
+755;Boekel;42;10588;396.7
+1681;Borger-Odoorn;0;25372;0
+147;Borne;11;23210;47.4
+654;Borsele;5;22800;21.9
+756;Boxmeer;9;29065;31
+757;Boxtel;15;30747;48.8
+758;Breda;181;183873;98.4
+501;Brielle;1;17182;5.8
+1876;Bronckhorst;7;36212;19.3
+213;Brummen;4;20698;19.3
+899;Brunssum;20;28103;71.2
+312;Bunnik;8;15192;52.7
+313;Bunschoten;3;21576;13.9
+214;Buren;7;26568;26.3
+502;Capelle aan den IJssel;23;66818;34.4
+383;Castricum;10;35772;28
+109;Coevorden;15;35483;42.3
+1706;Cranendonck;25;20440;122.3
+1684;Cuijk;8;24931;32.1
+216;Culemborg;8;28555;28
+148;Dalfsen;12;28499;42.1
+1891;Dantumadiel;0;18923;0
+310;De Bilt;32;42824;74.7
+1940;De Fryske Marren;9;51430;17.5
+736;De Ronde Venen;9;44059;20.4
+1690;De Wolden;3;24110;12.4
+503;Delft;21;103163;20.4
+10;Delfzijl;1;24716;4
+400;Den Helder;5;55604;9
+762;Deurne;30;32362;92.7
+150;Deventer;26;99957;26
+384;Diemen;6;29196;20.6
+1774;Dinkelland;20;26350;75.9
+221;Doesburg;5;11148;44.9
+222;Doetinchem;10;57555;17.4
+766;Dongen;6;26051;23
+505;Dordrecht;26;118654;21.9
+498;Drechterland;3;19597;15.3
+1719;Drimmelen;20;27150;73.7
+303;Dronten;11;40815;27
+225;Druten;7;18797;37.2
+226;Duiven;2;25332;7.9
+1711;Echt-Susteren;20;31638;63.2
+385;Edam-Volendam;9;36099;24.9
+228;Ede;26;115710;22.5
+317;Eemnes;1;9113;11
+770;Eersel;13;19110;68
+1903;Eijsden-Margraten;20;25658;77.9
+772;Eindhoven;80;231642;34.5
+230;Elburg;5;23086;21.7
+114;Emmen;8;107113;7.5
+388;Enkhuizen;13;18507;70.2
+153;Enschede;26;158986;16.4
+232;Epe;15;33145;45.3
+233;Ermelo;17;26858;63.3
+777;Etten-Leur;31;43774;70.8
+779;Geertruidenberg;11;21515;51.1
+1771;Geldrop-Mierlo;15;39595;37.9
+1652;Gemert-Bakel;68;30447;223.3
+907;Gennep;7;17071;41
+784;Gilze en Rijen;18;26431;68.1
+1924;Goeree-Overflakkee;44;49611;88.7
+664;Goes;4;37653;10.6
+785;Goirle;18;23793;75.7
+1942;Gooise Meren;18;57715;31.2
+512;Gorinchem;8;36682;21.8
+513;Gouda;18;73181;24.6
+786;Grave;11;12483;88.1
+14;Groningen;58;231299;25.1
+1729;Gulpen-Wittem;5;14246;35.1
+158;Haaksbergen;3;24277;12.4
+788;Haaren;12;14195;84.5
+392;Haarlem;46;161265;28.5
+394;Haarlemmermeer;23;154235;14.9
+1655;Halderberge;8;30194;26.5
+160;Hardenberg;7;60574;11.6
+243;Harderwijk;13;47581;27.3
+523;Hardinxveld-Giessendam;6;18051;33.2
+72;Harlingen;3;15758;19
+244;Hattem;3;12173;24.6
+396;Heemskerk;9;39164;23
+397;Heemstede;17;27286;62.3
+246;Heerde;19;18546;102.4
+74;Heerenveen;3;50257;6
+398;Heerhugowaard;16;56742;28.2
+917;Heerlen;53;86832;61
+1658;Heeze-Leende;10;15964;62.6
+399;Heiloo;9;23464;38.4
+163;Hellendoorn;7;35808;19.5
+530;Hellevoetsluis;5;40049;12.5
+794;Helmond;63;91524;68.8
+531;Hendrik-Ido-Ambacht;3;30966;9.7
+164;Hengelo (O);17;80683;21.1
+1966;Het Hogeland;4;47888;8.4
+252;Heumen;12;16486;72.8
+797;Heusden;20;44135;45.3
+534;Hillegom;3;21966;13.7
+798;Hilvarenbeek;10;15334;65.2
+402;Hilversum;16;90238;17.7
+1963;Hoeksche Waard;36;86656;41.5
+1735;Hof van Twente;6;34940;17.2
+1911;Hollands Kroon;10;47815;20.9
+118;Hoogeveen;7;55662;12.6
+405;Hoorn;14;73004;19.2
+1507;Horst aan de Maas;18;42291;42.6
+321;Houten;37;49911;74.1
+406;Huizen;7;41273;17
+677;Hulst;1;27524;3.6
+353;IJsselstein;18;34160;52.7
+1884;Kaag en Braassem;5;26866;18.6
+166;Kampen;30;53779;55.8
+678;Kapelle;2;12785;15.6
+537;Katwijk;7;65302;10.7
+928;Kerkrade;21;45642;46
+1598;Koggenland;5;22738;22
+542;Krimpen aan den IJssel;6;29376;20.4
+1931;Krimpenerwaard;16;56048;28.5
+1659;Laarbeek;19;22333;85.1
+1685;Landerd;25;15529;161
+882;Landgraaf;21;37591;55.9
+415;Landsmeer;6;11488;52.2
+416;Langedijk;12;27992;42.9
+1621;Lansingerland;25;61601;40.6
+417;Laren;4;11195;35.7
+80;Leeuwarden;12;123107;9.7
+546;Leiden;21;124899;16.8
+547;Leiderdorp;3;27109;11.1
+1916;Leidschendam-Voorburg;14;75425;18.6
+995;Lelystad;26;77893;33.4
+1640;Leudal;29;35681;81.3
+327;Leusden;13;30030;43.3
+1705;Lingewaard;14;46475;30.1
+553;Lisse;2;22800;8.8
+262;Lochem;6;33590;17.9
+809;Loon op Zand;20;23327;85.7
+331;Lopik;11;14473;76
+24;Loppersum;0;9614;0
+168;Losser;1;22622;4.4
+263;Maasdriel;3;24693;12.1
+1641;Maasgouw;10;23716;42.2
+556;Maassluis;7;32768;21.4
+935;Maastricht;112;121565;92.1
+420;Medemblik;4;44809;8.9
+938;Meerssen;8;18923;42.3
+1948;Meierijstad;149;80815;184.4
+119;Meppel;3;33564;8.9
+687;Middelburg;7;48544;14.4
+1842;Midden-Delfland;2;19391;10.3
+1731;Midden-Drenthe;1;33178;3
+1952;Midden-Groningen;2;60899;3.3
+815;Mill en Sint Hubert;5;10891;45.9
+1709;Moerdijk;5;36961;13.5
+1978;Molenlanden;16;43858;36.5
+1955;Montferland;3;36026;8.3
+335;Montfoort;5;13996;35.7
+944;Mook en Middelaar;5;7806;64.1
+1740;Neder-Betuwe;11;24034;45.8
+946;Nederweert;14;17001;82.3
+356;Nieuwegein;12;63036;19
+569;Nieuwkoop;6;28628;21
+267;Nijkerk;8;42943;18.6
+268;Nijmegen;108;176731;61.1
+1930;Nissewaard;19;84797;22.4
+1970;Noardeast-Fryslân;3;45181;6.6
+1695;Noord-Beveland;2;7308;27.4
+1699;Noordenveld;1;31290;3.2
+171;Noordoostpolder;5;46849;10.7
+575;Noordwijk;7;42859;16.3
+820;Nuenen, Gerwen en Nederwetten;8;23186;34.5
+302;Nunspeet;29;27481;105.5
+579;Oegstgeest;9;24426;36.8
+823;Oirschot;6;18623;32.2
+824;Oisterwijk;18;26140;68.9
+1895;Oldambt;0;38129;0
+269;Oldebroek;12;23598;50.9
+173;Oldenzaal;13;31840;40.8
+1773;Olst-Wijhe;6;18071;33.2
+175;Ommen;7;17813;39.3
+1586;Oost Gelre;6;29704;20.2
+826;Oosterhout;26;55616;46.7
+85;Ooststellingwerf;1;25497;3.9
+431;Oostzaan;6;9757;61.5
+432;Opmeer;0;11779;0
+86;Opsterland;4;29723;13.5
+828;Oss;81;91451;88.6
+1509;Oude IJsselstreek;4;39473;10.1
+437;Ouder-Amstel;7;13916;50.3
+589;Oudewater;10;10201;98
+1734;Overbetuwe;38;47543;79.9
+590;Papendrecht;6;32290;18.6
+1894;Peel en Maas;88;43311;203.2
+765;Pekela;2;12214;16.4
+1926;Pijnacker-Nootdorp;16;54331;29.4
+439;Purmerend;32;80117;39.9
+273;Putten;5;24198;20.7
+177;Raalte;10;37511;26.7
+703;Reimerswaal;7;22678;30.9
+274;Renkum;12;31302;38.3
+339;Renswoude;0;5259;0
+1667;Reusel-De Mierden;1;13060;7.7
+275;Rheden;18;43640;41.2
+340;Rhenen;1;20004;5
+597;Ridderkerk;9;46241;19.5
+1742;Rijssen-Holten;9;38300;23.5
+603;Rijswijk;10;53467;18.7
+1669;Roerdalen;10;20615;48.5
+957;Roermond;28;58209;48.1
+1674;Roosendaal;20;77032;26
+599;Rotterdam;186;644618;28.9
+277;Rozendaal;2;1654;120.9
+840;Rucphen;6;22572;26.6
+441;Schagen;11;46553;23.6
+279;Scherpenzeel;2;9873;20.3
+606;Schiedam;14;77999;17.9
+88;Schiermonnikoog;0;936;0
+1676;Schouwen-Duiveland;6;33779;17.8
+965;Simpelveld;8;10516;76.1
+1702;Sint Anthonis;13;11606;112
+845;Sint-Michielsgestel;18;28991;62.1
+1883;Sittard-Geleen;86;92661;92.8
+610;Sliedrecht;5;25026;20
+1714;Sluis;5;23386;21.4
+90;Smallingerland;4;55938;7.2
+342;Soest;21;46194;45.5
+847;Someren;10;19322;51.8
+848;Son en Breugel;15;16904;88.7
+37;Stadskanaal;0;31789;0
+180;Staphorst;4;17003;23.5
+532;Stede Broec;13;21706;59.9
+851;Steenbergen;11;25054;43.9
+1708;Steenwijkerland;6;43940;13.7
+971;Stein;24;24961;96.1
+1904;Stichtse Vecht;22;64336;34.2
+1900;Súdwest-Fryslân;8;89710;8.9
+715;Terneuzen;10;54589;18.3
+93;Terschelling;0;4890;0
+448;Texel;3;13547;22.1
+1525;Teylingen;8;37061;21.6
+716;Tholen;13;25780;50.4
+281;Tiel;14;41978;33.4
+855;Tilburg;224;217259;103.1
+183;Tubbergen;4;21276;18.8
+1700;Twenterand;3;33792;8.9
+1730;Tynaarlo;13;33698;38.6
+737;Tytsjerksteradiel;2;31780;6.3
+856;Uden;94;41782;225
+450;Uitgeest;4;13528;29.6
+451;Uithoorn;5;29424;17
+184;Urk;7;20776;33.7
+344;Utrecht;191;352866;54.1
+1581;Utrechtse Heuvelrug;15;49515;30.3
+981;Vaals;4;10092;39.6
+994;Valkenburg aan de Geul;9;16470;54.6
+858;Valkenswaard;9;30910;29.1
+47;Veendam;1;27491;3.6
+345;Veenendaal;7;65589;10.7
+717;Veere;6;21835;27.5
+861;Veldhoven;18;45337;39.7
+453;Velsen;15;68348;21.9
+983;Venlo;47;101603;46.3
+984;Venray;17;43326;39.2
+1961;Vijfheerenlanden;21;55712;37.7
+622;Vlaardingen;22;72404;30.4
+96;Vlieland;0;1138;0
+718;Vlissingen;8;44371;18
+986;Voerendaal;6;12452;48.2
+626;Voorschoten;5;25479;19.6
+285;Voorst;6;24417;24.6
+865;Vught;22;26396;83.3
+1949;Waadhoeke;0;46039;0
+866;Waalre;2;17247;11.6
+867;Waalwijk;34;48240;70.5
+627;Waddinxveen;5;28316;17.7
+289;Wageningen;3;38774;7.7
+629;Wassenaar;5;26211;19.1
+852;Waterland;11;17315;63.5
+988;Weert;24;49842;48.2
+457;Weesp;6;19334;31
+1960;West Betuwe;19;50697;37.5
+668;West Maas en Waal;11;19076;57.7
+1969;Westerkwartier;9;63031;14.3
+1701;Westerveld;2;19348;10.3
+293;Westervoort;2;14944;13.4
+1950;Westerwolde;3;25199;11.9
+1783;Westland;28;108603;25.8
+98;Weststellingwerf;1;25840;3.9
+614;Westvoorne;8;14626;54.7
+189;Wierden;1;24351;4.1
+296;Wijchen;24;40951;58.6
+1696;Wijdemeren;3;24013;12.5
+352;Wijk bij Duurstede;6;23762;25.3
+294;Winterswijk;2;28903;6.9
+873;Woensdrecht;5;21866;22.9
+632;Woerden;22;52197;42.1
+880;Wormerland;3;16329;18.4
+351;Woudenberg;6;13166;45.6
+479;Zaanstad;29;155885;18.6
+297;Zaltbommel;7;28451;24.6
+473;Zandvoort;6;17011;35.3
+50;Zeewolde;5;22309;22.4
+355;Zeist;25;63934;39.1
+299;Zevenaar;10;43488;23
+637;Zoetermeer;13;124944;10.4
+638;Zoeterwoude;1;8450;11.8
+1892;Zuidplas;6;42762;14
+879;Zundert;14;21612;64.8
+301;Zutphen;8;47609;16.8
+1896;Zwartewaterland;30;22503;133.3
+642;Zwijndrecht;9;44639;20.2
+193;Zwolle;47;127497;36.9
+</div>
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+<div class="code-wrapper text-center ">
+  <div class="container ">
+              <div id="dataClasses" >
+[
+{"name":"Geen meldingen","to":0.00000000000001, "color": "#ffffff"},
+{"name":"< 10","from":0.00000000000001,"to":9.999999999, "color": "#ffffd4"},
+{"name":"10 - 25","from":10,"to":24.999999999, "color": "#fee391"},
+{"name":"25 - 50","from":25,"to":49.999999999, "color": "#fec44f"},
+{"name":"50 - 100","from":50,"to":99.999999999, "color": "#fe9929"},
+{"name":"100 - 125","from":100,"to":124.999999999, "color": "#d95f0e"},
+{"name":"125 - 397","from":125, "color": "#993404"}
+]
+</div>
+
+<div id="mapTitles" >
+  {
+  "nl":  {
+    "mapTitle":"Gemelde COVID-19 patiënten",
+    "mapSubtitle":" Per 100.000 inwoners per gemeente tot en met 25-3-2020",
+    "mapDescription":"Kaart met per gemeente Coronavirus (COVID-19) incidentie",
+    "seriesDescription":"Aantal positieve tests",
+    "legendTitle":"Aantal per 100.000 inwoners"},
+  "en":{
+    "mapTitle":"Total number of persons with COVID-19",
+    "mapSubtitle":"Per county",
+    "mapDescription":"Map with Coronavirus (COVID-19) incedence per residence county",
+    "seriesDescription":"Aantal positieve tests",
+    "legendTitle":"Incidence per county"}
+  }
+</div>
+      </div>
+  </div>
+
+
+
+
+
+
+  
+  
+
+
+
+
+  <div class="par content-block-wrapper">
+
+
+<div class="container container-spacer-sm content nobg clearfix" data-color="">
+
+   
+  
+                  
+        <p>Deze kaart toont het aantal patiënten per 100.000 inwoners, zoals doorgegeven door <abbr title="Gemeentelijke Gezondheidsdienst" class="taxonomy-tooltip-tip">GGD</abbr><span class="sr-only">Gemeentelijke Gezondheidsdienst</span>’en en gemeenten per 25 maart 2020.<br />
+Door correcties achteraf in het systeem kunnen wijzigingen optreden.<br /><br />
+Van 213 patiënten is de woonplaats nog onbekend.</p>
+
+
+        
+      </div>
+</div>
+
+
+          
+                    <div class="comments">
+            
+          </div>
+          
+          </div>
+
+        
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+</article>
+
+
+  <div id="block-deeldezepagina" class="sharing-wrapper col">
+  <div class="container container-spacer-sm">
+          <div class="row">
+      <div class="col-sm-12">
+        <h2>Deel deze pagina</h2>
+      </div>
+    </div>
+          <hr>
+          <div class="row">
+  <div class="col-sm-12">
+    <ul class="common">
+            <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.rivm.nl%2Fcoronavirus-kaart-van-nederland-per-gemeente%3Ffbclid%3DIwAR3y5FbsrziDa1taY_kAfsmyHUySm40LTL2HlHR6zA5_c_mG0JjyL8DSwxk" class="icon icon-facebook facebook" title="Deel deze pagina op Facebook">Facebook</a>
+      </li>
+                  <li>
+        <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.rivm.nl%2Fcoronavirus-kaart-van-nederland-per-gemeente%3Ffbclid%3DIwAR3y5FbsrziDa1taY_kAfsmyHUySm40LTL2HlHR6zA5_c_mG0JjyL8DSwxk" class="icon icon-twitter twitter" title="Deel deze pagina op Twitter">Twitter</a>
+      </li>
+                  <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.rivm.nl%2Fcoronavirus-kaart-van-nederland-per-gemeente%3Ffbclid%3DIwAR3y5FbsrziDa1taY_kAfsmyHUySm40LTL2HlHR6zA5_c_mG0JjyL8DSwxk" class="icon icon-linked-in linkedin" title="Deel deze pagina op LinkedIn">LinkedIn</a>
+      </li>
+                        <li>
+        <a href="whatsapp://send?text=http%3A%2F%2Fwww.rivm.nl%2Fcoronavirus-kaart-van-nederland-per-gemeente%3Ffbclid%3DIwAR3y5FbsrziDa1taY_kAfsmyHUySm40LTL2HlHR6zA5_c_mG0JjyL8DSwxk" data-action="share/whatsapp/share" class="icon icon-whatsapp whatsapp" title="Deel deze pagina via WhatsApp">WhatsApp</a>
+      </li>
+                  <li>
+        <a href="mailto:?body=http%3A%2F%2Fwww.rivm.nl%2Fcoronavirus-kaart-van-nederland-per-gemeente%3Ffbclid%3DIwAR3y5FbsrziDa1taY_kAfsmyHUySm40LTL2HlHR6zA5_c_mG0JjyL8DSwxk" class="icon icon-email email" title="Deel deze pagina via E-mail">E-mail</a>
+      </li>
+          </ul>
+  </div>
+</div>
+
+      </div>
+</div>
+
+  
+  </div>
+
+</main>
+
+      <footer class="footer bg-brand">
+  <div class="container">
+    <div class="row">
+      
+                    <div class="col-sm-3">
+<nav role="navigation" aria-labelledby="block-voet-menu" id="block-voet" class="block block-menu navigation menu--footer">
+      
+  <h2 id="block-voet-menu">Service</h2>
+  
+
+        
+              <ul class="navbar-nav">
+                    <li class="nav-item">
+                <a href="/contact" class="nav-link" data-drupal-link-system-path="node/86191">Contact</a>
+              </li>
+                <li class="nav-item">
+                <a href="/contact/zakendoen-met-rivm" class="nav-link" data-drupal-link-system-path="node/82561">Inkoop</a>
+              </li>
+                <li class="nav-item">
+                <a href="/abonneren" class="nav-link" data-drupal-link-system-path="node/137751">Abonneren nieuwsbrieven</a>
+              </li>
+                <li class="nav-item">
+                <a href="/agenda" class="nav-link" data-drupal-link-system-path="agenda">Agenda</a>
+              </li>
+                <li class="nav-item">
+                <a href="/rss" class="nav-link" data-drupal-link-system-path="node/134371">RSS feed</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://twitter.com/rivm" class="nav-link">Volg ons op Twitter</a>
+              </li>
+                <li class="nav-item">
+                <a href="http://www.facebook.com/RIVMnl" class="nav-link">Volg ons op Facebook </a>
+              </li>
+                <li class="nav-item">
+                <a href="https://nl.linkedin.com/company/rivm" class="nav-link">Volg ons op LinkedIn</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.youtube.com/user/RIVMnl" class="nav-link">Volg ons op YouTube </a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.instagram.com/rivmnl" class="nav-link">Volg ons op Instagram </a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+</div>
+<div class="col-sm-3">
+<nav role="navigation" aria-labelledby="block-footer2-menu" id="block-footer2" class="block block-menu navigation menu--footer-2">
+      
+  <h2 id="block-footer2-menu">Over deze site</h2>
+  
+
+        
+              <ul class="navbar-nav">
+                    <li class="nav-item">
+                <a href="/cookies" class="nav-link" data-drupal-link-system-path="node/132301">Cookies</a>
+              </li>
+                <li class="nav-item">
+                <a href="/privacy" class="nav-link" data-drupal-link-system-path="node/133641">Privacy</a>
+              </li>
+                <li class="nav-item">
+                <a href="/sitemap" class="nav-link" data-drupal-link-system-path="sitemap">Sitemap</a>
+              </li>
+                <li class="nav-item">
+                <a href="/toegankelijkheid" class="nav-link" data-drupal-link-system-path="node/87861">Toegankelijkheid</a>
+              </li>
+                <li class="nav-item">
+                <a href="/wob-verzoeken-bij-het-rivm" class="nav-link" data-drupal-link-system-path="node/134841">WOB-verzoeken bij het RIVM</a>
+              </li>
+                <li class="nav-item">
+                <a href="/copyright" class="nav-link" data-drupal-link-system-path="node/133671">Copyright</a>
+              </li>
+                <li class="nav-item">
+                <a href="/archief-rivmnl" title="archiefweb.eu" class="nav-link" data-drupal-link-system-path="node/135291">Archief</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+</div>
+<div class="col-sm-3">
+<nav role="navigation" aria-labelledby="block-footer3-menu" id="block-footer3" class="block block-menu navigation menu--footer-3">
+      
+  <h2 id="block-footer3-menu">Talen</h2>
+  
+
+        
+              <ul class="navbar-nav">
+                    <li class="nav-item">
+                <a href="https://www.rivm.nl/en" class="nav-link">English</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.rivm.nl" class="nav-link">Nederlands</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+</div>
+
+  
+          </div>
+  </div>
+</footer>
+    
+    </div>   
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/153691","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nl"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"anchor_link\/drupal.anchor_link,better_exposed_filters\/general,bootstrap_rijkshuisstijl\/global,bootstrap_rijkshuisstijl\/yellow,calendar\/calendar.theme,classy\/base,classy\/messages,core\/drupal.dropbutton,core\/html5shiv,core\/normalize,dropdown_language\/dropdown-language-selector,extlink\/drupal.extlink,matomo\/matomo,paragraphs\/drupal.paragraphs.unpublished,sdv_bibcite_custom\/bibcite,sdv_library_field\/sdv_library_field.paragraph.par_code.field_par_library.418061.0,sdv_node_custom\/datatables,sdv_node_custom\/datatables_core,sdv_node_custom\/datatables_mark,sdv_node_custom\/datatables_responsive,sdv_theme\/global,simple_megamenu\/base,system\/base,views\/views.module","theme":"sdv_theme","theme_token":null},"ajaxTrustedUrl":{"\/zoeken":true},"matomo":{"trackMailto":true},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"(test\\.sdv\\.rivm\\.nl)|(sdv\\.docker\\.localhost)","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"","mailtoClass":"0","mailtoLabel":"(link sends email)"}},"lotus":{"lotusJS":{"lotus_height":"test"}},"user":{"uid":0,"permissionsHash":"ca248377e4d592c20bdb50d4ab479dc833c3ca80a376b851522cf53232b97603"}}</script>
+<script src="/sites/default/files/js/js_6mZnGf-tP-qtxBLFB5w-dqw5FwcRbAQQ5XjzhsjJ10E.js"></script>
+<script src="https://www.rivm.nl/libraries/highmaps/code/modules/map.js"></script>
+<script src="https://www.rivm.nl/media/corona/dist/js/coronaScripts.min.js"></script>
+<script src="https://www.rivm.nl/media/corona/dist/js/gemeente_ggd_2019.geojson.min.js"></script>
+<script src="/sites/default/files/js/js_-AoCy3DJknT5o7DWC20JSDr3DsxW2Vpwhz12LnduxzU.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="/sites/default/files/js/js_HMywvFGk_x_ZVJYr-fA01VcJumd76a330b2k3CQ9KYg.js"></script>
+
+  </body>
+</html>
