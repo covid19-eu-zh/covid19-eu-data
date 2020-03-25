@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_ch.py'
   schedule:
-    - cron:  '38 7/1 * * *'
+    - cron:  '31 7/1 * * *'
 
 jobs:
   build:

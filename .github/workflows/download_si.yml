@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_si.py'
   schedule:
-    - cron:  '38 9/7 * * *'
+    - cron:  '57 9/7 * * *'
 
 jobs:
   build:

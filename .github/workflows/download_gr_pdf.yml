@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_gr_pdf.py'
   schedule:
-    - cron:  '46 8/6 * * *'
+    - cron:  '43 8/6 * * *'
 
 jobs:
   build:
