@@ -52,6 +52,15 @@ class SARSCOV2HU(COVIDScrapper):
             }, inplace=True
         )
 
+        for col in ["cases", "recovered", "deaths", "tests", "quarantine"]:
+            self.df[col] = self.df[col].apply(
+                lambda x: int(
+                    float(
+                        x.replace(" ", "")
+                    )
+                )
+            )
+
         logger.info("list of cases:\n", self.df)
 
     def extract_datetime(self):
