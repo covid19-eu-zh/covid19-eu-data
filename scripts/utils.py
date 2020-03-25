@@ -144,7 +144,7 @@ class COVIDScrapper():
             pass
 
         with open(
-            os.path.join(cache_folder, f"{self.dt.date().isoformat()}.html"),
+            os.path.join(cache_folder, f"{self.datetime}.html"),
             'wb'
         ) as f:
             f.write(self.req.content)
