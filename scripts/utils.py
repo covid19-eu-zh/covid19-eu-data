@@ -123,6 +123,33 @@ class COVIDScrapper():
             index=False
         )
 
+        try:
+            if "/" in self.daily_folder:
+                daily_folder_sub = self.daily_folder.split("/")[-1]
+            elif "\\" in self.daily_folder:
+                daily_folder_sub = self.daily_folder.split("\\")[-1]
+            else:
+                raise Exception("Could not determine the sub folders")
+
+            cache_folder = os.path.join(
+                self.daily_folder,
+                "../../../cache/daily",
+                daily_folder_sub
+            )
+            os.makedirs(
+                cache_folder
+            )
+        except FileExistsError as e:
+            logger.info(f"{cache_folder} already exists, no need to create folder")
+            pass
+
+        with open(
+            os.path.join(cache_folder, f"{self.dt.date().isoformat()}.html"),
+            'wb'
+        ) as f:
+            f.write(self.req.content)
+
+
     def workflow(self):
         """workflow connects the pipes
         """
