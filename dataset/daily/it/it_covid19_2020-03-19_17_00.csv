@@ -1,41 +1,41 @@
 country,nuts_2,nuts_3,cases,datetime
-IT,P.A. Trento,unassigned,0,2020-03-19T17:00:00
-IT,Calabria,unassigned,0,2020-03-19T17:00:00
-IT,Sicilia,unassigned,0,2020-03-19T17:00:00
-IT,Toscana,unassigned,0,2020-03-19T17:00:00
-IT,Valle d'Aosta,unassigned,0,2020-03-19T17:00:00
-IT,P.A. Bolzano,unassigned,0,2020-03-19T17:00:00
-IT,Basilicata,unassigned,0,2020-03-19T17:00:00
+IT,Sardegna,unassigned,0,2020-03-19T17:00:00
 IT,Emilia Romagna,unassigned,0,2020-03-19T17:00:00
 IT,Abruzzo,unassigned,0,2020-03-19T17:00:00
-IT,Sardegna,unassigned,0,2020-03-19T17:00:00
 IT,Friuli Venezia Giulia,unassigned,0,2020-03-19T17:00:00
+IT,Sicilia,unassigned,0,2020-03-19T17:00:00
+IT,Basilicata,unassigned,0,2020-03-19T17:00:00
+IT,Valle d'Aosta,unassigned,0,2020-03-19T17:00:00
+IT,P.A. Bolzano,unassigned,0,2020-03-19T17:00:00
+IT,Toscana,unassigned,0,2020-03-19T17:00:00
+IT,P.A. Trento,unassigned,0,2020-03-19T17:00:00
+IT,Calabria,unassigned,0,2020-03-19T17:00:00
 IT,Sardegna,Oristano,3,2020-03-19T17:00:00
 IT,Molise,Isernia,4,2020-03-19T17:00:00
 IT,Lazio,unassigned,6,2020-03-19T17:00:00
-IT,Basilicata,Matera,7,2020-03-19T17:00:00
 IT,Sardegna,Sud Sardegna,7,2020-03-19T17:00:00
 IT,Sicilia,Ragusa,7,2020-03-19T17:00:00
-IT,Calabria,Vibo Valentia,8,2020-03-19T17:00:00
+IT,Basilicata,Matera,7,2020-03-19T17:00:00
 IT,Campania,Benevento,8,2020-03-19T17:00:00
+IT,Calabria,Vibo Valentia,8,2020-03-19T17:00:00
 IT,Molise,unassigned,9,2020-03-19T17:00:00
+IT,Puglia,unassigned,12,2020-03-19T17:00:00
 IT,Campania,unassigned,12,2020-03-19T17:00:00
 IT,Sicilia,Caltanissetta,12,2020-03-19T17:00:00
-IT,Puglia,unassigned,12,2020-03-19T17:00:00
 IT,Umbria,unassigned,14,2020-03-19T17:00:00
 IT,Sicilia,Messina,16,2020-03-19T17:00:00
 IT,Lazio,Rieti,18,2020-03-19T17:00:00
-IT,Sicilia,Trapani,21,2020-03-19T17:00:00
-IT,Sardegna,Nuoro,21,2020-03-19T17:00:00
 IT,Sicilia,Enna,21,2020-03-19T17:00:00
+IT,Sardegna,Nuoro,21,2020-03-19T17:00:00
+IT,Sicilia,Trapani,21,2020-03-19T17:00:00
 IT,Puglia,Taranto,23,2020-03-19T17:00:00
 IT,Lazio,Latina,23,2020-03-19T17:00:00
 IT,Abruzzo,L'Aquila,25,2020-03-19T17:00:00
-IT,Marche,unassigned,26,2020-03-19T17:00:00
 IT,Puglia,Barletta-Andria-Trani,26,2020-03-19T17:00:00
+IT,Marche,unassigned,26,2020-03-19T17:00:00
+IT,Marche,Ascoli Piceno,27,2020-03-19T17:00:00
 IT,Sicilia,Agrigento,27,2020-03-19T17:00:00
 IT,Calabria,Catanzaro,27,2020-03-19T17:00:00
-IT,Marche,Ascoli Piceno,27,2020-03-19T17:00:00
 IT,Friuli Venezia Giulia,Gorizia,28,2020-03-19T17:00:00
 IT,Basilicata,Potenza,30,2020-03-19T17:00:00
 IT,Molise,Campobasso,33,2020-03-19T17:00:00
@@ -49,8 +49,8 @@ IT,Veneto,Rovigo,52,2020-03-19T17:00:00
 IT,Sicilia,Palermo,52,2020-03-19T17:00:00
 IT,Calabria,Reggio di Calabria,57,2020-03-19T17:00:00
 IT,Toscana,Livorno,62,2020-03-19T17:00:00
-IT,Marche,Fermo,68,2020-03-19T17:00:00
 IT,Abruzzo,Teramo,68,2020-03-19T17:00:00
+IT,Marche,Fermo,68,2020-03-19T17:00:00
 IT,Abruzzo,Chieti,69,2020-03-19T17:00:00
 IT,Toscana,Prato,70,2020-03-19T17:00:00
 IT,Puglia,Lecce,71,2020-03-19T17:00:00
@@ -69,8 +69,8 @@ IT,Piemonte,Asti,101,2020-03-19T17:00:00
 IT,Piemonte,Biella,109,2020-03-19T17:00:00
 IT,Toscana,Arezzo,113,2020-03-19T17:00:00
 IT,Liguria,Imperia,117,2020-03-19T17:00:00
-IT,Piemonte,Vercelli,131,2020-03-19T17:00:00
 IT,Liguria,Savona,131,2020-03-19T17:00:00
+IT,Piemonte,Vercelli,131,2020-03-19T17:00:00
 IT,Puglia,Foggia,134,2020-03-19T17:00:00
 IT,Sardegna,Sassari,134,2020-03-19T17:00:00
 IT,Veneto,unassigned,136,2020-03-19T17:00:00
@@ -127,4 +127,3 @@ IT,Lombardia,Cremona,2286,2020-03-19T17:00:00
 IT,Lombardia,Milano,3278,2020-03-19T17:00:00
 IT,Lombardia,Brescia,4247,2020-03-19T17:00:00
 IT,Lombardia,Bergamo,4645,2020-03-19T17:00:00
-IT,sum,,41035,2020-03-19T17:00:00

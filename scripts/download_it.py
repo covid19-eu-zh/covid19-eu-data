@@ -53,13 +53,13 @@ class SARSCOV2IT(COVIDScrapper):
     def post_processing(self):
 
         # add sum
-        total = self.df.cases.sum()
-        self.df = self.df.append(
-            pd.DataFrame(
-                [[self.country, "sum", "", total, self.datetime]],
-                columns=["country", "nuts_2", "nuts_3", "cases", "datetime"]
-            )
-        )
+        # total = self.df.cases.sum()
+        # self.df = self.df.append(
+        #     pd.DataFrame(
+        #         [[self.country, "sum", "", total, self.datetime]],
+        #         columns=["country", "nuts_2", "nuts_3", "cases", "datetime"]
+        #     )
+        # )
 
         self.df.sort_values(by="cases", inplace=True)
 
@@ -119,7 +119,7 @@ class SARSCOV2ITFULL(COVIDScrapper):
             df_dt = self.df.loc[
                 self.df.datetime == dt
             ]
-            df_dt = self._daily_sum(df_dt, dt)
+            # df_dt = self._daily_sum(df_dt, dt)
             df_dt.sort_values(by="cases", inplace=True)
 
             dt_path = f"{self.daily_folder}/it_covid19_{date}_{hour:0.0f}_{minute:02.0f}.csv"

@@ -1,24 +1,24 @@
 country,nuts_2,nuts_3,cases,datetime
+IT,P.A. Bolzano,unassigned,0,2020-03-21T17:00:00
+IT,P.A. Trento,unassigned,0,2020-03-21T17:00:00
 IT,Sardegna,unassigned,0,2020-03-21T17:00:00
+IT,Toscana,unassigned,0,2020-03-21T17:00:00
+IT,Basilicata,unassigned,0,2020-03-21T17:00:00
 IT,Emilia Romagna,unassigned,0,2020-03-21T17:00:00
+IT,Sicilia,unassigned,0,2020-03-21T17:00:00
 IT,Abruzzo,unassigned,0,2020-03-21T17:00:00
 IT,Valle d'Aosta,unassigned,0,2020-03-21T17:00:00
-IT,Sicilia,unassigned,0,2020-03-21T17:00:00
-IT,Basilicata,unassigned,0,2020-03-21T17:00:00
-IT,P.A. Bolzano,unassigned,0,2020-03-21T17:00:00
 IT,Friuli Venezia Giulia,unassigned,0,2020-03-21T17:00:00
-IT,Toscana,unassigned,0,2020-03-21T17:00:00
-IT,P.A. Trento,unassigned,0,2020-03-21T17:00:00
 IT,Calabria,unassigned,2,2020-03-21T17:00:00
 IT,Sardegna,Oristano,4,2020-03-21T17:00:00
 IT,Molise,Isernia,4,2020-03-21T17:00:00
 IT,Lazio,unassigned,6,2020-03-21T17:00:00
+IT,Sardegna,Sud Sardegna,8,2020-03-21T17:00:00
 IT,Molise,unassigned,8,2020-03-21T17:00:00
 IT,Sicilia,Ragusa,8,2020-03-21T17:00:00
 IT,Basilicata,Matera,8,2020-03-21T17:00:00
-IT,Sardegna,Sud Sardegna,8,2020-03-21T17:00:00
-IT,Campania,Benevento,11,2020-03-21T17:00:00
 IT,Calabria,Vibo Valentia,11,2020-03-21T17:00:00
+IT,Campania,Benevento,11,2020-03-21T17:00:00
 IT,Campania,unassigned,14,2020-03-21T17:00:00
 IT,Umbria,unassigned,18,2020-03-21T17:00:00
 IT,Sardegna,Nuoro,22,2020-03-21T17:00:00
@@ -32,14 +32,14 @@ IT,Puglia,Barletta-Andria-Trani,32,2020-03-21T17:00:00
 IT,Marche,unassigned,33,2020-03-21T17:00:00
 IT,Puglia,Taranto,35,2020-03-21T17:00:00
 IT,Sicilia,Agrigento,36,2020-03-21T17:00:00
-IT,Calabria,Catanzaro,38,2020-03-21T17:00:00
 IT,Friuli Venezia Giulia,Gorizia,38,2020-03-21T17:00:00
+IT,Calabria,Catanzaro,38,2020-03-21T17:00:00
 IT,Sicilia,Siracusa,43,2020-03-21T17:00:00
 IT,Sardegna,Cagliari,45,2020-03-21T17:00:00
 IT,Molise,Campobasso,49,2020-03-21T17:00:00
 IT,Marche,Ascoli Piceno,50,2020-03-21T17:00:00
-IT,Calabria,Crotone,50,2020-03-21T17:00:00
 IT,Calabria,Cosenza,50,2020-03-21T17:00:00
+IT,Calabria,Crotone,50,2020-03-21T17:00:00
 IT,Basilicata,Potenza,58,2020-03-21T17:00:00
 IT,Lazio,Frosinone,59,2020-03-21T17:00:00
 IT,Sicilia,Palermo,63,2020-03-21T17:00:00
@@ -53,8 +53,8 @@ IT,Liguria,La Spezia,94,2020-03-21T17:00:00
 IT,Puglia,Brindisi,94,2020-03-21T17:00:00
 IT,Puglia,Lecce,103,2020-03-21T17:00:00
 IT,Abruzzo,Teramo,105,2020-03-21T17:00:00
-IT,Toscana,Grosseto,106,2020-03-21T17:00:00
 IT,Campania,Caserta,106,2020-03-21T17:00:00
+IT,Toscana,Grosseto,106,2020-03-21T17:00:00
 IT,Toscana,Prato,111,2020-03-21T17:00:00
 IT,Umbria,Terni,115,2020-03-21T17:00:00
 IT,Piemonte,unassigned,116,2020-03-21T17:00:00
@@ -63,8 +63,8 @@ IT,Emilia Romagna,Ferrara,123,2020-03-21T17:00:00
 IT,Campania,Avellino,124,2020-03-21T17:00:00
 IT,Campania,Salerno,126,2020-03-21T17:00:00
 IT,Toscana,Siena,133,2020-03-21T17:00:00
-IT,Lazio,Latina,136,2020-03-21T17:00:00
 IT,Toscana,Arezzo,136,2020-03-21T17:00:00
+IT,Lazio,Latina,136,2020-03-21T17:00:00
 IT,Friuli Venezia Giulia,Pordenone,144,2020-03-21T17:00:00
 IT,Piemonte,Verbano-Cusio-Ossola,149,2020-03-21T17:00:00
 IT,Liguria,Imperia,155,2020-03-21T17:00:00
@@ -127,4 +127,3 @@ IT,Lombardia,Cremona,2733,2020-03-21T17:00:00
 IT,Lombardia,Milano,4672,2020-03-21T17:00:00
 IT,Lombardia,Brescia,5028,2020-03-21T17:00:00
 IT,Lombardia,Bergamo,5869,2020-03-21T17:00:00
-IT,sum,,53578,2020-03-21T17:00:00

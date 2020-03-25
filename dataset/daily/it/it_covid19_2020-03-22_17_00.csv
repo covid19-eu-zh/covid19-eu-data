@@ -1,24 +1,24 @@
 country,nuts_2,nuts_3,cases,datetime
-IT,Sicilia,unassigned,0,2020-03-22T17:00:00
-IT,Sardegna,unassigned,0,2020-03-22T17:00:00
-IT,Valle d'Aosta,unassigned,0,2020-03-22T17:00:00
-IT,Emilia Romagna,unassigned,0,2020-03-22T17:00:00
-IT,Abruzzo,unassigned,0,2020-03-22T17:00:00
-IT,P.A. Trento,unassigned,0,2020-03-22T17:00:00
 IT,Toscana,unassigned,0,2020-03-22T17:00:00
+IT,Sardegna,unassigned,0,2020-03-22T17:00:00
+IT,Sicilia,unassigned,0,2020-03-22T17:00:00
+IT,Valle d'Aosta,unassigned,0,2020-03-22T17:00:00
+IT,Abruzzo,unassigned,0,2020-03-22T17:00:00
 IT,Basilicata,unassigned,0,2020-03-22T17:00:00
+IT,P.A. Trento,unassigned,0,2020-03-22T17:00:00
 IT,P.A. Bolzano,unassigned,0,2020-03-22T17:00:00
+IT,Emilia Romagna,unassigned,0,2020-03-22T17:00:00
 IT,Calabria,unassigned,2,2020-03-22T17:00:00
 IT,Sardegna,Oristano,4,2020-03-22T17:00:00
 IT,Lazio,unassigned,4,2020-03-22T17:00:00
 IT,Molise,Isernia,4,2020-03-22T17:00:00
 IT,Friuli Venezia Giulia,unassigned,7,2020-03-22T17:00:00
 IT,Sardegna,Sud Sardegna,8,2020-03-22T17:00:00
-IT,Sicilia,Ragusa,9,2020-03-22T17:00:00
 IT,Molise,unassigned,9,2020-03-22T17:00:00
+IT,Sicilia,Ragusa,9,2020-03-22T17:00:00
 IT,Campania,Benevento,13,2020-03-22T17:00:00
-IT,Calabria,Vibo Valentia,14,2020-03-22T17:00:00
 IT,Campania,unassigned,14,2020-03-22T17:00:00
+IT,Calabria,Vibo Valentia,14,2020-03-22T17:00:00
 IT,Basilicata,Matera,16,2020-03-22T17:00:00
 IT,Umbria,unassigned,17,2020-03-22T17:00:00
 IT,Sardegna,Nuoro,22,2020-03-22T17:00:00
@@ -29,12 +29,12 @@ IT,Puglia,unassigned,33,2020-03-22T17:00:00
 IT,Marche,unassigned,34,2020-03-22T17:00:00
 IT,Sicilia,Enna,34,2020-03-22T17:00:00
 IT,Abruzzo,L'Aquila,38,2020-03-22T17:00:00
-IT,Puglia,Taranto,41,2020-03-22T17:00:00
 IT,Sicilia,Agrigento,41,2020-03-22T17:00:00
+IT,Puglia,Taranto,41,2020-03-22T17:00:00
 IT,Friuli Venezia Giulia,Gorizia,44,2020-03-22T17:00:00
 IT,Calabria,Catanzaro,45,2020-03-22T17:00:00
-IT,Puglia,Barletta-Andria-Trani,49,2020-03-22T17:00:00
 IT,Sicilia,Siracusa,49,2020-03-22T17:00:00
+IT,Puglia,Barletta-Andria-Trani,49,2020-03-22T17:00:00
 IT,Sardegna,Cagliari,52,2020-03-22T17:00:00
 IT,Molise,Campobasso,53,2020-03-22T17:00:00
 IT,Marche,Ascoli Piceno,56,2020-03-22T17:00:00
@@ -50,11 +50,11 @@ IT,Liguria,La Spezia,99,2020-03-22T17:00:00
 IT,Puglia,Brindisi,100,2020-03-22T17:00:00
 IT,Abruzzo,Chieti,102,2020-03-22T17:00:00
 IT,Sicilia,Messina,112,2020-03-22T17:00:00
-IT,Abruzzo,Teramo,113,2020-03-22T17:00:00
 IT,Marche,Fermo,113,2020-03-22T17:00:00
+IT,Abruzzo,Teramo,113,2020-03-22T17:00:00
 IT,Campania,Caserta,116,2020-03-22T17:00:00
-IT,Toscana,Grosseto,120,2020-03-22T17:00:00
 IT,Puglia,Lecce,120,2020-03-22T17:00:00
+IT,Toscana,Grosseto,120,2020-03-22T17:00:00
 IT,Umbria,Terni,128,2020-03-22T17:00:00
 IT,Toscana,Prato,129,2020-03-22T17:00:00
 IT,Toscana,Livorno,130,2020-03-22T17:00:00
@@ -127,4 +127,3 @@ IT,Lombardia,Cremona,2895,2020-03-22T17:00:00
 IT,Lombardia,Milano,5096,2020-03-22T17:00:00
 IT,Lombardia,Brescia,5317,2020-03-22T17:00:00
 IT,Lombardia,Bergamo,6216,2020-03-22T17:00:00
-IT,sum,,59138,2020-03-22T17:00:00

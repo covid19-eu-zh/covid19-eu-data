@@ -1,27 +1,27 @@
 country,nuts_2,nuts_3,cases,datetime
-IT,Toscana,unassigned,0,2020-03-23T17:00:00
 IT,Sardegna,unassigned,0,2020-03-23T17:00:00
-IT,Valle d'Aosta,unassigned,0,2020-03-23T17:00:00
-IT,Friuli Venezia Giulia,unassigned,0,2020-03-23T17:00:00
 IT,Abruzzo,unassigned,0,2020-03-23T17:00:00
-IT,P.A. Trento,unassigned,0,2020-03-23T17:00:00
-IT,Basilicata,unassigned,0,2020-03-23T17:00:00
 IT,Emilia Romagna,unassigned,0,2020-03-23T17:00:00
-IT,P.A. Bolzano,unassigned,0,2020-03-23T17:00:00
 IT,Sicilia,unassigned,0,2020-03-23T17:00:00
+IT,Basilicata,unassigned,0,2020-03-23T17:00:00
+IT,Valle d'Aosta,unassigned,0,2020-03-23T17:00:00
+IT,P.A. Bolzano,unassigned,0,2020-03-23T17:00:00
+IT,Toscana,unassigned,0,2020-03-23T17:00:00
+IT,P.A. Trento,unassigned,0,2020-03-23T17:00:00
+IT,Friuli Venezia Giulia,unassigned,0,2020-03-23T17:00:00
 IT,Calabria,unassigned,2,2020-03-23T17:00:00
 IT,Molise,Isernia,4,2020-03-23T17:00:00
 IT,Lazio,unassigned,4,2020-03-23T17:00:00
 IT,Sardegna,Oristano,7,2020-03-23T17:00:00
-IT,Sicilia,Ragusa,9,2020-03-23T17:00:00
 IT,Sardegna,Sud Sardegna,9,2020-03-23T17:00:00
+IT,Sicilia,Ragusa,9,2020-03-23T17:00:00
 IT,Molise,unassigned,9,2020-03-23T17:00:00
 IT,Campania,Benevento,13,2020-03-23T17:00:00
 IT,Basilicata,Matera,18,2020-03-23T17:00:00
 IT,Umbria,unassigned,19,2020-03-23T17:00:00
 IT,Calabria,Vibo Valentia,20,2020-03-23T17:00:00
-IT,Sardegna,Nuoro,22,2020-03-23T17:00:00
 IT,Campania,unassigned,22,2020-03-23T17:00:00
+IT,Sardegna,Nuoro,22,2020-03-23T17:00:00
 IT,Sicilia,Caltanissetta,29,2020-03-23T17:00:00
 IT,Lazio,Rieti,31,2020-03-23T17:00:00
 IT,Marche,unassigned,35,2020-03-23T17:00:00
@@ -61,8 +61,8 @@ IT,Piemonte,unassigned,144,2020-03-23T17:00:00
 IT,Campania,Avellino,145,2020-03-23T17:00:00
 IT,Puglia,Lecce,149,2020-03-23T17:00:00
 IT,Lazio,Latina,159,2020-03-23T17:00:00
-IT,Liguria,Imperia,160,2020-03-23T17:00:00
 IT,Toscana,Siena,160,2020-03-23T17:00:00
+IT,Liguria,Imperia,160,2020-03-23T17:00:00
 IT,Friuli Venezia Giulia,Pordenone,170,2020-03-23T17:00:00
 IT,Emilia Romagna,Ferrara,172,2020-03-23T17:00:00
 IT,Campania,Salerno,179,2020-03-23T17:00:00
@@ -127,4 +127,3 @@ IT,Lombardia,Cremona,2925,2020-03-23T17:00:00
 IT,Lombardia,Milano,5326,2020-03-23T17:00:00
 IT,Lombardia,Brescia,5905,2020-03-23T17:00:00
 IT,Lombardia,Bergamo,6471,2020-03-23T17:00:00
-IT,sum,,63927,2020-03-23T17:00:00
