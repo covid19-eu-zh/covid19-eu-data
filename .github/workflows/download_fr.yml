@@ -1,11 +1,11 @@
-name: CI Download FR Data
+name: CI Download FR PDF
 
 on:
   push:
     paths:
-    - 'scripts/download_fr.py'
+    - 'scripts/download_fr_pdf.py'
   schedule:
-    - cron:  '20 7/2 * * *'
+    - cron:  '24 7/2 * * *'
 
 jobs:
   build:
@@ -29,14 +29,14 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
-          python scripts/download_fr.py
-          ls dataset/daily/fr
+          python scripts/download_fr_pdf.py
+          ls documents/daily/fr
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
           git status
           git add .
-          git commit -m "Downloaded FR Data" || echo "Nothing to update"
+          git commit -m "Downloaded FR PDF" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master

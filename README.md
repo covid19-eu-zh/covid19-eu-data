@@ -23,7 +23,7 @@
 | DE | ![CI Download DE SARS-COV-2 Cases from RKI](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20DE%20SARS-COV-2%20Cases%20from%20RKI/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-rki.de-informational)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) |
 | DK  | ![CI Download DK PDF](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20DK%20PDF/badge.svg)  | [![](https://img.shields.io/badge/Data%20Source-ssi.dk-informational)](https://www.ssi.dk/aktuelt/sygdomsudbrud/coronavirus/covid-19-i-danmark-epidemiologisk-overvaagningsrapport) |
 | ES  | ![CI Download ES PDF Files](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20ES%20PDF%20Files/badge.svg)  | [![](https://img.shields.io/badge/Data%20Source-mscbs.gob.es-informational)](http://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm) |
-| FR  | ![CI Download FR Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20FR%20Data/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-santepubliquefrance.fr-informational)](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde) |
+| FR  | ![CI Download FR PDF](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20FR%20PDF/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-santepubliquefrance.fr-informational)](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde) |
 | GR | ![CI Download GR PDF](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20GR%20PDF/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-eody.gov.gr-informational)](https://eody.gov.gr/neos-koronaios-covid-19/) |
 | HU  | ![CI Download HU Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20HU%20Data/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-koronavirus.gov.hu-informational)](https://koronavirus.gov.hu/) |
 | IE | ![CI Download IE PDF](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20IE%20PDF/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-hpsc.ie-informational)](https://www.hpsc.ie/a-z/respiratory/coronavirus/novelcoronavirus/casesinireland/) |
@@ -73,6 +73,10 @@ Caveats:
 ### DE
 
 1. For technical reasons, no data was transmitted from Hamburg on March 25th, 2020.
+
+### FR
+
+1. France stopped updating the case tables on the webpage on 2020-03-26. We went back to the PDF files.
 
 ### NL
 
