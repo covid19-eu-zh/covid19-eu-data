@@ -10,12 +10,13 @@ import requests
 from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
-                   DailyTransformation, retrieve_files)
+                   DailyTransformation, retrieve_files, get_response)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.nl")
 
 REPORT_URL = "https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente"
+COUNTRY_REPORT_URL = "https://www.rivm.nl/nieuws/actuele-informatie-over-coronavirus"
 DAILY_FOLDER = os.path.join("dataset", "daily", "nl")
 DUTCH_MONTHS_TO_EN = {
     'januari': 'january',
@@ -71,11 +72,12 @@ class SARSCOV2NL(COVIDScrapper):
         self.df = self.df[original_cols]
         self.df.fillna(0, inplace=True)
         self.df["Aantal"] = self.df.Aantal.astype(int)
+
         self.df = pd.concat(
             [
                 self.df,
                 pd.DataFrame(
-                    [[self._extract_total()]], columns=["Aantal"]
+                    [self._extract_total()]
                 )
             ]
         )
@@ -91,14 +93,35 @@ class SARSCOV2NL(COVIDScrapper):
         logger.info("list of cases:\n", self.df)
 
     def _extract_total(self):
+        """
+        COUNTRY_REPORT_URL
+        """
+        # # Totaal aantal testen positief in Nederland: 7431
+        # re_total = re.compile(r"Totaal aantal testen positief in Nederland: (\d+)")
+        # total = re_total.findall(self.req.content.decode("utf-8"))
+        # if not total:
+        #     raise Exception("Could not find total cases")
 
-        # Totaal aantal testen positief in Nederland: 7431
-        re_total = re.compile(r"Totaal aantal testen positief in Nederland: (\d+)")
-        total = re_total.findall(self.req.content.decode("utf-8"))
-        if not total:
-            raise Exception("Could not find total cases")
+        req = get_response(COUNTRY_REPORT_URL)
+        req.content.decode("utf-8")
 
-        return int(total[0])
+        # Het totaal aantal gemelde patiënten: 6412 (+852)
+        re_total_cases = re.compile(
+            r"Het totaal aantal gemelde patiënten: (\d+)"
+        )
+        re_total_deaths = re.compile(r"Het totaal aantal gemelde overleden patiënten: (\d+)")
+        re_total_hospitalized = re.compile(r"Het totaal aantal gemelde patiënten opgenomen \(geweest\) in het ziekenhuis: (\d+)")
+
+        total_cases = re_total_cases.findall(req.content.decode("utf-8"))[0]
+        total_deaths = re_total_deaths.findall(req.content.decode("utf-8"))[0]
+        total_hospitalized = re_total_hospitalized.findall(req.content.decode("utf-8"))[0]
+
+        # ["Gemeente", "Aantal", "BevAant", "Aantal per 100.000 inwoners"]
+        return {
+            "Aantal": int(total_cases),
+            "deaths": total_deaths,
+            "hospitalized": total_hospitalized
+        }
 
     def extract_datetime(self):
         """Get datetime of dataset
@@ -137,30 +160,30 @@ class SARSCOV2NL(COVIDScrapper):
             inplace=True
         )
 
-        self.df = self.df[["country", "lau", "cases", "population", "cases/100k pop.", "datetime"]]
+        self.df = self.df[["country", "lau", "cases", "population", "cases/100k pop.", "deaths", "hospitalized", "datetime"]]
 
         self.df.sort_values(by="cases", inplace=True)
 
 
 if __name__ == "__main__":
-    column_converter = {
-        "city": "lau"
-    }
-    drop_rows = {
-        "city": "sum"
-    }
+    # column_converter = {
+    #     "city": "lau"
+    # }
+    # drop_rows = {
+    #     "city": "sum"
+    # }
 
-    daily_files = retrieve_files(DAILY_FOLDER)
-    daily_files.sort()
+    # daily_files = retrieve_files(DAILY_FOLDER)
+    # daily_files.sort()
 
-    for file in daily_files:
-        file_path = os.path.join(DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter,
-            drop_rows=drop_rows
-        )
-        file_transformation.workflow()
+    # for file in daily_files:
+    #     file_path = os.path.join(DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter,
+    #         drop_rows=drop_rows
+    #     )
+    #     file_transformation.workflow()
 
     cov_nl = SARSCOV2NL()
     cov_nl.workflow()
