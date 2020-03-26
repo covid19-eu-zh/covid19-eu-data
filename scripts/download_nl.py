@@ -75,7 +75,7 @@ class SARSCOV2NL(COVIDScrapper):
             [
                 self.df,
                 pd.DataFrame(
-                    [["NL", self._extract_total()]], columns=["Gemeente", "Aantal"]
+                    [[self._extract_total()]], columns=["Aantal"]
                 )
             ]
         )
