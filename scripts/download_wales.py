@@ -77,10 +77,16 @@ class SARSCOV2Wales(COVIDScrapper):
 
         self.df.drop(
             self.df.loc[
-                self.df['nuts_3'] == 'TOTAL'
+                (
+                    self.df['nuts_3'] == 'TOTAL'
+                ) | (
+                    self.df['nuts_3'] == 'Total'
+                )
             ].index,
             inplace=True
         )
+
+        self.df.replace("Wales Total", "Wales", inplace=True)
 
 
 
