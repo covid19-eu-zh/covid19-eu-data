@@ -70,6 +70,10 @@ Caveats:
 
 1. Only PDF files of the records are downloaded.
 
+### DE
+
+1. For technical reasons, no data was transmitted from Hamburg on March 25th, 2020.
+
 ### NL
 
 Caveats:
