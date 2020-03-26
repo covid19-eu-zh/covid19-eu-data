@@ -15,8 +15,7 @@ from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.nl")
 
-REPORT_URL = "https://www.volksgezondheidenzorg.info/onderwerp/infectieziekten/regionaal-internationaal/coronavirus-covid-19#node-coronavirus-covid-19-meldingen"
-REPORT_CSV_BASE_URL = "https://www.volksgezondheidenzorg.info"
+REPORT_URL = "https://www.rivm.nl/coronavirus-kaart-van-nederland-per-gemeente"
 DAILY_FOLDER = os.path.join("dataset", "daily", "nl")
 DUTCH_MONTHS_TO_EN = {
     'januari': 'january',
@@ -72,6 +71,14 @@ class SARSCOV2NL(COVIDScrapper):
         self.df = self.df[original_cols]
         self.df.fillna(0, inplace=True)
         self.df["Aantal"] = self.df.Aantal.astype(int)
+        self.df = pd.concat(
+            [
+                self.df,
+                pd.DataFrame(
+                    [["NL", self._extract_total()]], columns=["Gemeente", "Aantal"]
+                )
+            ]
+        )
         # add sum
         # total = self.df.Aantal.sum()
         # total_pop = self.df["BevAant"].sum()
@@ -82,6 +89,16 @@ class SARSCOV2NL(COVIDScrapper):
         # )
 
         logger.info("list of cases:\n", self.df)
+
+    def _extract_total(self):
+
+        # Totaal aantal testen positief in Nederland: 7431
+        re_total = re.compile(r"Totaal aantal testen positief in Nederland: (\d+)")
+        total = re_total.findall(self.req.content.decode("utf-8"))
+        if not total:
+            raise Exception("Could not find total cases")
+
+        return int(total[0])
 
     def extract_datetime(self):
         """Get datetime of dataset
