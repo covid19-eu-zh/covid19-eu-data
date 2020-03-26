@@ -50,6 +50,7 @@ img.emoji {
 	<link rel='stylesheet' id='wp-block-library-css'  href='https://covid19.min-saude.pt/wp-includes/css/dist/block-library/style.min.css?ver=4189f9' type='text/css' media='all' />
 <link rel='stylesheet' id='spms-accordion-blocks-style-css'  href='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/css/accordion-blocks.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='https://covid19.min-saude.pt/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='scripts-covid-form-css'  href='https://covid19.min-saude.pt/wp-content/plugins/form-init//scripts.js?ver=4189f9' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href="https://covid19.min-saude.pt/wp-content/plugins/smart-slider-3/library/media/smartslider.min.css?1583772266" media="all" />
 <style type="text/css">.n2-ss-spinner-simple-white-container {
     position: absolute;
@@ -172,7 +173,7 @@ img.emoji {
 										<div class="div_search">
 											<label for="caixa_pesquisa">
                 								<input id="caixa_pesquisa" type="search" aria-hidden="false" class="banner_inputer" placeholder="Pesquisar" value="" name="s">
-                								Pesquisar
+                								
 											</label>
 										</div>
 										<img class="fake_lupa_icon" aria-hidden="true" src='https://covid19.min-saude.pt/wp-content/themes/COVID-19/images/header/lupa.svg' alt="click para abrir a pesquisa">
@@ -245,8 +246,17 @@ img.emoji {
 					</div>
 					
 					<div class="world_spans">
-						<div class="world_dark">Se tiver tosse, febre, ou falta de ar ligue <a href="tel:808242424" class="world_bolder">SNS24: 808 24 24 24</a></div>
-						<div class="world_light">Para baixas médicas deve ligar para a <a href="tel:300502502" class="world_bolder">Segurança Social: 300 502 502</a></div>
+						<div class="world_dark"><div class="world_dark">Se tiver tosse, febre, ou falta de ar ligue <a class="world_bolder" href="tel:808242424">SNS24: 808 24 24 24</a></div>
+</div>
+						<div class="world_light"><div class="index_world">
+<div class="world_last_infos">
+<div class="world_spans">
+<div class="world_light">Para baixas médicas deve ligar para a <a class="world_bolder" href="tel:300502502">Segurança Social: 300 502 502</a></div>
+</div>
+</div>
+</div>
+<div class="index_news"></div>
+</div>
 					</div>
 				</div>
 			</div>
@@ -407,7 +417,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">sed vel, mattis elit. ante. leo. ultricies mi, Aliquam</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">risus libero velit, ante. dolor leo. risus. suscipit</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -485,5 +495,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-03-26 17:17:24 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-03-26 22:17:03 by W3 Total Cache
 -->
