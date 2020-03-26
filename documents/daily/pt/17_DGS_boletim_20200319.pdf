@@ -240,7 +240,7 @@ img.emoji {
 					</a>
 					
 					<div class="world_videos">
-						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/_TzLRKoCHxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/t47HuKohqr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<!-- <a class="world_video_link" href="">Ver mais videos</a>  -->
 					</div>
 					
@@ -257,6 +257,20 @@ img.emoji {
     			
     			<div class="news_item_zone">
         			    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/dgs-lanca-norma-sobre-resposta-em-medicina-intensiva/" class="news_link">
+    								<span class="news_date">26/03/2020</span>								
+    								<h2 class="news_title">DGS lança norma sobre resposta em Medicina Intensiva</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/covid-19-medicamentos-atraves-da-internet/" class="news_link">
+    								<span class="news_date">26/03/2020</span>								
+    								<h2 class="news_title">COVID-19 - Medicamentos através da internet</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
     							<a href="https://covid19.min-saude.pt/ars-norte-disponibiliza-duas-linhas-telefonicas-para-rastrear-sintomas/" class="news_link">
     								<span class="news_date">25/03/2020</span>								
     								<h2 class="news_title">ARS Norte disponibiliza duas linhas telefónicas para rastrear sintomas</h2>
@@ -267,20 +281,6 @@ img.emoji {
     							<a href="https://covid19.min-saude.pt/medidas-especiais-e-urgentes-para-combater-a-pandemia-de-coronavirus/" class="news_link">
     								<span class="news_date">25/03/2020</span>								
     								<h2 class="news_title">Medidas especiais e urgentes para combater a pandemia de coronavírus</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/portugal-adquire-500-ventiladores-e-280-mil-testes/" class="news_link">
-    								<span class="news_date">24/03/2020</span>								
-    								<h2 class="news_title">Portugal adquire 500 ventiladores e 280 mil testes</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/lancada-orientacao-para-servicos-prisionais/" class="news_link">
-    								<span class="news_date">24/03/2020</span>								
-    								<h2 class="news_title">Lançada orientação para serviços prisionais</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -407,7 +407,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">mi, suscipit leo. justo Nullam eget leo</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">id, ante. massa risus. in accumsan</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -485,5 +485,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-03-26 07:17:35 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-03-26 12:17:22 by W3 Total Cache
 -->
