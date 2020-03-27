@@ -20,7 +20,7 @@ DAILY_FOLDER = os.path.join("documents", "daily", "fr")
 if __name__ == "__main__":
 
     try:
-        req_page = requests.get(FR_REPORT_URL)
+        req_page = requests.get(FR_REPORT_URL, verify=False)
     except Exception as e:
         raise Exception(f"Could not get web page content: {e}")
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     # Download pdf page
     try:
-        req_pdf_page = requests.get(pdf_page)
+        req_pdf_page = requests.get(pdf_page, verify=False)
     except Exception as e:
         raise Exception(f"Could not get web page content: {e}")
     # href="/content/download/239617/2544833"
@@ -56,12 +56,13 @@ if __name__ == "__main__":
 
     pdf_url = PDF_BASE_URL + pdf_link
 
-    pdf_url_get = get_response(pdf_url)
+    pdf_url_get = requests.get(pdf_url, verify=False)
 
     with open(
         os.path.join(DAILY_FOLDER, f"{pdf_name}.pdf"),
         'wb'
     ) as f:
+        logger.info(f'Writing to {os.path.join(DAILY_FOLDER, f"{pdf_name}.pdf")}')
         f.write(pdf_url_get.content)
 
 
