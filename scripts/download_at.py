@@ -100,7 +100,7 @@ class SARSCOV2AT(COVIDScrapper):
         """
         req = get_response(HOSPITALIZED)
 
-        re_dt = re.compile(r'Stand.*(\d{1,2}.\d{1,2}.\d{4}, \d{1,2}:\d{1,2}) Uhr')
+        re_dt = re.compile(r'Stand (\d+.\d+.\d+, \d+:\d+) Uhr')
         text = html.unescape(req.content.decode(req.apparent_encoding))
         dt_from_re = re_dt.findall(text)
 
@@ -159,11 +159,11 @@ if __name__ == "__main__":
     da.workflow()
 
     to_be_cached ={
-        "Bezirke": "https://info.gesundheitsministerium.at/data/Bezirke.js",
-        "Geschlechtsverteilung": "https://info.gesundheitsministerium.at/data/Geschlechtsverteilung.js",
-        "Altersverteilung": "https://info.gesundheitsministerium.at/data/Altersverteilung.js",
-        "SimpleData": "https://info.gesundheitsministerium.at/data/SimpleData.js",
-        "page": "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+        "Bezirke.js": "https://info.gesundheitsministerium.at/data/Bezirke.js",
+        "Geschlechtsverteilung.js": "https://info.gesundheitsministerium.at/data/Geschlechtsverteilung.js",
+        "Altersverteilung.js": "https://info.gesundheitsministerium.at/data/Altersverteilung.js",
+        "SimpleData.js": "https://info.gesundheitsministerium.at/data/SimpleData.js",
+        "Coronavirus.html": "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
     }
     for key,val in to_be_cached.items():
         cache_content(val, cov_at.datetime, key)
