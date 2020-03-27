@@ -52,6 +52,7 @@ class SARSCOV2Wales(COVIDScrapper):
         self.df["nuts_3"] = self.df.nuts_3.apply(
             lambda x: x.replace("  ", " ") if isinstance(x, str) else x
         )
+        self.df["cases"] = self.df.cases.astype(int)
         logger.info("cases:\n", self.df)
 
     def extract_datetime(self):
@@ -86,26 +87,26 @@ class SARSCOV2Wales(COVIDScrapper):
             inplace=True
         )
 
-        self.df.replace("Wales Total", "Wales", inplace=True)
+        self.df.replace("Wales Total", "", inplace=True)
 
 
 
 if __name__ == "__main__":
 
-    column_converter = {
-        "authority": "nuts_3"
-    }
+    # column_converter = {
+    #     "authority": "nuts_3"
+    # }
 
-    daily_files = retrieve_files(WALES_DAILY_FOLDER)
-    daily_files.sort()
+    # daily_files = retrieve_files(WALES_DAILY_FOLDER)
+    # daily_files.sort()
 
-    for file in daily_files:
-        file_path = os.path.join(WALES_DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter
-        )
-        file_transformation.workflow()
+    # for file in daily_files:
+    #     file_path = os.path.join(WALES_DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter
+    #     )
+    #     file_transformation.workflow()
 
     cov_wales = SARSCOV2Wales()
     cov_wales.workflow()

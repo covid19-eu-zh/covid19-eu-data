@@ -23,7 +23,7 @@ Wales,Residential area to be confirmed,12,2020-03-16T13:30:00
 Wales,Newport City Council,14,2020-03-16T13:30:00
 Wales,Caerphilly County Borough Council,14,2020-03-16T13:30:00
 Wales,City and County of Swansea,23,2020-03-16T13:30:00
-Wales,Total:,124,2020-03-16T13:30:00
+Wales,,124,2020-03-16T13:30:00
 Wales,Denbighshire County Council,0,2020-03-17T11:00:00
 Wales,Gwynedd Council,0,2020-03-17T11:00:00
 Wales,Merthyr Tydfil County Borough Council,0,2020-03-17T11:00:00
@@ -47,7 +47,7 @@ Wales,City of Cardiff Council,14,2020-03-17T11:00:00
 Wales,Caerphilly County Borough Council,15,2020-03-17T11:00:00
 Wales,City and County of Swansea,22,2020-03-17T11:00:00
 Wales,Newport City Council,24,2020-03-17T11:00:00
-Wales,Total:,136,2020-03-17T11:00:00
+Wales,,136,2020-03-17T11:00:00
 Wales,Denbighshire County Council,0,2020-03-17T16:30:00
 Wales,Gwynedd Council,0,2020-03-17T16:30:00
 Wales,Merthyr Tydfil County Borough Council,0,2020-03-17T16:30:00
@@ -71,7 +71,7 @@ Wales,City of Cardiff Council,14,2020-03-17T16:30:00
 Wales,Caerphilly County Borough Council,15,2020-03-17T16:30:00
 Wales,City and County of Swansea,22,2020-03-17T16:30:00
 Wales,Newport City Council,24,2020-03-17T16:30:00
-Wales,Total:,136,2020-03-17T16:30:00
+Wales,,136,2020-03-17T16:30:00
 Wales,To be confirmed,1,2020-03-21T16:20:00
 Wales,Resident outside Wales,2,2020-03-21T16:20:00
 Wales,Betsi Cadwaladr,8,2020-03-21T16:20:00
@@ -90,7 +90,7 @@ Wales,Cwm Taf,21,2020-03-23T12:00:00
 Wales,Swansea Bay,47,2020-03-23T12:00:00
 Wales,Cardiff and Vale,84,2020-03-23T12:00:00
 Wales,Aneurin Bevan,220,2020-03-23T12:00:00
-Wales,Wales,418,2020-03-23T12:00:00
+Wales,,418,2020-03-23T12:00:00
 Wales,To be confirmed,2,2020-03-24T12:00:00
 Wales,Resident outside Wales,3,2020-03-24T12:00:00
 Wales,Powys,11,2020-03-24T12:00:00
@@ -100,29 +100,27 @@ Wales,Hywel Dda,27,2020-03-24T12:00:00
 Wales,Swansea Bay,49,2020-03-24T12:00:00
 Wales,Cardiff and Vale,96,2020-03-24T12:00:00
 Wales,Aneurin Bevan,248,2020-03-24T12:00:00
-Wales,Wales,478,2020-03-24T12:00:00
-Wales,Cardiff and Vale,125,2020-03-25T12:00:00
-Wales,Powys,14,2020-03-25T12:00:00
-Wales,Betsi Cadwaladr,22,2020-03-25T12:00:00
-Wales,Aneurin Bevan,309,2020-03-25T12:00:00
-Wales,Hywel Dda,38,2020-03-25T12:00:00
+Wales,,478,2020-03-24T12:00:00
 Wales,To be confirmed,4,2020-03-25T12:00:00
 Wales,Resident outside Wales,4,2020-03-25T12:00:00
+Wales,Powys,14,2020-03-25T12:00:00
+Wales,Betsi Cadwaladr,22,2020-03-25T12:00:00
+Wales,Hywel Dda,38,2020-03-25T12:00:00
 Wales,Cwm Taf,42,2020-03-25T12:00:00
-Wales,Wales,628,2020-03-25T12:00:00
 Wales,Swansea Bay,70,2020-03-25T12:00:00
-Wales,,cases,2020-03-25T12:00:00
-Wales,Cardiff and Vale,125,2020-03-26T12:00:00
-Wales,Powys,14,2020-03-26T12:00:00
-Wales,Betsi Cadwaladr,22,2020-03-26T12:00:00
-Wales,Aneurin Bevan,309,2020-03-26T12:00:00
-Wales,Hywel Dda,38,2020-03-26T12:00:00
+Wales,Cardiff and Vale,125,2020-03-25T12:00:00
+Wales,Aneurin Bevan,309,2020-03-25T12:00:00
+Wales,,628,2020-03-25T12:00:00
 Wales,To be confirmed,4,2020-03-26T12:00:00
 Wales,Resident outside Wales,4,2020-03-26T12:00:00
+Wales,Powys,14,2020-03-26T12:00:00
+Wales,Betsi Cadwaladr,22,2020-03-26T12:00:00
+Wales,Hywel Dda,38,2020-03-26T12:00:00
 Wales,Cwm Taf,42,2020-03-26T12:00:00
-Wales,Wales,628,2020-03-26T12:00:00
 Wales,Swansea Bay,70,2020-03-26T12:00:00
-Wales,,cases,2020-03-26T12:00:00
+Wales,Cardiff and Vale,125,2020-03-26T12:00:00
+Wales,Aneurin Bevan,309,2020-03-26T12:00:00
+Wales,Wales,628,2020-03-26T12:00:00
 Wales,Resident outside Wales,5,2020-03-26T14:00:00
 Wales,To be confirmed,7,2020-03-26T14:00:00
 Wales,Powys,16,2020-03-26T14:00:00
@@ -132,4 +130,4 @@ Wales,Cwm Taf Morgannwg,54,2020-03-26T14:00:00
 Wales,Swansea Bay,75,2020-03-26T14:00:00
 Wales,Cardiff and Vale,156,2020-03-26T14:00:00
 Wales,Aneurin Bevan,358,2020-03-26T14:00:00
-Wales,Wales,736,2020-03-26T14:00:00
+Wales,,736,2020-03-26T14:00:00
