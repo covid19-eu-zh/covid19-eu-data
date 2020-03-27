@@ -60,11 +60,13 @@ class SARSCOV2AT(COVIDScrapper):
             columns = {
                 "Bundesland": geo_loc_key,
                 "Hospitalisierung": "hospitalized",
-                "Intensivstation": "intensive_case"
+                "Intensivstation": "intensive_care"
             },
             inplace=True
         )
         hos_df.replace("Österreich gesamt", "", inplace=True)
+        hos_df["hospitalized"] = hos_df.hospitalized.astype(int)
+        hos_df["intensive_care"] = hos_df.intensive_care.astype(int)
 
         cases_req = get_response(AT_BUNDESLAND_URL)
         re_cases = re.compile(r'var dpBundesland = (\[.*\]);')
