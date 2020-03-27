@@ -2,19 +2,27 @@ import logging
 import os
 import re
 
+import datetime
 import dateutil
 import pandas as pd
 import requests
 from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
-                   DailyTransformation, retrieve_files)
+                   DailyTransformation, retrieve_files, get_response)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.se")
 
 SE_REPORT_URL = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "se")
+
+TOTAL_API = "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/3/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Totalt_antal_fall%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
+INTENSIVE_API = "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/3/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Totalt_antal_intensivv%C3%A5rdade%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
+DEATHS_API = "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/3/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Totalt_antal_avlidna%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
+DAILY_DIFF_REGION_TIMESERIES_API = "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/1/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Statistikdatum%20desc&resultOffset=0&resultRecordCount=2000&cacheHint=true"
+# This is the most useful
+REGION_LATEST_API = "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/0/query?f=json&where=Region%20%3C%3E%20%27dummy%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Region%20asc&outSR=102100&resultOffset=0&resultRecordCount=25&cacheHint=true"
 
 class SARSCOV2SE(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
@@ -29,34 +37,35 @@ class SARSCOV2SE(COVIDScrapper):
     def extract_table(self):
         """Load data table from web page
         """
-        req_dfs = pd.read_html(self.req.content, flavor='lxml')
 
-        if not req_dfs:
-            raise Exception("Could not find data table in webpage")
+        data = self.req.json()['features']
+        data = [i['attributes'] for i in data]
+        self.df = pd.DataFrame(data)
 
-        self.df = req_dfs[0].rename(lambda x:x.replace('*', ''), axis='columns') # there is another list, req_dfs[1], contains source of cases
-
-        self.df["nuts_3"] = self.df["Region"].apply(lambda x:x.replace('*',''))
-        self.df["cases"] = self.df["Fall"].apply(lambda x:int(x.replace(' ','')))
-        self.df["cases/100k pop."] = self.df["Kumulativ Incidens"].astype(float)
-        self.df["percent"] = self.df["Procent"].astype(float)
+        self.df.rename(
+            columns = {
+                "Region": "nuts_3",
+                "Totalt_antal_fall": "cases",
+                "Fall_per_100000_inv": "cases/100k pop.",
+                "Totalt_antal_intensivvårdade": "intensive_care",
+                "Totalt_antal_avlidna": "deaths"
+            },
+            inplace=True
+        )
 
         logger.info("se cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        re_dt = re.compile(r'Sverige \d{1,2} \w{0,5} \d{4} \(kl. \d{1,2}.\d{2}\)')
-        dt_from_re = re_dt.findall(self.req.text)
+        req = get_response(DAILY_DIFF_REGION_TIMESERIES_API)
+        data = req.json()['features']
+        dates = [i['attributes']['Statistikdatum'] for i in data]
+        dates.sort()
+        timestamp = dates[-1]
+        self.dt = datetime.datetime.fromtimestamp(timestamp/1000)
 
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
-
-        dt_from_re = dt_from_re[0]
-        re_sub = re.compile('Sverige\ |(\(|\)|kl.\ )')
-        dt_from_re = re_sub.sub('', dt_from_re.replace('.',':').replace('Mars','March')) # need to find a better way to transfer month
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
-        self.dt = dt_from_re
+        logger.info("using date")
 
     def post_processing(self):
         self.df.fillna(0, inplace=True)
@@ -73,26 +82,26 @@ class SARSCOV2SE(COVIDScrapper):
 
 if __name__ == "__main__":
 
-    column_converter = {
-        "authority": "nuts_3"
-    }
-    drop_rows = {
-        "authority": "sum"
-    }
+    # column_converter = {
+    #     "authority": "nuts_3"
+    # }
+    # drop_rows = {
+    #     "authority": "sum"
+    # }
 
-    daily_files = retrieve_files(DAILY_FOLDER)
-    daily_files.sort()
+    # daily_files = retrieve_files(DAILY_FOLDER)
+    # daily_files.sort()
 
-    for file in daily_files:
-        file_path = os.path.join(DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter,
-            drop_rows=drop_rows
-        )
-        file_transformation.workflow()
+    # for file in daily_files:
+    #     file_path = os.path.join(DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter,
+    #         drop_rows=drop_rows
+    #     )
+    #     file_transformation.workflow()
 
-    cov_se = SARSCOV2SE()
+    cov_se = SARSCOV2SE(url=REGION_LATEST_API)
     cov_se.workflow()
 
     print(cov_se.df)
