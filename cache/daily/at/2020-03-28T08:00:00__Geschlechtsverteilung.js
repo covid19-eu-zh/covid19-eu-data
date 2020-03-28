@@ -1,1 +1,1 @@
-var dpGeschlechtsverteilung = [{"label":"männlich","y":53},{"label":"weiblich","y":47}];
+var dpGeschlechtsverteilung = [{"label":"männlich","y":52},{"label":"weiblich","y":48}];
