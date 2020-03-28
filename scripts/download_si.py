@@ -8,13 +8,14 @@ import requests
 from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
-                   DailyTransformation, retrieve_files)
+                   DailyTransformation, retrieve_files, get_response)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.si")
 
 REPORT_URL = "https://www.gov.si/en/topics/coronavirus-disease-covid-19/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "si")
+CACHE_FOLDER = os.path.join("cache", "daily", "si")
 
 class SARSCOV2SI(COVIDScrapper):
     def __init__(self, url=None, daily_folder=None):
@@ -59,19 +60,32 @@ class SARSCOV2SI(COVIDScrapper):
         self.df.sort_values(by="cases", inplace=True)
 
 
+def cache_table():
+    req_dfs = pd.read_html(REPORT_URL, flavor='lxml')
+
+    if not req_dfs:
+        raise Exception("Could not find data table in webpage")
+
+    df = req_dfs[0]
+
+    dt = dateutil.parser.parse(df.iloc[0].Date, dayfirst=True)
+
+    logger.info("records cases:\n", df)
+
+    df.to_csv(
+        f"{CACHE_FOLDER}/{dt.isoformat()}.csv",
+        index=False
+    )
+
+    with open(
+            os.path.join(CACHE_FOLDER, f"{dt.isoformat()}.html"),
+            'wb'
+        ) as f:
+            f.write(get_response(REPORT_URL).content)
+
 
 if __name__ == "__main__":
 
-    cov_si = SARSCOV2SI()
-    cov_si.workflow()
-
-    print(cov_si.df)
-
-    da = DailyAggregator(
-        base_folder="dataset",
-        daily_folder=DAILY_FOLDER,
-        country="si"
-    )
-    da.workflow()
+    cache_table()
 
     print("End of Game")
