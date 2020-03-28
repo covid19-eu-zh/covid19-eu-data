@@ -11,14 +11,19 @@ import requests
 from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
-                   DailyTransformation, retrieve_files)
+                   DailyTransformation, retrieve_files, get_response)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.cz")
 
 REPORT_URL = "https://onemocneni-aktualne.mzcr.cz/covid-19"
+TEST_URL = "https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/testy.csv"
+CASES_URL = "https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/nakaza.csv"
+CASES_DETAILS_URL = "https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/osoby.csv"
+
 DAILY_FOLDER = os.path.join("dataset", "daily", "cz")
-WEBPAGE_CACHE_FOLDER = os.path.join("documents", "daily", "cz")
+WEBPAGE_CACHE_FOLDER = os.path.join("cache", "daily", "cz")
+API_CACHE_FOLDER = os.path.join("cache", "daily", "cz", "api")
 
 
 class SARSCOV2CZ(COVIDScrapper):
@@ -36,7 +41,7 @@ class SARSCOV2CZ(COVIDScrapper):
         """
 
         doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
-        el = doc.xpath('.//div[@id="js-total-regions-data"]')
+        el = doc.xpath('.//div[@id="js-total-isin-regions-data"]')
         if el:
             text = "".join(
                 el[0].get('data-barchart')
@@ -110,6 +115,21 @@ class SARSCOV2CZ(COVIDScrapper):
             f.write(self.req.content)
 
 
+
+def cache_content(url, save_as):
+    save_as_folder = "/".join(save_as.split("/")[:-1])
+    if not os.path.exists(save_as_folder):
+        os.makedirs(save_as_folder)
+
+    req = get_response(url)
+    with open(
+            save_as,
+            'wb'
+        ) as f:
+            f.write(req.content)
+
+
+
 if __name__ == "__main__":
     # column_converter = {
     #     "authority": "nuts_3"
@@ -141,5 +161,20 @@ if __name__ == "__main__":
         country="CZ"
     )
     da.workflow()
+
+    # cache data files
+    # https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19
+    DATA_INDEX_URL = "https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19"
+    DATA_API_BASE_URL = "https://onemocneni-aktualne.mzcr.cz"
+    req = get_response(DATA_INDEX_URL)
+    content = req.content.decode(req.apparent_encoding)
+    doc = lxml.html.document_fromstring(content)
+    links = doc.xpath('//a/@href')
+    links = [i for i in links if (i.endswith(".csv") or i.endswith(".json"))]
+
+    for link in links:
+        path = os.path.join(API_CACHE_FOLDER, link[1:])
+        link = DATA_API_BASE_URL + link
+        cache_content(url=link, save_as=path)
 
     print("End of Game")
