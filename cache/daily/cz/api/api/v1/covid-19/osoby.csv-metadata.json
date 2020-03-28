@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "osoby.csv",
+    "dc:title": "COVID-19: Celkový (kumulativní) počet osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "prokázaná nákaza",
+        "krajské hygienické stanice"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "http://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2020-03-28",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum_hlaseni",
+                "titles": "datum_hlaseni",
+                "datatype": "date"
+            },
+            {
+                "name": "vek",
+                "titles": "vek",
+                "datatype": "integer"
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string"
+            },
+            {
+                "name": "kraj",
+                "titles": "kraj",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém byla pozitivní nákaza hlášena krajskou hygienickou stanicí."
+            },
+            {
+                "name": "nakaza_v_zahranici",
+                "titles": "nakaza_v_zahranici",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda došlo k nákaze mimo ČR."
+            },
+            {
+                "name": "nakaza_zeme_csu_kod",
+                "titles": "nakaza_zeme_csu_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor státu v zahraničí, kde došlo k nákaze (dvoumístný kód z číselníku zemí CZEM)."
+            }
+        ]
+    }
+}

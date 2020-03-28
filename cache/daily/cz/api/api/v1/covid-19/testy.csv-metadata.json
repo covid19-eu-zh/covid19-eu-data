@@ -1,0 +1,52 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "testy.csv",
+    "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "testy",
+        "laboratoře"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "http://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2020-03-28",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "testy_den",
+                "titles": "testy_den",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených testů."
+            },
+            {
+                "name": "testy_celkem",
+                "titles": "testy_celkem",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených testů."
+            }
+        ]
+    }
+}
