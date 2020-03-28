@@ -111,22 +111,22 @@ class SARSCOV2CZ(COVIDScrapper):
 
 
 if __name__ == "__main__":
-    column_converter = {
-        "authority": "nuts_3"
-    }
-    drop_rows = {
-        "authority": "sum"
-    }
-    daily_files = retrieve_files(DAILY_FOLDER)
-    daily_files.sort()
-    for file in daily_files:
-        file_path = os.path.join(DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter,
-            drop_rows=drop_rows
-        )
-        file_transformation.workflow()
+    # column_converter = {
+    #     "authority": "nuts_3"
+    # }
+    # drop_rows = {
+    #     "authority": "sum"
+    # }
+    # daily_files = retrieve_files(DAILY_FOLDER)
+    # daily_files.sort()
+    # for file in daily_files:
+    #     file_path = os.path.join(DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter,
+    #         drop_rows=drop_rows
+    #     )
+    #     file_transformation.workflow()
 
     cov_cz = SARSCOV2CZ()
     cov_cz.workflow()

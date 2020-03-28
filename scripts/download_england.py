@@ -89,20 +89,20 @@ class SARSCOV2England(COVIDScrapper):
 
 if __name__ == "__main__":
 
-    column_converter = {
-        "authority": "nuts_3"
-    }
+    # column_converter = {
+    #     "authority": "nuts_3"
+    # }
 
-    daily_files = retrieve_files(ENGLAND_DAILY_FOLDER)
-    daily_files.sort()
+    # daily_files = retrieve_files(ENGLAND_DAILY_FOLDER)
+    # daily_files.sort()
 
-    for file in daily_files:
-        file_path = os.path.join(ENGLAND_DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter
-        )
-        file_transformation.workflow()
+    # for file in daily_files:
+    #     file_path = os.path.join(ENGLAND_DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter
+    #     )
+    #     file_transformation.workflow()
 
     cov_england = SARSCOV2England()
     cov_england.workflow()
