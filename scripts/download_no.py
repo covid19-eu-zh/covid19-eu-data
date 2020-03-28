@@ -97,24 +97,24 @@ class SARSCOV2NO(COVIDScrapper):
 
 
 if __name__ == "__main__":
-    column_converter = {
-        "county": "nuts_3"
-    }
-    drop_rows = {
-        "county": "sum"
-    }
+    # column_converter = {
+    #     "county": "nuts_3"
+    # }
+    # drop_rows = {
+    #     "county": "sum"
+    # }
 
-    daily_files = retrieve_files(DAILY_FOLDER)
-    daily_files.sort()
+    # daily_files = retrieve_files(DAILY_FOLDER)
+    # daily_files.sort()
 
-    for file in daily_files:
-        file_path = os.path.join(DAILY_FOLDER, file)
-        file_transformation = DailyTransformation(
-            file_path=file_path,
-            column_converter=column_converter,
-            drop_rows=drop_rows
-        )
-        file_transformation.workflow()
+    # for file in daily_files:
+    #     file_path = os.path.join(DAILY_FOLDER, file)
+    #     file_transformation = DailyTransformation(
+    #         file_path=file_path,
+    #         column_converter=column_converter,
+    #         drop_rows=drop_rows
+    #     )
+    #     file_transformation.workflow()
 
     cov_no = SARSCOV2NO()
     cov_no.workflow()
