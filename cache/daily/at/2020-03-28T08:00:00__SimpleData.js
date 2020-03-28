@@ -1,2 +1,2 @@
-var Erkrankungen = 8030;
-var LetzteAktualisierung = "28.03.2020 15:00.00";
+var Erkrankungen = 8068;
+var LetzteAktualisierung = "28.03.2020 16:00.00";
