@@ -45,6 +45,8 @@ class SARSCOV2Scotland(COVIDScrapper):
             raise Exception("Could not find data table in webpage")
 
         self.df = req_dfs[0]
+        self.df.columns = self.df.iloc[0]
+        self.df = self.df.iloc[1:]
 
         self.df.rename(columns={
             "Health board": "nuts_3",
