@@ -82,8 +82,10 @@ class SARSCOV2CZ(COVIDScrapper):
                 el
             )
         # Poslední aktualizace pozitivních nálezů byla provedena ke dni: 20.\xa03.\xa02020\xa0v\xa017.55h\n
-        re_dt = re.compile(r': (.*)\xa0v\xa0(.*)h\n')
-        dt_from_re = re_dt.findall(text)
+        # Poslední aktualizace pozitivních nálezů byla provedena ke dni: 29. 3. 2020 v 18.25 h
+
+        re_dt = re.compile(r'provedena ke dni: (.*)[^0-9]*v[^0-9]*(\d+.\d+).*h')
+        dt_from_re = re_dt.findall(self.req.content.decode("utf-8").replace("&nbsp;",""))
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
