@@ -102,8 +102,8 @@ class SARSCOV2AT(COVIDScrapper):
         """
         req = get_response(HOSPITALIZED)
 
-        re_dt = re.compile(r'Stand (\d+.\d+.\d+, \d+:\d+) Uhr')
-        text = html.unescape(req.content.decode(req.apparent_encoding))
+        re_dt = re.compile(r'Stand (\d+.\d+.\d+.*\d+:\d+) Uhr')
+        text = req.content.decode(req.apparent_encoding).replace("&nbsp;", " ")
         dt_from_re = re_dt.findall(text)
 
         if not dt_from_re:
