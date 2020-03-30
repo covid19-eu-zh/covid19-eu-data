@@ -438,3 +438,20 @@ def get_response(
     status = page.status_code
 
     return page
+
+
+def rename_cache(path, name):
+    old = os.path.join(path, name)
+    new = os.path.join(path, name.replace(":","").replace("-", "").replace("T",""))
+    os.rename(old,new)
+
+
+if __name__ == "__main__":
+
+    cache_daily = os.path.join("cache", "daily")
+    for i in os.listdir(cache_daily):
+        i_path = os.path.join(cache_daily, i)
+        for j in os.listdir(i_path):
+            rename_cache(i_path, j)
+
+    pass
