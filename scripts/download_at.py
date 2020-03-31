@@ -77,7 +77,7 @@ class SARSCOV2AT(COVIDScrapper):
             for i in cases
         ]
         cases_total_req = get_response(AT_TOTAL_URL)
-        re_cases_total = re.compile(r'var Erkrankungen = (\d+);')
+        re_cases_total = re.compile(r'var Erkrankungen = ["|](\d+)["|];')
         cases_total = re_cases_total.findall(cases_total_req.text)[0]
         cases_total = {geo_loc_key: "", "cases": cases_total}
         cases.append(cases_total)
