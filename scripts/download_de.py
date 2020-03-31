@@ -46,6 +46,7 @@ class SARSCOV2DE(COVIDScrapper):
 
         self.df = req_dfs[0]#[["Bundesland","Zahl be­stä­tig­ter Fälle (darunter Todes­fälle)"]]
         self.df.columns = self.df.columns.droplevel(0)
+        self.df.rename(columns={"Unnamed: 0_level_1": "nuts_1"}, inplace=True)
 
         logger.info("de cases:\n", self.df)
 
@@ -63,10 +64,12 @@ class SARSCOV2DE(COVIDScrapper):
         self.dt = dt_from_re
 
     def post_processing(self):
-        self.df.drop(
-            ["Unnamed: 5_level_1", "Dif­fe­renz zum Vor­tag"], axis=1,
-            inplace=True
-        )
+        for col in ["Unnamed: 5_level_1", "Dif­fe­renz zum Vor­tag"]:
+            if col in self.df.columns:
+                self.df.drop(
+                    col, axis=1,
+                    inplace=True
+                )
         self.df.rename(
             columns={
                 "Unnamed: 0_level_1": "nuts_1",
@@ -85,6 +88,10 @@ class SARSCOV2DE(COVIDScrapper):
 
         self.df.replace(
             "Schleswig Holstein", "Schleswig-Holstein",
+            inplace=True
+        )
+        self.df.replace(
+            "Mecklenburg- Vor­pommern", "Mecklenburg-Vor­pommern",
             inplace=True
         )
 
