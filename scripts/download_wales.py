@@ -50,7 +50,10 @@ class SARSCOV2Wales(COVIDScrapper):
         self.df.columns = ["nuts_3", "new_cases", "cases"]
         self.df = self.df[1:]
         self.df["nuts_3"] = self.df.nuts_3.apply(
-            lambda x: x.replace("  ", " ") if isinstance(x, str) else x
+            lambda x: x.replace("  ", " ").replace('*', '') if isinstance(x, str) else x
+        )
+        self.df["cases"] = self.df.cases.apply(
+            lambda x: x.replace('*', '') if isinstance(x, str) else x
         )
         self.df["cases"] = self.df.cases.astype(int)
         logger.info("cases:\n", self.df)
