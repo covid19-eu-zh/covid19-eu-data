@@ -53,13 +53,17 @@ class SARSCOV2HU(COVIDScrapper):
         )
 
         for col in ["cases", "recovered", "deaths", "tests", "quarantine"]:
-            self.df[col] = self.df[col].apply(
-                lambda x: int(
-                    float(
-                        x.replace(" ", "")
+            try:
+                self.df[col] = self.df[col].apply(
+                    lambda x: int(
+                        float(
+                            x.replace(" ", "")
+                        )
                     )
                 )
-            )
+            except KeyError as ke:
+                logger.error(f'Could not find column {col}')
+                self.df[col] = ''
 
         logger.info("list of cases:\n", self.df)
 
