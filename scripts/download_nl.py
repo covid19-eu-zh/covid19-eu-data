@@ -134,13 +134,15 @@ class SARSCOV2NL(COVIDScrapper):
                 el[0].xpath('.//text()')
             )
         # <p>aantal per 17 maart 2020 14.00 uur</p>
-        re_dt = re.compile(r"<p>aantal per (.*)uur</p>")
+        # Wijzigingsdatum 31-03-2020 | 15:36
+        # re_dt = re.compile(r"<p>aantal per (.*)uur</p>")
+        re_dt = re.compile(r"Wijzigingsdatum (\d+-\d+-\d+ \| \d+:\d+)")
         dt_from_re = re_dt.findall(self.req.content.decode("utf-8"))
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
-        dt_from_re = dt_from_re[0].replace("\xa0", " ")
+        dt_from_re = dt_from_re[0].replace("\xa0", " ").replace('|', '')
         for key in DUTCH_MONTHS_TO_EN:
             if key in dt_from_re:
                 dt_from_re = dt_from_re.replace(key, DUTCH_MONTHS_TO_EN[key])
