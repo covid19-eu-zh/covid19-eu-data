@@ -30,7 +30,8 @@
 		<link rel='dns-prefetch' href='//www.google.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 		<script >
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/covid19.min-saude.pt\/wp-includes\/js\/wp-emoji-release.min.js?ver=4189f9"}};
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/covid19.min-saude.pt\/wp-includes\/js\/wp-emoji-release.min.js?ver=0adb34"}};
+			/*! This file is auto-generated */
 			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.,a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style >
@@ -47,10 +48,10 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='https://covid19.min-saude.pt/wp-includes/css/dist/block-library/style.min.css?ver=4189f9' type='text/css' media='all' />
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://covid19.min-saude.pt/wp-includes/css/dist/block-library/style.min.css?ver=0adb34' type='text/css' media='all' />
 <link rel='stylesheet' id='spms-accordion-blocks-style-css'  href='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/css/accordion-blocks.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='https://covid19.min-saude.pt/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7' type='text/css' media='all' />
-<link rel='stylesheet' id='style-form-css'  href='https://covid19.min-saude.pt/wp-content/plugins/form-init/style_form.css?ver=4189f9' type='text/css' media='all' />
+<link rel='stylesheet' id='style-form-css'  href='https://covid19.min-saude.pt/wp-content/plugins/form-init/style_form.css?ver=0adb34' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href="https://covid19.min-saude.pt/wp-content/plugins/smart-slider-3/library/media/smartslider.min.css?1583772266" media="all" />
 <style type="text/css">.n2-ss-spinner-simple-white-container {
     position: absolute;
@@ -92,7 +93,7 @@ img.emoji {
     to {transform: rotate(360deg);}
 }</style><script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/form-init/scripts.js?ver=4189f9'></script>
+<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/form-init/scripts.js?ver=0adb34'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/themes/COVID-19/aria/wai-aria.js'></script>
 <link rel='https://api.w.org/' href='https://covid19.min-saude.pt/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://covid19.min-saude.pt/xmlrpc.php?rsd" />
@@ -108,7 +109,7 @@ img.emoji {
             window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView("Page not found", window.location.origin);
         </script><link rel="icon" href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/favicon_dgs.svg" sizes="32x32" />
 <link rel="icon" href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/favicon_dgs.svg" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/favicon_dgs.svg" />
+<link rel="apple-touch-icon" href="https://covid19.min-saude.pt/wp-content/uploads/2020/03/favicon_dgs.svg" />
 <meta name="msapplication-TileImage" content="https://covid19.min-saude.pt/wp-content/uploads/2020/03/favicon_dgs.svg" />
 		
 		
@@ -242,7 +243,7 @@ img.emoji {
 					</a>
 					
 					<div class="world_videos">
-						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/t47HuKohqr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/OHlYEF7Bhyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<!-- <a class="world_video_link" href="">Ver mais videos</a>  -->
 					</div>
 					
@@ -261,30 +262,30 @@ img.emoji {
     			
     			<div class="news_item_zone">
         			    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/dgs-divulga-manual-com-cuidados-alimentares-e-atividades-para-criancas/" class="news_link">
-    								<span class="news_date">31/03/2020</span>								
-    								<h2 class="news_title">DGS divulga manual com cuidados alimentares e atividades para crianças</h2>
+    							<a href="https://covid19.min-saude.pt/dgs-emite-orientacao-sobre-equipamentos-de-protecao-individual/" class="news_link">
+    								<span class="news_date">03/04/2020</span>								
+    								<h2 class="news_title">DGS emite orientação sobre equipamentos de proteção individual</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
     				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/dgs-publica-orientacao-sobre-gravidez-e-parto/" class="news_link">
-    								<span class="news_date">31/03/2020</span>								
-    								<h2 class="news_title">DGS publica orientação sobre gravidez e parto</h2>
+    							<a href="https://covid19.min-saude.pt/dgs-publica-norma-sobre-doentes-oncologicos/" class="news_link">
+    								<span class="news_date">02/04/2020</span>								
+    								<h2 class="news_title">DGS publica norma sobre doentes oncológicos</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
     				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/dgs-lanca-norma-sobre-equipamentos-de-protecao-individual/" class="news_link">
-    								<span class="news_date">30/03/2020</span>								
-    								<h2 class="news_title">DGS lança norma sobre Equipamentos de Proteção Individual</h2>
+    							<a href="https://covid19.min-saude.pt/infarmed-pede-disponibilidade-continua-de-oxigenio-e-dispositivos-medicos/" class="news_link">
+    								<span class="news_date">02/04/2020</span>								
+    								<h2 class="news_title">Infarmed pede disponibilidade contínua de oxigénio e dispositivos médicos</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
     				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/portugal-recebe-mais-700-mil-mascaras-e-200-mil-testes/" class="news_link">
-    								<span class="news_date">30/03/2020</span>								
-    								<h2 class="news_title">Portugal recebe mais 700 mil máscaras e 200 mil testes</h2>
+    							<a href="https://covid19.min-saude.pt/portugal-duplica-capacidade-de-ventilacao-para-responder-a-covid-19/" class="news_link">
+    								<span class="news_date">02/04/2020</span>								
+    								<h2 class="news_title">Portugal duplica capacidade de ventilação para responder à COVID-19</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -411,7 +412,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">ultricies dapibus et, at quis sit elementum accumsan lectus ut vulputate,</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">odio consequat. adipiscing ut quis fringilla libero. ut mattis</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -419,13 +420,13 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/con
 </script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script>
 <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LfeoOIUAAAAAM1jX7_fQR172zXKlaJbr919JXM4&#038;ver=3.0'></script>
-<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/themes/COVID-19/scripts.js?ver=4189f9'></script>
+<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/themes/COVID-19/scripts.js?ver=0adb34'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
 <script type='text/javascript'>
 jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fechar","currentText":"Hoje","monthNames":["Janeiro","Fevereiro","Mar\u00e7o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],"monthNamesShort":["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],"nextText":"Seguinte","prevText":"Anterior","dayNames":["Domingo","Segunda-feira","Ter\u00e7a-feira","Quarta-feira","Quinta-feira","Sexta-feira","S\u00e1bado"],"dayNamesShort":["Dom","Seg","Ter","Qua","Qui","Sex","S\u00e1b"],"dayNamesMin":["D","S","T","Q","Q","S","S"],"dateFormat":"d \\dd\\e MM, yy","firstDay":1,"isRTL":false});});
 </script>
-<script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/wp-embed.min.js?ver=4189f9'></script>
+<script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/wp-embed.min.js?ver=0adb34'></script>
 <script type="text/javascript">
 ( function( grecaptcha, sitekey, actions ) {
 
@@ -489,5 +490,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-03-31 17:17:35 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-04-03 12:17:46 by W3 Total Cache
 -->

@@ -105,23 +105,32 @@ class SARSCOV2NL(COVIDScrapper):
         req = get_response(COUNTRY_REPORT_URL)
         req.content.decode("utf-8")
 
-        # Het totaal aantal gemelde patiënten: 6412 (+852)
-        re_total_cases = re.compile(
-            r"Het totaal aantal gemelde patiënten: (\d+)"
-        )
-        re_total_deaths = re.compile(r"Het totaal aantal gemelde overleden patiënten: (\d+)")
-        re_total_hospitalized = re.compile(r"Het totaal aantal gemelde patiënten opgenomen \(geweest\) in het ziekenhuis: (\d+)")
+        doc = lxml.html.document_fromstring(req.content.decode("utf-8"))
+        el = doc.xpath('.//div[@class="card-wrapper top text-left img-above"]')
+        if not el:
+            logger.error("Did not find the div box for NL country summaries")
 
-        total_cases = re_total_cases.findall(req.content.decode("utf-8"))[0]
-        total_deaths = re_total_deaths.findall(req.content.decode("utf-8"))[0]
-        total_hospitalized = re_total_hospitalized.findall(req.content.decode("utf-8"))[0]
+        values = el[0].xpath('.//span[@class="h3"]/text()')
+        values = [
+            int(i.replace("*","").replace('.','').replace(',','.'))
+            for i in values
+        ]
+        headers = ["Aantal", "hospitalized", "deaths"]
+
+
+        # Het totaal aantal gemelde patiënten: 6412 (+852)
+        # re_total_cases = re.compile(
+        #     r"Het totaal aantal gemelde patiënten: (\d+)"
+        # )
+        # re_total_deaths = re.compile(r"Het totaal aantal gemelde overleden patiënten: (\d+)")
+        # re_total_hospitalized = re.compile(r"Het totaal aantal gemelde patiënten opgenomen \(geweest\) in het ziekenhuis: (\d+)")
+
+        # total_cases = re_total_cases.findall(req.content.decode("utf-8"))[0]
+        # total_deaths = re_total_deaths.findall(req.content.decode("utf-8"))[0]
+        # total_hospitalized = re_total_hospitalized.findall(req.content.decode("utf-8"))[0]
 
         # ["Gemeente", "Aantal", "BevAant", "Aantal per 100.000 inwoners"]
-        return {
-            "Aantal": int(total_cases),
-            "deaths": total_deaths,
-            "hospitalized": total_hospitalized
-        }
+        return dict(zip(headers, values))
 
     def extract_datetime(self):
         """Get datetime of dataset
