@@ -73,12 +73,19 @@ class SARSCOV2NL(COVIDScrapper):
         self.df.fillna(0, inplace=True)
         self.df["Aantal"] = self.df.Aantal.astype(int)
 
+        self.df.rename(
+            columns={
+                "Gemeente": "lau",
+                "Aantal": "hospitalized",
+                "BevAant": "population"
+            },
+            inplace=True
+        )
+
         self.df = pd.concat(
             [
                 self.df,
-                pd.DataFrame(
-                    [self._extract_total()]
-                )
+                self._extract_total()
             ]
         )
         # add sum
@@ -102,21 +109,29 @@ class SARSCOV2NL(COVIDScrapper):
         # if not total:
         #     raise Exception("Could not find total cases")
 
-        req = get_response(COUNTRY_REPORT_URL)
-        req.content.decode("utf-8")
+        df = pd.read_html(REPORT_URL)[0]
 
-        doc = lxml.html.document_fromstring(req.content.decode("utf-8"))
-        el = doc.xpath('.//div[@class="card-wrapper top text-left img-above"]')
-        if not el:
-            logger.error("Did not find the div box for NL country summaries")
-
-        values = el[0].xpath('.//span[@class="h3"]/text()')
-        values = [
-            int(i.replace("*","").replace('.','').replace(',','.'))
-            for i in values
-        ]
+        # values = el[0].xpath('.//span[@class="h3"]/text()')
+        # values = [
+        #     int(i.replace("*","").replace('.','').replace(',','.'))
+        #     for i in values
+        # ]
         headers = ["Aantal", "hospitalized", "deaths"]
+        df.columns = headers
+        df = df.iloc[1:2]
+        for col in df.columns:
+            df[col] = df[col].apply(
+                lambda x: int(
+                    x.replace("*","").replace('.','').replace(',','.')
+                )
+            )
 
+        df.rename(
+            columns={
+                "Aantal": "cases"
+            },
+            inplace=True
+        )
 
         # Het totaal aantal gemelde patiënten: 6412 (+852)
         # re_total_cases = re.compile(
@@ -130,7 +145,7 @@ class SARSCOV2NL(COVIDScrapper):
         # total_hospitalized = re_total_hospitalized.findall(req.content.decode("utf-8"))[0]
 
         # ["Gemeente", "Aantal", "BevAant", "Aantal per 100.000 inwoners"]
-        return dict(zip(headers, values))
+        return df
 
     def extract_datetime(self):
         """Get datetime of dataset
@@ -161,19 +176,9 @@ class SARSCOV2NL(COVIDScrapper):
 
     def post_processing(self):
 
-        self.df.rename(
-            columns={
-                "Gemeente": "lau",
-                "Aantal": "cases",
-                "BevAant": "population",
-                "Aantal per 100.000 inwoners": "cases/100k pop."
-            },
-            inplace=True
-        )
+        self.df = self.df[["country", "lau", "cases", "population", "hospitalized", "deaths", "datetime"]]
 
-        self.df = self.df[["country", "lau", "cases", "population", "cases/100k pop.", "deaths", "hospitalized", "datetime"]]
-
-        self.df.sort_values(by="cases", inplace=True)
+        self.df.sort_values(by="hospitalized", inplace=True)
 
 
 if __name__ == "__main__":

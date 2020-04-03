@@ -1,4 +1,4 @@
-country,lau,cases,population,cases/100k pop.,deaths,hospitalized,datetime
+country,lau,hospitalized,population,hospitalized/100k pop.,deaths,cases,datetime
 NL,Stadskanaal,0,31688.0,0.0,,,2020-04-02T17:21:00
 NL,Loppersum,0,9533.0,0.0,,,2020-04-02T17:21:00
 NL,Ameland,0,3718.0,0.0,,,2020-04-02T17:21:00
@@ -353,4 +353,3 @@ NL,Meierijstad,124,81197.0,152.7,,,2020-04-02T17:21:00
 NL,Tilburg,124,219800.0,56.4,,,2020-04-02T17:21:00
 NL,Rotterdam,151,651376.0,23.2,,,2020-04-02T17:21:00
 NL,Amsterdam,263,872779.0,30.1,,,2020-04-02T17:21:00
-NL,,14697,,,1339.0,5784.0,2020-04-02T17:21:00
