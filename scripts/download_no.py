@@ -51,6 +51,8 @@ class SARSCOV2NO(COVIDScrapper):
             inplace=True
         )
 
+        self.df["cases"] = self.df.cases.apply(lambda x: x.replace(" ", ""))
+
         self.df["cases"] = self.df.cases.astype(int)
 
         # total = self.df["cases"].sum()
