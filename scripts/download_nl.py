@@ -109,7 +109,10 @@ class SARSCOV2NL(COVIDScrapper):
         # if not total:
         #     raise Exception("Could not find total cases")
 
+        #  17.851* (+1.224)
+        re_count = re.compile(r"(.*)\(.*\)")
         df = pd.read_html(REPORT_URL)[0]
+        df = df.T
 
         # values = el[0].xpath('.//span[@class="h3"]/text()')
         # values = [
@@ -122,7 +125,7 @@ class SARSCOV2NL(COVIDScrapper):
         for col in df.columns:
             df[col] = df[col].apply(
                 lambda x: int(
-                    x.replace("*","").replace('.','').replace(',','.')
+                    re_count.findall(x)[0].strip().replace("*","").replace('.','').replace(',','.')
                 )
             )
 
