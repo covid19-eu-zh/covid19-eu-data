@@ -11,7 +11,7 @@ from utils import _COLUMNS_ORDER, COVIDScrapper
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.es")
 
-REPORT_URL = "https://www.hpsc.ie/a-z/respiratory/coronavirus/novelcoronavirus/casesinireland/"
+REPORT_URL = "https://www.hpsc.ie/a-z/respiratory/coronavirus/novelcoronavirus/casesinireland/epidemiologyofcovid-19inireland/"
 PDF_BASE_URL = "https://www.hpsc.ie"
 DAILY_FOLDER = os.path.join("documents", "daily", "ie")
 
