@@ -86,6 +86,10 @@ Caveats:
 
 ### UK
 
+#### Scotland
+
+1. Starting from 2020-04-08, Scotland doesn't report numbers less than 5. So missing value in Scotland dataset starting from 2020-04-08 indicates a number less than 5.
+
 #### England
 
 1. In the first few days of reporting (before 2020-03-11), data of England is not always a number. To solve this problem, we added two columns, `cases_lower` and `cases_upper`, to reflect the range of the number of cases.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-04-ß8
+
+1. NL: NL started to report cases again. We have included this.
+2. Scotland: Scotland moved the report to another link and also added hospitalized and intensive_care.
+
 ## 2020-03-28
 
 1. SI: SI Stopped updating the cumulative numbers. We will only update the cache folder for SI now.
