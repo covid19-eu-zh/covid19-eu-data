@@ -18,7 +18,8 @@ logger = logging.getLogger("covid-eu-data.download.scotland")
 # REPORT_URL = "https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england"
 ENGLAND_REPORT_URL = "https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
 ENGLAND_DAILY_FOLDER = os.path.join("dataset", "daily", "england")
-SCOTLAND_REPORT_URL = "https://www.gov.scot/coronavirus-covid-19/"
+# SCOTLAND_REPORT_URL = "https://www.gov.scot/coronavirus-covid-19/"
+SCOTLAND_REPORT_URL = "https://www.gov.scot/publications/coronavirus-covid-19-tests-and-cases-in-scotland/"
 SCOTLAND_DAILY_FOLDER = os.path.join("dataset", "daily", "scotland")
 WALES_REPORT_URL = "https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/"
 WALES_DAILY_FOLDER = os.path.join("dataset", "daily", "wales")
@@ -45,20 +46,23 @@ class SARSCOV2Scotland(COVIDScrapper):
             raise Exception("Could not find data table in webpage")
 
         self.df = req_dfs[0]
-        self.df.columns = self.df.iloc[0]
-        self.df = self.df.iloc[1:]
 
         self.df.rename(columns={
             "Health board": "nuts_3",
-            "Positive cases": "cases"
+            "Positive cases": "cases",
+            "Total confirmed cases to date": "cases",
+            "People in hospital at midnight (confirmed or suspected)": "hospitalized",
+            "People in intensive care at midnight (confirmed or suspected)": "intensive_care"
         }, inplace=True)
+        self.df.replace("*", "", inplace=True)
         logger.info("cases:\n", self.df)
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
         # Last updated: 2pm on 16 March 2020
-        re_dt = re.compile(r'Scottish test numbers: (.*)</h3>')
+        # Scottish COVID-19 test numbers: 08 April 2020
+        re_dt = re.compile(r'Scottish COVID-19 test numbers: (.*)</h3>')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
