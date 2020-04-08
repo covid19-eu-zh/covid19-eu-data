@@ -1,6 +1,6 @@
 # Changelog
 
-## 2020-04-ß8
+## 2020-04-08
 
 1. NL: NL started to report cases again. We have included this.
 2. Scotland: Scotland moved the report to another link and also added hospitalized and intensive_care.
