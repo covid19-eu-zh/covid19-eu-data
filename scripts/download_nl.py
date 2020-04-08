@@ -55,29 +55,36 @@ class SARSCOV2NL(COVIDScrapper):
             )
 
         self.df = pd.read_csv(
-            io.StringIO(text), sep=";", skiprows=[1,2], header=None
+            io.StringIO(text), sep=";", header=None
         )
-        self.df = self.df[[0, 1, 2, 3, 4]]
-        cols = text.split("\n")[1].split(";")
-        self.df.columns = cols
+        # self.df = self.df[[0, 1, 2, 3, 4]]
+        self.df.columns = self.df.iloc[0]
+        self.df = self.df.iloc[1:]
+        # cols = text.split("\n")[1].split(";")
+        # self.df.columns = cols
         df_other = self.df.loc[self.df.Gemnr == -1]
         df_other.Gemeente = "Other"
 
+        self.df['Gemnr'] = self.df.Gemnr.astype(int)
         self.df = self.df.loc[
             self.df.Gemnr >= 0
         ]
         self.df = pd.concat([self.df, df_other])
 
-        original_cols = ["Gemeente", "Aantal", "BevAant", "Aantal per 100.000 inwoners"]
+        original_cols = ["Gemeente", "Meldingen", "Zkh opname", "BevAant", "Meldingen per 100.000", "Zkh opname per 100.000"]
         self.df = self.df[original_cols]
         self.df.fillna(0, inplace=True)
-        self.df["Aantal"] = self.df.Aantal.astype(int)
+        self.df["Meldingen"] = self.df.Meldingen.astype(int)
+        self.df["Zkh opname"] = self.df["Zkh opname"].astype(int)
 
         self.df.rename(
             columns={
                 "Gemeente": "lau",
-                "Aantal": "hospitalized",
-                "BevAant": "population"
+                "BevAant": "population",
+                "Meldingen": "cases",
+                "Zkh opname": "hospitalized",
+                "Meldingen per 100.000": "cases/100k pop.",
+                "Zkh opname per 100.000": "hospitalized/100k pop."
             },
             inplace=True
         )
@@ -119,7 +126,7 @@ class SARSCOV2NL(COVIDScrapper):
         #     int(i.replace("*","").replace('.','').replace(',','.'))
         #     for i in values
         # ]
-        headers = ["Aantal", "hospitalized", "deaths"]
+        headers = ["cases", "hospitalized", "deaths"]
         df.columns = headers
         df = df.iloc[1:2]
         for col in df.columns:
