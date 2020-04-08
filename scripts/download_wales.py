@@ -14,6 +14,8 @@ from utils import _COLUMNS_ORDER, COVIDScrapper, DailyAggregator, DailyTransform
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.wales")
 
+# Wales Tableau
+# https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary
 WALES_REPORT_URL_ALT = "https://covid19-phwstatement.nhs.wales/"
 WALES_REPORT_URL = "https://phw.nhs.wales"
 WALES_DAILY_FOLDER = os.path.join("dataset", "daily", "wales")

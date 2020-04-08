@@ -4,8 +4,8 @@ on:
   push:
     paths:
     - 'scripts/download_wales.py'
-  schedule:
-    - cron:  '52 7/1 * * *'
+  #schedule:
+  #  - cron:  '52 7/1 * * *'
 
 jobs:
   build:

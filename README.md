@@ -98,6 +98,7 @@ Caveats:
 #### Wales
 
 1. Wales stopped publishing detailed data on 2020-03-17.
+2. Wales switched to Tableau on 2020-04-08. https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary
 
 #### Northern Ireland
 
