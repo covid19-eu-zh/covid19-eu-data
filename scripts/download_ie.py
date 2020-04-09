@@ -17,7 +17,7 @@ logger = logging.getLogger("covid-eu-data.download.es")
 today_iso = datetime.date.today().isoformat()
 
 # Download from Dashboard
-REPORT_API = "https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/CovidCountyStatisticsHPSCIrelandOpenData/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&groupByFieldsForStatistics=CountyName&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22CovidCaseroundUp%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
+REPORT_API = "https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIrelandOpenData/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&groupByFieldsForStatistics=CountyName&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22ConfirmedCovidCases%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
 
 
 TIMESERES_API = f"https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/CovidStatisticsProfileHPSCIrelandView/FeatureServer/0/query?f=json&where=Date%3Ctimestamp%20%27{today_iso}%2022%3A00%3A00%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=FID%2CConfirmedCovidCases%2CDate&orderByFields=Date%20asc&resultOffset=0&resultRecordCount=2000&cacheHint=true"
@@ -182,7 +182,7 @@ if __name__ == "__main__":
                 i - datetime.timedelta(days=1),
                 i
             )
-            logger.error(
+            logger.info(
                 f"Cached ages and gender for {i - datetime.timedelta(days=1)} to {i}"
             )
         except Exception as e:
