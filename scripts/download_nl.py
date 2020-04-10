@@ -132,7 +132,7 @@ class SARSCOV2NL(COVIDScrapper):
         for col in df.columns:
             df[col] = df[col].apply(
                 lambda x: int(
-                    re_count.findall(x)[0].strip().replace("*","").replace('.','').replace(',','.')
+                    x.strip().replace("*","").replace('.','').replace(',','.')
                 )
             )
 
