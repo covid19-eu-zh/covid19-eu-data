@@ -243,7 +243,7 @@ img.emoji {
 					</a>
 					
 					<div class="world_videos">
-						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/Gbm31MqZUpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/tF8tk8iuv-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<!-- <a class="world_video_link" href="">Ver mais videos</a>  -->
 					</div>
 					
@@ -262,6 +262,13 @@ img.emoji {
     			
     			<div class="news_item_zone">
         			    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/numero-de-internados-em-cuidados-intensivos-diminuiu/" class="news_link">
+    								<span class="news_date">10/04/2020</span>								
+    								<h2 class="news_title">Número de internados em cuidados intensivos diminuiu</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
     							<a href="https://covid19.min-saude.pt/dgs-lanca-inquerito-sobre-alimentacao-e-exercicio-fisico-durante-a-pandemia/" class="news_link">
     								<span class="news_date">09/04/2020</span>								
     								<h2 class="news_title">DGS lança inquérito sobre alimentação e exercício físico durante a pandemia</h2>
@@ -279,13 +286,6 @@ img.emoji {
     							<a href="https://covid19.min-saude.pt/insa-ja-sequenciou-100-genomas-do-novo-coronavirus/" class="news_link">
     								<span class="news_date">08/04/2020</span>								
     								<h2 class="news_title">INSA já sequenciou 100 genomas do novo coronavírus</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/estabilidade-da-curva-nao-pode-fazer-abrandar-medidas/" class="news_link">
-    								<span class="news_date">08/04/2020</span>								
-    								<h2 class="news_title">Estabilidade da curva não pode fazer abrandar medidas</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -412,7 +412,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">mattis fringilla odio libero porta. felis</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">vel, justo ipsum quis eleifend lectus non ut neque. leo id,</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -490,5 +490,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-04-10 17:17:20 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-04-10 22:17:51 by W3 Total Cache
 -->
