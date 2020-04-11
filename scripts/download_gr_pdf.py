@@ -24,7 +24,8 @@ if __name__ == "__main__":
         raise Exception(f"Could not get web page content: {e}")
 
     # https://eody.gov.gr/covid-gr-daily-report-20200324/
-    re_pdf = re.compile(r'(https://eody.gov.gr/covid-gr-daily-report-.*?)"')
+    # https://eody.gov.gr/wp-content/uploads/2020/04/covid-gr-daily-report-20200410-1.pdf
+    re_pdf = re.compile(r'(https://eody.gov.gr/wp-content/uploads/\d+/\d+/covid-gr-daily-report-.*?)"')
 
     pdf_paths = list(
         set(re_pdf.findall(req_page.text))
