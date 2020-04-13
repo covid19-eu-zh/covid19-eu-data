@@ -16,13 +16,10 @@ logger = logging.getLogger("covid-eu-data.download.scotland")
 
 # https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6
 # REPORT_URL = "https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england"
-ENGLAND_REPORT_URL = "https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
-ENGLAND_DAILY_FOLDER = os.path.join("dataset", "daily", "england")
+
 # SCOTLAND_REPORT_URL = "https://www.gov.scot/coronavirus-covid-19/"
 SCOTLAND_REPORT_URL = "https://www.gov.scot/publications/coronavirus-covid-19-tests-and-cases-in-scotland/"
 SCOTLAND_DAILY_FOLDER = os.path.join("dataset", "daily", "scotland")
-WALES_REPORT_URL = "https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/"
-WALES_DAILY_FOLDER = os.path.join("dataset", "daily", "wales")
 
 
 class SARSCOV2Scotland(COVIDScrapper):
@@ -46,6 +43,9 @@ class SARSCOV2Scotland(COVIDScrapper):
             raise Exception("Could not find data table in webpage")
 
         self.df = req_dfs[0]
+        if 'Health board' not in self.df.columns:
+            self.df.columns = self.df.iloc[0]
+            self.df = self.df.loc[1:,:]
 
         self.df.rename(columns={
             "Health board": "nuts_3",
