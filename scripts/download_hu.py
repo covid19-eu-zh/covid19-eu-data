@@ -86,7 +86,7 @@ class SARSCOV2HU(COVIDScrapper):
             raise Exception("Did not find datetime from webpage")
 
         dt_from_re = dt_from_re[0]
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
+        dt_from_re = dateutil.parser.parse(dt_from_re)
         self.dt = dt_from_re
 
     def post_processing(self):
