@@ -52,6 +52,7 @@ img.emoji {
 <link rel='stylesheet' id='spms-accordion-blocks-style-css'  href='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/css/accordion-blocks.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='https://covid19.min-saude.pt/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7' type='text/css' media='all' />
 <link rel='stylesheet' id='style-form-css'  href='https://covid19.min-saude.pt/wp-content/plugins/form-init/style_form.css?ver=0adb34' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7cf-style-css'  href='https://covid19.min-saude.pt/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.8.3' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href="https://covid19.min-saude.pt/wp-content/plugins/smart-slider-3/library/media/smartslider.min.css?1583772266" media="all" />
 <style type="text/css">.n2-ss-spinner-simple-white-container {
     position: absolute;
@@ -262,6 +263,13 @@ img.emoji {
     			
     			<div class="news_item_zone">
         			    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/mais-de-200-empresas-querem-produzir-mascaras-comunitarias/" class="news_link">
+    								<span class="news_date">14/04/2020</span>								
+    								<h2 class="news_title">Mais de 200 empresas querem produzir máscaras comunitárias</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
     							<a href="https://covid19.min-saude.pt/numero-de-recuperados-da-covid-19-sobe-para-347/" class="news_link">
     								<span class="news_date">14/04/2020</span>								
     								<h2 class="news_title">Número de recuperados da COVID-19 sobe para 347</h2>
@@ -279,13 +287,6 @@ img.emoji {
     							<a href="https://covid19.min-saude.pt/nao-adie-de-forma-alguma-a-vacinacao-alerta-a-diretora-geral-da-saude/" class="news_link">
     								<span class="news_date">14/04/2020</span>								
     								<h2 class="news_title">“Não adie de forma alguma a vacinação”, alerta a Diretora-Geral da Saúde</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/mascaras-comunitarias-podem-ser-consideradas-em-espacos-fechados/" class="news_link">
-    								<span class="news_date">13/04/2020</span>								
-    								<h2 class="news_title">Máscaras comunitárias podem ser consideradas em espaços fechados</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -412,7 +413,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">ipsum dictum sit elementum facilisis Donec fringilla id libero. velit, Lorem</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">consectetur Donec eget felis Curabitur pulvinar efficitur.</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -426,6 +427,12 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/con
 <script type='text/javascript'>
 jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fechar","currentText":"Hoje","monthNames":["Janeiro","Fevereiro","Mar\u00e7o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],"monthNamesShort":["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],"nextText":"Seguinte","prevText":"Anterior","dayNames":["Domingo","Segunda-feira","Ter\u00e7a-feira","Quarta-feira","Quinta-feira","Sexta-feira","S\u00e1bado"],"dayNamesShort":["Dom","Seg","Ter","Qua","Qui","Sex","S\u00e1b"],"dayNamesMin":["D","S","T","Q","Q","S","S"],"dateFormat":"d \\dd\\e MM, yy","firstDay":1,"isRTL":false});});
 </script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/covid19.min-saude.pt\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.8.3'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/wp-embed.min.js?ver=0adb34'></script>
 <script type="text/javascript">
 ( function( grecaptcha, sitekey, actions ) {
@@ -490,5 +497,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-04-14 17:17:56 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-04-14 22:18:03 by W3 Total Cache
 -->
