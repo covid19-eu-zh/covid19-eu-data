@@ -4,8 +4,8 @@ on:
   push:
     paths:
     - 'scripts/download_england.py'
-  schedule:
-    - cron:  '6 7/1 * * *'
+#   schedule:
+#     - cron:  '6 7/1 * * *'
 
 jobs:
   build:
