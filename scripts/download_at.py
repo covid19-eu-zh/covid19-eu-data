@@ -33,7 +33,8 @@ AT_STATES = {
     "Stmk": "Steiermark",
     "T": "Tirol",
     "Vbg": "Vorarlberg",
-    "W": "Wien"
+    "W": "Wien",
+    "V": "Vorarlberg"
 }
 
 class SARSCOV2AT(COVIDScrapper):
