@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # https://eody.gov.gr/covid-gr-daily-report-20200324/
     # https://eody.gov.gr/wp-content/uploads/2020/04/covid-gr-daily-report-20200410-1.pdf
     # re_pdf = re.compile(r'(https://eody.gov.gr/wp-content/uploads/\d+/\d+/covid-gr-daily-report-.*?)"')
-    re_pdf = re.compile(r'(https://eody.gov.gr/covid-gr-daily-report-.*?)"')
+    re_pdf = re.compile(r'(https://eody.gov.gr/.*?covid-gr-daily-report-.*?)"')
 
     pdf_paths = list(
         set(re_pdf.findall(req_page.text))
