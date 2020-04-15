@@ -197,6 +197,6 @@ if __name__ == "__main__":
         "full_data.zip": AT_REPORT_FULL_DATA
     }
     for key,val in to_be_cached.items():
-        cache_content(val, cov_at.datetime, key)
+        cache_content(val, cov_at.dt.strftime("%Y%m%d%H%M"), key)
 
     print("End of Game")
