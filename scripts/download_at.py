@@ -20,6 +20,7 @@ logger = logging.getLogger("covid-eu-data.download.at")
 AT_BUNDESLAND_URL = "https://info.gesundheitsministerium.at/data/Bundesland.js"
 AT_TOTAL_URL = "https://info.gesundheitsministerium.at/data/SimpleData.js"
 AT_REPORT_URL = "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+AT_REPORT_FULL_DATA = "https://info.gesundheitsministerium.at/data/data.zip"
 
 HOSPITALIZED = "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung"
 DAILY_FOLDER = os.path.join("dataset", "daily", "at")
@@ -27,6 +28,7 @@ CACHE_FOLDER = os.path.join("cache", "daily", "at")
 AT_STATES = {
     "Bgld": "Burgenland",
     "Ktn": "Kärnten",
+    "Kt": "Kärnten",
     "NÖ": "Niederösterreich",
     "OÖ": "Oberösterreich",
     "Sbg": "Salzburg",
@@ -53,41 +55,64 @@ class SARSCOV2AT(COVIDScrapper):
 
         geo_loc_key = 'nuts_2'
 
-        hos_df = pd.read_html(HOSPITALIZED)
-        if not hos_df:
-            raise Exception("Could not find hospitalized table")
-        hos_df = hos_df[0]
-        hos_df.rename(
-            columns = {
-                "Bundesland": geo_loc_key,
-                "Hospitalisierung": "hospitalized",
-                "Intensivstation": "intensive_care"
-            },
-            inplace=True
-        )
-        hos_df.replace("Österreich gesamt", "", inplace=True)
-        # hos_df["hospitalized"] = hos_df.hospitalized.astype(int)
-        # hos_df["intensive_care"] = hos_df.intensive_care.astype(int)
+        # hos_df = pd.read_html(HOSPITALIZED)
+        # if not hos_df:
+        #     raise Exception("Could not find hospitalized table")
+        # hos_df = hos_df[0]
+        # hos_df.rename(
+        #     columns = {
+        #         "Bundesland": geo_loc_key,
+        #         "Hospitalisierung": "hospitalized",
+        #         "Intensivstation": "intensive_care"
+        #     },
+        #     inplace=True
+        # )
+        # hos_df.replace("Österreich gesamt", "", inplace=True)
+        # # hos_df["hospitalized"] = hos_df.hospitalized.astype(int)
+        # # hos_df["intensive_care"] = hos_df.intensive_care.astype(int)
 
-        cases_req = get_response(AT_BUNDESLAND_URL)
-        re_cases = re.compile(r'var dpBundesland = (\[.*\]);')
-        cases = re_cases.findall(cases_req.text)[0]
-        cases = json.loads(cases)
-        cases = [
-            {geo_loc_key: AT_STATES[i["label"]], "cases": int(i["y"])}
-            for i in cases
+        # cases_req = get_response(AT_BUNDESLAND_URL)
+        # re_cases = re.compile(r'var dpBundesland = (\[.*\]);')
+        # cases = re_cases.findall(cases_req.text)[0]
+        # cases = json.loads(cases)
+        # cases = [
+        #     {geo_loc_key: AT_STATES[i["label"]], "cases": int(i["y"])}
+        #     for i in cases
+        # ]
+        # cases_total_req = get_response(AT_TOTAL_URL)
+        # re_cases_total = re.compile(r'var Erkrankungen = ["|](\d+)["|];')
+        # cases_total = re_cases_total.findall(cases_total_req.text)[0]
+        # cases_total = {geo_loc_key: "", "cases": cases_total}
+        # cases.append(cases_total)
+        # df_cases = pd.DataFrame(cases)
+
+        # self.df = pd.merge(
+        #     df_cases, hos_df, how="outer",
+        #     on=geo_loc_key
+        # )
+
+        dfs = pd.read_html(AT_REPORT_URL, thousands='.')
+        if not dfs:
+            raise Exception(f'Could not find table in url: {AT_REPORT_URL}')
+        self.df = dfs[0]
+        self.df = self.df.T
+        self.df.columns = self.df.iloc[0]
+        self.df = self.df.iloc[1:].reset_index()
+
+        # rename columns
+        self.df.columns = [
+            geo_loc_key, "cases", "deaths", "recovered", "hospitalized",
+            "intensive_care", "tests"
         ]
-        cases_total_req = get_response(AT_TOTAL_URL)
-        re_cases_total = re.compile(r'var Erkrankungen = ["|](\d+)["|];')
-        cases_total = re_cases_total.findall(cases_total_req.text)[0]
-        cases_total = {geo_loc_key: "", "cases": cases_total}
-        cases.append(cases_total)
-        df_cases = pd.DataFrame(cases)
+        SUM_KEY = {
+            "Österreich  gesamt": ""
+        }
 
-        self.df = pd.merge(
-            df_cases, hos_df, how="outer",
-            on=geo_loc_key
+        self.df[geo_loc_key] = self.df[geo_loc_key].apply(lambda x: x.strip().replace(".",""))
+        self.df[geo_loc_key] = self.df[geo_loc_key].apply(
+            lambda x: AT_STATES[x] if x in AT_STATES else SUM_KEY[x]
         )
+
         self.df.fillna("", inplace=True)
         self.df["cases"] = self.df.cases.astype(int)
         # self.df["hospitalized"] = self.df.hospitalized.astype(int)
@@ -100,8 +125,9 @@ class SARSCOV2AT(COVIDScrapper):
         Aktuelle Situation Österreich 04.03.2020 / 17:45 Uhr
         Stand, 10.03.2020, 08:00 Uhr
         Stand 27.03.2020, 08:00 Uhr
+        Bestätigte Fälle (Stand 15.04.2020, 08:00 Uhr)
         """
-        req = get_response(HOSPITALIZED)
+        req = self.req
 
         re_dt = re.compile(r'Stand (\d+.\d+.\d+.*\d+:\d+) Uhr')
         text = req.content.decode(req.apparent_encoding).replace("&nbsp;", " ")
@@ -110,9 +136,10 @@ class SARSCOV2AT(COVIDScrapper):
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
-        dt_from_re = dt_from_re[0].replace("/", "")
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
-        self.dt = dt_from_re
+        dt_from_re = [dateutil.parser.parse(i, dayfirst=True) for i in dt_from_re]
+        dt_from_re.sort()
+
+        self.dt = dt_from_re[-1]
 
     def post_processing(self):
 
@@ -166,7 +193,8 @@ if __name__ == "__main__":
         "Geschlechtsverteilung.js": "https://info.gesundheitsministerium.at/data/Geschlechtsverteilung.js",
         "Altersverteilung.js": "https://info.gesundheitsministerium.at/data/Altersverteilung.js",
         "SimpleData.js": "https://info.gesundheitsministerium.at/data/SimpleData.js",
-        "Coronavirus.html": "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+        "Coronavirus.html": "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html",
+        "full_data.zip": AT_REPORT_FULL_DATA
     }
     for key,val in to_be_cached.items():
         cache_content(val, cov_at.datetime, key)
