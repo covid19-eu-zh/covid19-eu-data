@@ -39,7 +39,7 @@ class SARSCOV2NO(COVIDScrapper):
         if not req_dfs:
             raise Exception("Could not find data table in webpage")
 
-        self.df = req_dfs[1]
+        self.df = req_dfs[-1]
         self.df.columns = self.df.iloc[0]
         self.df = self.df[1:]
 
