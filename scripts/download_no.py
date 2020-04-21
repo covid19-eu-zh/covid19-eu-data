@@ -1,10 +1,14 @@
 import logging
 import os
 import re
+from io import StringIO
+import json
+import ast
 
 import dateutil
 import pandas as pd
 import requests
+import lxml
 from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
@@ -31,40 +35,39 @@ class SARSCOV2NO(COVIDScrapper):
     def extract_table(self):
         """Load data table from web page
         """
-        req_dfs = pd.read_html(
-            self.req.content.decode(self.req.apparent_encoding),
-            flavor='lxml'
-        )
 
-        if not req_dfs:
-            raise Exception("Could not find data table in webpage")
+        re_data = re.compile(r"var data = (.*?);", re.MULTILINE)
+        data = re_data.findall(self.req.text.replace('\n','').replace('\r', ''))
 
-        self.df = req_dfs[-1]
-        self.df.columns = self.df.iloc[0]
-        self.df = self.df[1:]
+        if not len(data) == 2:
+            raise Exception('only got one data table; should be two, one for cases one for rate')
 
-        self.df.rename(
-            columns={
-                "County": "nuts_3",
-                "Number of positive cases": "cases",
-                "Number of positive notified cases": "cases"
-            },
-            inplace=True
-        )
+        cases_data = ast.literal_eval(data[0])
+        rate_data = ast.literal_eval(data[1])
 
-        self.df["cases"] = self.df.cases.apply(lambda x: x.replace(" ", ""))
+        logger.info("Construct dataframe")
+        cases_data = pd.DataFrame(cases_data, columns=["nuts_3", "cases"])
+        rate_data = pd.DataFrame(rate_data, columns=["nuts_3", "cases/100k pop."])
+
+        list_nuts_3 = {
+            "no-no-18": "Nordland",
+            "no-mr-15": "Møre og Romsdal",
+            "no-tf-54": "Troms og Finnmark",
+            "no-vt-38": "Vestfold og Telemark",
+            "no-ag-42": "Agder",
+            "no-ro-11": "Rogaland",
+            "no-in-34": "Innlandet",
+            "no-td-50": "Trøndelag",
+            "no-vl-46": "Vestland",
+            "no-vi-30": "Viken",
+            "no-os-0301": "Oslo"
+        }
+
+        cases_data.replace(list_nuts_3, inplace=True)
+        rate_data.replace(list_nuts_3, inplace=True)
+        self.df = pd.merge(cases_data, rate_data, on="nuts_3")
 
         self.df["cases"] = self.df.cases.astype(int)
-
-        # total = self.df["cases"].sum()
-
-        # self.df = self.df.append(
-        #     pd.DataFrame(
-        #         [["sum", total]], columns=[
-        #             "county", "cases"
-        #         ]
-        #     )
-        # )
 
         logger.info("records cases:\n", self.df)
 
