@@ -34,7 +34,7 @@
 | PT | ![CI Download PT PDF](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20PT%20PDF/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-covid19.min--saude.pt-informational)](https://covid19.min-saude.pt/relatorio-de-situacao/) |
 | SE | ![CI Download SE](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20SE/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-folkhalsomyndigheten.se-informational)](https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/)  |
 | SI | ![CI Download SI Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20SI%20Data/badge.svg) | [![](https://img.shields.io/badge/Data%20Source-gov.si-informational)](https://www.gov.si/en/topics/coronavirus-disease-covid-19/) |
-| UK | ![CI Download England Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20England%20Data/badge.svg)  ![CI Download Scotland Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Scotland%20Data/badge.svg)  ![CI Download Wales Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Wales%20Data/badge.svg)  | [![](https://img.shields.io/badge/Data%20Source-official_arcgis-informational)](https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data) [![](https://img.shields.io/badge/Data%20Source-gov.scot-informational)](https://www.gov.scot/coronavirus-covid-19/) [![](https://img.shields.io/badge/Data%20Source-phw.nhs.wales-informational)](https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/) [![](https://img.shields.io/badge/Data%20Source-publichealth.hscni.net-informational)](https://www.publichealth.hscni.net/news/covid-19-coronavirus#situation-in-northern-ireland) |
+| UK | ![CI Download Scotland Data](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20Scotland%20Data/badge.svg)  | [![](https://img.shields.io/badge/Data%20Source-official_arcgis-informational)](https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data) [![](https://img.shields.io/badge/Data%20Source-gov.scot-informational)](https://www.gov.scot/coronavirus-covid-19/) [![](https://img.shields.io/badge/Data%20Source-phw.nhs.wales-informational)](https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/) [![](https://img.shields.io/badge/Data%20Source-publichealth.hscni.net-informational)](https://www.publichealth.hscni.net/news/covid-19-coronavirus#situation-in-northern-ireland) |
 | EU(ECDC) | ![CI Download All EU from ECDC](https://github.com/covid19-eu-zh/covid19-eu-data/workflows/CI%20Download%20All%20EU%20from%20ECDC/badge.svg) |  [![](https://img.shields.io/badge/Data%20Source-ecdc.europa.eu-informational)](https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea) |
 
 
@@ -74,6 +74,8 @@ Caveats:
 
 1. For technical reasons, no data was transmitted from Hamburg on March 25th, 2020.
 
+There is [a repo](https://github.com/averissimo/covid19.de.data) cleaning up the raw data on ArcGis.
+
 ### FR
 
 1. France stopped updating the case tables on the webpage on 2020-03-26. We went back to the PDF files.
@@ -85,6 +87,11 @@ Caveats:
 1. NL doesn't publish the time of the data release. We use 00:00 of the day to denote the release time though it doesn't indicate the actual update time.
 
 ### UK
+
+**We stopped tracking UK data.**
+
+1. UK is already publishing data in a easy-to-use format. [Click here for the full data](https://coronavirus.data.gov.uk/#countries)
+2. There is already a very good github repo cleaning up the data. [Click here for the repo.](https://github.com/tomwhite/covid-19-uk-data)
 
 #### Scotland
 
