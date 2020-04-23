@@ -108,11 +108,11 @@ def download_and_xlsx(xlsx_url):
     df = df[list(cols.keys())]
     df.rename(columns=cols, inplace=True)
     df["cases"] = df.tests_positive
+    df["country"] = "SI"
     df = df[[i for i in _COLUMNS_ORDER if i in df.columns]]
     df["datetime"] = df.datetime.apply(
         lambda x: x.isoformat()
     )
-    df["country"] = "SI"
     df.sort_values(by=["datetime", "cases"], inplace=True)
 
     full_csv = os.path.join("dataset", "covid-19-si.csv")
