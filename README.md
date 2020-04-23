@@ -90,7 +90,7 @@ Caveats:
 
 **We stopped tracking UK data.**
 
-1. UK is already publishing data in a easy-to-use format. [Click here for the full data](https://coronavirus.data.gov.uk/#countries)
+1. UK is already publishing data in an easy-to-use format. [Click here for the full data](https://coronavirus.data.gov.uk/#countries)
 2. There is already a very good github repo cleaning up the data. [Click here for the repo.](https://github.com/tomwhite/covid-19-uk-data)
 
 #### Scotland
