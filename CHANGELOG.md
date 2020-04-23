@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-04-23
+
+1. DE: DE removed the data table from the RKI webpage and focusing on the dashboard. We switched to the dashboard API for the daily data.
+
 ## 2020-04-08
 
 1. NL: NL started to report cases again. We have included this.
