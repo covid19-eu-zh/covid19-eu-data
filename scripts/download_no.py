@@ -75,7 +75,7 @@ class SARSCOV2NO(COVIDScrapper):
         """Get datetime of dataset
         Nombre de cas rapportés par région au 10/03/2020 à 15h (données Santé publique France)
         """
-        re_dt = re.compile(r'<p><strong><span style="font-size: 1.1em;">Extract from daily COVID-19 report - (.*)</span></strong></p>')
+        re_dt = re.compile(r'<strong><span style="font-size: 1.1em;">Extract from daily COVID-19 report - (.*)</span></strong>')
         dt_from_re = re_dt.findall(self.req.text)
 
         if not dt_from_re:
