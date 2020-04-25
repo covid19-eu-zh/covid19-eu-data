@@ -50,6 +50,7 @@ class SARSCOV2Scotland(COVIDScrapper):
         self.df.rename(columns={
             "Health board": "nuts_3",
             "Positive cases": "cases",
+            "Positive Cases": "cases",
             "Total confirmed cases to date": "cases",
             "People in hospital at midnight (confirmed or suspected)": "hospitalized",
             "People in intensive care at midnight (confirmed or suspected)": "intensive_care"
