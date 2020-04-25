@@ -221,7 +221,11 @@ if __name__ == "__main__":
     da = DailyAggregator(
         base_folder="dataset",
         daily_folder=DAILY_FOLDER,
-        country="NL"
+        country="NL",replace={
+            "Noardeast-FryslÃ¢n": "Noardeast-Fryslân",
+            "SÃºdwest-FryslÃ¢n": "Súdwest-Fryslân",
+            "Súdwest Fryslân": "Súdwest-Fryslân"
+        }
     )
     da.workflow()
 

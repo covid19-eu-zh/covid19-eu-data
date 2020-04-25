@@ -170,7 +170,7 @@ class COVIDScrapper():
 
 
 class DailyAggregator():
-    def __init__(self, base_folder, daily_folder, country, file_path=None, fill=None):
+    def __init__(self, base_folder, daily_folder, country, file_path=None, fill=None, replace=None):
         """
         DailyAggregator aggregates the daily updates and save them as one file.
 
@@ -207,6 +207,7 @@ class DailyAggregator():
         self.file_path = file_path
 
         self.daily_files = self._retrieve_all_daily()
+        self.replace_dict = replace
 
     def _retrieve_all_daily(self):
         """retrieve a list of files
@@ -248,6 +249,10 @@ class DailyAggregator():
             [i for i in _COLUMNS_ORDER if i in self.df.columns]
         ]
 
+    def replace(self):
+
+        self.df.replace(self.replace_dict,inplace=True)
+
     def cache(self):
         """
         cache saves the dataframe as a csv file
@@ -262,6 +267,8 @@ class DailyAggregator():
         workflow connects the pipes
         """
         self.aggregate_daily()
+        if self.replace_dict:
+            self.replace()
         self.cache()
 
 
