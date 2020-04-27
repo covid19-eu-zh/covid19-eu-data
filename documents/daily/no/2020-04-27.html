@@ -34,7 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/static/templates/build/css/bundle.css?v=s1s-W__gYeT4eLFLUwKyLpuTl61CAXhsSSYJYAq764M1" rel="stylesheet"/>
+    <link href="/static/templates/build/css/bundle.css?v=5TsoXoD8wflZhI8yksdwhhXolWqj5bAXkIVkXNsvQPs1" rel="stylesheet"/>
 
 
     <!--[if lte IE 9]>
@@ -922,7 +922,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart49963813" class="highchart ">
+<figure id="chart57354447" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
             <nav class="fhi-tabs__container fhi-print--hidden">
 
@@ -1175,7 +1175,7 @@
 <div class="fhi-row fhi-row--fill"><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer54402160"></div>
+        <div id="mapcontainer35900803"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1200,7 +1200,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer54402160', {
+            Highcharts.mapChart('mapcontainer35900803', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1235,9 +1235,13 @@
                 series: [{
                     data: data,
                     name: 'Number',
+                    borderWidth: 0.5,
+                    borderColor: 'white',
                     states: {
                         hover: {
-                            color: '#BADA55'
+                            borderColor: 'gray',
+                            borderWidth: 1,
+                            brightness: 0
                             }
                         },
                     dataLabels: {
@@ -1267,7 +1271,7 @@
 </div><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer13601341"></div>
+        <div id="mapcontainer23694368"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking on it or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1292,7 +1296,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer13601341', {
+            Highcharts.mapChart('mapcontainer23694368', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1327,9 +1331,13 @@
                 series: [{
                     data: data,
                     name: 'Incidence',
+                    borderWidth: 0.5,
+                    borderColor: 'white',
                     states: {
                         hover: {
-                            color: '#BADA55'
+                            borderColor: 'gray',
+                            borderWidth: 1,
+                            brightness: 0
                             }
                         },
                     dataLabels: {
@@ -1404,7 +1412,7 @@
 
 
                     <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="uAI57Pl8NwxKShsFbpjAHNT88zBVjA1Hv1jk2Cio1B4-T088IoicWAekc9dN1160QAgAOosMQYMkpZZ9KxmUG0RhqV1NtIZbAvcaY5Pg8Yk1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="I9DnB0IEKtmY2Nkej0byUIdQ2pxfR1ofhWGB5ZSNL79OTpvqA0UhgS8Yy_BrOOyLjmIB8NP5G3P915VKcfMjzh0HJ2jwtG_XW97YNhl8sfc1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
                                 <h3>Did you find what you were looking for?</h3>
                                 <div class="answer-group">
                                     <button class="callBtn" onclick="positive.call(this); return false;">
@@ -1665,93 +1673,98 @@
 
     
 
-<footer class="main-footer">
-    <div class="fhi-container">
-        <div class="fhi-row">
-            <div class="fhi-col is-primary">
 
-                <h2>Address/contact</h2>
 
-                <p><strong>Norwegian Institute of <br />Public Health</strong></p>
+
+    
+
+    <footer class="main-footer">
+        <div class="fhi-container">
+            <div class="fhi-row">
+                <div class="fhi-col is-primary">
+
+                    <h2>Address/contact</h2>
+
+                    <p><strong>Norwegian Institute of <br />Public Health</strong></p>
 <p>PO Box 222 Skøyen<br />N-0213 Oslo</p>
 <p>PO Box 973 Sentrum<br />N-5808 Bergen</p>
 <p>Switchboard: (+47) 21 07 70 00<br />Org. no. 983&nbsp;744&nbsp;516</p>
+                </div>
+
+                <div class="fhi-col is-secondary">
+                        <h2>Latest</h2>
+                        <ul class="simple-list">
+                                <li>
+                                    <a href="/en/news/">News by year</a>
+                                </li>
+                                <li>
+                                    <a href="/en/about/departments-and-centres/">Divisions and departments</a>
+                                </li>
+                                <li>
+                                    <a href="/en/about/this-is-the-norwegian-institute-of-public-health/would-you-like-to-work-at-the-niph/">Would you like to work at the NIPH?</a>
+                                </li>
+                        </ul>
+                </div>
+
+                <div class="fhi-col is-secondary">
+                        <h2>All our</h2>
+                        <ul class="simple-list">
+                                <li>
+                                    <a href="/en/studies/">Studies</a>
+                                </li>
+                                <li>
+                                    <a href="/en/overview/projects/">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="/en/publ/">Publications</a>
+                                </li>
+                                <li>
+                                    <a href="/en/op/">Online publications</a>
+                                </li>
+                                <li>
+                                    <a href="/en/more/health-studies/">Health studies</a>
+                                </li>
+                                <li>
+                                    <a href="/en/hn/health-registries/">Health registries</a>
+                                </li>
+                        </ul>
+                </div>
+
+                <div class="fhi-col is-tertiary">
+                    <ul class="simple-list">
+                                                                                                                                                                                                                                            </ul>
+                </div>
+
+                <div class="scroll-to-top">
+                    <a href="#main">
+                        <span class="circle big icon-arrow-long-up is-white"></span>
+                        <span class="fhi-visually-hidden">Gå til toppen</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="fhi-col is-secondary">
-                    <h2>Latest</h2>
-                    <ul class="simple-list">
+            <hr class="ruler is-tight is-inverted">
+        </div>
+        <div class="fhi-container">
+            <div class="stripe">
+                <img class="logo-inverted en" alt="Norwegian Institute of Public Health" title="Norwegian Institute of Public Health" src="/Static/templates/build/gfx/logo_lang_engelsk.svg">
+
+                    <ul class="inline-list">
                             <li>
-                                <a href="/en/news/">News by year</a>
+                                <a href="/en/about/this-is-the-norwegian-institute-of-public-health/">About the Norwegian Institute of Public Health</a>
                             </li>
                             <li>
-                                <a href="/en/about/departments-and-centres/">Divisions and departments</a>
-                            </li>
-                            <li>
-                                <a href="/en/about/this-is-the-norwegian-institute-of-public-health/would-you-like-to-work-at-the-niph/">Would you like to work at the NIPH?</a>
+                                <a href="/en/about/this-is-the-norwegian-institute-of-public-health/privacy-policy/">Privacy Policy</a>
                             </li>
                     </ul>
-            </div>
 
-            <div class="fhi-col is-secondary">
-                    <h2>All our</h2>
-                    <ul class="simple-list">
-                            <li>
-                                <a href="/en/studies/">Studies</a>
-                            </li>
-                            <li>
-                                <a href="/en/overview/projects/">Projects</a>
-                            </li>
-                            <li>
-                                <a href="/en/publ/">Publications</a>
-                            </li>
-                            <li>
-                                <a href="/en/op/">Online publications</a>
-                            </li>
-                            <li>
-                                <a href="/en/more/health-studies/">Health studies</a>
-                            </li>
-                            <li>
-                                <a href="/en/hn/health-registries/">Health registries</a>
-                            </li>
-                    </ul>
-            </div>
+                <div class="page-type">
 
-            <div class="fhi-col is-tertiary">
-                <ul class="simple-list">
-                                                                                                                                                                                                    </ul>
-            </div>
-
-            <div class="scroll-to-top">
-                <a href="#main">
-                    <span class="circle big icon-arrow-long-up is-white"></span>
-                    <span class="fhi-visually-hidden">Gå til toppen</span>
-                </a>
+                    1.0.0.0 - RD501AC5526D8C - Article
+                </div>
             </div>
         </div>
-
-        <hr class="ruler is-tight is-inverted">
-    </div>
-    <div class="fhi-container">
-        <div class="stripe">
-            <img class="logo-inverted en" alt="Norwegian Institute of Public Health" title="Norwegian Institute of Public Health" src="/Static/templates/build/gfx/logo_lang_engelsk.svg">
-
-                <ul class="inline-list">
-                        <li>
-                            <a href="/en/about/this-is-the-norwegian-institute-of-public-health/">About the Norwegian Institute of Public Health</a>
-                        </li>
-                        <li>
-                            <a href="/en/about/this-is-the-norwegian-institute-of-public-health/privacy-policy/">Privacy Policy</a>
-                        </li>
-                </ul>
-
-            <div class="page-type">
-
-                1.0.0.0 - RD501AC5526D8C - Article
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 <div id="cookie-banner" class="english fhi-print--hidden" style="display:none">
     <div class="fhi-container">
@@ -1773,7 +1786,7 @@
 <script src="/bundles/scripts.js?v=4vkxM1KpN0y1oJOGTUVXLmUnG6JjPLAIBPr4UKFGLyo1"></script>
 
 
-<script src="/bundles/fhi.js?v=s8QwH7xbxg630vTsV0Di8EDEmhqN6R1R3tCJudHH1KU1"></script>
+<script src="/bundles/fhi.js?v=RXLrHQycZCdPfl9noTugXaHtPMHvbadtMdx-mYV-iEo1"></script>
 
 
     <script type="text/javascript" src="https://dl.episerver.net/13.2.6/epi-util/find.js"></script>
