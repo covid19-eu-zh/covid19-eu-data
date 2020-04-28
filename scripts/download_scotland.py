@@ -69,7 +69,7 @@ class SARSCOV2Scotland(COVIDScrapper):
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
 
-        dt_from_re = dt_from_re[0]
+        dt_from_re = dt_from_re[0].replace("&nbsp;", " ")
         dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
         self.dt = dt_from_re
 
