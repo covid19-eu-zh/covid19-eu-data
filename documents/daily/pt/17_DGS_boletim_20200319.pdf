@@ -270,6 +270,13 @@ img.emoji {
     							</a>
     						</div>
     				    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/portugal-ja-realizou-450-mil-testes-de-diagnostico-a-covid-19/" class="news_link">
+    								<span class="news_date">04/05/2020</span>								
+    								<h2 class="news_title">Portugal já realizou 450 mil testes de diagnóstico à COVID-19</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
     							<a href="https://covid19.min-saude.pt/dgs-celebra-protocolo-com-a-confederacao-do-comercio-e-servicos-de-portugal/" class="news_link">
     								<span class="news_date">04/05/2020</span>								
     								<h2 class="news_title">DGS celebra protocolo com a Confederação do Comércio e Serviços de Portugal</h2>
@@ -280,13 +287,6 @@ img.emoji {
     							<a href="https://covid19.min-saude.pt/viseira-nao-dispensa-utilizacao-de-mascara/" class="news_link">
     								<span class="news_date">04/05/2020</span>								
     								<h2 class="news_title">Viseira não dispensa utilização de máscara</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/doentes-recuperados-podem-inscrever-se-para-doar-plasma/" class="news_link">
-    								<span class="news_date">04/05/2020</span>								
-    								<h2 class="news_title">Doentes recuperados podem inscrever-se para doar plasma</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -413,13 +413,19 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">dapibus elit. amet, risus. ipsum leo id,</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">risus. ipsum elit. tristique Curabitur consectetur mattis consequat. leo Donec Phasellus ultricies</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var postprovider = {"ajax_url":"https:\/\/covid19.min-saude.pt\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/providersajax/provider.js?ver=1.0'></script>
 <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LfeoOIUAAAAAM1jX7_fQR172zXKlaJbr919JXM4&#038;ver=3.0'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/themes/COVID-19/scripts.js?ver=50fa23'></script>
 <script type='text/javascript' src='https://covid19.min-saude.pt/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
@@ -497,5 +503,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-05-05 07:17:56 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-05-05 12:18:45 by W3 Total Cache
 -->
