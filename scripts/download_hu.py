@@ -33,37 +33,51 @@ class SARSCOV2HU(COVIDScrapper):
         """
 
         doc = lxml.html.document_fromstring(self.req.text)
-        el_numbers = doc.xpath('.//div[@class="diagram-a"]/span[@class="number"]/text()')
-        el_labels = doc.xpath('.//div[@class="diagram-a"]/span[@class="label"]/text()')
-        if el_numbers:
-            data = dict(zip(el_labels, el_numbers))
+        numbers_div = doc.xpath('.//div[@id="numbers-API"]/div')
+        data = {i.xpath("./@id")[0]: i.xpath("./text()")[0].strip().replace(" ", "") for i in numbers_div}
+        # <div id="numbers-API" class="alittleHelpForYourAPI hidden">
+        #     <div id="api-fertozott-pest">1 290</div>
+        #     <div id="api-fertozott-videk">764</div>
+        #     <div id="api-gyogyult-pest">319</div>
+        #     <div id="api-gyogyult-videk">311</div>
+        #     <div id="api-elhunyt-pest">276</div>
+        #     <div id="api-elhunyt-videk">75</div>
+        #     <div id="api-karantenban">10 459</div>
+        #     <div id="api-mintavetel">83 958</div>
+        #     <div id="api-elhunyt-global">248 097</div>
+        #     <div id="api-fertozott-global">3 529 408</div>
+        #     <div id="api-gyogyult-global">1 133 538</div>
+        # </div>
+        self.df = pd.DataFrame([data])
 
-        self.df = pd.DataFrame(
-            [data]
-        )
+        if self.df.empty:
+            raise Exception("No data found")
 
         self.df.rename(
             columns = {
-                "Fertőzött": "cases",
-                "Gyógyult": "recovered",
-                "Elhunyt": "deaths",
-                "Karanténban": "quarantine",
-                "Mintavétel": "tests"
+                "api-fertozott-pest": "cases_pest",
+                "api-fertozott-videk": "cases_countryside",
+                "api-gyogyult-pest": "recovered_pest",
+                "api-gyogyult-videk": "recovered_countryside",
+                "api-elhunyt-pest": "deaths_pest",
+                "api-elhunyt-videk": "deaths_countryside",
+                "api-karantenban": "quarantine",
+                "api-mintavetel": "tests"
             }, inplace=True
         )
 
-        for col in ["cases", "recovered", "deaths", "tests", "quarantine"]:
-            try:
-                self.df[col] = self.df[col].apply(
-                    lambda x: int(
-                        float(
-                            x.replace(" ", "")
-                        )
-                    )
-                )
-            except KeyError as ke:
-                logger.error(f'Could not find column {col}')
-                self.df[col] = ''
+        self.df["cases"] = self.df.cases_pest.astype(int) + self.df.cases_countryside.astype(int)
+        self.df["recovered"] = self.df.recovered_pest.astype(int) + self.df.recovered_countryside.astype(int)
+        self.df["deaths"] = self.df.deaths_pest.astype(int) + self.df.deaths_countryside.astype(int)
+        # self.df.rename(
+        #     columns = {
+        #         "Fertőzött": "Budapest and Pest counties",
+        #         "Gyógyult": "recovered",
+        #         "Elhunyt": "deaths",
+        #         "Karanténban": "quarantine",
+        #         "Mintavétel": "tests"
+        #     }, inplace=True
+        # )
 
         logger.info("list of cases:\n", self.df)
 
