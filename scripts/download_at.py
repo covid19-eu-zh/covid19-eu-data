@@ -105,7 +105,8 @@ class SARSCOV2AT(COVIDScrapper):
             "intensive_care", "tests"
         ]
         SUM_KEY = {
-            "Österreich  gesamt": ""
+            "Österreich  gesamt": "",
+            "Österreich gesamt": ""
         }
 
         self.df[geo_loc_key] = self.df[geo_loc_key].apply(lambda x: x.strip().replace(".",""))
