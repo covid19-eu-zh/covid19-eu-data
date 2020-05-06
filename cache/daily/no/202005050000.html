@@ -125,7 +125,7 @@
     <meta name="description" content="Here is a selection of data from the daily status reports about coronavirus disease (COVID-19) in Norway." />
     <meta name="pageID" content="89256" />
     
-    <meta name="last edited" content="2020-05-05" />
+    <meta name="last edited" content="2020-05-06" />
 
 
 
@@ -816,8 +816,8 @@
                 <span class="">
                     Updated
                 </span>
-                <time datetime="2020-05-05">
-                    05.05.2020
+                <time datetime="2020-05-06">
+                    06.05.2020
                 </time>
 </p>
 
@@ -913,7 +913,7 @@
 <ul>
 <li>Total of 7 903 people with confirmed COVID-19, of which 59 were reported yesterday. Updated on the 04.05.2020 at 24:00.</li>
 <li>209 deaths have been notified to the NIPH (as of 05.05.2020 at 08:00).&nbsp;</li>
-<li>A total of 189 657 have been tested for coronavirus (SARS-CoV-2) (as of 04.05.2020 at 24:00).&nbsp;</li>
+<li>A total of 184 657 have been tested for coronavirus (SARS-CoV-2) (as of 04.05.2020 at 24:00).&nbsp;</li>
 </ul>
 <h3>Intensive care patients</h3>
 <p>A total of 215 people in intensive care with confirmed coronavirus (SARS-CoV-2) have been treated in intensive care units, of these, 35 are inpatients. The average age of the 215 confirmed patients is 62 years, and 75 % are male. 35 deaths have been reported.</p>
@@ -924,7 +924,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart23083925" class="highchart ">
+<figure id="chart36735674" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper ">
 
         <nav class="fhi-tabs__container fhi-print--hidden">
@@ -951,7 +951,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart23083925 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart36735674 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -968,7 +968,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart23083925 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart36735674 [data-hc]");
                                         }
                                     },
                                 });
@@ -985,7 +985,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart23083925 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart36735674 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/90789';
                                 if (currentSelection > 0) {
@@ -1001,8 +1001,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart23083925 > div > p:last-of-type").text() === " ") {
-                $("#chart23083925 > div > p:last-of-type").remove();
+        if ($("#chart36735674 > div > p:last-of-type").text() === " ") {
+                $("#chart36735674 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1014,7 +1014,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart64043352" class="highchart ">
+<figure id="chart57553943" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper ">
 
         <nav class="fhi-tabs__container fhi-print--hidden">
@@ -1041,7 +1041,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart64043352 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart57553943 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -1058,7 +1058,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart64043352 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart57553943 [data-hc]");
                                         }
                                     },
                                 });
@@ -1075,7 +1075,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart64043352 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart57553943 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/90814';
                                 if (currentSelection > 0) {
@@ -1091,8 +1091,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart64043352 > div > p:last-of-type").text() === " ") {
-                $("#chart64043352 > div > p:last-of-type").remove();
+        if ($("#chart57553943 > div > p:last-of-type").text() === " ") {
+                $("#chart57553943 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1104,7 +1104,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart26699667" class="highchart ">
+<figure id="chart36835178" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper ">
 
         <nav class="fhi-tabs__container fhi-print--hidden">
@@ -1131,7 +1131,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart26699667 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart36835178 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -1148,7 +1148,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart26699667 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart36835178 [data-hc]");
                                         }
                                     },
                                 });
@@ -1165,7 +1165,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart26699667 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart36835178 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/90951';
                                 if (currentSelection > 0) {
@@ -1181,8 +1181,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart26699667 > div > p:last-of-type").text() === " ") {
-                $("#chart26699667 > div > p:last-of-type").remove();
+        if ($("#chart36835178 > div > p:last-of-type").text() === " ") {
+                $("#chart36835178 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1278,7 +1278,7 @@
 <div class="fhi-row fhi-row--fill"><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer65251070"></div>
+        <div id="mapcontainer15099472"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1306,7 +1306,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer65251070', {
+            Highcharts.mapChart('mapcontainer15099472', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1377,7 +1377,7 @@
 </div><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer13917793"></div>
+        <div id="mapcontainer41939841"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking on it or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1405,7 +1405,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer13917793', {
+            Highcharts.mapChart('mapcontainer41939841', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1482,7 +1482,7 @@
 </ul>
 <h3>Daily report</h3>
 <ul class="fhi-list-with-arrow">
-<li><a title="2020_05_05_Dagsrapport Norge covid-19.pdf" href="/en/Recycle-Bin/2020_05_05_dagsrapport-norge-covid-19.pdf">2020.05.05 Daily report Norway COVID-19.pdf</a></li>
+<li><a title="2020_05_05_Dagsrapport Norge covid-19_v2.pdf" href="/contentassets/ca5914bd0aa14e15a17f8a7d48fa306a/2020_05_05_dagsrapport-norge-covid-19_v2.pdf">2020.05.05 Daily report Norway COVID-19_v2.pdf</a></li>
 <li><a title="2020_05_05_Norden og verden covid-19.pdf" href="/contentassets/ca5914bd0aa14e15a17f8a7d48fa306a/2020_05_05_norden-og-verden-covid-19.pdf">2020.05.05 Nordic countries and the world COVID-19.pdf</a></li>
 </ul>
 <h3>Older daily reports</h3>
@@ -1522,7 +1522,7 @@
 
 
                     <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="Co9gsWN79JDNHe13LCeUGkHWP_8P2qUwhEQ8kOyFmzhYplT7gbRGSWm5bmmZYIcJp4x6HpVWscxB2NqWSavKMzt-YwdWy2rKEBhHHO8AZJk1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="jGbCBGhhz_gGDPViuMtr0V48vUybpDOuYKacSIy_RQ7aFlvQZQLNeNfk4KC02fLgjf0e3Lkp-rjwfnz16EMe0YEFuDYDGEqakXMd_LhRPGM1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
                                 <h3>Did you find what you were looking for?</h3>
                                 <div class="answer-group">
                                     <button class="callBtn" onclick="positive.call(this); return false;">
@@ -1890,7 +1890,7 @@
 
                 <div class="page-type">
 
-                    1.0.0.0 - RD501AC5526D8C - Article
+                    1.0.0.0 - RD2818788C55A5 - Article
                 </div>
             </div>
         </div>
