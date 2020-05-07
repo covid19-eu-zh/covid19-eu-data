@@ -244,7 +244,7 @@ img.emoji {
 					</a>
 					
 					<div class="world_videos">
-						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/BUkZ0jwLLeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="world_video_iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/PDqGScPuaZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<!-- <a class="world_video_link" href="">Ver mais videos</a>  -->
 					</div>
 					
@@ -263,6 +263,13 @@ img.emoji {
     			
     			<div class="news_item_zone">
         			    						<div class="news_item">
+    							<a href="https://covid19.min-saude.pt/esclarecimento/" class="news_link">
+    								<span class="news_date">07/05/2020</span>								
+    								<h2 class="news_title">Esclarecimento</h2>
+    								<span class="news_readmore">Leia mais</span>
+    							</a>
+    						</div>
+    				    						<div class="news_item">
     							<a href="https://covid19.min-saude.pt/instituto-ricardo-jorge-ja-identificou-150-mutacoes-do-coronavirus/" class="news_link">
     								<span class="news_date">06/05/2020</span>								
     								<h2 class="news_title">Instituto Ricardo Jorge já identificou 150 mutações do coronavírus</h2>
@@ -280,13 +287,6 @@ img.emoji {
     							<a href="https://covid19.min-saude.pt/hospitais-vao-manter-circuitos-covid-e-nao-covid/" class="news_link">
     								<span class="news_date">06/05/2020</span>								
     								<h2 class="news_title">Hospitais vão manter circuitos COVID e não-COVID</h2>
-    								<span class="news_readmore">Leia mais</span>
-    							</a>
-    						</div>
-    				    						<div class="news_item">
-    							<a href="https://covid19.min-saude.pt/se-os-avos-forem-vulneraveis-devem-ser-protegidos/" class="news_link">
-    								<span class="news_date">06/05/2020</span>								
-    								<h2 class="news_title">“Se os avós forem vulneráveis, devem ser protegidos”</h2>
     								<span class="news_readmore">Leia mais</span>
     							</a>
     						</div>
@@ -413,7 +413,7 @@ img.emoji {
 				</div>
 			</div>
 		</footer>
-        <span style="display:none !important">dictum accumsan ipsum id, dolor. felis eleifend eget leo justo</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
+        <span style="display:none !important">libero venenatis, accumsan Aliquam ut Curabitur mattis adipiscing leo nec</span><script type='text/javascript' src='https://covid19.min-saude.pt/wp-content/plugins/spms-accordion-block/js/accordion-blocks.min.js?ver=1.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/covid19.min-saude.pt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
@@ -503,5 +503,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (Page is 404) 
 
-Served from: covid19.min-saude.pt @ 2020-05-07 07:18:56 by W3 Total Cache
+Served from: covid19.min-saude.pt @ 2020-05-07 12:18:34 by W3 Total Cache
 -->
