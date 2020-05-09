@@ -36,7 +36,7 @@ class SARSCOV2NO(COVIDScrapper):
         """Load data table from web page
         """
 
-        re_data = re.compile(r"var data = (.*?);", re.MULTILINE)
+        re_data = re.compile(r"var data = .*? data = (.*?);", re.MULTILINE)
         data = re_data.findall(self.req.text.replace('\n','').replace('\r', ''))
 
         if not len(data) == 2:
@@ -48,6 +48,10 @@ class SARSCOV2NO(COVIDScrapper):
         logger.info("Construct dataframe")
         cases_data = pd.DataFrame(cases_data, columns=["nuts_3", "cases"])
         rate_data = pd.DataFrame(rate_data, columns=["nuts_3", "cases/100k pop."])
+        if cases_data.empty:
+            raise Exception('Empty cases data')
+        if rate_data.empty:
+            raise Exception('Empty rate data')
 
         list_nuts_3 = {
             "no-no-18": "Nordland",
@@ -73,10 +77,14 @@ class SARSCOV2NO(COVIDScrapper):
 
     def extract_datetime(self):
         """Get datetime of dataset
-        Nombre de cas rapportés par région au 10/03/2020 à 15h (données Santé publique France)
+        The total number of COVID-19 deaths reported to the Norwegian Institute of Public Health is 215. Updated at 09:45 the 9. Of May.
         """
-        re_dt = re.compile(r'<strong><span style="font-size: 1.1em;">Extract from daily COVID-19 report - (.*)</span></strong>')
-        dt_from_re = re_dt.findall(self.req.text)
+        # The total number of COVID-19 deaths reported to the Norwegian Institute of Public Health is 215. Updated at 09:45 the 9. Of May.
+        # re_dt = re.compile(r'<strong><span style="font-size: 1.1em;">Extract from daily COVID-19 report - (.*)</span></strong>')
+        re_dt = re.compile(r'Updated at .*? the (.*?)\.</')
+        dt_from_re = re_dt.findall(
+            self.req.content.decode('utf-8')
+        )
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
