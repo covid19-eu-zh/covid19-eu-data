@@ -81,10 +81,12 @@ class SARSCOV2NO(COVIDScrapper):
         """
         # The total number of COVID-19 deaths reported to the Norwegian Institute of Public Health is 215. Updated at 09:45 the 9. Of May.
         # re_dt = re.compile(r'<strong><span style="font-size: 1.1em;">Extract from daily COVID-19 report - (.*)</span></strong>')
-        re_dt = re.compile(r'Updated at .*? the (.*?)\.</')
-        dt_from_re = re_dt.findall(
-            self.req.content.decode('utf-8')
-        )
+        # subtitle: {
+        #            text: 'Updated 7 May'
+        #        },
+        # re_dt = re.compile(r'Updated at .*? the (.*?)\.</')
+        re_dt = re.compile(r"text: 'Updated (\d+ \w+)'", re.MULTILINE)
+        dt_from_re = re_dt.findall(self.req.content.decode('utf-8'))
 
         if not dt_from_re:
             raise Exception("Did not find datetime from webpage")
