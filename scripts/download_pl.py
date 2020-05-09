@@ -63,6 +63,9 @@ class SARSCOV2PL(COVIDScrapper):
             inplace=True
         )
 
+        # Remove space from case numbers
+        self.df['cases'] = self.df['cases'].str.replace(' ', '')
+
         logger.info("cases:\n", self.df)
 
     def extract_datetime(self):
