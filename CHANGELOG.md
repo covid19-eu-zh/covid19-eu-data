@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-05-09
+
+1. NO: NO updated datetime is inconsistent between the tables and the map. We are now using map updated datetime since we switched to map values instead of table values. We also noticed some days missing. The reason is unidentified.
+
 ## 2020-04-23
 
 1. DE: DE removed the data table from the RKI webpage and focusing on the dashboard. We switched to the dashboard API for the daily data.
