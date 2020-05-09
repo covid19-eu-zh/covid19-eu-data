@@ -920,7 +920,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart24634402" class="highchart ">
+<figure id="chart8787737" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper ">
 
         <nav class="fhi-tabs__container fhi-print--hidden">
@@ -947,7 +947,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart24634402 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart8787737 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -964,7 +964,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart24634402 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart8787737 [data-hc]");
                                         }
                                     },
                                 });
@@ -981,7 +981,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart24634402 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart8787737 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/90789';
                                 if (currentSelection > 0) {
@@ -997,8 +997,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart24634402 > div > p:last-of-type").text() === " ") {
-                $("#chart24634402 > div > p:last-of-type").remove();
+        if ($("#chart8787737 > div > p:last-of-type").text() === " ") {
+                $("#chart8787737 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1010,24 +1010,24 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart28271007" class="highchart ">
+<figure id="chart5553620" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper fhi-p-S-plus">
 
             <div class="fhi-dropdown fhi-m-bottom-S">
-                <span class="fhi-visually-hidden" id="28271007-label">
+                <span class="fhi-visually-hidden" id="5553620-label">
                     Choose a county
                 </span>
                 <button class="fhi-dropdown-btn"
                         aria-haspopup="listbox"
-                        aria-labelledby="28271007-label"
-                        id="28271007-button">
+                        aria-labelledby="5553620-label"
+                        id="5553620-button">
                     See county
                 </button>
                 <ul class="fhi-dropdown-list fhi-hidden"
                     tabindex="-1"
                     role="listbox"
-                    aria-labelledby="28271007-label">
-                    <li id="#chart28271007-0" role="option" data-county="0">Alle fylker</li>
+                    aria-labelledby="5553620-label">
+                    <li id="#chart5553620-0" role="option" data-county="0">Alle fylker</li>
 
                 </ul>
             </div>
@@ -1055,7 +1055,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart28271007 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart5553620 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -1072,7 +1072,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart28271007 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart5553620 [data-hc]");
                                         }
                                     },
                                 });
@@ -1087,11 +1087,11 @@
                             
 
                         var counties = [{ id: "30", name: "Viken" }, { id: "03", name: "Oslo" }, { id: "34", name: "Innlandet" }, { id: "38", name: "Vestfold og Telemark" }, { id: "42", name: "Agder" }, { id: "11", name: "Rogaland" }, { id: "46", name: "Vestland" }, { id: "15", name: "Møre og Romsdal" }, { id: "50", name: "Trøndelag" }, { id: "18", name: "Nordland" }, { id: "54", name: "Troms og Finnmark" }];
-                        utils.initDropdown("#chart28271007", counties);
+                        utils.initDropdown("#chart5553620", counties);
 
                         document.addEventListener("fhi-dropdown", function (e) {
                             var chartId = $(e.detail.element).closest(".highchart").attr("id");
-                            if (("chart" + 28271007) === chartId) {
+                            if (("chart" + 5553620) === chartId) {
                                 if (e.detail.type == "selected") {
                                     if (e.detail.value >= 0 && e.detail.value != currentSelection) {
                                         currentSelection = e.detail.value;
@@ -1113,7 +1113,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart28271007 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart5553620 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/90814';
                                 if (currentSelection > 0) {
@@ -1129,8 +1129,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart28271007 > div > p:last-of-type").text() === " ") {
-                $("#chart28271007 > div > p:last-of-type").remove();
+        if ($("#chart5553620 > div > p:last-of-type").text() === " ") {
+                $("#chart5553620 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1142,7 +1142,7 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart66240109" class="highchart ">
+<figure id="chart34172737" class="highchart ">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey highcharts-wrapper ">
 
         <nav class="fhi-tabs__container fhi-print--hidden">
@@ -1169,7 +1169,7 @@
                     (function (utils) {
 
                         utils.waitAndExecute(250, 10, function (x) {
-                            var chartIndex = $('#chart66240109 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart34172737 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
 
                                 
@@ -1186,7 +1186,7 @@
                                         var lastModified = request.getResponseHeader('X-API-Last-Modified');
                                         if (lastModified != "undefined") {
                                             lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
-                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart66240109 [data-hc]");
+                                            $("<p class='highcharts-updated'>Updated " + new Date(lastModified).toLocaleDateString(undefined, { month: "long", day: "numeric" }) + "</p>").appendTo("#chart34172737 [data-hc]");
                                         }
                                     },
                                 });
@@ -1203,7 +1203,7 @@
                         })(utils);
 
                         function loadChart() {
-                            var chartIndex = $('#chart66240109 div[data-highcharts-chart]').data('highcharts-chart');
+                            var chartIndex = $('#chart34172737 div[data-highcharts-chart]').data('highcharts-chart');
                             if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
                                 var liveurl = window.location.origin + '/api/chartdata/api/91295';
                                 if (currentSelection > 0) {
@@ -1219,8 +1219,8 @@
 
     </div>
     <script type="text/javascript">
-        if ($("#chart66240109 > div > p:last-of-type").text() === " ") {
-                $("#chart66240109 > div > p:last-of-type").remove();
+        if ($("#chart34172737 > div > p:last-of-type").text() === " ") {
+                $("#chart34172737 > div > p:last-of-type").remove();
             }
     </script>
 </figure>
@@ -1316,7 +1316,7 @@
 <div class="fhi-row fhi-row--fill"><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer2531555"></div>
+        <div id="mapcontainer48312281"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1344,7 +1344,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer2531555', {
+            Highcharts.mapChart('mapcontainer48312281', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1415,7 +1415,7 @@
 </div><div class="fhi-col">
 <figure class="highmaps">
     <div class="fhi-border fhi-border--thick fhi-border-light-grey">
-        <div id="mapcontainer36503777"></div>
+        <div id="mapcontainer55169711"></div>
     </div>
         <figcaption>Zoom in on an area on the map by double clicking on it or using the scroll button on the mouse to zoom in and out.</figcaption>
 </figure>
@@ -1443,7 +1443,7 @@
 
           $.getScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
 
-            Highcharts.mapChart('mapcontainer36503777', {
+            Highcharts.mapChart('mapcontainer55169711', {
             chart: {
                 map: 'countries/no/no-all',
                 },
@@ -1560,7 +1560,7 @@
 
 
                     <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="V_ZCwI-i2aRMEJBE9TaYqcCgelKf3p2IS6Q_-GuCUa0LHNCGK_d1niL58RH1PAl9G0aNmhmlyGI3JFGKDjV9LC_N-thB6DR7YZ57wKOfWL41" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="vMldrrONFUCOOiabVJwl7hHASiLtu8-u6-9ZjnTMssnSoHZj_cAwS8D21a25Ze2UkUUiZS0GLtziCY6DMOQHmpEOMlgkrGEB5dJ7C79wnPw1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
                                 <h3>Did you find what you were looking for?</h3>
                                 <div class="answer-group">
                                     <button class="callBtn" onclick="positive.call(this); return false;">
@@ -1928,7 +1928,7 @@
 
                 <div class="page-type">
 
-                    1.0.0.0 - RD00155D62197D - Article
+                    1.0.0.0 - RD00155D625C8E - Article
                 </div>
             </div>
         </div>
