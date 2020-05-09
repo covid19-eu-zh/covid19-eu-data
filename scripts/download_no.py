@@ -1,3 +1,4 @@
+import click
 import logging
 import os
 import re
@@ -110,6 +111,26 @@ class SARSCOV2NO(COVIDScrapper):
             f.write(self.req.content)
 
 
+@click.command()
+@click.option('--source', default=REPORT_URL, help='Use a local html file as data source')
+def download(source):
+
+    logger.info(f"Using url = {source}")
+    print(source)
+
+    cov_no = SARSCOV2NO(url=source)
+
+    cov_no.workflow()
+
+    print(cov_no.df)
+
+    da = DailyAggregator(
+        base_folder="dataset",
+        daily_folder=DAILY_FOLDER,
+        country="NO"
+    )
+    da.workflow()
+
 
 
 if __name__ == "__main__":
@@ -132,16 +153,6 @@ if __name__ == "__main__":
     #     )
     #     file_transformation.workflow()
 
-    cov_no = SARSCOV2NO()
-    cov_no.workflow()
-
-    print(cov_no.df)
-
-    da = DailyAggregator(
-        base_folder="dataset",
-        daily_folder=DAILY_FOLDER,
-        country="NO"
-    )
-    da.workflow()
+    download()
 
     print("End of Game")
