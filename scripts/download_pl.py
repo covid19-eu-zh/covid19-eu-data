@@ -64,7 +64,7 @@ class SARSCOV2PL(COVIDScrapper):
         )
 
         # Remove space from case numbers
-        # self.df['cases'] = self.df['cases'].str.replace(' ', '')
+        self.df['cases'] = self.df['cases'].astype(str).str.replace(' ', '')
 
         logger.info("cases:\n", self.df)
 
