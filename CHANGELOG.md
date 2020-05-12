@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-05-12
+
+1. NO: NO removed the updated time of the map. We have to use the the article update time in the title.
+
 ## 2020-05-09
 
 1. NO: NO updated datetime is inconsistent between the tables and the map. We are now using map updated datetime since we switched to map values instead of table values. We also noticed some days missing. The reason is unidentified.
