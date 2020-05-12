@@ -20,6 +20,8 @@ logger = logging.getLogger("covid-eu-data.download.no")
 
 # PDF Daily updates https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/dags--og-ukerapporter-om-koronavirus/
 REPORT_URL = "https://www.fhi.no/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/"
+CASES_API = "https://www.fhi.no/api/chartdata/api/91322"
+RATE_API = "https://www.fhi.no/api/chartdata/api/91323"
 DAILY_FOLDER = os.path.join("dataset", "daily", "no")
 WEBPAGE_CACHE_FOLDER = os.path.join("documents", "daily", "no")
 
@@ -34,6 +36,28 @@ class SARSCOV2NO(COVIDScrapper):
         COVIDScrapper.__init__(self, url, country="NO", daily_folder=daily_folder)
 
     def extract_table(self):
+
+        cases_data = requests.get(CASES_API).json()
+        rate_data = requests.get(RATE_API).json()
+
+        logger.info("Construct dataframe")
+        cases_data = pd.DataFrame(cases_data, columns=["nuts_3", "cases"])
+        rate_data = pd.DataFrame(rate_data, columns=["nuts_3", "cases/100k pop."])
+        if cases_data.empty:
+            raise Exception('Empty cases data')
+        if rate_data.empty:
+            raise Exception('Empty rate data')
+
+        cases_data = cases_data.loc[cases_data.nuts_3 != "Fylke"]
+        rate_data = rate_data.loc[rate_data.nuts_3 != "Fylke"]
+
+        self.df = pd.merge(cases_data, rate_data, on="nuts_3")
+
+        self.df["cases"] = self.df.cases.astype(int)
+
+        logger.info("records cases:\n", self.df)
+
+    def extract_table_embeded(self):
         """Load data table from web page
         """
 
@@ -86,7 +110,7 @@ class SARSCOV2NO(COVIDScrapper):
         #            text: 'Updated 7 May'
         #        },
         # re_dt = re.compile(r'Updated at .*? the (.*?)\.</')
-        re_dt = re.compile(r"text: 'Updated (\d+ \w+)'", re.MULTILINE)
+        re_dt = re.compile(r"Key figures from daily report - (.*?)</")
         dt_from_re = re_dt.findall(self.req.content.decode('utf-8'))
 
         if not dt_from_re:
