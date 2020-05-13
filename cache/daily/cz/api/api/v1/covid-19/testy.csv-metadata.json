@@ -7,7 +7,7 @@
     ],
     "url": "testy.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů",
-    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří.",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
     "dc:source": "Krajské hygienické stanice v ČR",
     "dcat:keyword": [
         "koronavirus",
@@ -18,14 +18,14 @@
     "dc:publisher": {
         "schema:name": "ÚZIS ČR",
         "schema:url": {
-            "@id": "http://www.uzis.cz/"
+            "@id": "https://www.uzis.cz/"
         }
     },
     "dc:license": {
         "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
     },
     "dc:modified": {
-        "@value": "2020-05-12",
+        "@value": "2020-05-13",
         "@type": "xsd:date"
     },
     "tableSchema": {

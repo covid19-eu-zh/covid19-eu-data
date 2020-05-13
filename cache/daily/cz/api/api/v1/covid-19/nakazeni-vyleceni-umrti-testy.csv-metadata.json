@@ -7,7 +7,7 @@
     ],
     "url": "nakazeni-vyleceni-umrti-testy.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří, počet vyléčených, počet úmrtí a provedených testů",
-    "dc:description": "Datová sada obsahující kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří, denní počty vyléčených po onemocnění COVID‑19 dle hlášení krajských hygienických stanic, denní počty úmrtí v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic a hospitalizačních úmrtí, a denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. S ohledem na fakt, že vykazování vyléčených osob a úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování.",
+    "dc:description": "Datová sada obsahující kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří, denní počty vyléčených po onemocnění COVID‑19 dle hlášení krajských hygienických stanic, denní počty úmrtí v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic a hospitalizačních úmrtí, a denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. S ohledem na fakt, že vykazování vyléčených osob a úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
     "dc:source": "Krajské hygienické stanice v ČR",
     "dcat:keyword": [
         "covid-19",
@@ -22,14 +22,14 @@
     "dc:publisher": {
         "schema:name": "ÚZIS ČR",
         "schema:url": {
-            "@id": "http://www.uzis.cz/"
+            "@id": "https://www.uzis.cz/"
         }
     },
     "dc:license": {
         "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
     },
     "dc:modified": {
-        "@value": "2020-05-12",
+        "@value": "2020-05-13",
         "@type": "xsd:date"
     },
     "tableSchema": {

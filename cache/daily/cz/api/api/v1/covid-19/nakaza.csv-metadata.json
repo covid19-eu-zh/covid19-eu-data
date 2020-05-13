@@ -7,7 +7,7 @@
     ],
     "url": "nakaza.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří",
-    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří.",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
     "dc:source": "Krajské hygienické stanice v ČR",
     "dcat:keyword": [
         "koronavirus",
@@ -19,7 +19,7 @@
     "dc:publisher": {
         "schema:name": "ÚZIS ČR",
         "schema:url": {
-            "@id": "http://www.uzis.cz/"
+            "@id": "https://www.uzis.cz/"
         }
     },
     "dc:license": {
