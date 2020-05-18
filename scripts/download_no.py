@@ -5,6 +5,7 @@ import re
 from io import StringIO
 import json
 import ast
+import datetime
 
 import dateutil
 import pandas as pd
@@ -110,15 +111,19 @@ class SARSCOV2NO(COVIDScrapper):
         #            text: 'Updated 7 May'
         #        },
         # re_dt = re.compile(r'Updated at .*? the (.*?)\.</')
-        re_dt = re.compile(r"Key figures from daily report - (.*?)</")
-        dt_from_re = re_dt.findall(self.req.content.decode('utf-8'))
 
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
+        # re_dt = re.compile(r"Key figures from daily report - (.*?)</")
+        # dt_from_re = re_dt.findall(self.req.content.decode('utf-8'))
 
-        dt_from_re = dt_from_re[0]
-        dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
-        self.dt = dt_from_re
+        # if not dt_from_re:
+            # raise Exception("Did not find datetime from webpage")
+
+        # dt_from_re = dt_from_re[0]
+        # dt_from_re = dateutil.parser.parse(dt_from_re, dayfirst=True)
+        # self.dt = dt_from_re
+        self.dt = datetime.datetime.combine(
+            datetime.date.today(), datetime.datetime.min.time()
+        )
 
     def post_processing(self):
 
