@@ -13,7 +13,8 @@ from utils import get_response as _get_response
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.dk")
 
-REPORT_URL = "https://www.ssi.dk/aktuelt/sygdomsudbrud/coronavirus/covid-19-i-danmark-epidemiologisk-overvaagningsrapport"
+# REPORT_URL = "https://www.ssi.dk/aktuelt/sygdomsudbrud/coronavirus/covid-19-i-danmark-epidemiologisk-overvaagningsrapport"
+REPORT_URL = "https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning"
 
 DAILY_FOLDER = os.path.join("documents", "daily", "dk")
 
