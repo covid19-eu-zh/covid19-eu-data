@@ -113,9 +113,12 @@ class SARSCOV2CH(COVIDScrapper):
         self.df.replace('CH', '', inplace=True)
         self.df['country'] = 'CH'
 
+        df_nuts_map = pd.DataFrame(CH_CANTONS).reset_index().rename(
+            columns={'index': 'nuts_3_code'}
+        )
         self.df = pd.merge(
-            self.df, pd.DataFrame(CH_CANTONS), how='left',
-            left_on='nuts_3_code', right_index=True
+            self.df, df_nuts_map, how='left',
+            left_on=self.geo_level_code, right_on=self.geo_level_code
         )
 
         self.dates = self.df['datetime'].unique().tolist()
