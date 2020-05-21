@@ -62,7 +62,10 @@ class SARSCOV2CH(COVIDScrapper):
         self.geo_level = 'nuts_3'
         self.geo_level_code = 'nuts_3_code'
 
-        COVIDScrapper.__init__(self, url, country="CH", daily_folder=daily_folder)
+        COVIDScrapper.__init__(
+            self, url, country="CH", daily_folder=daily_folder,
+            cache_format='.xlsx'
+        )
 
     def _melt_columns(self, df, name):
 

@@ -31,7 +31,7 @@ _COLUMNS_ORDER = [
 
 
 class COVIDScrapper():
-    def __init__(self, url, country, daily_folder=None):
+    def __init__(self, url, country, daily_folder=None, cache_format=None):
         """
         COVIDScrapper is the base class to scrape data from remote resources.
 
@@ -46,8 +46,13 @@ class COVIDScrapper():
             raise Exception("Please specify url!")
         if not country:
             raise Exception("Please specify country")
+        if cache_format is None:
+            cache_format = 'html'
+
+        self.cache_format = cache_format
 
         self.country = country
+
 
         if daily_folder is None:
             daily_folder = os.path.join("dataset", "daily", f"{self.country.lower()}")
@@ -146,7 +151,7 @@ class COVIDScrapper():
             pass
 
         with open(
-            os.path.join(cache_folder, f"{self.dt.strftime('%Y%m%d%H%M')}.html"),
+            os.path.join(cache_folder, f"{self.dt.strftime('%Y%m%d%H%M')}.{self.cache_format}"),
             'wb'
         ) as f:
             f.write(self.req.content)
