@@ -20,6 +20,7 @@ logger = logging.getLogger("covid-eu-data.util")
 _COLUMNS_ORDER = [
     "country", "region", "authority", "state", "county", "city", "province",
     "nuts_1", "nuts_2", "nuts_3", "lau",
+    "nuts_1_code", "nuts_2_code", "nuts_3_code", "lau_code",
     "cases", "cases_lower", "cases_upper", "cases_raw",
     "population", "cases/100k pop.", "percent",
     "recovered", "deaths",
