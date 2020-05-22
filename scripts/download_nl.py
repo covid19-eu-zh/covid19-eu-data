@@ -224,7 +224,8 @@ if __name__ == "__main__":
         country="NL",replace={
             "Noardeast-FryslÃ¢n": "Noardeast-Fryslân",
             "SÃºdwest-FryslÃ¢n": "Súdwest-Fryslân",
-            "Súdwest Fryslân": "Súdwest-Fryslân"
+            "Súdwest Fryslân": "Súdwest-Fryslân",
+            "s-Gravenhage": "'s-Gravenhage"
         }
     )
     da.workflow()
