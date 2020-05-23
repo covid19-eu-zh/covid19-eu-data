@@ -78,6 +78,10 @@ Caveats:
 
 1. Only PDF files of the records are downloaded.
 
+### CH
+
+1. CH hospitalized indicates the current hospitalized patients.
+
 ### DE
 
 1. For technical reasons, no data was transmitted from Hamburg on March 25th, 2020.
