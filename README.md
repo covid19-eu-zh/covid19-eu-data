@@ -6,10 +6,13 @@
 
 [![](https://img.shields.io/badge/roadmap-data--pipeline-blueviolet)](https://github.com/orgs/covid19-eu-zh/projects/1)
 
-**Reinit**: On 20200522, we reinitialized the repo due to oversize.
+## Changelog
 
-1. Some of the documents (cache and documents) have been moved to [covid19-eu-zh/covid19-eu-data-20200522](https://github.com/covid19-eu-zh/covid19-eu-data-20200522).
-2. If you need the history of commits, look into the forks.
+**Breaking**:
+
+On 2020-05-22, we removed `documents/be` and `documents/dk`. These two folders are bloating and our repo reached the GitHub storage hard limit (2GB). The files have been moved to [covid19-eu-zh/covid19-eu-data-20200522](https://github.com/covid19-eu-zh/covid19-eu-data-20200522) as a snapshot.
+
+Full changelog: [`CHANGELOG.md`](CHANGELOG.md)
 
 ## Update Status
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-05-22
+
+1. Removed `documents/be` and `documents/dk` because they are bloating a lot and reached the GitHub storage hard limit (2G). The files have been moved to [covid19-eu-zh/covid19-eu-data-20200522](https://github.com/covid19-eu-zh/covid19-eu-data-20200522).
+2. BE: Overwrite old files if they have the same name. Previously, we have been attaching a prefix to make copies for each day.
+3. DK: Overwrite old files if they have the same name. Previously, we have been attaching a prefix to make copies for each day.
+
 ## 2020-05-12
 
 1. NO: NO removed the updated time of the map. We have to use the the article update time in the title.
