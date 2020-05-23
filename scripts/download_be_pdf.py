@@ -51,7 +51,7 @@ def download_pdf():
         pdf_name = pdf.split("/")[-1]
 
         with open(
-            os.path.join(DAILY_FOLDER, f"{pdf_dt}__{pdf_name}"),
+            os.path.join(DAILY_FOLDER, f"{pdf_name}"),
             'wb'
         ) as f:
             f.write(pdf_url_get.content)

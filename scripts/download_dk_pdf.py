@@ -49,7 +49,7 @@ if __name__ == "__main__":
         pdf_name = pdf.split("/")[-1]
 
         with open(
-            os.path.join(DAILY_FOLDER, f"{pdf_dt}__{pdf_name}.pdf"),
+            os.path.join(DAILY_FOLDER, f"{pdf_name}.pdf"),
             'wb'
         ) as f:
             f.write(pdf_url_get.content)
