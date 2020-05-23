@@ -1,9 +1,9 @@
-name: CI Download BE PDF
+name: CI Download BE Data
 
 on:
   push:
     paths:
-    - 'scripts/download_be_pdf.py'
+    - 'scripts/download_be.py'
   schedule:
     - cron:  '25 7/4 * * *'
 
@@ -29,13 +29,13 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
-          python scripts/download_be_pdf.py
+          python scripts/download_be.py -f
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
           git status
           git add .
-          git commit -m "Added BE PDF" || echo "Nothing to update"
+          git commit -m "Added BE Data" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master

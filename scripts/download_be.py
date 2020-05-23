@@ -273,9 +273,9 @@ def download(full):
 
 if __name__ == "__main__":
 
-    # download_pdf()
+    download_pdf()
 
-    # download_data()
+    download_data()
 
     download()
 
