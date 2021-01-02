@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "osoby.csv",
+    "dc:title": "COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic",
+    "dc:description": "Datová sada obsahující základní denní incidenční přehled osob s prokázanou nákazou COVID-19 dle hlášení krajských hygienických stanic (datum hlášení, věk a pohlaví nakažené osoby, KHS, informace o místě a zemi nákazy). Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "prokázaná nákaza",
+        "krajské hygienické stanice"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-02",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum_hlaseni",
+                "titles": "datum_hlaseni",
+                "datatype": "date"
+            },
+            {
+                "name": "vek",
+                "titles": "vek",
+                "datatype": "integer"
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string"
+            },
+            {
+                "name": "kraj",
+                "titles": "kraj",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém byla pozitivní nákaza hlášena krajskou hygienickou stanicí. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
+            },
+            {
+                "name": "nakaza_v_zahranici",
+                "titles": "nakaza_v_zahranici",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda došlo k nákaze mimo ČR."
+            },
+            {
+                "name": "nakaza_zeme_csu_kod",
+                "titles": "nakaza_zeme_csu_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor státu v zahraničí, kde došlo k nákaze (dvoumístný kód z číselníku zemí CZEM)."
+            }
+        ]
+    }
+}

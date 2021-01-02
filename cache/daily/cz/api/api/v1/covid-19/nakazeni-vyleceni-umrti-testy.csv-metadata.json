@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "nakazeni-vyleceni-umrti-testy.csv",
+    "dc:title": "COVID-19: Celkový (kumulativní) počet osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří, počet vyléčených, počet úmrtí a provedených testů",
+    "dc:description": "Datová sada obsahující kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří, denní počty vyléčených po onemocnění COVID‑19 dle hlášení krajských hygienických stanic, denní počty úmrtí v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic a hospitalizačních úmrtí, a denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. S ohledem na fakt, že vykazování vyléčených osob a úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "covid-19",
+        "koronavirus",
+        "krajské hygienické stanice",
+        "laboratoře",
+        "prokázaná nákaza",
+        "vyléčení",
+        "úmrtí",
+        "provedené testy"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-02",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "kumulovany_pocet_nakazenych",
+                "titles": "kumulovany_pocet_nakazenych",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet osob s prokázanou nákazou."
+            },
+            {
+                "name": "kumulovany_pocet_vylecenych",
+                "titles": "kumulovany_pocet_vylecenych",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet vyléčených osob."
+            },
+            {
+                "name": "kumulovany_pocet_umrti",
+                "titles": "kumulovany_pocet_umrti",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet úmrtí."
+            },
+            {
+                "name": "kumulovany_pocet_provedenych_testu",
+                "titles": "kumulovany_pocet_provedenych_testu",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených testů."
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "testy.csv",
+    "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených testů s rozlišením na prvotesty (počet testů v daném dni po korekci na opakované a kontrolní testy) a opakované testy u stejné osoby na onemocnění COVID-19 dle hlášení laboratoří. Prvotesty jsou k dispozici od 1. srpna 2020 z důvodu úplnosti nahlášených dat jednotlivými laboratořemi na individuální úrovni. V předchozím období existuje riziko neúplnosti těchto individuálních dat a proto do 31. července vycházíme pouze z dat agregovaných, která však neumožňují složitější analytické výpočty. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "testy",
+        "laboratoře",
+        "prvotesty",
+        "opakované testy"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-02",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "testy_den",
+                "titles": "testy_den",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených testů."
+            },
+            {
+                "name": "testy_celkem",
+                "titles": "testy_celkem",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených testů."
+            },
+            {
+                "name": "prirustkovy_pocet_prvnich_testu",
+                "titles": "prirustkovy_pocet_prvnich_testu",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených prvotestů."
+            },
+            {
+                "name": "kumulativni_pocet_prvnich_testu",
+                "titles": "kumulativni_pocet_prvnich_testu",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených prvotestů."
+            }
+        ]
+    }
+}

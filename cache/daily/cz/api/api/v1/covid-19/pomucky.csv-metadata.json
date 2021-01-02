@@ -1,0 +1,62 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "pomucky.csv",
+    "dc:title": "COVID-19: Přehled distribuce ochranného materiálu dle krajů ČR",
+    "dc:description": "Datová sada obsahující aktuální přehled o počtech kusů ochranného materiálu k danému dni, který byl distribuován do jednotlivých krajů v ČR (brýle, dezinfekce, roušky, respirátory, ...). Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koranovirus",
+        "covid-19",
+        "ochranný materiál",
+        "brýle",
+        "dezinfekce",
+        "roušky",
+        "respirátory",
+        "odběrové sady",
+        "rukavice",
+        "rychlotesty",
+        "štíty",
+        "tampóny",
+        "ochranné oděvy"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2020-10-01",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "pomucka",
+                "titles": "pomucka",
+                "datatype": "string",
+                "dc:description": "Typ ochranného materiálu."
+            },
+            {
+                "name": "kraj",
+                "titles": "kraj",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, kam byl ochranný materiál distribuován."
+            },
+            {
+                "name": "mnozstvi",
+                "titles": "mnozstvi",
+                "datatype": "integer",
+                "dc:description": "Množství distribuovaného ochranného materiálu."
+            }
+        ]
+    }
+}
