@@ -4,10 +4,9 @@ import os
 import re
 
 import dateutil
-import lxml
+from lxml import html
 import pandas as pd
 import requests
-from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
                    DailyTransformation, retrieve_files)
@@ -32,7 +31,7 @@ class SARSCOV2HU(COVIDScrapper):
         """Load data table from web page
         """
 
-        doc = lxml.html.document_fromstring(self.req.text)
+        doc = html.document_fromstring(self.req.text)
         numbers_div = doc.xpath('.//div[@id="numbers-API"]/div')
         data = {i.xpath("./@id")[0]: i.xpath("./text()")[0].strip().replace(" ", "") for i in numbers_div}
         # <div id="numbers-API" class="alittleHelpForYourAPI hidden">
@@ -86,7 +85,7 @@ class SARSCOV2HU(COVIDScrapper):
         """
 
         # Legutolsó frissítés dátuma: 2020.03.24. 11:15
-        doc = lxml.html.document_fromstring(self.req.text)
+        doc = html.document_fromstring(self.req.text)
         el = doc.xpath('.//div[contains(@class, "view-diagrams")]')
         if el:
             text = "".join(
