@@ -1,0 +1,368 @@
+country,nuts_2,lau,cases,population,deaths,hospitalized,datetime
+NL,Groningen,Loppersum,13,,0,0,2020-10-01T10:00:00
+NL,Friesland,Vlieland,3,,0,0,2020-10-01T10:00:00
+NL,Friesland,Terschelling,7,,0,0,2020-10-01T10:00:00
+NL,Friesland,Schiermonnikoog,0,,0,0,2020-10-01T10:00:00
+NL,Drenthe,,9,,0,0,2020-10-01T10:00:00
+NL,Friesland,Achtkarspelen,39,,0,0,2020-10-01T10:00:00
+NL,Friesland,Ameland,2,,0,0,2020-10-01T10:00:00
+NL,Zeeland,Noord-Beveland,22,,0,1,2020-10-01T10:00:00
+NL,Noord-Holland,Opmeer,33,,1,1,2020-10-01T10:00:00
+NL,Drenthe,Aa en Hunze,47,,0,1,2020-10-01T10:00:00
+NL,Groningen,,11,,0,1,2020-10-01T10:00:00
+NL,Gelderland,Rozendaal,5,,0,1,2020-10-01T10:00:00
+NL,Overijssel,,19,,1,1,2020-10-01T10:00:00
+NL,Flevoland,,7,,0,1,2020-10-01T10:00:00
+NL,Friesland,,5,,0,1,2020-10-01T10:00:00
+NL,Utrecht,Eemnes,45,,1,2,2020-10-01T10:00:00
+NL,Groningen,Veendam,51,,1,2,2020-10-01T10:00:00
+NL,Friesland,Dantumadiel,50,,0,2,2020-10-01T10:00:00
+NL,Groningen,Stadskanaal,54,,2,2,2020-10-01T10:00:00
+NL,Zeeland,,5,,1,2,2020-10-01T10:00:00
+NL,Zuid-Holland,Hardinxveld-Giessendam,80,,2,2,2020-10-01T10:00:00
+NL,Groningen,Appingedam,18,,0,3,2020-10-01T10:00:00
+NL,Friesland,Ooststellingwerf,20,,0,3,2020-10-01T10:00:00
+NL,Friesland,Weststellingwerf,62,,4,3,2020-10-01T10:00:00
+NL,Noord-Holland,Landsmeer,94,,3,3,2020-10-01T10:00:00
+NL,Zuid-Holland,Zoeterwoude,40,,1,3,2020-10-01T10:00:00
+NL,Zeeland,Kapelle,36,,1,3,2020-10-01T10:00:00
+NL,Noord-Holland,Beemster,46,,1,4,2020-10-01T10:00:00
+NL,Friesland,Harlingen,29,,1,4,2020-10-01T10:00:00
+NL,Groningen,Pekela,11,,0,4,2020-10-01T10:00:00
+NL,Drenthe,Borger-Odoorn,37,,3,4,2020-10-01T10:00:00
+NL,Drenthe,Noordenveld,86,,8,4,2020-10-01T10:00:00
+NL,Gelderland,Scherpenzeel,49,,2,4,2020-10-01T10:00:00
+NL,Groningen,Westerwolde,36,,0,5,2020-10-01T10:00:00
+NL,Utrecht,Renswoude,27,,5,5,2020-10-01T10:00:00
+NL,Zuid-Holland,Midden-Delfland,108,,0,5,2020-10-01T10:00:00
+NL,Noord-Holland,Texel,35,,2,5,2020-10-01T10:00:00
+NL,Noord-Holland,Uitgeest,55,,1,5,2020-10-01T10:00:00
+NL,Noord-Holland,Drechterland,81,,8,5,2020-10-01T10:00:00
+NL,Zeeland,Borsele,56,,1,5,2020-10-01T10:00:00
+NL,Zeeland,Reimerswaal,61,,2,5,2020-10-01T10:00:00
+NL,Friesland,Tytsjerksteradiel,63,,1,5,2020-10-01T10:00:00
+NL,Noord-Holland,Ouder-Amstel,164,,0,6,2020-10-01T10:00:00
+NL,Zuid-Holland,Westvoorne,77,,0,6,2020-10-01T10:00:00
+NL,Drenthe,Midden-Drenthe,49,,0,6,2020-10-01T10:00:00
+NL,Noord-Brabant,Woensdrecht,117,,7,6,2020-10-01T10:00:00
+NL,Zeeland,Veere,60,,2,6,2020-10-01T10:00:00
+NL,Limburg,,30,,3,6,2020-10-01T10:00:00
+NL,Groningen,Delfzijl,69,,0,6,2020-10-01T10:00:00
+NL,Noord-Holland,Koggenland,110,,6,7,2020-10-01T10:00:00
+NL,Noord-Brabant,Waalre,82,,5,7,2020-10-01T10:00:00
+NL,Friesland,Opsterland,50,,0,7,2020-10-01T10:00:00
+NL,Limburg,Bergen (L.),47,,2,7,2020-10-01T10:00:00
+NL,Noord-Holland,Bloemendaal,167,,5,7,2020-10-01T10:00:00
+NL,Friesland,Noardeast-Fryslân,117,,4,7,2020-10-01T10:00:00
+NL,Groningen,Het Hogeland,111,,3,7,2020-10-01T10:00:00
+NL,Limburg,Mook en Middelaar,72,,5,7,2020-10-01T10:00:00
+NL,Overijssel,Wierden,97,,6,7,2020-10-01T10:00:00
+NL,Groningen,Midden-Groningen,99,,4,7,2020-10-01T10:00:00
+NL,Groningen,Oldambt,60,,3,7,2020-10-01T10:00:00
+NL,Gelderland,Winterswijk,84,,3,7,2020-10-01T10:00:00
+NL,Zuid-Holland,Kaag en Braassem,102,,3,8,2020-10-01T10:00:00
+NL,Overijssel,Hellendoorn,107,,12,8,2020-10-01T10:00:00
+NL,Utrecht,,79,,0,8,2020-10-01T10:00:00
+NL,Zuid-Holland,Hillegom,150,,2,8,2020-10-01T10:00:00
+NL,Zuid-Holland,Oegstgeest,135,,3,8,2020-10-01T10:00:00
+NL,Noord-Holland,Blaricum,74,,2,8,2020-10-01T10:00:00
+NL,Zuid-Holland,Bodegraven-Reeuwijk,239,,7,8,2020-10-01T10:00:00
+NL,Noord-Holland,Laren,76,,2,8,2020-10-01T10:00:00
+NL,Zuid-Holland,Lisse,83,,2,8,2020-10-01T10:00:00
+NL,Overijssel,Staphorst,80,,4,8,2020-10-01T10:00:00
+NL,Noord-Holland,Wijdemeren,124,,0,8,2020-10-01T10:00:00
+NL,Zeeland,Hulst,73,,5,9,2020-10-01T10:00:00
+NL,Friesland,Smallingerland,93,,5,9,2020-10-01T10:00:00
+NL,Noord-Brabant,Mill en Sint Hubert,65,,5,9,2020-10-01T10:00:00
+NL,Overijssel,Ommen,101,,4,9,2020-10-01T10:00:00
+NL,Noord-Brabant,Baarle-Nassau,40,,2,9,2020-10-01T10:00:00
+NL,Zuid-Holland,Voorschoten,156,,11,9,2020-10-01T10:00:00
+NL,Gelderland,,166,,2,9,2020-10-01T10:00:00
+NL,Noord-Holland,Weesp,230,,13,9,2020-10-01T10:00:00
+NL,Zuid-Holland,Nieuwkoop,110,,6,9,2020-10-01T10:00:00
+NL,Utrecht,Leusden,164,,8,9,2020-10-01T10:00:00
+NL,Zeeland,Vlissingen,135,,5,9,2020-10-01T10:00:00
+NL,Drenthe,Tynaarlo,79,,0,9,2020-10-01T10:00:00
+NL,Zuid-Holland,Papendrecht,167,,8,9,2020-10-01T10:00:00
+NL,Gelderland,Doesburg,54,,6,9,2020-10-01T10:00:00
+NL,Zeeland,Sluis,32,,4,9,2020-10-01T10:00:00
+NL,Drenthe,Westerveld,48,,4,9,2020-10-01T10:00:00
+NL,Zuid-Holland,Sliedrecht,135,,5,9,2020-10-01T10:00:00
+NL,Gelderland,Aalten,107,,7,9,2020-10-01T10:00:00
+NL,Noord-Brabant,Hilvarenbeek,110,,7,10,2020-10-01T10:00:00
+NL,Noord-Brabant,Rucphen,125,,10,10,2020-10-01T10:00:00
+NL,Noord-Holland,Aalsmeer,176,,5,10,2020-10-01T10:00:00
+NL,Utrecht,Wijk bij Duurstede,88,,1,10,2020-10-01T10:00:00
+NL,Utrecht,Woudenberg,57,,2,10,2020-10-01T10:00:00
+NL,Gelderland,Putten,90,,0,10,2020-10-01T10:00:00
+NL,Overijssel,Losser,78,,0,10,2020-10-01T10:00:00
+NL,Zuid-Holland,Wassenaar,171,,12,10,2020-10-01T10:00:00
+NL,Limburg,Vaals,36,,2,10,2020-10-01T10:00:00
+NL,Utrecht,Bunnik,95,,1,10,2020-10-01T10:00:00
+NL,Utrecht,Rhenen,75,,6,11,2020-10-01T10:00:00
+NL,Zuid-Holland,Alblasserdam,145,,5,11,2020-10-01T10:00:00
+NL,Noord-Holland,Heiloo,82,,8,11,2020-10-01T10:00:00
+NL,Drenthe,Meppel,100,,5,11,2020-10-01T10:00:00
+NL,Noord-Brabant,Reusel-De Mierden,122,,2,11,2020-10-01T10:00:00
+NL,Noord-Holland,Zandvoort,115,,9,11,2020-10-01T10:00:00
+NL,Drenthe,De Wolden,67,,5,11,2020-10-01T10:00:00
+NL,Utrecht,Baarn,123,,9,12,2020-10-01T10:00:00
+NL,Noord-Brabant,Geertruidenberg,88,,6,12,2020-10-01T10:00:00
+NL,Noord-Holland,Oostzaan,66,,2,12,2020-10-01T10:00:00
+NL,Zuid-Holland,Hendrik-Ido-Ambacht,249,,6,12,2020-10-01T10:00:00
+NL,Zeeland,Goes,221,,13,12,2020-10-01T10:00:00
+NL,Drenthe,Assen,140,,2,12,2020-10-01T10:00:00
+NL,Overijssel,Twenterand,73,,2,12,2020-10-01T10:00:00
+NL,Overijssel,Olst-Wijhe,72,,8,12,2020-10-01T10:00:00
+NL,Gelderland,Westervoort,62,,6,12,2020-10-01T10:00:00
+NL,Noord-Brabant,Cuijk,130,,10,12,2020-10-01T10:00:00
+NL,Zuid-Holland,Krimpen aan den IJssel,212,,8,12,2020-10-01T10:00:00
+NL,Utrecht,Bunschoten,132,,7,12,2020-10-01T10:00:00
+NL,Zeeland,Schouwen-Duiveland,150,,9,12,2020-10-01T10:00:00
+NL,Flevoland,Zeewolde,106,,6,12,2020-10-01T10:00:00
+NL,Zuid-Holland,Brielle,85,,0,12,2020-10-01T10:00:00
+NL,Overijssel,Tubbergen,126,,5,12,2020-10-01T10:00:00
+NL,Noord-Brabant,Steenbergen,139,,13,13,2020-10-01T10:00:00
+NL,Friesland,Waadhoeke,144,,15,13,2020-10-01T10:00:00
+NL,Noord-Holland,Heemstede,225,,33,13,2020-10-01T10:00:00
+NL,Noord-Brabant,Oirschot,129,,9,13,2020-10-01T10:00:00
+NL,Noord-Holland,Den Helder,96,,2,13,2020-10-01T10:00:00
+NL,Friesland,Heerenveen,152,,21,13,2020-10-01T10:00:00
+NL,Drenthe,Coevorden,90,,2,13,2020-10-01T10:00:00
+NL,Overijssel,Borne,74,,6,14,2020-10-01T10:00:00
+NL,Gelderland,Berkelland,167,,7,14,2020-10-01T10:00:00
+NL,Gelderland,Duiven,106,,6,14,2020-10-01T10:00:00
+NL,Groningen,Westerkwartier,118,,4,14,2020-10-01T10:00:00
+NL,Overijssel,Steenwijkerland,150,,8,14,2020-10-01T10:00:00
+NL,Zuid-Holland,,324,,6,14,2020-10-01T10:00:00
+NL,Gelderland,Renkum,163,,7,14,2020-10-01T10:00:00
+NL,Zuid-Holland,Leiderdorp,106,,7,15,2020-10-01T10:00:00
+NL,Overijssel,Haaksbergen,197,,7,15,2020-10-01T10:00:00
+NL,Zuid-Holland,Albrandswaard,249,,8,15,2020-10-01T10:00:00
+NL,Overijssel,Hof van Twente,105,,5,15,2020-10-01T10:00:00
+NL,Noord-Holland,Beverwijk,236,,12,15,2020-10-01T10:00:00
+NL,Zuid-Holland,Teylingen,224,,2,15,2020-10-01T10:00:00
+NL,Overijssel,Oldenzaal,136,,7,15,2020-10-01T10:00:00
+NL,Utrecht,Montfoort,107,,6,15,2020-10-01T10:00:00
+NL,Noord-Holland,Castricum,138,,9,15,2020-10-01T10:00:00
+NL,Gelderland,Maasdriel,105,,7,15,2020-10-01T10:00:00
+NL,Noord-Holland,,152,,2,15,2020-10-01T10:00:00
+NL,Noord-Brabant,Heeze-Leende,93,,8,16,2020-10-01T10:00:00
+NL,Noord-Brabant,,241,,3,16,2020-10-01T10:00:00
+NL,Noord-Brabant,Halderberge,164,,8,16,2020-10-01T10:00:00
+NL,Noord-Holland,Waterland,105,,4,16,2020-10-01T10:00:00
+NL,Gelderland,Lochem,151,,15,16,2020-10-01T10:00:00
+NL,Noord-Brabant,Moerdijk,168,,8,16,2020-10-01T10:00:00
+NL,Overijssel,Dalfsen,134,,7,16,2020-10-01T10:00:00
+NL,Zuid-Holland,Hellevoetsluis,247,,5,16,2020-10-01T10:00:00
+NL,Gelderland,Buren,90,,8,17,2020-10-01T10:00:00
+NL,Gelderland,Voorst,126,,11,17,2020-10-01T10:00:00
+NL,Friesland,De Fryske Marren,151,,6,17,2020-10-01T10:00:00
+NL,Limburg,Voerendaal,60,,8,17,2020-10-01T10:00:00
+NL,Gelderland,Bronckhorst,125,,7,17,2020-10-01T10:00:00
+NL,Limburg,Gennep,108,,10,17,2020-10-01T10:00:00
+NL,Flevoland,Noordoostpolder,125,,10,17,2020-10-01T10:00:00
+NL,Noord-Holland,Langedijk,133,,4,17,2020-10-01T10:00:00
+NL,Limburg,Beek,57,,6,17,2020-10-01T10:00:00
+NL,Noord-Brabant,"Nuenen, Gerwen en Nederwetten",131,,9,18,2020-10-01T10:00:00
+NL,Noord-Brabant,Alphen-Chaam,79,,5,18,2020-10-01T10:00:00
+NL,Noord-Brabant,Asten,99,,12,18,2020-10-01T10:00:00
+NL,Gelderland,Oost Gelre,149,,6,18,2020-10-01T10:00:00
+NL,Gelderland,Barneveld,238,,8,18,2020-10-01T10:00:00
+NL,Gelderland,Brummen,83,,6,18,2020-10-01T10:00:00
+NL,Noord-Holland,Stede Broec,79,,5,18,2020-10-01T10:00:00
+NL,Gelderland,Heumen,138,,9,18,2020-10-01T10:00:00
+NL,Gelderland,Hattem,67,,5,18,2020-10-01T10:00:00
+NL,Noord-Holland,Uithoorn,201,,2,18,2020-10-01T10:00:00
+NL,Noord-Holland,Enkhuizen,48,,4,18,2020-10-01T10:00:00
+NL,Limburg,Simpelveld,55,,5,19,2020-10-01T10:00:00
+NL,Limburg,Valkenburg aan de Geul,102,,7,19,2020-10-01T10:00:00
+NL,Noord-Holland,Medemblik,124,,6,19,2020-10-01T10:00:00
+NL,Noord-Brabant,Drimmelen,133,,8,19,2020-10-01T10:00:00
+NL,Friesland,Súdwest-Fryslân,214,,6,19,2020-10-01T10:00:00
+NL,Noord-Brabant,Valkenswaard,255,,37,19,2020-10-01T10:00:00
+NL,Groningen,Groningen,1231,,3,19,2020-10-01T10:00:00
+NL,Noord-Holland,Schagen,157,,10,19,2020-10-01T10:00:00
+NL,Noord-Brabant,Bergeijk,178,,5,19,2020-10-01T10:00:00
+NL,Zeeland,Middelburg,176,,10,19,2020-10-01T10:00:00
+NL,Noord-Brabant,Haaren,83,,8,19,2020-10-01T10:00:00
+NL,Gelderland,Beuningen,177,,5,19,2020-10-01T10:00:00
+NL,Zuid-Holland,Gorinchem,320,,16,19,2020-10-01T10:00:00
+NL,Zuid-Holland,Waddinxveen,235,,7,19,2020-10-01T10:00:00
+NL,Utrecht,Lopik,128,,8,20,2020-10-01T10:00:00
+NL,Drenthe,Hoogeveen,140,,8,20,2020-10-01T10:00:00
+NL,Noord-Brabant,Gilze en Rijen,154,,15,20,2020-10-01T10:00:00
+NL,Noord-Holland,Diemen,415,,14,20,2020-10-01T10:00:00
+NL,Noord-Holland,Wormerland,78,,6,20,2020-10-01T10:00:00
+NL,Zuid-Holland,Molenlanden,217,,9,20,2020-10-01T10:00:00
+NL,Noord-Brabant,Dongen,137,,13,20,2020-10-01T10:00:00
+NL,Overijssel,Dinkelland,115,,10,20,2020-10-01T10:00:00
+NL,Limburg,Beesel,58,,8,20,2020-10-01T10:00:00
+NL,Noord-Brabant,Boxmeer,184,,27,20,2020-10-01T10:00:00
+NL,Zuid-Holland,Noordwijk,217,,3,20,2020-10-01T10:00:00
+NL,Noord-Brabant,Sint Anthonis,87,,11,20,2020-10-01T10:00:00
+NL,Gelderland,Oude IJsselstreek,155,,9,21,2020-10-01T10:00:00
+NL,Noord-Holland,Bergen (NH.),200,,4,21,2020-10-01T10:00:00
+NL,Gelderland,Zaltbommel,163,,9,21,2020-10-01T10:00:00
+NL,Noord-Brabant,Bladel,207,,9,21,2020-10-01T10:00:00
+NL,Noord-Brabant,Grave,100,,11,21,2020-10-01T10:00:00
+NL,Gelderland,Wageningen,227,,9,21,2020-10-01T10:00:00
+NL,Gelderland,West Maas en Waal,117,,9,21,2020-10-01T10:00:00
+NL,Limburg,Meerssen,143,,13,22,2020-10-01T10:00:00
+NL,Limburg,Gulpen-Wittem,102,,15,22,2020-10-01T10:00:00
+NL,Gelderland,Nijkerk,231,,3,22,2020-10-01T10:00:00
+NL,Gelderland,Montferland,146,,9,22,2020-10-01T10:00:00
+NL,Noord-Holland,Huizen,323,,10,23,2020-10-01T10:00:00
+NL,Drenthe,Emmen,367,,12,23,2020-10-01T10:00:00
+NL,Overijssel,Hardenberg,209,,10,23,2020-10-01T10:00:00
+NL,Flevoland,Urk,91,,4,23,2020-10-01T10:00:00
+NL,Zuid-Holland,Maassluis,290,,9,23,2020-10-01T10:00:00
+NL,Utrecht,Soest,272,,13,24,2020-10-01T10:00:00
+NL,Overijssel,Raalte,216,,21,24,2020-10-01T10:00:00
+NL,Noord-Brabant,Boxtel,181,,26,24,2020-10-01T10:00:00
+NL,Noord-Brabant,Oisterwijk,135,,11,24,2020-10-01T10:00:00
+NL,Noord-Brabant,Zundert,148,,11,24,2020-10-01T10:00:00
+NL,Gelderland,Culemborg,200,,8,24,2020-10-01T10:00:00
+NL,Zeeland,Terneuzen,179,,4,25,2020-10-01T10:00:00
+NL,Noord-Holland,Gooise Meren,362,,15,25,2020-10-01T10:00:00
+NL,Gelderland,Druten,143,,8,25,2020-10-01T10:00:00
+NL,Zuid-Holland,Zuidplas,461,,21,26,2020-10-01T10:00:00
+NL,Noord-Holland,Edam-Volendam,294,,3,26,2020-10-01T10:00:00
+NL,Utrecht,Oudewater,94,,9,26,2020-10-01T10:00:00
+NL,Overijssel,Almelo,227,,10,26,2020-10-01T10:00:00
+NL,Noord-Holland,Hollands Kroon,113,,6,26,2020-10-01T10:00:00
+NL,Overijssel,Hengelo,320,,19,26,2020-10-01T10:00:00
+NL,Utrecht,Houten,291,,15,27,2020-10-01T10:00:00
+NL,Noord-Brabant,Loon op Zand,127,,7,27,2020-10-01T10:00:00
+NL,Gelderland,Doetinchem,236,,15,27,2020-10-01T10:00:00
+NL,Limburg,Roerdalen,68,,8,27,2020-10-01T10:00:00
+NL,Noord-Brabant,Eersel,173,,10,27,2020-10-01T10:00:00
+NL,Zuid-Holland,Zwijndrecht,386,,27,27,2020-10-01T10:00:00
+NL,Noord-Holland,Heerhugowaard,307,,9,27,2020-10-01T10:00:00
+NL,Limburg,Maasgouw,137,,15,28,2020-10-01T10:00:00
+NL,Gelderland,Elburg,178,,8,28,2020-10-01T10:00:00
+NL,Utrecht,Utrechtse Heuvelrug,266,,14,29,2020-10-01T10:00:00
+NL,Utrecht,De Bilt,310,,24,29,2020-10-01T10:00:00
+NL,Overijssel,Rijssen-Holten,250,,24,29,2020-10-01T10:00:00
+NL,Zuid-Holland,Pijnacker-Nootdorp,456,,17,30,2020-10-01T10:00:00
+NL,Noord-Brabant,Bergen op Zoom,610,,13,30,2020-10-01T10:00:00
+NL,Gelderland,Zutphen,171,,13,31,2020-10-01T10:00:00
+NL,Limburg,Nederweert,74,,7,31,2020-10-01T10:00:00
+NL,Flevoland,Dronten,161,,12,31,2020-10-01T10:00:00
+NL,Noord-Holland,Heemskerk,177,,10,31,2020-10-01T10:00:00
+NL,Gelderland,Berg en Dal,284,,19,31,2020-10-01T10:00:00
+NL,Noord-Brabant,Veldhoven,262,,16,31,2020-10-01T10:00:00
+NL,Noord-Brabant,Son en Breugel,105,,14,31,2020-10-01T10:00:00
+NL,Noord-Brabant,Best,154,,10,31,2020-10-01T10:00:00
+NL,Zuid-Holland,Leidschendam-Voorburg,602,,22,31,2020-10-01T10:00:00
+NL,Noord-Brabant,Goirle,185,,18,32,2020-10-01T10:00:00
+NL,Noord-Brabant,Geldrop-Mierlo,187,,16,33,2020-10-01T10:00:00
+NL,Zuid-Holland,Katwijk,427,,15,33,2020-10-01T10:00:00
+NL,Noord-Brabant,Altena,235,,11,33,2020-10-01T10:00:00
+NL,Noord-Brabant,Someren,123,,8,33,2020-10-01T10:00:00
+NL,Gelderland,Ermelo,210,,23,33,2020-10-01T10:00:00
+NL,Noord-Brabant,Roosendaal,506,,23,34,2020-10-01T10:00:00
+NL,Gelderland,Rheden,215,,14,34,2020-10-01T10:00:00
+NL,Noord-Holland,Velsen,521,,42,34,2020-10-01T10:00:00
+NL,Noord-Brabant,Boekel,100,,20,34,2020-10-01T10:00:00
+NL,Gelderland,Lingewaard,261,,10,34,2020-10-01T10:00:00
+NL,Overijssel,Zwartewaterland,183,,21,35,2020-10-01T10:00:00
+NL,Noord-Holland,Hoorn,304,,12,36,2020-10-01T10:00:00
+NL,Noord-Brabant,Sint-Michielsgestel,228,,19,36,2020-10-01T10:00:00
+NL,Utrecht,IJsselstein,256,,35,36,2020-10-01T10:00:00
+NL,Limburg,Venray,234,,17,37,2020-10-01T10:00:00
+NL,Friesland,Leeuwarden,488,,6,37,2020-10-01T10:00:00
+NL,Noord-Holland,Hilversum,601,,25,37,2020-10-01T10:00:00
+NL,Gelderland,Neder-Betuwe,163,,21,37,2020-10-01T10:00:00
+NL,Utrecht,Vijfheerenlanden,543,,36,38,2020-10-01T10:00:00
+NL,Utrecht,Zeist,480,,25,38,2020-10-01T10:00:00
+NL,Noord-Brabant,Waalwijk,322,,37,39,2020-10-01T10:00:00
+NL,Utrecht,Stichtse Vecht,421,,14,39,2020-10-01T10:00:00
+NL,Zuid-Holland,Ridderkerk,364,,18,40,2020-10-01T10:00:00
+NL,Gelderland,Oldebroek,198,,19,40,2020-10-01T10:00:00
+NL,Zuid-Holland,Barendrecht,488,,12,40,2020-10-01T10:00:00
+NL,Zeeland,Tholen,205,,16,40,2020-10-01T10:00:00
+NL,Utrecht,De Ronde Venen,300,,13,40,2020-10-01T10:00:00
+NL,Limburg,Echt-Susteren,117,,18,40,2020-10-01T10:00:00
+NL,Zuid-Holland,Delft,1013,,12,41,2020-10-01T10:00:00
+NL,Limburg,Horst aan de Maas,205,,25,41,2020-10-01T10:00:00
+NL,Noord-Brabant,Laarbeek,169,,26,41,2020-10-01T10:00:00
+NL,Noord-Brabant,Landerd,179,,21,41,2020-10-01T10:00:00
+NL,Noord-Brabant,Vught,171,,17,43,2020-10-01T10:00:00
+NL,Zuid-Holland,Rijswijk,517,,26,43,2020-10-01T10:00:00
+NL,Gelderland,Tiel,249,,21,43,2020-10-01T10:00:00
+NL,Noord-Brabant,Etten-Leur,325,,30,43,2020-10-01T10:00:00
+NL,Gelderland,Wijchen,285,,13,44,2020-10-01T10:00:00
+NL,Gelderland,Harderwijk,328,,20,44,2020-10-01T10:00:00
+NL,Zuid-Holland,Lansingerland,545,,25,44,2020-10-01T10:00:00
+NL,Limburg,Stein,143,,15,44,2020-10-01T10:00:00
+NL,Gelderland,West Betuwe,295,,27,44,2020-10-01T10:00:00
+NL,Noord-Brabant,Heusden,268,,25,45,2020-10-01T10:00:00
+NL,Zuid-Holland,Leiden,1001,,20,46,2020-10-01T10:00:00
+NL,Utrecht,Nieuwegein,392,,14,46,2020-10-01T10:00:00
+NL,Limburg,Brunssum,166,,19,46,2020-10-01T10:00:00
+NL,Zuid-Holland,Krimpenerwaard,461,,35,47,2020-10-01T10:00:00
+NL,Zuid-Holland,Vlaardingen,777,,30,47,2020-10-01T10:00:00
+NL,Overijssel,Deventer,558,,36,48,2020-10-01T10:00:00
+NL,Zuid-Holland,Gouda,767,,43,48,2020-10-01T10:00:00
+NL,Gelderland,Zevenaar,218,,16,48,2020-10-01T10:00:00
+NL,Gelderland,Epe,184,,23,49,2020-10-01T10:00:00
+NL,Utrecht,Veenendaal,350,,11,50,2020-10-01T10:00:00
+NL,Noord-Brabant,Oosterhout,317,,17,50,2020-10-01T10:00:00
+NL,Limburg,Beekdaelen,217,,23,52,2020-10-01T10:00:00
+NL,Limburg,Landgraaf,183,,14,52,2020-10-01T10:00:00
+NL,Utrecht,Woerden,332,,20,53,2020-10-01T10:00:00
+NL,Overijssel,Zwolle,617,,49,53,2020-10-01T10:00:00
+NL,Limburg,Leudal,225,,33,54,2020-10-01T10:00:00
+NL,Limburg,Eijsden-Margraten,203,,27,54,2020-10-01T10:00:00
+NL,Gelderland,Heerde,242,,28,55,2020-10-01T10:00:00
+NL,Gelderland,Nunspeet,267,,21,55,2020-10-01T10:00:00
+NL,Gelderland,Overbetuwe,265,,16,56,2020-10-01T10:00:00
+NL,Noord-Brabant,Deurne,281,,25,56,2020-10-01T10:00:00
+NL,Zuid-Holland,Goeree-Overflakkee,422,,35,56,2020-10-01T10:00:00
+NL,Noord-Holland,Alkmaar,501,,31,57,2020-10-01T10:00:00
+NL,Zuid-Holland,Capelle aan den IJssel,762,,60,58,2020-10-01T10:00:00
+NL,Gelderland,Ede,582,,23,58,2020-10-01T10:00:00
+NL,Overijssel,Kampen,430,,37,59,2020-10-01T10:00:00
+NL,Overijssel,Enschede,550,,26,59,2020-10-01T10:00:00
+NL,Zuid-Holland,Nissewaard,508,,21,59,2020-10-01T10:00:00
+NL,Zuid-Holland,Zoetermeer,956,,14,59,2020-10-01T10:00:00
+NL,Limburg,Roermond,265,,23,61,2020-10-01T10:00:00
+NL,Zuid-Holland,Westland,788,,30,61,2020-10-01T10:00:00
+NL,Zuid-Holland,Schiedam,951,,24,63,2020-10-01T10:00:00
+NL,Noord-Brabant,Cranendonck,222,,36,63,2020-10-01T10:00:00
+NL,Limburg,Kerkrade,288,,35,64,2020-10-01T10:00:00
+NL,Limburg,Weert,214,,15,67,2020-10-01T10:00:00
+NL,Zuid-Holland,Alphen aan den Rijn,684,,26,68,2020-10-01T10:00:00
+NL,Flevoland,Lelystad,405,,31,69,2020-10-01T10:00:00
+NL,Noord-Holland,Amstelveen,946,,40,69,2020-10-01T10:00:00
+NL,Noord-Holland,Purmerend,461,,35,73,2020-10-01T10:00:00
+NL,Gelderland,Arnhem,897,,34,73,2020-10-01T10:00:00
+NL,Noord-Holland,Haarlem,1073,,62,75,2020-10-01T10:00:00
+NL,Noord-Holland,Haarlemmermeer,1092,,30,76,2020-10-01T10:00:00
+NL,Utrecht,Amersfoort,818,,25,78,2020-10-01T10:00:00
+NL,Noord-Brabant,Gemert-Bakel,273,,32,79,2020-10-01T10:00:00
+NL,Zuid-Holland,Hoeksche Waard,678,,21,80,2020-10-01T10:00:00
+NL,Noord-Brabant,Bernheze,355,,65,95,2020-10-01T10:00:00
+NL,Zuid-Holland,Dordrecht,1060,,68,96,2020-10-01T10:00:00
+NL,Gelderland,Apeldoorn,774,,51,101,2020-10-01T10:00:00
+NL,Noord-Brabant,Uden,342,,63,115,2020-10-01T10:00:00
+NL,Noord-Brabant,Helmond,787,,44,118,2020-10-01T10:00:00
+NL,Limburg,Sittard-Geleen,533,,64,119,2020-10-01T10:00:00
+NL,Limburg,Heerlen,544,,54,126,2020-10-01T10:00:00
+NL,Noord-Holland,Zaanstad,1131,,52,133,2020-10-01T10:00:00
+NL,Limburg,Venlo,627,,66,134,2020-10-01T10:00:00
+NL,Noord-Brabant,'s-Hertogenbosch,1025,,79,134,2020-10-01T10:00:00
+NL,Flevoland,Almere,1407,,37,138,2020-10-01T10:00:00
+NL,Gelderland,Nijmegen,1830,,72,142,2020-10-01T10:00:00
+NL,Limburg,Peel en Maas,327,,65,144,2020-10-01T10:00:00
+NL,Noord-Brabant,Breda,1285,,67,151,2020-10-01T10:00:00
+NL,Noord-Brabant,Oss,885,,88,168,2020-10-01T10:00:00
+NL,Noord-Brabant,Eindhoven,1392,,89,185,2020-10-01T10:00:00
+NL,Limburg,Maastricht,1192,,140,192,2020-10-01T10:00:00
+NL,Noord-Brabant,Meierijstad,747,,131,211,2020-10-01T10:00:00
+NL,Noord-Brabant,Tilburg,1688,,168,257,2020-10-01T10:00:00
+NL,Utrecht,Utrecht,3733,,120,301,2020-10-01T10:00:00
+NL,Zuid-Holland,'s-Gravenhage,7434,,276,441,2020-10-01T10:00:00
+NL,Zuid-Holland,Rotterdam,10105,,365,649,2020-10-01T10:00:00
+NL,Noord-Holland,Amsterdam,13365,,301,766,2020-10-01T10:00:00

@@ -1,0 +1,5 @@
+﻿Colonne;Type;Description_FR;Description_EN;Exemple
+epci2020;integer;Code EPCI;EPCI code;200030195
+semaine_glissante;string;Semaine glissante;Rolling 7 day period;2020-09-13-2020-09-19
+clage_65;integer;0 si taux d'incidence toute classe d'âge, 65 si taux d'incidence pour les personnes âgées de plus de 65 ans;0 if incidence rate for any age group, 65 if incidence rate for people over 65 years of age;0
+ti;float;Nombre de nouveaux cas positifs pour 100 000 habitants sur 7 jours glissants;Number of new cases per 100,000 inhabitants over a rolling 7 day period;61.8

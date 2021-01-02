@@ -1,0 +1,280 @@
+name: "SARS-COV-2/COVID-19 Cases in Europe"
+description: SARS-COV-2/COVID-19 Cases in Europe by Country, State, and Date
+contributors:
+- name: 'covid19-eu-zh'
+  github: 'covid19-eu-zh'
+data:
+- name: SARS-COV-2/COVID-19 Cases in Switzerland in csv format
+  description: Records of SARS-COV-2 Cases in Switzerland
+  path: dataset/covid-19-ch.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country (CH)
+  - name: nuts_2
+    description: 'NUTS 2 (regions) in Switzerland'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record'
+- name: SARS-COV-2/COVID-19 Cases in Germany in csv format
+  description: Records of SARS-COV-2 Cases in Germany
+  path: dataset/covid-19-de.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_1
+    description: 'NUTS 1 (states) in Germany'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: cases/100k pop.
+    description: 'number of cases per 100k population; DE did not track this in the beginning thus missing values are found'
+    missing:
+      - value: ""
+        description: 'not tracked on those dates'
+  - name: deaths
+    description: 'number of deaths; DE did not track this in the beginning thus missing values'
+    missing:
+      - value: ""
+        description: 'not tracked on those dates'
+  - name: datetime
+    description: 'local datetime of the record'
+- name: SARS-COV-2/COVID-19 Cases in AT in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Austria
+  path: dataset/covid-19-at.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_2
+    description: 'NUTS 2 administrative divisions (states) in Austria'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: recovered
+    description: 'recovered patients. started tracking on 2020-03-13'
+  - name: deaths
+    description: 'number of deaths. started tracking on 2020-03-13'
+  - name: datetime
+    description: 'local datetime of the record'
+- name: SARS-COV-2/COVID-19 Cases in NL in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Netherland
+  path: dataset/covid-19-nl.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: lau
+    description: 'LAU (city) in Netherland'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: population
+    description: 'population of the city'
+  - name: cases/100k pop.
+    description: 'number of cases per 100k population by the specified datetime'
+  - name: datetime
+    description: 'local date of the record update on the volksgezondheidenzorg website, only the date matters'
+- name: SARS-COV-2/COVID-19 Cases in England in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in England
+  path: dataset/covid-19-england.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_3
+    description: 'local authorities in England, city, town, borough, etc.'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in Scotland in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Scotland
+  path: dataset/covid-19-scotland.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_3
+    description: 'local authorities in Scotland, city, town, borough, etc.'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in Wales in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Wales
+  path: dataset/covid-19-wales.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_3
+    description: 'local authorities in Wales'
+    missing:
+      - value: "To be confirmed"
+        description: "Not yet assigned these cases to local authorities"
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in SE in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in Sweden
+  path: dataset/covid-19-se.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_3
+    description: 'NUTS 3 (counties) in Sweden'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: cases/100k pop.
+    description: 'number of cases per 100k population by the specified datetime'
+  - name: percent
+    description: 'percent of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in FR in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in FR
+  path: dataset/covid-19-fr.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_2
+    description: 'local provinces or oversea authorities in France, Oversea and Metropolis are also added as conditional sum'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in PL in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in PL
+  path: dataset/covid-19-pl.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_2
+    description: 'NUTS 2 (provinces) in PL or sum as the total'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: deaths
+    description: 'number of deaths by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in CZ in csv format
+  description: Records of SARS-COV-2/COVID-19 Cases in CZ
+  path: dataset/covid-19-cz.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: nuts_3
+    description: 'NUTS 3 (regions, Kraje) in CZ'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases From ECDC
+  description: Records of SARS-COV-2/COVID-19 Cases in EU from ECDC
+  path: dataset/covid-19-ecdc.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: deaths
+    description: 'number of deaths by the specified datetime'
+  - name: datetime
+    description: 'CET datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in IT
+  description: Records of SARS-COV-2/COVID-19 Cases in Italy
+  path: dataset/covid-19-it.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country (IT)
+  - name: nuts_2
+    description: 'NUTS 2 (regions) in IT, corresponds to NUTS 2'
+    missing:
+      - value: "unassigned"
+        description: "unassigned indicates the cases are not allocated to the provinces"
+  - name: nuts_3
+    description: 'NUTS 3 (provinces) in IT, corresponds to NUTS 3'
+    missing:
+      - value: ""
+        description: "Missing value means the cases are for higher administrative division levels"
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'local datetime of the record update on the website'
+- name: SARS-COV-2/COVID-19 Cases in NO
+  description: Records of SARS-COV-2/COVID-19 Cases in Norway
+  path: dataset/covid-19-no.csv
+  format: csv
+  size:
+  updated_at: ''
+  fields:
+  - name: country
+    description: alpha 2 code of the country (NO)
+  - name: nuts_3
+    description: 'NUTS 3 (counties) in Norway, corresponds to NUTS 3'
+  - name: cases
+    description: 'number of cases by the specified datetime'
+  - name: datetime
+    description: 'datetime of the record update on the website'
+references:
+- name: 'DE: SARS-CoV-2: Fallzahlen in Deutschland, China und weltweit'
+  link: 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
+- name: 'AT: Neuartiges Coronavirus (COVID-19)'
+  link: 'https://www.sozialministerium.at/Themen/Gesundheit/Uebertragbare-Krankheiten/Infektionskrankheiten-A-Z/Neuartiges-Coronavirus.html'
+- name: 'NL: volksgezondheidenzorg.info'
+  link: 'https://www.volksgezondheidenzorg.info/onderwerp/infectieziekten/regionaal-internationaal/coronavirus-covid-19#node-coronavirus-covid-19-meldingen'
+- name: 'England: Public Health England'
+  link: 'https://www.gov.uk/government/publications/coronavirus-covid-19-number-of-cases-in-england/coronavirus-covid-19-number-of-cases-in-england'
+- name: 'Scotland: Coronavirus in Scotland - Scottish Government'
+  link: 'https://www.gov.scot/coronavirus-covid-19/'
+- name: 'Wales: Public Health Wales statement on Novel Coronavirus (COVID-19) outbreak - NHS Wales'
+  link: 'https://phw.nhs.wales/news/public-health-wales-statement-on-novel-coronavirus-outbreak/'
+- name: 'PL: Serwis Rzeczypospolitej Polskiej'
+  link: 'https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2'
+- name: 'CZ: Přehled situace v ČR: COVID-19'
+  link: 'https://onemocneni-aktualne.mzcr.cz/covid-19'
+- name: 'ECDC: Situation update for the EU/EEA and the UK, as of 19 March 2020'
+  link: 'https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea'
+- name: 'IT: pcm-dpc/COVID-19 on GitHub'
+  link: 'https://github.com/pcm-dpc/COVID-19'
+- name: 'NO: Daily reports about coronavirus disease (COVID-19)'
+  link: 'https://www.fhi.no/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/'
+- name: 'CH: daenuprobst/covid19-cases-switzerland on GitHub'
+  link: 'https://github.com/daenuprobst/covid19-cases-switzerland'
+- name: 'FR: Infection au nouveau Coronavirus (SARS-CoV-2), COVID-19, France et Monde'
+  link: 'https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde'
+- name: 'SE: Antal fall av covid-19 - folkhalsomyndigheten'
+  link: 'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'

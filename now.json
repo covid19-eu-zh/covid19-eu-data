@@ -1,0 +1,31 @@
+{
+    "name": "covid19-eu-data",
+    "version": 2,
+    "routes": [
+        { "src": "/(.*)",
+            "dest": "/dataset/(.*)",
+            "headers": {
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "OPTIONS",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+            },
+            "methods": ["OPTIONS"]
+        },
+        {
+            "src": "/cache/(?<ct>[^/]*)",
+            "headers": {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+                "Access-Control-Allow-Credentials": "true"
+            },
+            "dest": "/dataset/covid-19-$ct.csv"
+        },
+        {
+            "src": "/raw/(?<ct>[^/]*)",
+            "dest": "https://raw.githubusercontent.com/covid19-eu-zh/covid19-eu-data/master/dataset/covid-19-$ct.csv"
+        }
+      ],
+      "github": {
+        "silent": true
+      }
+}
