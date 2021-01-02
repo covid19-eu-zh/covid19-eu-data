@@ -116,12 +116,18 @@ def download_and_xlsx(xlsx_url):
     }
 
     cols_si = {
-        "Dátum": "datetime",
-        "Mintavételek száma (összesen)": "tests",
-        "pozitív esetek száma (összesen)": "tests_positive",
-        "hospitalizált": "hospitalized",
-        "intenzív ellátásra szoruló": "intensive_care",
-        "elhunytak száma összesen": "deaths"
+        # "Dátum": "datetime",
+        # "Mintavételek száma (összesen)": "tests",
+        # "pozitív esetek száma (összesen)": "tests_positive",
+        # "hospitalizált": "hospitalized",
+        # "intenzív ellátásra szoruló": "intensive_care",
+        # "elhunytak száma összesen": "deaths",
+        "Date": "datetime",
+        "Tested (all, PCR + HAGT)": "tests",
+        "Positive (all)": "tests_positive",
+        "All hospitalized on certain day": "hospitalized",
+        "All persons in intensive care on certain day": "intensive_care",
+        "Deaths (all)": "deaths"
     }
     try:
         df = df[list(cols_en.keys())]
