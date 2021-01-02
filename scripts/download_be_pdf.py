@@ -6,7 +6,7 @@ import datetime
 import dateutil
 import pandas as pd
 import requests
-import lxml
+from lxml import html
 
 from utils import get_response as _get_response
 
@@ -30,7 +30,7 @@ def download_pdf():
         raise Exception(f"Could not get web page content: {e}")
 
     # "Meest recent epidemiologische update"
-    report_doc = lxml.html.document_fromstring(req_page.content.decode("utf-8"))
+    report_doc = html.document_fromstring(req_page.content.decode("utf-8"))
     pdf_el = report_doc.xpath('.//a[@title="Meest recente update.pdf"]/@href')
     pdfs = pdf_el
 
@@ -64,7 +64,7 @@ def download_data():
     except Exception as e:
         raise Exception(f"Could not get web page content: {e}")
 
-    report_doc = lxml.html.document_fromstring(req_page.content.decode("utf-8"))
+    report_doc = html.document_fromstring(req_page.content.decode("utf-8"))
     xlsx_el = report_doc.xpath('.//a[contains(@href,".xlsx")]/@href')
     csv_el = report_doc.xpath('.//a[contains(@href,".csv")]/@href')
     links = csv_el + xlsx_el

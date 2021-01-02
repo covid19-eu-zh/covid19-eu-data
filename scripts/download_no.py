@@ -10,8 +10,6 @@ import datetime
 import dateutil
 import pandas as pd
 import requests
-import lxml
-from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
                    DailyTransformation, retrieve_files)

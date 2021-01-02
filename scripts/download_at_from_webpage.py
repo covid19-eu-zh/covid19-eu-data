@@ -5,7 +5,7 @@ import re
 from functools import reduce
 
 import dateutil
-import lxml
+from lxml import html
 import pandas as pd
 import requests
 from lxml import etree
@@ -46,7 +46,7 @@ class SARSCOV2AT(COVIDScrapper):
 
         geo_loc_key = 'nuts_2'
 
-        doc = lxml.html.document_fromstring(self.req.text)
+        doc = html.document_fromstring(self.req.text)
         el = doc.xpath('.//main[@id="content"]')
         if el:
             paragraphs = [
@@ -119,7 +119,7 @@ class SARSCOV2AT(COVIDScrapper):
         Aktuelle Situation Österreich 04.03.2020 / 17:45 Uhr
         Stand, 10.03.2020, 08:00 Uhr
         """
-        doc = lxml.html.document_fromstring(self.req.text)
+        doc = html.document_fromstring(self.req.text)
         el = doc.xpath('.//div[@class="infobox"]')
         if el:
             text = "".join(

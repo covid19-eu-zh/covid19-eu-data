@@ -40,7 +40,7 @@ class SARSCOV2CZ(COVIDScrapper):
         """Load data table from web page
         """
 
-        doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
+        doc = html.document_fromstring(self.req.content.decode("utf-8"))
         el = doc.xpath('.//div[@id="js-total-isin-regions-data"]')
         if el:
             text = "".join(
@@ -73,7 +73,7 @@ class SARSCOV2CZ(COVIDScrapper):
         """Get datetime of dataset
         """
 
-        doc = lxml.html.document_fromstring(self.req.content.decode("utf-8"))
+        doc = html.document_fromstring(self.req.content.decode("utf-8"))
         el = doc.xpath(
             './/div[@class="legend legend--inverse mt-15"]/text()'
         )
@@ -173,7 +173,7 @@ if __name__ == "__main__":
     DATA_API_BASE_URL = "https://onemocneni-aktualne.mzcr.cz"
     req = get_response(DATA_INDEX_URL)
     content = req.content.decode(req.apparent_encoding)
-    doc = lxml.html.document_fromstring(content)
+    doc = html.document_fromstring(content)
     links = doc.xpath('//a/@href')
     links = [i for i in links if (i.endswith(".csv") or i.endswith(".json"))]
 

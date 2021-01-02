@@ -67,7 +67,7 @@ class SARSCOV2NL(COVIDScrapper):
         """Load data table from web page
         """
 
-        doc = lxml.html.document_fromstring(self.req.text)
+        doc = html.document_fromstring(self.req.text)
         el = doc.xpath('.//div[@id="csvData"]')
         if el:
             text = "".join(
@@ -199,7 +199,7 @@ class SARSCOV2NL(COVIDScrapper):
         """Get datetime of dataset
         """
 
-        # doc = lxml.html.document_fromstring(self.req.text)
+        # doc = html.document_fromstring(self.req.text)
         # el = doc.xpath('.//div[@id="csvData"]')
         # if el:
         #     text = "".join(
