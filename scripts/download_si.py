@@ -1,11 +1,8 @@
 import logging
 import os
-import re
 
 import dateutil
 import pandas as pd
-import requests
-from lxml import etree, html
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
                    DailyTransformation, retrieve_files, get_response)
@@ -164,6 +161,5 @@ if __name__ == "__main__":
 
     download_and_xlsx(XLSX_DATA_URL)
 
-    # cache_table()
 
     print("End of Game")
