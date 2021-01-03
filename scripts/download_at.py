@@ -8,8 +8,6 @@ import json
 import dateutil
 import lxml
 import pandas as pd
-import requests
-from lxml import etree
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
                    DailyTransformation, retrieve_files, get_response)
