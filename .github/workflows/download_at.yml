@@ -6,6 +6,13 @@ on:
     - 'scripts/download_at.py'
   schedule:
     - cron:  '5 7/1 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Your Name'
+        default: 'Someone'
+        required: false
+
 
 jobs:
   build:
