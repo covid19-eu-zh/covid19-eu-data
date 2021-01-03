@@ -4,8 +4,9 @@ on:
   push:
     paths:
     - 'scripts/download_uk.py'
+    - '.github/workflows/download_uk.yml'
   schedule:
-    - cron:  '3 7/1 * * *'
+    - cron:  '3 4/8 * * *'
 
 jobs:
   build:
