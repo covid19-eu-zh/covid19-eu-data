@@ -1,9 +1,10 @@
-name: CI Download IE Data and PDF
+name: CI Download IE
 
 on:
   push:
     paths:
     - 'scripts/download_ie.py'
+    - '.github/workflows/download_ie.yml'
   schedule:
     - cron:  '55 8/4 * * *'
 
@@ -30,14 +31,13 @@ jobs:
       - name: Download Records
         run: |
           python scripts/download_ie.py
-          ls documents/daily/ie
           ls dataset/daily/ie
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
           git status
           git add .
-          git commit -m "Downloaded IE Data and PDFs" || echo "Nothing to update"
+          git commit -m "Downloaded IE Data" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master

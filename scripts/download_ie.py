@@ -4,7 +4,6 @@ import re
 import datetime
 import json
 
-import dateutil
 import pandas as pd
 import requests
 
