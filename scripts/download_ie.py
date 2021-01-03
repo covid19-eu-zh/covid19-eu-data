@@ -154,7 +154,7 @@ class SARSCOV2IE(COVIDScrapper):
 if __name__ == "__main__":
 
     logger.info("Downloading PDF")
-    download_pdf()
+    # download_pdf()
 
     logger.info("Download data from dashboard")
     current_dt = get_most_recent_date()
