@@ -1,16 +1,12 @@
-import html
 import logging
 import os
 import re
-from functools import reduce
-import json
 
 import dateutil
-import lxml
 import pandas as pd
 
 from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
-                   DailyTransformation, retrieve_files, get_response)
+                   get_response)
 
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.at")
@@ -99,10 +95,23 @@ class SARSCOV2AT(COVIDScrapper):
         self.df = self.df.iloc[1:].reset_index()
 
         # rename columns
-        self.df.columns = [
+        columns = [i.replace("*", " ").replace("°", " ").split("(")[0].strip() for i in self.df.columns]
+        self.df.columns = columns
+        self.df.rename(
+            columns={
+                "index": geo_loc_key,
+                "Bestätigte Fälle": "cases",
+                "Todesfälle": "deaths",
+                "Genesen": "recovered",
+                "Hospitalisierung": "hospitalized",
+                "Intensivstation": "intensive_care",
+                "Testungen": "tests"
+            }, inplace=True
+        )
+        self.df = self.df[[
             geo_loc_key, "cases", "deaths", "recovered", "hospitalized",
             "intensive_care", "tests"
-        ]
+        ]]
         SUM_KEY = {
             "Österreich  gesamt": "",
             "Österreich gesamt": ""
