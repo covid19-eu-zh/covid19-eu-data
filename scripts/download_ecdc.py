@@ -84,6 +84,7 @@ class SARSCOV2ECDC(COVIDScrapper):
         self.df.rename(
             columns = {
                 "EU/EEA and the UK": "country",
+                "EU/EEA": "country",
                 "Cases": "cases",
                 "Sum of Cases": "cases",
                 "Deaths": "deaths",
