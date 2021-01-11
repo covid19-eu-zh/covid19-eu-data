@@ -34,7 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/static/templates/build/css/bundle.css?v=HF7jG2w1I4EOPXZA77f3ITP_zy-7npDqI32zVcW-EhE1" rel="stylesheet"/>
+    <link href="/static/templates/build/css/bundle.css?v=qlLoqvwb2DvK3sTbnyE8EAuhSKHHr2ttQu6QQyMRmbA1" rel="stylesheet"/>
 
 
     <!--[if lte IE 9]>
@@ -803,7 +803,7 @@
 
 <article>
 
-<div id="block-52111948" class="fhi-subscription-container fhi-modal fhi-hidden">
+<div id="block-34575966" class="fhi-subscription-container fhi-modal fhi-hidden">
     <div class="fhi-modal-header fhi-p-M@LG">
         <div class="close-btn">
             <button aria-labelledby="close-btn-label" type="button" class="icon-x " aria-label="Close"></button>
@@ -842,8 +842,8 @@
                     <div class="feedback"></div>
                 </fieldset>
             <div class="fhi-input-group">
-                <label class="fhi-visually-hidden" for="52111948-email">Email</label>
-                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="52111948-email" name="email" />
+                <label class="fhi-visually-hidden" for="34575966-email">Email</label>
+                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="34575966-email" name="email" />
                 <p id="email-info">The email address you register will only be used to send you these alerts. You can cancel and delete your email address at any time by following the link in the alerts you receive. <br /><a class="fhi-underline" target="_blank" rel="noreferrer noopener" href="https://www.fhi.no/om/fhi/personvernerklaring/">Read more about the privacy policy for fhi.no</a></p>
             </div>
             <div>
@@ -877,7 +877,7 @@
         }
 
         window.addEventListener("load", function () {
-            new SubscriptionRegistration(document.getElementById("block-52111948"), "89256", "ArticlePage", translations);
+            new SubscriptionRegistration(document.getElementById("block-34575966"), "89256", "ArticlePage", translations);
         })
     </script>
 </div>
@@ -1015,7 +1015,7 @@
 <h2><strong>Key figures for Norway</strong></h2>
 <p>Total number in Norway since February 2020 (cumulative figures):</p>
 
-<div class="fhi-row" id="kfr43992074">
+<div class="fhi-row" id="kfr20836871">
     <div class="fhi-col">
         <div class="c-key-figure-row">
             <div class="c-key-figure-row__border">
@@ -1106,7 +1106,7 @@
                 if (data && typeof data.figures !== "undefined") {
                     data.figures.forEach(function (figure) {
                             if (figure && typeof figure.key !== "undefined") {
-                                var wrapper = document.querySelector('div#kfr43992074 [data-json-key="' + figure.key + '"]');
+                                var wrapper = document.querySelector('div#kfr20836871 [data-json-key="' + figure.key + '"]');
                                 if (wrapper) {
                                     if (typeof figure.number != "undefined") {
                                         wrapper.querySelector('[data-key-figure-number]').innerText = figure.number;
@@ -1127,11 +1127,11 @@
                                 }
                             }
                        });
-                        aria.Utils.removeClass(document.querySelector("#kfr43992074 .c-key-figure-row__grid"), "fhi-hidden");
-                        aria.Utils.addClass(document.querySelector("#kfr43992074 .c-loading"), "fhi-hidden");
-                        utils.formatNumbers("#kfr43992074 [data-key-figure-number]");
-                        utils.formatNumbers("#kfr43992074 [data-key-figure-change]");
-                        utils.fitTextToContainer("#kfr43992074 .c-key-figure__number", "[data-key-figure-number]");
+                        aria.Utils.removeClass(document.querySelector("#kfr20836871 .c-key-figure-row__grid"), "fhi-hidden");
+                        aria.Utils.addClass(document.querySelector("#kfr20836871 .c-loading"), "fhi-hidden");
+                        utils.formatNumbers("#kfr20836871 [data-key-figure-number]");
+                        utils.formatNumbers("#kfr20836871 [data-key-figure-change]");
+                        utils.fitTextToContainer("#kfr20836871 .c-key-figure__number", "[data-key-figure-number]");
 
                     }
             })
@@ -1144,13 +1144,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart54225321" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart31770297" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart54225321" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart54225321" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart31770297" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart31770297" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -1163,9 +1163,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-54225321" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-31770297" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table54225321" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table31770297" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1174,16 +1174,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-54225321" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-31770297" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-54225321">
+                                 id="combobox-31770297">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-54225321"
-                                       aria-controls="table54225321">
+                                       aria-labelledby="combobox-label-31770297"
+                                       aria-controls="table31770297">
 
                             </div>
 
@@ -1192,22 +1192,22 @@
 
                     
 
-<div id="dropdown-54225321" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-54225321-legend">
+<div id="dropdown-31770297" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-31770297-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-54225321-label"
-                id="dropdown-54225321-dropdown-button">
+                aria-labelledby="dropdown-31770297-label"
+                id="dropdown-31770297-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-54225321-label">
+            aria-labelledby="dropdown-31770297-label">
         </ul>
     </div>
 
@@ -1237,10 +1237,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/90789" === "" ? null : "/api/chartdata/api/90789";
-                        var chartId = "chart" + 54225321;
+                        var chartId = "chart" + 31770297;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table54225321"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table31770297"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1253,8 +1253,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart54225321 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart54225321 .c-loading").addClass("fhi-hidden");
+                                    $('#chart31770297 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart31770297 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1279,7 +1279,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart54225321 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart31770297 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1293,27 +1293,27 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart20114971" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart5533954" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="min-height: 46px">
 
 
-<div id="location20114971" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="location20114971-legend">
+<div id="location5533954" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="location5533954-legend">
         County selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="location20114971-label"
-                id="location20114971-dropdown-button">
+                aria-labelledby="location5533954-label"
+                id="location5533954-dropdown-button">
             Select county
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="location20114971-label">
+            aria-labelledby="location5533954-label">
         </ul>
     </div>
 
@@ -1321,11 +1321,11 @@
 
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart20114971" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart20114971" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart5533954" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart5533954" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
 
-<label id="toggle20114971" class="fhi-toggle-switch fhi-hidden timegranularity">
+<label id="toggle5533954" class="fhi-toggle-switch fhi-hidden timegranularity">
     <span class="fhi-visually-hidden">County selector</span>
     <input tabindex="0" type="checkbox" checked="checked" />
     <span class="fhi-slider"></span>
@@ -1346,9 +1346,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-20114971" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-5533954" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table20114971" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table5533954" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1357,16 +1357,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-20114971" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-5533954" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-20114971">
+                                 id="combobox-5533954">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-20114971"
-                                       aria-controls="table20114971">
+                                       aria-labelledby="combobox-label-5533954"
+                                       aria-controls="table5533954">
 
                             </div>
 
@@ -1375,22 +1375,22 @@
 
                     
 
-<div id="dropdown-20114971" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-20114971-legend">
+<div id="dropdown-5533954" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-5533954-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-20114971-label"
-                id="dropdown-20114971-dropdown-button">
+                aria-labelledby="dropdown-5533954-label"
+                id="dropdown-5533954-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-20114971-label">
+            aria-labelledby="dropdown-5533954-label">
         </ul>
     </div>
 
@@ -1420,10 +1420,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/90814" === "" ? null : "/api/chartdata/api/90814";
-                        var chartId = "chart" + 20114971;
+                        var chartId = "chart" + 5533954;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table20114971"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table5533954"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1446,19 +1446,19 @@
                                 $.getCachedJSON('/Static/templates/js/highcharts/data/counties.json').done(function (d) {
                                     d.sort(chart.sortData());
                                     var data = [{ name: "All counties", id: 0 }].concat(d);
-                                    initDropdown("#location20114971", data, function (val) {
+                                    initDropdown("#location5533954", data, function (val) {
                                         var data = val > 0 ? val : "";
                                         chart.reload(["location", data]);
                                     });
-                                    $("#location" + 20114971).removeClass("fhi-hidden");
+                                    $("#location" + 5533954).removeClass("fhi-hidden");
                                 });
                                 
 
                             
                                 chart.load(null, function () {
-                                    $('#chart20114971 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart20114971 .c-loading").addClass("fhi-hidden");
-                                $("#toggle" + 20114971).removeClass("fhi-hidden");
+                                    $('#chart5533954 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart5533954 .c-loading").addClass("fhi-hidden");
+                                $("#toggle" + 5533954).removeClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1483,7 +1483,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart20114971 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart5533954 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1497,27 +1497,27 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart12783177" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart1380002" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="">
                         
 
-<div id="range12783177" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="range12783177-legend">
+<div id="range1380002" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="range1380002-legend">
         Week selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="range12783177-label"
-                id="range12783177-dropdown-button">
+                aria-labelledby="range1380002-label"
+                id="range1380002-dropdown-button">
             Choose week
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="range12783177-label">
+            aria-labelledby="range1380002-label">
         </ul>
     </div>
 
@@ -1525,8 +1525,8 @@
 
 
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart12783177" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart12783177" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart1380002" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart1380002" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -1539,9 +1539,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-12783177" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-1380002" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table12783177" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table1380002" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1550,16 +1550,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-12783177" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-1380002" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-12783177">
+                                 id="combobox-1380002">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-12783177"
-                                       aria-controls="table12783177">
+                                       aria-labelledby="combobox-label-1380002"
+                                       aria-controls="table1380002">
 
                             </div>
 
@@ -1568,22 +1568,22 @@
 
                     
 
-<div id="dropdown-12783177" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-12783177-legend">
+<div id="dropdown-1380002" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-1380002-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-12783177-label"
-                id="dropdown-12783177-dropdown-button">
+                aria-labelledby="dropdown-1380002-label"
+                id="dropdown-1380002-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-12783177-label">
+            aria-labelledby="dropdown-1380002-label">
         </ul>
     </div>
 
@@ -1613,10 +1613,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91295" === "" ? null : "/api/chartdata/api/91295";
-                        var chartId = "chart" + 12783177;
+                        var chartId = "chart" + 1380002;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table12783177"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table1380002"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1638,18 +1638,18 @@
                                             }
                                             return { id: d, name: d };
                                         });
-                                        initDropdown("#range12783177", range, function (val) {
+                                        initDropdown("#range1380002", range, function (val) {
                                             chart.reload(["yearweek", val]);
                                         });
-                                        $("#range" + 12783177).removeClass("fhi-hidden");
+                                        $("#range" + 1380002).removeClass("fhi-hidden");
                                     }
                                 })
 
                                 
 
                                 chart.load(null, function () {
-                                    $('#chart12783177 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart12783177 .c-loading").addClass("fhi-hidden");
+                                    $('#chart1380002 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart1380002 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1674,7 +1674,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart12783177 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart1380002 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1688,21 +1688,21 @@
 
 <div class="fhi-row fhi-row--fill"><div class="fhi-col">
 
-<figure id="map51165014" class="highmaps fhi-fill-screen--mobile">
+<figure id="map29695506" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart51165014" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart51165014" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart29695506" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart29695506" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer51165014" class="highchart-graph"></div>
-                <div id="table-container-51165014" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer29695506" class="highchart-graph"></div>
+                <div id="table-container-29695506" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table51165014" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table29695506" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Number of reported COVID-19 cases by county</caption>
                         </table>
                     </figure>
@@ -1769,7 +1769,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer51165014', {
+             var chart = Highcharts.mapChart('mapcontainer29695506', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -1849,7 +1849,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 51165014 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 29695506 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -1865,35 +1865,35 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map51165014 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map29695506 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map51165014 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map51165014 .c-loading").addClass("fhi-hidden");
+            $("#map29695506 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map29695506 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
 </script>
 </div><div class="fhi-col">
 
-<figure id="map30285136" class="highmaps fhi-fill-screen--mobile">
+<figure id="map52484583" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart30285136" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart30285136" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart52484583" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart52484583" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer30285136" class="highchart-graph"></div>
-                <div id="table-container-30285136" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer52484583" class="highchart-graph"></div>
+                <div id="table-container-52484583" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table30285136" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table52484583" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Reported rate by 100 000 inhabitants</caption>
                         </table>
                     </figure>
@@ -1960,7 +1960,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer30285136', {
+             var chart = Highcharts.mapChart('mapcontainer52484583', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -2040,7 +2040,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 30285136 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 52484583 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -2056,14 +2056,14 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map30285136 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map52484583 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map30285136 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map30285136 .c-loading").addClass("fhi-hidden");
+            $("#map52484583 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map52484583 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
@@ -2073,20 +2073,20 @@
 <h2>By municipality</h2>
 <p>The map shows the number of reported COVID-19 cases by municipality.</p>
 
-<figure id="map55423056" class="highmaps fhi-fill-screen--mobile">
+<figure id="map11524529" class="highmaps highmaps--municipality fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart55423056" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart55423056" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart11524529" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart11524529" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer55423056" class="highchart-graph"></div>
-                <div id="table-container-55423056" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="mapcontainer11524529" class="highchart-graph"></div>
+                <div id="table-container-11524529" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                     <figure class="figure table">
-                        <table id="table55423056" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table11524529" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center">Number of reported cases by municipality</caption>
 
                         </table>
@@ -2095,16 +2095,16 @@
                     <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                         <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                            <label id="combobox-label-55423056" class="combobox-label fhi-visually-hidden">
+                            <label id="combobox-label-11524529" class="combobox-label fhi-visually-hidden">
                                 Filter entries
                             </label>
                             <div class="fhi-combobox-wrapper">
                                 <div role="combobox" class="fhi-combobox-input"
-                                     id="combobox-55423056">
+                                     id="combobox-11524529">
                                     <input data-filter type="text"
                                            placeholder="Filter"
-                                           aria-labelledby="combobox-label-55423056"
-                                           aria-controls="table55423056">
+                                           aria-labelledby="combobox-label-11524529"
+                                           aria-controls="table11524529">
 
                                 </div>
 
@@ -2113,22 +2113,22 @@
 
                         
 
-<div id="dropdown-55423056" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-55423056-legend">
+<div id="dropdown-11524529" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-11524529-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-55423056-label"
-                id="dropdown-55423056-dropdown-button">
+                aria-labelledby="dropdown-11524529-label"
+                id="dropdown-11524529-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-55423056-label">
+            aria-labelledby="dropdown-11524529-label">
         </ul>
     </div>
 
@@ -2148,6 +2148,7 @@
 <script>
     (function () {
 		var data = [];
+		var municipalityMap = new Map();
 		$('document').ready(function () {
 			var lastModified;
 
@@ -2155,9 +2156,14 @@
 				
 				$.getCachedJSON(window.location.origin + "/api/chartdata/api/90151").done(function (d, t, jqXHR) {
 					d.forEach(function (v, i) {
-						addData(v);
+						var mapped = mapData(v);
+						if (mapped) {
+							data.push(mapped);
+                            municipalityMap.set(mapped[0], v[0]);
+						}
 					});
-                    lastModified = jqXHR.getResponseHeader('X-API-Last-Modified');
+					lastModified = jqXHR.getResponseHeader('X-API-Last-Modified');
+
 					loadMap(data, lastModified);
 				});
 				
@@ -2165,10 +2171,10 @@
 
 		function loadMap(data, lastModified) {
 
-				$.getCachedScript('/Static/templates/js/highcharts/data/no-all-all-split.js').done(function () {
+				$.getCachedScript('/Static/templates/js/highcharts/data/no-all-all-split_v2.js').done(function () {
 
 
-               var chart = Highcharts.mapChart('mapcontainer55423056', {
+               var chart = Highcharts.mapChart('mapcontainer11524529', {
                     chart: {
                         map: 'countries/no/no-all-all-split',
 								 height: '84.4%'
@@ -2250,1107 +2256,1118 @@
                 if (lastModified !== undefined) {
 					lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                     lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-					$("#mapcontainer" + 55423056 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+					$("#mapcontainer" + 11524529 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
 				}
 
 				 
-				 var tableData = chart.getDataRows();
-				 tableData = tableData.splice(1, tableData.length);
-				 tableData = tableData.map(function (row) { return [row[0], row[1]] });
-					  var translations = {
-						 paginationLabel: "Pagination for ",
-						 paginationListItemLabel: "Go to page ",
-						 paginationIsCurrentPage: "This page is currently shown",
-						 dropdownText: "show {0} entries",
-						 sortAscending: "Sort ascending by ",
-						 sortDescending: "Sort descending by ",
-					  }
-				var table = new DynamicTable(document.querySelector("#map55423056 table"), { headings: ["Municipality", "Number"], data: tableData }, { translations: translations });
-				new Pagination(table, translations);
+
+                var dataFromMap = chart.series[0].points.map(function(p) {
+                    return {
+						name: p.name,
+						value: p.value,
+                        'hc-key': p["hc-key"],
+                    };
+				});
+				var tableData = dataFromMap.map(function (obj) {
+					var arr = Object.values(obj);
+                    return [municipalityMap.get(obj['hc-key']), arr[0], arr[1]];
+				});
+
+			var	translations = {
+						paginationLabel: "Pagination for ",
+						paginationListItemLabel: "Go to page ",
+						paginationIsCurrentPage: "This page is currently shown",
+						dropdownText: "show {0} entries",
+						sortAscending: "Sort ascending by ",
+						sortDescending: "Sort descending by ",
+					}
+
+                var table = new DynamicTable(document.querySelector("#map11524529 table"), { headings: ["Municipality no.", "Municipality", "Number"], data: tableData }, { translations: translations });
+				  new Pagination(table, translations);
 				  if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
 				 
 
-                $("#map55423056 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-                $("#map55423056 .c-loading").addClass("fhi-hidden");
+                $("#map11524529 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+                $("#map11524529 .c-loading").addClass("fhi-hidden");
 
             });
 	}
 
-        function addData(v) {
+        function mapData(v) {
             switch (v[0].toLocaleLowerCase()) {
 
                 case "4201":
-					data.push(['no-ag-4201', v[1]]);
-					break;
+					return ['no-ag-4201', v[1]]
+
 				case "4202":
-					data.push(['no-ag-4202', v[1]]);
-					break;
+					return ['no-ag-4202', v[1]];
+
 				case "4203":
-					data.push(['no-ag-4203', v[1]]);
-					break;
+					return ['no-ag-4203', v[1]];
+
 				case "4204":
-					data.push(['no-ag-4204', v[1]]);
-					break;
+					return ['no-ag-4204', v[1]];
+
 				case "4205":
-					data.push(['no-ag-4205', v[1]]);
-					break;
+					return ['no-ag-4205', v[1]];
+
 				case "4206":
-					data.push(['no-ag-4206', v[1]]);
-					break;
+					return ['no-ag-4206', v[1]];
+
 				case "4207":
-					data.push(['no-ag-4207', v[1]]);
-					break;
+					return ['no-ag-4207', v[1]];
+
 				case "4211":
-					data.push(['no-ag-4211', v[1]]);
-					break;
+					return ['no-ag-4211', v[1]];
+
 				case "4212":
-					data.push(['no-ag-4212', v[1]]);
-					break;
+					return ['no-ag-4212', v[1]];
+
 				case "4213":
-					data.push(['no-ag-4213', v[1]]);
-					break;
+					return ['no-ag-4213', v[1]];
+
 				case "4214":
-					data.push(['no-ag-4214', v[1]]);
-					break;
+					return ['no-ag-4214', v[1]];
+
 				case "4215":
-					data.push(['no-ag-4215', v[1]]);
-					break;
+					return ['no-ag-4215', v[1]];
+
 				case "4216":
-					data.push(['no-ag-4216', v[1]]);
-					break;
+					return ['no-ag-4216', v[1]];
+
 				case "4217":
-					data.push(['no-ag-4217', v[1]]);
-					break;
+					return ['no-ag-4217', v[1]];
+
 				case "4218":
-					data.push(['no-ag-4218', v[1]]);
-					break;
+					return ['no-ag-4218', v[1]];
+
 				case "4219":
-					data.push(['no-ag-4219', v[1]]);
-					break;
+					return ['no-ag-4219', v[1]];
+
 				case "4220":
-					data.push(['no-ag-4220', v[1]]);
-					break;
+					return ['no-ag-4220', v[1]];
+
 				case "4221":
-					data.push(['no-ag-4221', v[1]]);
-					break;
+					return ['no-ag-4221', v[1]];
+
 				case "4222":
-					data.push(['no-ag-4222', v[1]]);
-					break;
+					return ['no-ag-4222', v[1]];
+
 				case "4223":
-					data.push(['no-ag-4223', v[1]]);
-					break;
+					return ['no-ag-4223', v[1]];
+
 				case "4224":
-					data.push(['no-ag-4224', v[1]]);
-					break;
+					return ['no-ag-4224', v[1]];
+
 				case "4225":
-					data.push(['no-ag-4225', v[1]]);
-					break;
+					return ['no-ag-4225', v[1]];
+
 				case "4226":
-					data.push(['no-ag-4226', v[1]]);
-					break;
+					return ['no-ag-4226', v[1]];
+
 				case "4227":
-					data.push(['no-ag-4227', v[1]]);
-					break;
+					return ['no-ag-4227', v[1]];
+
 				case "4228":
-					data.push(['no-ag-4228', v[1]]);
-					break;
+					return ['no-ag-4228', v[1]];
+
 				case "3053":
-					data.push(['no-in-3053', v[1]]);
-					break;
+					return ['no-in-3053', v[1]];
+
 				case "3054":
-					data.push(['no-in-3054', v[1]]);
-					break;
+					return ['no-in-3054', v[1]];
+
 				case "3401":
-					data.push(['no-in-3401', v[1]]);
-					break;
+					return ['no-in-3401', v[1]];
+
 				case "3403":
-					data.push(['no-in-3403', v[1]]);
-					break;
+					return ['no-in-3403', v[1]];
+
 				case "3405":
-					data.push(['no-in-3405', v[1]]);
-					break;
+					return ['no-in-3405', v[1]];
+
 				case "3407":
-					data.push(['no-in-3407', v[1]]);
-					break;
+					return ['no-in-3407', v[1]];
+
 				case "3411":
-					data.push(['no-in-3411', v[1]]);
-					break;
+					return ['no-in-3411', v[1]];
+
 				case "3412":
-					data.push(['no-in-3412', v[1]]);
-					break;
+					return ['no-in-3412', v[1]];
+
 				case "3413":
-					data.push(['no-in-3413', v[1]]);
-					break;
+					return ['no-in-3413', v[1]];
+
 				case "3414":
-					data.push(['no-in-3414', v[1]]);
-					break;
+					return ['no-in-3414', v[1]];
+
 				case "3415":
-					data.push(['no-in-3415', v[1]]);
-					break;
+					return ['no-in-3415', v[1]];
+
 				case "3416":
-					data.push(['no-in-3416', v[1]]);
-					break;
+					return ['no-in-3416', v[1]];
+
 				case "3417":
-					data.push(['no-in-3417', v[1]]);
-					break;
+					return ['no-in-3417', v[1]];
+
 				case "3418":
-					data.push(['no-in-3418', v[1]]);
-					break;
+					return ['no-in-3418', v[1]];
+
 				case "3419":
-					data.push(['no-in-3419', v[1]]);
-					break;
+					return ['no-in-3419', v[1]];
+
 				case "3420":
-					data.push(['no-in-3420', v[1]]);
-					break;
+					return ['no-in-3420', v[1]];
+
 				case "3421":
-					data.push(['no-in-3421', v[1]]);
-					break;
+					return ['no-in-3421', v[1]];
+
 				case "3422":
-					data.push(['no-in-3422', v[1]]);
-					break;
+					return ['no-in-3422', v[1]];
+
 				case "3423":
-					data.push(['no-in-3423', v[1]]);
-					break;
+					return ['no-in-3423', v[1]];
+
 				case "3424":
-					data.push(['no-in-3424', v[1]]);
-					break;
+					return ['no-in-3424', v[1]];
+
 				case "3425":
-					data.push(['no-in-3425', v[1]]);
-					break;
+					return ['no-in-3425', v[1]];
+
 				case "3426":
-					data.push(['no-in-3426', v[1]]);
-					break;
+					return ['no-in-3426', v[1]];
+
 				case "3427":
-					data.push(['no-in-3427', v[1]]);
-					break;
+					return ['no-in-3427', v[1]];
+
 				case "3428":
-					data.push(['no-in-3428', v[1]]);
-					break;
+					return ['no-in-3428', v[1]];
+
 				case "3429":
-					data.push(['no-in-3429', v[1]]);
-					break;
+					return ['no-in-3429', v[1]];
+
 				case "3430":
-					data.push(['no-in-3430', v[1]]);
-					break;
+					return ['no-in-3430', v[1]];
+
 				case "3431":
-					data.push(['no-in-3431', v[1]]);
-					break;
+					return ['no-in-3431', v[1]];
+
 				case "3432":
-					data.push(['no-in-3432', v[1]]);
-					break;
+					return ['no-in-3432', v[1]];
+
 				case "3433":
-					data.push(['no-in-3433', v[1]]);
-					break;
+					return ['no-in-3433', v[1]];
+
 				case "3434":
-					data.push(['no-in-3434', v[1]]);
-					break;
+					return ['no-in-3434', v[1]];
+
 				case "3435":
-					data.push(['no-in-3435', v[1]]);
-					break;
+					return ['no-in-3435', v[1]];
+
 				case "3436":
-					data.push(['no-in-3436', v[1]]);
-					break;
+					return ['no-in-3436', v[1]];
+
 				case "3437":
-					data.push(['no-in-3437', v[1]]);
-					break;
+					return ['no-in-3437', v[1]];
+
 				case "3438":
-					data.push(['no-in-3438', v[1]]);
-					break;
+					return ['no-in-3438', v[1]];
+
 				case "3439":
-					data.push(['no-in-3439', v[1]]);
-					break;
+					return ['no-in-3439', v[1]];
+
 				case "3440":
-					data.push(['no-in-3440', v[1]]);
-					break;
+					return ['no-in-3440', v[1]];
+
 				case "3441":
-					data.push(['no-in-3441', v[1]]);
-					break;
+					return ['no-in-3441', v[1]];
+
 				case "3442":
-					data.push(['no-in-3442', v[1]]);
-					break;
+					return ['no-in-3442', v[1]];
+
 				case "3443":
-					data.push(['no-in-3443', v[1]]);
-					break;
+					return ['no-in-3443', v[1]];
+
 				case "3446":
-					data.push(['no-in-3446', v[1]]);
-					break;
+					return ['no-in-3446', v[1]];
+
 				case "3447":
-					data.push(['no-in-3447', v[1]]);
-					break;
+					return ['no-in-3447', v[1]];
+
 				case "3448":
-					data.push(['no-in-3448', v[1]]);
-					break;
+					return ['no-in-3448', v[1]];
+
 				case "3449":
-					data.push(['no-in-3449', v[1]]);
-					break;
+					return ['no-in-3449', v[1]];
+
 				case "3450":
-					data.push(['no-in-3450', v[1]]);
-					break;
+					return ['no-in-3450', v[1]];
+
 				case "3451":
-					data.push(['no-in-3451', v[1]]);
-					break;
+					return ['no-in-3451', v[1]];
+
 				case "3452":
-					data.push(['no-in-3452', v[1]]);
-					break;
+					return ['no-in-3452', v[1]];
+
 				case "3453":
-					data.push(['no-in-3453', v[1]]);
-					break;
+					return ['no-in-3453', v[1]];
+
 				case "3454":
-					data.push(['no-in-3454', v[1]]);
-					break;
+					return ['no-in-3454', v[1]];
+
 				case "1505":
-					data.push(['no-mr-1505', v[1]]);
-					break;
+					return ['no-mr-1505', v[1]];
+
 				case "1506":
-					data.push(['no-mr-1506', v[1]]);
-					break;
+					return ['no-mr-1506', v[1]];
+
 				case "1507":
-					data.push(['no-mr-1507', v[1]]);
-					break;
+					return ['no-mr-1507', v[1]];
+
 				case "1511":
-					data.push(['no-mr-1511', v[1]]);
-					break;
+					return ['no-mr-1511', v[1]];
+
 				case "1514":
-					data.push(['no-mr-1514', v[1]]);
-					break;
+					return ['no-mr-1514', v[1]];
+
 				case "1515":
-					data.push(['no-mr-1515', v[1]]);
-					break;
+					return ['no-mr-1515', v[1]];
+
 				case "1516":
-					data.push(['no-mr-1516', v[1]]);
-					break;
+					return ['no-mr-1516', v[1]];
+
 				case "1517":
-					data.push(['no-mr-1517', v[1]]);
-					break;
+					return ['no-mr-1517', v[1]];
+
 				case "1520":
-					data.push(['no-mr-1520', v[1]]);
-					break;
+					return ['no-mr-1520', v[1]];
+
 				case "1525":
-					data.push(['no-mr-1525', v[1]]);
-					break;
+					return ['no-mr-1525', v[1]];
+
 				case "1528":
-					data.push(['no-mr-1528', v[1]]);
-					break;
+					return ['no-mr-1528', v[1]];
+
 				case "1531":
-					data.push(['no-mr-1531', v[1]]);
-					break;
+					return ['no-mr-1531', v[1]];
+
 				case "1532":
-					data.push(['no-mr-1532', v[1]]);
-					break;
+					return ['no-mr-1532', v[1]];
+
 				case "1535":
-					data.push(['no-mr-1535', v[1]]);
-					break;
+					return ['no-mr-1535', v[1]];
+
 				case "1539":
-					data.push(['no-mr-1539', v[1]]);
-					break;
+					return ['no-mr-1539', v[1]];
+
 				case "1547":
-					data.push(['no-mr-1547', v[1]]);
-					break;
+					return ['no-mr-1547', v[1]];
+
 				case "1554":
-					data.push(['no-mr-1554', v[1]]);
-					break;
+					return ['no-mr-1554', v[1]];
+
 				case "1557":
-					data.push(['no-mr-1557', v[1]]);
-					break;
+					return ['no-mr-1557', v[1]];
+
 				case "1560":
-					data.push(['no-mr-1560', v[1]]);
-					break;
+					return ['no-mr-1560', v[1]];
+
 				case "1563":
-					data.push(['no-mr-1563', v[1]]);
-					break;
+					return ['no-mr-1563', v[1]];
+
 				case "1566":
-					data.push(['no-mr-1566', v[1]]);
-					break;
+					return ['no-mr-1566', v[1]];
+
 				case "1573":
-					data.push(['no-mr-1573', v[1]]);
-					break;
+					return ['no-mr-1573', v[1]];
+
 				case "1576":
-					data.push(['no-mr-1576', v[1]]);
-					break;
+					return ['no-mr-1576', v[1]];
+
 				case "1577":
-					data.push(['no-mr-1577', v[1]]);
-					break;
+					return ['no-mr-1577', v[1]];
+
 				case "1578":
-					data.push(['no-mr-1578', v[1]]);
-					break;
+					return ['no-mr-1578', v[1]];
+
 				case "1579":
-					data.push(['no-mr-1579', v[1]]);
-					break;
+					return ['no-mr-1579', v[1]];
+
 				case "5055":
-					data.push(['no-mr-5055', v[1]]);
-					break;
+					return ['no-mr-5055', v[1]];
+
 				case "5061":
-					data.push(['no-mr-5061', v[1]]);
-					break;
+					return ['no-mr-5061', v[1]];
+
 				case "1804":
-					data.push(['no-no-1804', v[1]]);
-					break;
+					return ['no-no-1804', v[1]];
+
 				case "1806":
-					data.push(['no-no-1806', v[1]]);
-					break;
+					return ['no-no-1806', v[1]];
+
 				case "1811":
-					data.push(['no-no-1811', v[1]]);
-					break;
+					return ['no-no-1811', v[1]];
+
 				case "1812":
-					data.push(['no-no-1812', v[1]]);
-					break;
+					return ['no-no-1812', v[1]];
+
 				case "1813":
-					data.push(['no-no-1813', v[1]]);
-					break;
+					return ['no-no-1813', v[1]];
+
 				case "1815":
-					data.push(['no-no-1815', v[1]]);
-					break;
+					return ['no-no-1815', v[1]];
+
 				case "1816":
-					data.push(['no-no-1816', v[1]]);
-					break;
+					return ['no-no-1816', v[1]];
+
 				case "1818":
-					data.push(['no-no-1818', v[1]]);
-					break;
+					return ['no-no-1818', v[1]];
+
 				case "1820":
-					data.push(['no-no-1820', v[1]]);
-					break;
+					return ['no-no-1820', v[1]];
+
 				case "1822":
-					data.push(['no-no-1822', v[1]]);
-					break;
+					return ['no-no-1822', v[1]];
+
 				case "1824":
-					data.push(['no-no-1824', v[1]]);
-					break;
+					return ['no-no-1824', v[1]];
+
 				case "1825":
-					data.push(['no-no-1825', v[1]]);
-					break;
+					return ['no-no-1825', v[1]];
+
 				case "1826":
-					data.push(['no-no-1826', v[1]]);
-					break;
+					return ['no-no-1826', v[1]];
+
 				case "1827":
-					data.push(['no-no-1827', v[1]]);
-					break;
+					return ['no-no-1827', v[1]];
+
 				case "1828":
-					data.push(['no-no-1828', v[1]]);
-					break;
+					return ['no-no-1828', v[1]];
+
 				case "1832":
-					data.push(['no-no-1832', v[1]]);
-					break;
+					return ['no-no-1832', v[1]];
+
 				case "1833":
-					data.push(['no-no-1833', v[1]]);
-					break;
+					return ['no-no-1833', v[1]];
+
 				case "1834":
-					data.push(['no-no-1834', v[1]]);
-					break;
+					return ['no-no-1834', v[1]];
+
 				case "1835":
-					data.push(['no-no-1835', v[1]]);
-					break;
+					return ['no-no-1835', v[1]];
+
 				case "1836":
-					data.push(['no-no-1836', v[1]]);
-					break;
+					return ['no-no-1836', v[1]];
+
 				case "1837":
-					data.push(['no-no-1837', v[1]]);
-					break;
+					return ['no-no-1837', v[1]];
+
 				case "1838":
-					data.push(['no-no-1838', v[1]]);
-					break;
+					return ['no-no-1838', v[1]];
+
 				case "1839":
-					data.push(['no-no-1839', v[1]]);
-					break;
+					return ['no-no-1839', v[1]];
+
 				case "1840":
-					data.push(['no-no-1840', v[1]]);
-					break;
+					return ['no-no-1840', v[1]];
+
 				case "1841":
-					data.push(['no-no-1841', v[1]]);
-					break;
+					return ['no-no-1841', v[1]];
+
 				case "1845":
-					data.push(['no-no-1845', v[1]]);
-					break;
+					return ['no-no-1845', v[1]];
+
 				case "1848":
-					data.push(['no-no-1848', v[1]]);
-					break;
+					return ['no-no-1848', v[1]];
+
 				case "1851":
-					data.push(['no-no-1851', v[1]]);
-					break;
+					return ['no-no-1851', v[1]];
+
 				case "1853":
-					data.push(['no-no-1853', v[1]]);
-					break;
+					return ['no-no-1853', v[1]];
+
 				case "1856":
-					data.push(['no-no-1856', v[1]]);
-					break;
+					return ['no-no-1856', v[1]];
+
 				case "1857":
-					data.push(['no-no-1857', v[1]]);
-					break;
+					return ['no-no-1857', v[1]];
+
 				case "1859":
-					data.push(['no-no-1859', v[1]]);
-					break;
+					return ['no-no-1859', v[1]];
+
 				case "1860":
-					data.push(['no-no-1860', v[1]]);
-					break;
+					return ['no-no-1860', v[1]];
+
 				case "1865":
-					data.push(['no-no-1865', v[1]]);
-					break;
+					return ['no-no-1865', v[1]];
+
 				case "1866":
-					data.push(['no-no-1866', v[1]]);
-					break;
+					return ['no-no-1866', v[1]];
+
 				case "1867":
-					data.push(['no-no-1867', v[1]]);
-					break;
+					return ['no-no-1867', v[1]];
+
 				case "1868":
-					data.push(['no-no-1868', v[1]]);
-					break;
+					return ['no-no-1868', v[1]];
+
 				case "1870":
-					data.push(['no-no-1870', v[1]]);
-					break;
+					return ['no-no-1870', v[1]];
+
 				case "1871":
-					data.push(['no-no-1871', v[1]]);
-					break;
+					return ['no-no-1871', v[1]];
+
 				case "1874":
-					data.push(['no-no-1874', v[1]]);
-					break;
+					return ['no-no-1874', v[1]];
+
 				case "1875":
-					data.push(['no-no-1875', v[1]]);
-					break;
+					return ['no-no-1875', v[1]];
+
 				case "0301":
-					data.push(['no-os-0301', v[1]]);
-					break;
+					return ['no-os-0301', v[1]];
+
 				case "3024":
-					data.push(['no-os-3024', v[1]]);
-					break;
+					return ['no-os-3024', v[1]];
+
 				case "1101":
-					data.push(['no-ro-1101', v[1]]);
-					break;
+					return ['no-ro-1101', v[1]];
+
 				case "1103":
-					data.push(['no-ro-1103', v[1]]);
-					break;
+					return ['no-ro-1103', v[1]];
+
 				case "1106":
-					data.push(['no-ro-1106', v[1]]);
-					break;
+					return ['no-ro-1106', v[1]];
+
 				case "1108":
-					data.push(['no-ro-1108', v[1]]);
-					break;
+					return ['no-ro-1108', v[1]];
+
 				case "1111":
-					data.push(['no-ro-1111', v[1]]);
-					break;
+					return ['no-ro-1111', v[1]];
+
 				case "1112":
-					data.push(['no-ro-1112', v[1]]);
-					break;
+					return ['no-ro-1112', v[1]];
+
 				case "1114":
-					data.push(['no-ro-1114', v[1]]);
-					break;
+					return ['no-ro-1114', v[1]];
+
 				case "1119":
-					data.push(['no-ro-1119', v[1]]);
-					break;
+					return ['no-ro-1119', v[1]];
+
 				case "1120":
-					data.push(['no-ro-1120', v[1]]);
-					break;
+					return ['no-ro-1120', v[1]];
+
 				case "1121":
-					data.push(['no-ro-1121', v[1]]);
-					break;
+					return ['no-ro-1121', v[1]];
+
 				case "1122":
-					data.push(['no-ro-1122', v[1]]);
-					break;
+					return ['no-ro-1122', v[1]];
+
 				case "1124":
-					data.push(['no-ro-1124', v[1]]);
-					break;
+					return ['no-ro-1124', v[1]];
+
 				case "1127":
-					data.push(['no-ro-1127', v[1]]);
-					break;
+					return ['no-ro-1127', v[1]];
+
 				case "1130":
-					data.push(['no-ro-1130', v[1]]);
-					break;
+					return ['no-ro-1130', v[1]];
+
 				case "1133":
-					data.push(['no-ro-1133', v[1]]);
-					break;
+					return ['no-ro-1133', v[1]];
+
 				case "1134":
-					data.push(['no-ro-1134', v[1]]);
-					break;
+					return ['no-ro-1134', v[1]];
+
 				case "1135":
-					data.push(['no-ro-1135', v[1]]);
-					break;
+					return ['no-ro-1135', v[1]];
+
 				case "1144":
-					data.push(['no-ro-1144', v[1]]);
-					break;
+					return ['no-ro-1144', v[1]];
+
 				case "1145":
-					data.push(['no-ro-1145', v[1]]);
-					break;
+					return ['no-ro-1145', v[1]];
+
 				case "1146":
-					data.push(['no-ro-1146', v[1]]);
-					break;
+					return ['no-ro-1146', v[1]];
+
 				case "1149":
-					data.push(['no-ro-1149', v[1]]);
-					break;
+					return ['no-ro-1149', v[1]];
+
 				case "1151":
-					data.push(['no-ro-1151', v[1]]);
-					break;
+					return ['no-ro-1151', v[1]];
+
 				case "1160":
-					data.push(['no-ro-1160', v[1]]);
-					break;
+					return ['no-ro-1160', v[1]];
+
 				case "5001":
-					data.push(['no-td-5001', v[1]]);
-					break;
+					return ['no-td-5001', v[1]];
+
 				case "5006":
-					data.push(['no-td-5006', v[1]]);
-					break;
+					return ['no-td-5006', v[1]];
+
 				case "5007":
-					data.push(['no-td-5007', v[1]]);
-					break;
+					return ['no-td-5007', v[1]];
+
 				case "5014":
-					data.push(['no-td-5014', v[1]]);
-					break;
+					return ['no-td-5014', v[1]];
+
 				case "5020":
-					data.push(['no-td-5020', v[1]]);
-					break;
+					return ['no-td-5020', v[1]];
+
 				case "5021":
-					data.push(['no-td-5021', v[1]]);
-					break;
+					return ['no-td-5021', v[1]];
+
 				case "5022":
-					data.push(['no-td-5022', v[1]]);
-					break;
+					return ['no-td-5022', v[1]];
+
 				case "5025":
-					data.push(['no-td-5025', v[1]]);
-					break;
+					return ['no-td-5025', v[1]];
+
 				case "5026":
-					data.push(['no-td-5026', v[1]]);
-					break;
+					return ['no-td-5026', v[1]];
+
 				case "5027":
-					data.push(['no-td-5027', v[1]]);
-					break;
+					return ['no-td-5027', v[1]];
+
 				case "5028":
-					data.push(['no-td-5028', v[1]]);
-					break;
+					return ['no-td-5028', v[1]];
+
 				case "5029":
-					data.push(['no-td-5029', v[1]]);
-					break;
+					return ['no-td-5029', v[1]];
+
 				case "5031":
-					data.push(['no-td-5031', v[1]]);
-					break;
+					return ['no-td-5031', v[1]];
+
 				case "5032":
-					data.push(['no-td-5032', v[1]]);
-					break;
+					return ['no-td-5032', v[1]];
+
 				case "5033":
-					data.push(['no-td-5033', v[1]]);
-					break;
+					return ['no-td-5033', v[1]];
+
 				case "5034":
-					data.push(['no-td-5034', v[1]]);
-					break;
+					return ['no-td-5034', v[1]];
+
 				case "5035":
-					data.push(['no-td-5035', v[1]]);
-					break;
+					return ['no-td-5035', v[1]];
+
 				case "5036":
-					data.push(['no-td-5036', v[1]]);
-					break;
+					return ['no-td-5036', v[1]];
+
 				case "5037":
-					data.push(['no-td-5037', v[1]]);
-					break;
+					return ['no-td-5037', v[1]];
+
 				case "5038":
-					data.push(['no-td-5038', v[1]]);
-					break;
+					return ['no-td-5038', v[1]];
+
 				case "5041":
-					data.push(['no-td-5041', v[1]]);
-					break;
+					return ['no-td-5041', v[1]];
+
 				case "5042":
-					data.push(['no-td-5042', v[1]]);
-					break;
+					return ['no-td-5042', v[1]];
+
 				case "5043":
-					data.push(['no-td-5043', v[1]]);
-					break;
+					return ['no-td-5043', v[1]];
+
 				case "5044":
-					data.push(['no-td-5044', v[1]]);
-					break;
+					return ['no-td-5044', v[1]];
+
 				case "5045":
-					data.push(['no-td-5045', v[1]]);
-					break;
+					return ['no-td-5045', v[1]];
+
 				case "5046":
-					data.push(['no-td-5046', v[1]]);
-					break;
+					return ['no-td-5046', v[1]];
+
 				case "5047":
-					data.push(['no-td-5047', v[1]]);
-					break;
+					return ['no-td-5047', v[1]];
+
 				case "5049":
-					data.push(['no-td-5049', v[1]]);
-					break;
+					return ['no-td-5049', v[1]];
+
 				case "5052":
-					data.push(['no-td-5052', v[1]]);
-					break;
+					return ['no-td-5052', v[1]];
+
 				case "5053":
-					data.push(['no-td-5053', v[1]]);
-					break;
+					return ['no-td-5053', v[1]];
+
 				case "5054":
-					data.push(['no-td-5054', v[1]]);
-					break;
+					return ['no-td-5054', v[1]];
+
 				case "5056":
-					data.push(['no-td-5056', v[1]]);
-					break;
+					return ['no-td-5056', v[1]];
+
 				case "5057":
-					data.push(['no-td-5057', v[1]]);
-					break;
+					return ['no-td-5057', v[1]];
+
 				case "5058":
-					data.push(['no-td-5058', v[1]]);
-					break;
+					return ['no-td-5058', v[1]];
+
 				case "5059":
-					data.push(['no-td-5059', v[1]]);
-					break;
+					return ['no-td-5059', v[1]];
+
 				case "5060":
-					data.push(['no-td-5060', v[1]]);
-					break;
+					return ['no-td-5060', v[1]];
+
 				case "5435":
-					data.push(['no-tf-3020', v[1]]);
-					break;
+					return ['no-tf-3020', v[1]];
+
 				case "5401":
-					data.push(['no-tf-5401', v[1]]);
-					break;
+					return ['no-tf-5401', v[1]];
+
 				case "5402":
-					data.push(['no-tf-5402', v[1]]);
-					break;
+					return ['no-tf-5402', v[1]];
+
 				case "5403":
-					data.push(['no-tf-5403', v[1]]);
-					break;
+					return ['no-tf-5403', v[1]];
+
 				case "5404":
-					data.push(['no-tf-5404', v[1]]);
-					break;
+					return ['no-tf-5404', v[1]];
+
 				case "5405":
-					data.push(['no-tf-5405', v[1]]);
-					break;
+					return ['no-tf-5405', v[1]];
+
 				case "5406":
-					data.push(['no-tf-5406', v[1]]);
-					break;
+					return ['no-tf-5406', v[1]];
+
 				case "5411":
-					data.push(['no-tf-5411', v[1]]);
-					break;
+					return ['no-tf-5411', v[1]];
+
 				case "5412":
-					data.push(['no-tf-5412', v[1]]);
-					break;
+					return ['no-tf-5412', v[1]];
+
 				case "5413":
-					data.push(['no-tf-5413', v[1]]);
-					break;
+					return ['no-tf-5413', v[1]];
+
 				case "5414":
-					data.push(['no-tf-5414', v[1]]);
-					break;
+					return ['no-tf-5414', v[1]];
+
 				case "5415":
-					data.push(['no-tf-5415', v[1]]);
-					break;
+					return ['no-tf-5415', v[1]];
+
 				case "5416":
-					data.push(['no-tf-5416', v[1]]);
-					break;
+					return ['no-tf-5416', v[1]];
+
 				case "5417":
-					data.push(['no-tf-5417', v[1]]);
-					break;
+					return ['no-tf-5417', v[1]];
+
 				case "5418":
-					data.push(['no-tf-5418', v[1]]);
-					break;
+					return ['no-tf-5418', v[1]];
+
 				case "5419":
-					data.push(['no-tf-5419', v[1]]);
-					break;
+					return ['no-tf-5419', v[1]];
+
 				case "5420":
-					data.push(['no-tf-5420', v[1]]);
-					break;
+					return ['no-tf-5420', v[1]];
+
 				case "5421":
-					data.push(['no-tf-5421', v[1]]);
-					break;
+					return ['no-tf-5421', v[1]];
+
 				case "5422":
-					data.push(['no-tf-5422', v[1]]);
-					break;
+					return ['no-tf-5422', v[1]];
+
 				case "5423":
-					data.push(['no-tf-5423', v[1]]);
-					break;
+					return ['no-tf-5423', v[1]];
+
 				case "5424":
-					data.push(['no-tf-5424', v[1]]);
-					break;
+					return ['no-tf-5424', v[1]];
+
 				case "5425":
-					data.push(['no-tf-5425', v[1]]);
-					break;
+					return ['no-tf-5425', v[1]];
+
 				case "5426":
-					data.push(['no-tf-5426', v[1]]);
-					break;
+					return ['no-tf-5426', v[1]];
+
 				case "5427":
-					data.push(['no-tf-5427', v[1]]);
-					break;
+					return ['no-tf-5427', v[1]];
+
 				case "5428":
-					data.push(['no-tf-5428', v[1]]);
-					break;
+					return ['no-tf-5428', v[1]];
+
 				case "5429":
-					data.push(['no-tf-5429', v[1]]);
-					break;
+					return ['no-tf-5429', v[1]];
+
 				case "5430":
-					data.push(['no-tf-5430', v[1]]);
-					break;
+					return ['no-tf-5430', v[1]];
+
 				case "5432":
-					data.push(['no-tf-5432', v[1]]);
-					break;
+					return ['no-tf-5432', v[1]];
+
 				case "5433":
-					data.push(['no-tf-5433', v[1]]);
-					break;
+					return ['no-tf-5433', v[1]];
+
 				case "5434":
-					data.push(['no-tf-5434', v[1]]);
-					break;
+					return ['no-tf-5434', v[1]];
+
 				case "5436":
-					data.push(['no-tf-5436', v[1]]);
-					break;
+					return ['no-tf-5436', v[1]];
+
 				case "5437":
-					data.push(['no-tf-5437', v[1]]);
-					break;
+					return ['no-tf-5437', v[1]];
+
 				case "5438":
-					data.push(['no-tf-5438', v[1]]);
-					break;
+					return ['no-tf-5438', v[1]];
+
 				case "5439":
-					data.push(['no-tf-5439', v[1]]);
-					break;
+					return ['no-tf-5439', v[1]];
+
 				case "5440":
-					data.push(['no-tf-5440', v[1]]);
-					break;
+					return ['no-tf-5440', v[1]];
+
 				case "5441":
-					data.push(['no-tf-5441', v[1]]);
-					break;
+					return ['no-tf-5441', v[1]];
+
 				case "5442":
-					data.push(['no-tf-5442', v[1]]);
-					break;
+					return ['no-tf-5442', v[1]];
+
 				case "5443":
-					data.push(['no-tf-5443', v[1]]);
-					break;
+					return ['no-tf-5443', v[1]];
+
 				case "5444":
-					data.push(['no-tf-5444', v[1]]);
-					break;
+					return ['no-tf-5444', v[1]];
+
 				case "3001":
-					data.push(['no-vi-3001', v[1]]);
-					break;
+					return ['no-vi-3001', v[1]];
+
 				case "3002":
-					data.push(['no-vi-3002', v[1]]);
-					break;
+					return ['no-vi-3002', v[1]];
+
 				case "3003":
-					data.push(['no-vi-3003', v[1]]);
-					break;
+					return ['no-vi-3003', v[1]];
+
 				case "3004":
-					data.push(['no-vi-3004', v[1]]);
-					break;
+					return ['no-vi-3004', v[1]];
+
 				case "3005":
-					data.push(['no-vi-3005', v[1]]);
-					break;
+					return ['no-vi-3005', v[1]];
+
 				case "3006":
-					data.push(['no-vi-3006', v[1]]);
-					break;
+					return ['no-vi-3006', v[1]];
+
 				case "3007":
-					data.push(['no-vi-3007', v[1]]);
-					break;
+					return ['no-vi-3007', v[1]];
+
 				case "3011":
-					data.push(['no-vi-3011', v[1]]);
-					break;
+					return ['no-vi-3011', v[1]];
+
 				case "3012":
-					data.push(['no-vi-3012', v[1]]);
-					break;
+					return ['no-vi-3012', v[1]];
+
 				case "3013":
-					data.push(['no-vi-3013', v[1]]);
-					break;
+					return ['no-vi-3013', v[1]];
+
 				case "3014":
-					data.push(['no-vi-3014', v[1]]);
-					break;
+					return ['no-vi-3014', v[1]];
+
 				case "3015":
-					data.push(['no-vi-3015', v[1]]);
-					break;
+					return ['no-vi-3015', v[1]];
+
 				case "3016":
-					data.push(['no-vi-3016', v[1]]);
-					break;
+					return ['no-vi-3016', v[1]];
+
 				case "3017":
-					data.push(['no-vi-3017', v[1]]);
-					break;
+					return ['no-vi-3017', v[1]];
+
 				case "3018":
-					data.push(['no-vi-3018', v[1]]);
-					break;
+					return ['no-vi-3018', v[1]];
+
 				case "3019":
-					data.push(['no-vi-3019', v[1]]);
-					break;
+					return ['no-vi-3019', v[1]];
+
 				case "3021":
-					data.push(['no-vi-3021', v[1]]);
-					break;
+					return ['no-vi-3021', v[1]];
+
 				case "3022":
-					data.push(['no-vi-3022', v[1]]);
-					break;
+					return ['no-vi-3022', v[1]];
+
 				case "3023":
-					data.push(['no-vi-3023', v[1]]);
-					break;
+					return ['no-vi-3023', v[1]];
+
 				case "3025":
-					data.push(['no-vi-3025', v[1]]);
-					break;
+					return ['no-vi-3025', v[1]];
+
 				case "3026":
-					data.push(['no-vi-3026', v[1]]);
-					break;
+					return ['no-vi-3026', v[1]];
+
 				case "3027":
-					data.push(['no-vi-3027', v[1]]);
-					break;
+					return ['no-vi-3027', v[1]];
+
 				case "3028":
-					data.push(['no-vi-3028', v[1]]);
-					break;
+					return ['no-vi-3028', v[1]];
+
 				case "3029":
-					data.push(['no-vi-3029', v[1]]);
-					break;
+					return ['no-vi-3029', v[1]];
+
 				case "3030":
-					data.push(['no-vi-3030', v[1]]);
-					break;
+					return ['no-vi-3030', v[1]];
+
 				case "3031":
-					data.push(['no-vi-3031', v[1]]);
-					break;
+					return ['no-vi-3031', v[1]];
+
 				case "3032":
-					data.push(['no-vi-3032', v[1]]);
-					break;
+					return ['no-vi-3032', v[1]];
+
 				case "3033":
-					data.push(['no-vi-3033', v[1]]);
-					break;
+					return ['no-vi-3033', v[1]];
+
 				case "3034":
-					data.push(['no-vi-3034', v[1]]);
-					break;
+					return ['no-vi-3034', v[1]];
+
 				case "3035":
-					data.push(['no-vi-3035', v[1]]);
-					break;
+					return ['no-vi-3035', v[1]];
+
 				case "3036":
-					data.push(['no-vi-3036', v[1]]);
-					break;
+					return ['no-vi-3036', v[1]];
+
 				case "3037":
-					data.push(['no-vi-3037', v[1]]);
-					break;
+					return ['no-vi-3037', v[1]];
+
 				case "3038":
-					data.push(['no-vi-3038', v[1]]);
-					break;
+					return ['no-vi-3038', v[1]];
+
 				case "3039":
-					data.push(['no-vi-3039', v[1]]);
-					break;
+					return ['no-vi-3039', v[1]];
+
 				case "3040":
-					data.push(['no-vi-3040', v[1]]);
-					break;
+					return ['no-vi-3040', v[1]];
+
 				case "3041":
-					data.push(['no-vi-3041', v[1]]);
-					break;
+					return ['no-vi-3041', v[1]];
+
 				case "3042":
-					data.push(['no-vi-3042', v[1]]);
-					break;
+					return ['no-vi-3042', v[1]];
+
 				case "3043":
-					data.push(['no-vi-3043', v[1]]);
-					break;
+					return ['no-vi-3043', v[1]];
+
 				case "3044":
-					data.push(['no-vi-3044', v[1]]);
-					break;
+					return ['no-vi-3044', v[1]];
+
 				case "3045":
-					data.push(['no-vi-3045', v[1]]);
-					break;
+					return ['no-vi-3045', v[1]];
+
 				case "3046":
-					data.push(['no-vi-3046', v[1]]);
-					break;
+					return ['no-vi-3046', v[1]];
+
 				case "3047":
-					data.push(['no-vi-3047', v[1]]);
-					break;
+					return ['no-vi-3047', v[1]];
+
 				case "3048":
-					data.push(['no-vi-3048', v[1]]);
-					break;
+					return ['no-vi-3048', v[1]];
+
 				case "3049":
-					data.push(['no-vi-3049', v[1]]);
-					break;
+					return ['no-vi-3049', v[1]];
+
 				case "3050":
-					data.push(['no-vi-3050', v[1]]);
-					break;
+					return ['no-vi-3050', v[1]];
+
 				case "3051":
-					data.push(['no-vi-3051', v[1]]);
-					break;
+					return ['no-vi-3051', v[1]];
+
 				case "3052":
-					data.push(['no-vi-3052', v[1]]);
-					break;
+					return ['no-vi-3052', v[1]];
+
 				case "3020":
-					data.push(['no-vi-5435', v[1]]);
-					break;
+					return ['no-vi-5435', v[1]];
+
 				case "4601":
-					data.push(['no-vl-4601', v[1]]);
-					break;
+					return ['no-vl-4601', v[1]];
+
 				case "4602":
-					data.push(['no-vl-4602', v[1]]);
-					break;
+					return ['no-vl-4602', v[1]];
+
 				case "4611":
-					data.push(['no-vl-4611', v[1]]);
-					break;
+					return ['no-vl-4611', v[1]];
+
 				case "4612":
-					data.push(['no-vl-4612', v[1]]);
-					break;
+					return ['no-vl-4612', v[1]];
+
 				case "4613":
-					data.push(['no-vl-4613', v[1]]);
-					break;
+					return ['no-vl-4613', v[1]];
+
 				case "4614":
-					data.push(['no-vl-4614', v[1]]);
-					break;
+					return ['no-vl-4614', v[1]];
+
 				case "4615":
-					data.push(['no-vl-4615', v[1]]);
-					break;
+					return ['no-vl-4615', v[1]];
+
 				case "4616":
-					data.push(['no-vl-4616', v[1]]);
-					break;
+					return ['no-vl-4616', v[1]];
+
 				case "4617":
-					data.push(['no-vl-4617', v[1]]);
-					break;
+					return ['no-vl-4617', v[1]];
+
 				case "4618":
-					data.push(['no-vl-4618', v[1]]);
-					break;
+					return ['no-vl-4618', v[1]];
+
 				case "4619":
-					data.push(['no-vl-4619', v[1]]);
-					break;
+					return ['no-vl-4619', v[1]];
+
 				case "4620":
-					data.push(['no-vl-4620', v[1]]);
-					break;
+					return ['no-vl-4620', v[1]];
+
 				case "4621":
-					data.push(['no-vl-4621', v[1]]);
-					break;
+					return ['no-vl-4621', v[1]];
+
 				case "4622":
-					data.push(['no-vl-4622', v[1]]);
-					break;
+					return ['no-vl-4622', v[1]];
+
 				case "4623":
-					data.push(['no-vl-4623', v[1]]);
-					break;
+					return ['no-vl-4623', v[1]];
+
 				case "4624":
-					data.push(['no-vl-4624', v[1]]);
-					break;
+					return ['no-vl-4624', v[1]];
+
 				case "4625":
-					data.push(['no-vl-4625', v[1]]);
-					break;
+					return ['no-vl-4625', v[1]];
+
 				case "4626":
-					data.push(['no-vl-4626', v[1]]);
-					break;
+					return ['no-vl-4626', v[1]];
+
 				case "4627":
-					data.push(['no-vl-4627', v[1]]);
-					break;
+					return ['no-vl-4627', v[1]];
+
 				case "4628":
-					data.push(['no-vl-4628', v[1]]);
-					break;
+					return ['no-vl-4628', v[1]];
+
 				case "4629":
-					data.push(['no-vl-4629', v[1]]);
-					break;
+					return ['no-vl-4629', v[1]];
+
 				case "4630":
-					data.push(['no-vl-4630', v[1]]);
-					break;
+					return ['no-vl-4630', v[1]];
+
 				case "4631":
-					data.push(['no-vl-4631', v[1]]);
-					break;
+					return ['no-vl-4631', v[1]];
+
 				case "4632":
-					data.push(['no-vl-4632', v[1]]);
-					break;
+					return ['no-vl-4632', v[1]];
+
 				case "4633":
-					data.push(['no-vl-4633', v[1]]);
-					break;
+					return ['no-vl-4633', v[1]];
+
 				case "4634":
-					data.push(['no-vl-4634', v[1]]);
-					break;
+					return ['no-vl-4634', v[1]];
+
 				case "4635":
-					data.push(['no-vl-4635', v[1]]);
-					break;
+					return ['no-vl-4635', v[1]];
+
 				case "4636":
-					data.push(['no-vl-4636', v[1]]);
-					break;
+					return ['no-vl-4636', v[1]];
+
 				case "4637":
-					data.push(['no-vl-4637', v[1]]);
-					break;
+					return ['no-vl-4637', v[1]];
+
 				case "4638":
-					data.push(['no-vl-4638', v[1]]);
-					break;
+					return ['no-vl-4638', v[1]];
+
 				case "4639":
-					data.push(['no-vl-4639', v[1]]);
-					break;
+					return ['no-vl-4639', v[1]];
+
 				case "4640":
-					data.push(['no-vl-4640', v[1]]);
-					break;
+					return ['no-vl-4640', v[1]];
+
 				case "4641":
-					data.push(['no-vl-4641', v[1]]);
-					break;
+					return ['no-vl-4641', v[1]];
+
 				case "4642":
-					data.push(['no-vl-4642', v[1]]);
-					break;
+					return ['no-vl-4642', v[1]];
+
 				case "4643":
-					data.push(['no-vl-4643', v[1]]);
-					break;
+					return ['no-vl-4643', v[1]];
+
 				case "4644":
-					data.push(['no-vl-4644', v[1]]);
-					break;
+					return ['no-vl-4644', v[1]];
+
 				case "4645":
-					data.push(['no-vl-4645', v[1]]);
-					break;
+					return ['no-vl-4645', v[1]];
+
 				case "4646":
-					data.push(['no-vl-4646', v[1]]);
-					break;
+					return ['no-vl-4646', v[1]];
+
 				case "4647":
-					data.push(['no-vl-4647', v[1]]);
-					break;
+					return ['no-vl-4647', v[1]];
+
 				case "4648":
-					data.push(['no-vl-4648', v[1]]);
-					break;
+					return ['no-vl-4648', v[1]];
+
 				case "4649":
-					data.push(['no-vl-4649', v[1]]);
-					break;
+					return ['no-vl-4649', v[1]];
+
 				case "4650":
-					data.push(['no-vl-4650', v[1]]);
-					break;
+					return ['no-vl-4650', v[1]];
+
 				case "4651":
-					data.push(['no-vl-4651', v[1]]);
-					break;
+					return ['no-vl-4651', v[1]];
+
 				case "3801":
-					data.push(['no-vt-3801', v[1]]);
-					break;
+					return ['no-vt-3801', v[1]];
+
 				case "3802":
-					data.push(['no-vt-3802', v[1]]);
-					break;
+					return ['no-vt-3802', v[1]];
+
 				case "3803":
-					data.push(['no-vt-3803', v[1]]);
-					break;
+					return ['no-vt-3803', v[1]];
+
 				case "3804":
-					data.push(['no-vt-3804', v[1]]);
-					break;
+					return ['no-vt-3804', v[1]];
+
 				case "3805":
-					data.push(['no-vt-3805', v[1]]);
-					break;
+					return ['no-vt-3805', v[1]];
+
 				case "3806":
-					data.push(['no-vt-3806', v[1]]);
-					break;
+					return ['no-vt-3806', v[1]];
+
 				case "3807":
-					data.push(['no-vt-3807', v[1]]);
-					break;
+					return ['no-vt-3807', v[1]];
+
 				case "3808":
-					data.push(['no-vt-3808', v[1]]);
-					break;
+					return ['no-vt-3808', v[1]];
+
 				case "3811":
-					data.push(['no-vt-3811', v[1]]);
-					break;
+					return ['no-vt-3811', v[1]];
+
 				case "3812":
-					data.push(['no-vt-3812', v[1]]);
-					break;
+					return ['no-vt-3812', v[1]];
+
 				case "3813":
-					data.push(['no-vt-3813', v[1]]);
-					break;
+					return ['no-vt-3813', v[1]];
+
 				case "3814":
-					data.push(['no-vt-3814', v[1]]);
-					break;
+					return ['no-vt-3814', v[1]];
+
 				case "3815":
-					data.push(['no-vt-3815', v[1]]);
-					break;
+					return ['no-vt-3815', v[1]];
+
 				case "3816":
-					data.push(['no-vt-3816', v[1]]);
-					break;
+					return ['no-vt-3816', v[1]];
+
 				case "3817":
-					data.push(['no-vt-3817', v[1]]);
-					break;
+					return ['no-vt-3817', v[1]];
+
 				case "3818":
-					data.push(['no-vt-3818', v[1]]);
-					break;
+					return ['no-vt-3818', v[1]];
+
 				case "3819":
-					data.push(['no-vt-3819', v[1]]);
-					break;
+					return ['no-vt-3819', v[1]];
+
 				case "3820":
-					data.push(['no-vt-3820', v[1]]);
-					break;
+					return ['no-vt-3820', v[1]];
+
 				case "3821":
-					data.push(['no-vt-3821', v[1]]);
-					break;
+					return ['no-vt-3821', v[1]];
+
 				case "3822":
-					data.push(['no-vt-3822', v[1]]);
-					break;
+					return ['no-vt-3822', v[1]];
+
 				case "3823":
-					data.push(['no-vt-3823', v[1]]);
-					break;
+					return ['no-vt-3823', v[1]];
+
 				case "3824":
-					data.push(['no-vt-3824', v[1]]);
-					break;
+					return ['no-vt-3824', v[1]];
+
 				case "3825":
-					data.push(['no-vt-3825', v[1]]);
-					break;
+				return ['no-vt-3825', v[1]];
+
 
                 default:
-                    break;
+                return;
             }
         }
 		})();
@@ -3364,13 +3381,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart9657102" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart1488376" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart9657102" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart9657102" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart1488376" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart1488376" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3383,9 +3400,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-9657102" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-1488376" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table9657102" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table1488376" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3394,16 +3411,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-9657102" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-1488376" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-9657102">
+                                 id="combobox-1488376">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-9657102"
-                                       aria-controls="table9657102">
+                                       aria-labelledby="combobox-label-1488376"
+                                       aria-controls="table1488376">
 
                             </div>
 
@@ -3412,22 +3429,22 @@
 
                     
 
-<div id="dropdown-9657102" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-9657102-legend">
+<div id="dropdown-1488376" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-1488376-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-9657102-label"
-                id="dropdown-9657102-dropdown-button">
+                aria-labelledby="dropdown-1488376-label"
+                id="dropdown-1488376-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-9657102-label">
+            aria-labelledby="dropdown-1488376-label">
         </ul>
     </div>
 
@@ -3457,10 +3474,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91823" === "" ? null : "/api/chartdata/api/91823";
-                        var chartId = "chart" + 9657102;
+                        var chartId = "chart" + 1488376;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table9657102"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table1488376"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3473,8 +3490,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart9657102 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart9657102 .c-loading").addClass("fhi-hidden");
+                                    $('#chart1488376 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart1488376 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3499,7 +3516,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart9657102 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart1488376 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3513,13 +3530,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart62365357" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart39066419" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart62365357" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart62365357" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart39066419" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart39066419" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3532,9 +3549,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-62365357" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-39066419" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table62365357" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table39066419" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3543,16 +3560,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-62365357" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-39066419" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-62365357">
+                                 id="combobox-39066419">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-62365357"
-                                       aria-controls="table62365357">
+                                       aria-labelledby="combobox-label-39066419"
+                                       aria-controls="table39066419">
 
                             </div>
 
@@ -3561,22 +3578,22 @@
 
                     
 
-<div id="dropdown-62365357" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-62365357-legend">
+<div id="dropdown-39066419" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-39066419-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-62365357-label"
-                id="dropdown-62365357-dropdown-button">
+                aria-labelledby="dropdown-39066419-label"
+                id="dropdown-39066419-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-62365357-label">
+            aria-labelledby="dropdown-39066419-label">
         </ul>
     </div>
 
@@ -3606,10 +3623,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91829" === "" ? null : "/api/chartdata/api/91829";
-                        var chartId = "chart" + 62365357;
+                        var chartId = "chart" + 39066419;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table62365357"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table39066419"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3622,8 +3639,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart62365357 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart62365357 .c-loading").addClass("fhi-hidden");
+                                    $('#chart39066419 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart39066419 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3648,7 +3665,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart62365357 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart39066419 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3662,13 +3679,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart8372608" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart32881563" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart8372608" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart8372608" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart32881563" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart32881563" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3681,9 +3698,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-8372608" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-32881563" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table8372608" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table32881563" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3692,16 +3709,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-8372608" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-32881563" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-8372608">
+                                 id="combobox-32881563">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-8372608"
-                                       aria-controls="table8372608">
+                                       aria-labelledby="combobox-label-32881563"
+                                       aria-controls="table32881563">
 
                             </div>
 
@@ -3710,22 +3727,22 @@
 
                     
 
-<div id="dropdown-8372608" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-8372608-legend">
+<div id="dropdown-32881563" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-32881563-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-8372608-label"
-                id="dropdown-8372608-dropdown-button">
+                aria-labelledby="dropdown-32881563-label"
+                id="dropdown-32881563-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-8372608-label">
+            aria-labelledby="dropdown-32881563-label">
         </ul>
     </div>
 
@@ -3755,10 +3772,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91830" === "" ? null : "/api/chartdata/api/91830";
-                        var chartId = "chart" + 8372608;
+                        var chartId = "chart" + 32881563;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table8372608"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table32881563"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3771,8 +3788,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart8372608 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart8372608 .c-loading").addClass("fhi-hidden");
+                                    $('#chart32881563 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart32881563 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3797,7 +3814,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart8372608 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart32881563 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3903,7 +3920,7 @@ History                                    </h2>
 
 
                 <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="qnp0VYhsC6GO7s1Zd0tmweLT-uLqudUCNOdOIRgzLlHcqIswhKxxUlBfoQJpB_6X4btDMNlHsE8kl2ZtkKnu9PIXB4jnlJ0rgdR_RwQUB3c1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                        <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="d6Qooq7LZNkOd6dmz_T6Kv63n7nPQjngG7aaTI-RbvBGZirhF8FGbUDrma0-XgIyTh35NRGsdEsb-rxlMDvHiOesTRPGhGueyEfISXSdguU1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                        <div class="always-visible">
                             <h3>Did you find what you were looking for?</h3>
                             <div class="answer-group">
                                 <button class="callBtn" onclick="positive.call(this); return false;">
@@ -3974,7 +3991,7 @@ History                                    </h2>
                         
 
 <a href="/en/qk/systematic-reviews-hta/norwegian-covid-19-research/" class="fhi-link--block">
-    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow">
+    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow" style="">
             <div class="fhi-block__image">
                 
 
@@ -4013,7 +4030,7 @@ History                                    </h2>
                         
 
 <a href="/en/id/vaccines/coronavirus-immunisation-programme/development-of-covid-19-vaccine/" class="fhi-link--block">
-    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow">
+    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow" style="">
             <div class="fhi-block__image">
                 
 
@@ -4052,7 +4069,7 @@ History                                    </h2>
                         
 
 <a href="/en/qk/systematic-reviews-hta/map/" class="fhi-link--block">
-    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow">
+    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow" style="">
             <div class="fhi-block__image">
                 
 
@@ -4091,7 +4108,7 @@ History                                    </h2>
                         
 
 <a href="/en/id/infectious-diseases/coronavirus/emergency-preparedness-register-for-covid-19/" class="fhi-link--block">
-    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow">
+    <div class="fhi-block no-color fhi-border-radius--M fhi-block--shadow" style="">
             <div class="fhi-block__image">
                 <img src='/Static/images/onethirdwidth.jpg' alt='No image' />
             </div>
@@ -4224,7 +4241,7 @@ History                                    </h2>
 
             <div class="page-type">
 
-                1.0.0.0 - RD501AC5521942 - Article
+                1.0.0.0 - RD00155D62AEB5 - Article
             </div>
         </div>
     </div>
