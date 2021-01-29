@@ -117,13 +117,15 @@ class SARSCOV2ECDC(COVIDScrapper):
         if el:
             text = el[0].xpath('.//h1/span/text()')[0]
 
-        re_dt = re.compile(r'as of (.*)')
+        # re_dt = re.compile(r'as of (.*)')
+        re_dt = re.compile(r'as of .* (\d+\s\w+\s\d+)')
         re_dt_res = re_dt.findall(el[0].xpath('.//h1/span/text()')[0])
         if not re_dt_res:
             raise Exception("Could not find datetime on the web page")
 
         # self.dt = dateutil.parser.parse(re_dt_res[0], dayfirst=True)
-        self.dt = datetime.datetime.strptime(re_dt_res[0] + " 1", "week %W %Y %w")
+        # self.dt = datetime.datetime.strptime(re_dt_res[0] + " 1", "week %W %Y %w")
+        self.dt = pd.to_datetime(re_dt_res[0])
 
     def add_country_to_df(self):
 
