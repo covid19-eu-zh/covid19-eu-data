@@ -805,7 +805,7 @@
 
 <article>
 
-<div id="block-64341240" class="fhi-subscription-container fhi-modal fhi-hidden">
+<div id="block-11643036" class="fhi-subscription-container fhi-modal fhi-hidden">
     <div class="fhi-modal-header fhi-p-M@LG">
         <div class="close-btn">
             <button aria-labelledby="close-btn-label" type="button" class="icon-x " aria-label="Close"></button>
@@ -844,8 +844,8 @@
                     <div class="feedback"></div>
                 </fieldset>
             <div class="fhi-input-group">
-                <label class="fhi-visually-hidden" for="64341240-email">Email</label>
-                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="64341240-email" name="email" />
+                <label class="fhi-visually-hidden" for="11643036-email">Email</label>
+                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="11643036-email" name="email" />
                 <p id="email-info">The email address you register will only be used to send you these alerts. You can cancel and delete your email address at any time by following the link in the alerts you receive. <br /><a class="fhi-underline" target="_blank" rel="noreferrer noopener" href="https://www.fhi.no/om/fhi/personvernerklaring/">Read more about the privacy policy for fhi.no</a></p>
             </div>
             <div>
@@ -879,7 +879,7 @@
         }
 
         window.addEventListener("load", function () {
-            new SubscriptionRegistration(document.getElementById("block-64341240"), "89256", "ArticlePage", translations);
+            new SubscriptionRegistration(document.getElementById("block-11643036"), "89256", "ArticlePage", translations);
         })
     </script>
 </div>
@@ -1019,7 +1019,7 @@
 <h2><strong>Key figures for Norway</strong></h2>
 <p>Total number in Norway since February 2020 (cumulative figures):</p>
 
-<div class="fhi-row" id="kfr51365739">
+<div class="fhi-row" id="kfr982683">
     <div class="fhi-col">
         <div class="c-key-figure-row">
             <div class="c-key-figure-row__border">
@@ -1110,7 +1110,7 @@
                 if (data && typeof data.figures !== "undefined") {
                     data.figures.forEach(function (figure) {
                             if (figure && typeof figure.key !== "undefined") {
-                                var wrapper = document.querySelector('div#kfr51365739 [data-json-key="' + figure.key + '"]');
+                                var wrapper = document.querySelector('div#kfr982683 [data-json-key="' + figure.key + '"]');
                                 if (wrapper) {
                                     if (typeof figure.number != "undefined") {
                                         wrapper.querySelector('[data-key-figure-number]').innerText = figure.number;
@@ -1131,11 +1131,11 @@
                                 }
                             }
                        });
-                        aria.Utils.removeClass(document.querySelector("#kfr51365739 .c-key-figure-row__grid"), "fhi-hidden");
-                        aria.Utils.addClass(document.querySelector("#kfr51365739 .c-loading"), "fhi-hidden");
-                        utils.formatNumbers("#kfr51365739 [data-key-figure-number]");
-                        utils.formatNumbers("#kfr51365739 [data-key-figure-change]");
-                        utils.fitTextToContainer("#kfr51365739 .c-key-figure__number", "[data-key-figure-number]");
+                        aria.Utils.removeClass(document.querySelector("#kfr982683 .c-key-figure-row__grid"), "fhi-hidden");
+                        aria.Utils.addClass(document.querySelector("#kfr982683 .c-loading"), "fhi-hidden");
+                        utils.formatNumbers("#kfr982683 [data-key-figure-number]");
+                        utils.formatNumbers("#kfr982683 [data-key-figure-change]");
+                        utils.fitTextToContainer("#kfr982683 .c-key-figure__number", "[data-key-figure-number]");
 
                     }
             })
@@ -1148,13 +1148,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart3084642" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart409965" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart3084642" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart3084642" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart409965" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart409965" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -1167,9 +1167,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-3084642" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-409965" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table3084642" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table409965" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1178,16 +1178,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-3084642" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-409965" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-3084642">
+                                 id="combobox-409965">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-3084642"
-                                       aria-controls="table3084642">
+                                       aria-labelledby="combobox-label-409965"
+                                       aria-controls="table409965">
 
                             </div>
 
@@ -1196,22 +1196,22 @@
 
                     
 
-<div id="dropdown-3084642" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-3084642-legend">
+<div id="dropdown-409965" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-409965-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-3084642-label"
-                id="dropdown-3084642-dropdown-button">
+                aria-labelledby="dropdown-409965-label"
+                id="dropdown-409965-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-3084642-label">
+            aria-labelledby="dropdown-409965-label">
         </ul>
     </div>
 
@@ -1241,10 +1241,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/90789" === "" ? null : "/api/chartdata/api/90789";
-                        var chartId = "chart" + 3084642;
+                        var chartId = "chart" + 409965;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table3084642"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table409965"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1257,8 +1257,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart3084642 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart3084642 .c-loading").addClass("fhi-hidden");
+                                    $('#chart409965 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart409965 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1283,7 +1283,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart3084642 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart409965 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1297,27 +1297,27 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart8198626" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart22392066" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="min-height: 46px">
 
 
-<div id="location8198626" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="location8198626-legend">
+<div id="location22392066" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="location22392066-legend">
         County selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="location8198626-label"
-                id="location8198626-dropdown-button">
+                aria-labelledby="location22392066-label"
+                id="location22392066-dropdown-button">
             Select county
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="location8198626-label">
+            aria-labelledby="location22392066-label">
         </ul>
     </div>
 
@@ -1325,11 +1325,11 @@
 
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart8198626" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart8198626" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart22392066" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart22392066" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
 
-<label id="toggle8198626" class="fhi-toggle-switch fhi-hidden timegranularity">
+<label id="toggle22392066" class="fhi-toggle-switch fhi-hidden timegranularity">
     <span class="fhi-visually-hidden">County selector</span>
     <input tabindex="0" type="checkbox" checked="checked" />
     <span class="fhi-slider"></span>
@@ -1350,9 +1350,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-8198626" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-22392066" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table8198626" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table22392066" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1361,16 +1361,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-8198626" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-22392066" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-8198626">
+                                 id="combobox-22392066">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-8198626"
-                                       aria-controls="table8198626">
+                                       aria-labelledby="combobox-label-22392066"
+                                       aria-controls="table22392066">
 
                             </div>
 
@@ -1379,22 +1379,22 @@
 
                     
 
-<div id="dropdown-8198626" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-8198626-legend">
+<div id="dropdown-22392066" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-22392066-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-8198626-label"
-                id="dropdown-8198626-dropdown-button">
+                aria-labelledby="dropdown-22392066-label"
+                id="dropdown-22392066-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-8198626-label">
+            aria-labelledby="dropdown-22392066-label">
         </ul>
     </div>
 
@@ -1424,10 +1424,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/90814" === "" ? null : "/api/chartdata/api/90814";
-                        var chartId = "chart" + 8198626;
+                        var chartId = "chart" + 22392066;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table8198626"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table22392066"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1450,19 +1450,19 @@
                                 $.getCachedJSON('/Static/templates/js/highcharts/data/counties.json').done(function (d) {
                                     d.sort(chart.sortData());
                                     var data = [{ name: "All counties", id: 0 }].concat(d);
-                                    initDropdown("#location8198626", data, function (val) {
+                                    initDropdown("#location22392066", data, function (val) {
                                         var data = val > 0 ? val : "";
                                         chart.reload(["location", data]);
                                     });
-                                    $("#location" + 8198626).removeClass("fhi-hidden");
+                                    $("#location" + 22392066).removeClass("fhi-hidden");
                                 });
                                 
 
                             
                                 chart.load(null, function () {
-                                    $('#chart8198626 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart8198626 .c-loading").addClass("fhi-hidden");
-                                $("#toggle" + 8198626).removeClass("fhi-hidden");
+                                    $('#chart22392066 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart22392066 .c-loading").addClass("fhi-hidden");
+                                $("#toggle" + 22392066).removeClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1487,7 +1487,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart8198626 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart22392066 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1501,27 +1501,27 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart698122" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart46447044" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="">
                         
 
-<div id="range698122" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="range698122-legend">
+<div id="range46447044" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="range46447044-legend">
         Week selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="range698122-label"
-                id="range698122-dropdown-button">
+                aria-labelledby="range46447044-label"
+                id="range46447044-dropdown-button">
             Choose week
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="range698122-label">
+            aria-labelledby="range46447044-label">
         </ul>
     </div>
 
@@ -1529,8 +1529,8 @@
 
 
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart698122" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart698122" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart46447044" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart46447044" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -1543,9 +1543,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-698122" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-46447044" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table698122" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table46447044" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1554,16 +1554,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-698122" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-46447044" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-698122">
+                                 id="combobox-46447044">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-698122"
-                                       aria-controls="table698122">
+                                       aria-labelledby="combobox-label-46447044"
+                                       aria-controls="table46447044">
 
                             </div>
 
@@ -1572,22 +1572,22 @@
 
                     
 
-<div id="dropdown-698122" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-698122-legend">
+<div id="dropdown-46447044" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-46447044-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-698122-label"
-                id="dropdown-698122-dropdown-button">
+                aria-labelledby="dropdown-46447044-label"
+                id="dropdown-46447044-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-698122-label">
+            aria-labelledby="dropdown-46447044-label">
         </ul>
     </div>
 
@@ -1617,10 +1617,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91295" === "" ? null : "/api/chartdata/api/91295";
-                        var chartId = "chart" + 698122;
+                        var chartId = "chart" + 46447044;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table698122"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table46447044"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1642,18 +1642,18 @@
                                             }
                                             return { id: d, name: d };
                                         });
-                                        initDropdown("#range698122", range, function (val) {
+                                        initDropdown("#range46447044", range, function (val) {
                                             chart.reload(["yearweek", val]);
                                         });
-                                        $("#range" + 698122).removeClass("fhi-hidden");
+                                        $("#range" + 46447044).removeClass("fhi-hidden");
                                     }
                                 })
 
                                 
 
                                 chart.load(null, function () {
-                                    $('#chart698122 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart698122 .c-loading").addClass("fhi-hidden");
+                                    $('#chart46447044 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart46447044 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1678,7 +1678,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart698122 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart46447044 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1692,21 +1692,21 @@
 
 <div class="fhi-row fhi-row--fill"><div class="fhi-col">
 
-<figure id="map3420101" class="highmaps fhi-fill-screen--mobile">
+<figure id="map35688237" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart3420101" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart3420101" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart35688237" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart35688237" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer3420101" class="highchart-graph"></div>
-                <div id="table-container-3420101" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer35688237" class="highchart-graph"></div>
+                <div id="table-container-35688237" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table3420101" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table35688237" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Number of reported COVID-19 cases by county</caption>
                         </table>
                     </figure>
@@ -1773,7 +1773,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer3420101', {
+             var chart = Highcharts.mapChart('mapcontainer35688237', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -1860,7 +1860,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 3420101 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 35688237 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -1876,35 +1876,35 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map3420101 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map35688237 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map3420101 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map3420101 .c-loading").addClass("fhi-hidden");
+            $("#map35688237 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map35688237 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
 </script>
 </div><div class="fhi-col">
 
-<figure id="map39833091" class="highmaps fhi-fill-screen--mobile">
+<figure id="map57450365" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart39833091" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart39833091" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart57450365" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart57450365" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer39833091" class="highchart-graph"></div>
-                <div id="table-container-39833091" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer57450365" class="highchart-graph"></div>
+                <div id="table-container-57450365" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table39833091" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table57450365" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Reported rate by 100 000 inhabitants</caption>
                         </table>
                     </figure>
@@ -1971,7 +1971,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer39833091', {
+             var chart = Highcharts.mapChart('mapcontainer57450365', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -2058,7 +2058,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 39833091 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 57450365 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -2074,14 +2074,14 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map39833091 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map57450365 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map39833091 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map39833091 .c-loading").addClass("fhi-hidden");
+            $("#map57450365 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map57450365 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
@@ -2091,20 +2091,20 @@
 <h2>By municipality</h2>
 <p>The map shows the number of reported COVID-19 cases by municipality.</p>
 
-<figure id="map29550648" class="highmaps highmaps--municipality fhi-fill-screen--mobile">
+<figure id="map18963041" class="highmaps highmaps--municipality fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart29550648" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart29550648" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart18963041" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart18963041" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer29550648" class="highchart-graph"></div>
-                <div id="table-container-29550648" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="mapcontainer18963041" class="highchart-graph"></div>
+                <div id="table-container-18963041" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                     <figure class="figure table">
-                        <table id="table29550648" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table18963041" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center">Number of reported cases by municipality</caption>
 
                         </table>
@@ -2113,16 +2113,16 @@
                     <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                         <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                            <label id="combobox-label-29550648" class="combobox-label fhi-visually-hidden">
+                            <label id="combobox-label-18963041" class="combobox-label fhi-visually-hidden">
                                 Filter entries
                             </label>
                             <div class="fhi-combobox-wrapper">
                                 <div role="combobox" class="fhi-combobox-input"
-                                     id="combobox-29550648">
+                                     id="combobox-18963041">
                                     <input data-filter type="text"
                                            placeholder="Filter"
-                                           aria-labelledby="combobox-label-29550648"
-                                           aria-controls="table29550648">
+                                           aria-labelledby="combobox-label-18963041"
+                                           aria-controls="table18963041">
 
                                 </div>
 
@@ -2131,22 +2131,22 @@
 
                         
 
-<div id="dropdown-29550648" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-29550648-legend">
+<div id="dropdown-18963041" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-18963041-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-29550648-label"
-                id="dropdown-29550648-dropdown-button">
+                aria-labelledby="dropdown-18963041-label"
+                id="dropdown-18963041-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-29550648-label">
+            aria-labelledby="dropdown-18963041-label">
         </ul>
     </div>
 
@@ -2189,7 +2189,7 @@
 				$.getCachedScript('/Static/templates/js/highcharts/data/no-all-all-split_v2.js').done(function () {
 
 
-               var chart = Highcharts.mapChart('mapcontainer29550648', {
+               var chart = Highcharts.mapChart('mapcontainer18963041', {
                     chart: {
                         map: 'countries/no/no-all-all-split',
 								 height: '84.4%'
@@ -2280,7 +2280,7 @@
                 if (lastModified !== undefined) {
 					lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                     lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-					$("#mapcontainer" + 29550648 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+					$("#mapcontainer" + 18963041 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
 				}
 
 				 
@@ -2299,14 +2299,14 @@
 					return [p.number,p.name,p.value]
                 });
 
-                var table = new DynamicTable(document.querySelector("#map29550648 table"), { headings: ["Municipality no.", "Municipality", "Number"], data: dataFromMap }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map18963041 table"), { headings: ["Municipality no.", "Municipality", "Number"], data: dataFromMap }, { translations: translations });
 				  new Pagination(table, translations);
 				  if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
 				 
 
-                $("#map29550648 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-                $("#map29550648 .c-loading").addClass("fhi-hidden");
+                $("#map18963041 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+                $("#map18963041 .c-loading").addClass("fhi-hidden");
 
             });
 	}
@@ -3398,13 +3398,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart40970403" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart47799808" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart40970403" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart40970403" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart47799808" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart47799808" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3417,9 +3417,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-40970403" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-47799808" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table40970403" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table47799808" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3428,16 +3428,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-40970403" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-47799808" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-40970403">
+                                 id="combobox-47799808">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-40970403"
-                                       aria-controls="table40970403">
+                                       aria-labelledby="combobox-label-47799808"
+                                       aria-controls="table47799808">
 
                             </div>
 
@@ -3446,22 +3446,22 @@
 
                     
 
-<div id="dropdown-40970403" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-40970403-legend">
+<div id="dropdown-47799808" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-47799808-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-40970403-label"
-                id="dropdown-40970403-dropdown-button">
+                aria-labelledby="dropdown-47799808-label"
+                id="dropdown-47799808-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-40970403-label">
+            aria-labelledby="dropdown-47799808-label">
         </ul>
     </div>
 
@@ -3491,10 +3491,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91823" === "" ? null : "/api/chartdata/api/91823";
-                        var chartId = "chart" + 40970403;
+                        var chartId = "chart" + 47799808;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table40970403"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table47799808"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3507,8 +3507,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart40970403 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart40970403 .c-loading").addClass("fhi-hidden");
+                                    $('#chart47799808 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart47799808 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3533,7 +3533,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart40970403 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart47799808 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3547,13 +3547,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart44343901" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart28295449" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart44343901" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart44343901" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart28295449" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart28295449" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3566,9 +3566,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-44343901" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-28295449" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table44343901" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table28295449" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3577,16 +3577,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-44343901" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-28295449" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-44343901">
+                                 id="combobox-28295449">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-44343901"
-                                       aria-controls="table44343901">
+                                       aria-labelledby="combobox-label-28295449"
+                                       aria-controls="table28295449">
 
                             </div>
 
@@ -3595,22 +3595,22 @@
 
                     
 
-<div id="dropdown-44343901" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-44343901-legend">
+<div id="dropdown-28295449" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-28295449-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-44343901-label"
-                id="dropdown-44343901-dropdown-button">
+                aria-labelledby="dropdown-28295449-label"
+                id="dropdown-28295449-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-44343901-label">
+            aria-labelledby="dropdown-28295449-label">
         </ul>
     </div>
 
@@ -3640,10 +3640,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91829" === "" ? null : "/api/chartdata/api/91829";
-                        var chartId = "chart" + 44343901;
+                        var chartId = "chart" + 28295449;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table44343901"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table28295449"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3656,8 +3656,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart44343901 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart44343901 .c-loading").addClass("fhi-hidden");
+                                    $('#chart28295449 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart28295449 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3682,7 +3682,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart44343901 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart28295449 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3696,13 +3696,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart5264478" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart37617683" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart5264478" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart5264478" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart37617683" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart37617683" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3715,9 +3715,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-5264478" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-37617683" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table5264478" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table37617683" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3726,16 +3726,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-5264478" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-37617683" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-5264478">
+                                 id="combobox-37617683">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-5264478"
-                                       aria-controls="table5264478">
+                                       aria-labelledby="combobox-label-37617683"
+                                       aria-controls="table37617683">
 
                             </div>
 
@@ -3744,22 +3744,22 @@
 
                     
 
-<div id="dropdown-5264478" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-5264478-legend">
+<div id="dropdown-37617683" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-37617683-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-5264478-label"
-                id="dropdown-5264478-dropdown-button">
+                aria-labelledby="dropdown-37617683-label"
+                id="dropdown-37617683-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-5264478-label">
+            aria-labelledby="dropdown-37617683-label">
         </ul>
     </div>
 
@@ -3789,10 +3789,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91830" === "" ? null : "/api/chartdata/api/91830";
-                        var chartId = "chart" + 5264478;
+                        var chartId = "chart" + 37617683;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table5264478"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table37617683"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3805,8 +3805,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart5264478 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart5264478 .c-loading").addClass("fhi-hidden");
+                                    $('#chart37617683 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart37617683 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3831,7 +3831,7 @@
 </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart5264478 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart37617683 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3937,7 +3937,7 @@ History                                    </h2>
 
 
                     <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="AggRWbqFezft833q8xJfxb_Mc521zhbN18U0TVIpgJINlp86lymw8qKbJQ8RqH-CbLKRHCKILJTvh_KpD33Qj1iUirNkr1lR-stWEAvEchw1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="Vftx55YWyKUU49tzrZx3kDa3lJ6UGcsWTv_gh4V9WBpVBVXHN8CpQZiC2-FJEvDg_tKCD4N59sO3YVR0SjWmOGbeAAQmnD2tsftEYFXdPvg1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
                                 <h3>Did you find what you were looking for?</h3>
                                 <div class="answer-group">
                                     <button class="callBtn" onclick="positive.call(this); return false;">
@@ -4246,7 +4246,7 @@ History                                    </h2>
 
             <div class="page-type">
 
-                1.0.0.0 - RD2818788C60E3 - Article
+                1.0.0.0 - RD00155D620271 - Article
             </div>
         </div>
     </div>
