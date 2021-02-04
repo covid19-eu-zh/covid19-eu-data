@@ -44,8 +44,15 @@ class SARSCOV2PT(COVIDScrapper):
 
         self.df["datetime"] = pd.to_datetime(datetime.date.today())
 
-        self.df[['nuts_2', 'nuts_3', 'population', 'lau', 'cases', 'datetime']]
 
+        keep_cols = ['population', 'lau', 'cases', 'datetime']
+        if 'nuts_2' in self.df.columns:
+            keep_cols.append('nuts_2')
+
+        if 'nuts_3' in self.df.columns:
+            keep_cols.append('nuts_3')
+
+        self.df[keep_cols]
 
         logger.info("se cases:\n", self.df)
 

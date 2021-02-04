@@ -48,6 +48,8 @@ class SARSCOV2CZ(COVIDScrapper):
             )
 
         data = json.loads(text)
+        if isinstance(data, list):
+            data = data[0]
 
         self.df = pd.DataFrame(data.get('values'))
         self.df.drop('color', axis=1, inplace=True)
