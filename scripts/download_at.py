@@ -133,6 +133,7 @@ class SARSCOV2AT(COVIDScrapper):
         self.df["cases"] = self.df.cases.astype(int)
         # self.df["hospitalized"] = self.df.hospitalized.astype(int)
         # self.df["intensive_case"] = self.df.intensive_case.astype(int)
+        self.df["deaths"] = self.df.deaths.apply(lambda x: re.sub('[^0-9]','', x) if isinstance(x, str) else x)
 
         logger.info("cases:\n", self.df)
 
