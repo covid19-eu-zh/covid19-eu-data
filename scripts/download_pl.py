@@ -123,7 +123,7 @@ class SARSCOV2PL(COVIDScrapper):
             raise Exception(e)
 
         data = req.json().get('features')[0].get('attributes').get('DATA_SHOW')
-        dt = pd.to_datetime(data)
+        dt = pd.to_datetime(data, dayfirst=True)
         self.dt = datetime.datetime(
             dt.year, dt.month, dt.day
         )
