@@ -20,7 +20,8 @@ logger = logging.getLogger("covid-eu-data.download.pl")
 
 REPORT_URL = "https://covid19-rcb-info.hub.arcgis.com/"
 DATA_DATE_URL = "https://services9.arcgis.com/RykcEgwHWuMsJXPj/arcgis/rest/services/global_corona_actual_widok2/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=1&resultType=standard&cacheHint=true"
-CSV_DATA_URL = "https://arcgis.com/sharing/rest/content/items/829ec9ff36bc45a88e1245a82fff4ee0/data"
+# CSV_DATA_URL = "https://arcgis.com/sharing/rest/content/items/829ec9ff36bc45a88e1245a82fff4ee0/data"
+CSV_DATA_URL = "https://arcgis.com/sharing/rest/content/items/153a138859bb4c418156642b5b74925b/data"
 DAILY_FOLDER = os.path.join("dataset", "daily", "pl")
 
 
@@ -80,6 +81,7 @@ class SARSCOV2PL(COVIDScrapper):
 
         df = pd.read_csv(io.StringIO(self.req.text), sep=';')
 
+
         if df.empty:
             raise Exception("Did not find data on webpage")
 
@@ -112,22 +114,29 @@ class SARSCOV2PL(COVIDScrapper):
         self.df['cases'] = self.df['cases'].astype(str).str.replace(' ', '')
         self.df = self.df[set(col_map.values()).intersection(set(self.df.columns))]
 
+        if df['stan_rekordu_na'].unique():
+            self.dt = pd.to_datetime(df['stan_rekordu_na'].unique()[0])
+        else:
+            raise ValueError('PL date column stan_rekordu_na has no value')
+
         logger.info("cases:\n", self.df)
 
 
     def extract_datetime(self):
         """Get datetime of dataset
         """
-        try:
-            req = get_response(DATA_DATE_URL)
-        except Exception as e:
-            raise Exception(e)
+        # try:
+        #     req = get_response(DATA_DATE_URL)
+        # except Exception as e:
+        #     raise Exception(e)
 
-        data = req.json().get('features')[0].get('attributes').get('DATA_SHOW')
-        dt = pd.to_datetime(data, dayfirst=True)
-        self.dt = datetime.datetime(
-            dt.year, dt.month, dt.day
-        )
+        # data = req.json().get('features')[0].get('attributes').get('DATA_SHOW')
+        # dt = pd.to_datetime(data, dayfirst=True)
+        # self.dt = datetime.datetime(
+        #     dt.year, dt.month, dt.day
+        # )
+        if not self.dt:
+            raise Exception("self.dt is null")
 
     def post_processing(self):
 
