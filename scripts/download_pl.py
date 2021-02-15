@@ -192,6 +192,11 @@ if __name__ == "__main__":
     #     )
     #     file_transformation.workflow()
     CACHE_FOLDER = os.path.join("cache", "daily", "pl")
+    try:
+        os.makedirs(CACHE_FOLDER)
+    except FileExistsError as e:
+        logger.info(f"{CACHE_FOLDER} already exists, no need to create folder")
+        pass
 
     monthly_zip_path = os.path.join(CACHE_FOLDER, "monthly.zip")
 
