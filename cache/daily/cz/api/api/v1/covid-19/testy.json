@@ -1,5 +1,5 @@
 {
-    "modified": "2021-02-21T07:46:44+01:00",
+    "modified": "2021-02-22T07:46:48+01:00",
     "source": "https:\/\/onemocneni-aktualne.mzcr.cz\/",
     "data": [
         {
@@ -2727,17 +2727,24 @@
         },
         {
             "datum": "19.02.2021",
-            "prirustkovy_pocet_testu": 35842,
-            "kumulativni_pocet_testu": 5111360,
-            "prirustkovy_pocet_prvnich_testu": 35842,
-            "kumulativni_pocet_prvnich_testu": 4647352
+            "prirustkovy_pocet_testu": 36261,
+            "kumulativni_pocet_testu": 5111779,
+            "prirustkovy_pocet_prvnich_testu": 36261,
+            "kumulativni_pocet_prvnich_testu": 4647771
         },
         {
             "datum": "20.02.2021",
-            "prirustkovy_pocet_testu": 17596,
-            "kumulativni_pocet_testu": 5128956,
-            "prirustkovy_pocet_prvnich_testu": 17596,
-            "kumulativni_pocet_prvnich_testu": 4664948
+            "prirustkovy_pocet_testu": 18787,
+            "kumulativni_pocet_testu": 5130566,
+            "prirustkovy_pocet_prvnich_testu": 18787,
+            "kumulativni_pocet_prvnich_testu": 4666558
+        },
+        {
+            "datum": "21.02.2021",
+            "prirustkovy_pocet_testu": 9302,
+            "kumulativni_pocet_testu": 5139868,
+            "prirustkovy_pocet_prvnich_testu": 9302,
+            "kumulativni_pocet_prvnich_testu": 4675860
         }
     ]
 }
