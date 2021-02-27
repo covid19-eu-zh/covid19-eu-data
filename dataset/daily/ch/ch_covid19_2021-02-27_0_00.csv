@@ -1,9 +1,10 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,,,547245.0,9961.0,324008.0,715.0,197.0,2021-02-27
+CH,Zug,ZG,6488.0,113.0,,6.0,2.0,2021-02-27
+CH,Berne,BE,53429.0,993.0,,,,2021-02-27
+CH,,,547371.0,9963.0,324008.0,715.0,197.0,2021-02-27
 CH,Aargau,AG,,,,,,2021-02-27
 CH,Appenzell Innerrhoden,AI,,,,,,2021-02-27
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-02-27
-CH,Berne,BE,,,,,,2021-02-27
 CH,Basel-Landschaft,BL,,,,,,2021-02-27
 CH,Basel-Stadt,BS,,,,,,2021-02-27
 CH,Fribourg,FR,,,,,,2021-02-27
@@ -24,5 +25,4 @@ CH,Ticino,TI,,,,,,2021-02-27
 CH,Uri,UR,,,,,,2021-02-27
 CH,Vaud,VD,,,,,,2021-02-27
 CH,Valais,VS,,,,,,2021-02-27
-CH,Zug,ZG,,,,,,2021-02-27
 CH,Zürich,ZH,,,,,,2021-02-27
