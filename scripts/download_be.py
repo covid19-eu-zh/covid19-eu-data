@@ -173,7 +173,8 @@ class SARSCOV2BE(COVIDScrapper):
         )
         df_deaths = df_deaths.loc[df_deaths.AGEGROUP.isna()]
         df_deaths.DEATHS = df_deaths.DEATHS.apply(lambda x: float(x) if x else x)
-        df_deaths.DATE = df_deaths.DATE.apply(lambda x: dateutil.parser.parse(x) if x else None)
+        # df_deaths.DATE = df_deaths.DATE.apply(lambda x: dateutil.parser.parse(x) if x else None)
+        df_deaths.DATE = pd.to_datetime(df_deaths.DATE, dayfirst=False)
         df_deaths.dropna(subset=['DATE'], inplace=True)
         df_deaths = df_deaths[
             ['DATE', 'REGION', 'DEATHS']
