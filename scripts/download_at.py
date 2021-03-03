@@ -1,3 +1,4 @@
+# Beware that SSL is strict here
 import logging
 import os
 import re

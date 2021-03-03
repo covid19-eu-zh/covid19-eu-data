@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: mac-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout current repo
