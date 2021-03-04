@@ -1,12 +1,16 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Uri,UR,1816.0,39.0,,2.0,,2021-03-04
+CH,Schaffhausen,SH,3640.0,68.0,,7.0,0.0,2021-03-04
 CH,Zug,ZG,6548.0,113.0,,6.0,1.0,2021-03-04
 CH,Schwyz,SZ,9625.0,214.0,,,,2021-03-04
-CH,,,552201.0,10015.0,329256.0,779.0,182.0,2021-03-04
+CH,Solothurn,SO,13737.0,254.0,,13.0,7.0,2021-03-04
+CH,Thurgau,TG,15151.0,358.0,,8.0,8.0,2021-03-04
+CH,Ticino,TI,28189.0,958.0,,54.0,6.0,2021-03-04
+CH,Berne,BE,53873.0,998.0,,,,2021-03-04
+CH,,,552425.0,10018.0,329256.0,783.0,179.0,2021-03-04
 CH,Aargau,AG,,,,,,2021-03-04
 CH,Appenzell Innerrhoden,AI,,,,,,2021-03-04
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-03-04
-CH,Berne,BE,,,,,,2021-03-04
 CH,Basel-Landschaft,BL,,,,,,2021-03-04
 CH,Basel-Stadt,BS,,,,,,2021-03-04
 CH,Fribourg,FR,,,,,,2021-03-04
@@ -19,10 +23,6 @@ CH,Neuchâtel,NE,,,,,,2021-03-04
 CH,Nidwalden,NW,,,,,,2021-03-04
 CH,Obwalden,OW,,,,,,2021-03-04
 CH,St. Gallen,SG,,,,,,2021-03-04
-CH,Schaffhausen,SH,,,,,,2021-03-04
-CH,Solothurn,SO,,,,,,2021-03-04
-CH,Thurgau,TG,,,,,,2021-03-04
-CH,Ticino,TI,,,,,,2021-03-04
 CH,Vaud,VD,,,,,,2021-03-04
 CH,Valais,VS,,,,,,2021-03-04
 CH,Zürich,ZH,,,,,,2021-03-04
