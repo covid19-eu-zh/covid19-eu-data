@@ -119,12 +119,19 @@ def download_and_xlsx(xlsx_url):
         # "hospitalizált": "hospitalized",
         # "intenzív ellátásra szoruló": "intensive_care",
         # "elhunytak száma összesen": "deaths",
-        "Date": "datetime",
-        "Tested (all, PCR + HAGT)": "tests",
-        "Positive (all)": "tests_positive",
-        "All hospitalized on certain day": "hospitalized",
-        "All persons in intensive care on certain day": "intensive_care",
-        "Deaths (all)": "deaths"
+        # "Date": "datetime",
+        # "Tested (all, PCR + HAGT)": "tests",
+        # "Positive (all)": "tests_positive",
+        # "All hospitalized on certain day": "hospitalized",
+        # "All persons in intensive care on certain day": "intensive_care",
+        # "Deaths (all)": "deaths",
+        # New column names
+        "Data": "datetime",
+        "N. totale di test effettuati (PCR e HAGT)": "tests",
+        "N. totale di casi positivi (PCR e HAGT)": "tests_positive",
+        "N. di persone ricoverate (totale/giorno)": "hospitalized",
+        "N. di persone in terapia intensiva (totale/giorno)": "intensive_care",
+        "Numero totale di persone decedute": "deaths"
     }
     try:
         df = df[list(cols_en.keys())]
