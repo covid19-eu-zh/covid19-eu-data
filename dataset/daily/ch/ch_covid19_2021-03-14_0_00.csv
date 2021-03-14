@@ -1,10 +1,11 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Schwyz,SZ,9769.0,216.0,,,,2021-03-14
-CH,,,563419.0,10109.0,334819.0,684.0,179.0,2021-03-14
+CH,Ticino,TI,28828.0,967.0,,56.0,7.0,2021-03-14
+CH,Berne,BE,54791.0,1012.0,,,,2021-03-14
+CH,,,563563.0,10111.0,334819.0,682.0,179.0,2021-03-14
 CH,Aargau,AG,,,,,,2021-03-14
 CH,Appenzell Innerrhoden,AI,,,,,,2021-03-14
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-03-14
-CH,Berne,BE,,,,,,2021-03-14
 CH,Basel-Landschaft,BL,,,,,,2021-03-14
 CH,Basel-Stadt,BS,,,,,,2021-03-14
 CH,Fribourg,FR,,,,,,2021-03-14
@@ -20,7 +21,6 @@ CH,St. Gallen,SG,,,,,,2021-03-14
 CH,Schaffhausen,SH,,,,,,2021-03-14
 CH,Solothurn,SO,,,,,,2021-03-14
 CH,Thurgau,TG,,,,,,2021-03-14
-CH,Ticino,TI,,,,,,2021-03-14
 CH,Uri,UR,,,,,,2021-03-14
 CH,Vaud,VD,,,,,,2021-03-14
 CH,Valais,VS,,,,,,2021-03-14
