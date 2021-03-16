@@ -85,6 +85,7 @@ class SARSCOV2ECDC(COVIDScrapper):
             columns = {
                 "EU/EEA and the UK": "country",
                 "EU/EEA": "country",
+                "Country": "country",
                 "Cases": "cases",
                 "Sum of Cases": "cases",
                 "Deaths": "deaths",
