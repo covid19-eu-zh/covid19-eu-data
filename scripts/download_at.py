@@ -130,6 +130,11 @@ class SARSCOV2AT(COVIDScrapper):
                 if isinstance(x, str) else x
             )
 
+        for col in ["tests"]:
+            self.df[col] = self.df[col].apply(
+                lambda x: int(''.join(filter(str.isdigit, x))) if isinstance(x, str) else x
+            )
+
         self.df.fillna("", inplace=True)
         self.df["cases"] = self.df.cases.astype(int)
         # self.df["hospitalized"] = self.df.hospitalized.astype(int)
