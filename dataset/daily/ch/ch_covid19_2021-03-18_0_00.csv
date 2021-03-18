@@ -1,14 +1,16 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Uri,UR,1909.0,39.0,,4.0,,2021-03-18
+CH,Obwalden,OW,1958.0,39.0,,0.0,,2021-03-18
 CH,Glarus,GL,2256.0,70.0,,4.0,,2021-03-18
 CH,Schaffhausen,SH,3747.0,73.0,,9.0,1.0,2021-03-18
 CH,Zug,ZG,6840.0,114.0,,6.0,1.0,2021-03-18
 CH,Schwyz,SZ,9820.0,216.0,,,,2021-03-18
 CH,Basel-Stadt,BS,10235.0,193.0,,27.0,7.0,2021-03-18
+CH,Solothurn,SO,14273.0,256.0,,13.0,6.0,2021-03-18
 CH,Thurgau,TG,15616.0,379.0,,12.0,3.0,2021-03-18
 CH,Ticino,TI,29122.0,967.0,,67.0,5.0,2021-03-18
 CH,Berne,BE,55234.0,1019.0,,,,2021-03-18
-CH,,,569871.0,10173.0,341018.0,748.0,162.0,2021-03-18
+CH,,,570105.0,10178.0,341018.0,749.0,163.0,2021-03-18
 CH,Aargau,AG,,,,,,2021-03-18
 CH,Appenzell Innerrhoden,AI,,,,,,2021-03-18
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-03-18
@@ -20,9 +22,7 @@ CH,Jura,JU,,,,,,2021-03-18
 CH,Lucerne,LU,,,,,,2021-03-18
 CH,Neuchâtel,NE,,,,,,2021-03-18
 CH,Nidwalden,NW,,,,,,2021-03-18
-CH,Obwalden,OW,,,,,,2021-03-18
 CH,St. Gallen,SG,,,,,,2021-03-18
-CH,Solothurn,SO,,,,,,2021-03-18
 CH,Vaud,VD,,,,,,2021-03-18
 CH,Valais,VS,,,,,,2021-03-18
 CH,Zürich,ZH,,,,,,2021-03-18
