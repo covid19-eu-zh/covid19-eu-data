@@ -1,6 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,898.0,15.0,,0.0,,2021-03-19
 CH,Obwalden,OW,1964.0,39.0,,0.0,,2021-03-19
+CH,Nidwalden,NW,2096.0,19.0,,1.0,2.0,2021-03-19
 CH,Glarus,GL,2260.0,71.0,,3.0,,2021-03-19
 CH,Schaffhausen,SH,3757.0,73.0,,9.0,1.0,2021-03-19
 CH,Zug,ZG,6866.0,114.0,,6.0,1.0,2021-03-19
@@ -13,7 +14,7 @@ CH,Fribourg,FR,28264.0,472.0,,20.0,5.0,2021-03-19
 CH,Ticino,TI,29212.0,968.0,,68.0,5.0,2021-03-19
 CH,Berne,BE,55360.0,1020.0,,,,2021-03-19
 CH,Zürich,ZH,91305.0,1311.0,,107.0,20.0,2021-03-19
-CH,,,572427.0,10203.0,341018.0,725.0,160.0,2021-03-19
+CH,,,572440.0,10203.0,341018.0,725.0,161.0,2021-03-19
 CH,Aargau,AG,,,,,,2021-03-19
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-03-19
 CH,Geneva,GE,,,,68.0,4.0,2021-03-19
@@ -21,7 +22,6 @@ CH,Grisons,GR,,,,,,2021-03-19
 CH,Jura,JU,,,,,,2021-03-19
 CH,Lucerne,LU,,,,46.0,,2021-03-19
 CH,Neuchâtel,NE,,,,,,2021-03-19
-CH,Nidwalden,NW,,,,,,2021-03-19
 CH,St. Gallen,SG,,,,,,2021-03-19
 CH,Uri,UR,,,,,,2021-03-19
 CH,Vaud,VD,,,,,,2021-03-19
