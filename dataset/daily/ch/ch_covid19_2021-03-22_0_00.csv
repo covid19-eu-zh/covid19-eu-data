@@ -1,18 +1,19 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Obwalden,OW,1984.0,39.0,,3.0,,2021-03-22
 CH,Glarus,GL,2264.0,71.0,,3.0,,2021-03-22
 CH,Schaffhausen,SH,3784.0,73.0,,5.0,1.0,2021-03-22
 CH,Zug,ZG,6930.0,114.0,,8.0,0.0,2021-03-22
 CH,Schwyz,SZ,9891.0,216.0,,,,2021-03-22
 CH,Basel-Stadt,BS,10337.0,193.0,,27.0,7.0,2021-03-22
 CH,Solothurn,SO,14454.0,257.0,,13.0,4.0,2021-03-22
+CH,Basel-Landschaft,BL,14510.0,211.0,,14.0,1.0,2021-03-22
 CH,Thurgau,TG,15773.0,393.0,,15.0,3.0,2021-03-22
 CH,Ticino,TI,29388.0,971.0,,67.0,6.0,2021-03-22
 CH,Berne,BE,55638.0,1020.0,,,,2021-03-22
-CH,,,575113.0,10235.0,341018.0,739.0,166.0,2021-03-22
+CH,,,575172.0,10235.0,341018.0,741.0,166.0,2021-03-22
 CH,Aargau,AG,,,,,,2021-03-22
 CH,Appenzell Innerrhoden,AI,,,,,,2021-03-22
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-03-22
-CH,Basel-Landschaft,BL,,,,,,2021-03-22
 CH,Fribourg,FR,,,,,,2021-03-22
 CH,Geneva,GE,,,,,,2021-03-22
 CH,Grisons,GR,,,,,,2021-03-22
@@ -20,7 +21,6 @@ CH,Jura,JU,,,,,,2021-03-22
 CH,Lucerne,LU,,,,43.0,,2021-03-22
 CH,Neuchâtel,NE,,,,,,2021-03-22
 CH,Nidwalden,NW,,,,,,2021-03-22
-CH,Obwalden,OW,,,,,,2021-03-22
 CH,St. Gallen,SG,,,,,,2021-03-22
 CH,Uri,UR,,,,,,2021-03-22
 CH,Vaud,VD,,,,,,2021-03-22
