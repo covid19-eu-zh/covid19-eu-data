@@ -1,5 +1,5 @@
 {
-    "modified": "2021-03-24T07:42:18+01:00",
+    "modified": "2021-03-25T07:42:24+01:00",
     "source": "https:\/\/onemocneni-aktualne.mzcr.cz\/",
     "data": [
         {
@@ -2925,36 +2925,43 @@
             "datum": "19.03.2021",
             "prirustkovy_pocet_testu": 32053,
             "kumulativni_pocet_testu": 5991867,
-            "prirustkovy_pocet_prvnich_testu": 31891,
-            "kumulativni_pocet_prvnich_testu": 5527275
+            "prirustkovy_pocet_prvnich_testu": 31892,
+            "kumulativni_pocet_prvnich_testu": 5527276
         },
         {
             "datum": "20.03.2021",
-            "prirustkovy_pocet_testu": 17097,
-            "kumulativni_pocet_testu": 6008964,
-            "prirustkovy_pocet_prvnich_testu": 17097,
-            "kumulativni_pocet_prvnich_testu": 5544372
+            "prirustkovy_pocet_testu": 17098,
+            "kumulativni_pocet_testu": 6008965,
+            "prirustkovy_pocet_prvnich_testu": 17098,
+            "kumulativni_pocet_prvnich_testu": 5544374
         },
         {
             "datum": "21.03.2021",
             "prirustkovy_pocet_testu": 7947,
-            "kumulativni_pocet_testu": 6016911,
+            "kumulativni_pocet_testu": 6016912,
             "prirustkovy_pocet_prvnich_testu": 7947,
-            "kumulativni_pocet_prvnich_testu": 5552319
+            "kumulativni_pocet_prvnich_testu": 5552321
         },
         {
             "datum": "22.03.2021",
             "prirustkovy_pocet_testu": 29593,
-            "kumulativni_pocet_testu": 6046504,
+            "kumulativni_pocet_testu": 6046505,
             "prirustkovy_pocet_prvnich_testu": 29593,
-            "kumulativni_pocet_prvnich_testu": 5581912
+            "kumulativni_pocet_prvnich_testu": 5581914
         },
         {
             "datum": "23.03.2021",
-            "prirustkovy_pocet_testu": 32244,
-            "kumulativni_pocet_testu": 6078748,
-            "prirustkovy_pocet_prvnich_testu": 32244,
-            "kumulativni_pocet_prvnich_testu": 5614156
+            "prirustkovy_pocet_testu": 33504,
+            "kumulativni_pocet_testu": 6080009,
+            "prirustkovy_pocet_prvnich_testu": 33504,
+            "kumulativni_pocet_prvnich_testu": 5615418
+        },
+        {
+            "datum": "24.03.2021",
+            "prirustkovy_pocet_testu": 27056,
+            "kumulativni_pocet_testu": 6107065,
+            "prirustkovy_pocet_prvnich_testu": 27056,
+            "kumulativni_pocet_prvnich_testu": 5642474
         }
     ]
 }
