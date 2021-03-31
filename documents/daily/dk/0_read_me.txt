@@ -107,6 +107,7 @@ uncertainty_upper: Den estimerede øvre grænse, når der tages højde for usikk
 ------------------------------------------------------
 
 Fil 10: Test_pos_over_time: 
+Tabellen indeholder kun personer testet ved pcr-test. 
 Denne tabel fokuserer på testede personer per dag frem for personer testet i hele perioden. I modsætning til de andre tabeller kan en person derfor bidrage flere gange til denne tabel, dog kun en gang per dag. I denne fil indgår udelukkende personer testet med PCR-test.
 
 Dette er modsat dashboardet (www.ssi.dk/covid19data), hvor positiveprocenten beregnes over en uge, med antal personer som er testet positive seneste ni dage over antallet af personer testet seneste ni dage, hvor ni dage er anvendt på grund af manglende observationer de seneste tre dage.
@@ -115,15 +116,33 @@ Date: Datoer i formatet YYYY-MM-DD som der stratificeres efter.
 NewPositive: Antallet af personer, som for første gang er testet positive for covid-19, på en given dag.
 NotPrevPos: Antallet af personer testet på en given dag, som ikke har testet positive på en tidligere dato. Indeholder negative tests for folk, som ikke har testet positive før, samt første positive test.
 PosPct: Andelen af personer som er testet positive. Dette er beregnet som NewPositive divideret med NotPrevPos. Bemærk at prøver taget på folk, som tidligere har testet positive ikke er medregnet her.
-PrevPos: Antallet af personer testet på en given dag blandt personer, som tidligere har testet positive. Den første test som er positiv indgår ikke her.
-Tested: Det samlede antal testede personer på en given dag. Dette kan udregnes som NotPrevPos plus PrevPos.
-Tested_kumulativ: Det kumulerede antal personer testet op til og med en given dag. Udregnes som summen af værdierne i Tested frem til den givne dag. En person, der er testet på flere forskellige dage, kan bidrage mere end en gang i denne sum.
+PrevPos: Antallet af personer testet på en given dag blandt personer, som tidligere har testet positive. Den første test, som er positiv, indgår ikke her.
+Tested: Det samlede antal testede personer på en given dag, som har fået konklusivt svar (positiv eller negativ). Dette kan udregnes som NotPrevPos plus PrevPos.
+Tested_kumulativ: Det kumulerede antal personer testet op til og med en given dag, som har fået konklusivt svar (positiv eller negativ). Udregnes som summen af værdierne i Tested frem til den givne dag. En person, der er testet på flere forskellige dage, kan bidrage mere end en gang i denne sum.
 
-Noter: I den sidste række er den totale opgørelse opgjort således, at en person kun kan indgå en gang i hver søjle, i modsætning til de andre. Af denne grund er Tested det samme som NotPrevPos i denne række, og ikke en sum af NotPrevPos og PrevPos, som i de andre.
+Noter: I den sidste række (Antal personer) er den totale opgørelse opgjort således, at en person kun kan indgå en gang i hver søjle, i modsætning til de andre. Af denne grund er Tested det samme som NotPrevPos i denne række, og ikke en sum af NotPrevPos og PrevPos, som i de andre.
 
 ------------------------------------------------------
 
-Fil 11: Test_regioner: Dette er en tabel over offentlige tests. Der indgår kun PCR-tests
+Fil 11: Test_pos_over_time_antigen: 
+Denne tabel indeholder - i modsætning til test_pos_over_time - kun personer testet ved antigen-test.
+Denne tabel fokuserer på testede personer per dag frem for personer testet i hele perioden. I modsætning til de andre tabeller kan en person derfor bidrage flere gange til denne tabel, dog kun en gang per dag. I denne fil indgår udelukkende personer testet med PCR-test.
+
+Dette er modsat dashboardet (www.ssi.dk/covid19data), hvor positiveprocenten beregnes over en uge, med antal personer som er testet positive seneste ni dage over antallet af personer testet seneste ni dage, hvor ni dage er anvendt på grund af manglende observationer de seneste tre dage.
+
+Date: Datoer i formatet YYYY-MM-DD som der stratificeres efter.
+NewPositive: Antallet af personer, som for første gang er testet positive for covid-19, på en given dag.
+NotPrevPos: Antallet af personer testet på en given dag, som ikke har testet positive på en tidligere dato. Indeholder negative tests for folk, som ikke har testet positive før, samt første positive test.
+PosPct: Andelen af personer som er testet positive. Dette er beregnet som NewPositive divideret med NotPrevPos. Bemærk at prøver taget på folk, som tidligere har testet positive ikke er medregnet her.
+PrevPos: Antallet af personer testet på en given dag blandt personer, som tidligere har testet positive. Den første test, som er positiv, indgår ikke her.
+Tested: Det samlede antal testede personer på en given dag, som har fået konklusivt svar (positiv eller negativ). Dette kan udregnes som NotPrevPos plus PrevPos.
+Tested_kumulativ: Det kumulerede antal personer testet op til og med en given dag, som har fået konklusivt svar (positiv eller negativ). Udregnes som summen af værdierne i Tested frem til den givne dag. En person, der er testet på flere forskellige dage, kan bidrage mere end en gang i denne sum.
+
+Noter: I den sidste række (Antal personer) er den totale opgørelse opgjort således, at en person kun kan indgå en gang i hver søjle, i modsætning til de andre. Af denne grund er Tested det samme som NotPrevPos i denne række, og ikke en sum af NotPrevPos og PrevPos, som i de andre.
+
+------------------------------------------------------
+
+Fil 12: Test_regioner: Dette er en tabel over offentlige tests. Der indgår kun PCR-tests
 
 Ugenr: Tidsperioderne der stratificeres efter. Dette er dage for indeværende uge og ugenumre for forrige uger.
 Region Hovedstaden: Antal tests gennemført i Region Hovedstaden den givne dag eller uge.
@@ -139,7 +158,7 @@ Kumulativ_total: Det kumulerede antal tests gennemført på en given dag eller u
 
 ------------------------------------------------------
 
-Fil 12: Antigentests_pr_dag 
+Fil 13: Antigentests_pr_dag 
 
 Dette er en opgørelse af antallet af antigentests per dag. Personer med flere antigentests på en dag vil kun tælles en gang per dag. Et positivt svar vil vægtes højere end et negativt svar, og et negativt svar vil vægtes højere end intet svar. 
 Derudover opgøres hvor mange personer, som er blevet testet med PCR-test på samme dag eller dagen efter antigen-test. 
