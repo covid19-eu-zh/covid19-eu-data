@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_dk.py'
   schedule:
-    - cron:  '43 8/5 * * *'
+    - cron:  '43 1/10 * * *'
 
 jobs:
   build:
