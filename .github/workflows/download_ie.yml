@@ -6,7 +6,7 @@ on:
     - 'scripts/download_ie.py'
     - '.github/workflows/download_ie.yml'
   schedule:
-    - cron:  '55 8/4 * * *'
+    - cron:  '55 8/7 * * *'
 
 jobs:
   build:
