@@ -1,4 +1,5 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Appenzell Innerrhoden,AI,942.0,15.0,,2.0,,2021-04-09
 CH,Obwalden,OW,2107.0,39.0,,3.0,,2021-04-09
 CH,Uri,UR,2319.0,41.0,,9.0,,2021-04-09
 CH,Glarus,GL,2345.0,71.0,,4.0,,2021-04-09
@@ -6,11 +7,11 @@ CH,Schaffhausen,SH,4035.0,75.0,,8.0,4.0,2021-04-09
 CH,Zug,ZG,7464.0,114.0,,11.0,2.0,2021-04-09
 CH,Schwyz,SZ,10319.0,217.0,,,,2021-04-09
 CH,Basel-Stadt,BS,10961.0,196.0,,33.0,6.0,2021-04-09
+CH,Solothurn,SO,15435.0,262.0,,23.0,8.0,2021-04-09
 CH,Thurgau,TG,16657.0,424.0,,16.0,6.0,2021-04-09
 CH,Ticino,TI,30868.0,978.0,,76.0,15.0,2021-04-09
-CH,,,607186.0,10433.0,357003.0,951.0,208.0,2021-04-09
+CH,,,607275.0,10434.0,357003.0,952.0,206.0,2021-04-09
 CH,Aargau,AG,,,,,,2021-04-09
-CH,Appenzell Innerrhoden,AI,,,,,,2021-04-09
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-04-09
 CH,Berne,BE,,,,,,2021-04-09
 CH,Basel-Landschaft,BL,,,,,,2021-04-09
@@ -22,7 +23,6 @@ CH,Lucerne,LU,,,,,,2021-04-09
 CH,Neuchâtel,NE,,,,,,2021-04-09
 CH,Nidwalden,NW,,,,,,2021-04-09
 CH,St. Gallen,SG,,,,,,2021-04-09
-CH,Solothurn,SO,,,,,,2021-04-09
 CH,Vaud,VD,,,,,,2021-04-09
 CH,Valais,VS,,,,,,2021-04-09
 CH,Zürich,ZH,,,,,,2021-04-09
