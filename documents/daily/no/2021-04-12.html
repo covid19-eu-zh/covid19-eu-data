@@ -808,7 +808,7 @@
 
 <article>
 
-<div id="block-36491202" class="fhi-subscription-container fhi-modal fhi-hidden">
+<div id="block-59902572" class="fhi-subscription-container fhi-modal fhi-hidden">
     <div class="fhi-modal-header fhi-p-M@LG">
         <div class="close-btn">
             <button aria-labelledby="close-btn-label" type="button" class="icon-x " aria-label="Close"></button>
@@ -847,8 +847,8 @@
                     <div class="feedback"></div>
                 </fieldset>
             <div class="fhi-input-group">
-                <label class="fhi-visually-hidden" for="36491202-email">Email</label>
-                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="36491202-email" name="email" />
+                <label class="fhi-visually-hidden" for="59902572-email">Email</label>
+                <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="59902572-email" name="email" />
                 <p id="email-info">The email address you register will only be used to send you these alerts. You can cancel your alerts and delete your email address at any time by following the link in the alerts you receive. <br /><a class="fhi-underline" target="_blank" rel="noreferrer noopener" href="https://www.fhi.no/om/fhi/personvernerklaring/">Read more about the privacy policy for fhi.no</a></p>
             </div>
             <div>
@@ -882,7 +882,7 @@
         }
 
         window.addEventListener("load", function () {
-            new SubscriptionRegistration(document.getElementById("block-36491202"), "89256", "ArticlePage", translations);
+            new SubscriptionRegistration(document.getElementById("block-59902572"), "89256", "ArticlePage", translations);
         })
     </script>
 </div>
@@ -1027,7 +1027,7 @@
 <h2><strong>Key figures for Norway</strong></h2>
 <p>Total number in Norway since February 2020 (cumulative figures):</p>
 
-<div class="fhi-row" id="kfr10720356">
+<div class="fhi-row" id="kfr41518810">
     <div class="fhi-col">
         <div class="c-key-figure-row">
             <div class="c-key-figure-row__border">
@@ -1118,7 +1118,7 @@
                 if (data && typeof data.figures !== "undefined") {
                     data.figures.forEach(function (figure) {
                             if (figure && typeof figure.key !== "undefined") {
-                                var wrapper = document.querySelector('div#kfr10720356 [data-json-key="' + figure.key + '"]');
+                                var wrapper = document.querySelector('div#kfr41518810 [data-json-key="' + figure.key + '"]');
                                 if (wrapper) {
                                     if (typeof figure.number != "undefined") {
                                         wrapper.querySelector('[data-key-figure-number]').innerText = figure.number;
@@ -1139,11 +1139,11 @@
                                 }
                             }
                        });
-                        aria.Utils.removeClass(document.querySelector("#kfr10720356 .c-key-figure-row__grid"), "fhi-hidden");
-                        aria.Utils.addClass(document.querySelector("#kfr10720356 .c-loading"), "fhi-hidden");
-                        utils.formatNumbers("#kfr10720356 [data-key-figure-number]");
-                        utils.formatNumbers("#kfr10720356 [data-key-figure-change]");
-                        utils.fitTextToContainer("#kfr10720356 .c-key-figure__number", "[data-key-figure-number]");
+                        aria.Utils.removeClass(document.querySelector("#kfr41518810 .c-key-figure-row__grid"), "fhi-hidden");
+                        aria.Utils.addClass(document.querySelector("#kfr41518810 .c-loading"), "fhi-hidden");
+                        utils.formatNumbers("#kfr41518810 [data-key-figure-number]");
+                        utils.formatNumbers("#kfr41518810 [data-key-figure-change]");
+                        utils.fitTextToContainer("#kfr41518810 .c-key-figure__number", "[data-key-figure-number]");
 
                     }
             })
@@ -1151,182 +1151,35 @@
 </script>
 
 <h2>Number tested</h2>
+<p><em><strong>12.04.2021 The figure for the number of people tested per day and the proportion of positive results has been temporarily removed for an update. It will be unavailable for a few days. We apologise for any inconvenience this may cause.</strong></em></p>
 <p>The laboratory results are collected in the MSIS Laboratory Database. Each laboratory in Norway submits data electronically directly to the database.&nbsp;The figure below illustrates the number of persons tested and the proportion of positive test results among these daily since the start of the epidemic. A new test on a person is defined as a test performed at least 7 days after the previous test on the same person. If the person is tested again after 7 days, they are counted as a new person. Figures from the last few days may be adjusted with the next update.</p>
-
-
-
-<!-- basic Highcharts block template -->
-<figure id="chart57469091" class="highchart  fhi-fill-screen--mobile">
-    <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
-        <div class="options fhi-print--hidden fhi-p-top " style="">
-                        
-            <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart57469091" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart57469091" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
-                
-            </div>
-        </div>
-
-        <div class="highcharts-inner-wrapper fhi-hidden">
-            <div class="mceNonEditable" data-hc="{&quot;template&quot;:{&quot;chart&quot;:{&quot;type&quot;:&quot;column&quot;,&quot;polar&quot;:false},&quot;plotOptions&quot;:{&quot;series&quot;:{&quot;stacking&quot;:&quot;normal&quot;}}},&quot;options&quot;:{&quot;styledMode&quot;:&quot;true&quot;,&quot;title&quot;:{&quot;text&quot;:&quot;Number of tested persons per specimen collection date and number of positive results&quot;,&quot;align&quot;:&quot;left&quot;},&quot;subtitle&quot;:{&quot;align&quot;:&quot;left&quot;},&quot;credits&quot;:{&quot;text&quot;:&quot;Source: Norwegian Institute of Public Health&quot;,&quot;href&quot;:&quot;https://fhi.no&quot;,&quot;position&quot;:{&quot;align&quot;:&quot;left&quot;,&quot;x&quot;:10}},&quot;lang&quot;:{&quot;decimalPoint&quot;:&quot;.&quot;,&quot;downloadPNG&quot;:&quot;Download PNG&quot;,&quot;downloadJPEG&quot;:&quot;Download JPEG&quot;,&quot;downloadPDF&quot;:&quot;Download PDF&quot;,&quot;downloadSVG&quot;:&quot;Download SVG&quot;,&quot;downloadXLS&quot;:&quot;Download Excel&quot;,&quot;downloadCSV&quot;:&quot;Download CSV&quot;,&quot;printChart&quot;:&quot;Print out&quot;,&quot;contextButtonTitle&quot;:&quot;Menu&quot;},&quot;series&quot;:[{&quot;data&quot;:[[1582502400000,12],[1582588800000,62],[1582675200000,146],[1582761600000,247],[1582848000000,287],[1582934400000,204],[1583020800000,230],[1583107200000,383],[1583193600000,362],[1583280000000,326],[1583366400000,359],[1583452800000,356],[1583539200000,296],[1583625600000,357],[1583712000000,1232],[1583798400000,1492],[1583884800000,1940],[1583971200000,2864],[1584057600000,3915],[1584144000000,2669],[1584230400000,2828],[1584316800000,6040],[1584403200000,6407],[1584489600000,6593],[1584576000000,5757],[1584662400000,4355],[1584748800000,1912],[1584835200000,1040],[1584921600000,3370],[1585008000000,3798],[1585094400000,3123],[1585180800000,2007]],&quot;name&quot;:&quot;Negative&quot;,&quot;type&quot;:&quot;column&quot;,&quot;color&quot;:&quot;&quot;},{&quot;data&quot;:[[1582502400000,0],[1582588800000,0],[1582675200000,2],[1582761600000,2],[1582848000000,3],[1582934400000,6],[1583020800000,5],[1583107200000,8],[1583193600000,20],[1583280000000,15],[1583366400000,19],[1583452800000,25],[1583539200000,19],[1583625600000,51],[1583712000000,275],[1583798400000,218],[1583884800000,156],[1583971200000,180],[1584057600000,139],[1584144000000,98],[1584230400000,86],[1584316800000,146],[1584403200000,157],[1584489600000,204],[1584576000000,224],[1584662400000,270],[1584748800000,166],[1584835200000,131],[1584921600000,290],[1585008000000,394],[1585094400000,282],[1585180800000,171]],&quot;name&quot;:&quot;Positive&quot;,&quot;type&quot;:&quot;column&quot;,&quot;color&quot;:&quot;&quot;},{&quot;data&quot;:[[1582502400000,0],[1582588800000,0],[1582675200000,1.35],[1582761600000,0.8],[1582848000000,1.03],[1582934400000,2.83],[1583020800000,2.12],[1583107200000,2.04],[1583193600000,5.24],[1583280000000,4.36],[1583366400000,4.94],[1583452800000,6.48],[1583539200000,5.94],[1583625600000,12.5],[1583712000000,18.15],[1583798400000,12.72],[1583884800000,7.4],[1583971200000,5.89],[1584057600000,3.41],[1584144000000,3.52],[1584230400000,2.95],[1584316800000,2.36],[1584403200000,2.39],[1584489600000,3],[1584576000000,3.73],[1584662400000,5.82],[1584748800000,7.97],[1584835200000,11.13],[1584921600000,7.92],[1585008000000,9.39],[1585094400000,8.28],[1585180800000,7.85]],&quot;name&quot;:&quot;Prosent&quot;,&quot;type&quot;:&quot;line&quot;,&quot;yAxis&quot;:1,&quot;color&quot;:&quot;&quot;,&quot;marker&quot;:{&quot;enabled&quot;:false}}],&quot;legend&quot;:{&quot;verticalAlign&quot;:&quot;top&quot;,&quot;align&quot;:&quot;right&quot;,&quot;floating&quot;:false,&quot;x&quot;:0,&quot;y&quot;:-20,&quot;enabled&quot;:true},&quot;colors&quot;:[&quot;#393C61&quot;,&quot;#709900&quot;,&quot;#2EA1C0&quot;,&quot;#EC635C&quot;,&quot;#F7B500&quot;,&quot;#0F768F&quot;,&quot;#B11643&quot;,&quot;#A9B7BF&quot;],&quot;exporting&quot;:{&quot;showTable&quot;:false,&quot;csv&quot;:{&quot;dateFormat&quot;:&quot;%d.%m.%Y&quot;}},&quot;data&quot;:{&quot;csv&quot;:&quot;\&quot;Date\&quot;;\&quot;Negative\&quot;;\&quot;Positive\&quot;;\&quot;Prosent\&quot;\n\&quot;24.02.2020\&quot;;12;0;0\n\&quot;25.02.2020\&quot;;62;0;0\n\&quot;26.02.2020\&quot;;146;2;1.35\n\&quot;27.02.2020\&quot;;247;2;0.8\n\&quot;28.02.2020\&quot;;287;3;1.03\n\&quot;29.02.2020\&quot;;204;6;2.83\n\&quot;01.03.2020\&quot;;230;5;2.12\n\&quot;02.03.2020\&quot;;383;8;2.04\n\&quot;03.03.2020\&quot;;362;20;5.24\n\&quot;04.03.2020\&quot;;326;15;4.36\n\&quot;05.03.2020\&quot;;359;19;4.94\n\&quot;06.03.2020\&quot;;356;25;6.48\n\&quot;07.03.2020\&quot;;296;19;5.94\n\&quot;08.03.2020\&quot;;357;51;12.5\n\&quot;09.03.2020\&quot;;1232;275;18.15\n\&quot;10.03.2020\&quot;;1492;218;12.72\n\&quot;11.03.2020\&quot;;1940;156;7.4\n\&quot;12.03.2020\&quot;;2864;180;5.89\n\&quot;13.03.2020\&quot;;3915;139;3.41\n\&quot;14.03.2020\&quot;;2669;98;3.52\n\&quot;15.03.2020\&quot;;2828;86;2.95\n\&quot;16.03.2020\&quot;;6040;146;2.36\n\&quot;17.03.2020\&quot;;6407;157;2.39\n\&quot;18.03.2020\&quot;;6593;204;3\n\&quot;19.03.2020\&quot;;5757;224;3.73\n\&quot;20.03.2020\&quot;;4355;270;5.82\n\&quot;21.03.2020\&quot;;1912;166;7.97\n\&quot;22.03.2020\&quot;;1040;131;11.13\n\&quot;23.03.2020\&quot;;3370;290;7.92\n\&quot;24.03.2020\&quot;;3798;394;9.39\n\&quot;25.03.2020\&quot;;3123;282;8.28\n\&quot;26.03.2020\&quot;;2007;171;7.85&quot;},&quot;pane&quot;:{&quot;background&quot;:[]},&quot;responsive&quot;:{&quot;rules&quot;:[]},&quot;yAxis&quot;:[{&quot;title&quot;:{&quot;text&quot;:&quot;Number of tested persons&quot;}},{&quot;title&quot;:{&quot;text&quot;:&quot;% Positive&quot;},&quot;opposite&quot;:true,&quot;labels&quot;:{&quot;format&quot;:&quot;{value} %&quot;}}],&quot;chart&quot;:{&quot;inverted&quot;:false},&quot;xAxis&quot;:[{&quot;title&quot;:{&quot;text&quot;:&quot;Date&quot;},&quot;labels&quot;:{&quot;autoRotation&quot;:[&quot;-90&quot;]},&quot;reversed&quot;:false,&quot;opposite&quot;:false,&quot;type&quot;:&quot;datetime&quot;,&quot;dateTimeLabelFormats&quot;:{&quot;day&quot;:&quot;%d.%m&quot;}}],&quot;tooltip&quot;:{&quot;enabled&quot;:true},&quot;plotOptions&quot;:{&quot;series&quot;:{&quot;animation&quot;:false}}},&quot;theme&quot;:false,&quot;settings&quot;:{&quot;constructor&quot;:&quot;Chart&quot;,&quot;dataProvider&quot;:{&quot;csv&quot;:&quot;\&quot;Date\&quot;;\&quot;Negative\&quot;;\&quot;Positive\&quot;;\&quot;Prosent\&quot;\n\&quot;24.02.2020\&quot;;12;0;0\n\&quot;25.02.2020\&quot;;62;0;0\n\&quot;26.02.2020\&quot;;146;2;1.35\n\&quot;27.02.2020\&quot;;247;2;0.8\n\&quot;28.02.2020\&quot;;287;3;1.03\n\&quot;29.02.2020\&quot;;204;6;2.83\n\&quot;01.03.2020\&quot;;230;5;2.12\n\&quot;02.03.2020\&quot;;383;8;2.04\n\&quot;03.03.2020\&quot;;362;20;5.24\n\&quot;04.03.2020\&quot;;326;15;4.36\n\&quot;05.03.2020\&quot;;359;19;4.94\n\&quot;06.03.2020\&quot;;356;25;6.48\n\&quot;07.03.2020\&quot;;296;19;5.94\n\&quot;08.03.2020\&quot;;357;51;12.5\n\&quot;09.03.2020\&quot;;1232;275;18.15\n\&quot;10.03.2020\&quot;;1492;218;12.72\n\&quot;11.03.2020\&quot;;1940;156;7.4\n\&quot;12.03.2020\&quot;;2864;180;5.89\n\&quot;13.03.2020\&quot;;3915;139;3.41\n\&quot;14.03.2020\&quot;;2669;98;3.52\n\&quot;15.03.2020\&quot;;2828;86;2.95\n\&quot;16.03.2020\&quot;;6040;146;2.36\n\&quot;17.03.2020\&quot;;6407;157;2.39\n\&quot;18.03.2020\&quot;;6593;204;3\n\&quot;19.03.2020\&quot;;5757;224;3.73\n\&quot;20.03.2020\&quot;;4355;270;5.82\n\&quot;21.03.2020\&quot;;1912;166;7.97\n\&quot;22.03.2020\&quot;;1040;131;11.13\n\&quot;23.03.2020\&quot;;3370;290;7.92\n\&quot;24.03.2020\&quot;;3798;394;9.39\n\&quot;25.03.2020\&quot;;3123;282;8.28\n\&quot;26.03.2020\&quot;;2007;171;7.85&quot;,&quot;googleSpreadsheet&quot;:false,&quot;liveData&quot;:false}}}">
-<div id="highcharts-1e936488-0b56-4944-8f38-365b2fd2a725"><svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="highcharts-root" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif; font-size: 12px;" xmlns="http://www.w3.org/2000/svg" width="650" height="400" viewbox="0 0 650 400" aria-hidden="false" aria-label="Interactive chart"><desc aria-hidden="true">Created with Highcharts 8.2.2</desc><defs aria-hidden="true"><rect x="0" y="0" width="505" height="245" fill="none"></rect><rect x="67" y="95" width="505" height="245" fill="none"></rect></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="650" height="400" rx="0" ry="0" aria-hidden="true"></rect><rect fill="none" class="highcharts-plot-background" x="67" y="95" width="505" height="245" aria-hidden="true"></rect><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 79.5 95 L 79.5 340" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 187.5 95 L 187.5 340" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 295.5 95 L 295.5 340" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 404.5 95 L 404.5 340" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 512.5 95 L 512.5 340" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 340.5 L 572 340.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 279.5 L 572 279.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 218.5 L 572 218.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 156.5 L 572 156.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 94.5 L 572 94.5" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 340.5 L 572 340.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 279.5 L 572 279.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 218.5 L 572 218.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 156.5 L 572 156.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 67 94.5 L 572 94.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="67" y="95" width="505" height="245" aria-hidden="true"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2" aria-hidden="true"><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 79.5 340 L 79.5 350" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 187.5 340 L 187.5 350" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 295.5 340 L 295.5 350" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 404.5 340 L 404.5 350" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 512.5 340 L 512.5 350" opacity="1"></path><text x="319.5" data-z-index="7" text-anchor="middle" transform="translate(0,0)" class="highcharts-axis-title" style="color: #666666; fill: #666666;" y="379"><tspan>Date</tspan></text><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 67 340.5 L 572 340.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><text x="26.296875" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(270 26.296875 217.5)" class="highcharts-axis-title" style="color: #666666; fill: #666666;" y="217.5"><tspan>Number of tested persons</tspan></text><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 67 95 L 67 340"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><text x="624.140625" data-z-index="7" text-anchor="middle" transform="translate(0,0) rotate(90 624.140625 217.5)" class="highcharts-axis-title" style="color: #666666; fill: #666666;" y="217.5"><tspan>% Positive</tspan></text><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 572 95 L 572 340"></path></g><g class="highcharts-series-group" data-z-index="3" aria-hidden="false"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="url(#highcharts-jn4vzjy-6835-)" aria-hidden="false" role="region" aria-label="Negative, series 1 of 3. Bar series with 32 bars. Y axis, Number of tested persons" style="outline: 0px;" tabindex="-1"><rect x="8.5" y="245.5" width="8" height="0" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="1. Monday, Feb 24, 2020, 12. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="23.5" y="243.5" width="8" height="2" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="2. Tuesday, Feb 25, 2020, 62. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="39.5" y="240.5" width="8" height="5" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="3. Wednesday, Feb 26, 2020, 146. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="54.5" y="237.5" width="8" height="8" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="4. Thursday, Feb 27, 2020, 247. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="70.5" y="236.5" width="8" height="9" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="5. Friday, Feb 28, 2020, 287. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="85.5" y="239.5" width="8" height="6" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="6. Saturday, Feb 29, 2020, 204. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="101.5" y="238.5" width="8" height="7" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="7. Sunday, Mar  1, 2020, 230. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="116.5" y="233.5" width="8" height="12" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="8. Monday, Mar  2, 2020, 383. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="132.5" y="233.5" width="8" height="11" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="9. Tuesday, Mar  3, 2020, 362. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="147.5" y="235.5" width="8" height="10" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="10. Wednesday, Mar  4, 2020, 326. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="163.5" y="233.5" width="8" height="11" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="11. Thursday, Mar  5, 2020, 359. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="178.5" y="233.5" width="8" height="11" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="12. Friday, Mar  6, 2020, 356. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="194.5" y="235.5" width="8" height="9" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="13. Saturday, Mar  7, 2020, 296. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="209.5" y="233.5" width="8" height="10" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="14. Sunday, Mar  8, 2020, 357. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="225.5" y="199.5" width="8" height="38" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="15. Monday, Mar  9, 2020, 1,232. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="240.5" y="193.5" width="8" height="45" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="16. Tuesday, Mar 10, 2020, 1,492. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="256.5" y="181.5" width="8" height="59" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="17. Wednesday, Mar 11, 2020, 1,940. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="271.5" y="152.5" width="8" height="87" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="18. Thursday, Mar 12, 2020, 2,864. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="286.5" y="121.5" width="8" height="120" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="19. Friday, Mar 13, 2020, 3,915. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="302.5" y="160.5" width="8" height="82" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="20. Saturday, Mar 14, 2020, 2,669. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="317.5" y="156.5" width="8" height="86" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="21. Sunday, Mar 15, 2020, 2,828. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="333.5" y="56.5" width="8" height="185" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="22. Monday, Mar 16, 2020, 6,040. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="348.5" y="44.5" width="8" height="196" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="23. Tuesday, Mar 17, 2020, 6,407. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="364.5" y="37.5" width="8" height="202" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="24. Wednesday, Mar 18, 2020, 6,593. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="379.5" y="62.5" width="8" height="176" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="25. Thursday, Mar 19, 2020, 5,757. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="395.5" y="103.5" width="8" height="134" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="26. Friday, Mar 20, 2020, 4,355. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="410.5" y="181.5" width="8" height="59" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="27. Saturday, Mar 21, 2020, 1,912. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="426.5" y="209.5" width="8" height="32" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="28. Sunday, Mar 22, 2020, 1,040. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="441.5" y="133.5" width="8" height="103" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="29. Monday, Mar 23, 2020, 3,370. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="457.5" y="117.5" width="8" height="116" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="30. Tuesday, Mar 24, 2020, 3,798. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="472.5" y="141.5" width="8" height="95" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="31. Wednesday, Mar 25, 2020, 3,123. Negative." style="outline: 0px;" tabindex="-1"></rect><rect x="488.5" y="178.5" width="8" height="62" fill="#393C61" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-0" role="img" aria-label="32. Thursday, Mar 26, 2020, 2,007. Negative." style="outline: 0px;" tabindex="-1"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="url(#highcharts-jn4vzjy-6835-)" aria-hidden="false" role="region" aria-label="Positive, series 2 of 3. Bar series with 32 bars. Y axis, Number of tested persons" style="outline: 0px;" tabindex="-1"><rect x="8.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="1. Monday, Feb 24, 2020, 0. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="23.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="2. Tuesday, Feb 25, 2020, 0. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="39.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="3. Wednesday, Feb 26, 2020, 2. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="54.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="4. Thursday, Feb 27, 2020, 2. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="70.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="5. Friday, Feb 28, 2020, 3. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="85.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="6. Saturday, Feb 29, 2020, 6. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="101.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="7. Sunday, Mar  1, 2020, 5. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="116.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="8. Monday, Mar  2, 2020, 8. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="132.5" y="244.5" width="8" height="1" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="9. Tuesday, Mar  3, 2020, 20. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="147.5" y="245.5" width="8" height="0" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="10. Wednesday, Mar  4, 2020, 15. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="163.5" y="244.5" width="8" height="1" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="11. Thursday, Mar  5, 2020, 19. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="178.5" y="244.5" width="8" height="1" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="12. Friday, Mar  6, 2020, 25. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="194.5" y="244.5" width="8" height="1" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="13. Saturday, Mar  7, 2020, 19. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="209.5" y="243.5" width="8" height="2" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="14. Sunday, Mar  8, 2020, 51. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="225.5" y="237.5" width="8" height="8" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="15. Monday, Mar  9, 2020, 275. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="240.5" y="238.5" width="8" height="7" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="16. Tuesday, Mar 10, 2020, 218. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="256.5" y="240.5" width="8" height="5" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="17. Wednesday, Mar 11, 2020, 156. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="271.5" y="239.5" width="8" height="6" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="18. Thursday, Mar 12, 2020, 180. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="286.5" y="241.5" width="8" height="4" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="19. Friday, Mar 13, 2020, 139. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="302.5" y="242.5" width="8" height="3" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="20. Saturday, Mar 14, 2020, 98. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="317.5" y="242.5" width="8" height="3" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="21. Sunday, Mar 15, 2020, 86. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="333.5" y="241.5" width="8" height="4" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="22. Monday, Mar 16, 2020, 146. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="348.5" y="240.5" width="8" height="5" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="23. Tuesday, Mar 17, 2020, 157. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="364.5" y="239.5" width="8" height="6" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="24. Wednesday, Mar 18, 2020, 204. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="379.5" y="238.5" width="8" height="7" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="25. Thursday, Mar 19, 2020, 224. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="395.5" y="237.5" width="8" height="8" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="26. Friday, Mar 20, 2020, 270. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="410.5" y="240.5" width="8" height="5" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="27. Saturday, Mar 21, 2020, 166. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="426.5" y="241.5" width="8" height="4" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="28. Sunday, Mar 22, 2020, 131. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="441.5" y="236.5" width="8" height="9" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="29. Monday, Mar 23, 2020, 290. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="457.5" y="233.5" width="8" height="12" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="30. Tuesday, Mar 24, 2020, 394. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="472.5" y="236.5" width="8" height="9" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="31. Wednesday, Mar 25, 2020, 282. Positive." style="outline: 0px;" tabindex="-1"></rect><rect x="488.5" y="240.5" width="8" height="5" fill="#709900" stroke="#ffffff" stroke-width="1" opacity="1" class="highcharts-point highcharts-color-1" role="img" aria-label="32. Thursday, Mar 26, 2020, 171. Positive." style="outline: 0px;" tabindex="-1"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="none" aria-hidden="true"></g><g class="highcharts-series highcharts-series-2 highcharts-line-series highcharts-color-2" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="url(#highcharts-jn4vzjy-6835-)" aria-hidden="true"><path fill="none" d="M 12.539852851012 245 L 28.021152667075 245 L 43.502452483139 228.4625 L 58.983752299203 235.2 L 74.465052115267 232.3825 L 89.94635193133 210.33249999999998 L 105.42765174739 219.03 L 120.90895156346 220.01 L 136.39025137952 180.81 L 151.87155119559 191.59 L 167.35285101165 184.48499999999999 L 182.83415082771 165.62 L 198.31545064378 172.235 L 213.79675045984 91.875 L 229.2780502759 22.662500000000023 L 244.75935009197 89.17999999999998 L 260.24064990803 154.35 L 275.7219497241 172.84750000000003 L 291.20324954016 203.2275 L 306.68454935622 201.88 L 322.16584917229 208.8625 L 337.64714898835 216.09 L 353.12844880441 215.7225 L 368.60974862048 208.25 L 384.09104843654 199.3075 L 399.57234825261 173.70499999999998 L 415.05364806867 147.3675 L 430.53494788473 108.6575 L 446.0162477008 147.98000000000002 L 461.49754751686 129.9725 L 476.97884733292 143.57 L 492.46014714899 148.8375" class="highcharts-graph" data-z-index="1" stroke="#2EA1C0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path></g><g class="highcharts-markers highcharts-series-2 highcharts-line-series highcharts-color-2" data-z-index="0.1" opacity="1" transform="translate(67,95) scale(1 1)" clip-path="none" aria-hidden="false" role="region" aria-label="Prosent, series 3 of 3. Line with 32 data points. Y axis, % Positive" style="outline: 0px;" tabindex="-1"><path fill="#2EA1C0" d="M 12 249 A 4 4 0 1 1 12.003999999333336 248.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="1. Monday, Feb 24, 2020, 0. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 28 249 A 4 4 0 1 1 28.003999999333335 248.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="2. Tuesday, Feb 25, 2020, 0. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 43 232 A 4 4 0 1 1 43.00399999933334 231.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="3. Wednesday, Feb 26, 2020, 1.35. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 58 239 A 4 4 0 1 1 58.00399999933334 238.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="4. Thursday, Feb 27, 2020, 0.8. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 74 236 A 4 4 0 1 1 74.00399999933333 235.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="5. Friday, Feb 28, 2020, 1.03. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 89 214 A 4 4 0 1 1 89.00399999933333 213.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="6. Saturday, Feb 29, 2020, 2.83. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 105 223 A 4 4 0 1 1 105.00399999933333 222.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="7. Sunday, Mar  1, 2020, 2.12. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 120 224 A 4 4 0 1 1 120.00399999933333 223.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="8. Monday, Mar  2, 2020, 2.04. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 136 185 A 4 4 0 1 1 136.00399999933333 184.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="9. Tuesday, Mar  3, 2020, 5.24. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 151 196 A 4 4 0 1 1 151.00399999933333 195.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="10. Wednesday, Mar  4, 2020, 4.36. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 167 188 A 4 4 0 1 1 167.00399999933333 187.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="11. Thursday, Mar  5, 2020, 4.94. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 182 170 A 4 4 0 1 1 182.00399999933333 169.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="12. Friday, Mar  6, 2020, 6.48. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 198 176 A 4 4 0 1 1 198.00399999933333 175.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="13. Saturday, Mar  7, 2020, 5.94. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 213 96 A 4 4 0 1 1 213.00399999933333 95.99999800000016 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="14. Sunday, Mar  8, 2020, 12.5. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 229 27 A 4 4 0 1 1 229.00399999933333 26.99999800000017 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="15. Monday, Mar  9, 2020, 18.15. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 244 93 A 4 4 0 1 1 244.00399999933333 92.99999800000016 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="16. Tuesday, Mar 10, 2020, 12.72. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 260 158 A 4 4 0 1 1 260.00399999933336 157.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="17. Wednesday, Mar 11, 2020, 7.4. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 275 177 A 4 4 0 1 1 275.00399999933336 176.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="18. Thursday, Mar 12, 2020, 5.89. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 291 207 A 4 4 0 1 1 291.00399999933336 206.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="19. Friday, Mar 13, 2020, 3.41. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 306 206 A 4 4 0 1 1 306.00399999933336 205.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="20. Saturday, Mar 14, 2020, 3.52. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 322 213 A 4 4 0 1 1 322.00399999933336 212.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="21. Sunday, Mar 15, 2020, 2.95. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 337 220 A 4 4 0 1 1 337.00399999933336 219.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="22. Monday, Mar 16, 2020, 2.36. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 353 220 A 4 4 0 1 1 353.00399999933336 219.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="23. Tuesday, Mar 17, 2020, 2.39. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 368 212 A 4 4 0 1 1 368.00399999933336 211.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="24. Wednesday, Mar 18, 2020, 3. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 384 203 A 4 4 0 1 1 384.00399999933336 202.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="25. Thursday, Mar 19, 2020, 3.73. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 399 178 A 4 4 0 1 1 399.00399999933336 177.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="26. Friday, Mar 20, 2020, 5.82. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 415 151 A 4 4 0 1 1 415.00399999933336 150.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="27. Saturday, Mar 21, 2020, 7.97. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 430 113 A 4 4 0 1 1 430.00399999933336 112.99999800000016 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="28. Sunday, Mar 22, 2020, 11.13. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 446 152 A 4 4 0 1 1 446.00399999933336 151.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="29. Monday, Mar 23, 2020, 7.92. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 461 134 A 4 4 0 1 1 461.00399999933336 133.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="30. Tuesday, Mar 24, 2020, 9.39. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 476 148 A 4 4 0 1 1 476.00399999933336 147.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="31. Wednesday, Mar 25, 2020, 8.28. Prosent." style="outline: 0px;" tabindex="-1"></path><path fill="#2EA1C0" d="M 492 153 A 4 4 0 1 1 492.00399999933336 152.99999800000018 Z" opacity="0" class="highcharts-point highcharts-color-2" role="img" aria-label="32. Thursday, Mar 26, 2020, 7.85. Prosent." style="outline: 0px;" tabindex="-1"></path></g></g><text x="10" text-anchor="start" class="highcharts-title" data-z-index="4" style="color: #333333; font-size: 18px; fill: #333333;" y="24" aria-hidden="true"><tspan>Number of tested persons per specimen collection date and</tspan><tspan dy="21" x="10">number of positive results</tspan></text><text x="10" text-anchor="start" class="highcharts-subtitle" data-z-index="4" style="color: #666666; fill: #666666;" y="73" aria-hidden="true"></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: #666666; fill: #666666;" y="397" aria-hidden="true"></text><g class="highcharts-legend" data-z-index="7" transform="translate(376,54)" aria-hidden="true"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="263" height="29" visibility="visible"></rect><g data-z-index="1"><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" data-z-index="1" transform="translate(8,3)"><text x="21" style="color: #333333; cursor: pointer; font-size: 12px; font-weight: bold; fill: #333333;" text-anchor="start" data-z-index="2" y="15"><tspan>Negative</tspan></text><rect x="2" y="4" width="12" height="12" fill="#393C61" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-1 highcharts-series-1" data-z-index="1" transform="translate(101.4375,3)"><text x="21" y="15" style="color: #333333; cursor: pointer; font-size: 12px; font-weight: bold; fill: #333333;" text-anchor="start" data-z-index="2"><tspan>Positive</tspan></text><rect x="2" y="4" width="12" height="12" fill="#709900" rx="6" ry="6" class="highcharts-point" data-z-index="3"></rect></g><g class="highcharts-legend-item highcharts-line-series highcharts-color-2 highcharts-series-2" data-z-index="1" transform="translate(188.8125,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#2EA1C0" stroke-width="2"></path><text x="21" y="15" style="color: #333333; cursor: pointer; font-size: 12px; font-weight: bold; fill: #333333;" text-anchor="start" data-z-index="2"><tspan>Prosent</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7" aria-hidden="true"><text x="79.539852851012" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="middle" transform="translate(0,0)" y="359" opacity="1"><tspan>24. Feb</tspan></text><text x="187.90895156346" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="middle" transform="translate(0,0)" y="359" opacity="1"><tspan>2. Mar</tspan></text><text x="296.2780502759" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="middle" transform="translate(0,0)" y="359" opacity="1"><tspan>9. Mar</tspan></text><text x="404.64714898835" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="middle" transform="translate(0,0)" y="359" opacity="1"><tspan>16. Mar</tspan></text><text x="513.0162477008" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="middle" transform="translate(0,0)" y="359" opacity="1"><tspan>23. Mar</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7" aria-hidden="true"><text x="52" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="end" transform="translate(0,0)" y="344" opacity="1">0</text><text x="52" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="end" transform="translate(0,0)" y="283" opacity="1">2k</text><text x="52" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="end" transform="translate(0,0)" y="222" opacity="1">4k</text><text x="52" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="end" transform="translate(0,0)" y="160" opacity="1">6k</text><text x="52" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="end" transform="translate(0,0)" y="99" opacity="1">8k</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7" aria-hidden="true"><text x="587" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="start" transform="translate(0,0)" y="344" opacity="1"><tspan>0 %</tspan></text><text x="587" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="start" transform="translate(0,0)" y="283" opacity="1"><tspan>5 %</tspan></text><text x="587" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="start" transform="translate(0,0)" y="222" opacity="1"><tspan>10 %</tspan></text><text x="587" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="start" transform="translate(0,0)" y="160" opacity="1"><tspan>15 %</tspan></text><text x="587" style="color: #666666; cursor: default; font-size: 11px; fill: #666666;" text-anchor="start" transform="translate(0,0)" y="99" opacity="1"><tspan>20 %</tspan></text></g><text x="10" class="highcharts-credits" text-anchor="start" data-z-index="8" style="cursor: pointer; color: #999999; font-size: 9px; fill: #999999;" y="395" aria-label="Chart credits: Source: Norwegian Institute of Public Health" aria-hidden="false"><tspan>Source: Norwegian Institute of Public Health</tspan></text><g class="highcharts-control-points" data-z-index="99" clip-path="url(#highcharts-jn4vzjy-6935-)" aria-hidden="true"></g></svg></div>
-<script>
-(function(){ var files = ["/bundles/highcharts.js","/bundles/highchart-modules.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src").indexOf("highcharts") >= 0 && src === "/bundles/highcharts.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){Highcharts.setOptions({lang:{"decimalPoint":".","downloadPNG":"Download PNG","downloadJPEG":"Download JPEG","downloadPDF":"Download PDF","downloadSVG":"Download SVG","downloadXLS":"Download Excel","downloadCSV":"Download CSV","printChart":"Print out","contextButtonTitle":"Menu"}});var options={"chart":{"type":"column","polar":false,"inverted":false},"plotOptions":{"series":{"stacking":"normal","animation":false}},"styledMode":"true","title":{"text":"Number of tested persons per specimen collection date and number of positive results","align":"left"},"subtitle":{"align":"left"},"credits":{"text":"Source: Norwegian Institute of Public Health","href":"https://fhi.no","position":{"align":"left","x":10}},"lang":{"decimalPoint":".","downloadPNG":"Download PNG","downloadJPEG":"Download JPEG","downloadPDF":"Download PDF","downloadSVG":"Download SVG","downloadXLS":"Download Excel","downloadCSV":"Download CSV","printChart":"Print out","contextButtonTitle":"Menu"},"series":[{"name":"Negative","type":"column","color":""},{"name":"Positive","type":"column","color":""},{"name":"Prosent","type":"line","yAxis":1,"color":"","marker":{"enabled":false}}],"legend":{"verticalAlign":"top","align":"right","floating":false,"x":0,"y":-20,"enabled":true},"colors":["#393C61","#709900","#2EA1C0","#EC635C","#F7B500","#0F768F","#B11643","#A9B7BF"],"exporting":{"showTable":false,"csv":{"dateFormat":"%d.%m.%Y"}},"data":{"csv":"\"Date\";\"Negative\";\"Positive\";\"Prosent\"\n\"24.02.2020\";12;0;0\n\"25.02.2020\";62;0;0\n\"26.02.2020\";146;2;1.35\n\"27.02.2020\";247;2;0.8\n\"28.02.2020\";287;3;1.03\n\"29.02.2020\";204;6;2.83\n\"01.03.2020\";230;5;2.12\n\"02.03.2020\";383;8;2.04\n\"03.03.2020\";362;20;5.24\n\"04.03.2020\";326;15;4.36\n\"05.03.2020\";359;19;4.94\n\"06.03.2020\";356;25;6.48\n\"07.03.2020\";296;19;5.94\n\"08.03.2020\";357;51;12.5\n\"09.03.2020\";1232;275;18.15\n\"10.03.2020\";1492;218;12.72\n\"11.03.2020\";1940;156;7.4\n\"12.03.2020\";2864;180;5.89\n\"13.03.2020\";3915;139;3.41\n\"14.03.2020\";2669;98;3.52\n\"15.03.2020\";2828;86;2.95\n\"16.03.2020\";6040;146;2.36\n\"17.03.2020\";6407;157;2.39\n\"18.03.2020\";6593;204;3\n\"19.03.2020\";5757;224;3.73\n\"20.03.2020\";4355;270;5.82\n\"21.03.2020\";1912;166;7.97\n\"22.03.2020\";1040;131;11.13\n\"23.03.2020\";3370;290;7.92\n\"24.03.2020\";3798;394;9.39\n\"25.03.2020\";3123;282;8.28\n\"26.03.2020\";2007;171;7.85","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"pane":{"background":[]},"responsive":{"rules":[]},"yAxis":[{"title":{"text":"Number of tested persons"}},{"title":{"text":"% Positive"},"opposite":true,"labels":{"format":"{value} %"}}],"xAxis":[{"title":{"text":"Date"},"labels":{"autoRotation":["-90"]},"reversed":false,"opposite":false,"type":"datetime","dateTimeLabelFormats":{"day":"%d.%m"}}],"tooltip":{"enabled":true}};new Highcharts.Chart("highcharts-1e936488-0b56-4944-8f38-365b2fd2a725", options);}}})();
-</script>
-</div>
-<p>&nbsp;</p>
-            <div id="table-container-57469091" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
-                <figure class="figure table">
-                    <table id="table57469091" class="" style="border-top:none;" summary="Table representation of chart">
-                        <caption></caption>
-                    </table>
-                </figure>
-
-
-                <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
-
-                    <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-57469091" class="combobox-label fhi-visually-hidden">
-                            Filter entries
-                        </label>
-                        <div class="fhi-combobox-wrapper">
-                            <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-57469091">
-                                <input data-filter type="text"
-                                       placeholder="Filter"
-                                       aria-labelledby="combobox-label-57469091"
-                                       aria-controls="table57469091">
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
-
-<div id="dropdown-57469091" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-57469091-legend">
-        Choose number of entries pr. page
-    </span>
-    <div>
-
-        <button class="fhi-dropdown-btn"
-                aria-haspopup="listbox"
-                aria-labelledby="dropdown-57469091-label"
-                id="dropdown-57469091-dropdown-button">
-            Select number
-        </button>
-        <ul class="fhi-dropdown-list fhi-hidden"
-            tabindex="-1"
-            role="listbox"
-            aria-labelledby="dropdown-57469091-label">
-        </ul>
-    </div>
-
-</div>
-
-
-
-                </div>
-            </div>
-        </div>
-
-            <div class="c-loading"></div>
-
-    </div>
-
-
-
-    <script type="text/javascript">
-    (function () {
-       var translations = {
-            paginationLabel: "Pagination for ",
-            paginationListItemLabel: "Go to page ",
-            paginationIsCurrentPage: "This page is currently shown",
-            all: "all",
-            dropdownText: "show {0} entries",
-            sortAscending: "Sort ascending by ",
-            sortDescending:  "Sort descending by ",
-        }
-                    $(document).ready(function () {
-                        var url = "/api/chartdata/api/90789" === "" ? null : "/api/chartdata/api/90789";
-                        var chartId = "chart" + 57469091;
-                        var table = null;
-                            
-                        table = new DynamicTable(document.querySelector("#table57469091"), { headings: [], data: [] }, { translations: translations });
-                            
-                        var chart = new CustomHighchart(document.getElementById(chartId), url, table);
-
-                        utils.waitAndExecute(250, 10, function () {
-                            var chartIndex = $('#' + chartId + ' div[data-highcharts-chart]').data('highcharts-chart');
-                            if (chartIndex != undefined && typeof Highcharts.charts[chartIndex] != "undefined") {
-
-                                chart.setChart(chartIndex);
-
-                                
-                            
-                                chart.load(null, function () {
-                                    $('#chart57469091 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart57469091 .c-loading").addClass("fhi-hidden");
-                                                                           
-                                      chart.getHeader("X-API-Last-Modified", null, function (date) {
-                                         if (!!date) {
-                                            var  lastModified = date.slice(0, date.indexOf(":") - 2);
-                                            lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-
-                                            $("<p class='highcharts-updated'>" + "Updated" + ": " + lastModified + "</p>").appendTo("#" + chartId + " [data-highcharts-chart]");
-                                            if(chart.table)   $(chart.table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
-                                        }
-                                    });
-                                     
-                                });
-
-
-                                return true;
-
-                            }
-                            return false;
-                        });
-                    });
-                })();
-    </script>
-
-    <script type="text/javascript">
-        var surplusParagraph = $("#chart57469091 .highcharts-inner-wrapper > p:last-of-type");
-        if (surplusParagraph.text() === " ") {
-            surplusParagraph.remove();
-        }
-    </script>
-</figure>
-
-
 <h2>Reported cases</h2>
 <p>The figure below shows the number of cases reported daily in Norway since the start of the epidemic. The cases are displayed by the specimen collection date. There are 1-2 days delay between diagnosis and registration in the Norwegian Surveillance System for Communicable Diseases (MSIS). The number of cases is updated retroactively when new notifications arrive.</p>
 
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart58057863" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart22813027" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="min-height: 46px">
 
 
-<div id="location58057863" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="location58057863-legend">
+<div id="location22813027" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="location22813027-legend">
         County selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="location58057863-label"
-                id="location58057863-dropdown-button">
+                aria-labelledby="location22813027-label"
+                id="location22813027-dropdown-button">
             Select county
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="location58057863-label">
+            aria-labelledby="location22813027-label">
         </ul>
     </div>
 
@@ -1334,11 +1187,11 @@
 
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart58057863" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart58057863" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart22813027" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart22813027" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
 
-<label id="toggle58057863" class="fhi-toggle-switch fhi-hidden timegranularity">
+<label id="toggle22813027" class="fhi-toggle-switch fhi-hidden timegranularity">
     <span class="fhi-visually-hidden">County selector</span>
     <input tabindex="0" type="checkbox" checked="checked" />
     <span class="fhi-slider"></span>
@@ -1359,9 +1212,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-58057863" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-22813027" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table58057863" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table22813027" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1370,16 +1223,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-58057863" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-22813027" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-58057863">
+                                 id="combobox-22813027">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-58057863"
-                                       aria-controls="table58057863">
+                                       aria-labelledby="combobox-label-22813027"
+                                       aria-controls="table22813027">
 
                             </div>
 
@@ -1388,22 +1241,22 @@
 
                     
 
-<div id="dropdown-58057863" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-58057863-legend">
+<div id="dropdown-22813027" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-22813027-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-58057863-label"
-                id="dropdown-58057863-dropdown-button">
+                aria-labelledby="dropdown-22813027-label"
+                id="dropdown-22813027-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-58057863-label">
+            aria-labelledby="dropdown-22813027-label">
         </ul>
     </div>
 
@@ -1434,10 +1287,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/90814" === "" ? null : "/api/chartdata/api/90814";
-                        var chartId = "chart" + 58057863;
+                        var chartId = "chart" + 22813027;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table58057863"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table22813027"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1460,19 +1313,19 @@
                                 $.getCachedJSON('/Static/templates/js/highcharts/data/counties.json').done(function (d) {
                                     d.sort(chart.sortData());
                                     var data = [{ name: "All counties", id: 0 }].concat(d);
-                                    initDropdown("#location58057863", data, function (val) {
+                                    initDropdown("#location22813027", data, function (val) {
                                         var data = val > 0 ? val : "";
                                         chart.reload(["location", data]);
                                     });
-                                    $("#location" + 58057863).removeClass("fhi-hidden");
+                                    $("#location" + 22813027).removeClass("fhi-hidden");
                                 });
                                 
 
                             
                                 chart.load(null, function () {
-                                    $('#chart58057863 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart58057863 .c-loading").addClass("fhi-hidden");
-                                $("#toggle" + 58057863).removeClass("fhi-hidden");
+                                    $('#chart22813027 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart22813027 .c-loading").addClass("fhi-hidden");
+                                $("#toggle" + 22813027).removeClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1497,7 +1350,7 @@
     </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart58057863 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart22813027 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1511,27 +1364,27 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart2493678" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart6894068" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top fhi-p-top-XS" style="">
                         
 
-<div id="range2493678" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="range2493678-legend">
+<div id="range6894068" class="fhi-dropdown fhi-m-bottom-S fhi-m-left-S-plus@LG  fhi-hidden fhi-print--hidden  " >
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="range6894068-legend">
         Week selector
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="range2493678-label"
-                id="range2493678-dropdown-button">
+                aria-labelledby="range6894068-label"
+                id="range6894068-dropdown-button">
             Choose week
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="range2493678-label">
+            aria-labelledby="range6894068-label">
         </ul>
     </div>
 
@@ -1539,8 +1392,8 @@
 
 
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart2493678" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart2493678" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart6894068" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart6894068" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -1553,9 +1406,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-2493678" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-6894068" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table2493678" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table6894068" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -1564,16 +1417,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-2493678" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-6894068" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-2493678">
+                                 id="combobox-6894068">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-2493678"
-                                       aria-controls="table2493678">
+                                       aria-labelledby="combobox-label-6894068"
+                                       aria-controls="table6894068">
 
                             </div>
 
@@ -1582,22 +1435,22 @@
 
                     
 
-<div id="dropdown-2493678" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-2493678-legend">
+<div id="dropdown-6894068" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-6894068-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-2493678-label"
-                id="dropdown-2493678-dropdown-button">
+                aria-labelledby="dropdown-6894068-label"
+                id="dropdown-6894068-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-2493678-label">
+            aria-labelledby="dropdown-6894068-label">
         </ul>
     </div>
 
@@ -1628,10 +1481,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91295" === "" ? null : "/api/chartdata/api/91295";
-                        var chartId = "chart" + 2493678;
+                        var chartId = "chart" + 6894068;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table2493678"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table6894068"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -1653,18 +1506,18 @@
                                             }
                                             return { id: d, name: d };
                                         });
-                                        initDropdown("#range2493678", range, function (val) {
+                                        initDropdown("#range6894068", range, function (val) {
                                             chart.reload(["yearweek", val]);
                                         });
-                                        $("#range" + 2493678).removeClass("fhi-hidden");
+                                        $("#range" + 6894068).removeClass("fhi-hidden");
                                     }
                                 })
 
                                 
 
                                 chart.load(null, function () {
-                                    $('#chart2493678 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart2493678 .c-loading").addClass("fhi-hidden");
+                                    $('#chart6894068 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart6894068 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -1689,7 +1542,7 @@
     </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart2493678 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart6894068 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -1702,21 +1555,21 @@
 
 <div class="fhi-row fhi-row--fill"><div class="fhi-col fhi-col-6@LG">
 
-<figure id="map51213574" class="highmaps fhi-fill-screen--mobile">
+<figure id="map59294925" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart51213574" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart51213574" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart59294925" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart59294925" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer51213574" class="highchart-graph"></div>
-                <div id="table-container-51213574" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer59294925" class="highchart-graph"></div>
+                <div id="table-container-59294925" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table51213574" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table59294925" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Number of reported COVID-19 cases by county</caption>
                         </table>
                     </figure>
@@ -1783,7 +1636,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer51213574', {
+             var chart = Highcharts.mapChart('mapcontainer59294925', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -1870,7 +1723,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 51213574 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 59294925 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -1887,35 +1740,35 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map51213574 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map59294925 table"), { headings: ["County", "Number"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map51213574 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map51213574 .c-loading").addClass("fhi-hidden");
+            $("#map59294925 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map59294925 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
 </script>
 </div><div class="fhi-col fhi-col-6@LG">
 
-<figure id="map65241947" class="highmaps fhi-fill-screen--mobile">
+<figure id="map2306504" class="highmaps fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart65241947" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart65241947" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart2306504" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart2306504" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
 
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer65241947" class="highchart-graph"></div>
-                <div id="table-container-65241947" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
+            <div id="mapcontainer2306504" class="highchart-graph"></div>
+                <div id="table-container-2306504" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden ">
                     <figure class="figure table">
-                        <table id="table65241947" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table2306504" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center fhi-p-top-S-plus fhi-p-left-M-plus fhi-p-right-M-plus">Reported rate by 100 000 inhabitants</caption>
                         </table>
                     </figure>
@@ -1982,7 +1835,7 @@
 
     function loadMap(data, lastModified) {
           $.getCachedScript('/Static/templates/js/highcharts/data/no-all.js').done(function () {
-             var chart = Highcharts.mapChart('mapcontainer65241947', {
+             var chart = Highcharts.mapChart('mapcontainer2306504', {
                  chart: {
                      map: 'countries/no/no-all',
                  },
@@ -2069,7 +1922,7 @@
              if (typeof lastModified !== "undefined") {
                  lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                  lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-                 $("#mapcontainer" + 65241947 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+                 $("#mapcontainer" + 2306504 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
              }
 
 
@@ -2086,14 +1939,14 @@
                     sortAscending: "Sort ascending by ",
                     sortDescending: "Sort descending by ",
                 }
-                var table = new DynamicTable(document.querySelector("#map65241947 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map2306504 table"), { headings: ["County", "Incidence"], data: tableData }, { translations: translations });
              table.buildTable(0, tableData.length);
              if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
              
 
-            $("#map65241947 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-            $("#map65241947 .c-loading").addClass("fhi-hidden");
+            $("#map2306504 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+            $("#map2306504 .c-loading").addClass("fhi-hidden");
         });
         }
 })();
@@ -2102,20 +1955,20 @@
 <h2>By municipality</h2>
 <p>The map shows the number of reported COVID-19 cases by municipality.</p>
 
-<figure id="map27703316" class="highmaps highmaps--municipality fhi-fill-screen--mobile">
+<figure id="map43383102" class="highmaps highmaps--municipality fhi-fill-screen--mobile">
     <div class="fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
 <div class="options fhi-print--hidden">
                 <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart27703316" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart27703316" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart43383102" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Map</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart43383102" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)"><span class="fhi-visually-hidden">Choose to see </span>Table</button>
                 </div>
 
             </div>
         <div class="highcharts-inner-wrapper fhi-hidden">
-            <div id="mapcontainer27703316" class="highchart-graph"></div>
-                <div id="table-container-27703316" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="mapcontainer43383102" class="highchart-graph"></div>
+                <div id="table-container-43383102" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                     <figure class="figure table">
-                        <table id="table27703316" class="" style="border-top:none;" summary="Table representation of map">
+                        <table id="table43383102" class="" style="border-top:none;" summary="Table representation of map">
                             <caption class="fhi-text-center">Number of reported cases by municipality</caption>
 
                         </table>
@@ -2124,16 +1977,16 @@
                     <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                         <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                            <label id="combobox-label-27703316" class="combobox-label fhi-visually-hidden">
+                            <label id="combobox-label-43383102" class="combobox-label fhi-visually-hidden">
                                 Filter entries
                             </label>
                             <div class="fhi-combobox-wrapper">
                                 <div role="combobox" class="fhi-combobox-input"
-                                     id="combobox-27703316">
+                                     id="combobox-43383102">
                                     <input data-filter type="text"
                                            placeholder="Filter"
-                                           aria-labelledby="combobox-label-27703316"
-                                           aria-controls="table27703316">
+                                           aria-labelledby="combobox-label-43383102"
+                                           aria-controls="table43383102">
 
                                 </div>
 
@@ -2142,22 +1995,22 @@
 
                         
 
-<div id="dropdown-27703316" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-27703316-legend">
+<div id="dropdown-43383102" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-43383102-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-27703316-label"
-                id="dropdown-27703316-dropdown-button">
+                aria-labelledby="dropdown-43383102-label"
+                id="dropdown-43383102-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-27703316-label">
+            aria-labelledby="dropdown-43383102-label">
         </ul>
     </div>
 
@@ -2200,7 +2053,7 @@
 				$.getCachedScript('/Static/templates/js/highcharts/data/no-all-all-split_v2.js').done(function () {
 
 
-               var chart = Highcharts.mapChart('mapcontainer27703316', {
+               var chart = Highcharts.mapChart('mapcontainer43383102', {
                     chart: {
                         map: 'countries/no/no-all-all-split',
 								 height: '84.4%'
@@ -2291,7 +2144,7 @@
                 if (lastModified !== undefined) {
 					lastModified = lastModified.slice(0, lastModified.indexOf(":") - 2);
                     lastModified = new Date(lastModified).toLocaleDateString('en', { month: "long", day: "numeric" })
-					$("#mapcontainer" + 27703316 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
+					$("#mapcontainer" + 43383102 +" .highcharts-container").append("<p class='highcharts-updated'>Updated " + lastModified + "</p>");
 				}
 
 				 
@@ -2311,14 +2164,14 @@
 					return [p.number,p.name,p.value]
                 });
 
-                var table = new DynamicTable(document.querySelector("#map27703316 table"), { headings: ["Municipality no.", "Municipality", "Number"], data: dataFromMap }, { translations: translations });
+                var table = new DynamicTable(document.querySelector("#map43383102 table"), { headings: ["Municipality no.", "Municipality", "Number"], data: dataFromMap }, { translations: translations });
 				  new Pagination(table, translations);
 				  if (lastModified !== undefined) $(table.node).append("<tfoot><tr><td colspan='2'>Updated: " + lastModified + "</td></tr></tfoot>").css("border-bottom-width", "0");
 
 				 
 
-                $("#map27703316 .highcharts-inner-wrapper").removeClass("fhi-hidden");
-                $("#map27703316 .c-loading").addClass("fhi-hidden");
+                $("#map43383102 .highcharts-inner-wrapper").removeClass("fhi-hidden");
+                $("#map43383102 .c-loading").addClass("fhi-hidden");
 
             });
 	}
@@ -3410,13 +3263,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart26271633" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart52164585" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart26271633" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart26271633" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart52164585" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart52164585" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3429,9 +3282,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-26271633" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-52164585" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table26271633" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table52164585" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3440,16 +3293,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-26271633" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-52164585" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-26271633">
+                                 id="combobox-52164585">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-26271633"
-                                       aria-controls="table26271633">
+                                       aria-labelledby="combobox-label-52164585"
+                                       aria-controls="table52164585">
 
                             </div>
 
@@ -3458,22 +3311,22 @@
 
                     
 
-<div id="dropdown-26271633" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-26271633-legend">
+<div id="dropdown-52164585" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-52164585-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-26271633-label"
-                id="dropdown-26271633-dropdown-button">
+                aria-labelledby="dropdown-52164585-label"
+                id="dropdown-52164585-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-26271633-label">
+            aria-labelledby="dropdown-52164585-label">
         </ul>
     </div>
 
@@ -3504,10 +3357,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91823" === "" ? null : "/api/chartdata/api/91823";
-                        var chartId = "chart" + 26271633;
+                        var chartId = "chart" + 52164585;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table26271633"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table52164585"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3520,8 +3373,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart26271633 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart26271633 .c-loading").addClass("fhi-hidden");
+                                    $('#chart52164585 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart52164585 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3546,7 +3399,7 @@
     </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart26271633 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart52164585 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3560,13 +3413,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart63071885" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart66312280" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart63071885" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart63071885" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart66312280" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart66312280" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3579,9 +3432,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-63071885" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-66312280" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table63071885" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table66312280" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3590,16 +3443,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-63071885" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-66312280" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-63071885">
+                                 id="combobox-66312280">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-63071885"
-                                       aria-controls="table63071885">
+                                       aria-labelledby="combobox-label-66312280"
+                                       aria-controls="table66312280">
 
                             </div>
 
@@ -3608,22 +3461,22 @@
 
                     
 
-<div id="dropdown-63071885" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-63071885-legend">
+<div id="dropdown-66312280" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-66312280-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-63071885-label"
-                id="dropdown-63071885-dropdown-button">
+                aria-labelledby="dropdown-66312280-label"
+                id="dropdown-66312280-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-63071885-label">
+            aria-labelledby="dropdown-66312280-label">
         </ul>
     </div>
 
@@ -3654,10 +3507,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91829" === "" ? null : "/api/chartdata/api/91829";
-                        var chartId = "chart" + 63071885;
+                        var chartId = "chart" + 66312280;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table63071885"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table66312280"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3670,8 +3523,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart63071885 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart63071885 .c-loading").addClass("fhi-hidden");
+                                    $('#chart66312280 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart66312280 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3696,7 +3549,7 @@
     </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart63071885 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart66312280 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3710,13 +3563,13 @@
 
 
 <!-- basic Highcharts block template -->
-<figure id="chart24900837" class="highchart  fhi-fill-screen--mobile">
+<figure id="chart63188235" class="highchart  fhi-fill-screen--mobile">
     <div class=" fhi-figure-wrapper fhi-p-top-none" data-highcharts-wrapper>
         <div class="options fhi-print--hidden fhi-p-top " style="">
                         
             <div class="fhi-tabs__container fhi-print--hidden">
-                    <button role="tab" aria-selected="true" aria-controls="chart24900837" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
-                    <button role="tab" aria-selected="false" aria-controls="chart24900837" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
+                    <button role="tab" aria-selected="true" aria-controls="chart63188235" id="viewGraph" class="fhi-tabs__item active" onClick="toggleChartView(this)">Graph</button>
+                    <button role="tab" aria-selected="false" aria-controls="chart63188235" id="viewTable" class="fhi-tabs__item" onClick="toggleChartView(this)">Table</button>
                 
             </div>
         </div>
@@ -3729,9 +3582,9 @@
 </script>
 </div>
 <p>&nbsp;</p>
-            <div id="table-container-24900837" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
+            <div id="table-container-63188235" data-table-container data-pagination-container data-highcharts-table class="fhi-dynamic-table highcharts-table fhi-hidden">
                 <figure class="figure table">
-                    <table id="table24900837" class="" style="border-top:none;" summary="Table representation of chart">
+                    <table id="table63188235" class="" style="border-top:none;" summary="Table representation of chart">
                         <caption></caption>
                     </table>
                 </figure>
@@ -3740,16 +3593,16 @@
                 <div class="fhi-flex fhi-align-direction-row fhi-align-end fhi-bg-white fhi-dynamic-table__controls fhi-align-column-centered-x fhi-p-S fhi-hidden" data-show-on-init>
 
                     <div class="fhi-combobox fhi-bg-white fhi-print--hidden">
-                        <label id="combobox-label-24900837" class="combobox-label fhi-visually-hidden">
+                        <label id="combobox-label-63188235" class="combobox-label fhi-visually-hidden">
                             Filter entries
                         </label>
                         <div class="fhi-combobox-wrapper">
                             <div role="combobox" class="fhi-combobox-input"
-                                 id="combobox-24900837">
+                                 id="combobox-63188235">
                                 <input data-filter type="text"
                                        placeholder="Filter"
-                                       aria-labelledby="combobox-label-24900837"
-                                       aria-controls="table24900837">
+                                       aria-labelledby="combobox-label-63188235"
+                                       aria-controls="table63188235">
 
                             </div>
 
@@ -3758,22 +3611,22 @@
 
                     
 
-<div id="dropdown-24900837" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
-    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-24900837-legend">
+<div id="dropdown-63188235" class="fhi-dropdown  fhi-print--hidden  " data-dropdown>
+    <span class="fhi-visually-hidden fhi-dropdown__label" id="dropdown-63188235-legend">
         Choose number of entries pr. page
     </span>
     <div>
 
         <button class="fhi-dropdown-btn"
                 aria-haspopup="listbox"
-                aria-labelledby="dropdown-24900837-label"
-                id="dropdown-24900837-dropdown-button">
+                aria-labelledby="dropdown-63188235-label"
+                id="dropdown-63188235-dropdown-button">
             Select number
         </button>
         <ul class="fhi-dropdown-list fhi-hidden"
             tabindex="-1"
             role="listbox"
-            aria-labelledby="dropdown-24900837-label">
+            aria-labelledby="dropdown-63188235-label">
         </ul>
     </div>
 
@@ -3804,10 +3657,10 @@
         }
                     $(document).ready(function () {
                         var url = "/api/chartdata/api/91830" === "" ? null : "/api/chartdata/api/91830";
-                        var chartId = "chart" + 24900837;
+                        var chartId = "chart" + 63188235;
                         var table = null;
                             
-                        table = new DynamicTable(document.querySelector("#table24900837"), { headings: [], data: [] }, { translations: translations });
+                        table = new DynamicTable(document.querySelector("#table63188235"), { headings: [], data: [] }, { translations: translations });
                             
                         var chart = new CustomHighchart(document.getElementById(chartId), url, table);
 
@@ -3820,8 +3673,8 @@
                                 
                             
                                 chart.load(null, function () {
-                                    $('#chart24900837 .highcharts-inner-wrapper').removeClass("fhi-hidden");
-                                    $("#chart24900837 .c-loading").addClass("fhi-hidden");
+                                    $('#chart63188235 .highcharts-inner-wrapper').removeClass("fhi-hidden");
+                                    $("#chart63188235 .c-loading").addClass("fhi-hidden");
                                                                            
                                       chart.getHeader("X-API-Last-Modified", null, function (date) {
                                          if (!!date) {
@@ -3846,7 +3699,7 @@
     </script>
 
     <script type="text/javascript">
-        var surplusParagraph = $("#chart24900837 .highcharts-inner-wrapper > p:last-of-type");
+        var surplusParagraph = $("#chart63188235 .highcharts-inner-wrapper > p:last-of-type");
         if (surplusParagraph.text() === " ") {
             surplusParagraph.remove();
         }
@@ -3954,7 +3807,7 @@ History                                    </h2>
 
 
                     <div id="feedback-container" style="display: block;">
-<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="Iir2GY7ubW5llzKxXy4wgByQL1MslLKTyQU1uOHr58kRePIFP7fNeLJ6tRxTQhYe-l_5rnGm1R2BG0CzdlahAultbye53Q0Sr_PJTNa9Op41" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="mlHl0PYsXSyDzmw-VP4HVuTh6bJFk3Do_Q8ah1JaUHJFbI_HiuKdOOQimDO9uIRNp_nOp_nT5sO4AWf-bkEFwY7mNmhSnCPDQINLWtvZJAY1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
                                 <h3>Did you find what you were looking for?</h3>
                                 <div class="answer-group">
                                     <button class="callBtn" onclick="positive.call(this); return false;">
@@ -4281,7 +4134,7 @@ History                                    </h2>
 
             <div class="page-type">
 
-                1.0.0.0 - RD501AC5520D6D - Article
+                1.0.0.0 - RD00155D620271 - Article
             </div>
         </div>
     </div>
