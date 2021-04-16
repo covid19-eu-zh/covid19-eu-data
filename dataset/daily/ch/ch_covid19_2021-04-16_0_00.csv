@@ -1,10 +1,14 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Obwalden,OW,2165.0,39.0,,3.0,,2021-04-16
 CH,Uri,UR,2491.0,46.0,,8.0,,2021-04-16
+CH,Schaffhausen,SH,4155.0,75.0,,6.0,4.0,2021-04-16
 CH,Zug,ZG,7664.0,114.0,,6.0,2.0,2021-04-16
 CH,Schwyz,SZ,10597.0,217.0,,,,2021-04-16
+CH,Solothurn,SO,15887.0,263.0,,15.0,7.0,2021-04-16
+CH,Thurgau,TG,16971.0,432.0,,17.0,15.0,2021-04-16
+CH,Ticino,TI,31320.0,980.0,,73.0,14.0,2021-04-16
 CH,Berne,BE,59776.0,1038.0,,,,2021-04-16
-CH,,,621958.0,10486.0,372265.0,840.0,235.0,2021-04-16
+CH,,,622224.0,10486.0,372265.0,835.0,236.0,2021-04-16
 CH,Aargau,AG,,,,,,2021-04-16
 CH,Appenzell Innerrhoden,AI,,,,,,2021-04-16
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-04-16
@@ -19,10 +23,6 @@ CH,Lucerne,LU,,,,,,2021-04-16
 CH,Neuchâtel,NE,,,,,,2021-04-16
 CH,Nidwalden,NW,,,,,,2021-04-16
 CH,St. Gallen,SG,,,,,,2021-04-16
-CH,Schaffhausen,SH,,,,,,2021-04-16
-CH,Solothurn,SO,,,,,,2021-04-16
-CH,Thurgau,TG,,,,,,2021-04-16
-CH,Ticino,TI,,,,,,2021-04-16
 CH,Vaud,VD,,,,,,2021-04-16
 CH,Valais,VS,,,,,,2021-04-16
 CH,Zürich,ZH,,,,,,2021-04-16
