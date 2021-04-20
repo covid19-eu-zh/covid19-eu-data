@@ -119,7 +119,7 @@ class SARSCOV2ECDC(COVIDScrapper):
             text = el[0].xpath('.//h1/span/text()')[0]
 
         # re_dt = re.compile(r'as of (.*)')
-        re_dt = re.compile(r'as of.*(\d+\s\w+\s\d+)')
+        re_dt = re.compile(r'as of\s+(\d+\s\w+\s\d+)')
         re_dt_res = re_dt.findall(el[0].xpath('.//h1/span/text()')[0])
         if not re_dt_res:
             raise Exception("Could not find datetime on the web page")
