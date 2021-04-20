@@ -87,7 +87,8 @@ class SARSCOV2CZ(COVIDScrapper):
         # Poslední aktualizace pozitivních nálezů byla provedena ke dni: 29. 3. 2020 v 18.25 h
         # provedena ke dni: 15. 6. 2020 v 17.30 h.
 
-        re_dt = re.compile(r'provedena ke dni: (.*?)[^0-9]*v[^0-9]*(\d+.\d+).*h')
+        # re_dt = re.compile(r'provedena ke dni: (.*?)[^0-9]*v[^0-9]*(\d+.\d+).*h')
+        re_dt = re.compile(r'provedena ke dni:\s*(\d+\.\d+\.\d+?)\s+(\d+:\d+?)\.')
         dt_from_re = re_dt.findall(
             self.req.content.decode("utf-8").replace("&nbsp;","").replace("\n", "")
         )
