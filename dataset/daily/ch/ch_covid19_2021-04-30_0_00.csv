@@ -1,5 +1,4 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,Appenzell Innerrhoden,AI,4.0,15.0,,2.0,,2021-04-30
 CH,Obwalden,OW,2292.0,39.0,,3.0,,2021-04-30
 CH,Glarus,GL,2587.0,73.0,,3.0,,2021-04-30
 CH,Uri,UR,2903.0,47.0,,8.0,,2021-04-30
@@ -8,18 +7,19 @@ CH,Zug,ZG,7976.0,118.0,,2.0,2.0,2021-04-30
 CH,Schwyz,SZ,11141.0,223.0,,,,2021-04-30
 CH,Basel-Stadt,BS,11978.0,199.0,,36.0,13.0,2021-04-30
 CH,Solothurn,SO,16723.0,265.0,,22.0,9.0,2021-04-30
+CH,Basel-Landschaft,BL,16879.0,218.0,,11.0,6.0,2021-04-30
 CH,Thurgau,TG,17668.0,439.0,,32.0,11.0,2021-04-30
 CH,Ticino,TI,32171.0,989.0,,54.0,14.0,2021-04-30
 CH,Geneva,GE,55614.0,733.0,,,,2021-04-30
 CH,Berne,BE,62159.0,1051.0,,,,2021-04-30
-CH,,,648815.0,10617.0,383313.0,892.0,254.0,2021-04-30
+CH,,,650156.0,10617.0,383313.0,888.0,257.0,2021-04-30
 CH,Aargau,AG,,,,,,2021-04-30
+CH,Appenzell Innerrhoden,AI,,,,,,2021-04-30
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-04-30
-CH,Basel-Landschaft,BL,,,,,,2021-04-30
 CH,Fribourg,FR,,,,,,2021-04-30
 CH,Grisons,GR,,,,,,2021-04-30
 CH,Jura,JU,,,,,,2021-04-30
-CH,Lucerne,LU,,,,,,2021-04-30
+CH,Lucerne,LU,,,,55.0,,2021-04-30
 CH,Neuchâtel,NE,,,,,,2021-04-30
 CH,Nidwalden,NW,,,,,,2021-04-30
 CH,St. Gallen,SG,,,,,,2021-04-30
