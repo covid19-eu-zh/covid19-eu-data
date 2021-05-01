@@ -5,7 +5,13 @@ on:
     paths:
     - 'scripts/download_fr_csv.py'
   schedule:
-    - cron:  '24 7/2 * * *'
+    - cron:  '24 9/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:

@@ -6,7 +6,13 @@ on:
     - 'scripts/download_uk.py'
     - '.github/workflows/download_uk.yml'
   schedule:
-    - cron:  '3 4/8 * * *'
+    - cron:  '5 12/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:

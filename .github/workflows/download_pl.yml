@@ -5,7 +5,13 @@ on:
     paths:
     - 'scripts/download_pl.py'
   schedule:
-    - cron:  '6 7/2 * * *'
+    - cron:  '5 11/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:

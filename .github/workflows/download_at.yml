@@ -5,12 +5,12 @@ on:
     paths:
     - 'scripts/download_at.py'
   schedule:
-    - cron:  '5 7/1 * * *'
+    - cron:  '5 7/5 * * *'
   workflow_dispatch:
     inputs:
       whotriggered:
-        description: 'Your Name'
-        default: 'Someone'
+        description: 'Manual Trigger'
+        default: 'Why'
         required: false
 
 

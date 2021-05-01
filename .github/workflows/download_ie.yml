@@ -6,7 +6,13 @@ on:
     - 'scripts/download_ie.py'
     - '.github/workflows/download_ie.yml'
   schedule:
-    - cron:  '55 8/8 * * *'
+    - cron:  '5 10/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:

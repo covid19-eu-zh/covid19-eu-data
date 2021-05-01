@@ -6,6 +6,12 @@ on:
     - 'scripts/download_be.py'
   schedule:
     - cron:  '25 7/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:

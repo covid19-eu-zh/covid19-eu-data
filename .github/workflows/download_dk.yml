@@ -5,7 +5,13 @@ on:
     paths:
     - 'scripts/download_dk.py'
   schedule:
-    - cron:  '43 1/10 * * *'
+    - cron:  '20 8/5 * * *'
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   build:
