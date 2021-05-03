@@ -43,6 +43,7 @@ def get_dataframes():
 
     df_cases["datetime"] = pd.to_datetime(df_cases["datetime"])
     df_deaths.replace("1/19/21.1", "1/19/21", inplace=True)
+    df_deaths["datetime"] = df_deaths["datetime"].str.replace("21.1", "21")
     df_deaths["datetime"] = pd.to_datetime(df_deaths["datetime"])
 
     df = pd.merge(
