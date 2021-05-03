@@ -1,4 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Appenzell Innerrhoden,AI,1018.0,15.0,,3.0,,2021-05-03
+CH,Obwalden,OW,2302.0,39.0,,1.0,,2021-05-03
+CH,Nidwalden,NW,2469.0,22.0,,5.0,1.0,2021-05-03
 CH,Glarus,GL,2614.0,73.0,,3.0,,2021-05-03
 CH,Uri,UR,2957.0,47.0,,8.0,,2021-05-03
 CH,Schaffhausen,SH,4370.0,76.0,,6.0,3.0,2021-05-03
@@ -8,21 +11,18 @@ CH,Solothurn,SO,16845.0,266.0,,23.0,5.0,2021-05-03
 CH,Basel-Landschaft,BL,17033.0,218.0,,16.0,4.0,2021-05-03
 CH,Thurgau,TG,17785.0,441.0,,37.0,11.0,2021-05-03
 CH,Ticino,TI,32271.0,991.0,,49.0,13.0,2021-05-03
-CH,Geneva,GE,55988.0,733.0,,,,2021-05-03
+CH,Valais,VS,36530.0,777.0,,33.0,7.0,2021-05-03
+CH,Geneva,GE,56035.0,735.0,,69.0,7.0,2021-05-03
 CH,Berne,BE,62487.0,1053.0,,,,2021-05-03
-CH,,,653569.0,10635.0,383313.0,886.0,249.0,2021-05-03
+CH,Zürich,ZH,107241.0,1381.0,,146.0,63.0,2021-05-03
+CH,,,654476.0,10641.0,383313.0,896.0,245.0,2021-05-03
 CH,Aargau,AG,,,,,,2021-05-03
-CH,Appenzell Innerrhoden,AI,,,,,,2021-05-03
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-05-03
 CH,Fribourg,FR,,,,,,2021-05-03
 CH,Grisons,GR,,,,,,2021-05-03
 CH,Jura,JU,,,,,,2021-05-03
 CH,Lucerne,LU,,,,50.0,,2021-05-03
 CH,Neuchâtel,NE,,,,,,2021-05-03
-CH,Nidwalden,NW,,,,,,2021-05-03
-CH,Obwalden,OW,,,,,,2021-05-03
 CH,St. Gallen,SG,,,,,,2021-05-03
 CH,Vaud,VD,,,,,,2021-05-03
-CH,Valais,VS,,,,,,2021-05-03
 CH,Zug,ZG,,,,,,2021-05-03
-CH,Zürich,ZH,,,,,,2021-05-03
