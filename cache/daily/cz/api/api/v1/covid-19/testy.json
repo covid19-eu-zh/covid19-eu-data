@@ -1,5 +1,5 @@
 {
-    "modified": "2021-05-09T07:42:50+02:00",
+    "modified": "2021-05-10T07:42:35+02:00",
     "source": "https:\/\/onemocneni-aktualne.mzcr.cz\/",
     "data": [
         {
@@ -3252,31 +3252,38 @@
         },
         {
             "datum": "2021-05-05",
-            "testy_den": 16674,
-            "testy_celkem": 6847010,
-            "prirustkovy_pocet_prvnich_testu": 16598,
-            "kumulativni_pocet_prvnich_testu": 6377801
+            "testy_den": 16679,
+            "testy_celkem": 6847015,
+            "prirustkovy_pocet_prvnich_testu": 16603,
+            "kumulativni_pocet_prvnich_testu": 6377806
         },
         {
             "datum": "2021-05-06",
-            "testy_den": 15601,
-            "testy_celkem": 6862611,
-            "prirustkovy_pocet_prvnich_testu": 15392,
-            "kumulativni_pocet_prvnich_testu": 6393193
+            "testy_den": 15917,
+            "testy_celkem": 6862932,
+            "prirustkovy_pocet_prvnich_testu": 15695,
+            "kumulativni_pocet_prvnich_testu": 6393501
         },
         {
             "datum": "2021-05-07",
-            "testy_den": 17612,
-            "testy_celkem": 6880223,
-            "prirustkovy_pocet_prvnich_testu": 17608,
-            "kumulativni_pocet_prvnich_testu": 6410801
+            "testy_den": 17951,
+            "testy_celkem": 6880883,
+            "prirustkovy_pocet_prvnich_testu": 17925,
+            "kumulativni_pocet_prvnich_testu": 6411426
         },
         {
             "datum": "2021-05-08",
-            "testy_den": 11867,
-            "testy_celkem": 6892090,
-            "prirustkovy_pocet_prvnich_testu": 11816,
-            "kumulativni_pocet_prvnich_testu": 6422617
+            "testy_den": 12086,
+            "testy_celkem": 6892969,
+            "prirustkovy_pocet_prvnich_testu": 12013,
+            "kumulativni_pocet_prvnich_testu": 6423439
+        },
+        {
+            "datum": "2021-05-09",
+            "testy_den": 5831,
+            "testy_celkem": 6898800,
+            "prirustkovy_pocet_prvnich_testu": 5831,
+            "kumulativni_pocet_prvnich_testu": 6429270
         }
     ]
 }
