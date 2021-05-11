@@ -14,7 +14,9 @@ logger = logging.getLogger("covid-eu-data.download.at")
 
 AT_BUNDESLAND_URL = "https://info.gesundheitsministerium.at/data/Bundesland.js"
 AT_TOTAL_URL = "https://info.gesundheitsministerium.at/data/SimpleData.js"
-AT_REPORT_URL = "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+# AT_REPORT_URL = "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+# AT_REPORT_URL = "https://info.gesundheitsministerium.gv.at/data/timeline-eimpfpass.csv"
+AT_REPORT_URL = "https://info.gesundheitsministerium.gv.at/data/timeline-faelle-bundeslaender.csv"
 AT_REPORT_FULL_DATA = "https://info.gesundheitsministerium.at/data/data.zip"
 
 HOSPITALIZED = "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung"
@@ -87,31 +89,34 @@ class SARSCOV2AT(COVIDScrapper):
         #     on=geo_loc_key
         # )
 
-        dfs = pd.read_html(AT_REPORT_URL, thousands='.')
-        if not dfs:
-            raise Exception(f'Could not find table in url: {AT_REPORT_URL}')
-        self.df = dfs[0]
-        self.df = self.df.T
-        self.df.columns = self.df.iloc[0]
-        self.df = self.df.iloc[1:].reset_index()
+        self.df  = pd.read_csv(AT_REPORT_URL, thousands='.', sep=";")
+        self.df["Datum"] = self.df.Datum.apply(
+            lambda x: dateutil.parser.parse(x, dayfirst=False)
+        )
+        # if not df:
+        #     raise Exception(f'Could not find table in url: {AT_REPORT_URL}')
+        self.dt = max(self.df.Datum)
+        self.df = self.df.loc[self.df.Datum == self.dt]
 
         # rename columns
         columns = [i.replace("*", " ").replace("°", " ").split("(")[0].strip() for i in self.df.columns]
         self.df.columns = columns
         self.df.rename(
             columns={
-                "index": geo_loc_key,
-                "Bestätigte Fälle": "cases",
-                "Todesfälle": "deaths",
+                "Name": geo_loc_key,
+                "Bevölkerung": "population",
+                "BestaetigteFaelleBundeslaender": "cases",
+                "Todesfaelle": "deaths",
                 "Genesen": "recovered",
                 "Hospitalisierung": "hospitalized",
                 "Intensivstation": "intensive_care",
-                "Testungen": "tests"
+                "Testungen": "tests",
+                "Datum": "datetime"
             }, inplace=True
         )
         self.df = self.df[[
             geo_loc_key, "cases", "deaths", "recovered", "hospitalized",
-            "intensive_care", "tests"
+            "intensive_care", "tests", "datetime"
         ]]
         SUM_KEY = {
             "Österreich  gesamt": "",
@@ -121,9 +126,9 @@ class SARSCOV2AT(COVIDScrapper):
         self.df[geo_loc_key] = self.df[geo_loc_key].apply(lambda x: x.strip().replace(".",""))
         self.df[geo_loc_key] = self.df[geo_loc_key].str.replace('*', '')
         self.df = self.df.dropna(how="all", subset=[i for i in self.df.columns if i != geo_loc_key])
-        self.df[geo_loc_key] = self.df[geo_loc_key].apply(
-            lambda x: AT_STATES[x] if x in AT_STATES else SUM_KEY[x]
-        )
+        # self.df[geo_loc_key] = self.df[geo_loc_key].apply(
+        #     lambda x: AT_STATES[x] if x in AT_STATES else SUM_KEY[x]
+        # )
         for col in self.df.columns:
             self.df[col] = self.df[col].apply(
                 lambda x: x.replace("*", "").replace("+","").replace(".","").replace(",","").replace("^","")
@@ -150,19 +155,8 @@ class SARSCOV2AT(COVIDScrapper):
         Stand 27.03.2020, 08:00 Uhr
         Bestätigte Fälle (Stand 15.04.2020, 08:00 Uhr)
         """
-        req = self.req
 
-        re_dt = re.compile(r'Stand (\d+.\d+.\d+.*\d+:\d+) Uhr')
-        text = req.content.decode(req.apparent_encoding).replace("&nbsp;", " ")
-        dt_from_re = re_dt.findall(text)
-
-        if not dt_from_re:
-            raise Exception("Did not find datetime from webpage")
-
-        dt_from_re = [dateutil.parser.parse(i, dayfirst=True) for i in dt_from_re]
-        dt_from_re.sort()
-
-        self.dt = dt_from_re[-1]
+        pass
 
     def post_processing(self):
 
