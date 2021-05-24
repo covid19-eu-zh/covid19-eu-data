@@ -1,14 +1,15 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,2632.0,23.0,,1.0,1.0,2021-05-22
-CH,Jura,JU,6831.0,145.0,,3.0,1.0,2021-05-22
+CH,Jura,JU,6831.0,145.0,,4.0,1.0,2021-05-22
 CH,Schwyz,SZ,11738.0,231.0,,,,2021-05-22
 CH,Basel-Stadt,BS,12697.0,203.0,,13.0,5.0,2021-05-22
 CH,Grisons,GR,13298.0,190.0,,4.0,3.0,2021-05-22
 CH,Basel-Landschaft,BL,17763.0,220.0,,8.0,2.0,2021-05-22
+CH,Thurgau,TG,18544.0,449.0,,14.0,7.0,2021-05-22
 CH,Ticino,TI,32947.0,994.0,,23.0,1.0,2021-05-22
 CH,Geneva,GE,58024.0,744.0,,,,2021-05-22
 CH,Berne,BE,65062.0,1061.0,,,,2021-05-22
-CH,,,678001.0,10761.0,401331.0,477.0,170.0,2021-05-22
+CH,,,678060.0,10761.0,401331.0,479.0,170.0,2021-05-22
 CH,Aargau,AG,,,,,,2021-05-22
 CH,Appenzell Innerrhoden,AI,,,,,,2021-05-22
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-05-22
@@ -20,7 +21,6 @@ CH,Obwalden,OW,,,,,,2021-05-22
 CH,St. Gallen,SG,,,,,,2021-05-22
 CH,Schaffhausen,SH,,,,,,2021-05-22
 CH,Solothurn,SO,,,,,,2021-05-22
-CH,Thurgau,TG,,,,,,2021-05-22
 CH,Uri,UR,,,,,,2021-05-22
 CH,Vaud,VD,,,,,,2021-05-22
 CH,Valais,VS,,,,,,2021-05-22
