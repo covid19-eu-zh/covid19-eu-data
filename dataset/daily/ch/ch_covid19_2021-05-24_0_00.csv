@@ -1,12 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,2644.0,23.0,,1.0,1.0,2021-05-24
+CH,Zug,ZG,8300.0,121.0,,2.0,3.0,2021-05-24
 CH,Basel-Stadt,BS,12729.0,203.0,,11.0,3.0,2021-05-24
 CH,Basel-Landschaft,BL,17776.0,220.0,,13.0,1.0,2021-05-24
 CH,Thurgau,TG,18558.0,450.0,,14.0,7.0,2021-05-24
 CH,Ticino,TI,32977.0,994.0,,21.0,0.0,2021-05-24
-CH,Geneva,GE,58043.0,744.0,,,,2021-05-24
+CH,Geneva,GE,58056.0,745.0,,,,2021-05-24
 CH,Berne,BE,65202.0,1063.0,,,,2021-05-24
-CH,,,678329.0,10764.0,401331.0,481.0,166.0,2021-05-24
+CH,,,678360.0,10765.0,401331.0,479.0,167.0,2021-05-24
 CH,Aargau,AG,,,,,,2021-05-24
 CH,Appenzell Innerrhoden,AI,,,,,,2021-05-24
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-05-24
@@ -24,5 +25,4 @@ CH,Schwyz,SZ,,,,,,2021-05-24
 CH,Uri,UR,,,,,,2021-05-24
 CH,Vaud,VD,,,,,,2021-05-24
 CH,Valais,VS,,,,,,2021-05-24
-CH,Zug,ZG,,,,,,2021-05-24
 CH,Zürich,ZH,,,,,,2021-05-24
