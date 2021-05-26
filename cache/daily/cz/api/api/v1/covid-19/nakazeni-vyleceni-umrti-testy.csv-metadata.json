@@ -8,7 +8,7 @@
     "url": "nakazeni-vyleceni-umrti-testy.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří, počet vyléčených, počet úmrtí a provedených testů",
     "dc:description": "Datová sada obsahující kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle hlášení krajských hygienických stanic včetně laboratoří, denní počty vyléčených po onemocnění COVID‑19 dle hlášení krajských hygienických stanic, denní počty úmrtí v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic a hospitalizačních úmrtí, a denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. S ohledem na fakt, že vykazování vyléčených osob a úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování. Datová sada je dostupná v nové verzi na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ .",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "covid-19",
         "koronavirus",
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-25",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {
