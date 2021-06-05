@@ -1,9 +1,11 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Nidwalden,NW,2706.0,23.0,,0.0,0.0,2021-06-05
 CH,Schwyz,SZ,12055.0,235.0,,,,2021-06-05
 CH,Basel-Stadt,BS,12873.0,204.0,,,,2021-06-05
+CH,Grisons,GR,13464.0,191.0,,4.0,0.0,2021-06-05
 CH,Ticino,TI,33116.0,995.0,,4.0,0.0,2021-06-05
-CH,Geneva,GE,58617.0,745.0,,,,2021-06-05
-CH,,,686625.0,10818.0,408627.0,324.0,125.0,2021-06-05
+CH,Geneva,GE,58628.0,745.0,,,,2021-06-05
+CH,,,686662.0,10818.0,408627.0,322.0,124.0,2021-06-05
 CH,Aargau,AG,,,,,,2021-06-05
 CH,Appenzell Innerrhoden,AI,,,,,,2021-06-05
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-06-05
@@ -11,11 +13,9 @@ CH,Berne,BE,,,,,,2021-06-05
 CH,Basel-Landschaft,BL,,,,,,2021-06-05
 CH,Fribourg,FR,,,,,,2021-06-05
 CH,Glarus,GL,,,,,,2021-06-05
-CH,Grisons,GR,,,,,,2021-06-05
 CH,Jura,JU,,,,,,2021-06-05
 CH,Lucerne,LU,,,,,,2021-06-05
 CH,Neuchâtel,NE,,,,,,2021-06-05
-CH,Nidwalden,NW,,,,,,2021-06-05
 CH,Obwalden,OW,,,,,,2021-06-05
 CH,St. Gallen,SG,,,,,,2021-06-05
 CH,Schaffhausen,SH,,,,,,2021-06-05
