@@ -18,6 +18,8 @@ today_iso = datetime.date.today().isoformat()
 # Download from Dashboard
 REPORT_API = "https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIrelandOpenData/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&groupByFieldsForStatistics=CountyName&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22ConfirmedCovidCases%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true"
 
+# FULL_DATA = "https://covid-19.geohive.ie/datasets/4779c505c43c40da9101ce53f34bb923_0/about"
+FULL_DATA = "https://opendata.arcgis.com/api/v3/datasets/4779c505c43c40da9101ce53f34bb923_0/downloads/data?format=csv&spatialRefId=4326"
 
 TIMESERES_API = f"https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/CovidStatisticsProfileHPSCIrelandView/FeatureServer/0/query?f=json&where=Date%3Ctimestamp%20%27{today_iso}%2022%3A00%3A00%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=FID%2CConfirmedCovidCases%2CDate&orderByFields=Date%20asc&resultOffset=0&resultRecordCount=2000&cacheHint=true"
 
@@ -58,12 +60,16 @@ def get_most_recent_date():
 
     req = requests.get(TIMESERES_API)
     data = req.json()["features"]
-    data = [i["attributes"]["Date"] for i in data]
-    data.sort()
+    if data:
+        data = [i["attributes"]["Date"] for i in data]
+        data.sort()
 
-    ts = data[-1]
-    ts = int(ts)/1000
-    dt = datetime.datetime.fromtimestamp(ts)
+        ts = data[-1]
+        ts = int(ts)/1000
+        dt = datetime.datetime.fromtimestamp(ts)
+    else:
+        logger.error("Can not find datetime from data, using today!")
+        dt = datetime.datetime.combine(datetime.date.today(), datetime.datetime.min.time())
 
     return dt
 
