@@ -68,6 +68,36 @@
                 "titles": "kumulovany_pocet_provedenych_ag_testu",
                 "datatype": "integer",
                 "dc:description": "Kumulativní počet provedených antigenních testů."
+            },
+            {
+                "name": "prirustkovy_pocet_nakazenych",
+                "titles": "prirustkovy_pocet_nakazenych",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet osob s prokázanou nákazou."
+            },
+            {
+                "name": "prirustkovy_pocet_vylecenych",
+                "titles": "prirustkovy_pocet_vylecenych",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet vyléčených osob."
+            },
+            {
+                "name": "prirustkovy_pocet_umrti",
+                "titles": "prirustkovy_pocet_umrti",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet úmrtí."
+            },
+            {
+                "name": "prirustkovy_pocet_provedenych_testu",
+                "titles": "prirustkovy_pocet_provedenych_testu",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených PCR testů."
+            },
+            {
+                "name": "prirustkovy_pocet_provedenych_ag_testu",
+                "titles": "prirustkovy_pocet_provedenych_ag_testu",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených antigenních testů."
             }
         ]
     }
