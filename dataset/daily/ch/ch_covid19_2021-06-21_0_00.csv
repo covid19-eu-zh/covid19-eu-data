@@ -1,5 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1235.0,15.0,,,,2021-06-21
+CH,Obwalden,OW,2594.0,39.0,,2.0,,2021-06-21
+CH,Nidwalden,NW,2736.0,23.0,,0.0,0.0,2021-06-21
 CH,Glarus,GL,2803.0,78.0,,0.0,,2021-06-21
 CH,Uri,UR,3262.0,50.0,,0.0,,2021-06-21
 CH,Schaffhausen,SH,4794.0,78.0,,0.0,1.0,2021-06-21
@@ -8,21 +10,19 @@ CH,Schwyz,SZ,12281.0,238.0,,,,2021-06-21
 CH,Basel-Stadt,BS,12949.0,205.0,,,,2021-06-21
 CH,Solothurn,SO,17934.0,,,0.0,0.0,2021-06-21
 CH,Thurgau,TG,18919.0,454.0,,1.0,3.0,2021-06-21
+CH,Fribourg,FR,32452.0,489.0,,6.0,2.0,2021-06-21
 CH,Ticino,TI,33220.0,995.0,,3.0,0.0,2021-06-21
-CH,Geneva,GE,58882.0,745.0,,,,2021-06-21
+CH,Valais,VS,38104.0,785.0,,3.0,3.0,2021-06-21
+CH,Geneva,GE,58884.0,745.0,,1.0,1.0,2021-06-21
 CH,Zürich,ZH,112517.0,1414.0,,20.0,18.0,2021-06-21
-CH,,,691337.0,10859.0,410173.0,176.0,75.0,2021-06-21
+CH,,,691412.0,10861.0,410764.0,158.0,76.0,2021-06-21
 CH,Aargau,AG,,,,,,2021-06-21
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-06-21
 CH,Berne,BE,,,,,,2021-06-21
 CH,Basel-Landschaft,BL,,,,1.0,0.0,2021-06-21
-CH,Fribourg,FR,,,,,,2021-06-21
 CH,Grisons,GR,,,,,,2021-06-21
 CH,Jura,JU,,,,,,2021-06-21
 CH,Lucerne,LU,,,,15.0,,2021-06-21
-CH,Neuchâtel,NE,,,,,,2021-06-21
-CH,Nidwalden,NW,,,,,,2021-06-21
-CH,Obwalden,OW,,,,,,2021-06-21
+CH,Neuchâtel,NE,,,,0.0,0.0,2021-06-21
 CH,St. Gallen,SG,,,,,,2021-06-21
 CH,Vaud,VD,,,,,,2021-06-21
-CH,Valais,VS,,,,,,2021-06-21
