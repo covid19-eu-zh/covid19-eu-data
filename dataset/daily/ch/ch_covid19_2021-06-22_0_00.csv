@@ -1,5 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Appenzell Innerrhoden,AI,1236.0,15.0,,,,2021-06-22
 CH,Obwalden,OW,2594.0,39.0,,2.0,,2021-06-22
+CH,Nidwalden,NW,2734.0,23.0,,0.0,0.0,2021-06-22
 CH,Glarus,GL,2804.0,78.0,,0.0,,2021-06-22
 CH,Uri,UR,3262.0,50.0,,0.0,,2021-06-22
 CH,Schaffhausen,SH,4796.0,78.0,,0.0,1.0,2021-06-22
@@ -8,10 +10,10 @@ CH,Basel-Stadt,BS,12950.0,205.0,,7.0,3.0,2021-06-22
 CH,Solothurn,SO,17941.0,,,0.0,0.0,2021-06-22
 CH,Thurgau,TG,18923.0,454.0,,2.0,2.0,2021-06-22
 CH,Ticino,TI,33222.0,995.0,,2.0,0.0,2021-06-22
-CH,Geneva,GE,58889.0,745.0,,,,2021-06-22
-CH,,,691509.0,10861.0,410764.0,149.0,71.0,2021-06-22
+CH,Geneva,GE,58890.0,745.0,,,,2021-06-22
+CH,Zürich,ZH,112546.0,1414.0,,18.0,18.0,2021-06-22
+CH,,,691538.0,10861.0,410764.0,147.0,71.0,2021-06-22
 CH,Aargau,AG,,,,,,2021-06-22
-CH,Appenzell Innerrhoden,AI,,,,,,2021-06-22
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-06-22
 CH,Berne,BE,,,,,,2021-06-22
 CH,Basel-Landschaft,BL,,,,1.0,0.0,2021-06-22
@@ -20,9 +22,7 @@ CH,Grisons,GR,,,,,,2021-06-22
 CH,Jura,JU,,,,,,2021-06-22
 CH,Lucerne,LU,,,,15.0,,2021-06-22
 CH,Neuchâtel,NE,,,,,,2021-06-22
-CH,Nidwalden,NW,,,,,,2021-06-22
 CH,St. Gallen,SG,,,,,,2021-06-22
 CH,Vaud,VD,,,,,,2021-06-22
 CH,Valais,VS,,,,,,2021-06-22
 CH,Zug,ZG,,,,,,2021-06-22
-CH,Zürich,ZH,,,,,,2021-06-22
