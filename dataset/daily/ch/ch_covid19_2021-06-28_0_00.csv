@@ -1,5 +1,6 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1236.0,15.0,,,,2021-06-28
+CH,Obwalden,OW,2599.0,39.0,,0.0,,2021-06-28
 CH,Glarus,GL,2806.0,78.0,,1.0,,2021-06-28
 CH,Uri,UR,3264.0,50.0,,0.0,,2021-06-28
 CH,Schaffhausen,SH,4808.0,78.0,,0.0,1.0,2021-06-28
@@ -7,22 +8,21 @@ CH,Schwyz,SZ,12328.0,238.0,,,,2021-06-28
 CH,Basel-Stadt,BS,12964.0,205.0,,,,2021-06-28
 CH,Solothurn,SO,17964.0,,,,,2021-06-28
 CH,Thurgau,TG,18948.0,454.0,,3.0,2.0,2021-06-28
+CH,Fribourg,FR,32476.0,493.0,,3.0,1.0,2021-06-28
 CH,Ticino,TI,33240.0,995.0,,1.0,0.0,2021-06-28
-CH,Geneva,GE,58921.0,745.0,,,,2021-06-28
+CH,Valais,VS,38146.0,785.0,,3.0,3.0,2021-06-28
+CH,Geneva,GE,58931.0,745.0,,,,2021-06-28
 CH,Zürich,ZH,112627.0,1416.0,,9.0,16.0,2021-06-28
-CH,,,692108.0,10869.0,410764.0,124.0,58.0,2021-06-28
+CH,,,692143.0,10871.0,410764.0,117.0,60.0,2021-06-28
 CH,Aargau,AG,,,,,,2021-06-28
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-06-28
 CH,Berne,BE,,,,,,2021-06-28
 CH,Basel-Landschaft,BL,,,,0.0,0.0,2021-06-28
-CH,Fribourg,FR,,,,,,2021-06-28
 CH,Grisons,GR,,,,,,2021-06-28
 CH,Jura,JU,,,,,,2021-06-28
 CH,Lucerne,LU,,,,9.0,,2021-06-28
 CH,Neuchâtel,NE,,,,,,2021-06-28
 CH,Nidwalden,NW,,,,,,2021-06-28
-CH,Obwalden,OW,,,,,,2021-06-28
 CH,St. Gallen,SG,,,,,,2021-06-28
 CH,Vaud,VD,,,,,,2021-06-28
-CH,Valais,VS,,,,,,2021-06-28
 CH,Zug,ZG,,,,,,2021-06-28
