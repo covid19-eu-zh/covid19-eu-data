@@ -105,7 +105,8 @@ def download_and_xlsx(xlsx_url):
 
     cols_en = {
         "Date": "datetime",
-        "Tested (all)": "tests",
+        # "Tested (all)": "tests",
+        "Tested (all, PCR + HAGT)": "tests",
         "Positive (all)": "tests_positive",
         "All hospitalized on certain day": "hospitalized",
         "All persons in intensive care on certain day": "intensive_care",
