@@ -1,28 +1,28 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Appenzell Innerrhoden,AI,1238.0,15.0,,,,2021-07-09
+CH,Obwalden,OW,2605.0,39.0,,0.0,,2021-07-09
+CH,Nidwalden,NW,2742.0,23.0,,0.0,0.0,2021-07-09
+CH,Glarus,GL,2822.0,78.0,,0.0,,2021-07-09
 CH,Uri,UR,3266.0,50.0,,0.0,,2021-07-09
 CH,Schaffhausen,SH,4831.0,78.0,,0.0,0.0,2021-07-09
+CH,Zug,ZG,8547.0,121.0,,1.0,0.0,2021-07-09
 CH,Schwyz,SZ,12401.0,238.0,,,,2021-07-09
+CH,Basel-Stadt,BS,13005.0,205.0,,0.0,2.0,2021-07-09
 CH,Solothurn,SO,18006.0,,,,,2021-07-09
+CH,Thurgau,TG,19004.0,455.0,,3.0,0.0,2021-07-09
+CH,Ticino,TI,33349.0,995.0,,0.0,0.0,2021-07-09
 CH,Geneva,GE,59095.0,745.0,,,,2021-07-09
-CH,,,693899.0,10884.0,412206.0,92.0,41.0,2021-07-09
+CH,Zürich,ZH,113056.0,1417.0,,5.0,8.0,2021-07-09
+CH,,,694068.0,10884.0,412206.0,93.0,39.0,2021-07-09
 CH,Aargau,AG,,,,,,2021-07-09
-CH,Appenzell Innerrhoden,AI,,,,,,2021-07-09
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-07-09
 CH,Berne,BE,,,,,,2021-07-09
-CH,Basel-Landschaft,BL,,,,,,2021-07-09
-CH,Basel-Stadt,BS,,,,,,2021-07-09
+CH,Basel-Landschaft,BL,,,,1.0,0.0,2021-07-09
 CH,Fribourg,FR,,,,,,2021-07-09
-CH,Glarus,GL,,,,,,2021-07-09
 CH,Grisons,GR,,,,,,2021-07-09
 CH,Jura,JU,,,,,,2021-07-09
-CH,Lucerne,LU,,,,,,2021-07-09
+CH,Lucerne,LU,,,,6.0,,2021-07-09
 CH,Neuchâtel,NE,,,,,,2021-07-09
-CH,Nidwalden,NW,,,,,,2021-07-09
-CH,Obwalden,OW,,,,,,2021-07-09
 CH,St. Gallen,SG,,,,,,2021-07-09
-CH,Thurgau,TG,,,,,,2021-07-09
-CH,Ticino,TI,,,,,,2021-07-09
 CH,Vaud,VD,,,,,,2021-07-09
 CH,Valais,VS,,,,,,2021-07-09
-CH,Zug,ZG,,,,,,2021-07-09
-CH,Zürich,ZH,,,,,,2021-07-09
