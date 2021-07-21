@@ -1,15 +1,18 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1238.0,15.0,,,,2021-07-21
 CH,Obwalden,OW,2620.0,39.0,,1.0,,2021-07-21
+CH,Nidwalden,NW,2771.0,23.0,,0.0,0.0,2021-07-21
 CH,Glarus,GL,2866.0,78.0,,1.0,,2021-07-21
 CH,Uri,UR,3271.0,50.0,,1.0,,2021-07-21
+CH,Zug,ZG,8688.0,121.0,,3.0,0.0,2021-07-21
 CH,Schwyz,SZ,12544.0,238.0,,,,2021-07-21
 CH,Basel-Stadt,BS,13174.0,205.0,,4.0,3.0,2021-07-21
 CH,Solothurn,SO,18106.0,,,,,2021-07-21
 CH,Thurgau,TG,19070.0,456.0,,1.0,0.0,2021-07-21
 CH,Ticino,TI,33600.0,995.0,,6.0,2.0,2021-07-21
 CH,Geneva,GE,59877.0,745.0,,,,2021-07-21
-CH,,,700791.0,10889.0,413826.0,136.0,42.0,2021-07-21
+CH,Zürich,ZH,114571.0,1418.0,,20.0,10.0,2021-07-21
+CH,,,700986.0,10889.0,413826.0,138.0,41.0,2021-07-21
 CH,Aargau,AG,,,,,,2021-07-21
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-07-21
 CH,Berne,BE,,,,,,2021-07-21
@@ -19,10 +22,7 @@ CH,Grisons,GR,,,,,,2021-07-21
 CH,Jura,JU,,,,,,2021-07-21
 CH,Lucerne,LU,,,,9.0,,2021-07-21
 CH,Neuchâtel,NE,,,,,,2021-07-21
-CH,Nidwalden,NW,,,,,,2021-07-21
 CH,St. Gallen,SG,,,,,,2021-07-21
 CH,Schaffhausen,SH,,,,,,2021-07-21
 CH,Vaud,VD,,,,,,2021-07-21
 CH,Valais,VS,,,,,,2021-07-21
-CH,Zug,ZG,,,,,,2021-07-21
-CH,Zürich,ZH,,,,,,2021-07-21
