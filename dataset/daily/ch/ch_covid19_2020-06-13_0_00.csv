@@ -1,5 +1,6 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Obwalden,OW,82.0,0.0,,0.0,,2020-06-13
+CH,Schaffhausen,SH,82.0,7.0,,,,2020-06-13
 CH,Nidwalden,NW,124.0,3.0,,0.0,0.0,2020-06-13
 CH,Jura,JU,200.0,7.0,,2.0,0.0,2020-06-13
 CH,Zug,ZG,211.0,9.0,,1.0,0.0,2020-06-13
@@ -19,10 +20,9 @@ CH,Ticino,TI,3318.0,350.0,,9.0,0.0,2020-06-13
 CH,Zürich,ZH,3628.0,133.0,,7.0,1.0,2020-06-13
 CH,Geneva,GE,5355.0,283.0,,6.0,1.0,2020-06-13
 CH,Vaud,VD,5480.0,300.0,,23.0,4.0,2020-06-13
-CH,,,31161.0,1823.0,37875.0,91.0,17.0,2020-06-13
+CH,,,31164.0,1823.0,37875.0,87.0,17.0,2020-06-13
 CH,Appenzell Innerrhoden,AI,,,,,,2020-06-13
 CH,Appenzell Ausserrhoden,AR,,,,,,2020-06-13
 CH,Glarus,GL,,,,,,2020-06-13
-CH,Schaffhausen,SH,,,,,,2020-06-13
 CH,Solothurn,SO,,,,,,2020-06-13
 CH,Uri,UR,,,,,,2020-06-13

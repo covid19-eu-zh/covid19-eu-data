@@ -1,5 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1245.0,15.0,,,,2021-07-28
+CH,Obwalden,OW,2642.0,39.0,,0.0,,2021-07-28
+CH,Nidwalden,NW,2788.0,23.0,,2.0,1.0,2021-07-28
 CH,Glarus,GL,2906.0,78.0,,4.0,,2021-07-28
 CH,Uri,UR,3279.0,50.0,,1.0,,2021-07-28
 CH,Zug,ZG,8767.0,123.0,,4.0,0.0,2021-07-28
@@ -10,7 +12,7 @@ CH,Thurgau,TG,19169.0,456.0,,3.0,0.0,2021-07-28
 CH,Ticino,TI,33781.0,995.0,,8.0,4.0,2021-07-28
 CH,Geneva,GE,60600.0,745.0,,,,2021-07-28
 CH,Zürich,ZH,115670.0,1418.0,,28.0,13.0,2021-07-28
-CH,,,705745.0,10888.0,414785.0,187.0,50.0,2021-07-28
+CH,,,705781.0,10888.0,414785.0,187.0,50.0,2021-07-28
 CH,Aargau,AG,,,,,,2021-07-28
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-07-28
 CH,Berne,BE,,,,,,2021-07-28
@@ -20,8 +22,6 @@ CH,Grisons,GR,,,,,,2021-07-28
 CH,Jura,JU,,,,,,2021-07-28
 CH,Lucerne,LU,,,,16.0,,2021-07-28
 CH,Neuchâtel,NE,,,,,,2021-07-28
-CH,Nidwalden,NW,,,,,,2021-07-28
-CH,Obwalden,OW,,,,,,2021-07-28
 CH,St. Gallen,SG,,,,,,2021-07-28
 CH,Schaffhausen,SH,,,,,,2021-07-28
 CH,Vaud,VD,,,,,,2021-07-28
