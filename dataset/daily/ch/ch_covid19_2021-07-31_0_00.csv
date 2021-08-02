@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,2797.0,23.0,,1.0,1.0,2021-07-31
-CH,Jura,JU,7214.0,135.0,,0.0,0.0,2021-07-31
+CH,Schaffhausen,SH,4900.0,78.0,,1.0,1.0,2021-07-31
+CH,Jura,JU,7214.0,136.0,,0.0,0.0,2021-07-31
 CH,Schwyz,SZ,12681.0,238.0,,,,2021-07-31
 CH,Basel-Stadt,BS,13452.0,207.0,,,,2021-07-31
 CH,Grisons,GR,13978.0,192.0,,8.0,2.0,2021-07-31
-CH,Geneva,GE,61070.0,745.0,,,,2021-07-31
-CH,,,707567.0,10890.0,414785.0,186.0,49.0,2021-07-31
+CH,St. Gallen,SG,43625.0,,,,,2021-07-31
+CH,Geneva,GE,61066.0,745.0,,,,2021-07-31
+CH,,,707619.0,10891.0,414785.0,186.0,49.0,2021-07-31
 CH,Aargau,AG,,,,,,2021-07-31
 CH,Appenzell Innerrhoden,AI,,,,,,2021-07-31
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-07-31
@@ -16,8 +18,6 @@ CH,Glarus,GL,,,,,,2021-07-31
 CH,Lucerne,LU,,,,,,2021-07-31
 CH,Neuchâtel,NE,,,,,,2021-07-31
 CH,Obwalden,OW,,,,,,2021-07-31
-CH,St. Gallen,SG,,,,,,2021-07-31
-CH,Schaffhausen,SH,,,,,,2021-07-31
 CH,Solothurn,SO,,,,,,2021-07-31
 CH,Thurgau,TG,,,,,,2021-07-31
 CH,Ticino,TI,,,,,,2021-07-31
