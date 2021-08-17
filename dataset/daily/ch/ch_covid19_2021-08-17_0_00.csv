@@ -1,6 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1295.0,16.0,,,,2021-08-17
 CH,Obwalden,OW,2760.0,39.0,,3.0,,2021-08-17
+CH,Nidwalden,NW,2885.0,23.0,,5.0,1.0,2021-08-17
 CH,Glarus,GL,3108.0,78.0,,6.0,,2021-08-17
 CH,Uri,UR,3349.0,50.0,,0.0,,2021-08-17
 CH,Zug,ZG,9087.0,123.0,,12.0,2.0,2021-08-17
@@ -10,7 +11,8 @@ CH,Solothurn,SO,19171.0,,,,,2021-08-17
 CH,Thurgau,TG,20293.0,456.0,,19.0,10.0,2021-08-17
 CH,Ticino,TI,34576.0,997.0,,17.0,1.0,2021-08-17
 CH,Geneva,GE,63104.0,748.0,,,,2021-08-17
-CH,,,731491.0,10915.0,416495.0,453.0,122.0,2021-08-17
+CH,Zürich,ZH,120497.0,1423.0,,81.0,40.0,2021-08-17
+CH,,,733290.0,10916.0,416495.0,484.0,133.0,2021-08-17
 CH,Aargau,AG,,,,,,2021-08-17
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-08-17
 CH,Berne,BE,,,,,,2021-08-17
@@ -20,9 +22,7 @@ CH,Grisons,GR,,,,,,2021-08-17
 CH,Jura,JU,,,,,,2021-08-17
 CH,Lucerne,LU,,,,34.0,,2021-08-17
 CH,Neuchâtel,NE,,,,,,2021-08-17
-CH,Nidwalden,NW,,,,,,2021-08-17
 CH,St. Gallen,SG,,,,,,2021-08-17
 CH,Schaffhausen,SH,,,,,,2021-08-17
 CH,Vaud,VD,,,,,,2021-08-17
 CH,Valais,VS,,,,,,2021-08-17
-CH,Zürich,ZH,,,,,,2021-08-17
