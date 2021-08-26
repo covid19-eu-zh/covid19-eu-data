@@ -26,6 +26,7 @@ EU_ALPHA2 = {'Italy': 'IT',
  'Austria': 'AT',
  'Belgium': 'BE',
  'Norway': 'NO',
+#  'Norway*': 'NO',
  'Sweden': 'SE',
  'Denmark': 'DK',
  'Portugal': 'PT',
@@ -97,7 +98,7 @@ class SARSCOV2ECDC(COVIDScrapper):
         )
 
         self.df["country"] = self.df.country.apply(
-            lambda x: EU_ALPHA2[x]
+            lambda x: EU_ALPHA2[x.strip("*")]
         )
 
         # self.df.replace("Total", "sum", inplace=True)
