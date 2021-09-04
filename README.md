@@ -4,7 +4,8 @@
 
 
 
-[![If you would like to help or track the progress of this project](https://img.shields.io/badge/Roadmap-data--pipeline-blueviolet)](https://github.com/orgs/covid19-eu-zh/projects/1)  [![](https://img.shields.io/badge/API-data--api-black)](https://github.com/covid19-eu-zh/covid19-eu-data-api) [![](https://img.shields.io/badge/MAP-interactive--map-orange)](https://github.com/covid19-eu-zh/covid19-eu-map)
+[![If you would like to help or track the progress of this project](https://img.shields.io/badge/Roadmap-data--pipeline-blueviolet)](https://github.com/orgs/covid19-eu-zh/projects/1)  [![](https://img.shields.io/badge/API-data--api-black)](https://github.com/covid19-eu-zh/covid19-eu-data-api) [![](https://img.shields.io/badge/MAP-interactive--map-orange)](https://github.com/covid19-eu-zh/covid19-eu-map)  [![](https://img.shields.io/badge/DASHBOARD-interactive--dashboard-orange)](https://github.com/covid19-eu-zh/dashboard)
+
 
 
 ## Changelog
