@@ -1,10 +1,14 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,3285.0,23.0,,3.0,2.0,2021-10-03
+CH,Schaffhausen,SH,6185.0,80.0,,2.0,1.0,2021-10-03
+CH,Jura,JU,8227.0,146.0,,2.0,1.0,2021-10-03
 CH,Schwyz,SZ,15520.0,248.0,,,,2021-10-03
 CH,Basel-Stadt,BS,16167.0,213.0,,,,2021-10-03
 CH,Grisons,GR,16585.0,197.0,,6.0,6.0,2021-10-03
-CH,Geneva,GE,67661.0,748.0,,,,2021-10-03
-CH,,,829223.0,11078.0,564943.0,405.0,188.0,2021-10-03
+CH,Neuchâtel,NE,19695.0,,,,,2021-10-03
+CH,St. Gallen,SG,53914.0,740.0,,29.0,12.0,2021-10-03
+CH,Geneva,GE,67682.0,748.0,,,,2021-10-03
+CH,,,829572.0,11078.0,564943.0,402.0,185.0,2021-10-03
 CH,Aargau,AG,,,,,,2021-10-03
 CH,Appenzell Innerrhoden,AI,,,,,,2021-10-03
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-10-03
@@ -12,12 +16,8 @@ CH,Berne,BE,,,,,,2021-10-03
 CH,Basel-Landschaft,BL,,,,,,2021-10-03
 CH,Fribourg,FR,,,,,,2021-10-03
 CH,Glarus,GL,,,,,,2021-10-03
-CH,Jura,JU,,,,,,2021-10-03
 CH,Lucerne,LU,,,,,,2021-10-03
-CH,Neuchâtel,NE,,,,,,2021-10-03
 CH,Obwalden,OW,,,,,,2021-10-03
-CH,St. Gallen,SG,,,,,,2021-10-03
-CH,Schaffhausen,SH,,,,,,2021-10-03
 CH,Solothurn,SO,,,,,,2021-10-03
 CH,Thurgau,TG,,,,,,2021-10-03
 CH,Ticino,TI,,,,,,2021-10-03
