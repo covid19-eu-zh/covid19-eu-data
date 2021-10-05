@@ -1,4 +1,4 @@
-"YEAR_WEEK","REGION","CASES_PER_100","NEW_IN_PER_100","PART_RATE_PERCENT","DEATHS_PER_100"
+"YEAR_WEEK","REGION","PART_RATE_PERCENT","CASES_PER_100","NEW_IN_PER_100","DEATHS_PER_100"
 "20W11","Belgium",NA,NA,NA,0
 "20W11","Brussels",NA,NA,NA,0.02
 "20W11","Flanders",NA,NA,NA,0
@@ -44,363 +44,363 @@
 "20W19","Flanders",NA,NA,NA,0.27
 "20W19","German speaking community",NA,NA,NA,0.15
 "20W19","Wallonia",NA,NA,NA,0.23
-"20W20","Belgium",0.3,0.06,98,0.14
-"20W20","Brussels",0.92,0.03,94,0.24
-"20W20","Flanders",0.24,0.03,98,0.13
-"20W20","German speaking community",0.14,0.14,100,0
-"20W20","Wallonia",0.24,0.11,98,0.14
-"20W21","Belgium",0.27,0.06,94,0.11
-"20W21","Brussels",0.76,0.09,95,0.1
-"20W21","Flanders",0.19,0.03,97,0.1
-"20W21","German speaking community",0,0,100,0.15
-"20W21","Wallonia",0.27,0.11,91,0.12
-"20W22","Belgium",0.16,0.05,96,0.06
-"20W22","Brussels",0.5,0.12,93,0.06
-"20W22","Flanders",0.07,0.02,96,0.07
-"20W22","German speaking community",0,0,100,0
-"20W22","Wallonia",0.23,0.07,96,0.06
-"20W23","Belgium",0.06,0.02,96,0.05
-"20W23","Brussels",0.07,0.08,88,0.07
-"20W23","Flanders",0.04,0.01,96,0.05
-"20W23","German speaking community",0,0,100,0
-"20W23","Wallonia",0.09,0.04,98,0.04
-"20W24","Belgium",0.06,0.01,96,0.02
-"20W24","Brussels",0.12,0.08,88,0.03
-"20W24","Flanders",0.06,0.01,96,0.02
-"20W24","German speaking community",0,0,100,0
-"20W24","Wallonia",0.05,0.01,99,0.02
-"20W25","Belgium",0.04,0.01,95,0.02
-"20W25","Brussels",0.05,0.01,80,0.02
-"20W25","Flanders",0.04,0.01,95,0.02
-"20W25","German speaking community",0,0,88,0
-"20W25","Wallonia",0.04,0.02,99,0.01
-"20W26","Belgium",0.03,0.01,94,0.01
-"20W26","Brussels",0.05,0.01,88,0.02
-"20W26","Flanders",0.01,0.01,94,0.01
-"20W26","German speaking community",0,0,100,0
-"20W26","Wallonia",0.05,0.01,94,0.02
-"20W27","Belgium",0.02,0.01,94,0.01
-"20W27","Brussels",0.05,0.02,86,0.02
-"20W27","Flanders",0.02,0,95,0.01
-"20W27","German speaking community",0,0,88,0
-"20W27","Wallonia",0.02,0.01,95,0.01
-"20W28","Belgium",0.02,0,90,0
-"20W28","Brussels",0.05,0.01,76,0.02
-"20W28","Flanders",0.02,0,94,0
-"20W28","German speaking community",0,0,100,0
-"20W28","Wallonia",0.01,0,86,0
-"20W29","Belgium",0.02,0,88,0.01
-"20W29","Brussels",0.06,0,67,0.02
-"20W29","Flanders",0.02,0,95,0
-"20W29","German speaking community",0,0,75,0
-"20W29","Wallonia",0.02,0.01,84,0.01
-"20W30","Belgium",0.03,0,88,0
-"20W30","Brussels",0.04,0,68,0
-"20W30","Flanders",0.03,0.01,95,0
-"20W30","German speaking community",0,0,100,0
-"20W30","Wallonia",0.04,0.01,83,0.01
-"20W31","Belgium",0.07,0.01,89,0.01
-"20W31","Brussels",0.06,0.01,73,0.01
-"20W31","Flanders",0.06,0,95,0.01
-"20W31","German speaking community",0,0,100,0
-"20W31","Wallonia",0.11,0.02,84,0.01
-"20W32","Belgium",0.04,0.01,89,0.01
-"20W32","Brussels",0.08,0.04,80,0.01
-"20W32","Flanders",0.03,0,96,0.01
-"20W32","German speaking community",0,0,75,0
-"20W32","Wallonia",0.06,0.01,83,0.01
-"20W33","Belgium",0.06,0.02,89,0.03
-"20W33","Brussels",0.15,0.1,80,0.02
-"20W33","Flanders",0.06,0.01,96,0.04
-"20W33","German speaking community",0,0,75,0
-"20W33","Wallonia",0.04,0.03,83,0.03
-"20W34","Belgium",0.11,0.02,92,0.02
-"20W34","Brussels",0.22,0.08,78,0.03
-"20W34","Flanders",0.11,0.01,95,0.02
-"20W34","German speaking community",0,0,88,0
-"20W34","Wallonia",0.09,0.02,92,0.01
-"20W35","Belgium",0.03,0,95,0.01
-"20W35","Brussels",0.07,0.01,80,0.02
-"20W35","Flanders",0.03,0,97,0.01
-"20W35","German speaking community",0,0,63,0
-"20W35","Wallonia",0.03,0,96,0
-"20W36","Belgium",0.03,0.01,95,0.01
-"20W36","Brussels",0.04,0,83,0.01
-"20W36","Flanders",0.03,0,95,0.01
-"20W36","German speaking community",0,0,75,0
-"20W36","Wallonia",0.04,0.01,97,0
-"20W37","Belgium",0.04,0.01,94,0
-"20W37","Brussels",0.1,0,80,0.01
-"20W37","Flanders",0.05,0.01,95,0
-"20W37","German speaking community",0,0,88,0
-"20W37","Wallonia",0.01,0.01,95,0
-"20W38","Belgium",0.09,0.01,94,0.01
-"20W38","Brussels",0.08,0,76,0.01
-"20W38","Flanders",0.08,0.01,96,0.01
-"20W38","German speaking community",0,0,88,0
-"20W38","Wallonia",0.11,0.03,98,0
-"20W39","Belgium",0.12,0.03,93,0.02
-"20W39","Brussels",0.67,0.02,69,0.02
-"20W39","Flanders",0.07,0.02,95,0.01
-"20W39","German speaking community",0,0,88,0
-"20W39","Wallonia",0.08,0.05,95,0.02
-"20W40","Belgium",0.28,0.02,94,0.02
-"20W40","Brussels",0.56,0.07,81,0.04
-"20W40","Flanders",0.14,0.01,95,0.02
-"20W40","German speaking community",0,0,88,0.14
-"20W40","Wallonia",0.45,0.02,96,0.02
-"20W41","Belgium",0.34,0.05,95,0.05
-"20W41","Brussels",0.98,0.08,84,0.1
-"20W41","Flanders",0.22,0.01,96,0.04
-"20W41","German speaking community",0,0,75,0
-"20W41","Wallonia",0.38,0.1,97,0.06
-"20W42","Belgium",0.78,0.1,96,0.07
-"20W42","Brussels",0.69,0.08,85,0.12
-"20W42","Flanders",0.47,0.05,97,0.04
-"20W42","German speaking community",0.16,0,88,0
-"20W42","Wallonia",1.33,0.19,98,0.1
-"20W43","Belgium",2,0.17,97,0.15
-"20W43","Brussels",2.27,0.21,90,0.19
-"20W43","Flanders",1.15,0.08,97,0.1
-"20W43","German speaking community",1.25,0,100,0.28
-"20W43","Wallonia",3.39,0.33,98,0.24
-"20W44","Belgium",3.54,0.21,97,0.33
-"20W44","Brussels",3.98,0.27,93,0.38
-"20W44","Flanders",2.64,0.1,97,0.24
-"20W44","German speaking community",1.26,0.14,100,0.14
-"20W44","Wallonia",5,0.38,98,0.48
-"20W45","Belgium",2.74,0.23,97,0.53
-"20W45","Brussels",2.18,0.18,93,0.57
-"20W45","Flanders",2.06,0.14,97,0.43
-"20W45","German speaking community",1.97,0,88,0.42
-"20W45","Wallonia",4.06,0.39,98,0.68
-"20W46","Belgium",2.73,0.26,97,0.53
-"20W46","Brussels",1.88,0.13,92,0.6
-"20W46","Flanders",2.71,0.24,98,0.44
-"20W46","German speaking community",1.98,0,88,0.7
-"20W46","Wallonia",3,0.34,98,0.66
-"20W47","Belgium",2.33,0.22,97,0.44
-"20W47","Brussels",1.33,0.11,89,0.44
-"20W47","Flanders",2.03,0.2,98,0.44
-"20W47","German speaking community",1.98,0.14,100,0.14
-"20W47","Wallonia",3.11,0.29,97,0.44
-"20W48","Belgium",1.45,0.22,97,0.37
-"20W48","Brussels",1.56,0.17,90,0.34
-"20W48","Flanders",1.43,0.2,98,0.41
-"20W48","German speaking community",3.24,0.14,100,0.28
-"20W48","Wallonia",1.43,0.25,97,0.32
-"20W49","Belgium",1.5,0.18,96,0.29
-"20W49","Brussels",0.98,0.12,88,0.18
-"20W49","Flanders",1.58,0.15,97,0.35
-"20W49","German speaking community",1.5,0.27,100,0.28
-"20W49","Wallonia",1.51,0.24,97,0.22
-"20W50","Belgium",1.67,0.18,97,0.3
-"20W50","Brussels",1.01,0.04,84,0.16
-"20W50","Flanders",1.78,0.18,99,0.37
-"20W50","German speaking community",0.88,0,88,0.14
-"20W50","Wallonia",1.64,0.22,97,0.21
-"20W51","Belgium",1.31,0.17,97,0.32
-"20W51","Brussels",0.56,0.07,84,0.2
-"20W51","Flanders",1.52,0.15,99,0.41
-"20W51","German speaking community",0.87,0,75,0
-"20W51","Wallonia",1.12,0.23,97,0.19
-"20W52","Belgium",0.94,0.15,95,0.27
-"20W52","Brussels",0.86,0.1,78,0.12
-"20W52","Flanders",0.93,0.13,98,0.35
-"20W52","German speaking community",9.79,0,75,0.14
-"20W52","Wallonia",0.85,0.2,95,0.18
-"20W53","Belgium",0.64,0.1,95,0.21
-"20W53","Brussels",0.13,0.03,79,0.05
-"20W53","Flanders",0.69,0.11,98,0.28
-"20W53","German speaking community",3.06,0,63,0.29
-"20W53","Wallonia",0.65,0.11,95,0.14
-"21W01","Belgium",0.79,0.07,96,0.17
-"21W01","Brussels",0.1,0.03,80,0.04
-"21W01","Flanders",0.92,0.09,99,0.22
-"21W01","German speaking community",1.29,0,78,0.43
-"21W01","Wallonia",0.72,0.04,97,0.11
-"21W02","Belgium",0.62,0.06,96,0.14
-"21W02","Brussels",0.08,0.02,82,0.08
-"21W02","Flanders",0.62,0.05,99,0.19
-"21W02","German speaking community",0.56,0,67,0.29
-"21W02","Wallonia",0.76,0.09,97,0.07
-"21W03","Belgium",0.61,0.07,97,0.15
-"21W03","Brussels",0.49,0.03,85,0.04
-"21W03","Flanders",0.73,0.08,98,0.21
-"21W03","German speaking community",0,0,78,0.14
-"21W03","Wallonia",0.45,0.05,97,0.08
-"21W04","Belgium",0.67,0.06,97,0.11
-"21W04","Brussels",0.38,0.09,82,0.02
-"21W04","Flanders",0.79,0.06,99,0.14
-"21W04","German speaking community",0,0,89,0
-"21W04","Wallonia",0.55,0.06,97,0.08
-"21W05","Belgium",0.54,0.07,96,0.12
-"21W05","Brussels",0.46,0.04,83,0.07
-"21W05","Flanders",0.55,0.06,98,0.17
-"21W05","German speaking community",0.14,0,89,0
-"21W05","Wallonia",0.57,0.1,97,0.06
-"21W06","Belgium",0.26,0.03,95,0.12
-"21W06","Brussels",0.42,0.02,78,0.09
-"21W06","Flanders",0.28,0.04,98,0.15
-"21W06","German speaking community",0,0,89,0.14
-"21W06","Wallonia",0.19,0.03,97,0.07
-"21W07","Belgium",0.21,0.03,94,0.08
-"21W07","Brussels",0.13,0.02,76,0.07
-"21W07","Flanders",0.24,0.03,97,0.1
-"21W07","German speaking community",0,0,67,0
-"21W07","Wallonia",0.19,0.04,95,0.05
-"21W08","Belgium",0.14,0.02,95,0.03
-"21W08","Brussels",0.23,0,77,0.01
-"21W08","Flanders",0.1,0.02,97,0.04
-"21W08","German speaking community",0,0,100,0
-"21W08","Wallonia",0.19,0.03,97,0.01
-"21W09","Belgium",0.06,0.01,95,0.02
-"21W09","Brussels",0.12,0.01,76,0.01
-"21W09","Flanders",0.05,0.01,97,0.03
-"21W09","German speaking community",0,0,78,0
-"21W09","Wallonia",0.05,0.01,98,0.01
-"21W10","Belgium",0.05,0.01,95,0.01
-"21W10","Brussels",0.12,0.01,78,0.02
-"21W10","Flanders",0.04,0,97,0.02
-"21W10","German speaking community",0,0,100,0
-"21W10","Wallonia",0.05,0.02,97,0
-"21W11","Belgium",0.07,0.01,94,0.01
-"21W11","Brussels",0.14,0,78,0.05
-"21W11","Flanders",0.06,0,95,0.01
-"21W11","German speaking community",0,0,89,0
-"21W11","Wallonia",0.08,0.01,97,0.01
-"21W12","Belgium",0.11,0,94,0.01
-"21W12","Brussels",0.21,0.01,84,0.01
-"21W12","Flanders",0.05,0.01,94,0.01
-"21W12","German speaking community",0,0,100,0
-"21W12","Wallonia",0.19,0,97,0.01
-"21W13","Belgium",0.09,0.01,94,0.02
-"21W13","Brussels",0.03,0,83,0.04
-"21W13","Flanders",0.07,0.01,95,0.01
-"21W13","German speaking community",0,0,78,0
-"21W13","Wallonia",0.15,0.02,96,0.01
-"21W14","Belgium",0.06,0.01,91,0.01
-"21W14","Brussels",0.03,0.01,72,0.01
-"21W14","Flanders",0.06,0.01,92,0.01
-"21W14","German speaking community",0.15,0,89,0
-"21W14","Wallonia",0.08,0.02,95,0.02
-"21W15","Belgium",0.08,0.01,91,0.01
-"21W15","Brussels",0.14,0.02,72,0
-"21W15","Flanders",0.06,0.01,92,0.01
-"21W15","German speaking community",0,0,67,0
-"21W15","Wallonia",0.1,0.01,94,0.02
-"21W16","Belgium",0.08,0.01,92,0.01
-"21W16","Brussels",0.12,0.02,76,0
-"21W16","Flanders",0.06,0.01,92,0.01
-"21W16","German speaking community",0,0,78,0.15
-"21W16","Wallonia",0.12,0.02,97,0.02
-"21W17","Belgium",0.09,0.01,90,0.01
-"21W17","Brussels",0.05,0.01,73,0.02
-"21W17","Flanders",0.03,0,89,0.01
-"21W17","German speaking community",0,0,78,0
-"21W17","Wallonia",0.18,0.01,95,0
-"21W18","Belgium",0.12,0.02,90,0.02
-"21W18","Brussels",0.01,0,73,0.03
-"21W18","Flanders",0.09,0.01,90,0.02
-"21W18","German speaking community",0,0,78,0
-"21W18","Wallonia",0.21,0.03,95,0.02
-"21W19","Belgium",0.08,0.01,88,0.01
-"21W19","Brussels",0.06,0,66,0.01
-"21W19","Flanders",0.06,0.01,88,0.01
-"21W19","German speaking community",0.13,0.13,100,0.15
-"21W19","Wallonia",0.12,0.01,95,0.02
-"21W20","Belgium",0.12,0.01,89,0.01
-"21W20","Brussels",0,0,65,0.01
-"21W20","Flanders",0.07,0.01,88,0
-"21W20","German speaking community",0.14,0,89,0.15
-"21W20","Wallonia",0.22,0.01,96,0.01
-"21W21","Belgium",0.1,0.01,87,0.01
-"21W21","Brussels",0.01,0,58,0.01
-"21W21","Flanders",0.03,0,87,0
-"21W21","German speaking community",0,0,89,0
-"21W21","Wallonia",0.23,0.04,94,0.02
-"21W22","Belgium",0.04,0.01,89,0.02
-"21W22","Brussels",0.05,0.05,64,0.01
-"21W22","Flanders",0.01,0,89,0.01
-"21W22","German speaking community",0,0,89,0
-"21W22","Wallonia",0.08,0.03,94,0.03
-"21W23","Belgium",0.07,0.01,85,0
-"21W23","Brussels",0.03,0.01,61,0
-"21W23","Flanders",0,0,85,0
-"21W23","German speaking community",0,0,78,0
-"21W23","Wallonia",0.19,0.02,93,0.01
-"21W24","Belgium",0.02,0,88,0
-"21W24","Brussels",0.02,0,73,0.02
-"21W24","Flanders",0,0,86,0
-"21W24","German speaking community",0,0,78,0
-"21W24","Wallonia",0.05,0,94,0
-"21W25","Belgium",0.01,0,85,0
-"21W25","Brussels",0,0,66,0
-"21W25","Flanders",0,0,83,0
-"21W25","German speaking community",0,0,78,0
-"21W25","Wallonia",0.01,0,93,0
-"21W26","Belgium",0.04,0,83,0
-"21W26","Brussels",0,0,60,0
-"21W26","Flanders",0,0,80,0
-"21W26","German speaking community",0,0,56,0
-"21W26","Wallonia",0.11,0,93,0
-"21W27","Belgium",0.01,0,82,0
-"21W27","Brussels",0.01,0,68,0
-"21W27","Flanders",0.01,0,79,0
-"21W27","German speaking community",0,0,78,0
-"21W27","Wallonia",0.01,0,90,0
-"21W28","Belgium",0.02,0,79,0
-"21W28","Brussels",0,0,67,0
-"21W28","Flanders",0,0,79,0
-"21W28","German speaking community",0,0,78,0
-"21W28","Wallonia",0.06,0,81,0.01
-"21W29","Belgium",0.07,0.01,72,0
-"21W29","Brussels",0.05,0.01,62,0
-"21W29","Flanders",0.06,0,73,0
-"21W29","German speaking community",0,0,44,0
-"21W29","Wallonia",0.1,0.01,73,0.01
-"21W30","Belgium",0.03,0.01,75,0.01
-"21W30","Brussels",0.04,0.02,69,0.01
-"21W30","Flanders",0.04,0,77,0.01
-"21W30","German speaking community",0,0,56,0
-"21W30","Wallonia",0.03,0,74,0.01
-"21W31","Belgium",0.12,0.02,74,0.01
-"21W31","Brussels",0.09,0.03,70,0.02
-"21W31","Flanders",0.06,0,78,0.01
-"21W31","German speaking community",0,0,100,0
-"21W31","Wallonia",0.24,0.03,68,0.01
-"21W32","Belgium",0.08,0,74,0
-"21W32","Brussels",0.1,0,63,0
-"21W32","Flanders",0.05,0,77,0.01
-"21W32","German speaking community",0.51,0,100,0
-"21W32","Wallonia",0.11,0.01,74,0
-"21W33","Belgium",0.1,0.01,72,0.01
-"21W33","Brussels",0.06,0.01,61,0
-"21W33","Flanders",0.06,0,73,0
-"21W33","German speaking community",1.61,0,78,0.29
-"21W33","Wallonia",0.16,0.02,72,0.01
-"21W34","Belgium",0.07,0.01,70,0.01
-"21W34","Brussels",0.14,0.03,59,0
-"21W34","Flanders",0.06,0,74,0
-"21W34","German speaking community",0,0.2,67,0
-"21W34","Wallonia",0.08,0.02,67,0.02
-"21W35","Belgium",0.11,0.01,70,0
-"21W35","Brussels",0.09,0,61,0
-"21W35","Flanders",0.02,0.01,73,0
-"21W35","German speaking community",0,0.17,78,0
-"21W35","Wallonia",0.28,0.02,68,0
-"21W36","Belgium",0.13,0.01,68,0
-"21W36","Brussels",0.11,0.02,64,0.02
-"21W36","Flanders",0.06,0,71,0
-"21W36","German speaking community",0,0,89,0
-"21W36","Wallonia",0.28,0.03,63,0
-"21W37","Belgium",0.08,0.01,69,0.01
-"21W37","Brussels",0.07,0.01,63,0.03
-"21W37","Flanders",0.06,0.01,73,0
-"21W37","German speaking community",0.17,0.17,78,0
-"21W37","Wallonia",0.13,0.02,64,0.01
-"21W38","Belgium",0.14,0.01,71,0.01
-"21W38","Brussels",0.45,0.02,66,0
-"21W38","Flanders",0.06,0.01,76,0
-"21W38","German speaking community",0,0,78,0
-"21W38","Wallonia",0.22,0.02,66,0.02
+"20W20","Belgium",98,0.3,0.06,0.14
+"20W20","Brussels",94,0.92,0.03,0.24
+"20W20","Flanders",98,0.24,0.03,0.13
+"20W20","German speaking community",100,0.14,0.14,0
+"20W20","Wallonia",98,0.24,0.11,0.14
+"20W21","Belgium",94,0.27,0.06,0.11
+"20W21","Brussels",95,0.76,0.09,0.1
+"20W21","Flanders",97,0.19,0.03,0.1
+"20W21","German speaking community",100,0,0,0.15
+"20W21","Wallonia",91,0.27,0.11,0.12
+"20W22","Belgium",96,0.16,0.05,0.06
+"20W22","Brussels",93,0.5,0.12,0.06
+"20W22","Flanders",96,0.07,0.02,0.07
+"20W22","German speaking community",100,0,0,0
+"20W22","Wallonia",96,0.23,0.07,0.06
+"20W23","Belgium",96,0.06,0.02,0.05
+"20W23","Brussels",88,0.07,0.08,0.07
+"20W23","Flanders",96,0.04,0.01,0.05
+"20W23","German speaking community",100,0,0,0
+"20W23","Wallonia",98,0.09,0.04,0.04
+"20W24","Belgium",96,0.06,0.01,0.02
+"20W24","Brussels",88,0.12,0.08,0.03
+"20W24","Flanders",96,0.06,0.01,0.02
+"20W24","German speaking community",100,0,0,0
+"20W24","Wallonia",99,0.05,0.01,0.02
+"20W25","Belgium",95,0.04,0.01,0.02
+"20W25","Brussels",80,0.05,0.01,0.02
+"20W25","Flanders",95,0.04,0.01,0.02
+"20W25","German speaking community",88,0,0,0
+"20W25","Wallonia",99,0.04,0.02,0.01
+"20W26","Belgium",94,0.03,0.01,0.01
+"20W26","Brussels",88,0.05,0.01,0.02
+"20W26","Flanders",94,0.01,0.01,0.01
+"20W26","German speaking community",100,0,0,0
+"20W26","Wallonia",94,0.05,0.01,0.02
+"20W27","Belgium",94,0.02,0.01,0.01
+"20W27","Brussels",86,0.05,0.02,0.02
+"20W27","Flanders",95,0.02,0,0.01
+"20W27","German speaking community",88,0,0,0
+"20W27","Wallonia",95,0.02,0.01,0.01
+"20W28","Belgium",90,0.02,0,0
+"20W28","Brussels",76,0.05,0.01,0.02
+"20W28","Flanders",94,0.02,0,0
+"20W28","German speaking community",100,0,0,0
+"20W28","Wallonia",86,0.01,0,0
+"20W29","Belgium",88,0.02,0,0.01
+"20W29","Brussels",67,0.06,0,0.02
+"20W29","Flanders",95,0.02,0,0
+"20W29","German speaking community",75,0,0,0
+"20W29","Wallonia",84,0.02,0.01,0.01
+"20W30","Belgium",88,0.03,0,0
+"20W30","Brussels",68,0.04,0,0
+"20W30","Flanders",95,0.03,0.01,0
+"20W30","German speaking community",100,0,0,0
+"20W30","Wallonia",83,0.04,0.01,0.01
+"20W31","Belgium",89,0.07,0.01,0.01
+"20W31","Brussels",73,0.06,0.01,0.01
+"20W31","Flanders",95,0.06,0,0.01
+"20W31","German speaking community",100,0,0,0
+"20W31","Wallonia",84,0.11,0.02,0.01
+"20W32","Belgium",89,0.04,0.01,0.01
+"20W32","Brussels",80,0.08,0.04,0.01
+"20W32","Flanders",96,0.03,0,0.01
+"20W32","German speaking community",75,0,0,0
+"20W32","Wallonia",83,0.06,0.01,0.01
+"20W33","Belgium",89,0.06,0.02,0.03
+"20W33","Brussels",80,0.15,0.1,0.02
+"20W33","Flanders",96,0.06,0.01,0.04
+"20W33","German speaking community",75,0,0,0
+"20W33","Wallonia",83,0.04,0.03,0.03
+"20W34","Belgium",92,0.11,0.02,0.02
+"20W34","Brussels",78,0.22,0.08,0.03
+"20W34","Flanders",95,0.11,0.01,0.02
+"20W34","German speaking community",88,0,0,0
+"20W34","Wallonia",92,0.09,0.02,0.01
+"20W35","Belgium",95,0.03,0,0.01
+"20W35","Brussels",80,0.07,0.01,0.02
+"20W35","Flanders",97,0.03,0,0.01
+"20W35","German speaking community",63,0,0,0
+"20W35","Wallonia",96,0.03,0,0
+"20W36","Belgium",95,0.03,0.01,0.01
+"20W36","Brussels",83,0.04,0,0.01
+"20W36","Flanders",95,0.03,0,0.01
+"20W36","German speaking community",75,0,0,0
+"20W36","Wallonia",97,0.04,0.01,0
+"20W37","Belgium",94,0.04,0.01,0
+"20W37","Brussels",80,0.1,0,0.01
+"20W37","Flanders",95,0.05,0.01,0
+"20W37","German speaking community",88,0,0,0
+"20W37","Wallonia",95,0.01,0.01,0
+"20W38","Belgium",94,0.09,0.01,0.01
+"20W38","Brussels",76,0.08,0,0.01
+"20W38","Flanders",96,0.08,0.01,0.01
+"20W38","German speaking community",88,0,0,0
+"20W38","Wallonia",98,0.11,0.03,0
+"20W39","Belgium",93,0.12,0.03,0.02
+"20W39","Brussels",69,0.67,0.02,0.02
+"20W39","Flanders",95,0.07,0.02,0.01
+"20W39","German speaking community",88,0,0,0
+"20W39","Wallonia",95,0.08,0.05,0.02
+"20W40","Belgium",94,0.28,0.02,0.02
+"20W40","Brussels",81,0.56,0.07,0.04
+"20W40","Flanders",95,0.14,0.01,0.02
+"20W40","German speaking community",88,0,0,0.14
+"20W40","Wallonia",96,0.45,0.02,0.02
+"20W41","Belgium",95,0.34,0.05,0.05
+"20W41","Brussels",84,0.98,0.08,0.1
+"20W41","Flanders",96,0.22,0.01,0.04
+"20W41","German speaking community",75,0,0,0
+"20W41","Wallonia",97,0.38,0.1,0.06
+"20W42","Belgium",96,0.78,0.1,0.07
+"20W42","Brussels",85,0.69,0.08,0.12
+"20W42","Flanders",97,0.47,0.05,0.04
+"20W42","German speaking community",88,0.16,0,0
+"20W42","Wallonia",98,1.33,0.19,0.1
+"20W43","Belgium",97,2,0.17,0.15
+"20W43","Brussels",90,2.27,0.21,0.19
+"20W43","Flanders",97,1.15,0.08,0.1
+"20W43","German speaking community",100,1.25,0,0.28
+"20W43","Wallonia",98,3.39,0.33,0.24
+"20W44","Belgium",97,3.54,0.21,0.33
+"20W44","Brussels",93,3.98,0.27,0.38
+"20W44","Flanders",97,2.64,0.1,0.24
+"20W44","German speaking community",100,1.26,0.14,0.14
+"20W44","Wallonia",98,5,0.38,0.48
+"20W45","Belgium",97,2.74,0.23,0.53
+"20W45","Brussels",93,2.18,0.18,0.57
+"20W45","Flanders",97,2.06,0.14,0.43
+"20W45","German speaking community",88,1.97,0,0.42
+"20W45","Wallonia",98,4.06,0.39,0.68
+"20W46","Belgium",97,2.73,0.26,0.53
+"20W46","Brussels",92,1.88,0.13,0.6
+"20W46","Flanders",98,2.71,0.24,0.44
+"20W46","German speaking community",88,1.98,0,0.7
+"20W46","Wallonia",98,3,0.34,0.66
+"20W47","Belgium",97,2.33,0.22,0.44
+"20W47","Brussels",89,1.33,0.11,0.44
+"20W47","Flanders",98,2.03,0.2,0.44
+"20W47","German speaking community",100,1.98,0.14,0.14
+"20W47","Wallonia",97,3.11,0.29,0.44
+"20W48","Belgium",97,1.45,0.22,0.37
+"20W48","Brussels",90,1.56,0.17,0.34
+"20W48","Flanders",98,1.43,0.2,0.41
+"20W48","German speaking community",100,3.24,0.14,0.28
+"20W48","Wallonia",97,1.43,0.25,0.32
+"20W49","Belgium",96,1.5,0.18,0.29
+"20W49","Brussels",88,0.98,0.12,0.18
+"20W49","Flanders",97,1.58,0.15,0.35
+"20W49","German speaking community",100,1.5,0.27,0.28
+"20W49","Wallonia",97,1.51,0.24,0.22
+"20W50","Belgium",97,1.67,0.18,0.3
+"20W50","Brussels",84,1.01,0.04,0.16
+"20W50","Flanders",99,1.78,0.18,0.37
+"20W50","German speaking community",88,0.88,0,0.14
+"20W50","Wallonia",97,1.64,0.22,0.21
+"20W51","Belgium",97,1.31,0.17,0.32
+"20W51","Brussels",84,0.56,0.07,0.2
+"20W51","Flanders",99,1.52,0.15,0.41
+"20W51","German speaking community",75,0.87,0,0
+"20W51","Wallonia",97,1.12,0.23,0.19
+"20W52","Belgium",95,0.94,0.15,0.27
+"20W52","Brussels",78,0.86,0.1,0.12
+"20W52","Flanders",98,0.93,0.13,0.35
+"20W52","German speaking community",75,9.79,0,0.14
+"20W52","Wallonia",95,0.85,0.2,0.18
+"20W53","Belgium",95,0.64,0.1,0.21
+"20W53","Brussels",79,0.13,0.03,0.05
+"20W53","Flanders",98,0.69,0.11,0.28
+"20W53","German speaking community",63,3.06,0,0.29
+"20W53","Wallonia",95,0.65,0.11,0.14
+"21W01","Belgium",96,0.79,0.07,0.17
+"21W01","Brussels",80,0.1,0.03,0.04
+"21W01","Flanders",99,0.92,0.09,0.22
+"21W01","German speaking community",78,1.29,0,0.43
+"21W01","Wallonia",97,0.72,0.04,0.11
+"21W02","Belgium",96,0.62,0.06,0.14
+"21W02","Brussels",82,0.08,0.02,0.08
+"21W02","Flanders",99,0.62,0.05,0.19
+"21W02","German speaking community",67,0.56,0,0.29
+"21W02","Wallonia",97,0.76,0.09,0.07
+"21W03","Belgium",97,0.61,0.07,0.15
+"21W03","Brussels",85,0.49,0.03,0.04
+"21W03","Flanders",98,0.73,0.08,0.21
+"21W03","German speaking community",78,0,0,0.14
+"21W03","Wallonia",97,0.45,0.05,0.08
+"21W04","Belgium",97,0.67,0.06,0.11
+"21W04","Brussels",82,0.38,0.09,0.02
+"21W04","Flanders",99,0.79,0.06,0.14
+"21W04","German speaking community",89,0,0,0
+"21W04","Wallonia",97,0.55,0.06,0.08
+"21W05","Belgium",96,0.54,0.07,0.12
+"21W05","Brussels",83,0.46,0.04,0.07
+"21W05","Flanders",98,0.55,0.06,0.17
+"21W05","German speaking community",89,0.14,0,0
+"21W05","Wallonia",97,0.57,0.1,0.06
+"21W06","Belgium",95,0.26,0.03,0.12
+"21W06","Brussels",78,0.42,0.02,0.09
+"21W06","Flanders",98,0.28,0.04,0.15
+"21W06","German speaking community",89,0,0,0.14
+"21W06","Wallonia",97,0.19,0.03,0.07
+"21W07","Belgium",94,0.21,0.03,0.08
+"21W07","Brussels",76,0.13,0.02,0.07
+"21W07","Flanders",97,0.24,0.03,0.1
+"21W07","German speaking community",67,0,0,0
+"21W07","Wallonia",95,0.19,0.04,0.05
+"21W08","Belgium",95,0.14,0.02,0.03
+"21W08","Brussels",77,0.23,0,0.01
+"21W08","Flanders",97,0.1,0.02,0.04
+"21W08","German speaking community",100,0,0,0
+"21W08","Wallonia",97,0.19,0.03,0.01
+"21W09","Belgium",95,0.06,0.01,0.02
+"21W09","Brussels",76,0.12,0.01,0.01
+"21W09","Flanders",97,0.05,0.01,0.03
+"21W09","German speaking community",78,0,0,0
+"21W09","Wallonia",98,0.05,0.01,0.01
+"21W10","Belgium",95,0.05,0.01,0.01
+"21W10","Brussels",78,0.12,0.01,0.02
+"21W10","Flanders",97,0.04,0,0.02
+"21W10","German speaking community",100,0,0,0
+"21W10","Wallonia",97,0.05,0.02,0
+"21W11","Belgium",94,0.07,0.01,0.01
+"21W11","Brussels",78,0.14,0,0.05
+"21W11","Flanders",95,0.06,0,0.01
+"21W11","German speaking community",89,0,0,0
+"21W11","Wallonia",97,0.08,0.01,0.01
+"21W12","Belgium",94,0.11,0,0.01
+"21W12","Brussels",84,0.21,0.01,0.01
+"21W12","Flanders",94,0.05,0.01,0.01
+"21W12","German speaking community",100,0,0,0
+"21W12","Wallonia",97,0.19,0,0.01
+"21W13","Belgium",94,0.09,0.01,0.02
+"21W13","Brussels",83,0.03,0,0.04
+"21W13","Flanders",95,0.07,0.01,0.01
+"21W13","German speaking community",78,0,0,0
+"21W13","Wallonia",96,0.15,0.02,0.01
+"21W14","Belgium",91,0.06,0.01,0.01
+"21W14","Brussels",72,0.03,0.01,0.01
+"21W14","Flanders",92,0.06,0.01,0.01
+"21W14","German speaking community",89,0.15,0,0
+"21W14","Wallonia",95,0.08,0.02,0.02
+"21W15","Belgium",91,0.08,0.01,0.01
+"21W15","Brussels",72,0.14,0.02,0
+"21W15","Flanders",92,0.06,0.01,0.01
+"21W15","German speaking community",67,0,0,0
+"21W15","Wallonia",94,0.1,0.01,0.02
+"21W16","Belgium",92,0.08,0.01,0.01
+"21W16","Brussels",76,0.12,0.02,0
+"21W16","Flanders",92,0.06,0.01,0.01
+"21W16","German speaking community",78,0,0,0.15
+"21W16","Wallonia",97,0.12,0.02,0.02
+"21W17","Belgium",90,0.09,0.01,0.01
+"21W17","Brussels",73,0.05,0.01,0.02
+"21W17","Flanders",89,0.03,0,0.01
+"21W17","German speaking community",78,0,0,0
+"21W17","Wallonia",95,0.18,0.01,0
+"21W18","Belgium",90,0.12,0.02,0.02
+"21W18","Brussels",73,0.01,0,0.03
+"21W18","Flanders",90,0.09,0.01,0.02
+"21W18","German speaking community",78,0,0,0
+"21W18","Wallonia",95,0.21,0.03,0.02
+"21W19","Belgium",88,0.08,0.01,0.01
+"21W19","Brussels",66,0.06,0,0.01
+"21W19","Flanders",88,0.06,0.01,0.01
+"21W19","German speaking community",100,0.13,0.13,0.15
+"21W19","Wallonia",95,0.12,0.01,0.02
+"21W20","Belgium",89,0.12,0.01,0.01
+"21W20","Brussels",65,0,0,0.01
+"21W20","Flanders",88,0.07,0.01,0
+"21W20","German speaking community",89,0.14,0,0.15
+"21W20","Wallonia",96,0.22,0.01,0.01
+"21W21","Belgium",87,0.1,0.01,0.01
+"21W21","Brussels",58,0.01,0,0.01
+"21W21","Flanders",87,0.03,0,0
+"21W21","German speaking community",89,0,0,0
+"21W21","Wallonia",94,0.23,0.04,0.02
+"21W22","Belgium",89,0.04,0.01,0.02
+"21W22","Brussels",64,0.05,0.05,0.01
+"21W22","Flanders",89,0.01,0,0.01
+"21W22","German speaking community",89,0,0,0
+"21W22","Wallonia",94,0.08,0.03,0.03
+"21W23","Belgium",85,0.07,0.01,0
+"21W23","Brussels",61,0.03,0.01,0
+"21W23","Flanders",85,0,0,0
+"21W23","German speaking community",78,0,0,0
+"21W23","Wallonia",93,0.19,0.02,0.01
+"21W24","Belgium",88,0.02,0,0
+"21W24","Brussels",73,0.02,0,0.02
+"21W24","Flanders",86,0,0,0
+"21W24","German speaking community",78,0,0,0
+"21W24","Wallonia",94,0.05,0,0
+"21W25","Belgium",85,0.01,0,0
+"21W25","Brussels",66,0,0,0
+"21W25","Flanders",83,0,0,0
+"21W25","German speaking community",78,0,0,0
+"21W25","Wallonia",93,0.01,0,0
+"21W26","Belgium",83,0.04,0,0
+"21W26","Brussels",60,0,0,0
+"21W26","Flanders",80,0,0,0
+"21W26","German speaking community",56,0,0,0
+"21W26","Wallonia",93,0.11,0,0
+"21W27","Belgium",82,0.01,0,0
+"21W27","Brussels",68,0.01,0,0
+"21W27","Flanders",79,0.01,0,0
+"21W27","German speaking community",78,0,0,0
+"21W27","Wallonia",90,0.01,0,0
+"21W28","Belgium",79,0.02,0,0
+"21W28","Brussels",67,0,0,0
+"21W28","Flanders",79,0,0,0
+"21W28","German speaking community",78,0,0,0
+"21W28","Wallonia",81,0.06,0,0.01
+"21W29","Belgium",72,0.07,0.01,0
+"21W29","Brussels",62,0.05,0.01,0
+"21W29","Flanders",73,0.06,0,0
+"21W29","German speaking community",44,0,0,0
+"21W29","Wallonia",73,0.1,0.01,0.01
+"21W30","Belgium",75,0.03,0.01,0.01
+"21W30","Brussels",69,0.04,0.02,0.01
+"21W30","Flanders",77,0.04,0,0.01
+"21W30","German speaking community",56,0,0,0
+"21W30","Wallonia",74,0.03,0,0.01
+"21W31","Belgium",74,0.12,0.02,0.01
+"21W31","Brussels",70,0.09,0.03,0.02
+"21W31","Flanders",78,0.06,0,0.01
+"21W31","German speaking community",100,0,0,0
+"21W31","Wallonia",68,0.24,0.03,0.01
+"21W32","Belgium",74,0.08,0,0
+"21W32","Brussels",63,0.1,0,0
+"21W32","Flanders",77,0.05,0,0.01
+"21W32","German speaking community",100,0.51,0,0
+"21W32","Wallonia",74,0.11,0.01,0
+"21W33","Belgium",72,0.1,0.01,0.01
+"21W33","Brussels",61,0.06,0.01,0
+"21W33","Flanders",73,0.06,0,0
+"21W33","German speaking community",78,1.61,0,0.29
+"21W33","Wallonia",72,0.16,0.02,0.01
+"21W34","Belgium",70,0.07,0.01,0.01
+"21W34","Brussels",59,0.14,0.03,0
+"21W34","Flanders",74,0.06,0,0
+"21W34","German speaking community",67,0,0.2,0
+"21W34","Wallonia",67,0.08,0.02,0.02
+"21W35","Belgium",70,0.11,0.01,0
+"21W35","Brussels",61,0.09,0,0
+"21W35","Flanders",73,0.02,0.01,0
+"21W35","German speaking community",78,0,0.17,0
+"21W35","Wallonia",68,0.28,0.02,0
+"21W36","Belgium",68,0.13,0.01,0
+"21W36","Brussels",64,0.11,0.02,0.02
+"21W36","Flanders",71,0.06,0,0
+"21W36","German speaking community",89,0,0,0
+"21W36","Wallonia",63,0.28,0.03,0
+"21W37","Belgium",69,0.08,0.01,0.01
+"21W37","Brussels",63,0.07,0.01,0.03
+"21W37","Flanders",73,0.06,0.01,0
+"21W37","German speaking community",78,0.17,0.17,0
+"21W37","Wallonia",64,0.13,0.02,0.01
+"21W38","Belgium",71,0.14,0.01,0.01
+"21W38","Brussels",66,0.45,0.02,0
+"21W38","Flanders",76,0.06,0.01,0
+"21W38","German speaking community",78,0,0,0
+"21W38","Wallonia",66,0.22,0.02,0.02
