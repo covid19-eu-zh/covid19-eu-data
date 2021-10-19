@@ -34,8 +34,29 @@ def download_url(url, save_path, chunk_size=128):
             fd.write(chunk)
 
 
+
+
+map_nuts_2 = {
+    '\x9cl¹skie': 'śląskie',
+    'zachodniopomorskie': 'zachodniopomorskie',
+    'pomorskie': 'pomorskie',
+    'kujawsko-pomorskie': 'kujawsko-pomorskie',
+    'wielkopolskie': 'wielkopolskie',
+    '\x9cwiêtokrzyskie': 'świętokrzyskie',
+    'mazowieckie': 'mazowieckie',
+    'opolskie': 'opolskie',
+    'podkarpackie': 'podkarpackie',
+    'podlaskie': 'podlaskie',
+    'lubuskie': 'lubuskie',
+    'ma³opolskie': 'małopolskie',
+    'lubelskie': 'lubelskie',
+    'dolno\x9cl¹skie': 'dolnośląskie',
+    'warmiñsko-mazurskie': 'warmińsko-mazurskie',
+    '³ódzkie': 'łódzkie'
+}
+
 class SARSCOV2PL(COVIDScrapper):
-    def __init__(self, url=None, daily_folder=None):
+    def __init__(self, url=None, daily_folder=None, previous_files=None):
         if url is None:
             url = CSV_DATA_URL
 
@@ -85,7 +106,39 @@ class SARSCOV2PL(COVIDScrapper):
         # Remove space from case numbers
         self.df['cases'] = self.df['cases'].astype(str).str.replace(' ', '')
 
+        self.df.replace(map_nuts_2, inplace=True)
+
+        f_dt = pd.to_datetime(self.df["datetime"]).max()
+        if self.previous_files:
+            cols = ["cases"]
+        if "deaths" in self.df.columns:
+            cols.append("deaths")
+
+        check_loc = "lubuskie"
+        check_loc_value = self.df.loc[self.df.nuts_2 == check_loc]["cases"].max()
+
+        previous_dt = f_dt.date().isoformat()
+        previous_file_name = f"pl_covid19_{previous_dt}_0_00.csv"
+        df_previous = pd.read_csv(f"{self.daily_folder}/{previous_file_name}",)
+        prev_check_loc_value = df_previous.loc[
+            df_previous.nuts_2 == check_loc
+        ]["cases"].max()
+        self.df.replace(map_nuts_2, inplace=True)
+        if prev_check_loc_value >= check_loc_value:
+            # calculate culumative values
+            self.df = self.df.replace(map_nuts_2).merge(
+                df_previous[["nuts_2"] + cols],
+                how="left",
+                on="nuts_2",
+                suffixes=["", "_prev"]
+            )
+            for col in cols:
+                self.df[col] = self.df[col].fillna(0).astype(int) + self.df[f"{col}_prev"].fillna(0).astype(int)
+
+            self.df.drop([f"{c}_prev" for c in cols], axis=1, inplace=True)
+
         logger.info("cases:\n", self.df)
+        logger.info(f"{self.daily_folder}/{self.country.lower()}_covid19_{self.date}_{self.hour:0.0f}_{self.minute:02.0f}.csv",)
 
     def extract_table(self):
         """Load data table from web page
@@ -214,11 +267,16 @@ if __name__ == "__main__":
         if i.startswith("20")
     ]
 
+    clean_daily_files = [
+        i for i in
+        sorted(os.listdir(DAILY_FOLDER), reverse=True)
+    ]
+
     for p in daily_files[:3]:
         p = os.path.join(CACHE_FOLDER, p)
         logger.info(f"Looking at {p}")
 
-        cov_pl = SARSCOV2PL(url=p)
+        cov_pl = SARSCOV2PL(url=p, previous_files=clean_daily_files)
         cov_pl.workflow()
 
         print(cov_pl.df)
