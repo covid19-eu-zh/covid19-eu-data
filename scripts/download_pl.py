@@ -179,6 +179,42 @@ class SARSCOV2PL(COVIDScrapper):
         self.df['cases'] = self.df['cases'].astype(str).str.replace(' ', '')
         self.df = self.df[set(col_map.values()).intersection(set(self.df.columns))]
 
+        self.df.replace(map_nuts_2, inplace=True)
+
+        self.extract_datetime()
+        f_dt = self.dt
+
+        cols = ["cases"]
+        if "deaths" in self.df.columns:
+            cols.append("deaths")
+
+        check_loc = "lubuskie"
+        check_loc_value = self.df.loc[self.df.nuts_2 == check_loc]["cases"].astype(float).max()
+
+        previous_dt = (f_dt.date() - datetime.timedelta(1)).isoformat()
+        previous_file_name = f"pl_covid19_{previous_dt}_0_00.csv"
+        df_previous = pd.read_csv(f"{self.daily_folder}/{previous_file_name}",)
+        prev_check_loc_value = df_previous.loc[
+            df_previous.nuts_2 == check_loc
+        ]["cases"].astype(float).max()
+        self.df.replace(map_nuts_2, inplace=True)
+        if prev_check_loc_value >= check_loc_value:
+            # calculate culumative values
+            self.df = self.df.replace(map_nuts_2).merge(
+                df_previous[["nuts_2"] + cols],
+                how="left",
+                on="nuts_2",
+                suffixes=["", "_prev"]
+            )
+            for col in cols:
+                self.df[col] = self.df[col].fillna(0).astype(int) + self.df[f"{col}_prev"].fillna(0).astype(int)
+
+            self.df.drop([f"{c}_prev" for c in cols], axis=1, inplace=True)
+
+        logger.info("cases:\n", self.df)
+
+
+
         # if df['stan_rekordu_na'].unique():
         #     self.dt = pd.to_datetime(df['stan_rekordu_na'].unique()[0])
         # else:
@@ -245,11 +281,11 @@ if __name__ == "__main__":
     #     )
     #     file_transformation.workflow()
     CACHE_FOLDER = os.path.join("cache", "daily", "pl")
-    try:
-        os.makedirs(CACHE_FOLDER)
-    except FileExistsError as e:
-        logger.info(f"{CACHE_FOLDER} already exists, no need to create folder")
-        pass
+    # try:
+    #     os.makedirs(CACHE_FOLDER)
+    # except FileExistsError as e:
+    #     logger.info(f"{CACHE_FOLDER} already exists, no need to create folder")
+    #     pass
 
     monthly_zip_path = os.path.join(CACHE_FOLDER, "monthly.zip")
 
@@ -272,7 +308,7 @@ if __name__ == "__main__":
         sorted(os.listdir(DAILY_FOLDER), reverse=True)
     ]
 
-    for p in daily_files[:3]:
+    for p in sorted(daily_files[:3]):
         p = os.path.join(CACHE_FOLDER, p)
         logger.info(f"Looking at {p}")
 
