@@ -191,9 +191,14 @@ class SARSCOV2PL(COVIDScrapper):
         check_loc = "lubuskie"
         check_loc_value = self.df.loc[self.df.nuts_2 == check_loc]["cases"].astype(float).max()
 
-        previous_dt = (f_dt.date() - datetime.timedelta(1)).isoformat()
-        previous_file_name = f"pl_covid19_{previous_dt}_0_00.csv"
-        df_previous = pd.read_csv(f"{self.daily_folder}/{previous_file_name}",)
+        for i in range(1, 7):
+            previous_dt = (f_dt.date() - datetime.timedelta(i)).isoformat()
+            previous_file_name = f"pl_covid19_{previous_dt}_0_00.csv"
+            previous_file_full_path = f"{self.daily_folder}/{previous_file_name}"
+            if os.path.exists(previous_file_full_path):
+                break
+
+        df_previous = pd.read_csv(previous_file_full_path)
         prev_check_loc_value = df_previous.loc[
             df_previous.nuts_2 == check_loc
         ]["cases"].astype(float).max()
