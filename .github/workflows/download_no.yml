@@ -43,6 +43,7 @@ jobs:
           git status
           git add .
           git commit -m "Downloaded NO Data" || echo "Nothing to update"
+          git config pull.rebase true
           git pull
           git status
       - name: Push changes
