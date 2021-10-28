@@ -1,5 +1,6 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,1903.0,18.0,,,,2021-10-28
+CH,Nidwalden,NW,3606.0,26.0,,3.0,3.0,2021-10-28
 CH,Obwalden,OW,3921.0,51.0,,1.0,,2021-10-28
 CH,Uri,UR,4127.0,54.0,,3.0,,2021-10-28
 CH,Glarus,GL,4224.0,90.0,,3.0,,2021-10-28
@@ -8,9 +9,11 @@ CH,Basel-Stadt,BS,16551.0,215.0,,16.0,3.0,2021-10-28
 CH,Solothurn,SO,23311.0,284.0,,9.0,3.0,2021-10-28
 CH,Thurgau,TG,26200.0,496.0,,19.0,3.0,2021-10-28
 CH,Ticino,TI,36568.0,1007.0,,6.0,2.0,2021-10-28
+CH,Valais,VS,43657.0,678.0,,5.0,2.0,2021-10-28
 CH,Geneva,GE,69279.0,748.0,,,,2021-10-28
 CH,Berne,BE,82705.0,1175.0,,26.0,6.0,2021-10-28
-CH,,,857031.0,11202.0,610456.0,329.0,100.0,2021-10-28
+CH,Zürich,ZH,143909.0,1495.0,,49.0,26.0,2021-10-28
+CH,,,857527.0,11204.0,610456.0,321.0,105.0,2021-10-28
 CH,Aargau,AG,,,,,,2021-10-28
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-10-28
 CH,Basel-Landschaft,BL,,,,,,2021-10-28
@@ -19,10 +22,7 @@ CH,Grisons,GR,,,,,,2021-10-28
 CH,Jura,JU,,,,,,2021-10-28
 CH,Lucerne,LU,,,,22.0,,2021-10-28
 CH,Neuchâtel,NE,,,,,,2021-10-28
-CH,Nidwalden,NW,,,,,,2021-10-28
 CH,St. Gallen,SG,,,,,,2021-10-28
 CH,Schaffhausen,SH,,,,,,2021-10-28
 CH,Vaud,VD,,,,,,2021-10-28
-CH,Valais,VS,,,,,,2021-10-28
 CH,Zug,ZG,,,,,,2021-10-28
-CH,Zürich,ZH,,,,,,2021-10-28
