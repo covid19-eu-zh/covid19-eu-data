@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_pl.py'
   schedule:
-    - cron:  '5 11/5 * * *'
+    # - cron:  '5 11/5 * * *'
   workflow_dispatch:
     inputs:
       whotriggered:
