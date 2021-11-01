@@ -4,7 +4,7 @@ on:
   push:
     paths:
     - 'scripts/download_fr_csv.py'
-  schedule:
+  # schedule:
 #     - cron:  '24 9/5 * * *'
   workflow_dispatch:
     inputs:
