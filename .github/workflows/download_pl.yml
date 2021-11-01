@@ -1,11 +1,11 @@
-name: CI Download PL Data
+name: CI Download PL Archives
 
 on:
   push:
     paths:
-    - 'scripts/download_pl.py'
+    - 'scripts/download_pl_archives.py'
   schedule:
-    # - cron:  '5 11/5 * * *'
+    - cron:  '5 11 * * *'
   workflow_dispatch:
     inputs:
       whotriggered:
