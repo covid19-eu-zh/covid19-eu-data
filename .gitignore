@@ -225,4 +225,5 @@ Backup of *.doc*
 *.~vsd*
 
 cache/*
-!cache/daily/pl/*
+!cache/daily/pl/*.csv
+!cache/daily/pl/*.txt
