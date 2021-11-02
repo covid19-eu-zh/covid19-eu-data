@@ -41,7 +41,9 @@ jobs:
           git pull
           git status
           git add .
-          git commit -m "Update PL Dataset" || echo "Nothing to update"
+          git add -f cache/daily/pl/*.txt
+          git add -f cache/daily/pl/*.csv
+          git commit -m "Update PL Daily Archives" || echo "Nothing to update"
           git config pull.rebase true
           git pull
           git status
