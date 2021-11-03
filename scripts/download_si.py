@@ -10,7 +10,8 @@ from utils import (_COLUMNS_ORDER, COVIDScrapper, DailyAggregator,
 logging.basicConfig()
 logger = logging.getLogger("covid-eu-data.download.si")
 
-XLSX_DATA_URL = "https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx"
+# XLSX_DATA_URL = "https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx"
+XLSX_DATA_URL = "https://www.gov.si/assets/vlada/Koronavirus-podatki/EN_Covid-19-all-data-v2.xlsx"
 REPORT_URL = "https://www.gov.si/en/topics/coronavirus-disease-covid-19/actual-data/"
 DAILY_FOLDER = os.path.join("dataset", "daily", "si")
 CACHE_FOLDER = os.path.join("cache", "daily", "si")
