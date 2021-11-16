@@ -1,5 +1,6 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,2148.0,19.0,,,,2021-11-16
+CH,Nidwalden,NW,4304.0,27.0,,2.0,3.0,2021-11-16
 CH,Obwalden,OW,4324.0,52.0,,4.0,,2021-11-16
 CH,Uri,UR,4459.0,54.0,,1.0,,2021-11-16
 CH,Glarus,GL,4561.0,94.0,,8.0,,2021-11-16
@@ -10,7 +11,8 @@ CH,Thurgau,TG,28902.0,505.0,,21.0,3.0,2021-11-16
 CH,Ticino,TI,37325.0,1008.0,,21.0,5.0,2021-11-16
 CH,Geneva,GE,71075.0,755.0,,,,2021-11-16
 CH,Berne,BE,89576.0,1188.0,,54.0,15.0,2021-11-16
-CH,,,906283.0,11338.0,631451.0,594.0,129.0,2021-11-16
+CH,Zürich,ZH,152775.0,1511.0,,73.0,28.0,2021-11-16
+CH,,,908346.0,11338.0,631451.0,593.0,143.0,2021-11-16
 CH,Aargau,AG,,,,,,2021-11-16
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-11-16
 CH,Basel-Landschaft,BL,,,,,,2021-11-16
@@ -19,10 +21,8 @@ CH,Grisons,GR,,,,,,2021-11-16
 CH,Jura,JU,,,,,,2021-11-16
 CH,Lucerne,LU,,,,46.0,,2021-11-16
 CH,Neuchâtel,NE,,,,,,2021-11-16
-CH,Nidwalden,NW,,,,,,2021-11-16
 CH,St. Gallen,SG,,,,,,2021-11-16
 CH,Schaffhausen,SH,,,,,,2021-11-16
 CH,Vaud,VD,,,,,,2021-11-16
 CH,Valais,VS,,,,,,2021-11-16
 CH,Zug,ZG,,,,,,2021-11-16
-CH,Zürich,ZH,,,,,,2021-11-16
