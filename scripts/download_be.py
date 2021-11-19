@@ -24,7 +24,12 @@ DAILY_FOLDER = os.path.join("dataset", "daily", "be")
 
 CURRENT_DT = datetime.date.today().isoformat()
 
-def download_pdf():
+def download_pdf(a_text):
+    """
+    a_text can be "Recentste epidemiologische update" or "Wekelijks epidemiologisch bulletin"
+
+    check the webpage https://covid-19.sciensano.be/nl/covid-19-epidemiologische-situatie for more updated versions of texts of the two buttons.
+    """
     try:
         req_page = _get_response(REPORT_URL)
     except Exception as e:
@@ -32,7 +37,7 @@ def download_pdf():
 
     # "Meest recent epidemiologische update"
     report_doc = html.document_fromstring(req_page.content.decode("utf-8"))
-    pdf_el = report_doc.xpath('.//a[@title="Meest recente update.pdf"]/@href')
+    pdf_el = report_doc.xpath('.//a[contains(., a_text)]/@href')
     pdfs = pdf_el
 
     if not pdfs:
@@ -45,6 +50,8 @@ def download_pdf():
         pass
 
     for pdf in pdfs:
+        if not pdf.startswith("http"):
+            pdf = "https://covid-19.sciensano.be" + pdf
         pdf_url = pdf
         pdf_dt = datetime.date.today().isoformat()
 
@@ -271,7 +278,10 @@ def download(full):
 
 if __name__ == "__main__":
 
-    download_pdf()
+    print("Download Recentste epidemiologische update")
+    download_pdf("Recentste epidemiologische update")
+    print("Download Wekelijks epidemiologisch bulletin")
+    download_pdf("Wekelijks epidemiologisch bulletin")
 
     download_data()
 
