@@ -1,16 +1,11 @@
-name: CI Download BE Data
+name: CI Download BE Data (Full)
 
 on:
-  push:
-    paths:
-    - 'scripts/download_be.py'
-  schedule:
-    - cron:  '25 7/5 * * *'
   workflow_dispatch:
     inputs:
       whotriggered:
         description: 'Manual Trigger'
-        default: 'Why'
+        default: 'Download All for BE'
         required: false
 
 jobs:
@@ -41,7 +36,7 @@ jobs:
           git pull
           git status
           git add .
-          git commit -m "Added BE Data" || echo "Nothing to update"
+          git commit -m "Added BE Data (Full)" || echo "Nothing to update"
           git status
       - name: Push changes
         uses: ad-m/github-push-action@master
