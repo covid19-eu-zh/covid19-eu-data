@@ -280,9 +280,10 @@ if __name__ == "__main__":
 
     print("Download Recentste epidemiologische update")
     download_pdf("Recentste epidemiologische update")
-    print("Download Wekelijks epidemiologisch bulletin")
-    download_pdf("Wekelijks epidemiologisch bulletin")
+    # print("Download Wekelijks epidemiologisch bulletin")
+    # download_pdf("Wekelijks epidemiologisch bulletin")
 
+    print("Download data")
     download_data()
 
     download()
