@@ -35,7 +35,7 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Download Records
         run: |
-          python scripts/download_be.py
+          python scripts/download_be.py -f
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
