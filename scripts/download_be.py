@@ -37,7 +37,7 @@ def download_pdf(a_text):
 
     # "Meest recent epidemiologische update"
     report_doc = html.document_fromstring(req_page.content.decode("utf-8"))
-    pdf_el = report_doc.xpath('.//a[contains(., a_text)]/@href')
+    pdf_el = report_doc.xpath(f'.//a[contains(., "{a_text}")]/@href')
     pdfs = pdf_el
 
     if not pdfs:
