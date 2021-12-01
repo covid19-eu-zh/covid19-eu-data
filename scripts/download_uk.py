@@ -96,7 +96,9 @@ class SARSCOV2UK(COVIDScrapper):
         self.df = self.df.fillna(0)[
             [
                 'datetime', self.use_geo, 'cases', 'cases/100k pop.',
-                'deaths', 'tests', 'deaths/100k pop.'
+                'deaths', 
+                # 'tests',
+                'deaths/100k pop.'
             ]
         ]
 
