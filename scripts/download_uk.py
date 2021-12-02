@@ -12,8 +12,8 @@ DAILY_FOLDER = os.path.join("dataset", "daily", "uk")
 
 # This is the most useful
 # https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTests&metric=cumDeathsByDeathDateRate&format=csv
-REGION_ARCHIVE_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTests&metric=cumDeathsByDeathDateRate&format=csv"
-NATION_ARCHIVE_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTests&metric=cumDeathsByDeathDateRate&format=csv"
+REGION_ARCHIVE_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTestsByPublishDate&metric=cumDeathsByDeathDateRate&format=csv"
+NATION_ARCHIVE_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTestsByPublishDate&metric=cumDeathsByDeathDateRate&format=csv"
 
 REGION_LATEST_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTests&metric=cumDeathsByDeathDateRate&format=csv"
 NATION_LATEST_API = "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=cumCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&metric=cumDeathsByDeathDate&metric=cumVirusTests&metric=cumDeathsByDeathDateRate&format=csv"
@@ -68,7 +68,8 @@ class SARSCOV2UK(COVIDScrapper):
                 "cumCasesBySpecimenDateRate": "cases/100k pop.",
                 "cumDeathsByDeathDate": "deaths",
                 "cumDeathsByDeathDateRate": "deaths/100k pop.",
-                "cumVirusTests": "tests"
+                # "cumVirusTests": "tests",
+                "cumVirusTestsByPublishDate": "tests",
             },
             inplace=True
         )
@@ -97,7 +98,7 @@ class SARSCOV2UK(COVIDScrapper):
             [
                 'datetime', self.use_geo, 'cases', 'cases/100k pop.',
                 'deaths', 
-                # 'tests',
+                'tests',
                 'deaths/100k pop.'
             ]
         ]
