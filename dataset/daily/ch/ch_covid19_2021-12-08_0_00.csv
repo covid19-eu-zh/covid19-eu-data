@@ -1,4 +1,5 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Nidwalden,NW,5407.0,29.0,,3.0,1.0,2021-12-08
 CH,Glarus,GL,5568.0,97.0,,10.0,,2021-12-08
 CH,Zug,ZG,14534.0,145.0,,12.0,4.0,2021-12-08
 CH,Basel-Stadt,BS,22014.0,239.0,,92.0,10.0,2021-12-08
@@ -7,7 +8,7 @@ CH,Solothurn,SO,28912.0,296.0,,22.0,8.0,2021-12-08
 CH,Thurgau,TG,37875.0,521.0,,40.0,15.0,2021-12-08
 CH,Berne,BE,110117.0,1256.0,,190.0,35.0,2021-12-08
 CH,Zürich,ZH,179381.0,1554.0,,162.0,43.0,2021-12-08
-CH,,,1067424.0,11665.0,692309.0,1469.0,267.0,2021-12-08
+CH,,,1067424.0,11665.0,692309.0,1468.0,266.0,2021-12-08
 CH,Aargau,AG,,,,,,2021-12-08
 CH,Appenzell Innerrhoden,AI,,,,,,2021-12-08
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-12-08
@@ -18,7 +19,6 @@ CH,Grisons,GR,,,,,,2021-12-08
 CH,Jura,JU,,,,,,2021-12-08
 CH,Lucerne,LU,,,,,,2021-12-08
 CH,Neuchâtel,NE,,,,,,2021-12-08
-CH,Nidwalden,NW,,,,,,2021-12-08
 CH,Obwalden,OW,,,,,,2021-12-08
 CH,St. Gallen,SG,,,,,,2021-12-08
 CH,Schaffhausen,SH,,,,,,2021-12-08
