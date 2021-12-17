@@ -1,7 +1,9 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,2900.0,22.0,,,,2021-12-17
 CH,Uri,UR,5741.0,58.0,,3.0,,2021-12-17
+CH,Nidwalden,NW,5949.0,31.0,,8.0,2.0,2021-12-17
 CH,Glarus,GL,6056.0,98.0,,8.0,,2021-12-17
+CH,Obwalden,OW,6228.0,54.0,,11.0,,2021-12-17
 CH,Zug,ZG,15680.0,149.0,,13.0,4.0,2021-12-17
 CH,Basel-Stadt,BS,23738.0,244.0,,70.0,15.0,2021-12-17
 CH,Schwyz,SZ,26204.0,302.0,,,,2021-12-17
@@ -9,20 +11,18 @@ CH,Solothurn,SO,31369.0,302.0,,34.0,10.0,2021-12-17
 CH,Thurgau,TG,41922.0,534.0,,39.0,16.0,2021-12-17
 CH,Ticino,TI,42190.0,1030.0,,79.0,16.0,2021-12-17
 CH,Berne,BE,119421.0,1301.0,,190.0,35.0,2021-12-17
-CH,,,1146717.0,11771.0,711421.0,1464.0,302.0,2021-12-17
+CH,Zürich,ZH,192582.0,1586.0,,161.0,50.0,2021-12-17
+CH,,,1148930.0,11889.0,711421.0,1452.0,299.0,2021-12-17
 CH,Aargau,AG,,,,,,2021-12-17
 CH,Appenzell Ausserrhoden,AR,,,,,,2021-12-17
-CH,Basel-Landschaft,BL,,,,,,2021-12-17
+CH,Basel-Landschaft,BL,,,,42.0,7.0,2021-12-17
 CH,Fribourg,FR,,,,,,2021-12-17
 CH,Geneva,GE,,,,,,2021-12-17
 CH,Grisons,GR,,,,,,2021-12-17
 CH,Jura,JU,,,,,,2021-12-17
 CH,Lucerne,LU,,,,62.0,,2021-12-17
 CH,Neuchâtel,NE,,,,,,2021-12-17
-CH,Nidwalden,NW,,,,,,2021-12-17
-CH,Obwalden,OW,,,,,,2021-12-17
 CH,St. Gallen,SG,,,,,,2021-12-17
 CH,Schaffhausen,SH,,,,,,2021-12-17
 CH,Vaud,VD,,,,,,2021-12-17
 CH,Valais,VS,,,,,,2021-12-17
-CH,Zürich,ZH,,,,,,2021-12-17
