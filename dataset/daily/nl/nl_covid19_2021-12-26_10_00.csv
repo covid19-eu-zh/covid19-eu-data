@@ -1,0 +1,365 @@
+country,nuts_2,lau,cases,population,deaths,hospitalized,datetime
+NL,Drenthe,,123,,0,0,2021-12-26T10:00:00
+NL,Fryslân,,251,,0,1,2021-12-26T10:00:00
+NL,Groningen,,144,,0,1,2021-12-26T10:00:00
+NL,Gelderland,Rozendaal,214,,0,1,2021-12-26T10:00:00
+NL,Fryslân,Vlieland,125,,1,1,2021-12-26T10:00:00
+NL,Fryslân,Schiermonnikoog,67,,2,1,2021-12-26T10:00:00
+NL,Flevoland,,151,,0,2,2021-12-26T10:00:00
+NL,Fryslân,Ameland,354,,1,3,2021-12-26T10:00:00
+NL,Fryslân,Terschelling,576,,2,3,2021-12-26T10:00:00
+NL,Zeeland,,270,,1,5,2021-12-26T10:00:00
+NL,Overijssel,,943,,4,6,2021-12-26T10:00:00
+NL,Limburg,,1080,,3,7,2021-12-26T10:00:00
+NL,Gelderland,Scherpenzeel,2245,,12,7,2021-12-26T10:00:00
+NL,Noord-Holland,Texel,1271,,4,7,2021-12-26T10:00:00
+NL,Noord-Holland,Beemster,1690,,4,9,2021-12-26T10:00:00
+NL,Drenthe,Aa en Hunze,2661,,22,10,2021-12-26T10:00:00
+NL,Utrecht,Renswoude,1227,,5,11,2021-12-26T10:00:00
+NL,Zuid-Holland,Zoeterwoude,1549,,1,11,2021-12-26T10:00:00
+NL,Gelderland,,1320,,3,12,2021-12-26T10:00:00
+NL,Noord-Holland,Opmeer,2265,,7,13,2021-12-26T10:00:00
+NL,Limburg,Mook en Middelaar,1068,,13,13,2021-12-26T10:00:00
+NL,Fryslân,Harlingen,1762,,8,13,2021-12-26T10:00:00
+NL,Noord-Holland,Uitgeest,2279,,13,14,2021-12-26T10:00:00
+NL,Noord-Holland,Blaricum,1977,,7,16,2021-12-26T10:00:00
+NL,Noord-Brabant,Baarle-Nassau,1139,,4,16,2021-12-26T10:00:00
+NL,Noord-Holland,Landsmeer,2120,,13,16,2021-12-26T10:00:00
+NL,Overijssel,Ommen,2715,,19,16,2021-12-26T10:00:00
+NL,Noord-Brabant,Mill en Sint Hubert,2117,,12,17,2021-12-26T10:00:00
+NL,Utrecht,,712,,2,18,2021-12-26T10:00:00
+NL,Noord-Holland,Oostzaan,1745,,8,18,2021-12-26T10:00:00
+NL,Groningen,Veendam,3239,,18,18,2021-12-26T10:00:00
+NL,Zuid-Holland,Midden-Delfland,3652,,14,19,2021-12-26T10:00:00
+NL,Noord-Holland,Laren,1911,,31,20,2021-12-26T10:00:00
+NL,Noord-Holland,Ouder-Amstel,2615,,6,20,2021-12-26T10:00:00
+NL,Noord-Holland,Bloemendaal,3635,,20,20,2021-12-26T10:00:00
+NL,Zeeland,Kapelle,2126,,6,21,2021-12-26T10:00:00
+NL,Noord-Brabant,Hilvarenbeek,2576,,20,21,2021-12-26T10:00:00
+NL,Drenthe,Westerveld,2029,,24,21,2021-12-26T10:00:00
+NL,Utrecht,Eemnes,1739,,6,21,2021-12-26T10:00:00
+NL,Overijssel,Olst-Wijhe,2445,,10,23,2021-12-26T10:00:00
+NL,Zuid-Holland,Hardinxveld-Giessendam,4894,,30,23,2021-12-26T10:00:00
+NL,Zuid-Holland,Oegstgeest,3657,,32,24,2021-12-26T10:00:00
+NL,Gelderland,Hattem,1779,,7,24,2021-12-26T10:00:00
+NL,Fryslân,Ooststellingwerf,3255,,7,24,2021-12-26T10:00:00
+NL,Noord-Holland,Weesp,3453,,23,24,2021-12-26T10:00:00
+NL,Gelderland,West Maas en Waal,3413,,19,25,2021-12-26T10:00:00
+NL,Utrecht,Woudenberg,2974,,9,25,2021-12-26T10:00:00
+NL,Gelderland,Doesburg,1430,,9,25,2021-12-26T10:00:00
+NL,Noord-Brabant,Heeze-Leende,2616,,13,25,2021-12-26T10:00:00
+NL,Zuid-Holland,Hillegom,3308,,23,25,2021-12-26T10:00:00
+NL,Fryslân,Weststellingwerf,3643,,31,25,2021-12-26T10:00:00
+NL,Groningen,Pekela,1595,,13,26,2021-12-26T10:00:00
+NL,Gelderland,Putten,4615,,21,26,2021-12-26T10:00:00
+NL,Flevoland,Zeewolde,3423,,17,26,2021-12-26T10:00:00
+NL,Noord-Holland,Heiloo,3591,,18,26,2021-12-26T10:00:00
+NL,Noord-Brabant,Reusel-De Mierden,2702,,12,26,2021-12-26T10:00:00
+NL,Noord-Brabant,Alphen-Chaam,1715,,5,26,2021-12-26T10:00:00
+NL,Noord-Brabant,Waalre,2935,,17,27,2021-12-26T10:00:00
+NL,Zuid-Holland,Kaag en Braassem,4472,,11,27,2021-12-26T10:00:00
+NL,Noord-Brabant,Woensdrecht,3381,,26,27,2021-12-26T10:00:00
+NL,Overijssel,Tubbergen,4562,,21,27,2021-12-26T10:00:00
+NL,Gelderland,Winterswijk,3972,,23,27,2021-12-26T10:00:00
+NL,Utrecht,Bunnik,2149,,14,27,2021-12-26T10:00:00
+NL,Zeeland,Noord-Beveland,1058,,11,28,2021-12-26T10:00:00
+NL,Zuid-Holland,Westvoorne,2132,,20,28,2021-12-26T10:00:00
+NL,Limburg,Voerendaal,2375,,12,29,2021-12-26T10:00:00
+NL,Noord-Holland,Koggenland,4367,,24,29,2021-12-26T10:00:00
+NL,Limburg,Vaals,1408,,18,29,2021-12-26T10:00:00
+NL,Noord-Brabant,Sint Anthonis,2153,,11,29,2021-12-26T10:00:00
+NL,Overijssel,Wierden,5179,,31,29,2021-12-26T10:00:00
+NL,Zuid-Holland,Voorschoten,3676,,24,29,2021-12-26T10:00:00
+NL,Overijssel,Staphorst,4431,,29,29,2021-12-26T10:00:00
+NL,Noord-Holland,Drechterland,3575,,13,29,2021-12-26T10:00:00
+NL,Limburg,Bergen (L.),2885,,19,30,2021-12-26T10:00:00
+NL,Drenthe,Tynaarlo,3169,,26,30,2021-12-26T10:00:00
+NL,Noord-Holland,,2968,,4,31,2021-12-26T10:00:00
+NL,Noord-Brabant,Bergeijk,3552,,15,31,2021-12-26T10:00:00
+NL,Gelderland,Heumen,2545,,21,31,2021-12-26T10:00:00
+NL,Limburg,Gennep,3519,,31,32,2021-12-26T10:00:00
+NL,Gelderland,Westervoort,2169,,11,32,2021-12-26T10:00:00
+NL,Noord-Brabant,Oirschot,3637,,27,33,2021-12-26T10:00:00
+NL,Noord-Holland,Zandvoort,2620,,46,33,2021-12-26T10:00:00
+NL,Gelderland,Voorst,3807,,31,33,2021-12-26T10:00:00
+NL,Zuid-Holland,Brielle,2930,,11,34,2021-12-26T10:00:00
+NL,Fryslân,Dantumadiel,3463,,25,34,2021-12-26T10:00:00
+NL,Utrecht,Montfoort,2607,,10,34,2021-12-26T10:00:00
+NL,Gelderland,Aalten,4037,,33,35,2021-12-26T10:00:00
+NL,Noord-Brabant,Grave,2341,,27,35,2021-12-26T10:00:00
+NL,Zuid-Holland,Lisse,3969,,23,35,2021-12-26T10:00:00
+NL,Gelderland,Duiven,3627,,17,35,2021-12-26T10:00:00
+NL,Noord-Holland,Enkhuizen,3196,,17,35,2021-12-26T10:00:00
+NL,Limburg,Simpelveld,1856,,11,36,2021-12-26T10:00:00
+NL,Noord-Brabant,Asten,3152,,19,36,2021-12-26T10:00:00
+NL,Noord-Holland,Heemstede,4371,,67,36,2021-12-26T10:00:00
+NL,Utrecht,Baarn,4341,,29,36,2021-12-26T10:00:00
+NL,Noord-Holland,Waterland,2891,,18,36,2021-12-26T10:00:00
+NL,Noord-Holland,Stede Broec,3912,,16,36,2021-12-26T10:00:00
+NL,Drenthe,Borger-Odoorn,2835,,21,37,2021-12-26T10:00:00
+NL,Overijssel,Haaksbergen,4360,,33,37,2021-12-26T10:00:00
+NL,Noord-Brabant,"Nuenen, Gerwen en Nederwetten",3583,,27,37,2021-12-26T10:00:00
+NL,Overijssel,Dalfsen,4317,,24,37,2021-12-26T10:00:00
+NL,Noord-Holland,Wijdemeren,3977,,24,37,2021-12-26T10:00:00
+NL,Fryslân,Opsterland,4354,,11,38,2021-12-26T10:00:00
+NL,Overijssel,Borne,4137,,41,38,2021-12-26T10:00:00
+NL,Noord-Brabant,Geertruidenberg,4013,,30,38,2021-12-26T10:00:00
+NL,Overijssel,Steenwijkerland,6040,,30,39,2021-12-26T10:00:00
+NL,Limburg,Gulpen-Wittem,2454,,21,39,2021-12-26T10:00:00
+NL,Overijssel,Dinkelland,4980,,37,39,2021-12-26T10:00:00
+NL,Utrecht,Wijk bij Duurstede,3495,,19,39,2021-12-26T10:00:00
+NL,Noord-Holland,Langedijk,4802,,19,39,2021-12-26T10:00:00
+NL,Drenthe,Noordenveld,3390,,26,39,2021-12-26T10:00:00
+NL,Drenthe,Meppel,4315,,37,40,2021-12-26T10:00:00
+NL,Utrecht,Oudewater,1667,,12,40,2021-12-26T10:00:00
+NL,Zuid-Holland,Leiderdorp,4129,,28,40,2021-12-26T10:00:00
+NL,Fryslân,Tytsjerksteradiel,4595,,34,40,2021-12-26T10:00:00
+NL,Groningen,Stadskanaal,4283,,23,40,2021-12-26T10:00:00
+NL,Zuid-Holland,Sliedrecht,6183,,50,40,2021-12-26T10:00:00
+NL,Noord-Holland,Wormerland,2663,,36,41,2021-12-26T10:00:00
+NL,Limburg,Beek,3106,,16,41,2021-12-26T10:00:00
+NL,Overijssel,Hof van Twente,6464,,38,41,2021-12-26T10:00:00
+NL,Noord-Holland,Castricum,5753,,32,41,2021-12-26T10:00:00
+NL,Limburg,Beesel,2901,,15,42,2021-12-26T10:00:00
+NL,Utrecht,Lopik,2864,,12,42,2021-12-26T10:00:00
+NL,Noord-Brabant,,3266,,8,42,2021-12-26T10:00:00
+NL,Gelderland,Oost Gelre,4915,,47,43,2021-12-26T10:00:00
+NL,Utrecht,Leusden,4651,,31,43,2021-12-26T10:00:00
+NL,Drenthe,De Wolden,3548,,28,43,2021-12-26T10:00:00
+NL,Zeeland,Veere,3182,,9,43,2021-12-26T10:00:00
+NL,Gelderland,Brummen,2976,,24,43,2021-12-26T10:00:00
+NL,Drenthe,Midden-Drenthe,3838,,32,44,2021-12-26T10:00:00
+NL,Noord-Brabant,Steenbergen,3880,,22,44,2021-12-26T10:00:00
+NL,Noord-Holland,Uithoorn,5196,,19,44,2021-12-26T10:00:00
+NL,Groningen,Westerwolde,4080,,25,44,2021-12-26T10:00:00
+NL,Flevoland,Noordoostpolder,7611,,32,44,2021-12-26T10:00:00
+NL,Noord-Brabant,Cuijk,5146,,33,44,2021-12-26T10:00:00
+NL,Gelderland,Renkum,3860,,38,44,2021-12-26T10:00:00
+NL,Noord-Holland,Bergen (NH.),4504,,41,44,2021-12-26T10:00:00
+NL,Noord-Brabant,Son en Breugel,2669,,30,45,2021-12-26T10:00:00
+NL,Zuid-Holland,Teylingen,6744,,27,45,2021-12-26T10:00:00
+NL,Gelderland,Lochem,4596,,42,45,2021-12-26T10:00:00
+NL,Groningen,Westerkwartier,7309,,34,45,2021-12-26T10:00:00
+NL,Fryslân,Achtkarspelen,4920,,41,45,2021-12-26T10:00:00
+NL,Noord-Brabant,Bladel,4378,,33,46,2021-12-26T10:00:00
+NL,Limburg,Valkenburg aan de Geul,3005,,32,46,2021-12-26T10:00:00
+NL,Noord-Brabant,Boekel,1924,,23,46,2021-12-26T10:00:00
+NL,Noord-Holland,Aalsmeer,6261,,29,48,2021-12-26T10:00:00
+NL,Noord-Brabant,Zundert,3408,,18,48,2021-12-26T10:00:00
+NL,Zuid-Holland,Wassenaar,3714,,36,48,2021-12-26T10:00:00
+NL,Noord-Brabant,Goirle,4323,,43,48,2021-12-26T10:00:00
+NL,Noord-Brabant,Gilze en Rijen,4497,,20,48,2021-12-26T10:00:00
+NL,Zuid-Holland,Hendrik-Ido-Ambacht,6634,,40,49,2021-12-26T10:00:00
+NL,Groningen,Het Hogeland,7062,,35,49,2021-12-26T10:00:00
+NL,Gelderland,Maasdriel,5390,,45,49,2021-12-26T10:00:00
+NL,Gelderland,Bronckhorst,5735,,27,49,2021-12-26T10:00:00
+NL,Gelderland,Beuningen,4274,,28,49,2021-12-26T10:00:00
+NL,Noord-Brabant,Boxmeer,6191,,53,50,2021-12-26T10:00:00
+NL,Zuid-Holland,Papendrecht,6199,,51,50,2021-12-26T10:00:00
+NL,Gelderland,Elburg,4155,,23,50,2021-12-26T10:00:00
+NL,Gelderland,Druten,3414,,31,50,2021-12-26T10:00:00
+NL,Utrecht,Rhenen,4494,,26,50,2021-12-26T10:00:00
+NL,Zuid-Holland,Nieuwkoop,5994,,26,51,2021-12-26T10:00:00
+NL,Overijssel,Raalte,6395,,51,51,2021-12-26T10:00:00
+NL,Noord-Brabant,Someren,3975,,21,51,2021-12-26T10:00:00
+NL,Noord-Brabant,Landerd,2934,,29,51,2021-12-26T10:00:00
+NL,Zuid-Holland,Alblasserdam,4801,,27,52,2021-12-26T10:00:00
+NL,Limburg,Maasgouw,4963,,43,52,2021-12-26T10:00:00
+NL,Noord-Brabant,Dongen,4858,,31,52,2021-12-26T10:00:00
+NL,Overijssel,Twenterand,6784,,35,53,2021-12-26T10:00:00
+NL,Limburg,Nederweert,3914,,28,54,2021-12-26T10:00:00
+NL,Gelderland,Montferland,5493,,31,54,2021-12-26T10:00:00
+NL,Gelderland,Berkelland,6842,,58,54,2021-12-26T10:00:00
+NL,Gelderland,Ermelo,4755,,44,54,2021-12-26T10:00:00
+NL,Gelderland,Wageningen,5813,,71,54,2021-12-26T10:00:00
+NL,Zuid-Holland,Albrandswaard,5316,,23,54,2021-12-26T10:00:00
+NL,Noord-Brabant,Rucphen,3920,,18,54,2021-12-26T10:00:00
+NL,Gelderland,Culemborg,5071,,24,54,2021-12-26T10:00:00
+NL,Gelderland,Buren,4399,,26,54,2021-12-26T10:00:00
+NL,Groningen,Oldambt,4396,,39,55,2021-12-26T10:00:00
+NL,Limburg,Roerdalen,3813,,40,55,2021-12-26T10:00:00
+NL,Overijssel,Losser,4276,,38,55,2021-12-26T10:00:00
+NL,Fryslân,Heerenveen,7350,,44,56,2021-12-26T10:00:00
+NL,Zuid-Holland,Gorinchem,7469,,46,56,2021-12-26T10:00:00
+NL,Groningen,Eemsdelta,4792,,29,56,2021-12-26T10:00:00
+NL,Fryslân,Waadhoeke,6057,,43,56,2021-12-26T10:00:00
+NL,Gelderland,Zaltbommel,6243,,49,57,2021-12-26T10:00:00
+NL,Overijssel,Hellendoorn,6857,,54,57,2021-12-26T10:00:00
+NL,Noord-Brabant,Sint-Michielsgestel,5567,,44,57,2021-12-26T10:00:00
+NL,Zuid-Holland,Krimpen aan den IJssel,6324,,78,57,2021-12-26T10:00:00
+NL,Noord-Brabant,Eersel,3624,,32,57,2021-12-26T10:00:00
+NL,Noord-Brabant,Loon op Zand,4689,,46,57,2021-12-26T10:00:00
+NL,Noord-Holland,Hollands Kroon,7440,,36,58,2021-12-26T10:00:00
+NL,Zeeland,Borsele,3705,,9,58,2021-12-26T10:00:00
+NL,Gelderland,Nijkerk,8119,,34,58,2021-12-26T10:00:00
+NL,Gelderland,Oude IJsselstreek,6839,,57,58,2021-12-26T10:00:00
+NL,Noord-Brabant,Drimmelen,4625,,31,58,2021-12-26T10:00:00
+NL,Noord-Brabant,Boxtel,6144,,72,59,2021-12-26T10:00:00
+NL,Gelderland,Heerde,2433,,32,60,2021-12-26T10:00:00
+NL,Noord-Brabant,Moerdijk,6215,,54,62,2021-12-26T10:00:00
+NL,Noord-Brabant,Halderberge,5072,,31,62,2021-12-26T10:00:00
+NL,Noord-Holland,Diemen,5750,,42,62,2021-12-26T10:00:00
+NL,Zeeland,Sluis,2920,,23,63,2021-12-26T10:00:00
+NL,Gelderland,Oldebroek,4367,,40,63,2021-12-26T10:00:00
+NL,Noord-Brabant,Best,5338,,35,63,2021-12-26T10:00:00
+NL,Noord-Holland,Beverwijk,7298,,45,63,2021-12-26T10:00:00
+NL,Noord-Brabant,Oisterwijk,5697,,26,64,2021-12-26T10:00:00
+NL,Zuid-Holland,Molenlanden,10261,,44,64,2021-12-26T10:00:00
+NL,Utrecht,Bunschoten,6146,,41,64,2021-12-26T10:00:00
+NL,Overijssel,Oldenzaal,5692,,52,65,2021-12-26T10:00:00
+NL,Overijssel,Rijssen-Holten,9143,,66,65,2021-12-26T10:00:00
+NL,Zeeland,Hulst,4235,,13,66,2021-12-26T10:00:00
+NL,Noord-Holland,Medemblik,8628,,29,66,2021-12-26T10:00:00
+NL,Overijssel,Zwartewaterland,4574,,34,66,2021-12-26T10:00:00
+NL,Drenthe,Coevorden,4982,,35,67,2021-12-26T10:00:00
+NL,Limburg,Meerssen,3529,,43,68,2021-12-26T10:00:00
+NL,Noord-Brabant,Laarbeek,4030,,45,69,2021-12-26T10:00:00
+NL,Noord-Brabant,Valkenswaard,5601,,71,69,2021-12-26T10:00:00
+NL,Noord-Holland,Schagen,7647,,73,69,2021-12-26T10:00:00
+NL,Fryslân,Smallingerland,8363,,40,70,2021-12-26T10:00:00
+NL,Flevoland,Urk,4500,,24,70,2021-12-26T10:00:00
+NL,Gelderland,Berg en Dal,5848,,66,70,2021-12-26T10:00:00
+NL,Gelderland,Zutphen,7058,,45,71,2021-12-26T10:00:00
+NL,Groningen,Midden-Groningen,6634,,43,71,2021-12-26T10:00:00
+NL,Limburg,Horst aan de Maas,10454,,78,72,2021-12-26T10:00:00
+NL,Fryslân,De Fryske Marren,7978,,38,72,2021-12-26T10:00:00
+NL,Zuid-Holland,Noordwijk,7565,,31,75,2021-12-26T10:00:00
+NL,Noord-Holland,Huizen,7574,,60,75,2021-12-26T10:00:00
+NL,Noord-Holland,Gooise Meren,10159,,44,75,2021-12-26T10:00:00
+NL,Zeeland,Reimerswaal,5623,,20,76,2021-12-26T10:00:00
+NL,Limburg,Venray,9893,,58,77,2021-12-26T10:00:00
+NL,Gelderland,Rheden,6455,,84,77,2021-12-26T10:00:00
+NL,Noord-Holland,Heerhugowaard,10134,,47,77,2021-12-26T10:00:00
+NL,Zeeland,Schouwen-Duiveland,4665,,32,78,2021-12-26T10:00:00
+NL,Flevoland,Dronten,5838,,32,78,2021-12-26T10:00:00
+NL,Zuid-Holland,Maassluis,6049,,45,78,2021-12-26T10:00:00
+NL,Gelderland,Doetinchem,9296,,49,79,2021-12-26T10:00:00
+NL,Gelderland,Lingewaard,7395,,53,79,2021-12-26T10:00:00
+NL,Limburg,Echt-Susteren,6213,,44,80,2021-12-26T10:00:00
+NL,Noord-Brabant,Etten-Leur,7220,,40,80,2021-12-26T10:00:00
+NL,Zuid-Holland,,5307,,16,80,2021-12-26T10:00:00
+NL,Noord-Holland,Heemskerk,7161,,46,80,2021-12-26T10:00:00
+NL,Gelderland,Neder-Betuwe,6236,,51,81,2021-12-26T10:00:00
+NL,Overijssel,Hardenberg,10352,,48,82,2021-12-26T10:00:00
+NL,Drenthe,Assen,7440,,25,82,2021-12-26T10:00:00
+NL,Zeeland,Tholen,5558,,34,82,2021-12-26T10:00:00
+NL,Utrecht,Houten,8382,,53,83,2021-12-26T10:00:00
+NL,Noord-Brabant,Cranendonck,4223,,58,84,2021-12-26T10:00:00
+NL,Zuid-Holland,Pijnacker-Nootdorp,9906,,43,85,2021-12-26T10:00:00
+NL,Noord-Brabant,Vught,5753,,55,85,2021-12-26T10:00:00
+NL,Fryslân,Noardeast-Fryslân,7663,,54,85,2021-12-26T10:00:00
+NL,Utrecht,Soest,7910,,54,87,2021-12-26T10:00:00
+NL,Limburg,Stein,4977,,27,87,2021-12-26T10:00:00
+NL,Gelderland,Overbetuwe,7141,,38,88,2021-12-26T10:00:00
+NL,Gelderland,Epe,5069,,55,88,2021-12-26T10:00:00
+NL,Zuid-Holland,Hellevoetsluis,6691,,47,89,2021-12-26T10:00:00
+NL,Utrecht,De Bilt,6841,,80,89,2021-12-26T10:00:00
+NL,Noord-Brabant,Waalwijk,9214,,82,90,2021-12-26T10:00:00
+NL,Zuid-Holland,Waddinxveen,6071,,19,90,2021-12-26T10:00:00
+NL,Limburg,Leudal,7113,,59,90,2021-12-26T10:00:00
+NL,Noord-Brabant,Geldrop-Mierlo,7082,,33,90,2021-12-26T10:00:00
+NL,Gelderland,Barneveld,14604,,79,91,2021-12-26T10:00:00
+NL,Gelderland,Wijchen,6934,,68,92,2021-12-26T10:00:00
+NL,Noord-Brabant,Veldhoven,7865,,52,92,2021-12-26T10:00:00
+NL,Zuid-Holland,Bodegraven-Reeuwijk,7376,,39,92,2021-12-26T10:00:00
+NL,Gelderland,Nunspeet,5264,,42,94,2021-12-26T10:00:00
+NL,Utrecht,IJsselstein,5967,,59,94,2021-12-26T10:00:00
+NL,Drenthe,Hoogeveen,8469,,46,95,2021-12-26T10:00:00
+NL,Zuid-Holland,Zwijndrecht,8870,,118,95,2021-12-26T10:00:00
+NL,Noord-Holland,Den Helder,9578,,50,96,2021-12-26T10:00:00
+NL,Overijssel,Kampen,8687,,54,97,2021-12-26T10:00:00
+NL,Noord-Brabant,Heusden,8921,,56,97,2021-12-26T10:00:00
+NL,Gelderland,Harderwijk,7873,,62,100,2021-12-26T10:00:00
+NL,Noord-Brabant,Deurne,6567,,50,100,2021-12-26T10:00:00
+NL,Overijssel,Hengelo (O.),13209,,72,101,2021-12-26T10:00:00
+NL,Gelderland,Zevenaar,6208,,50,102,2021-12-26T10:00:00
+NL,Gelderland,West Betuwe,10543,,67,104,2021-12-26T10:00:00
+NL,Gelderland,Tiel,7655,,80,104,2021-12-26T10:00:00
+NL,Fryslân,Súdwest-Fryslân,14302,,98,105,2021-12-26T10:00:00
+NL,Noord-Holland,Edam-Volendam,8051,,27,107,2021-12-26T10:00:00
+NL,Utrecht,Zeist,10105,,81,107,2021-12-26T10:00:00
+NL,Limburg,Eijsden-Margraten,4752,,59,107,2021-12-26T10:00:00
+NL,Noord-Brabant,Gemert-Bakel,5316,,44,108,2021-12-26T10:00:00
+NL,Zeeland,Middelburg,8037,,33,108,2021-12-26T10:00:00
+NL,Noord-Holland,Hoorn,13880,,57,109,2021-12-26T10:00:00
+NL,Zuid-Holland,Lansingerland,12394,,71,110,2021-12-26T10:00:00
+NL,Noord-Brabant,Altena,12342,,76,110,2021-12-26T10:00:00
+NL,Utrecht,Utrechtse Heuvelrug,7700,,86,110,2021-12-26T10:00:00
+NL,Noord-Brabant,Oosterhout,10077,,43,114,2021-12-26T10:00:00
+NL,Limburg,Beekdaelen,7037,,70,115,2021-12-26T10:00:00
+NL,Zuid-Holland,Barendrecht,9784,,50,117,2021-12-26T10:00:00
+NL,Noord-Brabant,Bergen op Zoom,12118,,50,118,2021-12-26T10:00:00
+NL,Limburg,Brunssum,5873,,67,120,2021-12-26T10:00:00
+NL,Noord-Brabant,Bernheze,6160,,82,121,2021-12-26T10:00:00
+NL,Zuid-Holland,Delft,16962,,85,127,2021-12-26T10:00:00
+NL,Noord-Holland,Hilversum,14009,,106,128,2021-12-26T10:00:00
+NL,Limburg,Landgraaf,7677,,90,128,2021-12-26T10:00:00
+NL,Utrecht,De Ronde Venen,8019,,53,128,2021-12-26T10:00:00
+NL,Noord-Brabant,Roosendaal,14138,,84,128,2021-12-26T10:00:00
+NL,Noord-Holland,Velsen,11704,,98,129,2021-12-26T10:00:00
+NL,Zuid-Holland,Katwijk,14501,,71,132,2021-12-26T10:00:00
+NL,Zuid-Holland,Ridderkerk,9634,,107,134,2021-12-26T10:00:00
+NL,Groningen,Groningen,29223,,60,137,2021-12-26T10:00:00
+NL,Limburg,Roermond,11995,,78,137,2021-12-26T10:00:00
+NL,Zuid-Holland,Zuidplas,8643,,50,139,2021-12-26T10:00:00
+NL,Overijssel,Deventer,14760,,96,139,2021-12-26T10:00:00
+NL,Zeeland,Goes,6520,,34,142,2021-12-26T10:00:00
+NL,Zuid-Holland,Goeree-Overflakkee,8461,,93,143,2021-12-26T10:00:00
+NL,Overijssel,Almelo,12669,,71,144,2021-12-26T10:00:00
+NL,Limburg,Weert,10795,,91,145,2021-12-26T10:00:00
+NL,Fryslân,Leeuwarden,16633,,95,145,2021-12-26T10:00:00
+NL,Overijssel,Zwolle,18510,,143,148,2021-12-26T10:00:00
+NL,Utrecht,Vijfheerenlanden,12048,,82,149,2021-12-26T10:00:00
+NL,Noord-Brabant,Uden,7315,,92,150,2021-12-26T10:00:00
+NL,Zuid-Holland,Rijswijk,9190,,78,154,2021-12-26T10:00:00
+NL,Utrecht,Woerden,9466,,46,154,2021-12-26T10:00:00
+NL,Utrecht,Veenendaal,14434,,88,156,2021-12-26T10:00:00
+NL,Utrecht,Nieuwegein,9950,,36,156,2021-12-26T10:00:00
+NL,Noord-Holland,Amstelveen,14311,,116,160,2021-12-26T10:00:00
+NL,Zuid-Holland,Leiden,20581,,83,162,2021-12-26T10:00:00
+NL,Utrecht,Stichtse Vecht,10973,,76,163,2021-12-26T10:00:00
+NL,Zuid-Holland,Krimpenerwaard,11056,,68,171,2021-12-26T10:00:00
+NL,Zeeland,Terneuzen,8527,,35,171,2021-12-26T10:00:00
+NL,Zuid-Holland,Hoeksche Waard,16054,,75,172,2021-12-26T10:00:00
+NL,Noord-Holland,Alkmaar,18365,,91,173,2021-12-26T10:00:00
+NL,Limburg,Kerkrade,8559,,105,174,2021-12-26T10:00:00
+NL,Zeeland,Vlissingen,6744,,37,175,2021-12-26T10:00:00
+NL,Limburg,Peel en Maas,9129,,93,177,2021-12-26T10:00:00
+NL,Flevoland,Lelystad,12822,,78,182,2021-12-26T10:00:00
+NL,Gelderland,Ede,22487,,117,187,2021-12-26T10:00:00
+NL,Zuid-Holland,Leidschendam-Voorburg,11698,,101,195,2021-12-26T10:00:00
+NL,Zuid-Holland,Vlaardingen,14555,,108,211,2021-12-26T10:00:00
+NL,Zuid-Holland,Zoetermeer,20408,,77,212,2021-12-26T10:00:00
+NL,Zuid-Holland,Alphen aan den Rijn,20203,,146,216,2021-12-26T10:00:00
+NL,Zuid-Holland,Nissewaard,15331,,106,217,2021-12-26T10:00:00
+NL,Zuid-Holland,Capelle aan den IJssel,13271,,158,217,2021-12-26T10:00:00
+NL,Noord-Brabant,Helmond,17689,,92,219,2021-12-26T10:00:00
+NL,Noord-Holland,Purmerend,13933,,92,223,2021-12-26T10:00:00
+NL,Zuid-Holland,Westland,23475,,97,225,2021-12-26T10:00:00
+NL,Drenthe,Emmen,15304,,91,226,2021-12-26T10:00:00
+NL,Noord-Holland,Haarlemmermeer,26522,,133,239,2021-12-26T10:00:00
+NL,Gelderland,Arnhem,25259,,153,253,2021-12-26T10:00:00
+NL,Gelderland,Apeldoorn,25779,,191,262,2021-12-26T10:00:00
+NL,Noord-Brabant,Oss,16910,,140,264,2021-12-26T10:00:00
+NL,Noord-Holland,Haarlem,26861,,186,273,2021-12-26T10:00:00
+NL,Zuid-Holland,Schiedam,15341,,124,274,2021-12-26T10:00:00
+NL,Limburg,Sittard-Geleen,17311,,166,274,2021-12-26T10:00:00
+NL,Noord-Brabant,Meierijstad,14693,,179,279,2021-12-26T10:00:00
+NL,Limburg,Venlo,25039,,198,279,2021-12-26T10:00:00
+NL,Utrecht,Amersfoort,27832,,150,291,2021-12-26T10:00:00
+NL,Noord-Brabant,'s-Hertogenbosch,29555,,190,297,2021-12-26T10:00:00
+NL,Limburg,Heerlen,16830,,156,303,2021-12-26T10:00:00
+NL,Overijssel,Enschede,26259,,198,306,2021-12-26T10:00:00
+NL,Zuid-Holland,Dordrecht,24035,,217,307,2021-12-26T10:00:00
+NL,Noord-Brabant,Breda,32633,,181,309,2021-12-26T10:00:00
+NL,Zuid-Holland,Gouda,13510,,165,321,2021-12-26T10:00:00
+NL,Gelderland,Nijmegen,29806,,232,348,2021-12-26T10:00:00
+NL,Noord-Holland,Zaanstad,27622,,190,390,2021-12-26T10:00:00
+NL,Limburg,Maastricht,21914,,249,427,2021-12-26T10:00:00
+NL,Flevoland,Almere,36659,,120,427,2021-12-26T10:00:00
+NL,Noord-Brabant,Tilburg,43195,,299,486,2021-12-26T10:00:00
+NL,Noord-Brabant,Eindhoven,40047,,402,535,2021-12-26T10:00:00
+NL,Utrecht,Utrecht,62629,,292,836,2021-12-26T10:00:00
+NL,Zuid-Holland,'s-Gravenhage,93492,,633,2128,2021-12-26T10:00:00
+NL,Zuid-Holland,Rotterdam,133346,,1060,2317,2021-12-26T10:00:00
+NL,Noord-Holland,Amsterdam,160376,,948,2381,2021-12-26T10:00:00
