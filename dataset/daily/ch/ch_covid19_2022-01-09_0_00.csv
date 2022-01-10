@@ -1,9 +1,11 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,Nidwalden,NW,7624.0,32.0,,4.0,3.0,2022-01-09
+CH,Nidwalden,NW,7574.0,32.0,,4.0,3.0,2022-01-09
 CH,Basel-Stadt,BS,29389.0,255.0,,,,2022-01-09
 CH,Schwyz,SZ,31613.0,334.0,,,,2022-01-09
+CH,Grisons,GR,39439.0,234.0,,23.0,9.0,2022-01-09
 CH,Ticino,TI,65205.0,1062.0,,152.0,14.0,2022-01-09
-CH,,,1442997.0,12326.0,771171.0,1619.0,309.0,2022-01-09
+CH,St. Gallen,SG,98651.0,811.0,,55.0,13.0,2022-01-09
+CH,,,1445901.0,12327.0,771171.0,1618.0,306.0,2022-01-09
 CH,Aargau,AG,,,,,,2022-01-09
 CH,Appenzell Innerrhoden,AI,,,,,,2022-01-09
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-01-09
@@ -12,12 +14,10 @@ CH,Basel-Landschaft,BL,,,,,,2022-01-09
 CH,Fribourg,FR,,,,,,2022-01-09
 CH,Geneva,GE,,,,,,2022-01-09
 CH,Glarus,GL,,,,,,2022-01-09
-CH,Grisons,GR,,,,,,2022-01-09
 CH,Jura,JU,,,,,,2022-01-09
 CH,Lucerne,LU,,,,,,2022-01-09
 CH,Neuchâtel,NE,,,,,,2022-01-09
 CH,Obwalden,OW,,,,,,2022-01-09
-CH,St. Gallen,SG,,,,,,2022-01-09
 CH,Schaffhausen,SH,,,,,,2022-01-09
 CH,Solothurn,SO,,,,,,2022-01-09
 CH,Thurgau,TG,,,,,,2022-01-09
