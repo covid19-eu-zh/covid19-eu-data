@@ -1,6 +1,11 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Uri,UR,8760.0,60.0,,1.0,,2022-01-24
-CH,,,1827692.0,12562.0,814984.0,1769.0,254.0,2022-01-24
+CH,Glarus,GL,8790.0,101.0,,7.0,,2022-01-24
+CH,Schwyz,SZ,38080.0,341.0,,,,2022-01-24
+CH,Solothurn,SO,51733.0,323.0,,22.0,8.0,2022-01-24
+CH,Thurgau,TG,62358.0,587.0,,28.0,11.0,2022-01-24
+CH,Ticino,TI,85568.0,1087.0,,162.0,15.0,2022-01-24
+CH,,,1870114.0,12575.0,814984.0,2049.0,249.0,2022-01-24
 CH,Aargau,AG,,,,,,2022-01-24
 CH,Appenzell Innerrhoden,AI,,,,,,2022-01-24
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-01-24
@@ -9,19 +14,14 @@ CH,Basel-Landschaft,BL,,,,,,2022-01-24
 CH,Basel-Stadt,BS,,,,,,2022-01-24
 CH,Fribourg,FR,,,,,,2022-01-24
 CH,Geneva,GE,,,,,,2022-01-24
-CH,Glarus,GL,,,,,,2022-01-24
 CH,Grisons,GR,,,,,,2022-01-24
 CH,Jura,JU,,,,,,2022-01-24
-CH,Lucerne,LU,,,,,,2022-01-24
+CH,Lucerne,LU,,,,45.0,,2022-01-24
 CH,Neuchâtel,NE,,,,,,2022-01-24
 CH,Nidwalden,NW,,,,,,2022-01-24
 CH,Obwalden,OW,,,,,,2022-01-24
 CH,St. Gallen,SG,,,,,,2022-01-24
 CH,Schaffhausen,SH,,,,,,2022-01-24
-CH,Solothurn,SO,,,,,,2022-01-24
-CH,Schwyz,SZ,,,,,,2022-01-24
-CH,Thurgau,TG,,,,,,2022-01-24
-CH,Ticino,TI,,,,,,2022-01-24
 CH,Vaud,VD,,,,,,2022-01-24
 CH,Valais,VS,,,,,,2022-01-24
 CH,Zug,ZG,,,,,,2022-01-24
