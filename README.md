@@ -10,7 +10,7 @@
 
 ## Changelog
 
-On 2022-02-29, IE stopped updating the detailed covid infection data.
+On 2022-02-29, IE stopped updating the detailed covid infection data for weekends.
 
 On 2021-11-01, we stopped collecting PL data as there are some [data quality issues](https://github.com/covid19-eu-zh/covid19-eu-data/issues/64). But we update the [original data here](https://github.com/covid19-eu-zh/covid19-eu-data/tree/master/cache/daily/pl).
 
