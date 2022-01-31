@@ -1,6 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Uri,UR,9955.0,61.0,,2.0,,2022-01-31
 CH,Glarus,GL,10116.0,102.0,,9.0,,2022-01-31
+CH,Obwalden,OW,10409.0,55.0,,6.0,,2022-01-31
 CH,Nidwalden,NW,11276.0,33.0,,5.0,1.0,2022-01-31
 CH,Zug,ZG,29816.0,153.0,,10.0,2.0,2022-01-31
 CH,Schwyz,SZ,42547.0,344.0,,,,2022-01-31
@@ -11,7 +12,7 @@ CH,Ticino,TI,93752.0,1102.0,,161.0,14.0,2022-01-31
 CH,Valais,VS,110776.0,759.0,,169.0,11.0,2022-01-31
 CH,Berne,BE,224900.0,1421.0,,161.0,27.0,2022-01-31
 CH,Zürich,ZH,356986.0,1661.0,,202.0,45.0,2022-01-31
-CH,,,2149759.0,12525.0,840954.0,2204.0,227.0,2022-01-31
+CH,,,2150139.0,12684.0,840954.0,2207.0,227.0,2022-01-31
 CH,Aargau,AG,,,,,,2022-01-31
 CH,Appenzell Innerrhoden,AI,,,,,,2022-01-31
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-01-31
@@ -22,7 +23,6 @@ CH,Grisons,GR,,,,,,2022-01-31
 CH,Jura,JU,,,,,,2022-01-31
 CH,Lucerne,LU,,,,53.0,,2022-01-31
 CH,Neuchâtel,NE,,,,,,2022-01-31
-CH,Obwalden,OW,,,,,,2022-01-31
 CH,St. Gallen,SG,,,,,,2022-01-31
 CH,Schaffhausen,SH,,,,,,2022-01-31
 CH,Vaud,VD,,,,,,2022-01-31
