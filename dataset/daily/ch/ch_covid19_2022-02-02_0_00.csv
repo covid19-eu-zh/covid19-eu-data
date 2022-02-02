@@ -1,15 +1,19 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Appenzell Innerrhoden,AI,4436.0,24.0,,,,2022-02-02
+CH,Uri,UR,10247.0,62.0,,3.0,,2022-02-02
+CH,Glarus,GL,10495.0,102.0,,11.0,,2022-02-02
 CH,Schwyz,SZ,43576.0,344.0,,,,2022-02-02
-CH,,,2207419.0,12706.0,840954.0,2298.0,224.0,2022-02-02
+CH,Basel-Stadt,BS,45235.0,264.0,,126.0,11.0,2022-02-02
+CH,Solothurn,SO,62291.0,327.0,,23.0,7.0,2022-02-02
+CH,Thurgau,TG,71474.0,590.0,,36.0,10.0,2022-02-02
+CH,Ticino,TI,96017.0,1103.0,,168.0,15.0,2022-02-02
+CH,Berne,BE,233943.0,1428.0,,204.0,21.0,2022-02-02
+CH,,,2222249.0,12716.0,840954.0,2052.0,221.0,2022-02-02
 CH,Aargau,AG,,,,,,2022-02-02
-CH,Appenzell Innerrhoden,AI,,,,,,2022-02-02
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-02-02
-CH,Berne,BE,,,,,,2022-02-02
 CH,Basel-Landschaft,BL,,,,,,2022-02-02
-CH,Basel-Stadt,BS,,,,,,2022-02-02
 CH,Fribourg,FR,,,,,,2022-02-02
 CH,Geneva,GE,,,,,,2022-02-02
-CH,Glarus,GL,,,,,,2022-02-02
 CH,Grisons,GR,,,,,,2022-02-02
 CH,Jura,JU,,,,,,2022-02-02
 CH,Lucerne,LU,,,,,,2022-02-02
@@ -18,10 +22,6 @@ CH,Nidwalden,NW,,,,,,2022-02-02
 CH,Obwalden,OW,,,,,,2022-02-02
 CH,St. Gallen,SG,,,,,,2022-02-02
 CH,Schaffhausen,SH,,,,,,2022-02-02
-CH,Solothurn,SO,,,,,,2022-02-02
-CH,Thurgau,TG,,,,,,2022-02-02
-CH,Ticino,TI,,,,,,2022-02-02
-CH,Uri,UR,,,,,,2022-02-02
 CH,Vaud,VD,,,,,,2022-02-02
 CH,Valais,VS,,,,,,2022-02-02
 CH,Zug,ZG,,,,,,2022-02-02
