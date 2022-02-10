@@ -1,16 +1,20 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Appenzell Innerrhoden,AI,4881.0,24.0,,,,2022-02-10
 CH,Uri,UR,11111.0,64.0,,4.0,,2022-02-10
+CH,Obwalden,OW,12209.0,56.0,,4.0,,2022-02-10
+CH,Nidwalden,NW,12994.0,34.0,,1.0,0.0,2022-02-10
 CH,Schwyz,SZ,48255.0,345.0,,,,2022-02-10
+CH,Basel-Stadt,BS,49712.0,265.0,,120.0,6.0,2022-02-10
 CH,Solothurn,SO,70130.0,331.0,,24.0,3.0,2022-02-10
 CH,Thurgau,TG,77830.0,595.0,,32.0,6.0,2022-02-10
 CH,Ticino,TI,102554.0,1108.0,,122.0,12.0,2022-02-10
+CH,Valais,VS,122240.0,777.0,,145.0,13.0,2022-02-10
 CH,Berne,BE,262039.0,1451.0,,219.0,19.0,2022-02-10
-CH,,,2448517.0,12885.0,870425.0,2269.0,221.0,2022-02-10
+CH,Zürich,ZH,405989.0,1681.0,,195.0,56.0,2022-02-10
+CH,,,2457775.0,12890.0,870425.0,2240.0,219.0,2022-02-10
 CH,Aargau,AG,,,,,,2022-02-10
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-02-10
-CH,Basel-Landschaft,BL,,,,,,2022-02-10
-CH,Basel-Stadt,BS,,,,,,2022-02-10
+CH,Basel-Landschaft,BL,,,,39.0,5.0,2022-02-10
 CH,Fribourg,FR,,,,,,2022-02-10
 CH,Geneva,GE,,,,,,2022-02-10
 CH,Glarus,GL,,,,,,2022-02-10
@@ -18,11 +22,7 @@ CH,Grisons,GR,,,,,,2022-02-10
 CH,Jura,JU,,,,,,2022-02-10
 CH,Lucerne,LU,,,,54.0,,2022-02-10
 CH,Neuchâtel,NE,,,,,,2022-02-10
-CH,Nidwalden,NW,,,,,,2022-02-10
-CH,Obwalden,OW,,,,,,2022-02-10
 CH,St. Gallen,SG,,,,,,2022-02-10
 CH,Schaffhausen,SH,,,,,,2022-02-10
 CH,Vaud,VD,,,,,,2022-02-10
-CH,Valais,VS,,,,,,2022-02-10
 CH,Zug,ZG,,,,,,2022-02-10
-CH,Zürich,ZH,,,,,,2022-02-10
