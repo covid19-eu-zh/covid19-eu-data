@@ -1,12 +1,17 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Uri,UR,11399.0,64.0,,4.0,,2022-02-14
-CH,,,2486770.0,12911.0,897139.0,2175.0,213.0,2022-02-14
+CH,Zug,ZG,34601.0,154.0,,14.0,4.0,2022-02-14
+CH,Schwyz,SZ,50165.0,348.0,,,,2022-02-14
+CH,Basel-Stadt,BS,51496.0,266.0,,,,2022-02-14
+CH,Solothurn,SO,72785.0,333.0,,21.0,5.0,2022-02-14
+CH,Thurgau,TG,80272.0,600.0,,30.0,5.0,2022-02-14
+CH,Ticino,TI,104799.0,1115.0,,82.0,10.0,2022-02-14
+CH,,,2503729.0,12924.0,897139.0,2195.0,212.0,2022-02-14
 CH,Aargau,AG,,,,,,2022-02-14
 CH,Appenzell Innerrhoden,AI,,,,,,2022-02-14
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-02-14
 CH,Berne,BE,,,,,,2022-02-14
 CH,Basel-Landschaft,BL,,,,,,2022-02-14
-CH,Basel-Stadt,BS,,,,,,2022-02-14
 CH,Fribourg,FR,,,,,,2022-02-14
 CH,Geneva,GE,,,,,,2022-02-14
 CH,Glarus,GL,,,,,,2022-02-14
@@ -18,11 +23,6 @@ CH,Nidwalden,NW,,,,,,2022-02-14
 CH,Obwalden,OW,,,,,,2022-02-14
 CH,St. Gallen,SG,,,,,,2022-02-14
 CH,Schaffhausen,SH,,,,,,2022-02-14
-CH,Solothurn,SO,,,,,,2022-02-14
-CH,Schwyz,SZ,,,,,,2022-02-14
-CH,Thurgau,TG,,,,,,2022-02-14
-CH,Ticino,TI,,,,,,2022-02-14
 CH,Vaud,VD,,,,,,2022-02-14
 CH,Valais,VS,,,,,,2022-02-14
-CH,Zug,ZG,,,,,,2022-02-14
 CH,Zürich,ZH,,,,,,2022-02-14
