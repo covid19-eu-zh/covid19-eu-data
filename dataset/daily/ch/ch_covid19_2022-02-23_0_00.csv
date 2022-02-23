@@ -1,11 +1,16 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,,,2662162.0,13018.0,914958.0,2050.0,180.0,2022-02-23
+CH,Appenzell Innerrhoden,AI,5347.0,24.0,,,,2022-02-23
+CH,Zug,ZG,36211.0,157.0,,11.0,2.0,2022-02-23
+CH,Schwyz,SZ,53119.0,355.0,,,,2022-02-23
+CH,Basel-Stadt,BS,55444.0,271.0,,72.0,10.0,2022-02-23
+CH,Solothurn,SO,77741.0,338.0,,23.0,2.0,2022-02-23
+CH,Thurgau,TG,86169.0,605.0,,24.0,3.0,2022-02-23
+CH,Ticino,TI,110007.0,1120.0,,70.0,8.0,2022-02-23
+CH,Berne,BE,291131.0,1465.0,,231.0,15.0,2022-02-23
+CH,,,2672993.0,13031.0,914958.0,2069.0,166.0,2022-02-23
 CH,Aargau,AG,,,,,,2022-02-23
-CH,Appenzell Innerrhoden,AI,,,,,,2022-02-23
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-02-23
-CH,Berne,BE,,,,,,2022-02-23
-CH,Basel-Landschaft,BL,,,,,,2022-02-23
-CH,Basel-Stadt,BS,,,,,,2022-02-23
+CH,Basel-Landschaft,BL,,,,27.0,2.0,2022-02-23
 CH,Fribourg,FR,,,,,,2022-02-23
 CH,Geneva,GE,,,,,,2022-02-23
 CH,Glarus,GL,,,,,,2022-02-23
@@ -17,12 +22,7 @@ CH,Nidwalden,NW,,,,,,2022-02-23
 CH,Obwalden,OW,,,,,,2022-02-23
 CH,St. Gallen,SG,,,,,,2022-02-23
 CH,Schaffhausen,SH,,,,,,2022-02-23
-CH,Solothurn,SO,,,,,,2022-02-23
-CH,Schwyz,SZ,,,,,,2022-02-23
-CH,Thurgau,TG,,,,,,2022-02-23
-CH,Ticino,TI,,,,,,2022-02-23
 CH,Uri,UR,,,,,,2022-02-23
 CH,Vaud,VD,,,,,,2022-02-23
 CH,Valais,VS,,,,,,2022-02-23
-CH,Zug,ZG,,,,,,2022-02-23
 CH,Zürich,ZH,,,,,,2022-02-23
