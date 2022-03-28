@@ -1,10 +1,11 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,Geneva,GE,347.0,,,93.0,5.0,2022-03-26
+CH,Geneva,GE,700.0,,,398.0,5.0,2022-03-26
 CH,Nidwalden,NW,17807.0,36.0,,5.0,1.0,2022-03-26
-CH,Jura,JU,30261.0,207.0,,20.0,0.0,2022-03-26
+CH,Jura,JU,30257.0,207.0,,22.0,0.0,2022-03-26
+CH,Schaffhausen,SH,30302.0,119.0,,,,2022-03-26
 CH,Basel-Stadt,BS,75781.0,275.0,,,,2022-03-26
 CH,Grisons,GR,87803.0,254.0,,29.0,1.0,2022-03-26
-CH,,,3086469.0,13477.0,997250.0,1878.0,163.0,2022-03-26
+CH,,,3087140.0,13477.0,997250.0,2172.0,162.0,2022-03-26
 CH,Aargau,AG,,,,,,2022-03-26
 CH,Appenzell Innerrhoden,AI,,,,,,2022-03-26
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-03-26
@@ -15,8 +16,7 @@ CH,Glarus,GL,,,,,,2022-03-26
 CH,Lucerne,LU,,,,,,2022-03-26
 CH,Neuchâtel,NE,,,,,,2022-03-26
 CH,Obwalden,OW,,,,,,2022-03-26
-CH,St. Gallen,SG,,,,,,2022-03-26
-CH,Schaffhausen,SH,,,,,,2022-03-26
+CH,St. Gallen,SG,,,,54.0,7.0,2022-03-26
 CH,Solothurn,SO,,,,,,2022-03-26
 CH,Schwyz,SZ,,,,,,2022-03-26
 CH,Thurgau,TG,,,,,,2022-03-26
