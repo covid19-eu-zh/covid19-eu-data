@@ -1,5 +1,4 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,Geneva,GE,221.0,,,389.0,5.0,2022-03-27
 CH,Nidwalden,NW,17843.0,36.0,,4.0,1.0,2022-03-27
 CH,Jura,JU,30304.0,207.0,,24.0,0.0,2022-03-27
 CH,Schaffhausen,SH,30371.0,119.0,,11.0,3.0,2022-03-27
@@ -9,13 +8,15 @@ CH,Grisons,GR,87936.0,254.0,,30.0,1.0,2022-03-27
 CH,Thurgau,TG,114285.0,634.0,,55.0,2.0,2022-03-27
 CH,Basel-Landschaft,BL,117400.0,,,35.0,2.0,2022-03-27
 CH,Fribourg,FR,137409.0,564.0,,69.0,6.0,2022-03-27
+CH,Valais,VS,145081.0,811.0,,104.0,4.0,2022-03-27
 CH,Lucerne,LU,173654.0,,,,,2022-03-27
 CH,St. Gallen,SG,204309.0,855.0,,54.0,7.0,2022-03-27
-CH,,,3096944.0,13481.0,997250.0,2153.0,156.0,2022-03-27
+CH,Berne,BE,390562.0,1508.0,,,,2022-03-27
+CH,,,3298159.0,13485.0,997250.0,2309.0,156.0,2022-03-27
 CH,Aargau,AG,,,,,,2022-03-27
 CH,Appenzell Innerrhoden,AI,,,,,,2022-03-27
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-03-27
-CH,Berne,BE,,,,,,2022-03-27
+CH,Geneva,GE,,,,,,2022-03-27
 CH,Glarus,GL,,,,,,2022-03-27
 CH,Neuchâtel,NE,,,,,,2022-03-27
 CH,Obwalden,OW,,,,,,2022-03-27
@@ -24,5 +25,4 @@ CH,Schwyz,SZ,,,,,,2022-03-27
 CH,Ticino,TI,,,,,,2022-03-27
 CH,Uri,UR,,,,,,2022-03-27
 CH,Vaud,VD,,,,,,2022-03-27
-CH,Valais,VS,,,,,,2022-03-27
 CH,Zürich,ZH,,,,,,2022-03-27
