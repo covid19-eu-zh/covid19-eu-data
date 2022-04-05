@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18091.0,36.0,,3.0,1.0,2022-04-04
+CH,Schaffhausen,SH,31083.0,125.0,,11.0,2.0,2022-04-04
 CH,Zug,ZG,48453.0,167.0,,18.0,0.0,2022-04-04
 CH,Basel-Stadt,BS,79103.0,280.0,,107.0,8.0,2022-04-04
 CH,Solothurn,SO,111746.0,355.0,,33.0,4.0,2022-04-04
 CH,Thurgau,TG,116485.0,641.0,,55.0,1.0,2022-04-04
 CH,Ticino,TI,141353.0,1163.0,,123.0,8.0,2022-04-04
-CH,,,3364194.0,13550.0,1011778.0,2174.0,147.0,2022-04-04
+CH,St. Gallen,SG,208052.0,855.0,,36.0,5.0,2022-04-04
+CH,,,3364547.0,13551.0,1011778.0,2164.0,148.0,2022-04-04
 CH,Aargau,AG,,,,,,2022-04-04
 CH,Appenzell Innerrhoden,AI,,,,,,2022-04-04
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-04-04
@@ -19,8 +21,6 @@ CH,Jura,JU,,,,,,2022-04-04
 CH,Lucerne,LU,,,,56.0,,2022-04-04
 CH,Neuchâtel,NE,,,,,,2022-04-04
 CH,Obwalden,OW,,,,,,2022-04-04
-CH,St. Gallen,SG,,,,,,2022-04-04
-CH,Schaffhausen,SH,,,,,,2022-04-04
 CH,Schwyz,SZ,,,,,,2022-04-04
 CH,Uri,UR,,,,,,2022-04-04
 CH,Vaud,VD,,,,,,2022-04-04
