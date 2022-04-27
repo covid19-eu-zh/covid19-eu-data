@@ -1,10 +1,12 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Nidwalden,NW,18407.0,36.0,,5.0,1.0,2022-04-27
 CH,Zug,ZG,49784.0,169.0,,5.0,0.0,2022-04-27
 CH,Basel-Stadt,BS,82451.0,284.0,,63.0,7.0,2022-04-27
 CH,Solothurn,SO,114624.0,364.0,,14.0,2.0,2022-04-27
 CH,Thurgau,TG,119323.0,668.0,,26.0,1.0,2022-04-27
 CH,Ticino,TI,147026.0,1179.0,,70.0,3.0,2022-04-27
-CH,,,3428930.0,13661.0,1020797.0,1635.0,100.0,2022-04-27
+CH,Zürich,ZH,626484.0,1794.0,,148.0,20.0,2022-04-27
+CH,,,3433346.0,13668.0,1020797.0,1613.0,92.0,2022-04-27
 CH,Aargau,AG,,,,,,2022-04-27
 CH,Appenzell Innerrhoden,AI,,,,,,2022-04-27
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-04-27
@@ -17,7 +19,6 @@ CH,Grisons,GR,,,,,,2022-04-27
 CH,Jura,JU,,,,,,2022-04-27
 CH,Lucerne,LU,,,,22.0,,2022-04-27
 CH,Neuchâtel,NE,,,,,,2022-04-27
-CH,Nidwalden,NW,,,,,,2022-04-27
 CH,Obwalden,OW,,,,,,2022-04-27
 CH,St. Gallen,SG,,,,,,2022-04-27
 CH,Schaffhausen,SH,,,,,,2022-04-27
@@ -25,4 +26,3 @@ CH,Schwyz,SZ,,,,,,2022-04-27
 CH,Uri,UR,,,,,,2022-04-27
 CH,Vaud,VD,,,,,,2022-04-27
 CH,Valais,VS,,,,,,2022-04-27
-CH,Zürich,ZH,,,,,,2022-04-27
