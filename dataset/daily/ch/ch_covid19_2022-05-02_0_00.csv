@@ -1,13 +1,15 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18449.0,36.0,,4.0,0.0,2022-05-02
 CH,Schaffhausen,SH,32118.0,129.0,,4.0,1.0,2022-05-02
+CH,Neuchâtel,NE,76311.0,462.0,,24.0,2.0,2022-05-02
 CH,Basel-Stadt,BS,82732.0,284.0,,53.0,3.0,2022-05-02
 CH,Solothurn,SO,114972.0,365.0,,9.0,0.0,2022-05-02
 CH,Thurgau,TG,119641.0,675.0,,17.0,1.0,2022-05-02
 CH,Ticino,TI,147636.0,1183.0,,73.0,3.0,2022-05-02
+CH,Lucerne,LU,179132.0,,,18.0,,2022-05-02
 CH,Geneva,GE,211209.0,,,244.0,,2022-05-02
 CH,St. Gallen,SG,212409.0,859.0,,17.0,0.0,2022-05-02
-CH,,,3451978.0,13681.0,1020797.0,1352.0,87.0,2022-05-02
+CH,,,3452389.0,13682.0,1020797.0,1346.0,88.0,2022-05-02
 CH,Aargau,AG,,,,,,2022-05-02
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-02
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-02
@@ -17,8 +19,6 @@ CH,Fribourg,FR,,,,,,2022-05-02
 CH,Glarus,GL,,,,,,2022-05-02
 CH,Grisons,GR,,,,,,2022-05-02
 CH,Jura,JU,,,,,,2022-05-02
-CH,Lucerne,LU,,,,18.0,,2022-05-02
-CH,Neuchâtel,NE,,,,,,2022-05-02
 CH,Obwalden,OW,,,,,,2022-05-02
 CH,Schwyz,SZ,,,,,,2022-05-02
 CH,Uri,UR,,,,,,2022-05-02
