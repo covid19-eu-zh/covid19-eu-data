@@ -1,17 +1,18 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,Basel-Stadt,BS,83145.0,285.0,,,,2022-05-08
+CH,Basel-Stadt,BS,83145.0,285.0,,43.0,0.0,2022-05-08
+CH,Thurgau,TG,120023.0,680.0,,10.0,0.0,2022-05-08
+CH,Fribourg,FR,143062.0,574.0,,25.0,1.0,2022-05-08
+CH,Lucerne,LU,179484.0,,,,,2022-05-08
 CH,Geneva,GE,211960.0,,,295.0,5.0,2022-05-08
-CH,,,3460231.0,13693.0,1020797.0,1277.0,96.0,2022-05-08
+CH,,,3460871.0,13694.0,1020797.0,1262.0,95.0,2022-05-08
 CH,Aargau,AG,,,,,,2022-05-08
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-08
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-08
 CH,Berne,BE,,,,,,2022-05-08
 CH,Basel-Landschaft,BL,,,,,,2022-05-08
-CH,Fribourg,FR,,,,,,2022-05-08
 CH,Glarus,GL,,,,,,2022-05-08
 CH,Grisons,GR,,,,,,2022-05-08
 CH,Jura,JU,,,,,,2022-05-08
-CH,Lucerne,LU,,,,,,2022-05-08
 CH,Neuchâtel,NE,,,,,,2022-05-08
 CH,Nidwalden,NW,,,,,,2022-05-08
 CH,Obwalden,OW,,,,,,2022-05-08
@@ -19,7 +20,6 @@ CH,St. Gallen,SG,,,,,,2022-05-08
 CH,Schaffhausen,SH,,,,,,2022-05-08
 CH,Solothurn,SO,,,,,,2022-05-08
 CH,Schwyz,SZ,,,,,,2022-05-08
-CH,Thurgau,TG,,,,,,2022-05-08
 CH,Ticino,TI,,,,,,2022-05-08
 CH,Uri,UR,,,,,,2022-05-08
 CH,Vaud,VD,,,,,,2022-05-08
