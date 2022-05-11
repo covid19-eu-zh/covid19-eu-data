@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18524.0,36.0,,5.0,0.0,2022-05-10
+CH,Jura,JU,31387.0,244.0,,8.0,0.0,2022-05-10
+CH,Schaffhausen,SH,32247.0,130.0,,8.0,0.0,2022-05-10
 CH,Basel-Stadt,BS,83243.0,285.0,,19.0,0.0,2022-05-10
 CH,Solothurn,SO,115398.0,365.0,,5.0,0.0,2022-05-10
 CH,Thurgau,TG,120097.0,681.0,,11.0,0.0,2022-05-10
 CH,Ticino,TI,148501.0,1188.0,,70.0,3.0,2022-05-10
-CH,Geneva,GE,212101.0,,,,,2022-05-10
-CH,,,3463631.0,13740.0,1020797.0,1236.0,90.0,2022-05-10
+CH,Geneva,GE,212152.0,,,289.0,7.0,2022-05-10
+CH,,,3463701.0,13740.0,1020797.0,1222.0,92.0,2022-05-10
 CH,Aargau,AG,,,,,,2022-05-10
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-10
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-10
@@ -14,12 +16,10 @@ CH,Basel-Landschaft,BL,,,,17.0,0.0,2022-05-10
 CH,Fribourg,FR,,,,,,2022-05-10
 CH,Glarus,GL,,,,,,2022-05-10
 CH,Grisons,GR,,,,,,2022-05-10
-CH,Jura,JU,,,,,,2022-05-10
 CH,Lucerne,LU,,,,17.0,,2022-05-10
 CH,Neuchâtel,NE,,,,,,2022-05-10
 CH,Obwalden,OW,,,,,,2022-05-10
 CH,St. Gallen,SG,,,,,,2022-05-10
-CH,Schaffhausen,SH,,,,,,2022-05-10
 CH,Schwyz,SZ,,,,,,2022-05-10
 CH,Uri,UR,,,,,,2022-05-10
 CH,Vaud,VD,,,,,,2022-05-10
