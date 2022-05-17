@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,,,3469794.0,13751.0,1020797.0,1060.0,81.0,2022-05-17
+CH,Basel-Stadt,BS,83582.0,288.0,,17.0,3.0,2022-05-17
+CH,Solothurn,SO,115715.0,365.0,,7.0,0.0,2022-05-17
+CH,Ticino,TI,149132.0,1190.0,,66.0,3.0,2022-05-17
+CH,,,3470292.0,13754.0,1020797.0,1114.0,81.0,2022-05-17
 CH,Aargau,AG,,,,,,2022-05-17
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-17
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-17
 CH,Berne,BE,,,,,,2022-05-17
 CH,Basel-Landschaft,BL,,,,,,2022-05-17
-CH,Basel-Stadt,BS,,,,,,2022-05-17
 CH,Fribourg,FR,,,,,,2022-05-17
 CH,Geneva,GE,,,,,,2022-05-17
 CH,Glarus,GL,,,,,,2022-05-17
@@ -17,10 +19,8 @@ CH,Nidwalden,NW,,,,,,2022-05-17
 CH,Obwalden,OW,,,,,,2022-05-17
 CH,St. Gallen,SG,,,,,,2022-05-17
 CH,Schaffhausen,SH,,,,,,2022-05-17
-CH,Solothurn,SO,,,,,,2022-05-17
 CH,Schwyz,SZ,,,,,,2022-05-17
 CH,Thurgau,TG,,,,,,2022-05-17
-CH,Ticino,TI,,,,,,2022-05-17
 CH,Uri,UR,,,,,,2022-05-17
 CH,Vaud,VD,,,,,,2022-05-17
 CH,Valais,VS,,,,,,2022-05-17
