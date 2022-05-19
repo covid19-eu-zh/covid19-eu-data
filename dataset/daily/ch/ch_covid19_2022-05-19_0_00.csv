@@ -1,5 +1,7 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,,,3474104.0,13758.0,1020797.0,921.0,63.0,2022-05-19
+CH,Solothurn,SO,115799.0,365.0,,6.0,0.0,2022-05-19
+CH,Ticino,TI,149305.0,1190.0,,50.0,2.0,2022-05-19
+CH,,,3474312.0,13758.0,1020797.0,916.0,62.0,2022-05-19
 CH,Aargau,AG,,,,,,2022-05-19
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-19
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-19
@@ -17,10 +19,8 @@ CH,Nidwalden,NW,,,,,,2022-05-19
 CH,Obwalden,OW,,,,,,2022-05-19
 CH,St. Gallen,SG,,,,,,2022-05-19
 CH,Schaffhausen,SH,,,,,,2022-05-19
-CH,Solothurn,SO,,,,,,2022-05-19
 CH,Schwyz,SZ,,,,,,2022-05-19
 CH,Thurgau,TG,,,,,,2022-05-19
-CH,Ticino,TI,,,,,,2022-05-19
 CH,Uri,UR,,,,,,2022-05-19
 CH,Vaud,VD,,,,,,2022-05-19
 CH,Valais,VS,,,,,,2022-05-19
