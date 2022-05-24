@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
+CH,Nidwalden,NW,18569.0,36.0,,0.0,0.0,2022-05-24
+CH,Solothurn,SO,115911.0,366.0,,3.0,0.0,2022-05-24
 CH,Ticino,TI,149579.0,1190.0,,43.0,0.0,2022-05-24
-CH,,,3476515.0,13757.0,1020797.0,742.0,61.0,2022-05-24
+CH,,,3477169.0,13758.0,1020797.0,737.0,61.0,2022-05-24
 CH,Aargau,AG,,,,,,2022-05-24
 CH,Appenzell Innerrhoden,AI,,,,,,2022-05-24
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-05-24
 CH,Berne,BE,,,,,,2022-05-24
-CH,Basel-Landschaft,BL,,,,,,2022-05-24
+CH,Basel-Landschaft,BL,,,,8.0,0.0,2022-05-24
 CH,Basel-Stadt,BS,,,,,,2022-05-24
 CH,Fribourg,FR,,,,,,2022-05-24
 CH,Geneva,GE,,,,,,2022-05-24
@@ -14,11 +16,9 @@ CH,Grisons,GR,,,,,,2022-05-24
 CH,Jura,JU,,,,,,2022-05-24
 CH,Lucerne,LU,,,,,,2022-05-24
 CH,Neuchâtel,NE,,,,,,2022-05-24
-CH,Nidwalden,NW,,,,,,2022-05-24
 CH,Obwalden,OW,,,,,,2022-05-24
 CH,St. Gallen,SG,,,,,,2022-05-24
 CH,Schaffhausen,SH,,,,,,2022-05-24
-CH,Solothurn,SO,,,,,,2022-05-24
 CH,Schwyz,SZ,,,,,,2022-05-24
 CH,Thurgau,TG,,,,,,2022-05-24
 CH,Uri,UR,,,,,,2022-05-24
