@@ -1,11 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
-CH,,,3484372.0,13769.0,1020797.0,668.0,54.0,2022-06-02
+CH,Nidwalden,NW,18606.0,36.0,,0.0,0.0,2022-06-02
+CH,Basel-Stadt,BS,84140.0,288.0,,15.0,1.0,2022-06-02
+CH,Solothurn,SO,116144.0,366.0,,5.0,1.0,2022-06-02
+CH,,,3484662.0,13769.0,1020797.0,828.0,55.0,2022-06-02
 CH,Aargau,AG,,,,,,2022-06-02
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-02
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-02
 CH,Berne,BE,,,,,,2022-06-02
 CH,Basel-Landschaft,BL,,,,,,2022-06-02
-CH,Basel-Stadt,BS,,,,,,2022-06-02
 CH,Fribourg,FR,,,,,,2022-06-02
 CH,Geneva,GE,,,,,,2022-06-02
 CH,Glarus,GL,,,,,,2022-06-02
@@ -13,11 +15,9 @@ CH,Grisons,GR,,,,,,2022-06-02
 CH,Jura,JU,,,,,,2022-06-02
 CH,Lucerne,LU,,,,,,2022-06-02
 CH,Neuchâtel,NE,,,,,,2022-06-02
-CH,Nidwalden,NW,,,,,,2022-06-02
 CH,Obwalden,OW,,,,,,2022-06-02
 CH,St. Gallen,SG,,,,,,2022-06-02
 CH,Schaffhausen,SH,,,,,,2022-06-02
-CH,Solothurn,SO,,,,,,2022-06-02
 CH,Schwyz,SZ,,,,,,2022-06-02
 CH,Thurgau,TG,,,,,,2022-06-02
 CH,Ticino,TI,,,,,,2022-06-02
