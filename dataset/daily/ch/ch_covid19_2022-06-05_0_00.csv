@@ -1,13 +1,14 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Schaffhausen,SH,32546.0,132.0,,,,2022-06-05
+CH,Zug,ZG,50960.0,170.0,,2.0,0.0,2022-06-05
 CH,Neuchâtel,NE,77235.0,469.0,,6.0,2.0,2022-06-05
 CH,Basel-Stadt,BS,84290.0,288.0,,16.0,0.0,2022-06-05
 CH,Thurgau,TG,121036.0,689.0,,6.0,2.0,2022-06-05
 CH,Basel-Landschaft,BL,127209.0,298.0,,4.0,0.0,2022-06-05
-CH,Lucerne,LU,180744.0,,,,,2022-06-05
+CH,Lucerne,LU,180733.0,,,,,2022-06-05
 CH,St. Gallen,SG,214286.0,,,2.0,0.0,2022-06-05
-CH,Geneva,GE,214608.0,,,46.0,0.0,2022-06-05
-CH,,,3486687.0,13776.0,1020797.0,648.0,60.0,2022-06-05
+CH,Geneva,GE,214612.0,,,46.0,0.0,2022-06-05
+CH,,,3486943.0,13778.0,1020797.0,644.0,60.0,2022-06-05
 CH,Aargau,AG,,,,,,2022-06-05
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-05
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-05
@@ -24,5 +25,4 @@ CH,Ticino,TI,,,,,,2022-06-05
 CH,Uri,UR,,,,,,2022-06-05
 CH,Vaud,VD,,,,66.0,5.0,2022-06-05
 CH,Valais,VS,,,,,,2022-06-05
-CH,Zug,ZG,,,,,,2022-06-05
 CH,Zürich,ZH,,,,,,2022-06-05
