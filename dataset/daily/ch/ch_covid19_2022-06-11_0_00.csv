@@ -1,14 +1,15 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Schaffhausen,SH,32726.0,133.0,,,,2022-06-11
+CH,Zug,ZG,51204.0,170.0,,3.0,0.0,2022-06-11
 CH,Neuchâtel,NE,77551.0,469.0,,6.0,1.0,2022-06-11
 CH,Basel-Stadt,BS,84682.0,288.0,,26.0,3.0,2022-06-11
 CH,Thurgau,TG,121364.0,689.0,,7.0,2.0,2022-06-11
 CH,Basel-Landschaft,BL,127742.0,299.0,,5.0,0.0,2022-06-11
 CH,Fribourg,FR,144297.0,576.0,,11.0,0.0,2022-06-11
-CH,Lucerne,LU,181245.0,,,,,2022-06-11
+CH,Lucerne,LU,181243.0,,,,,2022-06-11
 CH,St. Gallen,SG,214777.0,,,3.0,0.0,2022-06-11
 CH,Geneva,GE,215440.0,,,42.0,3.0,2022-06-11
-CH,,,3494607.0,13783.0,1020797.0,676.0,61.0,2022-06-11
+CH,,,3494958.0,13783.0,1020797.0,669.0,63.0,2022-06-11
 CH,Aargau,AG,,,,,,2022-06-11
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-11
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-11
@@ -24,5 +25,4 @@ CH,Ticino,TI,,,,,,2022-06-11
 CH,Uri,UR,,,,,,2022-06-11
 CH,Vaud,VD,,,,,,2022-06-11
 CH,Valais,VS,,,,,,2022-06-11
-CH,Zug,ZG,,,,,,2022-06-11
 CH,Zürich,ZH,,,,,,2022-06-11
