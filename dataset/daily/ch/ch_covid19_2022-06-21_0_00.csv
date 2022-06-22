@@ -1,9 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18759.0,36.0,,0.0,1.0,2022-06-21
+CH,Schaffhausen,SH,33067.0,133.0,,7.0,1.0,2022-06-21
+CH,Zug,ZG,51594.0,170.0,,8.0,0.0,2022-06-21
 CH,Basel-Stadt,BS,85524.0,288.0,,,,2022-06-21
 CH,Solothurn,SO,117425.0,367.0,,15.0,1.0,2022-06-21
-CH,Geneva,GE,217448.0,,,63.0,2.0,2022-06-21
-CH,,,3509321.0,13787.0,1020797.0,805.0,61.0,2022-06-21
+CH,Ticino,TI,151924.0,1194.0,,46.0,1.0,2022-06-21
+CH,Lucerne,LU,182409.0,,,23.0,,2022-06-21
+CH,Geneva,GE,217854.0,,,72.0,2.0,2022-06-21
+CH,,,3511024.0,13788.0,1020797.0,836.0,62.0,2022-06-21
 CH,Aargau,AG,,,,,,2022-06-21
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-21
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-21
@@ -13,16 +17,12 @@ CH,Fribourg,FR,,,,,,2022-06-21
 CH,Glarus,GL,,,,,,2022-06-21
 CH,Grisons,GR,,,,,,2022-06-21
 CH,Jura,JU,,,,,,2022-06-21
-CH,Lucerne,LU,,,,,,2022-06-21
 CH,Neuchâtel,NE,,,,,,2022-06-21
 CH,Obwalden,OW,,,,,,2022-06-21
 CH,St. Gallen,SG,,,,,,2022-06-21
-CH,Schaffhausen,SH,,,,,,2022-06-21
 CH,Schwyz,SZ,,,,,,2022-06-21
 CH,Thurgau,TG,,,,,,2022-06-21
-CH,Ticino,TI,,,,,,2022-06-21
 CH,Uri,UR,,,,,,2022-06-21
 CH,Vaud,VD,,,,,,2022-06-21
 CH,Valais,VS,,,,,,2022-06-21
-CH,Zug,ZG,,,,,,2022-06-21
 CH,Zürich,ZH,,,,,,2022-06-21
