@@ -1,13 +1,15 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18796.0,36.0,,1.0,0.0,2022-06-24
 CH,Schaffhausen,SH,33181.0,133.0,,,,2022-06-24
+CH,Neuchâtel,NE,78679.0,469.0,,27.0,0.0,2022-06-24
 CH,Basel-Stadt,BS,86011.0,290.0,,57.0,1.0,2022-06-24
 CH,Solothurn,SO,117880.0,367.0,,12.0,1.0,2022-06-24
 CH,Thurgau,TG,122672.0,692.0,,10.0,4.0,2022-06-24
 CH,Fribourg,FR,145574.0,577.0,,20.0,1.0,2022-06-24
-CH,Lucerne,LU,182897.0,,,,,2022-06-24
+CH,Lucerne,LU,182887.0,,,,,2022-06-24
+CH,St. Gallen,SG,216504.0,,,11.0,1.0,2022-06-24
 CH,Geneva,GE,218936.0,,,235.0,1.0,2022-06-24
-CH,,,3521666.0,13791.0,1020797.0,1087.0,61.0,2022-06-24
+CH,,,3522879.0,13791.0,1020797.0,1099.0,62.0,2022-06-24
 CH,Aargau,AG,,,,,,2022-06-24
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-24
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-24
@@ -16,9 +18,7 @@ CH,Basel-Landschaft,BL,,,,,,2022-06-24
 CH,Glarus,GL,,,,,,2022-06-24
 CH,Grisons,GR,,,,,,2022-06-24
 CH,Jura,JU,,,,,,2022-06-24
-CH,Neuchâtel,NE,,,,,,2022-06-24
 CH,Obwalden,OW,,,,,,2022-06-24
-CH,St. Gallen,SG,,,,,,2022-06-24
 CH,Schwyz,SZ,,,,,,2022-06-24
 CH,Ticino,TI,,,,,,2022-06-24
 CH,Uri,UR,,,,,,2022-06-24
