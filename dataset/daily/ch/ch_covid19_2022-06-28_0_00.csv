@@ -1,10 +1,13 @@
 country,nuts_3,nuts_3_code,cases,deaths,tests,hospitalized,intensive_care,datetime
 CH,Nidwalden,NW,18855.0,36.0,,1.0,0.0,2022-06-28
 CH,Schaffhausen,SH,33348.0,133.0,,3.0,1.0,2022-06-28
+CH,Zug,ZG,52035.0,170.0,,7.0,1.0,2022-06-28
 CH,Basel-Stadt,BS,86570.0,290.0,,71.0,3.0,2022-06-28
 CH,Solothurn,SO,118387.0,367.0,,20.0,1.0,2022-06-28
-CH,Geneva,GE,219927.0,,,264.0,3.0,2022-06-28
-CH,,,3527883.0,13791.0,1020797.0,1158.0,69.0,2022-06-28
+CH,Lucerne,LU,183641.0,,,15.0,,2022-06-28
+CH,Geneva,GE,220462.0,,,281.0,3.0,2022-06-28
+CH,Zürich,ZH,658603.0,1806.0,,121.0,3.0,2022-06-28
+CH,,,3535228.0,13794.0,1020797.0,1222.0,71.0,2022-06-28
 CH,Aargau,AG,,,,,,2022-06-28
 CH,Appenzell Innerrhoden,AI,,,,,,2022-06-28
 CH,Appenzell Ausserrhoden,AR,,,,,,2022-06-28
@@ -14,7 +17,6 @@ CH,Fribourg,FR,,,,,,2022-06-28
 CH,Glarus,GL,,,,,,2022-06-28
 CH,Grisons,GR,,,,,,2022-06-28
 CH,Jura,JU,,,,,,2022-06-28
-CH,Lucerne,LU,,,,8.0,,2022-06-28
 CH,Neuchâtel,NE,,,,,,2022-06-28
 CH,Obwalden,OW,,,,,,2022-06-28
 CH,St. Gallen,SG,,,,,,2022-06-28
@@ -24,5 +26,3 @@ CH,Ticino,TI,,,,,,2022-06-28
 CH,Uri,UR,,,,,,2022-06-28
 CH,Vaud,VD,,,,,,2022-06-28
 CH,Valais,VS,,,,,,2022-06-28
-CH,Zug,ZG,,,,,,2022-06-28
-CH,Zürich,ZH,,,,,,2022-06-28
