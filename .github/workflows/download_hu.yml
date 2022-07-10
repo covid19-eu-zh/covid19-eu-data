@@ -5,7 +5,7 @@ on:
     paths:
     - 'scripts/download_hu.py'
   schedule:
-    - cron:  '48 9/5 * * *'
+    - cron:  '48 9/6 * * *'
   workflow_dispatch:
     inputs:
       whotriggered:
