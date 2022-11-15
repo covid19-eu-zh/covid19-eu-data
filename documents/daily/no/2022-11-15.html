@@ -1,0 +1,1512 @@
+
+
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+
+    <link rel="preload" href="/static/templates/build/fonts/CrimsonText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/static/templates/build/fonts/BrandonTextWeb-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/static/templates/build/fonts/BrandonTextWeb-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/static/templates/build/fonts/BrandonTextWeb-Medium.woff" as="font" type="font/woff" crossorigin>
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push(
+                { 'gtm.start': new Date().getTime(), event: 'gtm.js' }
+            );
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K58JVC');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://fhi.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = '//cdn.matomo.cloud/fhi.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+    <title>Statistics about coronavirus and COVID-19 - NIPH</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/static/templates/build/css/bundle.css?v=naqsJcV4RmdIh4DWRJGVoWINSWxYlDXBEqRS_gUsQrs1" rel="stylesheet"/>
+
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" type="text/css" href="/static/templates/build/css/ie9.css"/>
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="/static/templates/build/css/ie8.css"/>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .Form__Element {
+            margin-bottom: 1.5em;
+        }
+    </style>
+
+        <!-- Google stuff -->
+        <script>
+      window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-1567793-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <script type="application/ld+json">
+            {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "FHI.no",
+            "alternateName" : "Folkehelseinstituttet",
+            "url" : "https://www.fhi.no"
+            }
+        </script>
+        <!-- automate the tagging for download tracking-->
+        <script type="text/javascript">
+            if (typeof jQuery != 'undefined') {
+                jQuery(document).ready(function ($) {
+                    var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+                    var baseHref = '';
+                    if (jQuery('base').attr('href') != undefined)
+                        baseHref = jQuery('base').attr('href');
+                    jQuery('a').each(function () {
+                        var href = jQuery(this).attr('href');
+                        if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+                            jQuery(this).click(function () {
+                                var extLink = href.replace(/^https?\:\/\//i, '');
+                                _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+                                if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+                                    setTimeout(function () { location.href = href; }, 200);
+                                    return false;
+                                }
+                            });
+                        } else if (href && href.match(/^mailto\:/i)) {
+                            jQuery(this).click(function () {
+                                var mailLink = href.replace(/^mailto\:/i, '');
+                                _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+                            });
+                        } else if (href && href.match(filetypes)) {
+                            jQuery(this).click(function () {
+                                var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+                                var filePath = href;
+                                _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+                                if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+                                    setTimeout(function () { location.href = baseHref + href; }, 200);
+                                    return false;
+                                }
+                            });
+                        }
+                    });
+                });
+            }
+        </script>
+        <!-- End Google Stuff -->
+
+    
+    
+
+    <meta property="og:title" content="Statistics about coronavirus and COVID-19" />
+    <meta property="og:description" content="Here is information about where you can find statistics about SARS-CoV-2 and COVID-19 disease in Norway."/>
+    <meta property="og:site_name" content="Norwegian Institute of Public Health"/>
+    <meta property="og:url" content="https://www.fhi.no/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/" />
+    <meta property="og:image" content="https://www.fhi.no/contentassets/ca5914bd0aa14e15a17f8a7d48fa306a/graf-korona.png?preset=mainbodywidth"/>
+    <meta property="fb:admins" content="598201156" />
+    <meta name="description" content="Here is information about where you can find statistics about SARS-CoV-2 and COVID-19 disease in Norway." />
+    <meta name="pageID" content="89256" />
+    
+    <meta name="last edited" content="2022-11-15" />
+
+
+
+    <link rel="alternate" hreflang="en" href="https://www.fhi.no/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/" />
+<link rel="alternate" hreflang="no" href="https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/dags--og-ukerapporter-om-koronavirus/" />
+
+
+    
+
+<script src="/bundles/highcharts.js?v=XnHRuqLH4n5r3_IMkIk2rAA7rO_hQDzUlMySM9eMhXQ1"></script>
+<script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"4701fe8d-c81d-4784-aa95-13f8f382454c",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script></head>
+<body class="has-dark-background is-sub-page  ">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K58JVC"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+
+
+
+    
+
+<div id="cookie-banner" class="fhi-print--hidden" style="display:none">
+    <div class="fhi-container">
+        <div class="fhi-row">
+            <div class="fhi-col fhi-col-12 fhi-flex fhi-align-space-between fhi-align-direction-column--mobile fhi-align-row-centered-y fhi-p-bottom-S">
+                    <p>NIPH&#39;s website uses cookies. Read more about our use of cookies in our privacy policy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="skip-to-content" href="#main">Hopp til innhold</a>
+<header class="fhi-header">
+
+    <div class="fhi-container fhi-header__top">
+        <a class="fhi-header__logo en" href="/en/">
+            <svg role="img" title="Norwegian Institute of Public Health" alt="Norwegian Institute of Public Health" class="logo-default sprite">
+                <use href="/Static/templates/build/gfx/sprites.svg#logo-en" />
+            </svg>
+            <svg role="img" title="Norwegian Institute of Public Health" alt="Norwegian Institute of Public Health" class="logo-short sprite">
+                <use href="/Static/templates/build/gfx/sprites.svg#logo-en--short" />
+            </svg>
+        </a>
+
+        <div class="fhi-header__search">
+
+
+
+
+<form action="/en/sys/search-result/#" method="get">
+
+    <div role="search" class="fhi-search__inner">
+        <label class="fhi-visually-hidden is-hidden" for=global-search-header>Search for:</label>
+        <input name="term"
+               id=global-search-header
+               data-autocomplete-url="/autosuggest/Prefix"
+               data-autocomplete-enabled="true"
+               placeholder="Search in NIPH"
+               value=""
+               type="text"
+               class="fhi-input fhi-input--search">
+        <button type="submit" class="fhi-button fhi-button--search">
+            <svg role="img" class="sprite--blue fhi-icon--medium fhi-icon--xlarge@LG " alt="Search" title="Search">
+                <use href="/Static/templates/build/gfx/sprites.svg#magnifier" />
+            </svg>
+            <span class="fhi-visually-hidden">Søk</span>
+        </button>
+    </div>
+</form>
+        </div>
+        <button class="fhi-button fhi-button--white fhi-button--round fhi-button--menu fhi-hamburger" id="toggle-menu" aria-labelledby="hamburger-label">
+            <div class="fhi-main-menu-icon" aria-hidden="true">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <span id="hamburger-label" class="fhi-hamburger_icon_text fhi-visually-hidden--mobile">Menu</span>
+        </button>
+    </div>
+    <nav class="fhi-header__nav">
+        
+
+<div class="fhi-mega-menu" id="main-nav" role="navigation">
+    <div class="fhi-container fhi-container--not-relative fhi-padding-none">
+        <div class="fhi-menu-close-button-container">
+            <button class="fhi-button fhi-hidden--mobile fhi-m-bottom-S fhi-m-top-S fhi-menu-back" type="button">
+                <span class="fhi-icon icon-menu-to-top"></span>
+                <span class="fhi-icon icon-menu-to-top-hover"></span>
+                <span>To top level</span>
+            </button>
+
+            <button class="fhi-button fhi-hidden--mobile fhi-m-bottom-S fhi-m-top-S fhi-menu-close" type="button">
+                <svg role="presentation" class="sprite-x fhi-icon fhi-icon--medium">
+                    <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                </svg>
+                <span>Close</span>
+            </button>
+        </div>
+        <ul class="fhi-mega-menu__list">
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Infectious diseases &amp; Vaccines</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/id/antimicrobial/">Antimicrobial resistance</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/id/childcare-and-school/">Infectious disease control in childcare and school</a></li>
+                                            <li class="fhi-mega-menu__list-item" style="display: none;">
+                                                <a href="#" class="active">
+                                                    <span>Infectious diseases</span>
+                                                </a>
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a class="sub-menu-item-title" href="#">
+                                                    <span>Infectious diseases</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/monkeypox/">Monkeypox</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/ebola/">Ebola</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/sex-and-health/">Sexual health</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item active">
+                                                                <a href="/en/id/infectious-diseases/coronavirus/">Coronavirus disease</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/smitte-fra-mat-vann-og-dyr/">Infection from food, water and animals</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/meningococcal-disease/">Meningococcal disease</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/infectious-diseases/TB/">Tuberculosis</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Influenza</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/influensa/seasonal-influenza/">Seasonal influenza</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/influensa/influenza-vaccine/">Influenza vaccine</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/influensa/fugleinfluensa/">Avian influenza</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/id/asylum-seeker-health/">Refugee and asylum seeker health</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/id/travel/">Travel advice</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Vaccines and vaccination</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/vaccines/childhood-immunisation-programme/">Childhood Immunisation Programme</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/vaccines/coronavirus-immunisation-programme/">Coronavirus immunisation programme</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/id/vaccines/vaccines-overview/">Travel vaccines</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Mental &amp; Physical health</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/childhood-health-promotion-measures/">Childhood and health promotion measures</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Chronic diseases</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/asthma-and-allergy/">Asthma and allergy</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/cancer/">Cancer</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/cardiovascular-diseases/">Cardiovascular diseases</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/dementia/">Dementia</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/diabetes/">Diabetes</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/chronic-diseases/osteoporosis-and-fractures/">Osteoporosis and fractures</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/dental-health/">Dental health</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/health-pregnancy-birth/">Health during birth and pregnancy</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Mental health</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/mental-health/angstdepresjon-og-andre-psykiske-plager-og-lidelser/">Anxiety, depression and other mental health disorders</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/mental-health/developmental-disorders-among-children/">Mental health in children and adolescents</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/mental-health/livskvalitet-og-trivsel/">Quality of life and well-being</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/mp/mental-health/selvmord-og-selvmordsforebygging/">Suicide and suicide prevention</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/overweight-and-obesity/">Overweight and obesity</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/pain/">Pain</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/mp/sleep-and-sleep-disorders/">Sleep and sleep disorders</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Environment &amp; Lifestyle</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/alcohol/">Alcohol</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/cosmetic-allergy/">Cosmetic allergy</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/diet-and-nutrition/">Diet and nutrition</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/drinking-water/">Drinking water</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/drugs-and-addiction/">Drugs and addiction</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Environment and health</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/el/environment-and-health/air-pollution/">Air pollution</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/el/environment-and-health/environmental-contaminants/">Environmental contaminants</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Insects and pests</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/el/insects-and-pests/head-lice-and-other-lice/">Lice</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/el/insects-and-pests/ticks-and-tick-borne-diseases/">Ticks and tick-borne diseases</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/el/insects-and-pests/insects/">Insects</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/physical-activity/">Physical activity</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/el/smoking-tobacco/">Smoking and tobacco</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Health in Norway</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/cause-of-death-and-life-expectancy/">Causes of death &amp; Life expectancy</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/drug/">Drug consumption</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/elderly-health/">Elderly health</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/health-in-the-municipalities/">Health in the municipalities</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Health registries</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/registry-of-pregnancy-termination/">Norwegian Registry of Pregnancy Termination</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/cause-of-death-registry/">Norwegian Cause of Death Registry</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/cardiovascular-disease-registry/">Norwegian Cardiovascular Disease Registry</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/medical-birth-registry-of-norway/">Medical Birth Registry of Norway</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/msis/">Norwegian Surveillance System for Communicable Diseases (MSIS)</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/norwegian-immunisation-registry-sysvak/">Norwegian Immunisation Registry SYSVAK</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/norm/">Norwegian Surveillance System for Antimicrobial Drug Resistance (NORM)</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/norwegian-surveillance-system-for-virus-resistance-ravn/">Norwegian Surveillance System for Antiviral Resistance&#160; (RAVN)</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/health-registries/norpd/">Norwegian Prescription Database (NorPD)</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/injuries-and-accidents/">Injuries</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/migration-health/">Migration health</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/op/hin/">Public Health Report</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/hn/social-inequalities-in-health/">Social inequalities in health</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Statistics from NIPH</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/statistics/statistics-from-niph/">Statistics from NIPH</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/hn/statistics/NorSySS/">Sykdomspulsen</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Quality &amp; Knowledge</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Global Health Collaboration</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/eregistries/">Digital Health Solutions</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/global-health/">Building stronger institutions</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/global-health-security/">Global Health Security</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/eea-grants/">EEA/Norway Grants and WHO</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/global-non-communicable-diseases/">Global Non-communicable Diseases</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/qk/global-healt-collaboration/evidence-to-decisions/">Evidence to Decisions</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/healthservice-quality/">Health service quality measurements</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/health-system-analyses/">Health system analyses</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/HTA/">Health Technology Assessments (HTA)</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/helsebiblioteket/">Norwegian Electronic Health Library</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/systematic-reviews-hta/">Systematic reviews</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/user-experiences/">User experiences</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">Research &amp; Access to data</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/more/biobanks/">Biobanks</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/more/access-to-data/">Access to data</a></li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Research centres</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/more/research-centres/senter-for-sykdomsbyrde/">Centre for Disease Burden</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/more/research-centres/Centre-for-fertility-and-health/">Centre for Fertility and Health</a>
+                                                            </li>
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/more/research-centres/ceir/">CEIR – Centre for Epidemic Interventions Research</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item fhi-mega-menu__list-item--expandable" aria-expanded=false>
+                                                <a href="#">
+                                                    <span>Health studies</span>
+                                                    <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                                                    </svg>
+                                                    <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                                                        <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                                                    </svg>
+                                                </a>
+                                                <div class="fhi-mega-menu__sub-inner">
+                                                    <ul>
+
+                                                            <li class="fhi-mega-menu__list-item ">
+                                                                <a href="/en/more/health-studies/norwegian-twin-registry/">Norwegian Twin Registry</a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/studies/moba/" target="_top">MoBa (Norwegian Mother, Father and Child Cohort Study)</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/qk/systematic-reviews-hta/" target="_top">Systematic health reviews</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/overview/projects/">Projects A-Z</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/studies/">Studies A-Z</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/more/the-niph-mass-cytometry-platform-cytof/">The NIPH mass cytometry platform (CyTOF&#174;)</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/more/norwegian-science-programme-on-covid19/">Norwegian Science Programme on COVID-19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-top-level" aria-expanded=false aria-haspopup=true>
+                    <button class="fhi-mega-menu__button ">
+                        <span class="top-menu-item-title">About NIPH</span>
+                        <svg role="presentation" class="sprite-plus sprite--calypso fhi-icon fhi-icon--small">
+                            <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+                        </svg>
+                        <svg role="presentation" class="sprite-arrow-left sprite--blue fhi-icon fhi-icon--xlarge" style="display:none;">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                    </button>
+
+                    <div class="fhi-mega-menu__sub ">
+                        <div class="fhi-container">
+                            <!-- <button class="fhi-button fhi-button--blue-lighter fhi-button--round fhi-hidden--mobile fhi-align-self-start fhi-m-top-M fhi-menu-close" type="button">
+                                <span>Close</span>
+                                <span class="fhi-icon icon-x fhi-icon--small"></span>
+                            </button> -->
+                            <ul class="fhi-mega-menu__sub-list">
+
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/this-is-the-norwegian-institute-of-public-health/">About the Norwegian Institute of Public Health</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/departments-and-centres/">Divisions and departments</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/conferences/">NIPH meetings and conferences</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/about-this-website/">About this website</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/press-centre/">Press centre</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/smittestopp/">Smittestopp</a></li>
+                                            <li class="fhi-mega-menu__list-item "><a href="/en/about/covid-19-certificate/">COVID-19 Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        </ul>
+    </div>
+
+    <div class="fhi-menu-close-button-container">
+        <button class="fhi-visually-hidden fhi-menu-close fhi-menu-close-sr" type="button">
+            <span>Close</span>
+        </button>
+    </div>
+</div>
+
+
+
+    </nav>
+    <nav class="fhi-header__sub-nav">
+        
+<div class="fhi-container" id=top-links role=navigation>
+    <ul class="fhi-header__sub-nav-list">
+                <li>
+                    <a href="/en/sys/content-a-z/" tabindex="0">Content A-Z</a>
+                </li>
+                <li>
+                    <a href="/en/about/this-is-the-norwegian-institute-of-public-health/opening-hours-employees-addresses/" tabindex="0">Contact us</a>
+                </li>
+
+        <li>
+
+                    <img alt="Norsk nettsted" title="Norsk nettsted" src="/Static/images/nor.svg" style="width: 18px; display: inline-block; top: -2px; position: relative; padding-right: 3px;" />
+                    <span lang="no"><a href="/" tabindex="0">Norsk nettsted</a></span>
+        </li>
+    </ul>
+</div>
+
+    </nav>
+</header>
+
+
+
+
+    <div class="fhi-overlay"></div>
+
+    <main id="main" tabindex="-1" >
+        
+
+<div class="fhi-container fhi-hidden--mobile is-discreet-entry">
+    <div class="fhi-row">
+        <div class="fhi-col fhi-p-bottom-none">
+            <div role="navigation" aria-label="You are here:" class="fhi-breadcrumb" id="breadcrumbs-menu">
+                <a class="fhi-breadcrumb-link" href="/en/">Frontpage</a>
+                <svg role="presentation" class="sprite-arrow-right sprite--dark-grey fhi-icon--small fhi-m-right-XS fhi-m-left-XS">
+                    <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                </svg>
+                        <span class="fhi-breadcrumb-item">Infectious diseases &amp; Vaccines</span>
+                        <svg role="presentation" class="sprite-arrow-right sprite--dark-grey fhi-icon--small fhi-m-right-XS fhi-m-left-XS">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                        <span class="fhi-breadcrumb-item">Infectious diseases</span>
+                        <svg role="presentation" class="sprite-arrow-right sprite--dark-grey fhi-icon--small fhi-m-right-XS fhi-m-left-XS">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                        <a class="fhi-breadcrumb-item fhi-breadcrumb-link" href="/en/id/infectious-diseases/coronavirus/">Coronavirus disease</a>
+                        <svg role="presentation" class="sprite-arrow-right sprite--dark-grey fhi-icon--small fhi-m-right-XS fhi-m-left-XS">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow" />
+                        </svg>
+                                    <span>Statistics about coronavirus and COVID-19</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {"@type": "ListItem",
+        "position": 1,
+        "item": {
+        "@id": "",
+        "name": "Infectious diseases &amp; Vaccines" }
+    }
+    
+        ,
+    {"@type": "ListItem",
+        "position": 2,
+        "item": {
+        "@id": "/en/id/infectious-diseases/",
+        "name": "Infectious diseases" }
+    }
+    
+        ,
+    {"@type": "ListItem",
+        "position": 3,
+        "item": {
+        "@id": "/en/id/infectious-diseases/coronavirus/",
+        "name": "Coronavirus disease" }
+    }
+    
+        ,
+        {"@type": "ListItem",
+        "position": 4,
+        "item": {
+        "@id": "/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/",
+        "name": "Statistics about coronavirus and COVID-19" }
+    }
+    
+
+    ]
+    }
+</script>
+
+
+        
+
+
+
+<div class="fhi-container">
+    <div class="fhi-local-menu-container articlepage">
+        
+    </div>
+</div>
+
+<article>
+
+<div id="block-47743009" class="fhi-hidden fhi-subscription fhi-subscription-form">
+    <h1 id="heading-47743009">Get alerts of updates about &laquo;Statistics about coronavirus and COVID-19&raquo;</h1>
+    <form id="subscription-form" data-parsley-trigger="submit" data-parsley-focus="first">
+        <fieldset class="fhi-input-group fhi-subscription-options" id="frequency">
+            <legend>How often would you like to receive alerts from fhi.no? (This affects all your alerts)</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="f0" name="frequency" data-parsley-class-handler="#frequency ul" required data-parsley-errors-container="#frequency .feedback" value="0" data-parsley-error-message="Fill in field" />
+                    <label for="f0">As soon as the page is updated</label>
+                </li>
+                <li>
+                    <input type="radio" id="f1" name="frequency" value="1" />
+                    <label for="f1">Daily</label>
+                </li>
+                <li>
+                    <input type="radio" id="f2" name="frequency" value="2" />
+                    <label for="f2">Weekly</label>
+                </li>
+            </ul>
+            <div class="feedback"></div>
+        </fieldset>
+            <fieldset class="fhi-input-group fhi-subscription-options" id="topics">
+                <legend>Do you also want alerts about:</legend>
+                <ul>
+                        <li>
+                            <input id="c346fedc-ed6c-4f64-a097-9651028ac9c2" type="checkbox" name="topics[]" value='{"name": "Coronavirus disease", "id": "45271"}' data-parsley-class-handler="#topics ul" data-parsley-errors-container="#topics .feedback" data-parsley-mincheck="1" data-parsley-error-message="Fill in field" />  <label for="c346fedc-ed6c-4f64-a097-9651028ac9c2" class="fhi-subscription-option">Coronavirus disease</label>
+                        </li>
+
+                </ul>
+                <div class="feedback"></div>
+            </fieldset>
+        <div class="fhi-input-group">
+            <label class="fhi-visually-hidden" for="47743009-email">Email</label>
+            <input aria-describedby="email-info" class="fhi-m-bottom-XS" type="email" required data-parsley-type="email" placeholder="Email" data-parsley-error-message="Fill in field" placeholder="" value="" id="47743009-email" name="email" />
+            <p id="email-info">The email address you register will only be used to send you these alerts. You can cancel your alerts and delete your email address at any time by following the link in the alerts you receive. <br /><a class="fhi-underline" target="_blank" rel="noreferrer noopener" href="https://www.fhi.no/om/fhi/personvernerklaring/">Read more about the privacy policy for fhi.no</a></p>
+        </div>
+        <div>
+            <button type="submit" class="fhi-button fhi-button--calypso fhi-button--rounder fhi-button--large">Subscribe me!</button>
+        </div>
+    </form>
+</div>
+<div id="feedback-47743009" class="fhi-subscription-confirmation fhi-subscription fhi-hidden">
+    <h1 id="confirmed-heading-47743009">You have subscribed to alerts about:</h1>
+    <ul id="registered-topics" class="fhi-m-bottom-M" aria-labelledby="confirmed-heading-47743009">
+        <li>Statistics about coronavirus and COVID-19</li>
+    </ul>
+    <p id="sendto"></p>
+</div>
+
+<script type="text/javascript">
+        var translations = {
+            sendto: "You will get an email to {0} with a link to confirm the alert.",
+            feedback: {
+                error: {
+                    heading:"Oops, something went wrong...",
+                    noResponse: "... reload the page and try again-",
+                    defaultMsg: "... contact nettredaksjon@fhi.no."
+                }
+            }
+        }
+
+        window.addEventListener("load", function () {
+            new SubscriptionRegistration(document.getElementById("block-47743009"), document.getElementById("feedback-47743009"), "89256", "ArticlePage", translations);
+        })
+</script>
+    <div class="fhi-container fhi-p-top-S fhi-m-top-M fhi-m-top-none@LG articlepage ">
+        <!-- Header -->
+        
+
+<div class="fhi-row article-header">
+  <div class="fhi-col fhi-col-12 fhi-col-8@LG">
+      <div class="fhi-m-bottom-S-plus fhi-align-items-start fhi-align-direction-column">
+        <p class="fhi-tag">Article</p>
+      </div>
+    <h1 class="fhi-heading1 fhi-m-top-XS@LG fhi-m-bottom-S-plus@LG">
+      Statistics about coronavirus and COVID-19
+    </h1>
+
+
+
+    <div class="article-byline fhi-row fhi-m-top-XS">
+      <div class="fhi-col">
+        
+<p class="fhi-date">
+            <span>
+                Published
+            </span>
+                 <time datetime="2020-03-12">
+                     12.03.2020
+                 </time>
+                <span class="">
+                    Updated
+                </span>
+                <time datetime="2022-11-15">
+                    15.11.2022
+                </time>
+</p>
+
+      </div>
+        <div class="fhi-col">
+          
+
+
+        </div>
+    </div>
+
+    <div class="fhi-m-top-XS fhi-hidden--mobile">
+      <div class="fhi-align-column-centered-x">
+  <div class="">
+          <p class="fhi-ingress fhi-ingress--big fhi-p-top-S fhi-p-bottom-S fhi-m-bottom-none">
+        Here is information about where you can find statistics about SARS-CoV-2 and COVID-19 disease in Norway.
+      </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+    <div class="fhi-col fhi-col-12 fhi-col-4@LG fhi-print--hidden">
+
+
+        <figure class="figure fhi-image-container fhi-image-custom-height">
+            <img src="/contentassets/ca5914bd0aa14e15a17f8a7d48fa306a/graf-korona.png?preset=onethirdwidth" alt="graf-korona.PNG" />
+        </figure>
+    </div>
+
+  <div class="fhi-m-bottom-M fhi-hidden--desktop">
+    <div class="fhi-align-column-centered-x">
+  <div class="">
+          <p class="fhi-ingress fhi-ingress--big fhi-p-top-S fhi-p-bottom-S fhi-m-bottom-none">
+        Here is information about where you can find statistics about SARS-CoV-2 and COVID-19 disease in Norway.
+      </p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  <hr class="fhi-print--hidden"/>
+
+
+        <!-- Byline and sharingpane -->
+        <div class="fhi-byline-container fhi-p-top-S-plus fhi-p-bottom-S fhi-m-bottom-S-plus">
+        <div class="in-english stats-list fhi-theme-page-links--item__lang" lang="no">
+                <a class="fhi-language-link" href="/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/dags--og-ukerapporter-om-koronavirus/">
+                    <span class="fhi-lang-flag icon-flag-no fhi-icon--xlarge"></span>
+                    <span class="fhi-lang-flag--hover icon-flag-hover-no fhi-icon--xlarge"></span>
+                    Les p&#229; norsk
+                </a>
+        </div>
+
+            
+
+    <div class="fhi-share-panel">
+        <button class="fhi-icon-link fhi-popover icon-button" data-popover="popover-content-89256">
+            <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                <use href="/Static/templates/build/gfx/sprites.svg#share" />
+            </svg>
+            <span class="fhi-link">Share/tip</span>
+        </button>
+    </div>
+    <div id="popover-content-89256" class="gpopover">
+        <div class="gpopover-content fhi-p-S-plus fhi-p-bottom-S">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.fhi.no%2fen%2fid%2finfectious-diseases%2fcoronavirus%2fdaily-reports%2fdaily-reports-COVID19%2f&t=Statistics%20about%20coronavirus%20and%20COVID-19" class="icon-button fhi-icon-link"
+               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+               target="_blank" rel="noopener" title="Share on Facebook">
+                <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                    <use href="/Static/templates/build/gfx/sprites.svg#facebook" />
+                </svg>
+                <span class=text>Facebook</span>
+            </a>
+            <a href="https://twitter.com/share?url=https%3a%2f%2fwww.fhi.no%2fen%2fid%2finfectious-diseases%2fcoronavirus%2fdaily-reports%2fdaily-reports-COVID19%2f&text=Statistics%20about%20coronavirus%20and%20COVID-19" target="_blank" class="icon-button fhi-icon-link">
+                <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                    <use href="/Static/templates/build/gfx/sprites.svg#twitter" />
+                </svg>
+                <span class=text>Twitter</span>
+            </a>
+            <a href="mailto:?subject=Statistics%20about%20coronavirus%20and%20COVID-19&amp;body=https%3a%2f%2fwww.fhi.no%2fen%2fid%2finfectious-diseases%2fcoronavirus%2fdaily-reports%2fdaily-reports-COVID19%2f" target="_blank" class="icon-button fhi-icon-link">
+                <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                    <use href="/Static/templates/build/gfx/sprites.svg#contact" />
+                </svg>
+                <span class=text>Send by e-mail</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="fhi-print">
+        <button onclick="window.print(); return false;" class="icon-button fhi-icon-link">
+            <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                <use href="/Static/templates/build/gfx/sprites.svg#print" />
+            </svg>
+            <span class="fhi-link">Print</span>
+        </button>
+    </div>
+
+    <div>
+        <button type="button" data-subscription-modal-open class="icon-button fhi-icon-link">
+            <svg role="presentation" class="sprite--text-top fhi-icon--large">
+                <use href="/Static/templates/build/gfx/sprites.svg#newsalert" />
+            </svg>
+            <span class="fhi-link">Get alerts about changes</span>
+        </button>
+    </div>
+
+
+                <div>
+                    <button type="button" class="icon-button fhi-icon-link" id="go-to-changelog">
+                        <svg role="presentation" class="sprite-changelog">
+                            <use href="/Static/templates/build/gfx/sprites.svg#changelog" />
+                        </svg>
+                        <span class="fhi-link">Change log</span>
+                    </button>
+                </div>
+
+        </div>
+
+        <div class="fhi-row fhi-align-direction-row-reverse--lg fhi-align-direction-column-reverse--mobile">
+            <div class="fhi-col fhi-col-12 fhi-col-4@LG">
+                    <section class="internal-chapters-container fhi-visually-hidden--mobile" aria-label="Skip to content on this page">
+                        <h2 class="fhi-heading6 fhi-m-bottom-M">
+                            <span class="fhi-icon fhi-icon--medium icon-bulletpoint--down"></span>
+                            Skip to content on this page
+                        </h2>
+                        <div id="internal-chapters"></div>
+                    </section>
+
+
+                <aside>
+
+
+
+
+
+                    
+
+                    
+                </aside>
+            </div>
+            <div class="fhi-col fhi-col-12 fhi-col-8@LG">
+
+                
+
+
+
+                
+
+<div class="textual-block" data-auto-jumpto-index>
+<figure class="figure table "></figure>
+<h2><span data-contrast="auto">Closing the service of daily statistics about coronavirus</span></h2>
+<p><span data-contrast="auto">From Tuesday 15th November, the Norwegian Institute of Public Health will remove content from this page. This is because the supplier of the updated daily figures, Sykdomspulsen, is closing the service where these data are collected for budgetary reasons: </span></p>
+<ul class="fhi-list-with-arrow">
+<li><a href="/en/news2/closure-of-the-sykdompuls-website/" target="_blank" rel="noopener"><span data-contrast="auto">Closure </span><span data-contrast="auto">of the</span> <span data-contrast="auto">Sykdompuls</span></a><span data-contrast="auto"><a href="/en/news2/closure-of-the-sykdompuls-website/" target="_blank" rel="noopener"> website</a> (In Norwegian)</span></li>
+</ul>
+<h3><strong>Where can I find statistics about Covid-19?&nbsp;</strong></h3>
+<p><span data-contrast="auto">National and regional statistics about COVID-19 notifications and vac</span><span data-contrast="auto">cination against COVID-19 and i</span>nfluenza<span data-contrast="auto">&nbsp;can be found at: </span><a href="https://statistikk.fhi.no/" target="_blank" rel="noopener"><span data-contrast="auto">https://statistikk.fhi.no/</span></a><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<p><span data-contrast="auto">Weekly key figures</span><span data-contrast="auto"> will be provided on </span><a href="/en/publ/2020/weekly-reports-for-coronavirus-og-covid-19/"><span data-contrast="auto">Weekly rapports about COVID-19, influenza and other respiratory tract </span><span data-contrast="auto">infections</span></a><span data-contrast="auto"> (https://www.fhi.no/en/publ/2020/weekly-reports-for-coronavirus-og-covid-19/)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<p><span data-contrast="auto">If you need </span><span data-contrast="auto">specific data or compilations from the Norw</span><span data-contrast="auto">egian Immunisation R</span><span data-contrast="auto">egistry SYSVAK or the </span><span data-contrast="auto">Norwegian Surveillance System for Communicable Diseases</span><span data-contrast="auto"> (MSIS), please use the application form at </span><a href="https://helsedata.no/" target="_blank" rel="noopener"><span data-contrast="auto">https://helsedata.no/</span></a><span data-contrast="auto"> to apply for access to data.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<h2>Older daily reports</h2>
+<p>The last daily report in pdf-format was published on Friday 19th June 2020.&nbsp;</p>
+<ul class="fhi-list-with-arrow">
+<li><a href="/en/id/infectious-diseases/coronavirus/daily-reports/eldre-dagsrapporter-covid-19/">Older daily reports</a></li>
+</ul>
+<h2>Other COVID-19 statistics</h2>
+<h3><strong>Coronavirus vaccination</strong></h3>
+<ul class="fhi-list-with-arrow">
+<li><a title="Coronavirus vaccination - statistics" href="/en/id/vaccines/coronavirus-immunisation-programme/coronavirus-vaccination---statistic/">Coronavirus vaccination - statistics</a></li>
+</ul>
+<h3>Reproduction number - R</h3>
+<p>The reproduction number R will be presented weekly in the&nbsp;<a href="/en/publ/2020/weekly-reports-for-coronavirus-og-covid-19/">weekly report (English summary)</a></p>
+<h3>Inpatients in hospital&nbsp;</h3>
+<ul class="fhi-list-with-arrow">
+<li><a href="https://www.helsedirektoratet.no/statistikk/antall-innlagte-pasienter-pa-sykehus-med-pavist-covid-19" target="_blank" rel="noopener">COVID-19 - number of patients admitted to hospital</a>&nbsp;(Directorate of Health)</li>
+</ul>
+<h3>Total mortality</h3>
+<p>The NIPH also calculates the total mortality in Norway through the&nbsp;<a href="/sv/influensa/influensaovervaking/overvakingssystem-for-dodelighet-eu/">NorMOMO</a>-system. The status for total mortality is mentioned in the weekly reports.</p>
+<ul class="fhi-list-with-arrow">
+<li><a href="https://www.euromomo.eu/" target="_blank" rel="noopener">Latest diagram for European countries in EuroMOMO</a></li>
+</ul>    <div aria-live="assertive" class="fhi-word-definition-wrapper"></div>
+</div>
+
+
+
+
+                        <div class="fhi-expandable-box fhi-m-top-L fhi-m-bottom-L" data-expandable-box id="changelog">
+                            <h2 class="fhi-expandable-header" data-expandable-box-header>
+                                <button type="button" data-jumpto-index-heading>About this page</button>
+                            </h2>
+                            <div class="fhi-expandable-content fhi-p-top-M-plus fhi-p-bottom-S" data-expandable-box-content>
+                                <div class="fhi-row">
+                                    
+                                </div>
+                                    <div class="fhi-m-bottom-M">
+                                        <button type="button" class="icon-button fhi-icon-link" data-subscription-modal-open>
+                                            <svg role="presentation" class="sprite-newsalert fhi-icon--large">
+                                                <use href="/Static/templates/build/gfx/sprites.svg#newsalert" />
+                                            </svg>
+                                            <span class="fhi-link fhi-underline">Get alerts about changes</span>
+                                        </button>
+                                    </div>
+                                                                    <h2 class="fhi-heading6 fhi-m-bottom-S">
+History                                    </h2>
+                                    <div class="fhi-about">
+                                                <p><b>15.11.2022</b>: Closing the service of daily statistics about coronavirus for budgetary reasons. For statistics see the weekly report. </p>
+                                                <p><b>17.03.2022</b>: Changed the statistics shoeing Covid-19 associated deaths. As of 17.3.2022, COVID-19 associated deaths are monitored only based on data from the Cause of Death Registry and therefore include deaths without a laboratory-confirmed sample in MSIS. The new criteria have led to an upward adjustment of the number of reported deaths.</p>
+                                                <p><b>24.01.2022</b>: Changed the order of the key figures.</p>
+                                                <p><b>01.10.2021</b>: Corrected text about antigen rapid tests in collapsible text box “What is included in the figures for the number tested?”; removed “these are not registered in the MSIS lab database”.</p>
+                                                <p><b>20.04.2021</b>: Figures showing the number of people tested and the number and proportion of positive results among these have been updated. The figure shows data from 1 April 2020. The positive cases in this figure are now based on reported cases to the Communicable Diseases Notification System (MSIS). There are therefore some adjustments in the data compared to the previous figure. In the period before 1 April 2020, the number of tests was based on data collected from the microbiological laboratories that analysed SARS-CoV2 samples during this period. The total number of tests in this period is 102,560.
+
+The laboratory results are collected in the MSIS Laboratory Database. Each laboratory in Norway submits data electronically directly to the database. The figure below illustrates the number of persons tested and the proportion of positive test results among these daily since 1 April 2020.
+
+&quot;Number of people tested&quot;: A new test on a person is defined as a test performed at least 7 days after the previous test on the same person. If the person is tested again after 7 days, they are counted as a new person. Figures from the last few days may be adjusted with the next update.</p>
+
+
+                                        <p>23.10.2020: Temporarily removed table display in timeline graphs because of an error. The supporting data can still be downloaded in CSV and Excel via the menu.</p>
+<p>19.10.2020 Changes in way test activity is presented - we present the number of tests performed as well as the number of people tested.</p>
+<p>24.09.2020: Error in update for 24.9:<span style="display: inline !important; float: none; background-color: transparent; color: #000000; cursor: text; font-family: 'BrandonTextWeb-Regular'; font-size: 17.6px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"> In the update dated 24.9, it is reported that there were three new deaths during the last three weeks. An error means that one death was reported for a person under 40 years of age.&nbsp; This should be two deaths for people aged over 90 years and one death for a person aged between 80-89 years. NIPH is working to correct the error.</span></p>
+<p>26.05.2020: Many of the figures are now available with data that can be downloaded.&nbsp;</p>
+<p>&nbsp;</p>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                <aside class="fhi-article-bottom fhi-print--hidden">
+                    <hr class="fhi-m-bottom-M-plus">
+
+                    
+
+                </aside>
+            </div>
+
+        </div>
+        <div class="fhi-row">
+            <div class="fhi-col fhi-col-12 fhi-col-8@LG">
+                <aside>
+                    <div class="fhi-m-bottom-M fhi-m-top-L-plus">
+                            <div class="about">
+        <!-- <hr class="fhi-m-top-L fhi-m-bottom-L"> 
+        <h2 class="fhi-heading6 fhi-m-bottom-M">About</h2> -->
+
+        <ul class="keywords-list">
+                <li>
+                    <a href="/en/id/infectious-diseases/coronavirus/">Coronavirus disease</a>
+                </li>
+        </ul>
+    </div>
+
+                    </div>
+                    <h2 class="fhi-visually-hidden">Metadata</h2>
+
+
+                    <div id="feedback-container" style="display: block;">
+<form action="/en/id/infectious-diseases/coronavirus/daily-reports/daily-reports-COVID19/SendFeedback" data-parsley-validate="" id="feedbackForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="w7OFJtgJQpEmQS-1MhjvL0b1V7mi1EHyUNoaINmwfaM5EA8i2XGvDYJXVK1wKMNOZB2p_thzbnv-5pcYR7Smh_UqeXcuKcDWl0KbND9xPVQ1" /><input id="ContactForm_PositiveFeedback" name="ContactForm.PositiveFeedback" type="hidden" value="" />                            <div class="always-visible">
+                                <h3>Did you find what you were looking for?</h3>
+                                <div class="answer-group">
+                                    <button class="callBtn" onclick="positive.call(this); return false;">
+                                        <span>Yes</span>
+                                    </button>
+                                    <button class="callBtn" onclick="negative.call(this);return false;">
+                                        <span>No</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="feedback_text" style="display: none;" class="fhi-m-bottom-L">
+                                <div class="control-group">
+                                    <p>NB! Do not enter personal information<br />We will not reply to your message but will use your feedback to improve our website.</p>
+                                    <label for="ContactForm_Message">Your feedback</label>
+                                    <textarea cols="20" id="ContactForm_Message" name="ContactForm.Message" placeholder="NB! Do not enter personal information" rows="2">
+</textarea>
+                                </div>
+                                <div class="fhi-hidden">
+                                    <label for="ContactForm_Answer">Do not fill this field</label>
+                                    <input id="ContactForm_Answer" name="ContactForm.Answer" type="text" value="" />
+                                </div>
+                            </div>
+                            <input id="submitFormButton"
+                                   name="submitInput"
+                                   data-sitekey="6Lcec8oZAAAAAMs-v_3gKha40iOT6VTiinMzjDLe"
+                                   data-callback="onFeedbackSubmit"
+                                   onclick="sendingfeedback.call(this);"
+                                   type="submit"
+                                   class="callBtnSubmit g-recaptcha"
+                                   value="Send feedback"
+                                   style="display: none;">
+</form>                    </div>
+
+                    <script type="text/javascript">
+                        function positive() {
+                            document.getElementById("ContactForm_PositiveFeedback").setAttribute('value', 'true');
+                            document.getElementById("feedbackForm").submit();
+                            if (window.location.href.indexOf(".no/en/") > -1) {
+                                alert("Thanks for your feedback! \nBest regards, Norwegian Institute of Public Health");
+                            } else {
+                                alert("Takk for tilbakemelding.\nHilsen Folkehelseinstituttet");
+                            }
+                        };
+                        function negative() {
+                            $('.grecaptcha-badge').css("visibility", "visible");
+                            document.getElementById('feedback_text').style.display = "block";
+                            document.getElementById('submitFormButton').style.display = "block";
+                        };
+                        function sendingfeedback() {
+                            document.getElementById('feedback-container').style.display = "none";
+                        };
+                        function onFeedbackSubmit(token) {
+                            document.getElementById("feedbackForm").submit();
+                        };
+                    </script>
+                </aside>
+            </div>
+        </div>
+    </div>
+</article>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ("False" === "True") {
+            $("body").addClass("print-emulation")
+        }
+    })
+</script>
+
+
+
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector("#go-to-changelog").addEventListener("click", function () {
+                openChangelog();
+            });
+        });
+
+        function openChangelog() {
+            window.location.hash = "changelog";
+            var box = FHI.expandableBoxes.find(function (item) {
+                return item.id === "changelog";
+            });
+            box.toggle();
+        }
+
+    </script>
+
+
+    </main>
+
+    
+
+
+
+
+    
+
+<footer class="main-footer">
+    <section class="fhi-container">
+        <div class="fhi-row">
+            <div class="fhi-col is-primary">
+
+                <h2>Address/contact</h2>
+
+                <p><strong>Norwegian Institute of <br />Public Health</strong></p>
+<p>PO Box 222 Skøyen<br />N-0213 Oslo</p>
+<p>PO Box 973 Sentrum<br />N-5808 Bergen</p>
+<p>Switchboard: (+47) 21 07 70 00<br />Org. no. 983&nbsp;744&nbsp;516</p>
+            </div>
+
+            <div class="fhi-col is-secondary">
+                    <h2>Latest</h2>
+                    <ul class="simple-list">
+                            <li>
+                                <a href="/en/news/">News by year</a>
+                            </li>
+                            <li>
+                                <a href="/en/about/departments-and-centres/">Divisions and departments</a>
+                            </li>
+                            <li>
+                                <a href="/en/about/this-is-the-norwegian-institute-of-public-health/would-you-like-to-work-at-the-niph/">Would you like to work at the NIPH?</a>
+                            </li>
+                    </ul>
+            </div>
+
+            <div class="fhi-col is-secondary">
+                    <h2>All our</h2>
+                    <ul class="simple-list">
+                            <li>
+                                <a href="/en/studies/">Studies</a>
+                            </li>
+                            <li>
+                                <a href="/en/overview/projects/">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/en/publ/">Publications</a>
+                            </li>
+                            <li>
+                                <a href="/en/op/">Online publications</a>
+                            </li>
+                            <li>
+                                <a href="/en/more/health-studies/">Health studies</a>
+                            </li>
+                            <li>
+                                <a href="/en/hn/health-registries/">Health registries</a>
+                            </li>
+                    </ul>
+            </div>
+
+            <div class="fhi-col is-tertiary">
+                <ul class="simple-list">
+                                                                                                                                                                                                    </ul>
+            </div>
+
+            <div class="scroll-to-top">
+                <a href="#main">
+                    <div class="big circle is-white a11y-border">
+                        <svg role="presentation" class="sprite-arrow-up sprite--blue fhi-icon--large">
+                            <use href="/Static/templates/build/gfx/sprites.svg#arrow--long" />
+                        </svg>
+                    </div>
+                    <span class="fhi-visually-hidden">Gå til toppen</span>
+                </a>
+            </div>
+        </div>
+
+        <hr class="ruler is-tight is-inverted">
+    </section>
+    <section class="fhi-container">
+        <div class="stripe">
+            <svg role="img" title="Norwegian Institute of Public Health" alt="Norwegian Institute of Public Health" class="logo-inverted en logo-default sprite">
+                <use href="/Static/templates/build/gfx/sprites.svg#logo-en" />
+            </svg>
+                <ul class="inline-list">
+                        <li>
+                            <a href="/en/about/this-is-the-norwegian-institute-of-public-health/">About the Norwegian Institute of Public Health</a>
+                        </li>
+                        <li>
+                            <a href="/en/about/this-is-the-norwegian-institute-of-public-health/privacy-policy/">Privacy Policy</a>
+                        </li>
+                </ul>
+
+            <div class="page-type">
+
+                1.0.0.0 - RD00155D62E357 - Article
+            </div>
+        </div>
+    </section>
+</footer>
+
+<div id="fhi-modal" class="fhi-modal fhi-hidden" role="dialog" aria-live="assertive" aria-atomic="true" aria-modal="true">
+    <div class="fhi-modal-header">
+        <button aria-label="Close">
+            <svg role="presentation" class="sprite-x fhi-icon fhi-icon--medium">
+                <use href="/Static/templates/build/gfx/sprites.svg#plus" />
+            </svg>
+        </button>
+    </div>
+</div>
+<div id="fhi-modal-overlay" class="fhi-hidden"></div>
+
+<script src="/bundles/plugins.js?v=hLj-EulVWt49OHQ_J7sa3_zPAOjr60nZfcabuToiumY1"></script>
+
+
+
+
+<script src="/bundles/fhi.js?v=xus5fSckUcOZWqxjH5Kz0henMKQ5qZAz5Yp0NQkZTj81"></script>
+
+
+
+    <script type="text/javascript" src="https://dl.episerver.net/13.5.1/epi-util/find.js"></script>
+<script type="text/javascript">
+if(typeof FindApi === 'function'){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.1.3/what-input.min.js" defer="defer"></script>
+    <script>
+        objectFitImages();
+    </script>
+
+</body>
+</html>
