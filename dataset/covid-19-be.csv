@@ -8,28 +8,28 @@ BE,Flanders,Antwerpen,1.0,,,,2020-03-01
 BE,Wallonia,Liège,3.0,,,,2020-03-01
 BE,Brussels,Brussels,6.0,,,,2020-03-01
 BE,Flanders,VlaamsBrabant,7.0,,,,2020-03-01
-BE,Flanders,WestVlaanderen,2.0,,,,2020-03-02
 BE,Wallonia,BrabantWallon,2.0,,,,2020-03-02
-BE,Flanders,OostVlaanderen,2.0,,,,2020-03-02
+BE,Flanders,WestVlaanderen,2.0,,,,2020-03-02
 BE,Flanders,Antwerpen,2.0,,,,2020-03-02
+BE,Flanders,OostVlaanderen,2.0,,,,2020-03-02
 BE,Wallonia,Liège,4.0,,,,2020-03-02
 BE,Brussels,Brussels,10.0,,,,2020-03-02
 BE,Flanders,VlaamsBrabant,15.0,,,,2020-03-02
-BE,Wallonia,Namur,1.0,,,,2020-03-03
 BE,Wallonia,Hainaut,1.0,,,,2020-03-03
+BE,Wallonia,Namur,1.0,,,,2020-03-03
 BE,Flanders,Limburg,4.0,,,,2020-03-03
-BE,Wallonia,BrabantWallon,5.0,,,,2020-03-03
 BE,Flanders,OostVlaanderen,5.0,,,,2020-03-03
+BE,Wallonia,BrabantWallon,5.0,,,,2020-03-03
 BE,Flanders,WestVlaanderen,6.0,,,,2020-03-03
 BE,Flanders,Antwerpen,7.0,,,,2020-03-03
 BE,Wallonia,Liège,10.0,,,,2020-03-03
 BE,Brussels,Brussels,12.0,,,,2020-03-03
 BE,Flanders,VlaamsBrabant,21.0,,,,2020-03-03
 BE,Wallonia,Namur,2.0,,,,2020-03-04
-BE,Wallonia,BrabantWallon,6.0,,,,2020-03-04
 BE,MISSING,MISSING,6.0,,,,2020-03-04
-BE,Flanders,WestVlaanderen,7.0,,,,2020-03-04
+BE,Wallonia,BrabantWallon,6.0,,,,2020-03-04
 BE,Wallonia,Hainaut,7.0,,,,2020-03-04
+BE,Flanders,WestVlaanderen,7.0,,,,2020-03-04
 BE,Flanders,OostVlaanderen,8.0,,,,2020-03-04
 BE,Flanders,Limburg,12.0,,,,2020-03-04
 BE,Flanders,Antwerpen,13.0,,,,2020-03-04
@@ -42,8 +42,8 @@ BE,Flanders,OostVlaanderen,17.0,,,,2020-03-05
 BE,Wallonia,Hainaut,17.0,,,,2020-03-05
 BE,Brussels,Brussels,19.0,,,,2020-03-05
 BE,Flanders,Limburg,20.0,,,,2020-03-05
-BE,Flanders,WestVlaanderen,21.0,,,,2020-03-05
 BE,Wallonia,Liège,21.0,,,,2020-03-05
+BE,Flanders,WestVlaanderen,21.0,,,,2020-03-05
 BE,Flanders,Antwerpen,24.0,,,,2020-03-05
 BE,Flanders,VlaamsBrabant,49.0,,,,2020-03-05
 BE,Wallonia,Luxembourg,1.0,,,,2020-03-06
@@ -71,8 +71,8 @@ BE,MISSING,MISSING,8.0,,,,2020-03-08
 BE,Wallonia,Namur,10.0,,,,2020-03-08
 BE,Wallonia,BrabantWallon,15.0,,,,2020-03-08
 BE,Wallonia,Hainaut,26.0,,,,2020-03-08
-BE,Brussels,Brussels,39.0,,,,2020-03-08
 BE,Flanders,OostVlaanderen,39.0,,,,2020-03-08
+BE,Brussels,Brussels,39.0,,,,2020-03-08
 BE,Wallonia,Liège,44.0,,,,2020-03-08
 BE,Flanders,Limburg,47.0,,,,2020-03-08
 BE,Flanders,Antwerpen,52.0,,,,2020-03-08
@@ -256,8 +256,8 @@ BE,Wallonia,Hainaut,775.0,,308,65,2020-03-23
 BE,Wallonia,Liège,790.0,,194,31,2020-03-23
 BE,Flanders,Limburg,809.0,,181,38,2020-03-23
 BE,Flanders,Antwerpen,836.0,,308,56,2020-03-23
-BE,MISSING,MISSING,177.0,,,,2020-03-24
 BE,Wallonia,Luxembourg,177.0,,52,18,2020-03-24
+BE,MISSING,MISSING,177.0,,,,2020-03-24
 BE,Wallonia,Namur,184.0,,42,10,2020-03-24
 BE,Wallonia,BrabantWallon,262.0,,37,9,2020-03-24
 BE,Flanders,OostVlaanderen,821.0,,206,62,2020-03-24
@@ -348,8 +348,8 @@ BE,Wallonia,Luxembourg,458.0,,103,20,2020-03-31
 BE,Flanders,VlaamsBrabant,1737.0,,289,66,2020-03-31
 BE,Flanders,WestVlaanderen,1833.0,,541,103,2020-03-31
 BE,Brussels,Brussels,1866.0,,817,176,2020-03-31
-BE,Wallonia,Hainaut,1881.0,,637,132,2020-03-31
 BE,Wallonia,Liège,1881.0,,500,119,2020-03-31
+BE,Wallonia,Hainaut,1881.0,,637,132,2020-03-31
 BE,Flanders,OostVlaanderen,1965.0,,591,130,2020-03-31
 BE,Flanders,Limburg,1994.0,,512,112,2020-03-31
 BE,Flanders,Antwerpen,2160.0,,816,179,2020-03-31
@@ -1173,8 +1173,8 @@ BE,Flanders,OostVlaanderen,6722.0,,67,12,2020-06-07
 BE,Wallonia,Hainaut,6819.0,,43,2,2020-06-07
 BE,Wallonia,Liège,6897.0,,47,9,2020-06-07
 BE,Flanders,Antwerpen,8238.0,,80,21,2020-06-07
-BE,Wallonia,Namur,,,17,3,2020-06-07
 BE,Wallonia,Luxembourg,,,10,0,2020-06-07
+BE,Wallonia,Namur,,,17,3,2020-06-07
 BE,MISSING,MISSING,1374.0,,,,2020-06-08
 BE,Wallonia,Luxembourg,1410.0,,9,0,2020-06-08
 BE,Wallonia,BrabantWallon,1496.0,,3,0,2020-06-08
@@ -1293,8 +1293,8 @@ BE,Flanders,WestVlaanderen,6809.0,,52,8,2020-06-17
 BE,Wallonia,Hainaut,6948.0,,29,3,2020-06-17
 BE,Wallonia,Liège,6963.0,,21,2,2020-06-17
 BE,Flanders,Antwerpen,8415.0,,44,13,2020-06-17
-BE,Wallonia,BrabantWallon,,,3,0,2020-06-17
 BE,Wallonia,Luxembourg,,,9,0,2020-06-17
+BE,Wallonia,BrabantWallon,,,3,0,2020-06-17
 BE,MISSING,MISSING,1405.0,,,,2020-06-18
 BE,Wallonia,Luxembourg,1430.0,,8,0,2020-06-18
 BE,Wallonia,BrabantWallon,1527.0,,3,0,2020-06-18
@@ -1339,9 +1339,9 @@ BE,Flanders,WestVlaanderen,6864.0,,44,6,2020-06-21
 BE,Wallonia,Hainaut,6971.0,,34,2,2020-06-21
 BE,Wallonia,Liège,6995.0,,19,4,2020-06-21
 BE,Flanders,Antwerpen,8461.0,,49,11,2020-06-21
-BE,Wallonia,Namur,,,7,0,2020-06-21
-BE,Wallonia,BrabantWallon,,,0,0,2020-06-21
 BE,Brussels,Brussels,,,63,16,2020-06-21
+BE,Wallonia,BrabantWallon,,,0,0,2020-06-21
+BE,Wallonia,Namur,,,7,0,2020-06-21
 BE,MISSING,MISSING,1415.0,,,,2020-06-22
 BE,Wallonia,Luxembourg,1446.0,,12,0,2020-06-22
 BE,Wallonia,BrabantWallon,1536.0,,0,0,2020-06-22
@@ -1421,11 +1421,11 @@ BE,Flanders,OostVlaanderen,6867.0,,23,2,2020-06-28
 BE,Flanders,WestVlaanderen,6952.0,,28,2,2020-06-28
 BE,Wallonia,Hainaut,7064.0,,29,1,2020-06-28
 BE,Flanders,Antwerpen,8570.0,,42,6,2020-06-28
-BE,Wallonia,Namur,,,5,0,2020-06-28
-BE,Wallonia,Liège,,,18,3,2020-06-28
 BE,Brussels,Brussels,,,42,12,2020-06-28
-BE,Wallonia,BrabantWallon,,,2,0,2020-06-28
 BE,Flanders,Limburg,,,26,8,2020-06-28
+BE,Wallonia,Liège,,,18,3,2020-06-28
+BE,Wallonia,BrabantWallon,,,2,0,2020-06-28
+BE,Wallonia,Namur,,,5,0,2020-06-28
 BE,MISSING,MISSING,1436.0,,,,2020-06-29
 BE,Wallonia,Luxembourg,1463.0,,11,1,2020-06-29
 BE,Wallonia,BrabantWallon,1550.0,,2,0,2020-06-29
@@ -8286,7 +8286,7 @@ BE,Flanders,WestVlaanderen,283815.0,,275,38,2022-01-20
 BE,Wallonia,Hainaut,319144.0,,403,46,2022-01-20
 BE,Brussels,Brussels,338016.0,,602,77,2022-01-20
 BE,Flanders,OostVlaanderen,344925.0,,284,40,2022-01-20
-BE,Flanders,Antwerpen,398635.0,,334,41,2022-01-20
+BE,Flanders,Antwerpen,398636.0,,334,41,2022-01-20
 BE,MISSING,MISSING,43393.0,,,,2022-01-21
 BE,Wallonia,Luxembourg,70094.0,,33,10,2022-01-21
 BE,Wallonia,BrabantWallon,107534.0,,40,7,2022-01-21
@@ -8298,7 +8298,7 @@ BE,Flanders,WestVlaanderen,290292.0,,312,31,2022-01-21
 BE,Wallonia,Hainaut,325893.0,,427,51,2022-01-21
 BE,Brussels,Brussels,343838.0,,612,81,2022-01-21
 BE,Flanders,OostVlaanderen,352445.0,,283,34,2022-01-21
-BE,Flanders,Antwerpen,407301.0,,345,39,2022-01-21
+BE,Flanders,Antwerpen,407302.0,,345,39,2022-01-21
 BE,MISSING,MISSING,43693.0,,,,2022-01-22
 BE,Wallonia,Luxembourg,70751.0,,33,10,2022-01-22
 BE,Wallonia,BrabantWallon,108722.0,,45,6,2022-01-22
@@ -8310,7 +8310,7 @@ BE,Flanders,WestVlaanderen,294422.0,,322,32,2022-01-22
 BE,Wallonia,Hainaut,329794.0,,451,52,2022-01-22
 BE,Brussels,Brussels,347915.0,,605,76,2022-01-22
 BE,Flanders,OostVlaanderen,356686.0,,293,33,2022-01-22
-BE,Flanders,Antwerpen,412311.0,,372,43,2022-01-22
+BE,Flanders,Antwerpen,412312.0,,372,43,2022-01-22
 BE,MISSING,MISSING,43905.0,,,,2022-01-23
 BE,Wallonia,Luxembourg,71268.0,,37,9,2022-01-23
 BE,Wallonia,BrabantWallon,109123.0,,45,6,2022-01-23
@@ -8322,7 +8322,7 @@ BE,Flanders,WestVlaanderen,297276.0,,336,27,2022-01-23
 BE,Wallonia,Hainaut,331238.0,,489,54,2022-01-23
 BE,Brussels,Brussels,350593.0,,627,75,2022-01-23
 BE,Flanders,OostVlaanderen,359467.0,,294,35,2022-01-23
-BE,Flanders,Antwerpen,416709.0,,402,44,2022-01-23
+BE,Flanders,Antwerpen,416710.0,,402,44,2022-01-23
 BE,MISSING,MISSING,44542.0,,,,2022-01-24
 BE,Wallonia,Luxembourg,73060.0,,41,10,2022-01-24
 BE,Wallonia,BrabantWallon,112127.0,,44,6,2022-01-24
@@ -8334,7 +8334,7 @@ BE,Flanders,WestVlaanderen,306134.0,,375,26,2022-01-24
 BE,Wallonia,Hainaut,339945.0,,519,55,2022-01-24
 BE,Brussels,Brussels,357432.0,,654,78,2022-01-24
 BE,Flanders,OostVlaanderen,370993.0,,324,38,2022-01-24
-BE,Flanders,Antwerpen,428581.0,,442,46,2022-01-24
+BE,Flanders,Antwerpen,428582.0,,442,46,2022-01-24
 BE,MISSING,MISSING,45118.0,,,,2022-01-25
 BE,Wallonia,Luxembourg,74947.0,,42,9,2022-01-25
 BE,Wallonia,BrabantWallon,114443.0,,51,5,2022-01-25
@@ -8346,7 +8346,7 @@ BE,Flanders,WestVlaanderen,312399.0,,397,31,2022-01-25
 BE,Wallonia,Hainaut,348403.0,,552,48,2022-01-25
 BE,Brussels,Brussels,363139.0,,661,78,2022-01-25
 BE,Flanders,OostVlaanderen,379213.0,,357,44,2022-01-25
-BE,Flanders,Antwerpen,438183.0,,432,39,2022-01-25
+BE,Flanders,Antwerpen,438184.0,,432,39,2022-01-25
 BE,MISSING,MISSING,45545.0,,,,2022-01-26
 BE,Wallonia,Luxembourg,76757.0,,45,11,2022-01-26
 BE,Wallonia,BrabantWallon,116483.0,,56,5,2022-01-26
@@ -8358,7 +8358,7 @@ BE,Flanders,WestVlaanderen,318209.0,,408,25,2022-01-26
 BE,Wallonia,Hainaut,355473.0,,574,46,2022-01-26
 BE,Brussels,Brussels,368399.0,,685,75,2022-01-26
 BE,Flanders,OostVlaanderen,386362.0,,354,42,2022-01-26
-BE,Flanders,Antwerpen,446691.0,,469,40,2022-01-26
+BE,Flanders,Antwerpen,446692.0,,469,40,2022-01-26
 BE,MISSING,MISSING,45980.0,,,,2022-01-27
 BE,Wallonia,Luxembourg,78142.0,,48,11,2022-01-27
 BE,Wallonia,BrabantWallon,118242.0,,51,5,2022-01-27
@@ -8370,7 +8370,7 @@ BE,Flanders,WestVlaanderen,322877.0,,432,26,2022-01-27
 BE,Wallonia,Hainaut,361777.0,,574,43,2022-01-27
 BE,Brussels,Brussels,372855.0,,685,78,2022-01-27
 BE,Flanders,OostVlaanderen,392628.0,,367,39,2022-01-27
-BE,Flanders,Antwerpen,454293.0,,483,49,2022-01-27
+BE,Flanders,Antwerpen,454294.0,,483,49,2022-01-27
 BE,MISSING,MISSING,46350.0,,,,2022-01-28
 BE,Wallonia,Luxembourg,79577.0,,48,14,2022-01-28
 BE,Wallonia,BrabantWallon,119872.0,,52,4,2022-01-28
@@ -8382,7 +8382,7 @@ BE,Flanders,WestVlaanderen,326670.0,,465,29,2022-01-28
 BE,Wallonia,Hainaut,367387.0,,594,45,2022-01-28
 BE,Brussels,Brussels,376661.0,,688,81,2022-01-28
 BE,Flanders,OostVlaanderen,397971.0,,385,39,2022-01-28
-BE,Flanders,Antwerpen,460714.0,,513,43,2022-01-28
+BE,Flanders,Antwerpen,460715.0,,513,43,2022-01-28
 BE,MISSING,MISSING,46580.0,,,,2022-01-29
 BE,Wallonia,Luxembourg,80229.0,,52,13,2022-01-29
 BE,Wallonia,BrabantWallon,120772.0,,59,5,2022-01-29
@@ -8394,7 +8394,7 @@ BE,Flanders,WestVlaanderen,328874.0,,456,31,2022-01-29
 BE,Wallonia,Hainaut,370544.0,,583,42,2022-01-29
 BE,Brussels,Brussels,379073.0,,657,82,2022-01-29
 BE,Flanders,OostVlaanderen,400741.0,,382,41,2022-01-29
-BE,Flanders,Antwerpen,464520.0,,528,46,2022-01-29
+BE,Flanders,Antwerpen,464521.0,,528,46,2022-01-29
 BE,MISSING,MISSING,46758.0,,,,2022-01-30
 BE,Wallonia,Luxembourg,80681.0,,55,13,2022-01-30
 BE,Wallonia,BrabantWallon,121130.0,,63,5,2022-01-30
@@ -8406,7 +8406,7 @@ BE,Flanders,WestVlaanderen,330237.0,,474,33,2022-01-30
 BE,Wallonia,Hainaut,371539.0,,600,46,2022-01-30
 BE,Brussels,Brussels,380687.0,,658,82,2022-01-30
 BE,Flanders,OostVlaanderen,402551.0,,376,43,2022-01-30
-BE,Flanders,Antwerpen,467298.0,,533,45,2022-01-30
+BE,Flanders,Antwerpen,467299.0,,533,45,2022-01-30
 BE,MISSING,MISSING,47221.0,,,,2022-01-31
 BE,Wallonia,Luxembourg,82330.0,,58,12,2022-01-31
 BE,Wallonia,BrabantWallon,123111.0,,65,6,2022-01-31
@@ -8418,7 +8418,7 @@ BE,Flanders,WestVlaanderen,335323.0,,519,36,2022-01-31
 BE,Wallonia,Hainaut,377667.0,,628,53,2022-01-31
 BE,Brussels,Brussels,384785.0,,689,83,2022-01-31
 BE,Flanders,OostVlaanderen,409776.0,,406,48,2022-01-31
-BE,Flanders,Antwerpen,475055.0,,559,50,2022-01-31
+BE,Flanders,Antwerpen,475056.0,,559,50,2022-01-31
 BE,MISSING,MISSING,47597.0,,,,2022-02-01
 BE,Wallonia,Luxembourg,83845.0,,64,14,2022-02-01
 BE,Wallonia,BrabantWallon,124612.0,,69,6,2022-02-01
@@ -8430,7 +8430,7 @@ BE,Flanders,WestVlaanderen,338593.0,,543,34,2022-02-01
 BE,Wallonia,Hainaut,382753.0,,627,55,2022-02-01
 BE,Brussels,Brussels,387979.0,,691,86,2022-02-01
 BE,Flanders,OostVlaanderen,414222.0,,420,44,2022-02-01
-BE,Flanders,Antwerpen,480797.0,,560,52,2022-02-01
+BE,Flanders,Antwerpen,480798.0,,560,52,2022-02-01
 BE,MISSING,MISSING,47911.0,,,,2022-02-02
 BE,Wallonia,Luxembourg,85088.0,,68,13,2022-02-02
 BE,Wallonia,BrabantWallon,125843.0,,82,9,2022-02-02
@@ -8442,7 +8442,7 @@ BE,Flanders,WestVlaanderen,341354.0,,543,38,2022-02-02
 BE,Wallonia,Hainaut,386903.0,,619,56,2022-02-02
 BE,Brussels,Brussels,390683.0,,680,90,2022-02-02
 BE,Flanders,OostVlaanderen,418157.0,,419,44,2022-02-02
-BE,Flanders,Antwerpen,485621.0,,615,53,2022-02-02
+BE,Flanders,Antwerpen,485622.0,,615,53,2022-02-02
 BE,MISSING,MISSING,48207.0,,,,2022-02-03
 BE,Wallonia,Luxembourg,86103.0,,66,14,2022-02-03
 BE,Wallonia,BrabantWallon,126920.0,,81,7,2022-02-03
@@ -8454,7 +8454,7 @@ BE,Flanders,WestVlaanderen,343820.0,,534,35,2022-02-03
 BE,Wallonia,Hainaut,390291.0,,611,57,2022-02-03
 BE,Brussels,Brussels,393076.0,,698,91,2022-02-03
 BE,Flanders,OostVlaanderen,421383.0,,445,41,2022-02-03
-BE,Flanders,Antwerpen,489581.0,,620,50,2022-02-03
+BE,Flanders,Antwerpen,489582.0,,620,50,2022-02-03
 BE,MISSING,MISSING,48485.0,,,,2022-02-04
 BE,Wallonia,Luxembourg,86902.0,,62,12,2022-02-04
 BE,Wallonia,BrabantWallon,127804.0,,84,9,2022-02-04
@@ -8466,7 +8466,7 @@ BE,Flanders,WestVlaanderen,345954.0,,533,30,2022-02-04
 BE,Wallonia,Hainaut,393282.0,,652,62,2022-02-04
 BE,Brussels,Brussels,395027.0,,681,83,2022-02-04
 BE,Flanders,OostVlaanderen,424164.0,,480,44,2022-02-04
-BE,Flanders,Antwerpen,493022.0,,604,49,2022-02-04
+BE,Flanders,Antwerpen,493023.0,,604,49,2022-02-04
 BE,MISSING,MISSING,48694.0,,,,2022-02-05
 BE,Wallonia,Luxembourg,87334.0,,61,12,2022-02-05
 BE,Wallonia,BrabantWallon,128333.0,,81,9,2022-02-05
@@ -8478,7 +8478,7 @@ BE,Flanders,WestVlaanderen,347174.0,,496,26,2022-02-05
 BE,Wallonia,Hainaut,394766.0,,595,60,2022-02-05
 BE,Brussels,Brussels,396318.0,,652,75,2022-02-05
 BE,Flanders,OostVlaanderen,425683.0,,451,42,2022-02-05
-BE,Flanders,Antwerpen,494951.0,,558,53,2022-02-05
+BE,Flanders,Antwerpen,494952.0,,558,53,2022-02-05
 BE,MISSING,MISSING,48813.0,,,,2022-02-06
 BE,Wallonia,Luxembourg,87611.0,,58,13,2022-02-06
 BE,Wallonia,BrabantWallon,128483.0,,83,9,2022-02-06
@@ -8490,7 +8490,7 @@ BE,Flanders,WestVlaanderen,347931.0,,504,33,2022-02-06
 BE,Wallonia,Hainaut,395238.0,,603,63,2022-02-06
 BE,Brussels,Brussels,397147.0,,669,78,2022-02-06
 BE,Flanders,OostVlaanderen,426699.0,,472,42,2022-02-06
-BE,Flanders,Antwerpen,496569.0,,592,56,2022-02-06
+BE,Flanders,Antwerpen,496570.0,,592,56,2022-02-06
 BE,MISSING,MISSING,49136.0,,,,2022-02-07
 BE,Wallonia,Luxembourg,88519.0,,58,9,2022-02-07
 BE,Wallonia,BrabantWallon,129575.0,,87,9,2022-02-07
@@ -8502,7 +8502,7 @@ BE,Flanders,WestVlaanderen,350726.0,,535,32,2022-02-07
 BE,Wallonia,Hainaut,398396.0,,625,67,2022-02-07
 BE,Brussels,Brussels,399262.0,,704,83,2022-02-07
 BE,Flanders,OostVlaanderen,430567.0,,500,44,2022-02-07
-BE,Flanders,Antwerpen,501068.0,,615,59,2022-02-07
+BE,Flanders,Antwerpen,501069.0,,615,59,2022-02-07
 BE,MISSING,MISSING,49370.0,,,,2022-02-08
 BE,Wallonia,Luxembourg,89250.0,,56,12,2022-02-08
 BE,Wallonia,BrabantWallon,130381.0,,81,10,2022-02-08
@@ -8514,7 +8514,7 @@ BE,Flanders,WestVlaanderen,352455.0,,504,35,2022-02-08
 BE,Wallonia,Hainaut,400818.0,,611,62,2022-02-08
 BE,Brussels,Brussels,400923.0,,683,80,2022-02-08
 BE,Flanders,OostVlaanderen,433002.0,,504,42,2022-02-08
-BE,Flanders,Antwerpen,504207.0,,585,52,2022-02-08
+BE,Flanders,Antwerpen,504208.0,,585,52,2022-02-08
 BE,MISSING,MISSING,49582.0,,,,2022-02-09
 BE,Wallonia,Luxembourg,89812.0,,57,13,2022-02-09
 BE,Wallonia,BrabantWallon,130968.0,,74,10,2022-02-09
@@ -8526,7 +8526,7 @@ BE,Flanders,WestVlaanderen,354104.0,,473,36,2022-02-09
 BE,Brussels,Brussels,402261.0,,659,81,2022-02-09
 BE,Wallonia,Hainaut,402923.0,,585,57,2022-02-09
 BE,Flanders,OostVlaanderen,435260.0,,518,45,2022-02-09
-BE,Flanders,Antwerpen,507038.0,,569,54,2022-02-09
+BE,Flanders,Antwerpen,507039.0,,569,54,2022-02-09
 BE,MISSING,MISSING,49766.0,,,,2022-02-10
 BE,Wallonia,Luxembourg,90260.0,,62,13,2022-02-10
 BE,Wallonia,BrabantWallon,131553.0,,73,8,2022-02-10
@@ -8538,7 +8538,7 @@ BE,Flanders,WestVlaanderen,355504.0,,447,32,2022-02-10
 BE,Brussels,Brussels,403408.0,,647,73,2022-02-10
 BE,Wallonia,Hainaut,404607.0,,568,52,2022-02-10
 BE,Flanders,OostVlaanderen,437131.0,,505,46,2022-02-10
-BE,Flanders,Antwerpen,509470.0,,563,52,2022-02-10
+BE,Flanders,Antwerpen,509471.0,,563,52,2022-02-10
 BE,MISSING,MISSING,49909.0,,,,2022-02-11
 BE,Wallonia,Luxembourg,90653.0,,55,12,2022-02-11
 BE,Wallonia,BrabantWallon,132066.0,,63,10,2022-02-11
@@ -8550,7 +8550,7 @@ BE,Flanders,WestVlaanderen,356565.0,,421,29,2022-02-11
 BE,Brussels,Brussels,404460.0,,626,70,2022-02-11
 BE,Wallonia,Hainaut,406084.0,,569,51,2022-02-11
 BE,Flanders,OostVlaanderen,438635.0,,475,45,2022-02-11
-BE,Flanders,Antwerpen,511582.0,,567,54,2022-02-11
+BE,Flanders,Antwerpen,511583.0,,567,54,2022-02-11
 BE,MISSING,MISSING,50009.0,,,,2022-02-12
 BE,Wallonia,Luxembourg,90869.0,,56,13,2022-02-12
 BE,Wallonia,BrabantWallon,132318.0,,64,8,2022-02-12
@@ -8562,7 +8562,7 @@ BE,Flanders,WestVlaanderen,357248.0,,386,27,2022-02-12
 BE,Brussels,Brussels,405088.0,,575,71,2022-02-12
 BE,Wallonia,Hainaut,406827.0,,527,52,2022-02-12
 BE,Flanders,OostVlaanderen,439521.0,,466,48,2022-02-12
-BE,Flanders,Antwerpen,512834.0,,524,45,2022-02-12
+BE,Flanders,Antwerpen,512835.0,,524,45,2022-02-12
 BE,MISSING,MISSING,50083.0,,,,2022-02-13
 BE,Wallonia,Luxembourg,90990.0,,61,13,2022-02-13
 BE,Wallonia,BrabantWallon,132420.0,,62,8,2022-02-13
@@ -8574,7 +8574,7 @@ BE,Flanders,WestVlaanderen,357781.0,,385,23,2022-02-13
 BE,Brussels,Brussels,405496.0,,577,65,2022-02-13
 BE,Wallonia,Hainaut,407064.0,,543,53,2022-02-13
 BE,Flanders,OostVlaanderen,440237.0,,460,45,2022-02-13
-BE,Flanders,Antwerpen,514082.0,,529,45,2022-02-13
+BE,Flanders,Antwerpen,514083.0,,529,45,2022-02-13
 BE,MISSING,MISSING,50293.0,,,,2022-02-14
 BE,Wallonia,Luxembourg,91480.0,,61,10,2022-02-14
 BE,Wallonia,BrabantWallon,132983.0,,69,8,2022-02-14
@@ -8586,7 +8586,7 @@ BE,Flanders,WestVlaanderen,359392.0,,375,28,2022-02-14
 BE,Brussels,Brussels,406544.0,,544,67,2022-02-14
 BE,Wallonia,Hainaut,408611.0,,553,58,2022-02-14
 BE,Flanders,OostVlaanderen,442767.0,,465,45,2022-02-14
-BE,Flanders,Antwerpen,517240.0,,567,46,2022-02-14
+BE,Flanders,Antwerpen,517241.0,,567,46,2022-02-14
 BE,MISSING,MISSING,50448.0,,,,2022-02-15
 BE,Wallonia,Luxembourg,91798.0,,58,8,2022-02-15
 BE,Wallonia,BrabantWallon,133352.0,,66,8,2022-02-15
@@ -8598,7 +8598,7 @@ BE,Flanders,WestVlaanderen,360547.0,,361,26,2022-02-15
 BE,Brussels,Brussels,407356.0,,513,64,2022-02-15
 BE,Wallonia,Hainaut,409878.0,,548,47,2022-02-15
 BE,Flanders,OostVlaanderen,444290.0,,448,49,2022-02-15
-BE,Flanders,Antwerpen,519330.0,,541,45,2022-02-15
+BE,Flanders,Antwerpen,519331.0,,541,45,2022-02-15
 BE,MISSING,MISSING,50620.0,,,,2022-02-16
 BE,Wallonia,Luxembourg,92079.0,,55,9,2022-02-16
 BE,Wallonia,BrabantWallon,133731.0,,59,6,2022-02-16
@@ -8610,7 +8610,7 @@ BE,Flanders,WestVlaanderen,361543.0,,349,23,2022-02-16
 BE,Brussels,Brussels,408123.0,,497,74,2022-02-16
 BE,Wallonia,Hainaut,411059.0,,500,48,2022-02-16
 BE,Flanders,OostVlaanderen,445658.0,,439,46,2022-02-16
-BE,Flanders,Antwerpen,521395.0,,537,40,2022-02-16
+BE,Flanders,Antwerpen,521396.0,,537,40,2022-02-16
 BE,MISSING,MISSING,50734.0,,,,2022-02-17
 BE,Wallonia,Luxembourg,92342.0,,49,7,2022-02-17
 BE,Wallonia,BrabantWallon,134049.0,,57,7,2022-02-17
@@ -8622,7 +8622,7 @@ BE,Flanders,WestVlaanderen,362486.0,,322,25,2022-02-17
 BE,Brussels,Brussels,408809.0,,468,73,2022-02-17
 BE,Wallonia,Hainaut,411999.0,,504,46,2022-02-17
 BE,Flanders,OostVlaanderen,446921.0,,421,39,2022-02-17
-BE,Flanders,Antwerpen,523216.0,,532,39,2022-02-17
+BE,Flanders,Antwerpen,523217.0,,532,39,2022-02-17
 BE,MISSING,MISSING,50847.0,,,,2022-02-18
 BE,Wallonia,Luxembourg,92605.0,,56,6,2022-02-18
 BE,Wallonia,BrabantWallon,134330.0,,55,9,2022-02-18
@@ -8634,7 +8634,7 @@ BE,Flanders,WestVlaanderen,363220.0,,320,26,2022-02-18
 BE,Brussels,Brussels,409374.0,,437,70,2022-02-18
 BE,Wallonia,Hainaut,412909.0,,469,45,2022-02-18
 BE,Flanders,OostVlaanderen,447954.0,,403,33,2022-02-18
-BE,Flanders,Antwerpen,524613.0,,496,37,2022-02-18
+BE,Flanders,Antwerpen,524614.0,,496,37,2022-02-18
 BE,MISSING,MISSING,50918.0,,,,2022-02-19
 BE,Wallonia,Luxembourg,92737.0,,48,7,2022-02-19
 BE,Wallonia,BrabantWallon,134439.0,,49,7,2022-02-19
@@ -8646,7 +8646,7 @@ BE,Flanders,WestVlaanderen,363695.0,,278,23,2022-02-19
 BE,Brussels,Brussels,409745.0,,415,69,2022-02-19
 BE,Wallonia,Hainaut,413354.0,,422,41,2022-02-19
 BE,Flanders,OostVlaanderen,448587.0,,391,37,2022-02-19
-BE,Flanders,Antwerpen,525539.0,,485,40,2022-02-19
+BE,Flanders,Antwerpen,525540.0,,485,40,2022-02-19
 BE,MISSING,MISSING,50954.0,,,,2022-02-20
 BE,Wallonia,Luxembourg,92820.0,,49,7,2022-02-20
 BE,Wallonia,BrabantWallon,134480.0,,46,7,2022-02-20
@@ -8658,7 +8658,7 @@ BE,Flanders,WestVlaanderen,364066.0,,270,26,2022-02-20
 BE,Brussels,Brussels,409959.0,,401,65,2022-02-20
 BE,Wallonia,Hainaut,413522.0,,421,40,2022-02-20
 BE,Flanders,OostVlaanderen,448938.0,,389,39,2022-02-20
-BE,Flanders,Antwerpen,526393.0,,489,37,2022-02-20
+BE,Flanders,Antwerpen,526394.0,,489,37,2022-02-20
 BE,MISSING,MISSING,51076.0,,,,2022-02-21
 BE,Wallonia,Luxembourg,93124.0,,56,8,2022-02-21
 BE,Wallonia,BrabantWallon,134784.0,,46,7,2022-02-21
@@ -8670,7 +8670,7 @@ BE,Flanders,WestVlaanderen,365397.0,,295,26,2022-02-21
 BE,Brussels,Brussels,410637.0,,384,62,2022-02-21
 BE,Wallonia,Hainaut,414443.0,,446,50,2022-02-21
 BE,Flanders,OostVlaanderen,450591.0,,399,35,2022-02-21
-BE,Flanders,Antwerpen,528492.0,,492,36,2022-02-21
+BE,Flanders,Antwerpen,528493.0,,492,36,2022-02-21
 BE,MISSING,MISSING,51195.0,,,,2022-02-22
 BE,Wallonia,Luxembourg,93329.0,,48,5,2022-02-22
 BE,Wallonia,BrabantWallon,134986.0,,39,7,2022-02-22
@@ -8682,7 +8682,7 @@ BE,Flanders,WestVlaanderen,366334.0,,299,22,2022-02-22
 BE,Brussels,Brussels,411193.0,,354,52,2022-02-22
 BE,Wallonia,Hainaut,415147.0,,404,42,2022-02-22
 BE,Flanders,OostVlaanderen,451709.0,,358,32,2022-02-22
-BE,Flanders,Antwerpen,530093.0,,492,40,2022-02-22
+BE,Flanders,Antwerpen,530094.0,,492,40,2022-02-22
 BE,MISSING,MISSING,51296.0,,,,2022-02-23
 BE,Wallonia,Luxembourg,93551.0,,46,5,2022-02-23
 BE,Wallonia,BrabantWallon,135192.0,,45,7,2022-02-23
@@ -8694,7 +8694,7 @@ BE,Flanders,WestVlaanderen,367300.0,,292,23,2022-02-23
 BE,Brussels,Brussels,411724.0,,345,56,2022-02-23
 BE,Wallonia,Hainaut,415746.0,,373,34,2022-02-23
 BE,Flanders,OostVlaanderen,452808.0,,331,31,2022-02-23
-BE,Flanders,Antwerpen,531624.0,,503,42,2022-02-23
+BE,Flanders,Antwerpen,531625.0,,503,42,2022-02-23
 BE,MISSING,MISSING,51391.0,,,,2022-02-24
 BE,Wallonia,Luxembourg,93723.0,,36,3,2022-02-24
 BE,Wallonia,BrabantWallon,135373.0,,37,5,2022-02-24
@@ -8706,7 +8706,7 @@ BE,Flanders,WestVlaanderen,368089.0,,278,22,2022-02-24
 BE,Brussels,Brussels,412165.0,,321,50,2022-02-24
 BE,Wallonia,Hainaut,416244.0,,356,38,2022-02-24
 BE,Flanders,OostVlaanderen,453735.0,,326,29,2022-02-24
-BE,Flanders,Antwerpen,533113.0,,501,41,2022-02-24
+BE,Flanders,Antwerpen,533114.0,,501,41,2022-02-24
 BE,MISSING,MISSING,51472.0,,,,2022-02-25
 BE,Wallonia,Luxembourg,93892.0,,39,3,2022-02-25
 BE,Wallonia,BrabantWallon,135547.0,,30,5,2022-02-25
@@ -8718,7 +8718,7 @@ BE,Flanders,WestVlaanderen,368767.0,,274,23,2022-02-25
 BE,Brussels,Brussels,412526.0,,294,50,2022-02-25
 BE,Wallonia,Hainaut,416753.0,,347,33,2022-02-25
 BE,Flanders,OostVlaanderen,454524.0,,326,25,2022-02-25
-BE,Flanders,Antwerpen,534319.0,,490,36,2022-02-25
+BE,Flanders,Antwerpen,534320.0,,490,36,2022-02-25
 BE,MISSING,MISSING,51528.0,,,,2022-02-26
 BE,Wallonia,Luxembourg,93976.0,,34,3,2022-02-26
 BE,Wallonia,BrabantWallon,135627.0,,29,5,2022-02-26
@@ -8730,7 +8730,7 @@ BE,Flanders,WestVlaanderen,369161.0,,258,21,2022-02-26
 BE,Brussels,Brussels,412762.0,,271,44,2022-02-26
 BE,Wallonia,Hainaut,417011.0,,304,29,2022-02-26
 BE,Flanders,OostVlaanderen,455034.0,,297,18,2022-02-26
-BE,Flanders,Antwerpen,535053.0,,458,37,2022-02-26
+BE,Flanders,Antwerpen,535054.0,,458,37,2022-02-26
 BE,MISSING,MISSING,51560.0,,,,2022-02-27
 BE,Wallonia,Luxembourg,94023.0,,34,3,2022-02-27
 BE,Wallonia,BrabantWallon,135666.0,,28,5,2022-02-27
@@ -8742,7 +8742,7 @@ BE,Flanders,WestVlaanderen,369441.0,,263,24,2022-02-27
 BE,Brussels,Brussels,412949.0,,279,46,2022-02-27
 BE,Wallonia,Hainaut,417110.0,,299,32,2022-02-27
 BE,Flanders,OostVlaanderen,455376.0,,289,17,2022-02-27
-BE,Flanders,Antwerpen,535683.0,,447,35,2022-02-27
+BE,Flanders,Antwerpen,535684.0,,447,35,2022-02-27
 BE,MISSING,MISSING,51670.0,,,,2022-02-28
 BE,Wallonia,Luxembourg,94193.0,,38,4,2022-02-28
 BE,Wallonia,BrabantWallon,135855.0,,30,6,2022-02-28
@@ -8754,7 +8754,7 @@ BE,Flanders,WestVlaanderen,370467.0,,285,23,2022-02-28
 BE,Brussels,Brussels,413409.0,,275,43,2022-02-28
 BE,Wallonia,Hainaut,417564.0,,295,32,2022-02-28
 BE,Flanders,OostVlaanderen,456805.0,,304,16,2022-02-28
-BE,Flanders,Antwerpen,537518.0,,417,35,2022-02-28
+BE,Flanders,Antwerpen,537519.0,,417,35,2022-02-28
 BE,MISSING,MISSING,51772.0,,,,2022-03-01
 BE,Wallonia,Luxembourg,94326.0,,38,5,2022-03-01
 BE,Wallonia,BrabantWallon,135995.0,,22,5,2022-03-01
@@ -8766,7 +8766,7 @@ BE,Flanders,WestVlaanderen,371295.0,,264,23,2022-03-01
 BE,Brussels,Brussels,413859.0,,249,38,2022-03-01
 BE,Wallonia,Hainaut,417982.0,,284,32,2022-03-01
 BE,Flanders,OostVlaanderen,457924.0,,300,17,2022-03-01
-BE,Flanders,Antwerpen,539085.0,,396,33,2022-03-01
+BE,Flanders,Antwerpen,539086.0,,396,33,2022-03-01
 BE,MISSING,MISSING,51867.0,,,,2022-03-02
 BE,Wallonia,Luxembourg,94495.0,,31,6,2022-03-02
 BE,Wallonia,BrabantWallon,136141.0,,20,5,2022-03-02
@@ -8778,7 +8778,7 @@ BE,Flanders,WestVlaanderen,372138.0,,251,18,2022-03-02
 BE,Brussels,Brussels,414388.0,,251,33,2022-03-02
 BE,Wallonia,Hainaut,418393.0,,275,31,2022-03-02
 BE,Flanders,OostVlaanderen,459124.0,,290,19,2022-03-02
-BE,Flanders,Antwerpen,540894.0,,413,34,2022-03-02
+BE,Flanders,Antwerpen,540895.0,,413,34,2022-03-02
 BE,MISSING,MISSING,51962.0,,,,2022-03-03
 BE,Wallonia,Luxembourg,94653.0,,27,6,2022-03-03
 BE,Wallonia,BrabantWallon,136286.0,,19,4,2022-03-03
@@ -8790,7 +8790,7 @@ BE,Flanders,WestVlaanderen,372981.0,,272,23,2022-03-03
 BE,Brussels,Brussels,414784.0,,246,35,2022-03-03
 BE,Wallonia,Hainaut,418781.0,,276,31,2022-03-03
 BE,Flanders,OostVlaanderen,460295.0,,287,20,2022-03-03
-BE,Flanders,Antwerpen,542612.0,,392,36,2022-03-03
+BE,Flanders,Antwerpen,542613.0,,392,36,2022-03-03
 BE,MISSING,MISSING,52059.0,,,,2022-03-04
 BE,Wallonia,Luxembourg,94766.0,,21,5,2022-03-04
 BE,Wallonia,BrabantWallon,136428.0,,20,5,2022-03-04
@@ -8802,7 +8802,7 @@ BE,Flanders,WestVlaanderen,373835.0,,254,20,2022-03-04
 BE,Brussels,Brussels,415222.0,,245,38,2022-03-04
 BE,Wallonia,Hainaut,419185.0,,261,27,2022-03-04
 BE,Flanders,OostVlaanderen,461449.0,,292,22,2022-03-04
-BE,Flanders,Antwerpen,544230.0,,380,32,2022-03-04
+BE,Flanders,Antwerpen,544231.0,,380,32,2022-03-04
 BE,MISSING,MISSING,52107.0,,,,2022-03-05
 BE,Wallonia,Luxembourg,94840.0,,24,4,2022-03-05
 BE,Wallonia,BrabantWallon,136501.0,,16,5,2022-03-05
@@ -8814,7 +8814,7 @@ BE,Flanders,WestVlaanderen,374327.0,,244,20,2022-03-05
 BE,Brussels,Brussels,415465.0,,234,38,2022-03-05
 BE,Wallonia,Hainaut,419423.0,,228,31,2022-03-05
 BE,Flanders,OostVlaanderen,462108.0,,283,21,2022-03-05
-BE,Flanders,Antwerpen,545294.0,,366,34,2022-03-05
+BE,Flanders,Antwerpen,545295.0,,366,34,2022-03-05
 BE,MISSING,MISSING,52155.0,,,,2022-03-06
 BE,Wallonia,Luxembourg,94895.0,,25,4,2022-03-06
 BE,Wallonia,BrabantWallon,136533.0,,16,5,2022-03-06
@@ -8826,7 +8826,7 @@ BE,Flanders,WestVlaanderen,374723.0,,256,20,2022-03-06
 BE,Brussels,Brussels,415654.0,,228,36,2022-03-06
 BE,Wallonia,Hainaut,419525.0,,241,27,2022-03-06
 BE,Flanders,OostVlaanderen,462716.0,,285,18,2022-03-06
-BE,Flanders,Antwerpen,546364.0,,370,35,2022-03-06
+BE,Flanders,Antwerpen,546365.0,,370,35,2022-03-06
 BE,MISSING,MISSING,52274.0,,,,2022-03-07
 BE,Wallonia,Luxembourg,95087.0,,22,4,2022-03-07
 BE,Wallonia,BrabantWallon,136769.0,,18,5,2022-03-07
@@ -8838,7 +8838,7 @@ BE,Flanders,WestVlaanderen,376121.0,,270,22,2022-03-07
 BE,Brussels,Brussels,416191.0,,221,34,2022-03-07
 BE,Wallonia,Hainaut,420032.0,,240,26,2022-03-07
 BE,Flanders,OostVlaanderen,464973.0,,300,17,2022-03-07
-BE,Flanders,Antwerpen,549482.0,,412,36,2022-03-07
+BE,Flanders,Antwerpen,549483.0,,412,36,2022-03-07
 BE,MISSING,MISSING,52352.0,,,,2022-03-08
 BE,Wallonia,Luxembourg,95264.0,,21,3,2022-03-08
 BE,Wallonia,BrabantWallon,136922.0,,16,5,2022-03-08
@@ -8850,7 +8850,7 @@ BE,Flanders,WestVlaanderen,377053.0,,252,22,2022-03-08
 BE,Brussels,Brussels,416674.0,,216,34,2022-03-08
 BE,Wallonia,Hainaut,420476.0,,221,26,2022-03-08
 BE,Flanders,OostVlaanderen,466530.0,,313,17,2022-03-08
-BE,Flanders,Antwerpen,551791.0,,410,34,2022-03-08
+BE,Flanders,Antwerpen,551792.0,,410,34,2022-03-08
 BE,MISSING,MISSING,52454.0,,,,2022-03-09
 BE,Wallonia,Luxembourg,95415.0,,18,3,2022-03-09
 BE,Wallonia,BrabantWallon,137082.0,,13,5,2022-03-09
@@ -8862,7 +8862,7 @@ BE,Flanders,WestVlaanderen,378134.0,,249,18,2022-03-09
 BE,Brussels,Brussels,417211.0,,228,36,2022-03-09
 BE,Wallonia,Hainaut,420883.0,,217,22,2022-03-09
 BE,Flanders,OostVlaanderen,468129.0,,305,18,2022-03-09
-BE,Flanders,Antwerpen,554333.0,,412,34,2022-03-09
+BE,Flanders,Antwerpen,554334.0,,412,34,2022-03-09
 BE,MISSING,MISSING,52538.0,,,,2022-03-10
 BE,Wallonia,Luxembourg,95569.0,,14,2,2022-03-10
 BE,Wallonia,BrabantWallon,137191.0,,15,5,2022-03-10
@@ -8874,7 +8874,7 @@ BE,Flanders,WestVlaanderen,379135.0,,252,18,2022-03-10
 BE,Brussels,Brussels,417690.0,,208,36,2022-03-10
 BE,Wallonia,Hainaut,421260.0,,217,21,2022-03-10
 BE,Flanders,OostVlaanderen,469643.0,,296,18,2022-03-10
-BE,Flanders,Antwerpen,556716.0,,410,34,2022-03-10
+BE,Flanders,Antwerpen,556717.0,,410,34,2022-03-10
 BE,MISSING,MISSING,52621.0,,,,2022-03-11
 BE,Wallonia,Luxembourg,95709.0,,15,2,2022-03-11
 BE,Wallonia,BrabantWallon,137342.0,,13,6,2022-03-11
@@ -8886,7 +8886,7 @@ BE,Flanders,WestVlaanderen,380163.0,,246,17,2022-03-11
 BE,Brussels,Brussels,418133.0,,189,34,2022-03-11
 BE,Wallonia,Hainaut,421682.0,,206,15,2022-03-11
 BE,Flanders,OostVlaanderen,471193.0,,306,16,2022-03-11
-BE,Flanders,Antwerpen,558870.0,,393,28,2022-03-11
+BE,Flanders,Antwerpen,558871.0,,393,28,2022-03-11
 BE,MISSING,MISSING,52684.0,,,,2022-03-12
 BE,Wallonia,Luxembourg,95821.0,,14,3,2022-03-12
 BE,Wallonia,BrabantWallon,137450.0,,14,4,2022-03-12
@@ -8898,7 +8898,7 @@ BE,Flanders,WestVlaanderen,380779.0,,252,17,2022-03-12
 BE,Brussels,Brussels,418463.0,,184,35,2022-03-12
 BE,Wallonia,Hainaut,421933.0,,201,15,2022-03-12
 BE,Flanders,OostVlaanderen,471980.0,,300,17,2022-03-12
-BE,Flanders,Antwerpen,560217.0,,407,25,2022-03-12
+BE,Flanders,Antwerpen,560218.0,,407,25,2022-03-12
 BE,MISSING,MISSING,52723.0,,,,2022-03-13
 BE,Wallonia,Luxembourg,95884.0,,18,3,2022-03-13
 BE,Wallonia,BrabantWallon,137502.0,,17,4,2022-03-13
@@ -8910,7 +8910,7 @@ BE,Flanders,WestVlaanderen,381254.0,,261,16,2022-03-13
 BE,Brussels,Brussels,418682.0,,190,32,2022-03-13
 BE,Wallonia,Hainaut,422055.0,,202,16,2022-03-13
 BE,Flanders,OostVlaanderen,472585.0,,315,16,2022-03-13
-BE,Flanders,Antwerpen,561514.0,,415,28,2022-03-13
+BE,Flanders,Antwerpen,561515.0,,415,28,2022-03-13
 BE,MISSING,MISSING,52822.0,,,,2022-03-14
 BE,Wallonia,Luxembourg,96156.0,,18,3,2022-03-14
 BE,Wallonia,BrabantWallon,137801.0,,16,4,2022-03-14
@@ -8922,7 +8922,7 @@ BE,Flanders,WestVlaanderen,383192.0,,283,18,2022-03-14
 BE,Brussels,Brussels,419482.0,,199,33,2022-03-14
 BE,Wallonia,Hainaut,422723.0,,218,15,2022-03-14
 BE,Flanders,OostVlaanderen,475457.0,,350,18,2022-03-14
-BE,Flanders,Antwerpen,565719.0,,447,27,2022-03-14
+BE,Flanders,Antwerpen,565720.0,,447,27,2022-03-14
 BE,MISSING,MISSING,52925.0,,,,2022-03-15
 BE,Wallonia,Luxembourg,96427.0,,21,4,2022-03-15
 BE,Wallonia,BrabantWallon,138041.0,,11,4,2022-03-15
@@ -8934,7 +8934,7 @@ BE,Flanders,WestVlaanderen,384612.0,,293,19,2022-03-15
 BE,Brussels,Brussels,420188.0,,187,30,2022-03-15
 BE,Wallonia,Hainaut,423351.0,,231,14,2022-03-15
 BE,Flanders,OostVlaanderen,477514.0,,373,21,2022-03-15
-BE,Flanders,Antwerpen,569013.0,,468,26,2022-03-15
+BE,Flanders,Antwerpen,569014.0,,468,26,2022-03-15
 BE,MISSING,MISSING,53033.0,,,,2022-03-16
 BE,Wallonia,Luxembourg,96746.0,,20,4,2022-03-16
 BE,Wallonia,BrabantWallon,138314.0,,13,4,2022-03-16
@@ -8946,7 +8946,7 @@ BE,Flanders,WestVlaanderen,385994.0,,286,18,2022-03-16
 BE,Brussels,Brussels,420947.0,,183,28,2022-03-16
 BE,Wallonia,Hainaut,423977.0,,218,17,2022-03-16
 BE,Flanders,OostVlaanderen,479620.0,,390,23,2022-03-16
-BE,Flanders,Antwerpen,572128.0,,511,30,2022-03-16
+BE,Flanders,Antwerpen,572129.0,,511,30,2022-03-16
 BE,MISSING,MISSING,53105.0,,,,2022-03-17
 BE,Wallonia,Luxembourg,97052.0,,20,5,2022-03-17
 BE,Wallonia,BrabantWallon,138540.0,,14,5,2022-03-17
@@ -8958,7 +8958,7 @@ BE,Flanders,WestVlaanderen,387392.0,,307,17,2022-03-17
 BE,Brussels,Brussels,421543.0,,194,27,2022-03-17
 BE,Wallonia,Hainaut,424507.0,,215,14,2022-03-17
 BE,Flanders,OostVlaanderen,481467.0,,398,27,2022-03-17
-BE,Flanders,Antwerpen,574946.0,,488,28,2022-03-17
+BE,Flanders,Antwerpen,574947.0,,488,28,2022-03-17
 BE,MISSING,MISSING,53185.0,,,,2022-03-18
 BE,Wallonia,Luxembourg,97272.0,,17,4,2022-03-18
 BE,Wallonia,BrabantWallon,138767.0,,15,4,2022-03-18
@@ -8970,7 +8970,7 @@ BE,Flanders,WestVlaanderen,388530.0,,318,17,2022-03-18
 BE,Brussels,Brussels,422081.0,,204,26,2022-03-18
 BE,Wallonia,Hainaut,425083.0,,218,17,2022-03-18
 BE,Flanders,OostVlaanderen,483257.0,,394,26,2022-03-18
-BE,Flanders,Antwerpen,577379.0,,480,32,2022-03-18
+BE,Flanders,Antwerpen,577380.0,,480,32,2022-03-18
 BE,MISSING,MISSING,53236.0,,,,2022-03-19
 BE,Wallonia,Luxembourg,97431.0,,13,3,2022-03-19
 BE,Wallonia,BrabantWallon,138871.0,,13,4,2022-03-19
@@ -8982,7 +8982,7 @@ BE,Flanders,WestVlaanderen,389159.0,,297,12,2022-03-19
 BE,Brussels,Brussels,422419.0,,198,24,2022-03-19
 BE,Wallonia,Hainaut,425356.0,,202,19,2022-03-19
 BE,Flanders,OostVlaanderen,484216.0,,403,25,2022-03-19
-BE,Flanders,Antwerpen,578877.0,,491,35,2022-03-19
+BE,Flanders,Antwerpen,578878.0,,491,35,2022-03-19
 BE,MISSING,MISSING,53271.0,,,,2022-03-20
 BE,Wallonia,Luxembourg,97540.0,,17,3,2022-03-20
 BE,Wallonia,BrabantWallon,138914.0,,12,3,2022-03-20
@@ -8994,7 +8994,7 @@ BE,Flanders,WestVlaanderen,389661.0,,328,15,2022-03-20
 BE,Brussels,Brussels,422634.0,,201,23,2022-03-20
 BE,Wallonia,Hainaut,425456.0,,210,21,2022-03-20
 BE,Flanders,OostVlaanderen,484930.0,,418,22,2022-03-20
-BE,Flanders,Antwerpen,580132.0,,505,36,2022-03-20
+BE,Flanders,Antwerpen,580133.0,,505,36,2022-03-20
 BE,MISSING,MISSING,53387.0,,,,2022-03-21
 BE,Wallonia,Luxembourg,97927.0,,29,3,2022-03-21
 BE,Wallonia,BrabantWallon,139282.0,,11,3,2022-03-21
@@ -9006,7 +9006,7 @@ BE,Flanders,WestVlaanderen,391843.0,,347,18,2022-03-21
 BE,Brussels,Brussels,423534.0,,211,25,2022-03-21
 BE,Wallonia,Hainaut,426258.0,,215,19,2022-03-21
 BE,Flanders,OostVlaanderen,488340.0,,441,23,2022-03-21
-BE,Flanders,Antwerpen,584807.0,,527,36,2022-03-21
+BE,Flanders,Antwerpen,584808.0,,527,36,2022-03-21
 BE,MISSING,MISSING,53497.0,,,,2022-03-22
 BE,Wallonia,Luxembourg,98279.0,,25,3,2022-03-22
 BE,Wallonia,BrabantWallon,139564.0,,13,3,2022-03-22
@@ -9018,7 +9018,7 @@ BE,Flanders,WestVlaanderen,393476.0,,349,20,2022-03-22
 BE,Brussels,Brussels,424337.0,,211,24,2022-03-22
 BE,Wallonia,Hainaut,426998.0,,216,18,2022-03-22
 BE,Flanders,OostVlaanderen,490647.0,,460,28,2022-03-22
-BE,Flanders,Antwerpen,588051.0,,574,37,2022-03-22
+BE,Flanders,Antwerpen,588052.0,,574,37,2022-03-22
 BE,MISSING,MISSING,53590.0,,,,2022-03-23
 BE,Wallonia,Luxembourg,98656.0,,31,4,2022-03-23
 BE,Wallonia,BrabantWallon,139872.0,,15,2,2022-03-23
@@ -9030,7 +9030,7 @@ BE,Flanders,WestVlaanderen,395177.0,,385,25,2022-03-23
 BE,Brussels,Brussels,425119.0,,212,22,2022-03-23
 BE,Wallonia,Hainaut,427678.0,,213,17,2022-03-23
 BE,Flanders,OostVlaanderen,493087.0,,482,24,2022-03-23
-BE,Flanders,Antwerpen,591499.0,,578,30,2022-03-23
+BE,Flanders,Antwerpen,591500.0,,578,30,2022-03-23
 BE,MISSING,MISSING,53689.0,,,,2022-03-24
 BE,Wallonia,Luxembourg,99012.0,,38,4,2022-03-24
 BE,Wallonia,BrabantWallon,140148.0,,15,2,2022-03-24
@@ -9042,7 +9042,7 @@ BE,Flanders,WestVlaanderen,396666.0,,418,26,2022-03-24
 BE,Brussels,Brussels,425898.0,,216,23,2022-03-24
 BE,Wallonia,Hainaut,428276.0,,214,14,2022-03-24
 BE,Flanders,OostVlaanderen,495261.0,,487,25,2022-03-24
-BE,Flanders,Antwerpen,594585.0,,578,26,2022-03-24
+BE,Flanders,Antwerpen,594586.0,,578,26,2022-03-24
 BE,MISSING,MISSING,53768.0,,,,2022-03-25
 BE,Wallonia,Luxembourg,99316.0,,37,3,2022-03-25
 BE,Wallonia,BrabantWallon,140421.0,,13,2,2022-03-25
@@ -9054,7 +9054,7 @@ BE,Flanders,WestVlaanderen,398065.0,,402,26,2022-03-25
 BE,Brussels,Brussels,426608.0,,223,24,2022-03-25
 BE,Wallonia,Hainaut,428924.0,,217,14,2022-03-25
 BE,Flanders,OostVlaanderen,497167.0,,495,23,2022-03-25
-BE,Flanders,Antwerpen,597152.0,,593,23,2022-03-25
+BE,Flanders,Antwerpen,597153.0,,593,23,2022-03-25
 BE,MISSING,MISSING,53827.0,,,,2022-03-26
 BE,Wallonia,Luxembourg,99496.0,,36,3,2022-03-26
 BE,Wallonia,BrabantWallon,140544.0,,16,2,2022-03-26
@@ -9066,7 +9066,7 @@ BE,Flanders,WestVlaanderen,398797.0,,395,23,2022-03-26
 BE,Brussels,Brussels,427034.0,,208,25,2022-03-26
 BE,Wallonia,Hainaut,429242.0,,204,15,2022-03-26
 BE,Flanders,OostVlaanderen,498184.0,,466,26,2022-03-26
-BE,Flanders,Antwerpen,598559.0,,578,24,2022-03-26
+BE,Flanders,Antwerpen,598560.0,,578,24,2022-03-26
 BE,MISSING,MISSING,53872.0,,,,2022-03-27
 BE,Wallonia,Luxembourg,99590.0,,36,3,2022-03-27
 BE,Wallonia,BrabantWallon,140611.0,,16,2,2022-03-27
@@ -9078,7 +9078,7 @@ BE,Flanders,WestVlaanderen,399246.0,,429,22,2022-03-27
 BE,Brussels,Brussels,427277.0,,229,25,2022-03-27
 BE,Wallonia,Hainaut,429373.0,,203,14,2022-03-27
 BE,Flanders,OostVlaanderen,498812.0,,488,26,2022-03-27
-BE,Flanders,Antwerpen,599573.0,,584,26,2022-03-27
+BE,Flanders,Antwerpen,599574.0,,584,26,2022-03-27
 BE,MISSING,MISSING,53986.0,,,,2022-03-28
 BE,Wallonia,Luxembourg,99971.0,,35,3,2022-03-28
 BE,Wallonia,BrabantWallon,141007.0,,18,2,2022-03-28
@@ -9090,7 +9090,7 @@ BE,Flanders,WestVlaanderen,401584.0,,459,26,2022-03-28
 BE,Brussels,Brussels,428285.0,,243,26,2022-03-28
 BE,Wallonia,Hainaut,430207.0,,221,14,2022-03-28
 BE,Flanders,OostVlaanderen,502015.0,,534,29,2022-03-28
-BE,Flanders,Antwerpen,603953.0,,600,26,2022-03-28
+BE,Flanders,Antwerpen,603954.0,,600,26,2022-03-28
 BE,MISSING,MISSING,54100.0,,,,2022-03-29
 BE,Wallonia,Luxembourg,100310.0,,37,1,2022-03-29
 BE,Wallonia,BrabantWallon,141344.0,,22,2,2022-03-29
@@ -9102,7 +9102,7 @@ BE,Flanders,WestVlaanderen,403129.0,,497,25,2022-03-29
 BE,Brussels,Brussels,429167.0,,241,30,2022-03-29
 BE,Wallonia,Hainaut,431012.0,,236,14,2022-03-29
 BE,Flanders,OostVlaanderen,504178.0,,514,21,2022-03-29
-BE,Flanders,Antwerpen,606912.0,,565,34,2022-03-29
+BE,Flanders,Antwerpen,606913.0,,565,34,2022-03-29
 BE,MISSING,MISSING,54193.0,,,,2022-03-30
 BE,Wallonia,Luxembourg,100621.0,,47,1,2022-03-30
 BE,Wallonia,BrabantWallon,141708.0,,24,2,2022-03-30
@@ -9114,7 +9114,7 @@ BE,Flanders,WestVlaanderen,404711.0,,485,23,2022-03-30
 BE,Brussels,Brussels,429991.0,,230,26,2022-03-30
 BE,Wallonia,Hainaut,431756.0,,236,15,2022-03-30
 BE,Flanders,OostVlaanderen,506228.0,,530,22,2022-03-30
-BE,Flanders,Antwerpen,609476.0,,560,32,2022-03-30
+BE,Flanders,Antwerpen,609477.0,,560,32,2022-03-30
 BE,MISSING,MISSING,54285.0,,,,2022-03-31
 BE,Wallonia,Luxembourg,100890.0,,45,1,2022-03-31
 BE,Wallonia,BrabantWallon,142010.0,,28,2,2022-03-31
@@ -9126,7 +9126,7 @@ BE,Flanders,WestVlaanderen,406113.0,,493,25,2022-03-31
 BE,Brussels,Brussels,430715.0,,247,24,2022-03-31
 BE,Wallonia,Hainaut,432418.0,,260,18,2022-03-31
 BE,Flanders,OostVlaanderen,508170.0,,540,32,2022-03-31
-BE,Flanders,Antwerpen,611825.0,,581,30,2022-03-31
+BE,Flanders,Antwerpen,611826.0,,581,30,2022-03-31
 BE,MISSING,MISSING,54357.0,,,,2022-04-01
 BE,Wallonia,Luxembourg,101118.0,,45,1,2022-04-01
 BE,Wallonia,BrabantWallon,142321.0,,35,3,2022-04-01
@@ -9138,7 +9138,7 @@ BE,Flanders,WestVlaanderen,407181.0,,495,27,2022-04-01
 BE,Brussels,Brussels,431328.0,,246,24,2022-04-01
 BE,Wallonia,Hainaut,433007.0,,269,17,2022-04-01
 BE,Flanders,OostVlaanderen,509814.0,,532,26,2022-04-01
-BE,Flanders,Antwerpen,613691.0,,598,34,2022-04-01
+BE,Flanders,Antwerpen,613692.0,,598,34,2022-04-01
 BE,MISSING,MISSING,54400.0,,,,2022-04-02
 BE,Wallonia,Luxembourg,101239.0,,44,4,2022-04-02
 BE,Wallonia,BrabantWallon,142514.0,,31,2,2022-04-02
@@ -9150,7 +9150,7 @@ BE,Flanders,WestVlaanderen,407901.0,,463,26,2022-04-02
 BE,Brussels,Brussels,431715.0,,252,25,2022-04-02
 BE,Wallonia,Hainaut,433353.0,,268,16,2022-04-02
 BE,Flanders,OostVlaanderen,510704.0,,494,18,2022-04-02
-BE,Flanders,Antwerpen,614743.0,,554,34,2022-04-02
+BE,Flanders,Antwerpen,614744.0,,554,34,2022-04-02
 BE,MISSING,MISSING,54430.0,,,,2022-04-03
 BE,Wallonia,Luxembourg,101309.0,,54,3,2022-04-03
 BE,Wallonia,BrabantWallon,142579.0,,39,2,2022-04-03
@@ -9162,7 +9162,7 @@ BE,Flanders,WestVlaanderen,408343.0,,496,31,2022-04-03
 BE,Brussels,Brussels,431977.0,,244,26,2022-04-03
 BE,Wallonia,Hainaut,433494.0,,277,17,2022-04-03
 BE,Flanders,OostVlaanderen,511144.0,,507,17,2022-04-03
-BE,Flanders,Antwerpen,615605.0,,578,32,2022-04-03
+BE,Flanders,Antwerpen,615606.0,,578,32,2022-04-03
 BE,MISSING,MISSING,54545.0,,,,2022-04-04
 BE,Wallonia,Luxembourg,101569.0,,59,3,2022-04-04
 BE,Wallonia,BrabantWallon,142935.0,,42,3,2022-04-04
@@ -9174,7 +9174,7 @@ BE,Flanders,WestVlaanderen,410295.0,,495,31,2022-04-04
 BE,Brussels,Brussels,432862.0,,263,26,2022-04-04
 BE,Wallonia,Hainaut,434435.0,,291,17,2022-04-04
 BE,Flanders,OostVlaanderen,513907.0,,545,19,2022-04-04
-BE,Flanders,Antwerpen,618754.0,,591,31,2022-04-04
+BE,Flanders,Antwerpen,618755.0,,591,31,2022-04-04
 BE,MISSING,MISSING,54643.0,,,,2022-04-05
 BE,Wallonia,Luxembourg,101820.0,,55,5,2022-04-05
 BE,Wallonia,BrabantWallon,143243.0,,48,3,2022-04-05
@@ -9186,7 +9186,7 @@ BE,Flanders,WestVlaanderen,411727.0,,467,28,2022-04-05
 BE,Brussels,Brussels,433598.0,,263,27,2022-04-05
 BE,Wallonia,Hainaut,435227.0,,300,17,2022-04-05
 BE,Flanders,OostVlaanderen,515845.0,,503,24,2022-04-05
-BE,Flanders,Antwerpen,620982.0,,583,31,2022-04-05
+BE,Flanders,Antwerpen,620983.0,,583,31,2022-04-05
 BE,MISSING,MISSING,54729.0,,,,2022-04-06
 BE,Wallonia,Luxembourg,102041.0,,45,5,2022-04-06
 BE,Wallonia,BrabantWallon,143595.0,,52,3,2022-04-06
@@ -9198,7 +9198,7 @@ BE,Flanders,WestVlaanderen,413156.0,,458,27,2022-04-06
 BE,Brussels,Brussels,434379.0,,290,25,2022-04-06
 BE,Wallonia,Hainaut,436129.0,,296,15,2022-04-06
 BE,Flanders,OostVlaanderen,517685.0,,499,18,2022-04-06
-BE,Flanders,Antwerpen,623181.0,,549,33,2022-04-06
+BE,Flanders,Antwerpen,623182.0,,549,33,2022-04-06
 BE,MISSING,MISSING,54796.0,,,,2022-04-07
 BE,Wallonia,Luxembourg,102289.0,,40,6,2022-04-07
 BE,Wallonia,BrabantWallon,143940.0,,48,2,2022-04-07
@@ -9210,7 +9210,7 @@ BE,Flanders,WestVlaanderen,414351.0,,497,31,2022-04-07
 BE,Brussels,Brussels,435062.0,,279,26,2022-04-07
 BE,Wallonia,Hainaut,436940.0,,310,17,2022-04-07
 BE,Flanders,OostVlaanderen,519386.0,,516,15,2022-04-07
-BE,Flanders,Antwerpen,625159.0,,563,32,2022-04-07
+BE,Flanders,Antwerpen,625160.0,,563,32,2022-04-07
 BE,MISSING,MISSING,54874.0,,,,2022-04-08
 BE,Wallonia,Luxembourg,102499.0,,42,6,2022-04-08
 BE,Wallonia,BrabantWallon,144282.0,,57,2,2022-04-08
@@ -9222,7 +9222,7 @@ BE,Flanders,WestVlaanderen,415463.0,,484,28,2022-04-08
 BE,Brussels,Brussels,435707.0,,284,22,2022-04-08
 BE,Wallonia,Hainaut,437685.0,,309,13,2022-04-08
 BE,Flanders,OostVlaanderen,520911.0,,529,19,2022-04-08
-BE,Flanders,Antwerpen,626893.0,,583,38,2022-04-08
+BE,Flanders,Antwerpen,626894.0,,583,38,2022-04-08
 BE,MISSING,MISSING,54924.0,,,,2022-04-09
 BE,Wallonia,Luxembourg,102619.0,,38,5,2022-04-09
 BE,Wallonia,BrabantWallon,144454.0,,60,2,2022-04-09
@@ -9234,7 +9234,7 @@ BE,Flanders,WestVlaanderen,416028.0,,440,31,2022-04-09
 BE,Brussels,Brussels,436085.0,,274,24,2022-04-09
 BE,Wallonia,Hainaut,438096.0,,316,14,2022-04-09
 BE,Flanders,OostVlaanderen,521650.0,,515,25,2022-04-09
-BE,Flanders,Antwerpen,627773.0,,556,33,2022-04-09
+BE,Flanders,Antwerpen,627774.0,,556,33,2022-04-09
 BE,MISSING,MISSING,54949.0,,,,2022-04-10
 BE,Wallonia,Luxembourg,102697.0,,38,5,2022-04-10
 BE,Wallonia,BrabantWallon,144520.0,,59,2,2022-04-10
@@ -9246,7 +9246,7 @@ BE,Flanders,WestVlaanderen,416332.0,,449,24,2022-04-10
 BE,Brussels,Brussels,436289.0,,280,24,2022-04-10
 BE,Wallonia,Hainaut,438268.0,,307,15,2022-04-10
 BE,Flanders,OostVlaanderen,522050.0,,522,22,2022-04-10
-BE,Flanders,Antwerpen,628407.0,,560,34,2022-04-10
+BE,Flanders,Antwerpen,628408.0,,560,34,2022-04-10
 BE,MISSING,MISSING,55027.0,,,,2022-04-11
 BE,Wallonia,Luxembourg,102934.0,,43,4,2022-04-11
 BE,Wallonia,BrabantWallon,144898.0,,61,2,2022-04-11
@@ -9258,7 +9258,7 @@ BE,Flanders,WestVlaanderen,417969.0,,473,26,2022-04-11
 BE,Brussels,Brussels,437044.0,,301,24,2022-04-11
 BE,Wallonia,Hainaut,439302.0,,340,21,2022-04-11
 BE,Flanders,OostVlaanderen,524323.0,,549,27,2022-04-11
-BE,Flanders,Antwerpen,630947.0,,539,36,2022-04-11
+BE,Flanders,Antwerpen,630948.0,,539,36,2022-04-11
 BE,MISSING,MISSING,55096.0,,,,2022-04-12
 BE,Wallonia,Luxembourg,103234.0,,43,3,2022-04-12
 BE,Wallonia,BrabantWallon,145259.0,,62,4,2022-04-12
@@ -9270,7 +9270,7 @@ BE,Flanders,WestVlaanderen,419034.0,,447,21,2022-04-12
 BE,Brussels,Brussels,437699.0,,317,28,2022-04-12
 BE,Wallonia,Hainaut,440219.0,,339,24,2022-04-12
 BE,Flanders,OostVlaanderen,525744.0,,525,20,2022-04-12
-BE,Flanders,Antwerpen,632619.0,,558,37,2022-04-12
+BE,Flanders,Antwerpen,632620.0,,558,37,2022-04-12
 BE,MISSING,MISSING,55172.0,,,,2022-04-13
 BE,Wallonia,Luxembourg,103434.0,,40,2,2022-04-13
 BE,Wallonia,BrabantWallon,145541.0,,62,3,2022-04-13
@@ -9282,7 +9282,7 @@ BE,Flanders,WestVlaanderen,420105.0,,458,22,2022-04-13
 BE,Brussels,Brussels,438345.0,,328,23,2022-04-13
 BE,Wallonia,Hainaut,441032.0,,352,26,2022-04-13
 BE,Flanders,OostVlaanderen,527111.0,,529,20,2022-04-13
-BE,Flanders,Antwerpen,634276.0,,552,31,2022-04-13
+BE,Flanders,Antwerpen,634277.0,,552,31,2022-04-13
 BE,MISSING,MISSING,55248.0,,,,2022-04-14
 BE,Wallonia,Luxembourg,103637.0,,33,3,2022-04-14
 BE,Wallonia,BrabantWallon,145846.0,,59,3,2022-04-14
@@ -9294,7 +9294,7 @@ BE,Flanders,WestVlaanderen,421097.0,,476,26,2022-04-14
 BE,Brussels,Brussels,438836.0,,336,28,2022-04-14
 BE,Wallonia,Hainaut,441850.0,,339,21,2022-04-14
 BE,Flanders,OostVlaanderen,528463.0,,515,18,2022-04-14
-BE,Flanders,Antwerpen,635824.0,,536,32,2022-04-14
+BE,Flanders,Antwerpen,635825.0,,536,32,2022-04-14
 BE,MISSING,MISSING,55320.0,,,,2022-04-15
 BE,Wallonia,Luxembourg,103828.0,,28,2,2022-04-15
 BE,Wallonia,BrabantWallon,146086.0,,57,3,2022-04-15
@@ -9306,7 +9306,7 @@ BE,Flanders,WestVlaanderen,421939.0,,458,28,2022-04-15
 BE,Brussels,Brussels,439299.0,,310,25,2022-04-15
 BE,Wallonia,Hainaut,442613.0,,333,20,2022-04-15
 BE,Flanders,OostVlaanderen,529676.0,,516,23,2022-04-15
-BE,Flanders,Antwerpen,637145.0,,482,37,2022-04-15
+BE,Flanders,Antwerpen,637146.0,,482,37,2022-04-15
 BE,MISSING,MISSING,55376.0,,,,2022-04-16
 BE,Wallonia,Luxembourg,103936.0,,31,3,2022-04-16
 BE,Wallonia,BrabantWallon,146228.0,,60,3,2022-04-16
@@ -9318,7 +9318,7 @@ BE,Flanders,WestVlaanderen,422408.0,,423,28,2022-04-16
 BE,Brussels,Brussels,439579.0,,303,22,2022-04-16
 BE,Wallonia,Hainaut,442991.0,,313,17,2022-04-16
 BE,Flanders,OostVlaanderen,530254.0,,466,21,2022-04-16
-BE,Flanders,Antwerpen,637866.0,,476,37,2022-04-16
+BE,Flanders,Antwerpen,637867.0,,476,37,2022-04-16
 BE,MISSING,MISSING,55395.0,,,,2022-04-17
 BE,Wallonia,Luxembourg,104016.0,,30,4,2022-04-17
 BE,Wallonia,BrabantWallon,146288.0,,61,4,2022-04-17
@@ -9330,7 +9330,7 @@ BE,Flanders,WestVlaanderen,422741.0,,421,22,2022-04-17
 BE,Brussels,Brussels,439743.0,,307,24,2022-04-17
 BE,Wallonia,Hainaut,443145.0,,326,17,2022-04-17
 BE,Flanders,OostVlaanderen,530602.0,,479,17,2022-04-17
-BE,Flanders,Antwerpen,638484.0,,487,32,2022-04-17
+BE,Flanders,Antwerpen,638485.0,,487,32,2022-04-17
 BE,MISSING,MISSING,55434.0,,,,2022-04-18
 BE,Wallonia,Luxembourg,104053.0,,33,4,2022-04-18
 BE,Wallonia,BrabantWallon,146344.0,,62,4,2022-04-18
@@ -9342,7 +9342,7 @@ BE,Flanders,WestVlaanderen,423115.0,,446,18,2022-04-18
 BE,Brussels,Brussels,439940.0,,319,26,2022-04-18
 BE,Wallonia,Hainaut,443363.0,,323,19,2022-04-18
 BE,Flanders,OostVlaanderen,531164.0,,516,21,2022-04-18
-BE,Flanders,Antwerpen,639221.0,,503,34,2022-04-18
+BE,Flanders,Antwerpen,639222.0,,503,34,2022-04-18
 BE,MISSING,MISSING,55539.0,,,,2022-04-19
 BE,Wallonia,Luxembourg,104289.0,,28,3,2022-04-19
 BE,Wallonia,BrabantWallon,146730.0,,60,2,2022-04-19
@@ -9354,7 +9354,7 @@ BE,Flanders,WestVlaanderen,424510.0,,447,24,2022-04-19
 BE,Brussels,Brussels,440680.0,,322,25,2022-04-19
 BE,Wallonia,Hainaut,444445.0,,358,24,2022-04-19
 BE,Flanders,OostVlaanderen,533216.0,,533,18,2022-04-19
-BE,Flanders,Antwerpen,641303.0,,498,30,2022-04-19
+BE,Flanders,Antwerpen,641304.0,,498,30,2022-04-19
 BE,MISSING,MISSING,55616.0,,,,2022-04-20
 BE,Wallonia,Luxembourg,104528.0,,35,3,2022-04-20
 BE,Wallonia,BrabantWallon,147006.0,,55,1,2022-04-20
@@ -9366,7 +9366,7 @@ BE,Flanders,WestVlaanderen,425375.0,,419,19,2022-04-20
 BE,Brussels,Brussels,441234.0,,316,20,2022-04-20
 BE,Wallonia,Hainaut,445335.0,,350,20,2022-04-20
 BE,Flanders,OostVlaanderen,534528.0,,549,19,2022-04-20
-BE,Flanders,Antwerpen,642636.0,,471,27,2022-04-20
+BE,Flanders,Antwerpen,642637.0,,471,27,2022-04-20
 BE,MISSING,MISSING,55663.0,,,,2022-04-21
 BE,Wallonia,Luxembourg,104720.0,,34,3,2022-04-21
 BE,Wallonia,BrabantWallon,147238.0,,48,1,2022-04-21
@@ -9378,7 +9378,7 @@ BE,Flanders,WestVlaanderen,426110.0,,380,18,2022-04-21
 BE,Brussels,Brussels,441681.0,,310,20,2022-04-21
 BE,Wallonia,Hainaut,446119.0,,359,16,2022-04-21
 BE,Flanders,OostVlaanderen,535633.0,,509,20,2022-04-21
-BE,Flanders,Antwerpen,643811.0,,449,22,2022-04-21
+BE,Flanders,Antwerpen,643812.0,,449,22,2022-04-21
 BE,MISSING,MISSING,55729.0,,,,2022-04-22
 BE,Wallonia,Luxembourg,104876.0,,33,2,2022-04-22
 BE,Wallonia,BrabantWallon,147439.0,,37,1,2022-04-22
@@ -9390,7 +9390,7 @@ BE,Flanders,WestVlaanderen,426786.0,,380,13,2022-04-22
 BE,Brussels,Brussels,442072.0,,294,23,2022-04-22
 BE,Wallonia,Hainaut,446841.0,,332,15,2022-04-22
 BE,Flanders,OostVlaanderen,536630.0,,481,24,2022-04-22
-BE,Flanders,Antwerpen,644819.0,,434,21,2022-04-22
+BE,Flanders,Antwerpen,644820.0,,434,21,2022-04-22
 BE,MISSING,MISSING,55763.0,,,,2022-04-23
 BE,Wallonia,Luxembourg,104947.0,,35,3,2022-04-23
 BE,Wallonia,BrabantWallon,147528.0,,28,1,2022-04-23
@@ -9402,7 +9402,7 @@ BE,Flanders,WestVlaanderen,427127.0,,373,16,2022-04-23
 BE,Brussels,Brussels,442285.0,,272,20,2022-04-23
 BE,Wallonia,Hainaut,447166.0,,314,17,2022-04-23
 BE,Flanders,OostVlaanderen,537079.0,,437,25,2022-04-23
-BE,Flanders,Antwerpen,645326.0,,393,15,2022-04-23
+BE,Flanders,Antwerpen,645327.0,,393,15,2022-04-23
 BE,MISSING,MISSING,55786.0,,,,2022-04-24
 BE,Wallonia,Luxembourg,104994.0,,36,3,2022-04-24
 BE,Wallonia,BrabantWallon,147580.0,,28,1,2022-04-24
@@ -9414,7 +9414,7 @@ BE,Flanders,WestVlaanderen,427296.0,,371,18,2022-04-24
 BE,Brussels,Brussels,442439.0,,269,21,2022-04-24
 BE,Wallonia,Hainaut,447276.0,,334,17,2022-04-24
 BE,Flanders,OostVlaanderen,537365.0,,460,25,2022-04-24
-BE,Flanders,Antwerpen,645672.0,,392,17,2022-04-24
+BE,Flanders,Antwerpen,645673.0,,392,17,2022-04-24
 BE,MISSING,MISSING,55854.0,,,,2022-04-25
 BE,Wallonia,Luxembourg,105166.0,,37,3,2022-04-25
 BE,Wallonia,BrabantWallon,147872.0,,33,2,2022-04-25
@@ -9426,7 +9426,7 @@ BE,Flanders,WestVlaanderen,428216.0,,363,22,2022-04-25
 BE,Brussels,Brussels,442924.0,,276,22,2022-04-25
 BE,Wallonia,Hainaut,448081.0,,351,18,2022-04-25
 BE,Flanders,OostVlaanderen,538808.0,,470,24,2022-04-25
-BE,Flanders,Antwerpen,647222.0,,383,18,2022-04-25
+BE,Flanders,Antwerpen,647223.0,,383,18,2022-04-25
 BE,MISSING,MISSING,55908.0,,,,2022-04-26
 BE,Wallonia,Luxembourg,105327.0,,39,2,2022-04-26
 BE,Wallonia,BrabantWallon,148084.0,,29,3,2022-04-26
@@ -9438,7 +9438,7 @@ BE,Flanders,WestVlaanderen,428829.0,,355,15,2022-04-26
 BE,Brussels,Brussels,443371.0,,267,20,2022-04-26
 BE,Wallonia,Hainaut,448800.0,,334,17,2022-04-26
 BE,Flanders,OostVlaanderen,539710.0,,413,24,2022-04-26
-BE,Flanders,Antwerpen,648254.0,,390,19,2022-04-26
+BE,Flanders,Antwerpen,648255.0,,390,19,2022-04-26
 BE,MISSING,MISSING,55965.0,,,,2022-04-27
 BE,Wallonia,Luxembourg,105476.0,,41,2,2022-04-27
 BE,Wallonia,BrabantWallon,148271.0,,30,2,2022-04-27
@@ -9450,7 +9450,7 @@ BE,Flanders,WestVlaanderen,429397.0,,335,17,2022-04-27
 BE,Brussels,Brussels,443775.0,,258,18,2022-04-27
 BE,Wallonia,Hainaut,449367.0,,326,19,2022-04-27
 BE,Flanders,OostVlaanderen,540611.0,,391,20,2022-04-27
-BE,Flanders,Antwerpen,649091.0,,398,18,2022-04-27
+BE,Flanders,Antwerpen,649092.0,,398,18,2022-04-27
 BE,MISSING,MISSING,56008.0,,,,2022-04-28
 BE,Wallonia,Luxembourg,105618.0,,40,2,2022-04-28
 BE,Wallonia,BrabantWallon,148454.0,,30,2,2022-04-28
@@ -9462,7 +9462,7 @@ BE,Flanders,WestVlaanderen,429874.0,,310,17,2022-04-28
 BE,Brussels,Brussels,444104.0,,264,19,2022-04-28
 BE,Wallonia,Hainaut,449988.0,,299,17,2022-04-28
 BE,Flanders,OostVlaanderen,541381.0,,357,19,2022-04-28
-BE,Flanders,Antwerpen,649834.0,,373,17,2022-04-28
+BE,Flanders,Antwerpen,649835.0,,373,17,2022-04-28
 BE,MISSING,MISSING,56052.0,,,,2022-04-29
 BE,Wallonia,Luxembourg,105726.0,,39,2,2022-04-29
 BE,Wallonia,BrabantWallon,148640.0,,28,1,2022-04-29
@@ -9474,7 +9474,7 @@ BE,Flanders,WestVlaanderen,430315.0,,275,14,2022-04-29
 BE,Brussels,Brussels,444396.0,,254,18,2022-04-29
 BE,Wallonia,Hainaut,450463.0,,280,15,2022-04-29
 BE,Flanders,OostVlaanderen,542065.0,,340,18,2022-04-29
-BE,Flanders,Antwerpen,650519.0,,353,19,2022-04-29
+BE,Flanders,Antwerpen,650520.0,,353,19,2022-04-29
 BE,MISSING,MISSING,56090.0,,,,2022-04-30
 BE,Wallonia,Luxembourg,105788.0,,35,1,2022-04-30
 BE,Wallonia,BrabantWallon,148741.0,,22,2,2022-04-30
@@ -9486,7 +9486,7 @@ BE,Flanders,WestVlaanderen,430587.0,,266,12,2022-04-30
 BE,Brussels,Brussels,444598.0,,235,22,2022-04-30
 BE,Wallonia,Hainaut,450732.0,,277,17,2022-04-30
 BE,Flanders,OostVlaanderen,542439.0,,314,14,2022-04-30
-BE,Flanders,Antwerpen,650881.0,,323,17,2022-04-30
+BE,Flanders,Antwerpen,650882.0,,323,17,2022-04-30
 BE,MISSING,MISSING,56115.0,,,,2022-05-01
 BE,Wallonia,Luxembourg,105823.0,,33,1,2022-05-01
 BE,Wallonia,BrabantWallon,148783.0,,22,2,2022-05-01
@@ -9498,7 +9498,7 @@ BE,Flanders,WestVlaanderen,430745.0,,272,14,2022-05-01
 BE,Brussels,Brussels,444732.0,,237,20,2022-05-01
 BE,Wallonia,Hainaut,450819.0,,267,17,2022-05-01
 BE,Flanders,OostVlaanderen,542615.0,,318,16,2022-05-01
-BE,Flanders,Antwerpen,651151.0,,326,18,2022-05-01
+BE,Flanders,Antwerpen,651152.0,,326,18,2022-05-01
 BE,MISSING,MISSING,56160.0,,,,2022-05-02
 BE,Wallonia,Luxembourg,105981.0,,33,1,2022-05-02
 BE,Wallonia,BrabantWallon,149053.0,,31,2,2022-05-02
@@ -9510,7 +9510,7 @@ BE,Flanders,WestVlaanderen,431476.0,,294,13,2022-05-02
 BE,Brussels,Brussels,445204.0,,243,23,2022-05-02
 BE,Wallonia,Hainaut,451521.0,,265,18,2022-05-02
 BE,Flanders,OostVlaanderen,543862.0,,334,15,2022-05-02
-BE,Flanders,Antwerpen,652345.0,,328,17,2022-05-02
+BE,Flanders,Antwerpen,652346.0,,328,17,2022-05-02
 BE,MISSING,MISSING,56200.0,,,,2022-05-03
 BE,Wallonia,Luxembourg,106148.0,,28,2,2022-05-03
 BE,Wallonia,BrabantWallon,149261.0,,27,1,2022-05-03
@@ -9522,7 +9522,7 @@ BE,Flanders,WestVlaanderen,432015.0,,279,15,2022-05-03
 BE,Brussels,Brussels,445652.0,,230,18,2022-05-03
 BE,Wallonia,Hainaut,452181.0,,253,20,2022-05-03
 BE,Flanders,OostVlaanderen,544731.0,,323,8,2022-05-03
-BE,Flanders,Antwerpen,653135.0,,302,15,2022-05-03
+BE,Flanders,Antwerpen,653136.0,,302,15,2022-05-03
 BE,MISSING,MISSING,56250.0,,,,2022-05-04
 BE,Wallonia,Luxembourg,106301.0,,26,3,2022-05-04
 BE,Wallonia,BrabantWallon,149458.0,,32,0,2022-05-04
@@ -9534,7 +9534,7 @@ BE,Flanders,WestVlaanderen,432534.0,,249,13,2022-05-04
 BE,Brussels,Brussels,446137.0,,246,16,2022-05-04
 BE,Wallonia,Hainaut,452739.0,,227,17,2022-05-04
 BE,Flanders,OostVlaanderen,545596.0,,301,9,2022-05-04
-BE,Flanders,Antwerpen,653915.0,,301,16,2022-05-04
+BE,Flanders,Antwerpen,653916.0,,301,16,2022-05-04
 BE,MISSING,MISSING,56300.0,,,,2022-05-05
 BE,Wallonia,Luxembourg,106408.0,,26,3,2022-05-05
 BE,Wallonia,BrabantWallon,149674.0,,33,0,2022-05-05
@@ -9546,7 +9546,7 @@ BE,Flanders,WestVlaanderen,433030.0,,245,15,2022-05-05
 BE,Brussels,Brussels,446553.0,,238,17,2022-05-05
 BE,Wallonia,Hainaut,453306.0,,250,17,2022-05-05
 BE,Flanders,OostVlaanderen,546377.0,,295,13,2022-05-05
-BE,Flanders,Antwerpen,654654.0,,285,15,2022-05-05
+BE,Flanders,Antwerpen,654655.0,,285,15,2022-05-05
 BE,MISSING,MISSING,56342.0,,,,2022-05-06
 BE,Wallonia,Luxembourg,106497.0,,25,3,2022-05-06
 BE,Wallonia,BrabantWallon,149862.0,,30,0,2022-05-06
@@ -9558,7 +9558,7 @@ BE,Flanders,WestVlaanderen,433463.0,,232,14,2022-05-06
 BE,Brussels,Brussels,446963.0,,227,19,2022-05-06
 BE,Wallonia,Hainaut,453841.0,,241,16,2022-05-06
 BE,Flanders,OostVlaanderen,547076.0,,281,9,2022-05-06
-BE,Flanders,Antwerpen,655279.0,,277,13,2022-05-06
+BE,Flanders,Antwerpen,655280.0,,277,13,2022-05-06
 BE,MISSING,MISSING,56379.0,,,,2022-05-07
 BE,Wallonia,Luxembourg,106556.0,,22,1,2022-05-07
 BE,Wallonia,BrabantWallon,149954.0,,31,0,2022-05-07
@@ -9570,7 +9570,7 @@ BE,Flanders,WestVlaanderen,433666.0,,212,12,2022-05-07
 BE,Brussels,Brussels,447217.0,,221,22,2022-05-07
 BE,Wallonia,Hainaut,454069.0,,236,16,2022-05-07
 BE,Flanders,OostVlaanderen,547404.0,,267,9,2022-05-07
-BE,Flanders,Antwerpen,655630.0,,244,13,2022-05-07
+BE,Flanders,Antwerpen,655631.0,,244,13,2022-05-07
 BE,MISSING,MISSING,56392.0,,,,2022-05-08
 BE,Wallonia,Luxembourg,106576.0,,25,1,2022-05-08
 BE,Wallonia,BrabantWallon,150000.0,,30,0,2022-05-08
@@ -9582,7 +9582,7 @@ BE,Flanders,WestVlaanderen,433803.0,,219,12,2022-05-08
 BE,Brussels,Brussels,447376.0,,229,21,2022-05-08
 BE,Wallonia,Hainaut,454159.0,,230,15,2022-05-08
 BE,Flanders,OostVlaanderen,547591.0,,261,9,2022-05-08
-BE,Flanders,Antwerpen,655881.0,,250,13,2022-05-08
+BE,Flanders,Antwerpen,655882.0,,250,13,2022-05-08
 BE,MISSING,MISSING,56443.0,,,,2022-05-09
 BE,Wallonia,Luxembourg,106711.0,,26,1,2022-05-09
 BE,Wallonia,BrabantWallon,150250.0,,30,0,2022-05-09
@@ -9594,7 +9594,7 @@ BE,Flanders,WestVlaanderen,434522.0,,221,13,2022-05-09
 BE,Brussels,Brussels,447899.0,,223,22,2022-05-09
 BE,Wallonia,Hainaut,454812.0,,242,13,2022-05-09
 BE,Flanders,OostVlaanderen,548709.0,,279,11,2022-05-09
-BE,Flanders,Antwerpen,656958.0,,257,17,2022-05-09
+BE,Flanders,Antwerpen,656959.0,,257,17,2022-05-09
 BE,MISSING,MISSING,56491.0,,,,2022-05-10
 BE,Wallonia,Luxembourg,106833.0,,24,1,2022-05-10
 BE,Wallonia,BrabantWallon,150505.0,,22,0,2022-05-10
@@ -9606,7 +9606,7 @@ BE,Flanders,WestVlaanderen,434953.0,,214,9,2022-05-10
 BE,Brussels,Brussels,448358.0,,212,19,2022-05-10
 BE,Wallonia,Hainaut,455458.0,,239,13,2022-05-10
 BE,Flanders,OostVlaanderen,549399.0,,279,8,2022-05-10
-BE,Flanders,Antwerpen,657605.0,,260,19,2022-05-10
+BE,Flanders,Antwerpen,657606.0,,260,19,2022-05-10
 BE,MISSING,MISSING,56537.0,,,,2022-05-11
 BE,Wallonia,Luxembourg,106949.0,,15,1,2022-05-11
 BE,Wallonia,BrabantWallon,150666.0,,22,0,2022-05-11
@@ -9618,7 +9618,7 @@ BE,Flanders,WestVlaanderen,435377.0,,182,10,2022-05-11
 BE,Brussels,Brussels,448744.0,,204,18,2022-05-11
 BE,Wallonia,Hainaut,455992.0,,233,13,2022-05-11
 BE,Flanders,OostVlaanderen,550025.0,,243,10,2022-05-11
-BE,Flanders,Antwerpen,658232.0,,256,17,2022-05-11
+BE,Flanders,Antwerpen,658233.0,,256,17,2022-05-11
 BE,MISSING,MISSING,56570.0,,,,2022-05-12
 BE,Wallonia,Luxembourg,107012.0,,13,1,2022-05-12
 BE,Wallonia,BrabantWallon,150826.0,,22,0,2022-05-12
@@ -9630,7 +9630,7 @@ BE,Flanders,WestVlaanderen,435718.0,,187,13,2022-05-12
 BE,Brussels,Brussels,449150.0,,182,10,2022-05-12
 BE,Wallonia,Hainaut,456464.0,,229,12,2022-05-12
 BE,Flanders,OostVlaanderen,550536.0,,242,13,2022-05-12
-BE,Flanders,Antwerpen,658800.0,,264,17,2022-05-12
+BE,Flanders,Antwerpen,658801.0,,264,17,2022-05-12
 BE,MISSING,MISSING,56600.0,,,,2022-05-13
 BE,Wallonia,Luxembourg,107074.0,,17,2,2022-05-13
 BE,Wallonia,BrabantWallon,150959.0,,21,0,2022-05-13
@@ -9642,7 +9642,7 @@ BE,Flanders,WestVlaanderen,436043.0,,177,15,2022-05-13
 BE,Brussels,Brussels,449454.0,,186,11,2022-05-13
 BE,Wallonia,Hainaut,456844.0,,220,10,2022-05-13
 BE,Flanders,OostVlaanderen,550988.0,,216,12,2022-05-13
-BE,Flanders,Antwerpen,659304.0,,242,15,2022-05-13
+BE,Flanders,Antwerpen,659305.0,,242,15,2022-05-13
 BE,MISSING,MISSING,56620.0,,,,2022-05-14
 BE,Wallonia,Luxembourg,107086.0,,19,3,2022-05-14
 BE,Wallonia,BrabantWallon,151034.0,,18,0,2022-05-14
@@ -9654,7 +9654,7 @@ BE,Flanders,WestVlaanderen,436161.0,,149,13,2022-05-14
 BE,Brussels,Brussels,449648.0,,175,7,2022-05-14
 BE,Wallonia,Hainaut,457047.0,,220,8,2022-05-14
 BE,Flanders,OostVlaanderen,551198.0,,213,12,2022-05-14
-BE,Flanders,Antwerpen,659528.0,,224,13,2022-05-14
+BE,Flanders,Antwerpen,659529.0,,224,13,2022-05-14
 BE,MISSING,MISSING,56634.0,,,,2022-05-15
 BE,Wallonia,Luxembourg,107088.0,,19,3,2022-05-15
 BE,Wallonia,BrabantWallon,151067.0,,17,0,2022-05-15
@@ -9666,7 +9666,7 @@ BE,Flanders,WestVlaanderen,436263.0,,147,12,2022-05-15
 BE,Brussels,Brussels,449720.0,,180,10,2022-05-15
 BE,Wallonia,Hainaut,457103.0,,210,10,2022-05-15
 BE,Flanders,OostVlaanderen,551303.0,,217,14,2022-05-15
-BE,Flanders,Antwerpen,659691.0,,223,14,2022-05-15
+BE,Flanders,Antwerpen,659692.0,,223,14,2022-05-15
 BE,MISSING,MISSING,56683.0,,,,2022-05-16
 BE,Wallonia,Luxembourg,107170.0,,19,3,2022-05-16
 BE,Wallonia,BrabantWallon,151259.0,,17,0,2022-05-16
@@ -9678,7 +9678,7 @@ BE,Flanders,WestVlaanderen,436711.0,,151,8,2022-05-16
 BE,Brussels,Brussels,450088.0,,168,11,2022-05-16
 BE,Wallonia,Hainaut,457591.0,,207,13,2022-05-16
 BE,Flanders,OostVlaanderen,551965.0,,218,13,2022-05-16
-BE,Flanders,Antwerpen,660412.0,,227,16,2022-05-16
+BE,Flanders,Antwerpen,660413.0,,227,16,2022-05-16
 BE,MISSING,MISSING,56714.0,,,,2022-05-17
 BE,Wallonia,Luxembourg,107245.0,,19,3,2022-05-17
 BE,Wallonia,BrabantWallon,151437.0,,14,0,2022-05-17
@@ -9690,7 +9690,7 @@ BE,Flanders,WestVlaanderen,437010.0,,159,10,2022-05-17
 BE,Brussels,Brussels,450417.0,,162,10,2022-05-17
 BE,Wallonia,Hainaut,457988.0,,204,15,2022-05-17
 BE,Flanders,OostVlaanderen,552430.0,,226,13,2022-05-17
-BE,Flanders,Antwerpen,660884.0,,222,16,2022-05-17
+BE,Flanders,Antwerpen,660885.0,,222,16,2022-05-17
 BE,MISSING,MISSING,56759.0,,,,2022-05-18
 BE,Wallonia,Luxembourg,107282.0,,19,3,2022-05-18
 BE,Wallonia,BrabantWallon,151573.0,,16,2,2022-05-18
@@ -9702,7 +9702,7 @@ BE,Flanders,WestVlaanderen,437286.0,,160,9,2022-05-18
 BE,Brussels,Brussels,450710.0,,167,9,2022-05-18
 BE,Wallonia,Hainaut,458298.0,,197,16,2022-05-18
 BE,Flanders,OostVlaanderen,552827.0,,199,9,2022-05-18
-BE,Flanders,Antwerpen,661313.0,,199,14,2022-05-18
+BE,Flanders,Antwerpen,661314.0,,199,14,2022-05-18
 BE,MISSING,MISSING,56783.0,,,,2022-05-19
 BE,Wallonia,Luxembourg,107321.0,,19,3,2022-05-19
 BE,Wallonia,BrabantWallon,151670.0,,13,1,2022-05-19
@@ -9714,7 +9714,7 @@ BE,Flanders,WestVlaanderen,437528.0,,156,9,2022-05-19
 BE,Brussels,Brussels,450935.0,,163,7,2022-05-19
 BE,Wallonia,Hainaut,458564.0,,179,17,2022-05-19
 BE,Flanders,OostVlaanderen,553150.0,,181,10,2022-05-19
-BE,Flanders,Antwerpen,661633.0,,207,11,2022-05-19
+BE,Flanders,Antwerpen,661634.0,,207,11,2022-05-19
 BE,MISSING,MISSING,56817.0,,,,2022-05-20
 BE,Wallonia,Luxembourg,107362.0,,19,3,2022-05-20
 BE,Wallonia,BrabantWallon,151768.0,,11,0,2022-05-20
@@ -9726,7 +9726,7 @@ BE,Flanders,WestVlaanderen,437737.0,,160,9,2022-05-20
 BE,Brussels,Brussels,451143.0,,155,8,2022-05-20
 BE,Wallonia,Hainaut,458822.0,,182,15,2022-05-20
 BE,Flanders,OostVlaanderen,553437.0,,171,8,2022-05-20
-BE,Flanders,Antwerpen,661944.0,,193,12,2022-05-20
+BE,Flanders,Antwerpen,661945.0,,193,12,2022-05-20
 BE,MISSING,MISSING,56836.0,,,,2022-05-21
 BE,Wallonia,Luxembourg,107387.0,,19,3,2022-05-21
 BE,Wallonia,BrabantWallon,151826.0,,10,0,2022-05-21
@@ -9738,7 +9738,7 @@ BE,Flanders,WestVlaanderen,437855.0,,145,11,2022-05-21
 BE,Brussels,Brussels,451276.0,,133,7,2022-05-21
 BE,Wallonia,Hainaut,458958.0,,175,15,2022-05-21
 BE,Flanders,OostVlaanderen,553569.0,,151,10,2022-05-21
-BE,Flanders,Antwerpen,662068.0,,180,10,2022-05-21
+BE,Flanders,Antwerpen,662069.0,,180,10,2022-05-21
 BE,MISSING,MISSING,56844.0,,,,2022-05-22
 BE,Wallonia,Luxembourg,107390.0,,19,3,2022-05-22
 BE,Wallonia,BrabantWallon,151847.0,,8,0,2022-05-22
@@ -9750,7 +9750,7 @@ BE,Flanders,WestVlaanderen,437905.0,,149,14,2022-05-22
 BE,Brussels,Brussels,451333.0,,142,8,2022-05-22
 BE,Wallonia,Hainaut,458998.0,,175,12,2022-05-22
 BE,Flanders,OostVlaanderen,553639.0,,159,13,2022-05-22
-BE,Flanders,Antwerpen,662186.0,,173,9,2022-05-22
+BE,Flanders,Antwerpen,662187.0,,173,9,2022-05-22
 BE,MISSING,MISSING,56881.0,,,,2022-05-23
 BE,Wallonia,Luxembourg,107424.0,,19,3,2022-05-23
 BE,Wallonia,BrabantWallon,151952.0,,11,0,2022-05-23
@@ -9762,7 +9762,7 @@ BE,Flanders,WestVlaanderen,438220.0,,154,13,2022-05-23
 BE,Brussels,Brussels,451568.0,,150,8,2022-05-23
 BE,Wallonia,Hainaut,459302.0,,170,11,2022-05-23
 BE,Flanders,OostVlaanderen,554016.0,,166,12,2022-05-23
-BE,Flanders,Antwerpen,662559.0,,171,9,2022-05-23
+BE,Flanders,Antwerpen,662560.0,,171,9,2022-05-23
 BE,MISSING,MISSING,56904.0,,,,2022-05-24
 BE,Wallonia,Luxembourg,107477.0,,19,3,2022-05-24
 BE,Wallonia,BrabantWallon,152042.0,,10,0,2022-05-24
@@ -9774,7 +9774,7 @@ BE,Flanders,WestVlaanderen,438418.0,,138,12,2022-05-24
 BE,Brussels,Brussels,451767.0,,139,10,2022-05-24
 BE,Wallonia,Hainaut,459499.0,,163,11,2022-05-24
 BE,Flanders,OostVlaanderen,554259.0,,146,9,2022-05-24
-BE,Flanders,Antwerpen,662810.0,,163,13,2022-05-24
+BE,Flanders,Antwerpen,662811.0,,163,13,2022-05-24
 BE,MISSING,MISSING,56928.0,,,,2022-05-25
 BE,Wallonia,Luxembourg,107517.0,,19,3,2022-05-25
 BE,Wallonia,BrabantWallon,152117.0,,6,0,2022-05-25
@@ -9786,7 +9786,7 @@ BE,Flanders,WestVlaanderen,438587.0,,121,10,2022-05-25
 BE,Brussels,Brussels,451930.0,,134,13,2022-05-25
 BE,Wallonia,Hainaut,459667.0,,157,10,2022-05-25
 BE,Flanders,OostVlaanderen,554506.0,,135,8,2022-05-25
-BE,Flanders,Antwerpen,663066.0,,167,9,2022-05-25
+BE,Flanders,Antwerpen,663067.0,,167,9,2022-05-25
 BE,MISSING,MISSING,56940.0,,,,2022-05-26
 BE,Wallonia,Luxembourg,107526.0,,19,3,2022-05-26
 BE,Wallonia,BrabantWallon,152132.0,,6,0,2022-05-26
@@ -9798,7 +9798,7 @@ BE,Flanders,WestVlaanderen,438634.0,,106,10,2022-05-26
 BE,Brussels,Brussels,451984.0,,135,11,2022-05-26
 BE,Wallonia,Hainaut,459702.0,,141,7,2022-05-26
 BE,Flanders,OostVlaanderen,554554.0,,147,7,2022-05-26
-BE,Flanders,Antwerpen,663165.0,,154,6,2022-05-26
+BE,Flanders,Antwerpen,663166.0,,154,6,2022-05-26
 BE,MISSING,MISSING,56963.0,,,,2022-05-27
 BE,Wallonia,Luxembourg,107554.0,,19,3,2022-05-27
 BE,Wallonia,BrabantWallon,152210.0,,5,0,2022-05-27
@@ -9810,7 +9810,7 @@ BE,Flanders,WestVlaanderen,438813.0,,108,10,2022-05-27
 BE,Brussels,Brussels,452132.0,,137,9,2022-05-27
 BE,Wallonia,Hainaut,459860.0,,136,10,2022-05-27
 BE,Flanders,OostVlaanderen,554807.0,,141,7,2022-05-27
-BE,Flanders,Antwerpen,663386.0,,152,13,2022-05-27
+BE,Flanders,Antwerpen,663387.0,,152,13,2022-05-27
 BE,MISSING,MISSING,56981.0,,,,2022-05-28
 BE,Wallonia,Luxembourg,107567.0,,19,3,2022-05-28
 BE,Wallonia,BrabantWallon,152239.0,,3,0,2022-05-28
@@ -9822,7 +9822,7 @@ BE,Flanders,WestVlaanderen,438909.0,,103,9,2022-05-28
 BE,Brussels,Brussels,452225.0,,127,9,2022-05-28
 BE,Wallonia,Hainaut,459941.0,,119,10,2022-05-28
 BE,Flanders,OostVlaanderen,554946.0,,127,12,2022-05-28
-BE,Flanders,Antwerpen,663511.0,,136,11,2022-05-28
+BE,Flanders,Antwerpen,663512.0,,136,11,2022-05-28
 BE,MISSING,MISSING,56988.0,,,,2022-05-29
 BE,Wallonia,Luxembourg,107578.0,,19,3,2022-05-29
 BE,Wallonia,BrabantWallon,152251.0,,2,0,2022-05-29
@@ -9834,7 +9834,7 @@ BE,Flanders,WestVlaanderen,438944.0,,112,9,2022-05-29
 BE,Brussels,Brussels,452280.0,,119,9,2022-05-29
 BE,Wallonia,Hainaut,459981.0,,113,10,2022-05-29
 BE,Flanders,OostVlaanderen,555020.0,,128,14,2022-05-29
-BE,Flanders,Antwerpen,663585.0,,139,11,2022-05-29
+BE,Flanders,Antwerpen,663586.0,,139,11,2022-05-29
 BE,MISSING,MISSING,57018.0,,,,2022-05-30
 BE,Wallonia,Luxembourg,107622.0,,19,3,2022-05-30
 BE,Wallonia,BrabantWallon,152367.0,,2,0,2022-05-30
@@ -9846,7 +9846,7 @@ BE,Flanders,WestVlaanderen,439257.0,,117,9,2022-05-30
 BE,Brussels,Brussels,452492.0,,111,10,2022-05-30
 BE,Wallonia,Hainaut,460205.0,,116,10,2022-05-30
 BE,Flanders,OostVlaanderen,555476.0,,131,14,2022-05-30
-BE,Flanders,Antwerpen,664039.0,,139,11,2022-05-30
+BE,Flanders,Antwerpen,664040.0,,139,11,2022-05-30
 BE,MISSING,MISSING,57041.0,,,,2022-05-31
 BE,Wallonia,Luxembourg,107670.0,,19,3,2022-05-31
 BE,Wallonia,BrabantWallon,152435.0,,4,0,2022-05-31
@@ -9858,7 +9858,7 @@ BE,Flanders,WestVlaanderen,439477.0,,123,8,2022-05-31
 BE,Brussels,Brussels,452703.0,,100,9,2022-05-31
 BE,Wallonia,Hainaut,460411.0,,125,11,2022-05-31
 BE,Flanders,OostVlaanderen,555800.0,,127,14,2022-05-31
-BE,Flanders,Antwerpen,664327.0,,151,10,2022-05-31
+BE,Flanders,Antwerpen,664328.0,,151,10,2022-05-31
 BE,MISSING,MISSING,57064.0,,,,2022-06-01
 BE,Wallonia,Luxembourg,107718.0,,19,3,2022-06-01
 BE,Wallonia,BrabantWallon,152504.0,,7,0,2022-06-01
@@ -9870,7 +9870,7 @@ BE,Flanders,WestVlaanderen,439712.0,,113,7,2022-06-01
 BE,Brussels,Brussels,452891.0,,99,9,2022-06-01
 BE,Wallonia,Hainaut,460620.0,,130,14,2022-06-01
 BE,Flanders,OostVlaanderen,556099.0,,120,11,2022-06-01
-BE,Flanders,Antwerpen,664640.0,,140,12,2022-06-01
+BE,Flanders,Antwerpen,664641.0,,140,12,2022-06-01
 BE,MISSING,MISSING,57094.0,,,,2022-06-02
 BE,Wallonia,Luxembourg,107756.0,,19,3,2022-06-02
 BE,Wallonia,BrabantWallon,152570.0,,9,0,2022-06-02
@@ -9882,7 +9882,7 @@ BE,Flanders,WestVlaanderen,439912.0,,112,8,2022-06-02
 BE,Brussels,Brussels,453087.0,,99,10,2022-06-02
 BE,Wallonia,Hainaut,460795.0,,124,16,2022-06-02
 BE,Flanders,OostVlaanderen,556401.0,,115,10,2022-06-02
-BE,Flanders,Antwerpen,664900.0,,130,8,2022-06-02
+BE,Flanders,Antwerpen,664901.0,,130,8,2022-06-02
 BE,MISSING,MISSING,57119.0,,,,2022-06-03
 BE,Wallonia,Luxembourg,107774.0,,19,3,2022-06-03
 BE,Wallonia,BrabantWallon,152621.0,,10,1,2022-06-03
@@ -9894,7 +9894,7 @@ BE,Flanders,WestVlaanderen,440094.0,,105,7,2022-06-03
 BE,Brussels,Brussels,453242.0,,100,10,2022-06-03
 BE,Wallonia,Hainaut,460954.0,,124,11,2022-06-03
 BE,Flanders,OostVlaanderen,556654.0,,106,9,2022-06-03
-BE,Flanders,Antwerpen,665164.0,,129,9,2022-06-03
+BE,Flanders,Antwerpen,665165.0,,129,9,2022-06-03
 BE,MISSING,MISSING,57137.0,,,,2022-06-04
 BE,Wallonia,Luxembourg,107797.0,,19,3,2022-06-04
 BE,Wallonia,BrabantWallon,152658.0,,6,1,2022-06-04
@@ -9906,7 +9906,7 @@ BE,Flanders,WestVlaanderen,440201.0,,102,4,2022-06-04
 BE,Brussels,Brussels,453353.0,,87,9,2022-06-04
 BE,Wallonia,Hainaut,461048.0,,112,10,2022-06-04
 BE,Flanders,OostVlaanderen,556811.0,,112,11,2022-06-04
-BE,Flanders,Antwerpen,665306.0,,117,9,2022-06-04
+BE,Flanders,Antwerpen,665307.0,,117,9,2022-06-04
 BE,MISSING,MISSING,57153.0,,,,2022-06-05
 BE,Wallonia,Luxembourg,107808.0,,19,3,2022-06-05
 BE,Wallonia,BrabantWallon,152672.0,,6,1,2022-06-05
@@ -9918,7 +9918,7 @@ BE,Flanders,WestVlaanderen,440285.0,,104,4,2022-06-05
 BE,Brussels,Brussels,453446.0,,86,9,2022-06-05
 BE,Wallonia,Hainaut,461096.0,,116,9,2022-06-05
 BE,Flanders,OostVlaanderen,556895.0,,118,9,2022-06-05
-BE,Flanders,Antwerpen,665437.0,,123,9,2022-06-05
+BE,Flanders,Antwerpen,665438.0,,123,9,2022-06-05
 BE,MISSING,MISSING,57171.0,,,,2022-06-06
 BE,Wallonia,Luxembourg,107824.0,,19,3,2022-06-06
 BE,Wallonia,BrabantWallon,152687.0,,9,1,2022-06-06
@@ -9930,7 +9930,7 @@ BE,Flanders,WestVlaanderen,440377.0,,110,5,2022-06-06
 BE,Brussels,Brussels,453554.0,,98,10,2022-06-06
 BE,Wallonia,Hainaut,461149.0,,113,8,2022-06-06
 BE,Flanders,OostVlaanderen,557056.0,,132,9,2022-06-06
-BE,Flanders,Antwerpen,665590.0,,125,10,2022-06-06
+BE,Flanders,Antwerpen,665591.0,,125,10,2022-06-06
 BE,MISSING,MISSING,57205.0,,,,2022-06-07
 BE,Wallonia,Luxembourg,107876.0,,19,3,2022-06-07
 BE,Wallonia,BrabantWallon,152810.0,,6,1,2022-06-07
@@ -9942,7 +9942,7 @@ BE,Flanders,WestVlaanderen,440790.0,,116,5,2022-06-07
 BE,Brussels,Brussels,453890.0,,106,11,2022-06-07
 BE,Wallonia,Hainaut,461414.0,,133,9,2022-06-07
 BE,Flanders,OostVlaanderen,557697.0,,149,8,2022-06-07
-BE,Flanders,Antwerpen,666157.0,,133,10,2022-06-07
+BE,Flanders,Antwerpen,666158.0,,133,10,2022-06-07
 BE,MISSING,MISSING,57245.0,,,,2022-06-08
 BE,Wallonia,Luxembourg,107936.0,,19,3,2022-06-08
 BE,Wallonia,BrabantWallon,152930.0,,8,1,2022-06-08
@@ -9954,7 +9954,7 @@ BE,Flanders,WestVlaanderen,441071.0,,111,3,2022-06-08
 BE,Brussels,Brussels,454204.0,,116,11,2022-06-08
 BE,Wallonia,Hainaut,461647.0,,127,8,2022-06-08
 BE,Flanders,OostVlaanderen,558163.0,,137,8,2022-06-08
-BE,Flanders,Antwerpen,666547.0,,126,12,2022-06-08
+BE,Flanders,Antwerpen,666548.0,,126,12,2022-06-08
 BE,MISSING,MISSING,57270.0,,,,2022-06-09
 BE,Wallonia,Luxembourg,107984.0,,19,3,2022-06-09
 BE,Wallonia,BrabantWallon,153013.0,,7,1,2022-06-09
@@ -9966,7 +9966,7 @@ BE,Flanders,WestVlaanderen,441371.0,,118,3,2022-06-09
 BE,Brussels,Brussels,454433.0,,119,16,2022-06-09
 BE,Wallonia,Hainaut,461855.0,,116,9,2022-06-09
 BE,Flanders,OostVlaanderen,558623.0,,146,6,2022-06-09
-BE,Flanders,Antwerpen,666973.0,,128,14,2022-06-09
+BE,Flanders,Antwerpen,666974.0,,128,14,2022-06-09
 BE,MISSING,MISSING,57305.0,,,,2022-06-10
 BE,Wallonia,Luxembourg,108047.0,,19,3,2022-06-10
 BE,Wallonia,BrabantWallon,153108.0,,10,1,2022-06-10
@@ -9978,7 +9978,7 @@ BE,Flanders,WestVlaanderen,441659.0,,117,4,2022-06-10
 BE,Brussels,Brussels,454698.0,,123,14,2022-06-10
 BE,Wallonia,Hainaut,462028.0,,122,9,2022-06-10
 BE,Flanders,OostVlaanderen,559048.0,,148,7,2022-06-10
-BE,Flanders,Antwerpen,667400.0,,124,14,2022-06-10
+BE,Flanders,Antwerpen,667401.0,,124,14,2022-06-10
 BE,MISSING,MISSING,57317.0,,,,2022-06-11
 BE,Wallonia,Luxembourg,108082.0,,19,3,2022-06-11
 BE,Wallonia,BrabantWallon,153151.0,,6,1,2022-06-11
@@ -9990,7 +9990,7 @@ BE,Flanders,WestVlaanderen,441817.0,,104,6,2022-06-11
 BE,Brussels,Brussels,454829.0,,120,11,2022-06-11
 BE,Wallonia,Hainaut,462136.0,,114,6,2022-06-11
 BE,Flanders,OostVlaanderen,559231.0,,137,7,2022-06-11
-BE,Flanders,Antwerpen,667601.0,,109,10,2022-06-11
+BE,Flanders,Antwerpen,667602.0,,109,10,2022-06-11
 BE,MISSING,MISSING,57328.0,,,,2022-06-12
 BE,Wallonia,Luxembourg,108089.0,,19,3,2022-06-12
 BE,Wallonia,BrabantWallon,153170.0,,8,1,2022-06-12
@@ -10002,7 +10002,7 @@ BE,Flanders,WestVlaanderen,441910.0,,104,8,2022-06-12
 BE,Brussels,Brussels,454904.0,,118,9,2022-06-12
 BE,Wallonia,Hainaut,462179.0,,117,8,2022-06-12
 BE,Flanders,OostVlaanderen,559339.0,,139,5,2022-06-12
-BE,Flanders,Antwerpen,667764.0,,110,10,2022-06-12
+BE,Flanders,Antwerpen,667765.0,,110,10,2022-06-12
 BE,MISSING,MISSING,57373.0,,,,2022-06-13
 BE,Wallonia,Luxembourg,108176.0,,19,3,2022-06-13
 BE,Wallonia,BrabantWallon,153317.0,,7,1,2022-06-13
@@ -10014,7 +10014,7 @@ BE,Flanders,WestVlaanderen,442462.0,,112,8,2022-06-13
 BE,Brussels,Brussels,455333.0,,124,9,2022-06-13
 BE,Wallonia,Hainaut,462507.0,,130,8,2022-06-13
 BE,Flanders,OostVlaanderen,560161.0,,140,7,2022-06-13
-BE,Flanders,Antwerpen,668606.0,,125,9,2022-06-13
+BE,Flanders,Antwerpen,668607.0,,125,9,2022-06-13
 BE,MISSING,MISSING,57414.0,,,,2022-06-14
 BE,Wallonia,Luxembourg,108266.0,,19,3,2022-06-14
 BE,Wallonia,BrabantWallon,153463.0,,8,1,2022-06-14
@@ -10026,7 +10026,7 @@ BE,Flanders,WestVlaanderen,442875.0,,111,7,2022-06-14
 BE,Brussels,Brussels,455756.0,,123,11,2022-06-14
 BE,Wallonia,Hainaut,462788.0,,120,8,2022-06-14
 BE,Flanders,OostVlaanderen,560741.0,,149,8,2022-06-14
-BE,Flanders,Antwerpen,669187.0,,128,11,2022-06-14
+BE,Flanders,Antwerpen,669188.0,,128,11,2022-06-14
 BE,MISSING,MISSING,57445.0,,,,2022-06-15
 BE,Wallonia,Luxembourg,108339.0,,19,3,2022-06-15
 BE,Wallonia,BrabantWallon,153594.0,,6,1,2022-06-15
@@ -10038,7 +10038,7 @@ BE,Flanders,WestVlaanderen,443283.0,,121,5,2022-06-15
 BE,Brussels,Brussels,456164.0,,116,9,2022-06-15
 BE,Wallonia,Hainaut,463083.0,,127,6,2022-06-15
 BE,Flanders,OostVlaanderen,561325.0,,136,7,2022-06-15
-BE,Flanders,Antwerpen,669756.0,,141,9,2022-06-15
+BE,Flanders,Antwerpen,669757.0,,141,9,2022-06-15
 BE,MISSING,MISSING,57482.0,,,,2022-06-16
 BE,Wallonia,Luxembourg,108414.0,,19,3,2022-06-16
 BE,Wallonia,BrabantWallon,153719.0,,9,1,2022-06-16
@@ -10050,7 +10050,7 @@ BE,Flanders,WestVlaanderen,443651.0,,117,5,2022-06-16
 BE,Brussels,Brussels,456505.0,,117,5,2022-06-16
 BE,Wallonia,Hainaut,463401.0,,138,6,2022-06-16
 BE,Flanders,OostVlaanderen,561864.0,,158,4,2022-06-16
-BE,Flanders,Antwerpen,670274.0,,129,6,2022-06-16
+BE,Flanders,Antwerpen,670275.0,,129,6,2022-06-16
 BE,MISSING,MISSING,57530.0,,,,2022-06-17
 BE,Wallonia,Luxembourg,108472.0,,19,3,2022-06-17
 BE,Wallonia,BrabantWallon,153828.0,,7,1,2022-06-17
@@ -10062,7 +10062,7 @@ BE,Flanders,WestVlaanderen,444074.0,,124,6,2022-06-17
 BE,Brussels,Brussels,456899.0,,113,7,2022-06-17
 BE,Wallonia,Hainaut,463759.0,,134,6,2022-06-17
 BE,Flanders,OostVlaanderen,562368.0,,145,3,2022-06-17
-BE,Flanders,Antwerpen,670822.0,,127,6,2022-06-17
+BE,Flanders,Antwerpen,670823.0,,127,6,2022-06-17
 BE,MISSING,MISSING,57557.0,,,,2022-06-18
 BE,Wallonia,Luxembourg,108501.0,,19,3,2022-06-18
 BE,Wallonia,BrabantWallon,153884.0,,11,1,2022-06-18
@@ -10074,7 +10074,7 @@ BE,Flanders,WestVlaanderen,444299.0,,131,6,2022-06-18
 BE,Brussels,Brussels,457127.0,,120,8,2022-06-18
 BE,Wallonia,Hainaut,463963.0,,118,4,2022-06-18
 BE,Flanders,OostVlaanderen,562607.0,,139,4,2022-06-18
-BE,Flanders,Antwerpen,671092.0,,137,7,2022-06-18
+BE,Flanders,Antwerpen,671093.0,,137,7,2022-06-18
 BE,MISSING,MISSING,57573.0,,,,2022-06-19
 BE,Wallonia,Luxembourg,108526.0,,19,3,2022-06-19
 BE,Wallonia,BrabantWallon,153907.0,,11,1,2022-06-19
@@ -10086,7 +10086,7 @@ BE,Flanders,WestVlaanderen,444409.0,,155,6,2022-06-19
 BE,Brussels,Brussels,457279.0,,131,8,2022-06-19
 BE,Wallonia,Hainaut,464033.0,,125,3,2022-06-19
 BE,Flanders,OostVlaanderen,562740.0,,148,5,2022-06-19
-BE,Flanders,Antwerpen,671306.0,,137,7,2022-06-19
+BE,Flanders,Antwerpen,671307.0,,137,7,2022-06-19
 BE,MISSING,MISSING,57626.0,,,,2022-06-20
 BE,Wallonia,Luxembourg,108619.0,,19,3,2022-06-20
 BE,Wallonia,BrabantWallon,154105.0,,13,2,2022-06-20
@@ -10098,7 +10098,7 @@ BE,Flanders,WestVlaanderen,445101.0,,178,6,2022-06-20
 BE,Brussels,Brussels,457801.0,,147,9,2022-06-20
 BE,Wallonia,Hainaut,464563.0,,130,4,2022-06-20
 BE,Flanders,OostVlaanderen,563833.0,,153,5,2022-06-20
-BE,Flanders,Antwerpen,672396.0,,150,8,2022-06-20
+BE,Flanders,Antwerpen,672397.0,,150,8,2022-06-20
 BE,MISSING,MISSING,57684.0,,,,2022-06-21
 BE,Wallonia,Luxembourg,108702.0,,19,3,2022-06-21
 BE,Wallonia,BrabantWallon,154264.0,,16,1,2022-06-21
@@ -10110,7 +10110,7 @@ BE,Flanders,WestVlaanderen,445637.0,,190,7,2022-06-21
 BE,Brussels,Brussels,458279.0,,152,10,2022-06-21
 BE,Wallonia,Hainaut,465059.0,,128,5,2022-06-21
 BE,Flanders,OostVlaanderen,564535.0,,181,5,2022-06-21
-BE,Flanders,Antwerpen,673161.0,,148,7,2022-06-21
+BE,Flanders,Antwerpen,673162.0,,148,7,2022-06-21
 BE,MISSING,MISSING,57740.0,,,,2022-06-22
 BE,Wallonia,Luxembourg,108822.0,,19,3,2022-06-22
 BE,Wallonia,BrabantWallon,154424.0,,16,2,2022-06-22
@@ -10122,7 +10122,7 @@ BE,Flanders,WestVlaanderen,446191.0,,192,8,2022-06-22
 BE,Brussels,Brussels,458821.0,,155,9,2022-06-22
 BE,Wallonia,Hainaut,465537.0,,125,5,2022-06-22
 BE,Flanders,OostVlaanderen,565338.0,,178,8,2022-06-22
-BE,Flanders,Antwerpen,674064.0,,158,5,2022-06-22
+BE,Flanders,Antwerpen,674065.0,,158,5,2022-06-22
 BE,MISSING,MISSING,57792.0,,,,2022-06-23
 BE,Wallonia,Luxembourg,108954.0,,19,3,2022-06-23
 BE,Wallonia,BrabantWallon,154613.0,,20,2,2022-06-23
@@ -10134,7 +10134,7 @@ BE,Flanders,WestVlaanderen,446784.0,,177,8,2022-06-23
 BE,Brussels,Brussels,459312.0,,160,12,2022-06-23
 BE,Wallonia,Hainaut,466000.0,,136,6,2022-06-23
 BE,Flanders,OostVlaanderen,566160.0,,166,12,2022-06-23
-BE,Flanders,Antwerpen,674924.0,,152,7,2022-06-23
+BE,Flanders,Antwerpen,674925.0,,152,7,2022-06-23
 BE,MISSING,MISSING,57840.0,,,,2022-06-24
 BE,Wallonia,Luxembourg,109041.0,,19,3,2022-06-24
 BE,Wallonia,BrabantWallon,154789.0,,15,1,2022-06-24
@@ -10146,7 +10146,7 @@ BE,Flanders,WestVlaanderen,447300.0,,180,11,2022-06-24
 BE,Brussels,Brussels,459801.0,,147,10,2022-06-24
 BE,Wallonia,Hainaut,466440.0,,128,8,2022-06-24
 BE,Flanders,OostVlaanderen,566872.0,,186,13,2022-06-24
-BE,Flanders,Antwerpen,675750.0,,166,5,2022-06-24
+BE,Flanders,Antwerpen,675751.0,,166,5,2022-06-24
 BE,MISSING,MISSING,57869.0,,,,2022-06-25
 BE,Wallonia,Luxembourg,109106.0,,19,3,2022-06-25
 BE,Wallonia,BrabantWallon,154879.0,,15,1,2022-06-25
@@ -10158,7 +10158,7 @@ BE,Flanders,WestVlaanderen,447582.0,,195,10,2022-06-25
 BE,Brussels,Brussels,460131.0,,149,8,2022-06-25
 BE,Wallonia,Hainaut,466695.0,,167,10,2022-06-25
 BE,Flanders,OostVlaanderen,567275.0,,192,11,2022-06-25
-BE,Flanders,Antwerpen,676226.0,,167,5,2022-06-25
+BE,Flanders,Antwerpen,676227.0,,167,5,2022-06-25
 BE,MISSING,MISSING,57896.0,,,,2022-06-26
 BE,Wallonia,Luxembourg,109125.0,,19,3,2022-06-26
 BE,Wallonia,BrabantWallon,154911.0,,19,1,2022-06-26
@@ -10170,7 +10170,7 @@ BE,Flanders,WestVlaanderen,447716.0,,195,12,2022-06-26
 BE,Brussels,Brussels,460340.0,,153,9,2022-06-26
 BE,Wallonia,Hainaut,466794.0,,156,7,2022-06-26
 BE,Flanders,OostVlaanderen,567481.0,,201,10,2022-06-26
-BE,Flanders,Antwerpen,676583.0,,175,5,2022-06-26
+BE,Flanders,Antwerpen,676584.0,,175,5,2022-06-26
 BE,MISSING,MISSING,57959.0,,,,2022-06-27
 BE,Wallonia,Luxembourg,109288.0,,19,3,2022-06-27
 BE,Wallonia,BrabantWallon,155187.0,,19,0,2022-06-27
@@ -10182,7 +10182,7 @@ BE,Flanders,WestVlaanderen,448633.0,,206,12,2022-06-27
 BE,Brussels,Brussels,461175.0,,175,11,2022-06-27
 BE,Wallonia,Hainaut,467489.0,,181,8,2022-06-27
 BE,Flanders,OostVlaanderen,568942.0,,209,15,2022-06-27
-BE,Flanders,Antwerpen,678239.0,,189,6,2022-06-27
+BE,Flanders,Antwerpen,678240.0,,189,6,2022-06-27
 BE,MISSING,MISSING,58015.0,,,,2022-06-28
 BE,Wallonia,Luxembourg,109452.0,,19,3,2022-06-28
 BE,Wallonia,BrabantWallon,155464.0,,19,0,2022-06-28
@@ -10194,7 +10194,7 @@ BE,Flanders,WestVlaanderen,449315.0,,213,16,2022-06-28
 BE,Brussels,Brussels,461896.0,,154,8,2022-06-28
 BE,Wallonia,Hainaut,468201.0,,209,9,2022-06-28
 BE,Flanders,OostVlaanderen,570003.0,,199,12,2022-06-28
-BE,Flanders,Antwerpen,679524.0,,192,10,2022-06-28
+BE,Flanders,Antwerpen,679525.0,,192,10,2022-06-28
 BE,MISSING,MISSING,58092.0,,,,2022-06-29
 BE,Wallonia,Luxembourg,109610.0,,19,3,2022-06-29
 BE,Wallonia,BrabantWallon,155784.0,,24,0,2022-06-29
@@ -10206,7 +10206,7 @@ BE,Flanders,WestVlaanderen,450026.0,,205,15,2022-06-29
 BE,Brussels,Brussels,462685.0,,183,7,2022-06-29
 BE,Wallonia,Hainaut,468875.0,,212,8,2022-06-29
 BE,Flanders,OostVlaanderen,571119.0,,216,13,2022-06-29
-BE,Flanders,Antwerpen,680890.0,,194,10,2022-06-29
+BE,Flanders,Antwerpen,680891.0,,194,10,2022-06-29
 BE,MISSING,MISSING,58147.0,,,,2022-06-30
 BE,Wallonia,Luxembourg,109789.0,,21,1,2022-06-30
 BE,Wallonia,BrabantWallon,156060.0,,26,0,2022-06-30
@@ -10218,7 +10218,7 @@ BE,Flanders,WestVlaanderen,450703.0,,167,12,2022-06-30
 BE,Brussels,Brussels,463468.0,,194,8,2022-06-30
 BE,Wallonia,Hainaut,469565.0,,227,6,2022-06-30
 BE,Flanders,OostVlaanderen,572147.0,,220,12,2022-06-30
-BE,Flanders,Antwerpen,682054.0,,190,12,2022-06-30
+BE,Flanders,Antwerpen,682055.0,,190,12,2022-06-30
 BE,MISSING,MISSING,58226.0,,,,2022-07-01
 BE,Wallonia,Luxembourg,109962.0,,23,1,2022-07-01
 BE,Wallonia,BrabantWallon,156311.0,,27,0,2022-07-01
@@ -10230,7 +10230,7 @@ BE,Flanders,WestVlaanderen,451369.0,,195,10,2022-07-01
 BE,Brussels,Brussels,464183.0,,198,8,2022-07-01
 BE,Wallonia,Hainaut,470182.0,,231,6,2022-07-01
 BE,Flanders,OostVlaanderen,573159.0,,230,12,2022-07-01
-BE,Flanders,Antwerpen,683206.0,,210,12,2022-07-01
+BE,Flanders,Antwerpen,683207.0,,210,12,2022-07-01
 BE,MISSING,MISSING,58280.0,,,,2022-07-02
 BE,Wallonia,Luxembourg,110037.0,,23,1,2022-07-02
 BE,Wallonia,BrabantWallon,156474.0,,28,0,2022-07-02
@@ -10242,7 +10242,7 @@ BE,Flanders,WestVlaanderen,451687.0,,197,11,2022-07-02
 BE,Brussels,Brussels,464666.0,,202,9,2022-07-02
 BE,Wallonia,Hainaut,470508.0,,223,7,2022-07-02
 BE,Flanders,OostVlaanderen,573608.0,,222,12,2022-07-02
-BE,Flanders,Antwerpen,683769.0,,213,16,2022-07-02
+BE,Flanders,Antwerpen,683770.0,,213,16,2022-07-02
 BE,MISSING,MISSING,58322.0,,,,2022-07-03
 BE,Wallonia,Luxembourg,110046.0,,23,1,2022-07-03
 BE,Wallonia,BrabantWallon,156540.0,,27,0,2022-07-03
@@ -10254,7 +10254,7 @@ BE,Flanders,WestVlaanderen,451895.0,,209,12,2022-07-03
 BE,Brussels,Brussels,464956.0,,216,11,2022-07-03
 BE,Wallonia,Hainaut,470609.0,,217,6,2022-07-03
 BE,Flanders,OostVlaanderen,573870.0,,235,14,2022-07-03
-BE,Flanders,Antwerpen,684259.0,,220,16,2022-07-03
+BE,Flanders,Antwerpen,684260.0,,220,16,2022-07-03
 BE,MISSING,MISSING,58433.0,,,,2022-07-04
 BE,Wallonia,Luxembourg,110256.0,,23,1,2022-07-04
 BE,Wallonia,BrabantWallon,157008.0,,34,0,2022-07-04
@@ -10266,7 +10266,7 @@ BE,Flanders,WestVlaanderen,453195.0,,237,10,2022-07-04
 BE,Brussels,Brussels,466133.0,,219,12,2022-07-04
 BE,Wallonia,Hainaut,471738.0,,222,8,2022-07-04
 BE,Flanders,OostVlaanderen,576005.0,,240,13,2022-07-04
-BE,Flanders,Antwerpen,686511.0,,233,14,2022-07-04
+BE,Flanders,Antwerpen,686512.0,,233,14,2022-07-04
 BE,MISSING,MISSING,58538.0,,,,2022-07-05
 BE,Wallonia,Luxembourg,110515.0,,23,1,2022-07-05
 BE,Wallonia,BrabantWallon,157430.0,,33,0,2022-07-05
@@ -10278,7 +10278,7 @@ BE,Flanders,WestVlaanderen,454166.0,,225,7,2022-07-05
 BE,Brussels,Brussels,467221.0,,228,11,2022-07-05
 BE,Wallonia,Hainaut,472711.0,,237,12,2022-07-05
 BE,Flanders,OostVlaanderen,577600.0,,242,18,2022-07-05
-BE,Flanders,Antwerpen,688181.0,,225,14,2022-07-05
+BE,Flanders,Antwerpen,688182.0,,225,14,2022-07-05
 BE,MISSING,MISSING,58642.0,,,,2022-07-06
 BE,Wallonia,Luxembourg,110704.0,,23,1,2022-07-06
 BE,Wallonia,BrabantWallon,157811.0,,30,1,2022-07-06
@@ -10290,7 +10290,7 @@ BE,Flanders,WestVlaanderen,455188.0,,226,6,2022-07-06
 BE,Brussels,Brussels,468243.0,,249,15,2022-07-06
 BE,Wallonia,Hainaut,473680.0,,240,10,2022-07-06
 BE,Flanders,OostVlaanderen,579084.0,,250,13,2022-07-06
-BE,Flanders,Antwerpen,689940.0,,220,13,2022-07-06
+BE,Flanders,Antwerpen,689941.0,,220,13,2022-07-06
 BE,MISSING,MISSING,58742.0,,,,2022-07-07
 BE,Wallonia,Luxembourg,110909.0,,23,1,2022-07-07
 BE,Wallonia,BrabantWallon,158153.0,,33,1,2022-07-07
@@ -10302,7 +10302,7 @@ BE,Flanders,WestVlaanderen,456158.0,,237,11,2022-07-07
 BE,Brussels,Brussels,469223.0,,264,12,2022-07-07
 BE,Wallonia,Hainaut,474577.0,,257,10,2022-07-07
 BE,Flanders,OostVlaanderen,580415.0,,244,11,2022-07-07
-BE,Flanders,Antwerpen,691506.0,,244,14,2022-07-07
+BE,Flanders,Antwerpen,691507.0,,244,14,2022-07-07
 BE,MISSING,MISSING,58822.0,,,,2022-07-08
 BE,Wallonia,Luxembourg,111091.0,,23,1,2022-07-08
 BE,Wallonia,BrabantWallon,158495.0,,30,0,2022-07-08
@@ -10314,7 +10314,7 @@ BE,Flanders,WestVlaanderen,456967.0,,224,10,2022-07-08
 BE,Brussels,Brussels,470142.0,,265,12,2022-07-08
 BE,Wallonia,Hainaut,475504.0,,280,13,2022-07-08
 BE,Flanders,OostVlaanderen,581668.0,,252,11,2022-07-08
-BE,Flanders,Antwerpen,692798.0,,246,18,2022-07-08
+BE,Flanders,Antwerpen,692799.0,,246,18,2022-07-08
 BE,MISSING,MISSING,58871.0,,,,2022-07-09
 BE,Wallonia,Luxembourg,111190.0,,23,1,2022-07-09
 BE,Wallonia,BrabantWallon,158683.0,,34,0,2022-07-09
@@ -10326,7 +10326,7 @@ BE,Flanders,WestVlaanderen,457391.0,,225,10,2022-07-09
 BE,Brussels,Brussels,470631.0,,260,7,2022-07-09
 BE,Wallonia,Hainaut,475927.0,,273,12,2022-07-09
 BE,Flanders,OostVlaanderen,582216.0,,264,12,2022-07-09
-BE,Flanders,Antwerpen,693488.0,,267,19,2022-07-09
+BE,Flanders,Antwerpen,693489.0,,267,19,2022-07-09
 BE,MISSING,MISSING,58897.0,,,,2022-07-10
 BE,Wallonia,Luxembourg,111234.0,,23,1,2022-07-10
 BE,Wallonia,BrabantWallon,158758.0,,43,2,2022-07-10
@@ -10338,7 +10338,7 @@ BE,Flanders,WestVlaanderen,457615.0,,236,11,2022-07-10
 BE,Brussels,Brussels,470919.0,,271,6,2022-07-10
 BE,Wallonia,Hainaut,476058.0,,309,12,2022-07-10
 BE,Flanders,OostVlaanderen,582495.0,,289,16,2022-07-10
-BE,Flanders,Antwerpen,693978.0,,267,16,2022-07-10
+BE,Flanders,Antwerpen,693979.0,,267,16,2022-07-10
 BE,MISSING,MISSING,59009.0,,,,2022-07-11
 BE,Wallonia,Luxembourg,111521.0,,23,1,2022-07-11
 BE,Wallonia,BrabantWallon,159212.0,,45,2,2022-07-11
@@ -10350,7 +10350,7 @@ BE,Flanders,WestVlaanderen,459022.0,,254,11,2022-07-11
 BE,Brussels,Brussels,472110.0,,286,5,2022-07-11
 BE,Wallonia,Hainaut,477220.0,,318,13,2022-07-11
 BE,Flanders,OostVlaanderen,584488.0,,315,17,2022-07-11
-BE,Flanders,Antwerpen,696088.0,,298,15,2022-07-11
+BE,Flanders,Antwerpen,696089.0,,298,15,2022-07-11
 BE,MISSING,MISSING,59092.0,,,,2022-07-12
 BE,Wallonia,Luxembourg,111779.0,,25,1,2022-07-12
 BE,Wallonia,BrabantWallon,159546.0,,42,3,2022-07-12
@@ -10362,7 +10362,7 @@ BE,Flanders,WestVlaanderen,459952.0,,268,10,2022-07-12
 BE,Brussels,Brussels,473144.0,,316,9,2022-07-12
 BE,Wallonia,Hainaut,478223.0,,339,11,2022-07-12
 BE,Flanders,OostVlaanderen,585854.0,,331,19,2022-07-12
-BE,Flanders,Antwerpen,697527.0,,300,13,2022-07-12
+BE,Flanders,Antwerpen,697528.0,,300,13,2022-07-12
 BE,MISSING,MISSING,59170.0,,,,2022-07-13
 BE,Wallonia,Luxembourg,112019.0,,27,1,2022-07-13
 BE,Wallonia,BrabantWallon,159842.0,,45,0,2022-07-13
@@ -10374,7 +10374,7 @@ BE,Flanders,WestVlaanderen,460837.0,,254,11,2022-07-13
 BE,Brussels,Brussels,474046.0,,325,7,2022-07-13
 BE,Wallonia,Hainaut,479118.0,,364,14,2022-07-13
 BE,Flanders,OostVlaanderen,587083.0,,324,23,2022-07-13
-BE,Flanders,Antwerpen,698893.0,,295,15,2022-07-13
+BE,Flanders,Antwerpen,698894.0,,295,15,2022-07-13
 BE,MISSING,MISSING,59252.0,,,,2022-07-14
 BE,Wallonia,Luxembourg,112259.0,,27,1,2022-07-14
 BE,Wallonia,BrabantWallon,160122.0,,49,0,2022-07-14
@@ -10386,7 +10386,7 @@ BE,Flanders,WestVlaanderen,461550.0,,241,10,2022-07-14
 BE,Brussels,Brussels,474794.0,,336,9,2022-07-14
 BE,Wallonia,Hainaut,479829.0,,380,14,2022-07-14
 BE,Flanders,OostVlaanderen,588109.0,,321,22,2022-07-14
-BE,Flanders,Antwerpen,700047.0,,326,15,2022-07-14
+BE,Flanders,Antwerpen,700048.0,,326,15,2022-07-14
 BE,MISSING,MISSING,59314.0,,,,2022-07-15
 BE,Wallonia,Luxembourg,112473.0,,30,1,2022-07-15
 BE,Wallonia,BrabantWallon,160391.0,,50,2,2022-07-15
@@ -10398,7 +10398,7 @@ BE,Flanders,WestVlaanderen,462198.0,,244,14,2022-07-15
 BE,Brussels,Brussels,475403.0,,339,14,2022-07-15
 BE,Wallonia,Hainaut,480490.0,,371,18,2022-07-15
 BE,Flanders,OostVlaanderen,588993.0,,316,16,2022-07-15
-BE,Flanders,Antwerpen,701088.0,,333,17,2022-07-15
+BE,Flanders,Antwerpen,701089.0,,333,17,2022-07-15
 BE,MISSING,MISSING,59362.0,,,,2022-07-16
 BE,Wallonia,Luxembourg,112563.0,,30,1,2022-07-16
 BE,Wallonia,BrabantWallon,160508.0,,39,1,2022-07-16
@@ -10410,7 +10410,7 @@ BE,Flanders,WestVlaanderen,462516.0,,233,15,2022-07-16
 BE,Brussels,Brussels,475756.0,,339,18,2022-07-16
 BE,Wallonia,Hainaut,480810.0,,376,18,2022-07-16
 BE,Flanders,OostVlaanderen,589362.0,,308,14,2022-07-16
-BE,Flanders,Antwerpen,701581.0,,322,20,2022-07-16
+BE,Flanders,Antwerpen,701582.0,,322,20,2022-07-16
 BE,MISSING,MISSING,59383.0,,,,2022-07-17
 BE,Wallonia,Luxembourg,112597.0,,30,1,2022-07-17
 BE,Wallonia,BrabantWallon,160550.0,,42,1,2022-07-17
@@ -10422,7 +10422,7 @@ BE,Flanders,WestVlaanderen,462654.0,,259,15,2022-07-17
 BE,Brussels,Brussels,475943.0,,349,16,2022-07-17
 BE,Wallonia,Hainaut,480929.0,,378,18,2022-07-17
 BE,Flanders,OostVlaanderen,589531.0,,304,16,2022-07-17
-BE,Flanders,Antwerpen,701892.0,,338,23,2022-07-17
+BE,Flanders,Antwerpen,701893.0,,338,23,2022-07-17
 BE,MISSING,MISSING,59459.0,,,,2022-07-18
 BE,Wallonia,Luxembourg,112832.0,,30,1,2022-07-18
 BE,Wallonia,BrabantWallon,160834.0,,38,1,2022-07-18
@@ -10434,7 +10434,7 @@ BE,Flanders,WestVlaanderen,463449.0,,272,16,2022-07-18
 BE,Brussels,Brussels,476680.0,,329,14,2022-07-18
 BE,Wallonia,Hainaut,481751.0,,398,15,2022-07-18
 BE,Flanders,OostVlaanderen,590719.0,,311,17,2022-07-18
-BE,Flanders,Antwerpen,703337.0,,336,22,2022-07-18
+BE,Flanders,Antwerpen,703338.0,,336,22,2022-07-18
 BE,MISSING,MISSING,59531.0,,,,2022-07-19
 BE,Wallonia,Luxembourg,113018.0,,30,1,2022-07-19
 BE,Wallonia,BrabantWallon,161055.0,,30,2,2022-07-19
@@ -10446,7 +10446,7 @@ BE,Flanders,WestVlaanderen,463973.0,,258,13,2022-07-19
 BE,Brussels,Brussels,477167.0,,322,18,2022-07-19
 BE,Wallonia,Hainaut,482388.0,,383,19,2022-07-19
 BE,Flanders,OostVlaanderen,591410.0,,293,15,2022-07-19
-BE,Flanders,Antwerpen,704166.0,,320,19,2022-07-19
+BE,Flanders,Antwerpen,704167.0,,320,19,2022-07-19
 BE,MISSING,MISSING,59583.0,,,,2022-07-20
 BE,Wallonia,Luxembourg,113200.0,,30,2,2022-07-20
 BE,Wallonia,BrabantWallon,161254.0,,30,2,2022-07-20
@@ -10458,7 +10458,7 @@ BE,Flanders,WestVlaanderen,464481.0,,267,11,2022-07-20
 BE,Brussels,Brussels,477645.0,,337,19,2022-07-20
 BE,Wallonia,Hainaut,482936.0,,358,19,2022-07-20
 BE,Flanders,OostVlaanderen,592168.0,,290,12,2022-07-20
-BE,Flanders,Antwerpen,704996.0,,331,18,2022-07-20
+BE,Flanders,Antwerpen,704997.0,,331,18,2022-07-20
 BE,MISSING,MISSING,59611.0,,,,2022-07-21
 BE,Wallonia,Luxembourg,113238.0,,30,2,2022-07-21
 BE,Wallonia,BrabantWallon,161292.0,,32,1,2022-07-21
@@ -10470,7 +10470,7 @@ BE,Flanders,WestVlaanderen,464644.0,,272,13,2022-07-21
 BE,Brussels,Brussels,477829.0,,323,14,2022-07-21
 BE,Wallonia,Hainaut,483039.0,,313,18,2022-07-21
 BE,Flanders,OostVlaanderen,592334.0,,298,11,2022-07-21
-BE,Flanders,Antwerpen,705245.0,,315,19,2022-07-21
+BE,Flanders,Antwerpen,705246.0,,315,19,2022-07-21
 BE,MISSING,MISSING,59680.0,,,,2022-07-22
 BE,Wallonia,Luxembourg,113424.0,,30,2,2022-07-22
 BE,Wallonia,BrabantWallon,161513.0,,28,2,2022-07-22
@@ -10482,7 +10482,7 @@ BE,Flanders,WestVlaanderen,465206.0,,290,14,2022-07-22
 BE,Brussels,Brussels,478346.0,,329,16,2022-07-22
 BE,Wallonia,Hainaut,483606.0,,327,18,2022-07-22
 BE,Flanders,OostVlaanderen,593269.0,,303,10,2022-07-22
-BE,Flanders,Antwerpen,706089.0,,316,20,2022-07-22
+BE,Flanders,Antwerpen,706090.0,,316,20,2022-07-22
 BE,MISSING,MISSING,59704.0,,,,2022-07-23
 BE,Wallonia,Luxembourg,113493.0,,30,2,2022-07-23
 BE,Wallonia,BrabantWallon,161598.0,,31,2,2022-07-23
@@ -10494,7 +10494,7 @@ BE,Flanders,WestVlaanderen,465435.0,,280,14,2022-07-23
 BE,Brussels,Brussels,478583.0,,321,21,2022-07-23
 BE,Wallonia,Hainaut,483857.0,,318,16,2022-07-23
 BE,Flanders,OostVlaanderen,593646.0,,290,15,2022-07-23
-BE,Flanders,Antwerpen,706429.0,,295,11,2022-07-23
+BE,Flanders,Antwerpen,706430.0,,295,11,2022-07-23
 BE,MISSING,MISSING,59735.0,,,,2022-07-24
 BE,Wallonia,Luxembourg,113523.0,,30,2,2022-07-24
 BE,Wallonia,BrabantWallon,161638.0,,30,2,2022-07-24
@@ -10506,7 +10506,7 @@ BE,Flanders,WestVlaanderen,465586.0,,296,16,2022-07-24
 BE,Brussels,Brussels,478709.0,,321,17,2022-07-24
 BE,Wallonia,Hainaut,483964.0,,308,14,2022-07-24
 BE,Flanders,OostVlaanderen,593863.0,,291,15,2022-07-24
-BE,Flanders,Antwerpen,706723.0,,300,12,2022-07-24
+BE,Flanders,Antwerpen,706724.0,,300,12,2022-07-24
 BE,MISSING,MISSING,59790.0,,,,2022-07-25
 BE,Wallonia,Luxembourg,113685.0,,30,2,2022-07-25
 BE,Wallonia,BrabantWallon,161883.0,,31,2,2022-07-25
@@ -10518,7 +10518,7 @@ BE,Flanders,WestVlaanderen,466313.0,,291,13,2022-07-25
 BE,Brussels,Brussels,479312.0,,324,18,2022-07-25
 BE,Wallonia,Hainaut,484601.0,,307,16,2022-07-25
 BE,Flanders,OostVlaanderen,595166.0,,304,17,2022-07-25
-BE,Flanders,Antwerpen,708001.0,,324,13,2022-07-25
+BE,Flanders,Antwerpen,708002.0,,324,13,2022-07-25
 BE,MISSING,MISSING,59847.0,,,,2022-07-26
 BE,Wallonia,Luxembourg,113861.0,,29,3,2022-07-26
 BE,Wallonia,BrabantWallon,162068.0,,24,2,2022-07-26
@@ -10530,7 +10530,7 @@ BE,Flanders,WestVlaanderen,466752.0,,280,15,2022-07-26
 BE,Brussels,Brussels,479728.0,,323,16,2022-07-26
 BE,Wallonia,Hainaut,485157.0,,287,13,2022-07-26
 BE,Flanders,OostVlaanderen,596077.0,,290,15,2022-07-26
-BE,Flanders,Antwerpen,708762.0,,304,6,2022-07-26
+BE,Flanders,Antwerpen,708763.0,,304,6,2022-07-26
 BE,MISSING,MISSING,59891.0,,,,2022-07-27
 BE,Wallonia,Luxembourg,113985.0,,28,3,2022-07-27
 BE,Wallonia,BrabantWallon,162256.0,,26,2,2022-07-27
@@ -10542,7 +10542,7 @@ BE,Flanders,WestVlaanderen,467189.0,,262,14,2022-07-27
 BE,Brussels,Brussels,480097.0,,303,13,2022-07-27
 BE,Wallonia,Hainaut,485600.0,,281,13,2022-07-27
 BE,Flanders,OostVlaanderen,596879.0,,269,15,2022-07-27
-BE,Flanders,Antwerpen,709536.0,,279,7,2022-07-27
+BE,Flanders,Antwerpen,709537.0,,279,7,2022-07-27
 BE,MISSING,MISSING,59925.0,,,,2022-07-28
 BE,Wallonia,Luxembourg,114097.0,,25,2,2022-07-28
 BE,Wallonia,BrabantWallon,162406.0,,24,3,2022-07-28
@@ -10554,7 +10554,7 @@ BE,Flanders,WestVlaanderen,467575.0,,253,14,2022-07-28
 BE,Brussels,Brussels,480412.0,,296,14,2022-07-28
 BE,Wallonia,Hainaut,485980.0,,277,12,2022-07-28
 BE,Flanders,OostVlaanderen,597632.0,,254,12,2022-07-28
-BE,Flanders,Antwerpen,710180.0,,279,9,2022-07-28
+BE,Flanders,Antwerpen,710181.0,,279,9,2022-07-28
 BE,MISSING,MISSING,59970.0,,,,2022-07-29
 BE,Wallonia,Luxembourg,114181.0,,27,2,2022-07-29
 BE,Wallonia,BrabantWallon,162552.0,,27,3,2022-07-29
@@ -10566,7 +10566,7 @@ BE,Flanders,WestVlaanderen,467903.0,,244,14,2022-07-29
 BE,Brussels,Brussels,480745.0,,297,15,2022-07-29
 BE,Wallonia,Hainaut,486346.0,,265,15,2022-07-29
 BE,Flanders,OostVlaanderen,598215.0,,226,12,2022-07-29
-BE,Flanders,Antwerpen,710798.0,,266,7,2022-07-29
+BE,Flanders,Antwerpen,710799.0,,266,7,2022-07-29
 BE,MISSING,MISSING,59999.0,,,,2022-07-30
 BE,Wallonia,Luxembourg,114239.0,,27,2,2022-07-30
 BE,Wallonia,BrabantWallon,162625.0,,26,5,2022-07-30
@@ -10578,7 +10578,7 @@ BE,Flanders,WestVlaanderen,468079.0,,226,15,2022-07-30
 BE,Brussels,Brussels,480917.0,,282,17,2022-07-30
 BE,Wallonia,Hainaut,486502.0,,249,15,2022-07-30
 BE,Flanders,OostVlaanderen,598495.0,,220,20,2022-07-30
-BE,Flanders,Antwerpen,711087.0,,256,9,2022-07-30
+BE,Flanders,Antwerpen,711088.0,,256,9,2022-07-30
 BE,MISSING,MISSING,60017.0,,,,2022-07-31
 BE,Wallonia,Luxembourg,114263.0,,27,2,2022-07-31
 BE,Wallonia,BrabantWallon,162658.0,,27,4,2022-07-31
@@ -10590,7 +10590,7 @@ BE,Flanders,WestVlaanderen,468199.0,,239,14,2022-07-31
 BE,Brussels,Brussels,481017.0,,288,18,2022-07-31
 BE,Wallonia,Hainaut,486585.0,,247,21,2022-07-31
 BE,Flanders,OostVlaanderen,598659.0,,234,17,2022-07-31
-BE,Flanders,Antwerpen,711325.0,,260,7,2022-07-31
+BE,Flanders,Antwerpen,711326.0,,260,7,2022-07-31
 BE,MISSING,MISSING,60077.0,,,,2022-08-01
 BE,Wallonia,Luxembourg,114388.0,,28,1,2022-08-01
 BE,Wallonia,BrabantWallon,162845.0,,29,4,2022-08-01
@@ -10602,7 +10602,7 @@ BE,Flanders,WestVlaanderen,468747.0,,251,12,2022-08-01
 BE,Brussels,Brussels,481431.0,,290,17,2022-08-01
 BE,Wallonia,Hainaut,487082.0,,255,24,2022-08-01
 BE,Flanders,OostVlaanderen,599666.0,,244,22,2022-08-01
-BE,Flanders,Antwerpen,712349.0,,259,6,2022-08-01
+BE,Flanders,Antwerpen,712350.0,,259,6,2022-08-01
 BE,MISSING,MISSING,60112.0,,,,2022-08-02
 BE,Wallonia,Luxembourg,114479.0,,24,3,2022-08-02
 BE,Wallonia,BrabantWallon,162967.0,,22,4,2022-08-02
@@ -10614,7 +10614,7 @@ BE,Flanders,WestVlaanderen,469079.0,,243,13,2022-08-02
 BE,Brussels,Brussels,481732.0,,289,19,2022-08-02
 BE,Wallonia,Hainaut,487495.0,,247,20,2022-08-02
 BE,Flanders,OostVlaanderen,600217.0,,253,20,2022-08-02
-BE,Flanders,Antwerpen,712998.0,,254,8,2022-08-02
+BE,Flanders,Antwerpen,712999.0,,254,8,2022-08-02
 BE,MISSING,MISSING,60143.0,,,,2022-08-03
 BE,Wallonia,Luxembourg,114591.0,,24,3,2022-08-03
 BE,Wallonia,BrabantWallon,163067.0,,30,3,2022-08-03
@@ -10626,7 +10626,7 @@ BE,Flanders,WestVlaanderen,469394.0,,246,12,2022-08-03
 BE,Brussels,Brussels,482031.0,,277,19,2022-08-03
 BE,Wallonia,Hainaut,487806.0,,254,22,2022-08-03
 BE,Flanders,OostVlaanderen,600710.0,,233,20,2022-08-03
-BE,Flanders,Antwerpen,713563.0,,238,9,2022-08-03
+BE,Flanders,Antwerpen,713564.0,,238,9,2022-08-03
 BE,MISSING,MISSING,60173.0,,,,2022-08-04
 BE,Wallonia,Luxembourg,114669.0,,24,3,2022-08-04
 BE,Wallonia,BrabantWallon,163161.0,,34,3,2022-08-04
@@ -10638,7 +10638,7 @@ BE,Flanders,WestVlaanderen,469698.0,,237,13,2022-08-04
 BE,Brussels,Brussels,482240.0,,280,20,2022-08-04
 BE,Wallonia,Hainaut,488181.0,,236,17,2022-08-04
 BE,Flanders,OostVlaanderen,601126.0,,234,17,2022-08-04
-BE,Flanders,Antwerpen,714007.0,,232,9,2022-08-04
+BE,Flanders,Antwerpen,714008.0,,232,9,2022-08-04
 BE,MISSING,MISSING,60208.0,,,,2022-08-05
 BE,Wallonia,Luxembourg,114735.0,,19,2,2022-08-05
 BE,Wallonia,BrabantWallon,163252.0,,29,3,2022-08-05
@@ -10650,7 +10650,7 @@ BE,Flanders,WestVlaanderen,469977.0,,225,9,2022-08-05
 BE,Brussels,Brussels,482459.0,,262,20,2022-08-05
 BE,Wallonia,Hainaut,488487.0,,237,21,2022-08-05
 BE,Flanders,OostVlaanderen,601475.0,,227,16,2022-08-05
-BE,Flanders,Antwerpen,714519.0,,229,7,2022-08-05
+BE,Flanders,Antwerpen,714520.0,,229,7,2022-08-05
 BE,MISSING,MISSING,60224.0,,,,2022-08-06
 BE,Wallonia,Luxembourg,114769.0,,19,2,2022-08-06
 BE,Wallonia,BrabantWallon,163298.0,,32,4,2022-08-06
@@ -10662,7 +10662,7 @@ BE,Flanders,WestVlaanderen,470106.0,,213,11,2022-08-06
 BE,Brussels,Brussels,482569.0,,241,20,2022-08-06
 BE,Wallonia,Hainaut,488590.0,,223,19,2022-08-06
 BE,Flanders,OostVlaanderen,601650.0,,222,18,2022-08-06
-BE,Flanders,Antwerpen,714727.0,,230,9,2022-08-06
+BE,Flanders,Antwerpen,714728.0,,230,9,2022-08-06
 BE,MISSING,MISSING,60233.0,,,,2022-08-07
 BE,Wallonia,Luxembourg,114791.0,,19,2,2022-08-07
 BE,Wallonia,BrabantWallon,163317.0,,37,5,2022-08-07
@@ -10674,7 +10674,7 @@ BE,Flanders,WestVlaanderen,470195.0,,215,11,2022-08-07
 BE,Brussels,Brussels,482626.0,,236,21,2022-08-07
 BE,Wallonia,Hainaut,488649.0,,225,17,2022-08-07
 BE,Flanders,OostVlaanderen,601750.0,,220,17,2022-08-07
-BE,Flanders,Antwerpen,714874.0,,224,11,2022-08-07
+BE,Flanders,Antwerpen,714875.0,,224,11,2022-08-07
 BE,MISSING,MISSING,60271.0,,,,2022-08-08
 BE,Wallonia,Luxembourg,114872.0,,19,2,2022-08-08
 BE,Wallonia,BrabantWallon,163416.0,,39,6,2022-08-08
@@ -10686,7 +10686,7 @@ BE,Flanders,WestVlaanderen,470632.0,,222,13,2022-08-08
 BE,Brussels,Brussels,482901.0,,233,23,2022-08-08
 BE,Wallonia,Hainaut,489016.0,,224,18,2022-08-08
 BE,Flanders,OostVlaanderen,602342.0,,234,18,2022-08-08
-BE,Flanders,Antwerpen,715541.0,,220,12,2022-08-08
+BE,Flanders,Antwerpen,715542.0,,220,12,2022-08-08
 BE,MISSING,MISSING,60307.0,,,,2022-08-09
 BE,Wallonia,Luxembourg,114953.0,,21,2,2022-08-09
 BE,Wallonia,BrabantWallon,163522.0,,36,5,2022-08-09
@@ -10698,7 +10698,7 @@ BE,Flanders,WestVlaanderen,470907.0,,197,11,2022-08-09
 BE,Brussels,Brussels,483111.0,,216,21,2022-08-09
 BE,Wallonia,Hainaut,489292.0,,213,18,2022-08-09
 BE,Flanders,OostVlaanderen,602782.0,,228,20,2022-08-09
-BE,Flanders,Antwerpen,715990.0,,197,13,2022-08-09
+BE,Flanders,Antwerpen,715991.0,,197,13,2022-08-09
 BE,MISSING,MISSING,60335.0,,,,2022-08-10
 BE,Wallonia,Luxembourg,115028.0,,23,2,2022-08-10
 BE,Wallonia,BrabantWallon,163602.0,,29,1,2022-08-10
@@ -10710,7 +10710,7 @@ BE,Flanders,WestVlaanderen,471175.0,,185,11,2022-08-10
 BE,Brussels,Brussels,483332.0,,193,19,2022-08-10
 BE,Wallonia,Hainaut,489553.0,,202,19,2022-08-10
 BE,Flanders,OostVlaanderen,603152.0,,216,17,2022-08-10
-BE,Flanders,Antwerpen,716402.0,,178,12,2022-08-10
+BE,Flanders,Antwerpen,716403.0,,178,12,2022-08-10
 BE,MISSING,MISSING,60358.0,,,,2022-08-11
 BE,Wallonia,Luxembourg,115097.0,,23,2,2022-08-11
 BE,Wallonia,BrabantWallon,163691.0,,28,1,2022-08-11
@@ -10722,7 +10722,7 @@ BE,Flanders,WestVlaanderen,471442.0,,179,9,2022-08-11
 BE,Brussels,Brussels,483507.0,,185,18,2022-08-11
 BE,Wallonia,Hainaut,489786.0,,200,16,2022-08-11
 BE,Flanders,OostVlaanderen,603490.0,,192,14,2022-08-11
-BE,Flanders,Antwerpen,716797.0,,175,11,2022-08-11
+BE,Flanders,Antwerpen,716798.0,,175,11,2022-08-11
 BE,MISSING,MISSING,60380.0,,,,2022-08-12
 BE,Wallonia,Luxembourg,115161.0,,23,2,2022-08-12
 BE,Wallonia,BrabantWallon,163759.0,,22,1,2022-08-12
@@ -10734,7 +10734,7 @@ BE,Flanders,WestVlaanderen,471659.0,,179,8,2022-08-12
 BE,Brussels,Brussels,483678.0,,191,18,2022-08-12
 BE,Wallonia,Hainaut,489992.0,,194,14,2022-08-12
 BE,Flanders,OostVlaanderen,603792.0,,177,18,2022-08-12
-BE,Flanders,Antwerpen,717144.0,,171,9,2022-08-12
+BE,Flanders,Antwerpen,717145.0,,171,9,2022-08-12
 BE,MISSING,MISSING,60395.0,,,,2022-08-13
 BE,Wallonia,Luxembourg,115204.0,,23,2,2022-08-13
 BE,Wallonia,BrabantWallon,163795.0,,18,1,2022-08-13
@@ -10746,7 +10746,7 @@ BE,Flanders,WestVlaanderen,471781.0,,172,16,2022-08-13
 BE,Brussels,Brussels,483752.0,,191,15,2022-08-13
 BE,Wallonia,Hainaut,490089.0,,180,11,2022-08-13
 BE,Flanders,OostVlaanderen,603942.0,,179,17,2022-08-13
-BE,Flanders,Antwerpen,717319.0,,166,8,2022-08-13
+BE,Flanders,Antwerpen,717320.0,,166,8,2022-08-13
 BE,MISSING,MISSING,60406.0,,,,2022-08-14
 BE,Wallonia,Luxembourg,115226.0,,23,2,2022-08-14
 BE,Wallonia,BrabantWallon,163818.0,,15,1,2022-08-14
@@ -10758,7 +10758,7 @@ BE,Flanders,WestVlaanderen,471858.0,,180,14,2022-08-14
 BE,Brussels,Brussels,483812.0,,187,13,2022-08-14
 BE,Wallonia,Hainaut,490160.0,,187,12,2022-08-14
 BE,Flanders,OostVlaanderen,604028.0,,180,19,2022-08-14
-BE,Flanders,Antwerpen,717445.0,,169,11,2022-08-14
+BE,Flanders,Antwerpen,717446.0,,169,11,2022-08-14
 BE,MISSING,MISSING,60417.0,,,,2022-08-15
 BE,Wallonia,Luxembourg,115243.0,,23,2,2022-08-15
 BE,Wallonia,BrabantWallon,163840.0,,15,2,2022-08-15
@@ -10770,7 +10770,7 @@ BE,Flanders,WestVlaanderen,471959.0,,171,14,2022-08-15
 BE,Brussels,Brussels,483876.0,,199,17,2022-08-15
 BE,Wallonia,Hainaut,490220.0,,197,13,2022-08-15
 BE,Flanders,OostVlaanderen,604154.0,,185,14,2022-08-15
-BE,Flanders,Antwerpen,717597.0,,175,15,2022-08-15
+BE,Flanders,Antwerpen,717598.0,,175,15,2022-08-15
 BE,MISSING,MISSING,60452.0,,,,2022-08-16
 BE,Wallonia,Luxembourg,115337.0,,23,2,2022-08-16
 BE,Wallonia,BrabantWallon,163940.0,,18,2,2022-08-16
@@ -10782,7 +10782,7 @@ BE,Flanders,WestVlaanderen,472367.0,,175,15,2022-08-16
 BE,Brussels,Brussels,484129.0,,190,17,2022-08-16
 BE,Wallonia,Hainaut,490552.0,,185,12,2022-08-16
 BE,Flanders,OostVlaanderen,604702.0,,178,14,2022-08-16
-BE,Flanders,Antwerpen,718220.0,,164,13,2022-08-16
+BE,Flanders,Antwerpen,718221.0,,164,13,2022-08-16
 BE,MISSING,MISSING,60479.0,,,,2022-08-17
 BE,Wallonia,Luxembourg,115420.0,,22,2,2022-08-17
 BE,Wallonia,BrabantWallon,164026.0,,21,3,2022-08-17
@@ -10794,7 +10794,7 @@ BE,Flanders,WestVlaanderen,472611.0,,156,11,2022-08-17
 BE,Brussels,Brussels,484346.0,,172,22,2022-08-17
 BE,Wallonia,Hainaut,490783.0,,182,15,2022-08-17
 BE,Flanders,OostVlaanderen,605089.0,,167,12,2022-08-17
-BE,Flanders,Antwerpen,718627.0,,171,10,2022-08-17
+BE,Flanders,Antwerpen,718628.0,,171,10,2022-08-17
 BE,MISSING,MISSING,60501.0,,,,2022-08-18
 BE,Wallonia,Luxembourg,115469.0,,20,2,2022-08-18
 BE,Wallonia,BrabantWallon,164095.0,,21,3,2022-08-18
@@ -10806,7 +10806,7 @@ BE,Flanders,WestVlaanderen,472830.0,,140,11,2022-08-18
 BE,Brussels,Brussels,484514.0,,171,15,2022-08-18
 BE,Wallonia,Hainaut,491023.0,,174,17,2022-08-18
 BE,Flanders,OostVlaanderen,605414.0,,147,14,2022-08-18
-BE,Flanders,Antwerpen,718977.0,,168,8,2022-08-18
+BE,Flanders,Antwerpen,718978.0,,168,8,2022-08-18
 BE,MISSING,MISSING,60523.0,,,,2022-08-19
 BE,Wallonia,Luxembourg,115530.0,,21,2,2022-08-19
 BE,Wallonia,BrabantWallon,164158.0,,17,3,2022-08-19
@@ -10818,7 +10818,7 @@ BE,Flanders,WestVlaanderen,472998.0,,138,8,2022-08-19
 BE,Brussels,Brussels,484635.0,,173,12,2022-08-19
 BE,Wallonia,Hainaut,491201.0,,167,16,2022-08-19
 BE,Flanders,OostVlaanderen,605698.0,,138,10,2022-08-19
-BE,Flanders,Antwerpen,719283.0,,172,3,2022-08-19
+BE,Flanders,Antwerpen,719284.0,,172,3,2022-08-19
 BE,MISSING,MISSING,60537.0,,,,2022-08-20
 BE,Wallonia,Luxembourg,115557.0,,21,2,2022-08-20
 BE,Wallonia,BrabantWallon,164184.0,,12,3,2022-08-20
@@ -10830,7 +10830,7 @@ BE,Flanders,WestVlaanderen,473108.0,,131,7,2022-08-20
 BE,Brussels,Brussels,484716.0,,165,13,2022-08-20
 BE,Wallonia,Hainaut,491293.0,,166,12,2022-08-20
 BE,Flanders,OostVlaanderen,605810.0,,129,11,2022-08-20
-BE,Flanders,Antwerpen,719438.0,,163,3,2022-08-20
+BE,Flanders,Antwerpen,719439.0,,163,3,2022-08-20
 BE,MISSING,MISSING,60547.0,,,,2022-08-21
 BE,Wallonia,Luxembourg,115575.0,,21,2,2022-08-21
 BE,Wallonia,BrabantWallon,164199.0,,11,2,2022-08-21
@@ -10842,7 +10842,7 @@ BE,Flanders,WestVlaanderen,473142.0,,135,10,2022-08-21
 BE,Brussels,Brussels,484765.0,,163,11,2022-08-21
 BE,Wallonia,Hainaut,491344.0,,177,12,2022-08-21
 BE,Flanders,OostVlaanderen,605887.0,,131,9,2022-08-21
-BE,Flanders,Antwerpen,719543.0,,173,3,2022-08-21
+BE,Flanders,Antwerpen,719544.0,,173,3,2022-08-21
 BE,MISSING,MISSING,60579.0,,,,2022-08-22
 BE,Wallonia,Luxembourg,115660.0,,21,2,2022-08-22
 BE,Wallonia,BrabantWallon,164299.0,,12,2,2022-08-22
@@ -10854,7 +10854,7 @@ BE,Flanders,WestVlaanderen,473444.0,,130,11,2022-08-22
 BE,Brussels,Brussels,484934.0,,173,12,2022-08-22
 BE,Wallonia,Hainaut,491588.0,,171,10,2022-08-22
 BE,Flanders,OostVlaanderen,606358.0,,131,9,2022-08-22
-BE,Flanders,Antwerpen,720041.0,,168,4,2022-08-22
+BE,Flanders,Antwerpen,720042.0,,168,4,2022-08-22
 BE,MISSING,MISSING,60600.0,,,,2022-08-23
 BE,Wallonia,Luxembourg,115721.0,,21,2,2022-08-23
 BE,Wallonia,BrabantWallon,164351.0,,14,1,2022-08-23
@@ -10866,7 +10866,7 @@ BE,Flanders,WestVlaanderen,473645.0,,116,12,2022-08-23
 BE,Brussels,Brussels,485066.0,,150,8,2022-08-23
 BE,Wallonia,Hainaut,491786.0,,175,12,2022-08-23
 BE,Flanders,OostVlaanderen,606633.0,,113,11,2022-08-23
-BE,Flanders,Antwerpen,720369.0,,169,3,2022-08-23
+BE,Flanders,Antwerpen,720370.0,,169,3,2022-08-23
 BE,MISSING,MISSING,60614.0,,,,2022-08-24
 BE,Wallonia,Luxembourg,115770.0,,21,2,2022-08-24
 BE,Wallonia,BrabantWallon,164410.0,,13,1,2022-08-24
@@ -10878,7 +10878,7 @@ BE,Flanders,WestVlaanderen,473823.0,,106,13,2022-08-24
 BE,Brussels,Brussels,485221.0,,138,11,2022-08-24
 BE,Wallonia,Hainaut,491988.0,,174,12,2022-08-24
 BE,Flanders,OostVlaanderen,606874.0,,105,10,2022-08-24
-BE,Flanders,Antwerpen,720718.0,,161,4,2022-08-24
+BE,Flanders,Antwerpen,720719.0,,161,4,2022-08-24
 BE,MISSING,MISSING,60630.0,,,,2022-08-25
 BE,Wallonia,Luxembourg,115810.0,,19,2,2022-08-25
 BE,Wallonia,BrabantWallon,164448.0,,13,1,2022-08-25
@@ -10890,7 +10890,7 @@ BE,Flanders,WestVlaanderen,473970.0,,99,11,2022-08-25
 BE,Brussels,Brussels,485344.0,,142,15,2022-08-25
 BE,Wallonia,Hainaut,492172.0,,171,11,2022-08-25
 BE,Flanders,OostVlaanderen,607110.0,,103,8,2022-08-25
-BE,Flanders,Antwerpen,721006.0,,160,4,2022-08-25
+BE,Flanders,Antwerpen,721007.0,,160,4,2022-08-25
 BE,MISSING,MISSING,60645.0,,,,2022-08-26
 BE,Wallonia,Luxembourg,115869.0,,18,2,2022-08-26
 BE,Wallonia,BrabantWallon,164503.0,,9,1,2022-08-26
@@ -10902,7 +10902,7 @@ BE,Flanders,WestVlaanderen,474110.0,,82,9,2022-08-26
 BE,Brussels,Brussels,485477.0,,144,17,2022-08-26
 BE,Wallonia,Hainaut,492339.0,,162,12,2022-08-26
 BE,Flanders,OostVlaanderen,607317.0,,112,4,2022-08-26
-BE,Flanders,Antwerpen,721245.0,,143,4,2022-08-26
+BE,Flanders,Antwerpen,721246.0,,143,4,2022-08-26
 BE,MISSING,MISSING,60655.0,,,,2022-08-27
 BE,Wallonia,Luxembourg,115903.0,,16,2,2022-08-27
 BE,Wallonia,BrabantWallon,164533.0,,10,1,2022-08-27
@@ -10914,7 +10914,7 @@ BE,Flanders,WestVlaanderen,474192.0,,82,8,2022-08-27
 BE,Brussels,Brussels,485543.0,,129,12,2022-08-27
 BE,Wallonia,Hainaut,492407.0,,141,12,2022-08-27
 BE,Flanders,OostVlaanderen,607409.0,,104,5,2022-08-27
-BE,Flanders,Antwerpen,721383.0,,131,5,2022-08-27
+BE,Flanders,Antwerpen,721384.0,,131,5,2022-08-27
 BE,MISSING,MISSING,60667.0,,,,2022-08-28
 BE,Wallonia,Luxembourg,115909.0,,18,2,2022-08-28
 BE,Wallonia,BrabantWallon,164547.0,,11,1,2022-08-28
@@ -10926,7 +10926,7 @@ BE,Flanders,WestVlaanderen,474243.0,,62,9,2022-08-28
 BE,Brussels,Brussels,485587.0,,133,10,2022-08-28
 BE,Wallonia,Hainaut,492436.0,,146,13,2022-08-28
 BE,Flanders,OostVlaanderen,607479.0,,106,7,2022-08-28
-BE,Flanders,Antwerpen,721489.0,,141,6,2022-08-28
+BE,Flanders,Antwerpen,721490.0,,141,6,2022-08-28
 BE,MISSING,MISSING,60699.0,,,,2022-08-29
 BE,Wallonia,Luxembourg,115963.0,,19,2,2022-08-29
 BE,Wallonia,BrabantWallon,164613.0,,12,4,2022-08-29
@@ -10938,7 +10938,7 @@ BE,Flanders,WestVlaanderen,474515.0,,67,9,2022-08-29
 BE,Brussels,Brussels,485809.0,,133,11,2022-08-29
 BE,Wallonia,Hainaut,492668.0,,145,10,2022-08-29
 BE,Flanders,OostVlaanderen,607838.0,,109,16,2022-08-29
-BE,Flanders,Antwerpen,721909.0,,150,9,2022-08-29
+BE,Flanders,Antwerpen,721910.0,,150,9,2022-08-29
 BE,MISSING,MISSING,60719.0,,,,2022-08-30
 BE,Wallonia,Luxembourg,116029.0,,18,2,2022-08-30
 BE,Wallonia,BrabantWallon,164682.0,,9,3,2022-08-30
@@ -10950,7 +10950,7 @@ BE,Flanders,WestVlaanderen,474709.0,,71,9,2022-08-30
 BE,Brussels,Brussels,485947.0,,126,9,2022-08-30
 BE,Wallonia,Hainaut,492862.0,,129,9,2022-08-30
 BE,Flanders,OostVlaanderen,608077.0,,105,7,2022-08-30
-BE,Flanders,Antwerpen,722227.0,,139,7,2022-08-30
+BE,Flanders,Antwerpen,722228.0,,139,7,2022-08-30
 BE,MISSING,MISSING,60741.0,,,,2022-08-31
 BE,Wallonia,Luxembourg,116078.0,,20,1,2022-08-31
 BE,Wallonia,BrabantWallon,164749.0,,6,2,2022-08-31
@@ -10962,7 +10962,7 @@ BE,Flanders,WestVlaanderen,474868.0,,70,9,2022-08-31
 BE,Brussels,Brussels,486084.0,,124,12,2022-08-31
 BE,Wallonia,Hainaut,493059.0,,128,9,2022-08-31
 BE,Flanders,OostVlaanderen,608310.0,,100,7,2022-08-31
-BE,Flanders,Antwerpen,722575.0,,125,6,2022-08-31
+BE,Flanders,Antwerpen,722576.0,,125,6,2022-08-31
 BE,MISSING,MISSING,60757.0,,,,2022-09-01
 BE,Wallonia,Luxembourg,116129.0,,20,1,2022-09-01
 BE,Wallonia,BrabantWallon,164820.0,,9,2,2022-09-01
@@ -10974,7 +10974,7 @@ BE,Flanders,WestVlaanderen,475066.0,,67,7,2022-09-01
 BE,Brussels,Brussels,486218.0,,118,10,2022-09-01
 BE,Wallonia,Hainaut,493228.0,,117,9,2022-09-01
 BE,Flanders,OostVlaanderen,608523.0,,102,10,2022-09-01
-BE,Flanders,Antwerpen,722862.0,,116,4,2022-09-01
+BE,Flanders,Antwerpen,722863.0,,116,4,2022-09-01
 BE,MISSING,MISSING,60776.0,,,,2022-09-02
 BE,Wallonia,Luxembourg,116168.0,,21,2,2022-09-02
 BE,Wallonia,BrabantWallon,164875.0,,14,3,2022-09-02
@@ -10986,7 +10986,7 @@ BE,Flanders,WestVlaanderen,475255.0,,69,7,2022-09-02
 BE,Brussels,Brussels,486356.0,,109,10,2022-09-02
 BE,Wallonia,Hainaut,493416.0,,114,8,2022-09-02
 BE,Flanders,OostVlaanderen,608738.0,,97,8,2022-09-02
-BE,Flanders,Antwerpen,723166.0,,111,5,2022-09-02
+BE,Flanders,Antwerpen,723167.0,,111,5,2022-09-02
 BE,MISSING,MISSING,60788.0,,,,2022-09-03
 BE,Wallonia,Luxembourg,116196.0,,21,2,2022-09-03
 BE,Wallonia,BrabantWallon,164903.0,,11,3,2022-09-03
@@ -10998,7 +10998,7 @@ BE,Flanders,WestVlaanderen,475330.0,,72,8,2022-09-03
 BE,Brussels,Brussels,486439.0,,111,12,2022-09-03
 BE,Wallonia,Hainaut,493516.0,,115,7,2022-09-03
 BE,Flanders,OostVlaanderen,608814.0,,91,9,2022-09-03
-BE,Flanders,Antwerpen,723308.0,,115,6,2022-09-03
+BE,Flanders,Antwerpen,723309.0,,115,6,2022-09-03
 BE,MISSING,MISSING,60796.0,,,,2022-09-04
 BE,Wallonia,Luxembourg,116210.0,,21,2,2022-09-04
 BE,Wallonia,BrabantWallon,164909.0,,10,3,2022-09-04
@@ -11010,7 +11010,7 @@ BE,Flanders,WestVlaanderen,475384.0,,69,9,2022-09-04
 BE,Brussels,Brussels,486484.0,,113,12,2022-09-04
 BE,Wallonia,Hainaut,493558.0,,116,7,2022-09-04
 BE,Flanders,OostVlaanderen,608872.0,,87,7,2022-09-04
-BE,Flanders,Antwerpen,723408.0,,121,6,2022-09-04
+BE,Flanders,Antwerpen,723409.0,,121,6,2022-09-04
 BE,MISSING,MISSING,60821.0,,,,2022-09-05
 BE,Wallonia,Luxembourg,116283.0,,20,1,2022-09-05
 BE,Wallonia,BrabantWallon,165011.0,,11,2,2022-09-05
@@ -11022,7 +11022,7 @@ BE,Flanders,WestVlaanderen,475707.0,,70,8,2022-09-05
 BE,Brussels,Brussels,486681.0,,127,13,2022-09-05
 BE,Wallonia,Hainaut,493840.0,,117,8,2022-09-05
 BE,Flanders,OostVlaanderen,609231.0,,101,9,2022-09-05
-BE,Flanders,Antwerpen,723928.0,,121,5,2022-09-05
+BE,Flanders,Antwerpen,723929.0,,121,5,2022-09-05
 BE,MISSING,MISSING,60841.0,,,,2022-09-06
 BE,Wallonia,Luxembourg,116375.0,,19,1,2022-09-06
 BE,Wallonia,BrabantWallon,165097.0,,9,1,2022-09-06
@@ -11034,7 +11034,7 @@ BE,Flanders,WestVlaanderen,475899.0,,83,8,2022-09-06
 BE,Brussels,Brussels,486845.0,,127,12,2022-09-06
 BE,Wallonia,Hainaut,494093.0,,96,8,2022-09-06
 BE,Flanders,OostVlaanderen,609461.0,,88,8,2022-09-06
-BE,Flanders,Antwerpen,724279.0,,94,5,2022-09-06
+BE,Flanders,Antwerpen,724280.0,,94,5,2022-09-06
 BE,MISSING,MISSING,60859.0,,,,2022-09-07
 BE,Wallonia,Luxembourg,116456.0,,7,1,2022-09-07
 BE,Wallonia,BrabantWallon,165171.0,,8,1,2022-09-07
@@ -11046,7 +11046,7 @@ BE,Flanders,WestVlaanderen,476091.0,,83,5,2022-09-07
 BE,Brussels,Brussels,486984.0,,135,13,2022-09-07
 BE,Wallonia,Hainaut,494317.0,,98,10,2022-09-07
 BE,Flanders,OostVlaanderen,609670.0,,84,7,2022-09-07
-BE,Flanders,Antwerpen,724601.0,,129,5,2022-09-07
+BE,Flanders,Antwerpen,724602.0,,129,5,2022-09-07
 BE,MISSING,MISSING,60887.0,,,,2022-09-08
 BE,Wallonia,Luxembourg,116536.0,,7,1,2022-09-08
 BE,Wallonia,BrabantWallon,165247.0,,8,1,2022-09-08
@@ -11058,7 +11058,7 @@ BE,Flanders,WestVlaanderen,476275.0,,86,5,2022-09-08
 BE,Brussels,Brussels,487152.0,,123,13,2022-09-08
 BE,Wallonia,Hainaut,494545.0,,104,11,2022-09-08
 BE,Flanders,OostVlaanderen,609884.0,,84,6,2022-09-08
-BE,Flanders,Antwerpen,724915.0,,119,3,2022-09-08
+BE,Flanders,Antwerpen,724916.0,,119,3,2022-09-08
 BE,MISSING,MISSING,60905.0,,,,2022-09-09
 BE,Wallonia,Luxembourg,116609.0,,11,1,2022-09-09
 BE,Wallonia,BrabantWallon,165307.0,,9,1,2022-09-09
@@ -11070,7 +11070,7 @@ BE,Flanders,WestVlaanderen,476458.0,,85,3,2022-09-09
 BE,Brussels,Brussels,487288.0,,122,11,2022-09-09
 BE,Wallonia,Hainaut,494752.0,,99,9,2022-09-09
 BE,Flanders,OostVlaanderen,610071.0,,81,6,2022-09-09
-BE,Flanders,Antwerpen,725200.0,,110,4,2022-09-09
+BE,Flanders,Antwerpen,725201.0,,110,4,2022-09-09
 BE,MISSING,MISSING,60915.0,,,,2022-09-10
 BE,Wallonia,Luxembourg,116654.0,,10,1,2022-09-10
 BE,Wallonia,BrabantWallon,165341.0,,9,1,2022-09-10
@@ -11082,7 +11082,7 @@ BE,Flanders,WestVlaanderen,476538.0,,79,5,2022-09-10
 BE,Brussels,Brussels,487345.0,,109,10,2022-09-10
 BE,Wallonia,Hainaut,494887.0,,101,10,2022-09-10
 BE,Flanders,OostVlaanderen,610160.0,,79,6,2022-09-10
-BE,Flanders,Antwerpen,725315.0,,106,3,2022-09-10
+BE,Flanders,Antwerpen,725316.0,,106,3,2022-09-10
 BE,MISSING,MISSING,60923.0,,,,2022-09-11
 BE,Wallonia,Luxembourg,116671.0,,15,1,2022-09-11
 BE,Wallonia,BrabantWallon,165357.0,,8,1,2022-09-11
@@ -11094,7 +11094,7 @@ BE,Flanders,WestVlaanderen,476583.0,,90,6,2022-09-11
 BE,Brussels,Brussels,487396.0,,108,11,2022-09-11
 BE,Wallonia,Hainaut,494931.0,,104,7,2022-09-11
 BE,Flanders,OostVlaanderen,610229.0,,79,7,2022-09-11
-BE,Flanders,Antwerpen,725399.0,,102,3,2022-09-11
+BE,Flanders,Antwerpen,725400.0,,102,3,2022-09-11
 BE,MISSING,MISSING,60957.0,,,,2022-09-12
 BE,Wallonia,Luxembourg,116774.0,,14,1,2022-09-12
 BE,Wallonia,BrabantWallon,165468.0,,7,0,2022-09-12
@@ -11106,7 +11106,7 @@ BE,Flanders,WestVlaanderen,476946.0,,92,5,2022-09-12
 BE,Brussels,Brussels,487615.0,,107,10,2022-09-12
 BE,Wallonia,Hainaut,495261.0,,103,7,2022-09-12
 BE,Flanders,OostVlaanderen,610613.0,,85,5,2022-09-12
-BE,Flanders,Antwerpen,725928.0,,106,4,2022-09-12
+BE,Flanders,Antwerpen,725929.0,,106,4,2022-09-12
 BE,MISSING,MISSING,60973.0,,,,2022-09-13
 BE,Wallonia,Luxembourg,116868.0,,13,1,2022-09-13
 BE,Wallonia,BrabantWallon,165548.0,,10,0,2022-09-13
@@ -11118,7 +11118,7 @@ BE,Flanders,WestVlaanderen,477193.0,,84,5,2022-09-13
 BE,Brussels,Brussels,487816.0,,101,10,2022-09-13
 BE,Wallonia,Hainaut,495562.0,,119,8,2022-09-13
 BE,Flanders,OostVlaanderen,610879.0,,73,5,2022-09-13
-BE,Flanders,Antwerpen,726313.0,,102,4,2022-09-13
+BE,Flanders,Antwerpen,726314.0,,102,4,2022-09-13
 BE,MISSING,MISSING,60990.0,,,,2022-09-14
 BE,Wallonia,Luxembourg,116974.0,,12,1,2022-09-14
 BE,Wallonia,BrabantWallon,165642.0,,7,0,2022-09-14
@@ -11130,7 +11130,7 @@ BE,Flanders,WestVlaanderen,477436.0,,85,3,2022-09-14
 BE,Brussels,Brussels,487975.0,,103,12,2022-09-14
 BE,Wallonia,Hainaut,495816.0,,128,7,2022-09-14
 BE,Flanders,OostVlaanderen,611143.0,,69,3,2022-09-14
-BE,Flanders,Antwerpen,726667.0,,102,5,2022-09-14
+BE,Flanders,Antwerpen,726668.0,,102,5,2022-09-14
 BE,MISSING,MISSING,61001.0,,,,2022-09-15
 BE,Wallonia,Luxembourg,117055.0,,15,2,2022-09-15
 BE,Wallonia,BrabantWallon,165730.0,,6,0,2022-09-15
@@ -11142,7 +11142,7 @@ BE,Flanders,WestVlaanderen,477664.0,,93,4,2022-09-15
 BE,Brussels,Brussels,488120.0,,104,10,2022-09-15
 BE,Wallonia,Hainaut,496081.0,,124,9,2022-09-15
 BE,Flanders,OostVlaanderen,611377.0,,77,5,2022-09-15
-BE,Flanders,Antwerpen,727012.0,,97,5,2022-09-15
+BE,Flanders,Antwerpen,727013.0,,97,5,2022-09-15
 BE,MISSING,MISSING,61019.0,,,,2022-09-16
 BE,Wallonia,Luxembourg,117119.0,,13,0,2022-09-16
 BE,Wallonia,BrabantWallon,165810.0,,6,0,2022-09-16
@@ -11154,7 +11154,7 @@ BE,Flanders,WestVlaanderen,477833.0,,97,4,2022-09-16
 BE,Brussels,Brussels,488269.0,,93,10,2022-09-16
 BE,Wallonia,Hainaut,496301.0,,114,7,2022-09-16
 BE,Flanders,OostVlaanderen,611590.0,,84,7,2022-09-16
-BE,Flanders,Antwerpen,727339.0,,88,4,2022-09-16
+BE,Flanders,Antwerpen,727340.0,,88,4,2022-09-16
 BE,MISSING,MISSING,61031.0,,,,2022-09-17
 BE,Wallonia,Luxembourg,117162.0,,16,0,2022-09-17
 BE,Wallonia,BrabantWallon,165852.0,,8,0,2022-09-17
@@ -11166,7 +11166,7 @@ BE,Flanders,WestVlaanderen,477955.0,,90,4,2022-09-17
 BE,Brussels,Brussels,488338.0,,81,7,2022-09-17
 BE,Wallonia,Hainaut,496410.0,,119,9,2022-09-17
 BE,Flanders,OostVlaanderen,611673.0,,74,6,2022-09-17
-BE,Flanders,Antwerpen,727475.0,,85,5,2022-09-17
+BE,Flanders,Antwerpen,727476.0,,85,5,2022-09-17
 BE,MISSING,MISSING,61038.0,,,,2022-09-18
 BE,Wallonia,Luxembourg,117172.0,,15,0,2022-09-18
 BE,Wallonia,BrabantWallon,165873.0,,8,0,2022-09-18
@@ -11178,7 +11178,7 @@ BE,Flanders,WestVlaanderen,478016.0,,91,6,2022-09-18
 BE,Brussels,Brussels,488372.0,,85,7,2022-09-18
 BE,Wallonia,Hainaut,496450.0,,111,9,2022-09-18
 BE,Flanders,OostVlaanderen,611735.0,,71,7,2022-09-18
-BE,Flanders,Antwerpen,727594.0,,90,3,2022-09-18
+BE,Flanders,Antwerpen,727595.0,,90,3,2022-09-18
 BE,MISSING,MISSING,61062.0,,,,2022-09-19
 BE,Wallonia,Luxembourg,117274.0,,11,0,2022-09-19
 BE,Wallonia,BrabantWallon,165983.0,,9,0,2022-09-19
@@ -11190,7 +11190,7 @@ BE,Flanders,WestVlaanderen,478420.0,,93,7,2022-09-19
 BE,Brussels,Brussels,488633.0,,88,7,2022-09-19
 BE,Wallonia,Hainaut,496775.0,,118,10,2022-09-19
 BE,Flanders,OostVlaanderen,612219.0,,74,4,2022-09-19
-BE,Flanders,Antwerpen,728307.0,,92,3,2022-09-19
+BE,Flanders,Antwerpen,728308.0,,92,3,2022-09-19
 BE,MISSING,MISSING,61080.0,,,,2022-09-20
 BE,Wallonia,Luxembourg,117407.0,,10,0,2022-09-20
 BE,Wallonia,BrabantWallon,166115.0,,10,0,2022-09-20
@@ -11202,7 +11202,7 @@ BE,Flanders,WestVlaanderen,478699.0,,88,4,2022-09-20
 BE,Brussels,Brussels,488801.0,,92,6,2022-09-20
 BE,Wallonia,Hainaut,497081.0,,114,8,2022-09-20
 BE,Flanders,OostVlaanderen,612535.0,,77,9,2022-09-20
-BE,Flanders,Antwerpen,728802.0,,95,8,2022-09-20
+BE,Flanders,Antwerpen,728803.0,,95,8,2022-09-20
 BE,MISSING,MISSING,61111.0,,,,2022-09-21
 BE,Wallonia,Luxembourg,117501.0,,12,0,2022-09-21
 BE,Wallonia,BrabantWallon,166211.0,,7,0,2022-09-21
@@ -11214,7 +11214,7 @@ BE,Flanders,WestVlaanderen,479005.0,,89,5,2022-09-21
 BE,Brussels,Brussels,488981.0,,90,7,2022-09-21
 BE,Wallonia,Hainaut,497374.0,,122,11,2022-09-21
 BE,Flanders,OostVlaanderen,612884.0,,81,8,2022-09-21
-BE,Flanders,Antwerpen,729334.0,,101,6,2022-09-21
+BE,Flanders,Antwerpen,729335.0,,101,6,2022-09-21
 BE,MISSING,MISSING,61131.0,,,,2022-09-22
 BE,Wallonia,Luxembourg,117599.0,,11,0,2022-09-22
 BE,Wallonia,BrabantWallon,166322.0,,7,0,2022-09-22
@@ -11226,7 +11226,7 @@ BE,Flanders,WestVlaanderen,479297.0,,100,3,2022-09-22
 BE,Brussels,Brussels,489189.0,,93,7,2022-09-22
 BE,Wallonia,Hainaut,497648.0,,121,10,2022-09-22
 BE,Flanders,OostVlaanderen,613223.0,,88,6,2022-09-22
-BE,Flanders,Antwerpen,729782.0,,98,5,2022-09-22
+BE,Flanders,Antwerpen,729783.0,,98,5,2022-09-22
 BE,MISSING,MISSING,61149.0,,,,2022-09-23
 BE,Wallonia,Luxembourg,117724.0,,10,0,2022-09-23
 BE,Wallonia,BrabantWallon,166419.0,,10,1,2022-09-23
@@ -11238,7 +11238,7 @@ BE,Flanders,WestVlaanderen,479569.0,,88,5,2022-09-23
 BE,Brussels,Brussels,489373.0,,103,6,2022-09-23
 BE,Wallonia,Hainaut,497902.0,,116,6,2022-09-23
 BE,Flanders,OostVlaanderen,613502.0,,94,6,2022-09-23
-BE,Flanders,Antwerpen,730209.0,,99,6,2022-09-23
+BE,Flanders,Antwerpen,730210.0,,99,6,2022-09-23
 BE,MISSING,MISSING,61168.0,,,,2022-09-24
 BE,Wallonia,Luxembourg,117779.0,,10,0,2022-09-24
 BE,Wallonia,BrabantWallon,166482.0,,12,1,2022-09-24
@@ -11250,7 +11250,7 @@ BE,Flanders,WestVlaanderen,479697.0,,103,4,2022-09-24
 BE,Brussels,Brussels,489470.0,,116,6,2022-09-24
 BE,Wallonia,Hainaut,498017.0,,125,5,2022-09-24
 BE,Flanders,OostVlaanderen,613646.0,,94,4,2022-09-24
-BE,Flanders,Antwerpen,730401.0,,104,6,2022-09-24
+BE,Flanders,Antwerpen,730402.0,,104,6,2022-09-24
 BE,MISSING,MISSING,61173.0,,,,2022-09-25
 BE,Wallonia,Luxembourg,117798.0,,11,0,2022-09-25
 BE,Wallonia,BrabantWallon,166508.0,,15,1,2022-09-25
@@ -11262,7 +11262,7 @@ BE,Flanders,WestVlaanderen,479771.0,,115,5,2022-09-25
 BE,Brussels,Brussels,489521.0,,120,8,2022-09-25
 BE,Wallonia,Hainaut,498064.0,,129,6,2022-09-25
 BE,Flanders,OostVlaanderen,613730.0,,98,4,2022-09-25
-BE,Flanders,Antwerpen,730553.0,,109,8,2022-09-25
+BE,Flanders,Antwerpen,730554.0,,109,8,2022-09-25
 BE,MISSING,MISSING,61209.0,,,,2022-09-26
 BE,Wallonia,Luxembourg,117955.0,,12,1,2022-09-26
 BE,Wallonia,BrabantWallon,166692.0,,16,2,2022-09-26
@@ -11274,7 +11274,7 @@ BE,Flanders,WestVlaanderen,480261.0,,128,7,2022-09-26
 BE,Brussels,Brussels,489826.0,,129,10,2022-09-26
 BE,Wallonia,Hainaut,498507.0,,145,6,2022-09-26
 BE,Flanders,OostVlaanderen,614394.0,,99,6,2022-09-26
-BE,Flanders,Antwerpen,731440.0,,113,8,2022-09-26
+BE,Flanders,Antwerpen,731441.0,,113,8,2022-09-26
 BE,MISSING,MISSING,61242.0,,,,2022-09-27
 BE,Wallonia,Luxembourg,118083.0,,13,1,2022-09-27
 BE,Wallonia,BrabantWallon,166853.0,,18,3,2022-09-27
@@ -11286,7 +11286,7 @@ BE,Flanders,WestVlaanderen,480556.0,,140,5,2022-09-27
 BE,Brussels,Brussels,490102.0,,147,12,2022-09-27
 BE,Wallonia,Hainaut,498868.0,,149,9,2022-09-27
 BE,Flanders,OostVlaanderen,614840.0,,97,7,2022-09-27
-BE,Flanders,Antwerpen,732029.0,,117,5,2022-09-27
+BE,Flanders,Antwerpen,732030.0,,117,5,2022-09-27
 BE,MISSING,MISSING,61276.0,,,,2022-09-28
 BE,Wallonia,Luxembourg,118227.0,,14,0,2022-09-28
 BE,Wallonia,BrabantWallon,166988.0,,20,3,2022-09-28
@@ -11298,7 +11298,7 @@ BE,Flanders,WestVlaanderen,480893.0,,147,6,2022-09-28
 BE,Brussels,Brussels,490330.0,,153,11,2022-09-28
 BE,Wallonia,Hainaut,499202.0,,162,7,2022-09-28
 BE,Flanders,OostVlaanderen,615266.0,,101,4,2022-09-28
-BE,Flanders,Antwerpen,732660.0,,134,5,2022-09-28
+BE,Flanders,Antwerpen,732661.0,,134,5,2022-09-28
 BE,MISSING,MISSING,61296.0,,,,2022-09-29
 BE,Wallonia,Luxembourg,118362.0,,17,0,2022-09-29
 BE,Wallonia,BrabantWallon,167146.0,,18,0,2022-09-29
@@ -11310,7 +11310,7 @@ BE,Flanders,WestVlaanderen,481194.0,,141,4,2022-09-29
 BE,Brussels,Brussels,490583.0,,152,10,2022-09-29
 BE,Wallonia,Hainaut,499521.0,,166,7,2022-09-29
 BE,Flanders,OostVlaanderen,615709.0,,107,6,2022-09-29
-BE,Flanders,Antwerpen,733240.0,,146,7,2022-09-29
+BE,Flanders,Antwerpen,733241.0,,146,7,2022-09-29
 BE,MISSING,MISSING,61328.0,,,,2022-09-30
 BE,Wallonia,Luxembourg,118479.0,,21,0,2022-09-30
 BE,Wallonia,BrabantWallon,167273.0,,20,1,2022-09-30
@@ -11322,7 +11322,7 @@ BE,Flanders,WestVlaanderen,481448.0,,146,4,2022-09-30
 BE,Brussels,Brussels,490768.0,,157,10,2022-09-30
 BE,Wallonia,Hainaut,499853.0,,179,9,2022-09-30
 BE,Flanders,OostVlaanderen,616069.0,,125,8,2022-09-30
-BE,Flanders,Antwerpen,733690.0,,156,7,2022-09-30
+BE,Flanders,Antwerpen,733691.0,,156,7,2022-09-30
 BE,MISSING,MISSING,61341.0,,,,2022-10-01
 BE,Wallonia,Luxembourg,118544.0,,18,0,2022-10-01
 BE,Wallonia,BrabantWallon,167335.0,,18,1,2022-10-01
@@ -11334,7 +11334,7 @@ BE,Flanders,WestVlaanderen,481597.0,,134,3,2022-10-01
 BE,Brussels,Brussels,490866.0,,163,11,2022-10-01
 BE,Wallonia,Hainaut,500008.0,,177,7,2022-10-01
 BE,Flanders,OostVlaanderen,616270.0,,129,10,2022-10-01
-BE,Flanders,Antwerpen,733929.0,,165,9,2022-10-01
+BE,Flanders,Antwerpen,733930.0,,165,9,2022-10-01
 BE,MISSING,MISSING,61352.0,,,,2022-10-02
 BE,Wallonia,Luxembourg,118576.0,,18,0,2022-10-02
 BE,Wallonia,BrabantWallon,167349.0,,17,0,2022-10-02
@@ -11346,7 +11346,7 @@ BE,Flanders,WestVlaanderen,481685.0,,143,3,2022-10-02
 BE,Brussels,Brussels,490919.0,,175,12,2022-10-02
 BE,Wallonia,Hainaut,500061.0,,182,10,2022-10-02
 BE,Flanders,OostVlaanderen,616372.0,,143,7,2022-10-02
-BE,Flanders,Antwerpen,734093.0,,177,9,2022-10-02
+BE,Flanders,Antwerpen,734094.0,,177,9,2022-10-02
 BE,MISSING,MISSING,61406.0,,,,2022-10-03
 BE,Wallonia,Luxembourg,118720.0,,18,1,2022-10-03
 BE,Wallonia,BrabantWallon,167537.0,,13,1,2022-10-03
@@ -11358,7 +11358,7 @@ BE,Flanders,WestVlaanderen,482192.0,,145,6,2022-10-03
 BE,Brussels,Brussels,491244.0,,178,12,2022-10-03
 BE,Wallonia,Hainaut,500571.0,,190,11,2022-10-03
 BE,Flanders,OostVlaanderen,617231.0,,161,11,2022-10-03
-BE,Flanders,Antwerpen,735040.0,,192,8,2022-10-03
+BE,Flanders,Antwerpen,735041.0,,192,8,2022-10-03
 BE,MISSING,MISSING,61446.0,,,,2022-10-04
 BE,Wallonia,Luxembourg,118862.0,,17,1,2022-10-04
 BE,Wallonia,BrabantWallon,167742.0,,18,1,2022-10-04
@@ -11370,7 +11370,7 @@ BE,Flanders,WestVlaanderen,482608.0,,139,6,2022-10-04
 BE,Brussels,Brussels,491584.0,,180,10,2022-10-04
 BE,Wallonia,Hainaut,501107.0,,192,7,2022-10-04
 BE,Flanders,OostVlaanderen,617762.0,,161,9,2022-10-04
-BE,Flanders,Antwerpen,735736.0,,206,11,2022-10-04
+BE,Flanders,Antwerpen,735737.0,,206,11,2022-10-04
 BE,MISSING,MISSING,61479.0,,,,2022-10-05
 BE,Wallonia,Luxembourg,119003.0,,21,2,2022-10-05
 BE,Wallonia,BrabantWallon,167915.0,,19,0,2022-10-05
@@ -11382,7 +11382,7 @@ BE,Flanders,WestVlaanderen,482995.0,,136,3,2022-10-05
 BE,Brussels,Brussels,491844.0,,201,14,2022-10-05
 BE,Wallonia,Hainaut,501535.0,,197,6,2022-10-05
 BE,Flanders,OostVlaanderen,618260.0,,161,8,2022-10-05
-BE,Flanders,Antwerpen,736412.0,,222,10,2022-10-05
+BE,Flanders,Antwerpen,736413.0,,222,10,2022-10-05
 BE,MISSING,MISSING,61507.0,,,,2022-10-06
 BE,Wallonia,Luxembourg,119120.0,,21,1,2022-10-06
 BE,Wallonia,BrabantWallon,168063.0,,18,0,2022-10-06
@@ -11394,7 +11394,7 @@ BE,Flanders,WestVlaanderen,483330.0,,146,4,2022-10-06
 BE,Brussels,Brussels,492092.0,,211,16,2022-10-06
 BE,Wallonia,Hainaut,501908.0,,206,9,2022-10-06
 BE,Flanders,OostVlaanderen,618738.0,,155,7,2022-10-06
-BE,Flanders,Antwerpen,736980.0,,230,8,2022-10-06
+BE,Flanders,Antwerpen,736981.0,,230,8,2022-10-06
 BE,MISSING,MISSING,61530.0,,,,2022-10-07
 BE,Wallonia,Luxembourg,119217.0,,18,0,2022-10-07
 BE,Wallonia,BrabantWallon,168201.0,,12,0,2022-10-07
@@ -11406,7 +11406,7 @@ BE,Flanders,WestVlaanderen,483620.0,,157,5,2022-10-07
 BE,Brussels,Brussels,492296.0,,230,12,2022-10-07
 BE,Wallonia,Hainaut,502270.0,,211,6,2022-10-07
 BE,Flanders,OostVlaanderen,619155.0,,166,11,2022-10-07
-BE,Flanders,Antwerpen,737496.0,,231,7,2022-10-07
+BE,Flanders,Antwerpen,737497.0,,231,7,2022-10-07
 BE,MISSING,MISSING,61543.0,,,,2022-10-08
 BE,Wallonia,Luxembourg,119275.0,,18,0,2022-10-08
 BE,Wallonia,BrabantWallon,168275.0,,19,1,2022-10-08
@@ -11418,7 +11418,7 @@ BE,Flanders,WestVlaanderen,483754.0,,151,3,2022-10-08
 BE,Brussels,Brussels,492416.0,,220,8,2022-10-08
 BE,Wallonia,Hainaut,502450.0,,209,8,2022-10-08
 BE,Flanders,OostVlaanderen,619335.0,,168,10,2022-10-08
-BE,Flanders,Antwerpen,737731.0,,212,6,2022-10-08
+BE,Flanders,Antwerpen,737732.0,,212,6,2022-10-08
 BE,MISSING,MISSING,61556.0,,,,2022-10-09
 BE,Wallonia,Luxembourg,119296.0,,20,0,2022-10-09
 BE,Wallonia,BrabantWallon,168286.0,,23,1,2022-10-09
@@ -11430,7 +11430,7 @@ BE,Flanders,WestVlaanderen,483823.0,,157,3,2022-10-09
 BE,Brussels,Brussels,492466.0,,236,8,2022-10-09
 BE,Wallonia,Hainaut,502512.0,,214,8,2022-10-09
 BE,Flanders,OostVlaanderen,619447.0,,178,10,2022-10-09
-BE,Flanders,Antwerpen,737904.0,,222,7,2022-10-09
+BE,Flanders,Antwerpen,737905.0,,222,7,2022-10-09
 BE,MISSING,MISSING,61595.0,,,,2022-10-10
 BE,Wallonia,Luxembourg,119433.0,,20,0,2022-10-10
 BE,Wallonia,BrabantWallon,168441.0,,23,1,2022-10-10
@@ -11442,7 +11442,7 @@ BE,Flanders,WestVlaanderen,484360.0,,166,4,2022-10-10
 BE,Brussels,Brussels,492762.0,,228,7,2022-10-10
 BE,Wallonia,Hainaut,502998.0,,215,8,2022-10-10
 BE,Flanders,OostVlaanderen,620157.0,,194,12,2022-10-10
-BE,Flanders,Antwerpen,738860.0,,230,8,2022-10-10
+BE,Flanders,Antwerpen,738861.0,,230,8,2022-10-10
 BE,MISSING,MISSING,61635.0,,,,2022-10-11
 BE,Wallonia,Luxembourg,119602.0,,24,1,2022-10-11
 BE,Wallonia,BrabantWallon,168572.0,,18,0,2022-10-11
@@ -11454,7 +11454,7 @@ BE,Flanders,WestVlaanderen,484719.0,,135,6,2022-10-11
 BE,Brussels,Brussels,493026.0,,217,6,2022-10-11
 BE,Wallonia,Hainaut,503449.0,,201,11,2022-10-11
 BE,Flanders,OostVlaanderen,620615.0,,189,12,2022-10-11
-BE,Flanders,Antwerpen,739420.0,,226,9,2022-10-11
+BE,Flanders,Antwerpen,739421.0,,226,9,2022-10-11
 BE,MISSING,MISSING,61666.0,,,,2022-10-12
 BE,Wallonia,Luxembourg,119726.0,,28,3,2022-10-12
 BE,Wallonia,BrabantWallon,168694.0,,16,0,2022-10-12
@@ -11466,7 +11466,7 @@ BE,Flanders,WestVlaanderen,485047.0,,149,8,2022-10-12
 BE,Brussels,Brussels,493281.0,,231,7,2022-10-12
 BE,Wallonia,Hainaut,503786.0,,217,14,2022-10-12
 BE,Flanders,OostVlaanderen,621044.0,,191,7,2022-10-12
-BE,Flanders,Antwerpen,739914.0,,216,4,2022-10-12
+BE,Flanders,Antwerpen,739915.0,,216,4,2022-10-12
 BE,MISSING,MISSING,61693.0,,,,2022-10-13
 BE,Wallonia,Luxembourg,119842.0,,24,1,2022-10-13
 BE,Wallonia,BrabantWallon,168806.0,,17,1,2022-10-13
@@ -11478,7 +11478,7 @@ BE,Flanders,WestVlaanderen,485342.0,,140,10,2022-10-13
 BE,Brussels,Brussels,493518.0,,226,7,2022-10-13
 BE,Wallonia,Hainaut,504109.0,,222,9,2022-10-13
 BE,Flanders,OostVlaanderen,621458.0,,210,9,2022-10-13
-BE,Flanders,Antwerpen,740396.0,,214,7,2022-10-13
+BE,Flanders,Antwerpen,740397.0,,214,7,2022-10-13
 BE,MISSING,MISSING,61719.0,,,,2022-10-14
 BE,Wallonia,Luxembourg,119952.0,,28,1,2022-10-14
 BE,Wallonia,BrabantWallon,168905.0,,18,1,2022-10-14
@@ -11490,7 +11490,7 @@ BE,Flanders,WestVlaanderen,485619.0,,147,8,2022-10-14
 BE,Brussels,Brussels,493718.0,,209,6,2022-10-14
 BE,Wallonia,Hainaut,504451.0,,234,9,2022-10-14
 BE,Flanders,OostVlaanderen,621822.0,,218,10,2022-10-14
-BE,Flanders,Antwerpen,740785.0,,223,6,2022-10-14
+BE,Flanders,Antwerpen,740786.0,,223,6,2022-10-14
 BE,MISSING,MISSING,61739.0,,,,2022-10-15
 BE,Wallonia,Luxembourg,120002.0,,27,1,2022-10-15
 BE,Wallonia,BrabantWallon,168944.0,,9,0,2022-10-15
@@ -11502,7 +11502,7 @@ BE,Flanders,WestVlaanderen,485743.0,,138,9,2022-10-15
 BE,Brussels,Brussels,493817.0,,206,9,2022-10-15
 BE,Wallonia,Hainaut,504586.0,,226,11,2022-10-15
 BE,Flanders,OostVlaanderen,621956.0,,206,9,2022-10-15
-BE,Flanders,Antwerpen,740949.0,,199,6,2022-10-15
+BE,Flanders,Antwerpen,740950.0,,199,6,2022-10-15
 BE,MISSING,MISSING,61753.0,,,,2022-10-16
 BE,Wallonia,Luxembourg,120025.0,,29,1,2022-10-16
 BE,Wallonia,BrabantWallon,168960.0,,10,0,2022-10-16
@@ -11514,7 +11514,7 @@ BE,Flanders,WestVlaanderen,485808.0,,145,9,2022-10-16
 BE,Brussels,Brussels,493869.0,,211,8,2022-10-16
 BE,Wallonia,Hainaut,504621.0,,216,12,2022-10-16
 BE,Flanders,OostVlaanderen,622032.0,,208,9,2022-10-16
-BE,Flanders,Antwerpen,741056.0,,208,8,2022-10-16
+BE,Flanders,Antwerpen,741057.0,,208,8,2022-10-16
 BE,MISSING,MISSING,61783.0,,,,2022-10-17
 BE,Wallonia,Luxembourg,120149.0,,28,1,2022-10-17
 BE,Wallonia,BrabantWallon,169083.0,,13,0,2022-10-17
@@ -11526,7 +11526,7 @@ BE,Flanders,WestVlaanderen,486293.0,,164,8,2022-10-17
 BE,Brussels,Brussels,494136.0,,205,8,2022-10-17
 BE,Wallonia,Hainaut,504989.0,,216,14,2022-10-17
 BE,Flanders,OostVlaanderen,622623.0,,224,9,2022-10-17
-BE,Flanders,Antwerpen,741733.0,,213,9,2022-10-17
+BE,Flanders,Antwerpen,741734.0,,213,9,2022-10-17
 BE,MISSING,MISSING,61808.0,,,,2022-10-18
 BE,Wallonia,Luxembourg,120230.0,,26,2,2022-10-18
 BE,Wallonia,BrabantWallon,169196.0,,17,0,2022-10-18
@@ -11538,7 +11538,7 @@ BE,Flanders,WestVlaanderen,486540.0,,158,7,2022-10-18
 BE,Brussels,Brussels,494349.0,,207,9,2022-10-18
 BE,Wallonia,Hainaut,505274.0,,236,13,2022-10-18
 BE,Flanders,OostVlaanderen,622946.0,,223,8,2022-10-18
-BE,Flanders,Antwerpen,742093.0,,220,9,2022-10-18
+BE,Flanders,Antwerpen,742094.0,,220,9,2022-10-18
 BE,MISSING,MISSING,61833.0,,,,2022-10-19
 BE,Wallonia,Luxembourg,120297.0,,23,2,2022-10-19
 BE,Wallonia,BrabantWallon,169273.0,,18,0,2022-10-19
@@ -11550,7 +11550,7 @@ BE,Flanders,WestVlaanderen,486783.0,,163,6,2022-10-19
 BE,Brussels,Brussels,494514.0,,225,11,2022-10-19
 BE,Wallonia,Hainaut,505516.0,,227,15,2022-10-19
 BE,Flanders,OostVlaanderen,623215.0,,206,7,2022-10-19
-BE,Flanders,Antwerpen,742401.0,,216,13,2022-10-19
+BE,Flanders,Antwerpen,742402.0,,216,13,2022-10-19
 BE,MISSING,MISSING,61854.0,,,,2022-10-20
 BE,Wallonia,Luxembourg,120347.0,,22,1,2022-10-20
 BE,Wallonia,BrabantWallon,169344.0,,16,0,2022-10-20
@@ -11562,7 +11562,7 @@ BE,Flanders,WestVlaanderen,486979.0,,160,7,2022-10-20
 BE,Brussels,Brussels,494662.0,,215,12,2022-10-20
 BE,Wallonia,Hainaut,505758.0,,226,12,2022-10-20
 BE,Flanders,OostVlaanderen,623479.0,,215,3,2022-10-20
-BE,Flanders,Antwerpen,742638.0,,224,10,2022-10-20
+BE,Flanders,Antwerpen,742639.0,,224,10,2022-10-20
 BE,MISSING,MISSING,61870.0,,,,2022-10-21
 BE,Wallonia,Luxembourg,120406.0,,22,1,2022-10-21
 BE,Wallonia,BrabantWallon,169397.0,,14,0,2022-10-21
@@ -11574,7 +11574,7 @@ BE,Flanders,WestVlaanderen,487149.0,,153,7,2022-10-21
 BE,Brussels,Brussels,494794.0,,195,9,2022-10-21
 BE,Wallonia,Hainaut,505972.0,,223,12,2022-10-21
 BE,Flanders,OostVlaanderen,623700.0,,230,3,2022-10-21
-BE,Flanders,Antwerpen,742870.0,,221,11,2022-10-21
+BE,Flanders,Antwerpen,742871.0,,221,11,2022-10-21
 BE,MISSING,MISSING,61881.0,,,,2022-10-22
 BE,Wallonia,Luxembourg,120434.0,,18,0,2022-10-22
 BE,Wallonia,BrabantWallon,169428.0,,13,0,2022-10-22
@@ -11586,7 +11586,7 @@ BE,Flanders,WestVlaanderen,487222.0,,136,5,2022-10-22
 BE,Brussels,Brussels,494865.0,,185,7,2022-10-22
 BE,Wallonia,Hainaut,506064.0,,246,13,2022-10-22
 BE,Flanders,OostVlaanderen,623792.0,,212,4,2022-10-22
-BE,Flanders,Antwerpen,742965.0,,214,13,2022-10-22
+BE,Flanders,Antwerpen,742966.0,,214,13,2022-10-22
 BE,MISSING,MISSING,61890.0,,,,2022-10-23
 BE,Wallonia,Luxembourg,120442.0,,17,0,2022-10-23
 BE,Wallonia,BrabantWallon,169439.0,,11,0,2022-10-23
@@ -11598,7 +11598,7 @@ BE,Flanders,WestVlaanderen,487272.0,,138,7,2022-10-23
 BE,Brussels,Brussels,494896.0,,194,9,2022-10-23
 BE,Wallonia,Hainaut,506120.0,,243,11,2022-10-23
 BE,Flanders,OostVlaanderen,623851.0,,221,4,2022-10-23
-BE,Flanders,Antwerpen,743028.0,,215,12,2022-10-23
+BE,Flanders,Antwerpen,743029.0,,215,12,2022-10-23
 BE,MISSING,MISSING,61910.0,,,,2022-10-24
 BE,Wallonia,Luxembourg,120495.0,,17,2,2022-10-24
 BE,Wallonia,BrabantWallon,169525.0,,9,0,2022-10-24
@@ -11610,7 +11610,7 @@ BE,Flanders,WestVlaanderen,487516.0,,142,7,2022-10-24
 BE,Brussels,Brussels,495102.0,,205,11,2022-10-24
 BE,Wallonia,Hainaut,506344.0,,235,11,2022-10-24
 BE,Flanders,OostVlaanderen,624204.0,,225,5,2022-10-24
-BE,Flanders,Antwerpen,743424.0,,188,15,2022-10-24
+BE,Flanders,Antwerpen,743425.0,,188,15,2022-10-24
 BE,MISSING,MISSING,61929.0,,,,2022-10-25
 BE,Wallonia,Luxembourg,120531.0,,18,2,2022-10-25
 BE,Wallonia,BrabantWallon,169608.0,,10,0,2022-10-25
@@ -11622,7 +11622,7 @@ BE,Flanders,WestVlaanderen,487670.0,,138,8,2022-10-25
 BE,Brussels,Brussels,495224.0,,182,13,2022-10-25
 BE,Wallonia,Hainaut,506517.0,,219,7,2022-10-25
 BE,Flanders,OostVlaanderen,624421.0,,209,6,2022-10-25
-BE,Flanders,Antwerpen,743662.0,,192,13,2022-10-25
+BE,Flanders,Antwerpen,743663.0,,192,13,2022-10-25
 BE,MISSING,MISSING,61939.0,,,,2022-10-26
 BE,Wallonia,Luxembourg,120564.0,,17,1,2022-10-26
 BE,Wallonia,BrabantWallon,169660.0,,9,0,2022-10-26
@@ -11634,7 +11634,7 @@ BE,Flanders,WestVlaanderen,487823.0,,130,9,2022-10-26
 BE,Brussels,Brussels,495341.0,,174,12,2022-10-26
 BE,Wallonia,Hainaut,506696.0,,210,4,2022-10-26
 BE,Flanders,OostVlaanderen,624607.0,,189,6,2022-10-26
-BE,Flanders,Antwerpen,743873.0,,181,11,2022-10-26
+BE,Flanders,Antwerpen,743874.0,,181,11,2022-10-26
 BE,MISSING,MISSING,61952.0,,,,2022-10-27
 BE,Wallonia,Luxembourg,120599.0,,17,2,2022-10-27
 BE,Wallonia,BrabantWallon,169712.0,,11,0,2022-10-27
@@ -11646,7 +11646,7 @@ BE,Flanders,WestVlaanderen,487956.0,,116,6,2022-10-27
 BE,Brussels,Brussels,495431.0,,174,10,2022-10-27
 BE,Wallonia,Hainaut,506827.0,,209,4,2022-10-27
 BE,Flanders,OostVlaanderen,624761.0,,182,7,2022-10-27
-BE,Flanders,Antwerpen,744061.0,,169,9,2022-10-27
+BE,Flanders,Antwerpen,744062.0,,169,9,2022-10-27
 BE,MISSING,MISSING,61972.0,,,,2022-10-28
 BE,Wallonia,Luxembourg,120637.0,,19,1,2022-10-28
 BE,Wallonia,BrabantWallon,169749.0,,12,0,2022-10-28
@@ -11658,7 +11658,7 @@ BE,Flanders,WestVlaanderen,488046.0,,115,6,2022-10-28
 BE,Brussels,Brussels,495520.0,,158,10,2022-10-28
 BE,Wallonia,Hainaut,506939.0,,207,5,2022-10-28
 BE,Flanders,OostVlaanderen,624864.0,,168,9,2022-10-28
-BE,Flanders,Antwerpen,744190.0,,166,10,2022-10-28
+BE,Flanders,Antwerpen,744191.0,,166,10,2022-10-28
 BE,MISSING,MISSING,61982.0,,,,2022-10-29
 BE,Wallonia,Luxembourg,120656.0,,19,1,2022-10-29
 BE,Wallonia,BrabantWallon,169761.0,,13,0,2022-10-29
@@ -11670,7 +11670,7 @@ BE,Flanders,WestVlaanderen,488095.0,,103,6,2022-10-29
 BE,Brussels,Brussels,495565.0,,150,11,2022-10-29
 BE,Wallonia,Hainaut,507006.0,,192,3,2022-10-29
 BE,Flanders,OostVlaanderen,624903.0,,149,7,2022-10-29
-BE,Flanders,Antwerpen,744235.0,,148,5,2022-10-29
+BE,Flanders,Antwerpen,744236.0,,148,5,2022-10-29
 BE,MISSING,MISSING,61990.0,,,,2022-10-30
 BE,Wallonia,Luxembourg,120659.0,,19,1,2022-10-30
 BE,Wallonia,BrabantWallon,169769.0,,14,0,2022-10-30
@@ -11682,7 +11682,7 @@ BE,Flanders,WestVlaanderen,488120.0,,107,6,2022-10-30
 BE,Brussels,Brussels,495584.0,,144,9,2022-10-30
 BE,Wallonia,Hainaut,507033.0,,194,3,2022-10-30
 BE,Flanders,OostVlaanderen,624932.0,,156,7,2022-10-30
-BE,Flanders,Antwerpen,744281.0,,145,4,2022-10-30
+BE,Flanders,Antwerpen,744282.0,,145,4,2022-10-30
 BE,MISSING,MISSING,62011.0,,,,2022-10-31
 BE,Wallonia,Luxembourg,120681.0,,10,2,2022-10-31
 BE,Wallonia,BrabantWallon,169818.0,,18,0,2022-10-31
@@ -11694,7 +11694,7 @@ BE,Flanders,WestVlaanderen,488235.0,,115,9,2022-10-31
 BE,Brussels,Brussels,495692.0,,143,7,2022-10-31
 BE,Wallonia,Hainaut,507140.0,,194,3,2022-10-31
 BE,Flanders,OostVlaanderen,625058.0,,157,7,2022-10-31
-BE,Flanders,Antwerpen,744422.0,,147,3,2022-10-31
+BE,Flanders,Antwerpen,744423.0,,147,3,2022-10-31
 BE,MISSING,MISSING,62019.0,,,,2022-11-01
 BE,Wallonia,Luxembourg,120689.0,,10,1,2022-11-01
 BE,Wallonia,BrabantWallon,169824.0,,20,1,2022-11-01
@@ -11706,7 +11706,7 @@ BE,Flanders,WestVlaanderen,488259.0,,109,10,2022-11-01
 BE,Brussels,Brussels,495721.0,,132,8,2022-11-01
 BE,Wallonia,Hainaut,507166.0,,169,3,2022-11-01
 BE,Flanders,OostVlaanderen,625076.0,,141,5,2022-11-01
-BE,Flanders,Antwerpen,744460.0,,136,5,2022-11-01
+BE,Flanders,Antwerpen,744461.0,,136,5,2022-11-01
 BE,MISSING,MISSING,62032.0,,,,2022-11-02
 BE,Wallonia,Luxembourg,120723.0,,10,2,2022-11-02
 BE,Wallonia,BrabantWallon,169873.0,,20,1,2022-11-02
@@ -11718,7 +11718,7 @@ BE,Flanders,WestVlaanderen,488385.0,,103,9,2022-11-02
 BE,Brussels,Brussels,495850.0,,121,6,2022-11-02
 BE,Wallonia,Hainaut,507273.0,,166,2,2022-11-02
 BE,Flanders,OostVlaanderen,625237.0,,137,4,2022-11-02
-BE,Flanders,Antwerpen,744650.0,,135,4,2022-11-02
+BE,Flanders,Antwerpen,744651.0,,135,4,2022-11-02
 BE,MISSING,MISSING,62047.0,,,,2022-11-03
 BE,Wallonia,Luxembourg,120757.0,,14,1,2022-11-03
 BE,Wallonia,BrabantWallon,169910.0,,22,1,2022-11-03
@@ -11730,7 +11730,7 @@ BE,Flanders,WestVlaanderen,488471.0,,98,7,2022-11-03
 BE,Brussels,Brussels,495961.0,,115,9,2022-11-03
 BE,Wallonia,Hainaut,507371.0,,151,3,2022-11-03
 BE,Flanders,OostVlaanderen,625350.0,,121,6,2022-11-03
-BE,Flanders,Antwerpen,744762.0,,134,3,2022-11-03
+BE,Flanders,Antwerpen,744763.0,,134,3,2022-11-03
 BE,MISSING,MISSING,62063.0,,,,2022-11-04
 BE,Wallonia,Luxembourg,120773.0,,12,2,2022-11-04
 BE,Wallonia,BrabantWallon,169946.0,,18,1,2022-11-04
@@ -11742,7 +11742,7 @@ BE,Flanders,WestVlaanderen,488550.0,,84,7,2022-11-04
 BE,Brussels,Brussels,496051.0,,103,7,2022-11-04
 BE,Wallonia,Hainaut,507462.0,,137,3,2022-11-04
 BE,Flanders,OostVlaanderen,625455.0,,122,6,2022-11-04
-BE,Flanders,Antwerpen,744879.0,,118,3,2022-11-04
+BE,Flanders,Antwerpen,744880.0,,118,3,2022-11-04
 BE,MISSING,MISSING,62076.0,,,,2022-11-05
 BE,Wallonia,Luxembourg,120785.0,,9,1,2022-11-05
 BE,Wallonia,BrabantWallon,169968.0,,16,1,2022-11-05
@@ -11754,7 +11754,7 @@ BE,Flanders,WestVlaanderen,488590.0,,82,8,2022-11-05
 BE,Brussels,Brussels,496101.0,,106,7,2022-11-05
 BE,Wallonia,Hainaut,507509.0,,133,3,2022-11-05
 BE,Flanders,OostVlaanderen,625498.0,,110,4,2022-11-05
-BE,Flanders,Antwerpen,744935.0,,123,3,2022-11-05
+BE,Flanders,Antwerpen,744936.0,,123,3,2022-11-05
 BE,MISSING,MISSING,62082.0,,,,2022-11-06
 BE,Wallonia,Luxembourg,120794.0,,9,1,2022-11-06
 BE,Wallonia,BrabantWallon,169977.0,,17,1,2022-11-06
@@ -11766,7 +11766,7 @@ BE,Flanders,WestVlaanderen,488614.0,,85,5,2022-11-06
 BE,Brussels,Brussels,496134.0,,110,7,2022-11-06
 BE,Wallonia,Hainaut,507535.0,,136,2,2022-11-06
 BE,Flanders,OostVlaanderen,625546.0,,113,4,2022-11-06
-BE,Flanders,Antwerpen,744985.0,,114,4,2022-11-06
+BE,Flanders,Antwerpen,744986.0,,114,4,2022-11-06
 BE,MISSING,MISSING,62097.0,,,,2022-11-07
 BE,Wallonia,Luxembourg,120826.0,,8,1,2022-11-07
 BE,Wallonia,BrabantWallon,170026.0,,15,0,2022-11-07
@@ -11778,7 +11778,7 @@ BE,Flanders,WestVlaanderen,488756.0,,86,6,2022-11-07
 BE,Brussels,Brussels,496285.0,,113,8,2022-11-07
 BE,Wallonia,Hainaut,507662.0,,133,7,2022-11-07
 BE,Flanders,OostVlaanderen,625749.0,,130,6,2022-11-07
-BE,Flanders,Antwerpen,745212.0,,126,5,2022-11-07
+BE,Flanders,Antwerpen,745213.0,,126,5,2022-11-07
 BE,MISSING,MISSING,62110.0,,,,2022-11-08
 BE,Wallonia,Luxembourg,120853.0,,4,0,2022-11-08
 BE,Wallonia,BrabantWallon,170072.0,,9,0,2022-11-08
@@ -11790,7 +11790,7 @@ BE,Flanders,WestVlaanderen,488847.0,,92,4,2022-11-08
 BE,Brussels,Brussels,496397.0,,102,12,2022-11-08
 BE,Wallonia,Hainaut,507752.0,,118,4,2022-11-08
 BE,Flanders,OostVlaanderen,625859.0,,113,6,2022-11-08
-BE,Flanders,Antwerpen,745339.0,,139,3,2022-11-08
+BE,Flanders,Antwerpen,745340.0,,139,3,2022-11-08
 BE,MISSING,MISSING,62113.0,,,,2022-11-09
 BE,Wallonia,Luxembourg,120870.0,,6,1,2022-11-09
 BE,Wallonia,BrabantWallon,170115.0,,10,0,2022-11-09
@@ -11802,7 +11802,7 @@ BE,Flanders,WestVlaanderen,488930.0,,93,5,2022-11-09
 BE,Brussels,Brussels,496482.0,,95,8,2022-11-09
 BE,Wallonia,Hainaut,507831.0,,113,5,2022-11-09
 BE,Flanders,OostVlaanderen,625969.0,,109,5,2022-11-09
-BE,Flanders,Antwerpen,745472.0,,136,4,2022-11-09
+BE,Flanders,Antwerpen,745473.0,,136,4,2022-11-09
 BE,MISSING,MISSING,62124.0,,,,2022-11-10
 BE,Wallonia,Luxembourg,120890.0,,4,1,2022-11-10
 BE,Wallonia,BrabantWallon,170143.0,,10,0,2022-11-10
@@ -11814,7 +11814,7 @@ BE,Flanders,WestVlaanderen,489008.0,,89,5,2022-11-10
 BE,Brussels,Brussels,496593.0,,102,8,2022-11-10
 BE,Wallonia,Hainaut,507907.0,,109,4,2022-11-10
 BE,Flanders,OostVlaanderen,626059.0,,119,3,2022-11-10
-BE,Flanders,Antwerpen,745571.0,,137,4,2022-11-10
+BE,Flanders,Antwerpen,745572.0,,137,4,2022-11-10
 BE,MISSING,MISSING,62127.0,,,,2022-11-11
 BE,Wallonia,BrabantWallon,170149.0,,5,0,2022-11-11
 BE,Wallonia,Namur,198990.0,,28,2,2022-11-11
@@ -11825,7 +11825,7 @@ BE,Flanders,WestVlaanderen,489028.0,,76,7,2022-11-11
 BE,Brussels,Brussels,496624.0,,110,6,2022-11-11
 BE,Wallonia,Hainaut,507925.0,,101,5,2022-11-11
 BE,Flanders,OostVlaanderen,626086.0,,111,5,2022-11-11
-BE,Flanders,Antwerpen,745608.0,,127,2,2022-11-11
+BE,Flanders,Antwerpen,745609.0,,127,2,2022-11-11
 BE,Wallonia,Luxembourg,,,4,1,2022-11-11
 BE,MISSING,MISSING,62140.0,,,,2022-11-12
 BE,Wallonia,Luxembourg,120899.0,,4,1,2022-11-12
@@ -11838,7 +11838,7 @@ BE,Flanders,WestVlaanderen,489056.0,,74,6,2022-11-12
 BE,Brussels,Brussels,496668.0,,113,7,2022-11-12
 BE,Wallonia,Hainaut,507967.0,,79,5,2022-11-12
 BE,Flanders,OostVlaanderen,626127.0,,110,6,2022-11-12
-BE,Flanders,Antwerpen,745651.0,,125,3,2022-11-12
+BE,Flanders,Antwerpen,745652.0,,125,3,2022-11-12
 BE,MISSING,MISSING,62146.0,,,,2022-11-13
 BE,Wallonia,Luxembourg,120905.0,,3,0,2022-11-13
 BE,Wallonia,BrabantWallon,170164.0,,5,0,2022-11-13
@@ -11850,7 +11850,7 @@ BE,Flanders,WestVlaanderen,489078.0,,76,7,2022-11-13
 BE,Brussels,Brussels,496698.0,,113,9,2022-11-13
 BE,Wallonia,Hainaut,507990.0,,95,5,2022-11-13
 BE,Flanders,OostVlaanderen,626151.0,,108,7,2022-11-13
-BE,Flanders,Antwerpen,745692.0,,126,3,2022-11-13
+BE,Flanders,Antwerpen,745693.0,,126,3,2022-11-13
 BE,MISSING,MISSING,62159.0,,,,2022-11-14
 BE,Wallonia,Luxembourg,120931.0,,5,1,2022-11-14
 BE,Wallonia,BrabantWallon,170209.0,,6,0,2022-11-14
@@ -11862,7 +11862,7 @@ BE,Flanders,WestVlaanderen,489191.0,,77,6,2022-11-14
 BE,Brussels,Brussels,496849.0,,119,10,2022-11-14
 BE,Wallonia,Hainaut,508094.0,,102,5,2022-11-14
 BE,Flanders,OostVlaanderen,626291.0,,113,8,2022-11-14
-BE,Flanders,Antwerpen,745901.0,,123,3,2022-11-14
+BE,Flanders,Antwerpen,745902.0,,123,3,2022-11-14
 BE,MISSING,MISSING,62170.0,,,,2022-11-15
 BE,Wallonia,Luxembourg,120953.0,,1,0,2022-11-15
 BE,Wallonia,BrabantWallon,170254.0,,6,0,2022-11-15
@@ -11874,7 +11874,7 @@ BE,Flanders,WestVlaanderen,489288.0,,81,6,2022-11-15
 BE,Brussels,Brussels,496958.0,,116,9,2022-11-15
 BE,Wallonia,Hainaut,508208.0,,96,4,2022-11-15
 BE,Flanders,OostVlaanderen,626378.0,,93,6,2022-11-15
-BE,Flanders,Antwerpen,746025.0,,110,3,2022-11-15
+BE,Flanders,Antwerpen,746026.0,,110,3,2022-11-15
 BE,MISSING,MISSING,62179.0,,,,2022-11-16
 BE,Wallonia,Luxembourg,120980.0,,0,0,2022-11-16
 BE,Wallonia,BrabantWallon,170300.0,,7,0,2022-11-16
@@ -11886,7 +11886,7 @@ BE,Flanders,WestVlaanderen,489370.0,,67,5,2022-11-16
 BE,Brussels,Brussels,497082.0,,116,8,2022-11-16
 BE,Wallonia,Hainaut,508314.0,,89,4,2022-11-16
 BE,Flanders,OostVlaanderen,626487.0,,93,6,2022-11-16
-BE,Flanders,Antwerpen,746168.0,,105,4,2022-11-16
+BE,Flanders,Antwerpen,746169.0,,105,4,2022-11-16
 BE,MISSING,MISSING,62188.0,,,,2022-11-17
 BE,Wallonia,Luxembourg,121004.0,,2,1,2022-11-17
 BE,Wallonia,BrabantWallon,170330.0,,10,1,2022-11-17
@@ -11898,7 +11898,7 @@ BE,Flanders,WestVlaanderen,489453.0,,64,3,2022-11-17
 BE,Brussels,Brussels,497225.0,,118,6,2022-11-17
 BE,Wallonia,Hainaut,508423.0,,83,4,2022-11-17
 BE,Flanders,OostVlaanderen,626592.0,,87,5,2022-11-17
-BE,Flanders,Antwerpen,746269.0,,85,2,2022-11-17
+BE,Flanders,Antwerpen,746270.0,,85,2,2022-11-17
 BE,MISSING,MISSING,62201.0,,,,2022-11-18
 BE,Wallonia,Luxembourg,121019.0,,2,0,2022-11-18
 BE,Wallonia,BrabantWallon,170372.0,,7,1,2022-11-18
@@ -11910,7 +11910,7 @@ BE,Flanders,WestVlaanderen,489517.0,,68,6,2022-11-18
 BE,Brussels,Brussels,497354.0,,125,5,2022-11-18
 BE,Wallonia,Hainaut,508509.0,,87,7,2022-11-18
 BE,Flanders,OostVlaanderen,626698.0,,94,7,2022-11-18
-BE,Flanders,Antwerpen,746387.0,,83,2,2022-11-18
+BE,Flanders,Antwerpen,746388.0,,83,2,2022-11-18
 BE,MISSING,MISSING,62206.0,,,,2022-11-19
 BE,Wallonia,Luxembourg,121031.0,,2,1,2022-11-19
 BE,Wallonia,BrabantWallon,170389.0,,4,0,2022-11-19
@@ -11922,7 +11922,7 @@ BE,Flanders,WestVlaanderen,489554.0,,61,6,2022-11-19
 BE,Brussels,Brussels,497427.0,,131,8,2022-11-19
 BE,Wallonia,Hainaut,508564.0,,89,8,2022-11-19
 BE,Flanders,OostVlaanderen,626733.0,,83,5,2022-11-19
-BE,Flanders,Antwerpen,746433.0,,81,3,2022-11-19
+BE,Flanders,Antwerpen,746434.0,,81,3,2022-11-19
 BE,MISSING,MISSING,62208.0,,,,2022-11-20
 BE,Wallonia,Luxembourg,121036.0,,1,0,2022-11-20
 BE,Wallonia,BrabantWallon,170391.0,,6,1,2022-11-20
@@ -11934,7 +11934,7 @@ BE,Flanders,WestVlaanderen,489565.0,,59,8,2022-11-20
 BE,Brussels,Brussels,497466.0,,132,7,2022-11-20
 BE,Wallonia,Hainaut,508598.0,,91,8,2022-11-20
 BE,Flanders,OostVlaanderen,626756.0,,87,6,2022-11-20
-BE,Flanders,Antwerpen,746476.0,,84,4,2022-11-20
+BE,Flanders,Antwerpen,746477.0,,84,4,2022-11-20
 BE,MISSING,MISSING,62226.0,,,,2022-11-21
 BE,Wallonia,Luxembourg,121071.0,,5,2,2022-11-21
 BE,Wallonia,BrabantWallon,170444.0,,5,1,2022-11-21
@@ -11946,7 +11946,7 @@ BE,Flanders,WestVlaanderen,489699.0,,62,7,2022-11-21
 BE,Brussels,Brussels,497644.0,,153,8,2022-11-21
 BE,Wallonia,Hainaut,508752.0,,96,6,2022-11-21
 BE,Flanders,OostVlaanderen,626910.0,,91,5,2022-11-21
-BE,Flanders,Antwerpen,746729.0,,81,4,2022-11-21
+BE,Flanders,Antwerpen,746730.0,,81,4,2022-11-21
 BE,MISSING,MISSING,62240.0,,,,2022-11-22
 BE,Wallonia,Luxembourg,121097.0,,7,3,2022-11-22
 BE,Wallonia,BrabantWallon,170514.0,,5,1,2022-11-22
@@ -11958,7 +11958,7 @@ BE,Flanders,WestVlaanderen,489789.0,,57,8,2022-11-22
 BE,Brussels,Brussels,497806.0,,148,11,2022-11-22
 BE,Wallonia,Hainaut,508899.0,,104,5,2022-11-22
 BE,Flanders,OostVlaanderen,627038.0,,84,5,2022-11-22
-BE,Flanders,Antwerpen,746874.0,,83,4,2022-11-22
+BE,Flanders,Antwerpen,746875.0,,83,4,2022-11-22
 BE,MISSING,MISSING,62254.0,,,,2022-11-23
 BE,Wallonia,Luxembourg,121124.0,,6,1,2022-11-23
 BE,Wallonia,BrabantWallon,170578.0,,6,0,2022-11-23
@@ -11970,7 +11970,7 @@ BE,Flanders,WestVlaanderen,489887.0,,60,6,2022-11-23
 BE,Brussels,Brussels,497981.0,,154,8,2022-11-23
 BE,Wallonia,Hainaut,509041.0,,104,6,2022-11-23
 BE,Flanders,OostVlaanderen,627181.0,,89,7,2022-11-23
-BE,Flanders,Antwerpen,747045.0,,91,4,2022-11-23
+BE,Flanders,Antwerpen,747046.0,,91,4,2022-11-23
 BE,MISSING,MISSING,62266.0,,,,2022-11-24
 BE,Wallonia,Luxembourg,121160.0,,7,1,2022-11-24
 BE,Wallonia,BrabantWallon,170635.0,,8,0,2022-11-24
@@ -11982,7 +11982,7 @@ BE,Flanders,WestVlaanderen,489988.0,,61,7,2022-11-24
 BE,Brussels,Brussels,498151.0,,160,10,2022-11-24
 BE,Wallonia,Hainaut,509180.0,,119,5,2022-11-24
 BE,Flanders,OostVlaanderen,627315.0,,90,6,2022-11-24
-BE,Flanders,Antwerpen,747203.0,,95,3,2022-11-24
+BE,Flanders,Antwerpen,747204.0,,95,3,2022-11-24
 BE,MISSING,MISSING,62284.0,,,,2022-11-25
 BE,Wallonia,Luxembourg,121184.0,,5,1,2022-11-25
 BE,Wallonia,BrabantWallon,170698.0,,9,1,2022-11-25
@@ -11994,7 +11994,7 @@ BE,Flanders,WestVlaanderen,490075.0,,59,4,2022-11-25
 BE,Brussels,Brussels,498320.0,,173,7,2022-11-25
 BE,Wallonia,Hainaut,509323.0,,129,6,2022-11-25
 BE,Flanders,OostVlaanderen,627447.0,,97,5,2022-11-25
-BE,Flanders,Antwerpen,747342.0,,98,2,2022-11-25
+BE,Flanders,Antwerpen,747343.0,,98,2,2022-11-25
 BE,MISSING,MISSING,62296.0,,,,2022-11-26
 BE,Wallonia,Luxembourg,121205.0,,4,1,2022-11-26
 BE,Wallonia,BrabantWallon,170715.0,,9,0,2022-11-26
@@ -12006,7 +12006,7 @@ BE,Flanders,WestVlaanderen,490121.0,,68,3,2022-11-26
 BE,Brussels,Brussels,498389.0,,181,6,2022-11-26
 BE,Wallonia,Hainaut,509394.0,,131,7,2022-11-26
 BE,Flanders,OostVlaanderen,627494.0,,86,5,2022-11-26
-BE,Flanders,Antwerpen,747421.0,,100,3,2022-11-26
+BE,Flanders,Antwerpen,747422.0,,100,3,2022-11-26
 BE,MISSING,MISSING,62300.0,,,,2022-11-27
 BE,Wallonia,Luxembourg,121208.0,,4,1,2022-11-27
 BE,Wallonia,BrabantWallon,170723.0,,9,0,2022-11-27
@@ -12018,7 +12018,7 @@ BE,Flanders,WestVlaanderen,490137.0,,79,3,2022-11-27
 BE,Brussels,Brussels,498434.0,,189,8,2022-11-27
 BE,Wallonia,Hainaut,509417.0,,135,9,2022-11-27
 BE,Flanders,OostVlaanderen,627540.0,,87,5,2022-11-27
-BE,Flanders,Antwerpen,747462.0,,99,3,2022-11-27
+BE,Flanders,Antwerpen,747463.0,,99,3,2022-11-27
 BE,MISSING,MISSING,62321.0,,,,2022-11-28
 BE,Wallonia,Luxembourg,121268.0,,5,1,2022-11-28
 BE,Wallonia,BrabantWallon,170816.0,,10,0,2022-11-28
@@ -12030,7 +12030,7 @@ BE,Flanders,WestVlaanderen,490337.0,,84,4,2022-11-28
 BE,Brussels,Brussels,498691.0,,190,10,2022-11-28
 BE,Wallonia,Hainaut,509634.0,,138,6,2022-11-28
 BE,Flanders,OostVlaanderen,627795.0,,108,7,2022-11-28
-BE,Flanders,Antwerpen,747767.0,,100,3,2022-11-28
+BE,Flanders,Antwerpen,747768.0,,100,3,2022-11-28
 BE,MISSING,MISSING,62334.0,,,,2022-11-29
 BE,Wallonia,Luxembourg,121296.0,,9,0,2022-11-29
 BE,Wallonia,BrabantWallon,170911.0,,13,1,2022-11-29
@@ -12042,7 +12042,7 @@ BE,Flanders,WestVlaanderen,490471.0,,88,4,2022-11-29
 BE,Brussels,Brussels,498850.0,,220,12,2022-11-29
 BE,Wallonia,Hainaut,509822.0,,141,7,2022-11-29
 BE,Flanders,OostVlaanderen,627966.0,,108,5,2022-11-29
-BE,Flanders,Antwerpen,747987.0,,112,5,2022-11-29
+BE,Flanders,Antwerpen,747988.0,,112,5,2022-11-29
 BE,MISSING,MISSING,62351.0,,,,2022-11-30
 BE,Wallonia,Luxembourg,121343.0,,10,0,2022-11-30
 BE,Wallonia,BrabantWallon,170985.0,,12,1,2022-11-30
@@ -12054,7 +12054,7 @@ BE,Flanders,WestVlaanderen,490593.0,,99,6,2022-11-30
 BE,Brussels,Brussels,499040.0,,224,11,2022-11-30
 BE,Wallonia,Hainaut,510006.0,,134,6,2022-11-30
 BE,Flanders,OostVlaanderen,628143.0,,117,5,2022-11-30
-BE,Flanders,Antwerpen,748191.0,,117,5,2022-11-30
+BE,Flanders,Antwerpen,748192.0,,117,5,2022-11-30
 BE,MISSING,MISSING,62371.0,,,,2022-12-01
 BE,Wallonia,Luxembourg,121373.0,,12,0,2022-12-01
 BE,Wallonia,BrabantWallon,171055.0,,11,1,2022-12-01
@@ -12066,7 +12066,7 @@ BE,Flanders,WestVlaanderen,490707.0,,100,4,2022-12-01
 BE,Brussels,Brussels,499216.0,,218,13,2022-12-01
 BE,Wallonia,Hainaut,510211.0,,126,5,2022-12-01
 BE,Flanders,OostVlaanderen,628303.0,,111,5,2022-12-01
-BE,Flanders,Antwerpen,748363.0,,126,3,2022-12-01
+BE,Flanders,Antwerpen,748364.0,,126,3,2022-12-01
 BE,MISSING,MISSING,62389.0,,,,2022-12-02
 BE,Wallonia,Luxembourg,121407.0,,10,0,2022-12-02
 BE,Wallonia,BrabantWallon,171126.0,,12,1,2022-12-02
@@ -12078,7 +12078,7 @@ BE,Flanders,WestVlaanderen,490803.0,,106,5,2022-12-02
 BE,Brussels,Brussels,499366.0,,231,10,2022-12-02
 BE,Wallonia,Hainaut,510378.0,,139,5,2022-12-02
 BE,Flanders,OostVlaanderen,628440.0,,109,4,2022-12-02
-BE,Flanders,Antwerpen,748546.0,,128,6,2022-12-02
+BE,Flanders,Antwerpen,748547.0,,128,6,2022-12-02
 BE,MISSING,MISSING,62396.0,,,,2022-12-03
 BE,Wallonia,Luxembourg,121420.0,,10,0,2022-12-03
 BE,Wallonia,BrabantWallon,171150.0,,15,0,2022-12-03
@@ -12090,7 +12090,7 @@ BE,Flanders,WestVlaanderen,490856.0,,98,3,2022-12-03
 BE,Brussels,Brussels,499427.0,,202,11,2022-12-03
 BE,Wallonia,Hainaut,510471.0,,154,8,2022-12-03
 BE,Flanders,OostVlaanderen,628500.0,,113,5,2022-12-03
-BE,Flanders,Antwerpen,748618.0,,120,7,2022-12-03
+BE,Flanders,Antwerpen,748619.0,,120,7,2022-12-03
 BE,MISSING,MISSING,62400.0,,,,2022-12-04
 BE,Wallonia,Luxembourg,121428.0,,12,1,2022-12-04
 BE,Wallonia,BrabantWallon,171170.0,,22,1,2022-12-04
@@ -12102,7 +12102,7 @@ BE,Flanders,WestVlaanderen,490876.0,,116,4,2022-12-04
 BE,Brussels,Brussels,499455.0,,185,12,2022-12-04
 BE,Wallonia,Hainaut,510515.0,,157,8,2022-12-04
 BE,Flanders,OostVlaanderen,628553.0,,120,8,2022-12-04
-BE,Flanders,Antwerpen,748667.0,,138,6,2022-12-04
+BE,Flanders,Antwerpen,748668.0,,138,6,2022-12-04
 BE,MISSING,MISSING,62420.0,,,,2022-12-05
 BE,Wallonia,Luxembourg,121475.0,,15,1,2022-12-05
 BE,Wallonia,BrabantWallon,171253.0,,26,1,2022-12-05
@@ -12114,7 +12114,7 @@ BE,Flanders,WestVlaanderen,491084.0,,115,3,2022-12-05
 BE,Brussels,Brussels,499664.0,,207,13,2022-12-05
 BE,Wallonia,Hainaut,510778.0,,168,10,2022-12-05
 BE,Flanders,OostVlaanderen,628830.0,,132,8,2022-12-05
-BE,Flanders,Antwerpen,748990.0,,152,9,2022-12-05
+BE,Flanders,Antwerpen,748991.0,,152,9,2022-12-05
 BE,MISSING,MISSING,62435.0,,,,2022-12-06
 BE,Wallonia,Luxembourg,121513.0,,18,1,2022-12-06
 BE,Wallonia,BrabantWallon,171352.0,,27,0,2022-12-06
@@ -12126,7 +12126,7 @@ BE,Flanders,WestVlaanderen,491262.0,,124,3,2022-12-06
 BE,Brussels,Brussels,499875.0,,201,10,2022-12-06
 BE,Wallonia,Hainaut,511040.0,,179,5,2022-12-06
 BE,Flanders,OostVlaanderen,629060.0,,137,9,2022-12-06
-BE,Flanders,Antwerpen,749227.0,,165,6,2022-12-06
+BE,Flanders,Antwerpen,749228.0,,165,6,2022-12-06
 BE,MISSING,MISSING,62456.0,,,,2022-12-07
 BE,Wallonia,Luxembourg,121558.0,,22,1,2022-12-07
 BE,Wallonia,BrabantWallon,171455.0,,30,0,2022-12-07
@@ -12138,64 +12138,88 @@ BE,Flanders,WestVlaanderen,491415.0,,122,3,2022-12-07
 BE,Brussels,Brussels,500061.0,,197,9,2022-12-07
 BE,Wallonia,Hainaut,511286.0,,181,5,2022-12-07
 BE,Flanders,OostVlaanderen,629287.0,,145,7,2022-12-07
-BE,Flanders,Antwerpen,749465.0,,160,9,2022-12-07
+BE,Flanders,Antwerpen,749467.0,,160,9,2022-12-07
 BE,MISSING,MISSING,62471.0,,,,2022-12-08
 BE,Wallonia,Luxembourg,121593.0,,23,2,2022-12-08
-BE,Wallonia,BrabantWallon,171552.0,,35,0,2022-12-08
+BE,Wallonia,BrabantWallon,171553.0,,35,0,2022-12-08
 BE,Wallonia,Namur,200290.0,,32,3,2022-12-08
-BE,Flanders,Limburg,344073.0,,72,2,2022-12-08
-BE,Wallonia,Liège,414351.0,,155,7,2022-12-08
+BE,Flanders,Limburg,344074.0,,72,2,2022-12-08
+BE,Wallonia,Liège,414353.0,,155,7,2022-12-08
 BE,Flanders,VlaamsBrabant,455161.0,,97,7,2022-12-08
 BE,Flanders,WestVlaanderen,491556.0,,124,2,2022-12-08
 BE,Brussels,Brussels,500238.0,,206,14,2022-12-08
 BE,Wallonia,Hainaut,511495.0,,182,8,2022-12-08
 BE,Flanders,OostVlaanderen,629526.0,,146,9,2022-12-08
-BE,Flanders,Antwerpen,749692.0,,170,8,2022-12-08
+BE,Flanders,Antwerpen,749694.0,,170,8,2022-12-08
 BE,MISSING,MISSING,62487.0,,,,2022-12-09
 BE,Wallonia,Luxembourg,121631.0,,26,2,2022-12-09
-BE,Wallonia,BrabantWallon,171607.0,,33,0,2022-12-09
+BE,Wallonia,BrabantWallon,171608.0,,33,0,2022-12-09
 BE,Wallonia,Namur,200358.0,,41,3,2022-12-09
-BE,Flanders,Limburg,344176.0,,76,7,2022-12-09
-BE,Wallonia,Liège,414492.0,,156,7,2022-12-09
-BE,Flanders,VlaamsBrabant,455314.0,,102,6,2022-12-09
-BE,Flanders,WestVlaanderen,491667.0,,120,1,2022-12-09
-BE,Brussels,Brussels,500415.0,,215,19,2022-12-09
-BE,Wallonia,Hainaut,511739.0,,179,7,2022-12-09
-BE,Flanders,OostVlaanderen,629734.0,,151,7,2022-12-09
-BE,Flanders,Antwerpen,749922.0,,173,4,2022-12-09
+BE,Flanders,Limburg,344178.0,,76,7,2022-12-09
+BE,Wallonia,Liège,414494.0,,156,7,2022-12-09
+BE,Flanders,VlaamsBrabant,455319.0,,102,6,2022-12-09
+BE,Flanders,WestVlaanderen,491668.0,,120,1,2022-12-09
+BE,Brussels,Brussels,500421.0,,215,19,2022-12-09
+BE,Wallonia,Hainaut,511740.0,,179,7,2022-12-09
+BE,Flanders,OostVlaanderen,629738.0,,151,7,2022-12-09
+BE,Flanders,Antwerpen,749925.0,,173,4,2022-12-09
 BE,MISSING,MISSING,62495.0,,,,2022-12-10
-BE,Wallonia,Luxembourg,121642.0,,26,2,2022-12-10
-BE,Wallonia,BrabantWallon,171642.0,,31,0,2022-12-10
-BE,Wallonia,Namur,200398.0,,47,3,2022-12-10
-BE,Flanders,Limburg,344218.0,,83,6,2022-12-10
-BE,Wallonia,Liège,414543.0,,153,4,2022-12-10
-BE,Flanders,VlaamsBrabant,455370.0,,99,4,2022-12-10
-BE,Flanders,WestVlaanderen,491733.0,,115,1,2022-12-10
-BE,Brussels,Brussels,500497.0,,234,15,2022-12-10
-BE,Wallonia,Hainaut,511844.0,,194,10,2022-12-10
-BE,Flanders,OostVlaanderen,629811.0,,166,7,2022-12-10
-BE,Flanders,Antwerpen,749979.0,,170,6,2022-12-10
-BE,MISSING,MISSING,62501.0,,,,2022-12-11
-BE,Wallonia,Luxembourg,121648.0,,29,2,2022-12-11
-BE,Wallonia,BrabantWallon,171651.0,,33,0,2022-12-11
-BE,Wallonia,Namur,200410.0,,48,3,2022-12-11
-BE,Flanders,Limburg,344242.0,,86,6,2022-12-11
-BE,Wallonia,Liège,414577.0,,158,4,2022-12-11
-BE,Flanders,VlaamsBrabant,455401.0,,102,4,2022-12-11
-BE,Flanders,WestVlaanderen,491759.0,,119,3,2022-12-11
-BE,Brussels,Brussels,500528.0,,246,15,2022-12-11
-BE,Wallonia,Hainaut,511883.0,,209,11,2022-12-11
-BE,Flanders,OostVlaanderen,629847.0,,177,8,2022-12-11
-BE,Flanders,Antwerpen,750019.0,,179,8,2022-12-11
-BE,MISSING,MISSING,62502.0,,,,2022-12-12
-BE,Flanders,Limburg,344243.0,,92,5,2022-12-12
-BE,Brussels,Brussels,500530.0,,248,14,2022-12-12
-BE,Flanders,OostVlaanderen,629848.0,,185,7,2022-12-12
-BE,Flanders,Antwerpen,750021.0,,177,8,2022-12-12
-BE,Wallonia,Namur,,,57,3,2022-12-12
-BE,Wallonia,Luxembourg,,,25,1,2022-12-12
-BE,Wallonia,Liège,,,185,6,2022-12-12
-BE,Wallonia,Hainaut,,,235,12,2022-12-12
-BE,Wallonia,BrabantWallon,,,37,1,2022-12-12
-BE,Flanders,WestVlaanderen,,,129,2,2022-12-12
-BE,Flanders,VlaamsBrabant,,,115,5,2022-12-12
+BE,Wallonia,Luxembourg,121643.0,,26,2,2022-12-10
+BE,Wallonia,BrabantWallon,171645.0,,31,0,2022-12-10
+BE,Wallonia,Namur,200403.0,,47,3,2022-12-10
+BE,Flanders,Limburg,344225.0,,83,6,2022-12-10
+BE,Wallonia,Liège,414547.0,,153,4,2022-12-10
+BE,Flanders,VlaamsBrabant,455378.0,,99,4,2022-12-10
+BE,Flanders,WestVlaanderen,491735.0,,115,1,2022-12-10
+BE,Brussels,Brussels,500510.0,,234,15,2022-12-10
+BE,Wallonia,Hainaut,511848.0,,194,10,2022-12-10
+BE,Flanders,OostVlaanderen,629821.0,,166,7,2022-12-10
+BE,Flanders,Antwerpen,749991.0,,170,6,2022-12-10
+BE,MISSING,MISSING,62503.0,,,,2022-12-11
+BE,Wallonia,Luxembourg,121650.0,,29,2,2022-12-11
+BE,Wallonia,BrabantWallon,171660.0,,33,0,2022-12-11
+BE,Wallonia,Namur,200421.0,,48,3,2022-12-11
+BE,Flanders,Limburg,344254.0,,86,6,2022-12-11
+BE,Wallonia,Liège,414592.0,,158,4,2022-12-11
+BE,Flanders,VlaamsBrabant,455421.0,,102,4,2022-12-11
+BE,Flanders,WestVlaanderen,491774.0,,119,3,2022-12-11
+BE,Brussels,Brussels,500561.0,,246,15,2022-12-11
+BE,Wallonia,Hainaut,511912.0,,209,11,2022-12-11
+BE,Flanders,OostVlaanderen,629876.0,,177,8,2022-12-11
+BE,Flanders,Antwerpen,750044.0,,180,9,2022-12-11
+BE,MISSING,MISSING,62526.0,,,,2022-12-12
+BE,Wallonia,Luxembourg,121685.0,,25,1,2022-12-12
+BE,Wallonia,BrabantWallon,171756.0,,37,1,2022-12-12
+BE,Wallonia,Namur,200540.0,,57,3,2022-12-12
+BE,Flanders,Limburg,344398.0,,92,5,2022-12-12
+BE,Wallonia,Liège,414753.0,,185,6,2022-12-12
+BE,Flanders,VlaamsBrabant,455677.0,,123,6,2022-12-12
+BE,Flanders,WestVlaanderen,491977.0,,129,2,2022-12-12
+BE,Brussels,Brussels,500776.0,,248,14,2022-12-12
+BE,Wallonia,Hainaut,512242.0,,235,12,2022-12-12
+BE,Flanders,OostVlaanderen,630231.0,,185,7,2022-12-12
+BE,Flanders,Antwerpen,750441.0,,180,9,2022-12-12
+BE,MISSING,MISSING,62546.0,,,,2022-12-13
+BE,Wallonia,Luxembourg,121729.0,,18,1,2022-12-13
+BE,Wallonia,BrabantWallon,171813.0,,37,1,2022-12-13
+BE,Wallonia,Namur,200607.0,,56,2,2022-12-13
+BE,Flanders,Limburg,344507.0,,82,3,2022-12-13
+BE,Wallonia,Liège,414838.0,,200,10,2022-12-13
+BE,Flanders,VlaamsBrabant,455788.0,,117,6,2022-12-13
+BE,Flanders,WestVlaanderen,492103.0,,135,5,2022-12-13
+BE,Brussels,Brussels,500873.0,,228,16,2022-12-13
+BE,Wallonia,Hainaut,512437.0,,232,11,2022-12-13
+BE,Flanders,OostVlaanderen,630408.0,,197,4,2022-12-13
+BE,Flanders,Antwerpen,750641.0,,193,9,2022-12-13
+BE,MISSING,MISSING,62547.0,,,,2022-12-14
+BE,Wallonia,Namur,200608.0,,65,2,2022-12-14
+BE,Brussels,Brussels,500874.0,,240,12,2022-12-14
+BE,Wallonia,Hainaut,512440.0,,250,9,2022-12-14
+BE,Flanders,Antwerpen,750643.0,,206,8,2022-12-14
+BE,Wallonia,Luxembourg,,,16,2,2022-12-14
+BE,Wallonia,Liège,,,201,10,2022-12-14
+BE,Wallonia,BrabantWallon,,,38,1,2022-12-14
+BE,Flanders,WestVlaanderen,,,150,8,2022-12-14
+BE,Flanders,VlaamsBrabant,,,120,7,2022-12-14
+BE,Flanders,Limburg,,,84,2,2022-12-14
+BE,Flanders,OostVlaanderen,,,216,9,2022-12-14
